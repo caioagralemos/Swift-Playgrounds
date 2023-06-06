@@ -6,21 +6,21 @@
 	<dict>
 		<key>completedTaskIDs</key>
 		<array>
-			<string>addVStackInHStack</string>
-			<string>composeAView</string>
-			<string>textElement</string>
-			<string>changeText</string>
-			<string>createHopperView</string>
-			<string>addFriend</string>
-			<string>createBluView</string>
+			<string>addTextInVStack</string>
 			<string>modifierWalkthrough</string>
 			<string>addImageInHStack</string>
-			<string>addTextInVStack</string>
-			<string>describeFriend</string>
-			<string>createDetailView</string>
-			<string>getStartedWithApps</string>
-			<string>modifier</string>
+			<string>textElement</string>
 			<string>placeOneViewInsideAnother</string>
+			<string>addVStackInHStack</string>
+			<string>addFriend</string>
+			<string>createHopperView</string>
+			<string>createBluView</string>
+			<string>createDetailView</string>
+			<string>changeText</string>
+			<string>composeAView</string>
+			<string>modifier</string>
+			<string>getStartedWithApps</string>
+			<string>describeFriend</string>
 		</array>
 		<key>hasSeenIntro</key>
 		<false/>
@@ -44,9 +44,9 @@
 			</array>
 		</dict>
 		<key>stepIndex</key>
-		<integer>0</integer>
+		<integer>5</integer>
 		<key>successMessageShowing</key>
-		<false/>
+		<true/>
 		<key>taskID</key>
 		<string>$null</string>
 	</dict>
