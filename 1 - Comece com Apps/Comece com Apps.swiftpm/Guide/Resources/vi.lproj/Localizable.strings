@@ -1,0 +1,489 @@
+/* Title of Guidebook */
+"GuideBook..title" = "Bắt đầu với các ứng dụng";
+
+/* Title of step named Get Started with Apps */
+"GuideBook..Guide0..StepGet Started with Apps..title" = "Bắt đầu với các ứng dụng";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepGet Started with Apps..LearningCenterContent..Paragraph0" = "![](get-started-with-apps@2x.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepGet Started with Apps..LearningCenterContent..Paragraph1" = "Trong Hướng dẫn này, bạn sẽ học các khái niệm cơ bản về việc sử dụng SwiftUI để xây dựng các ứng dụng.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepGet Started with Apps..LearningCenterContent..Paragraph2" = "[SwiftUI](glossary://SwiftUI) là một cách mã hóa ứng dụng mới, giúp việc đó trở nên dễ dàng hơn và nhanh hơn bao giờ hết. Mã SwiftUI được viết bằng ngôn ngữ lập trình [Swift](glossary://Swift).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepGet Started with Apps..LearningCenterContent..Paragraph3" = "Khi bạn đã hoàn thành phần Bắt đầu với các ứng dụng, bạn có thể chuyển sang phần [Tiếp tục với các ứng dụng](x-com-apple-playgrounds://projects?contentId=com.apple.playgrounds.keepgoingwithapps) để học nhiều hơn nữa về SwiftUI.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepGet Started with Apps..LearningCenterContent..Paragraph4" = "Bước đầu tiên của quá trình học SwiftUI là hiểu cách hoạt động của tệp SwiftUI.";
+
+/* Title for task */
+"GuideBook..Guide0..StepGet Started with Apps..TaskgetStartedWithApps..title" = "Chào mừng bạn đến SwiftUI";
+
+/* title for page */
+"GuideBook..Guide0..StepGet Started with Apps..TaskgetStartedWithApps..Page0..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepGet Started with Apps..TaskgetStartedWithApps..Page0..Paragraph5" = "Trong tệp SwiftUI, đầu ra của mã được hiển thị tự động trong bản xem trước ở bên phải. Mã trong tệp này tạo ra văn bản “Hello, friend.”";
+
+/* title for page */
+"GuideBook..Guide0..StepGet Started with Apps..TaskgetStartedWithApps..Page1..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepGet Started with Apps..TaskgetStartedWithApps..Page1..Paragraph6" = "Bên trong tệp, bạn sẽ nhìn thấy tên của [chế độ xem](glossary://view) mà bạn đang nhìn vào. Tại đây, bạn đang nhìn vào chế độ xem có tên là `IntroView`.";
+
+/* title for page */
+"GuideBook..Guide0..StepGet Started with Apps..TaskgetStartedWithApps..Page2..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepGet Started with Apps..TaskgetStartedWithApps..Page2..Paragraph7" = "Bên trong `IntroView`, bạn sẽ nhìn thấy một [thuộc tính](glossary://property) có tên là `body`. Bên trong [phần thân](glossary://body) là nơi mà bạn sẽ bắt đầu viết mã SwiftUI.";
+
+/* title for page */
+"GuideBook..Guide0..StepGet Started with Apps..TaskgetStartedWithApps..Page3..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepGet Started with Apps..TaskgetStartedWithApps..Page3..Paragraph8" = "Bên trong `body`, bạn sẽ nhìn thấy một chế độ xem [Văn bản](doc://com.apple.documentation/documentation/swiftui/text), hiển thị văn bản “Hello, friend.” trong bản xem trước.";
+
+/* title for page */
+"GuideBook..Guide0..StepGet Started with Apps..TaskgetStartedWithApps..Page4..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepGet Started with Apps..TaskgetStartedWithApps..Page4..Paragraph9" = "Nói về bản xem trước, đây là mã tạo ra bản xem trước `IntroView`. Bạn sẽ nhìn thấy mã tương tự bên dưới nhiều chế độ xem để giúp hình dung mã mà bạn viết.";
+
+/* Title for task */
+"GuideBook..Guide0..StepGet Started with Apps..TaskchangeText..title" = "Bây giờ, hãy thử thay đổi văn bản thành thứ gì đó mới.";
+
+/* title for page */
+"GuideBook..Guide0..StepGet Started with Apps..TaskchangeText..PageNow, try changing the text to something new..title" = "Bây giờ, hãy thử thay đổi văn bản thành thứ gì đó mới.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepGet Started with Apps..TaskchangeText..PageNow, try changing the text to something new...Paragraph10" = "Thay đổi văn bản, `\"Hello, friend.\"` thành điều gì đó mà bạn muốn nói.";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepGet Started with Apps..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepGet Started with Apps..SuccessMessage..Paragraph11" = "Bất kỳ lúc nào bạn thay đổi mã của mình, bản xem trước tự động cập nhật để phản ánh các thay đổi của bạn. Khá hữu ích phải không?";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepGet Started with Apps..SuccessMessage..Paragraph12" = "Tiếp theo, hãy thử tạo một chế độ xem mới từ đầu.";
+
+/* Title of step named Creating New SwiftUI Views */
+"GuideBook..Guide0..StepCreating New SwiftUI Views..title" = "Tạo các chế độ xem SwiftUI mới";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreating New SwiftUI Views..LearningCenterContent..Paragraph13" = "![](creating-new-swiftui-views@2x.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreating New SwiftUI Views..LearningCenterContent..Paragraph14" = "Khi bạn tạo ra một [chế độ xem](glossary://view) SwiftUI như [Văn bản](doc://com.apple.documentation/documentation/swiftui/text), việc mà bạn đang thực sự làm là tạo ra một [thể hiện](glossary://instance) mới của [kiểu](glossary://type) đó.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreating New SwiftUI Views..LearningCenterContent..Paragraph15" = "Để tạo ra các phần tử hình ảnh của ứng dụng, ví dụ như các nút, thanh trượt và văn bản, bạn sẽ sử dụng nhiều kiểu SwiftUI khác nhau. Đây là hai ví dụ:";
+
+/*  */
+"GuideBook..Guide0..StepCreating New SwiftUI Views..LearningCenterContent..CodeBlock0" = "Text(\"Tôi là một chế độ xem Văn bản!\")\n\nImage(\"imAnImageView\")\n";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreating New SwiftUI Views..LearningCenterContent..Paragraph16" = "Lưu ý rằng với mỗi kiểu trong này, bạn [khởi chạy](glossary://initialization) chúng mà không cần tạo ra một [biến](glossary://variable) để theo dõi chúng.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreating New SwiftUI Views..LearningCenterContent..Paragraph17" = "Đó là vì các chế độ xem SwiftUI được thiết kế để không lưu trữ bất kỳ dữ liệu nào về bản thân chúng. Thay vì lưu trữ các [thuộc tính](glossary://property) của chế độ xem đang sử dụng một biến, bạn sẽ giữ bất kỳ dữ liệu nào về chế độ xem [tách riêng với bản thân chế độ xem](glossary://data%20separation).";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreating New SwiftUI Views..TasktextElement..title" = "Thêm một chế độ xem `Text` mới vào `IntroView` của bạn.";
+
+/* title for page */
+"GuideBook..Guide0..StepCreating New SwiftUI Views..TasktextElement..Page5..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreating New SwiftUI Views..TasktextElement..Page5..Paragraph18" = "Đặt con trỏ của bạn trong [phần thân](glossary://body) và bắt đầu nhập “Text” vào trình sửa mã. Tính năng hoàn thành mã cung cấp cho bạn một danh sách các gợi ý, hãy chọn `Text` từ menu thả xuống.";
+
+/* title for page */
+"GuideBook..Guide0..StepCreating New SwiftUI Views..TasktextElement..Page6..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreating New SwiftUI Views..TasktextElement..Page6..Paragraph19" = "Chuyển một [Chuỗi](glossary://String) vào dưới dạng [đối số](glossary://argument) cho `Text`. Chuỗi đó sẽ trông giống như sau.";
+
+/*  */
+"GuideBook..Guide0..StepCreating New SwiftUI Views..TasktextElement..Page6..CodeBlock1" = "Text(\"Đây là một chuỗi!\")\n";
+
+/* title for page */
+"GuideBook..Guide0..StepCreating New SwiftUI Views..TasktextElement..Page7..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepCreating New SwiftUI Views..TasktextElement..Page7..CodeBlock2" = "Text(\"Tôi là một phần tử Văn bản mới.\")\n";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepCreating New SwiftUI Views..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreating New SwiftUI Views..SuccessMessage..Paragraph20" = "Thông thường, bạn sử dụng [biến](glossary://variable) để lưu trữ giá trị để sử dụng và sửa đổi sau này: `var textView = Text(\"Hola\")`";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreating New SwiftUI Views..SuccessMessage..Paragraph21" = "Nhưng trong SwiftUI, bạn sẽ không sửa đổi các thể hiện chế độ xem ở bất kỳ nơi nào khác mà là trên dòng mà chúng được tạo ra, do đó bạn có thể khởi chạy đơn giản chế độ xem tại chỗ: `Text(\"Hola\")`";
+
+/* Title of step named Modifying SwiftUI Views */
+"GuideBook..Guide0..StepModifying SwiftUI Views..title" = "Sửa đổi các chế độ xem SwiftUI";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying SwiftUI Views..LearningCenterContent..Paragraph22" = "![](modifying-swift-ui-views@2x.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying SwiftUI Views..LearningCenterContent..Paragraph23" = "Mỗi [chế độ xem](glossary://view) SwiftUI mà bạn tạo ra đều linh hoạt và có thể sửa đổi.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying SwiftUI Views..LearningCenterContent..Paragraph24" = "Nếu bạn muốn thay đổi giao diện hoặc hoạt động của một chế độ xem thì bạn có thể sửa đổi những [thể hiện](glossary://instance) này trực tiếp bằng cách gọi các [phương thức](glossary://method) của chúng.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying SwiftUI Views..LearningCenterContent..Paragraph25" = "Những phương thức này có một tên đặc biệt trong SwiftUI. Chúng được gọi là các [trình sửa đổi](glossary://modifier). Trong tác vụ tiếp theo, bạn sẽ thử thêm một số trình sửa đổi để xem chúng sửa đổi giao diện của một chế độ xem hình ảnh như thế nào.";
+
+/* Title for task */
+"GuideBook..Guide0..StepModifying SwiftUI Views..TaskaddFriend..title" = "Thêm một hình ảnh về người bạn của chúng ta.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying SwiftUI Views..TaskaddFriend..Page8..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying SwiftUI Views..TaskaddFriend..Page8..Paragraph26" = "Trước tiên, hãy tạo một chế độ xem [Hình ảnh](doc://com.apple.documentation/documentation/swiftui/image) và chuyển `\"FriendAndGem\"` vào dưới dạng [đối số](glossary://argument).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying SwiftUI Views..TaskaddFriend..Page8..Paragraph27" = "Bạn cũng sẽ thêm một [trình sửa đổi](glossary://modifier), `.resizable`, để cho phép hình ảnh thay đổi kích cỡ ban đầu.";
+
+/*  */
+"GuideBook..Guide0..StepModifying SwiftUI Views..TaskaddFriend..Page8..CodeBlock3" = "Image(\"FriendAndGem\")\n    .resizable()\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepModifying SwiftUI Views..Taskmodifier..title" = "Thêm một trình sửa đổi khác để định tỷ lệ người bạn của chúng ta đúng cách.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying SwiftUI Views..Taskmodifier..Page9..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying SwiftUI Views..Taskmodifier..Page9..Paragraph28" = "Ồ, người bạn của chúng ta thực sự bị kéo giãn! Bạn có thể sửa bằng cách thêm một trình sửa đổi khác.";
+
+/*  */
+"GuideBook..Guide0..StepModifying SwiftUI Views..Taskmodifier..Page9..CodeBlock4" = "    .scaledToFit()\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepModifying SwiftUI Views..TaskmodifierWalkthrough..title" = "Các trình sửa đổi hình ảnh";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying SwiftUI Views..TaskmodifierWalkthrough..Page10..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying SwiftUI Views..TaskmodifierWalkthrough..Page10..Paragraph29" = "Hãy lưu ý rằng chế độ xem [Hình ảnh](doc://com.apple.documentation/documentation/swiftui/image) có hai [trình sửa đổi](glossary://modifier), mỗi trình sửa đổi được gọi bằng [ký pháp dấu chấm](glossary://dot%20notation).";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying SwiftUI Views..TaskmodifierWalkthrough..Page11..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying SwiftUI Views..TaskmodifierWalkthrough..Page11..Paragraph30" = "SwiftUI làm cho các trình sửa đổi dễ đọc hơn bằng cách đặt mỗi trình sửa đổi trên một dòng riêng biệt, ngay cả khi tất cả chúng sửa đổi cùng một thể hiện `Image`. Phần này cũng có thể được viết dưới dạng:";
+
+/*  */
+"GuideBook..Guide0..StepModifying SwiftUI Views..TaskmodifierWalkthrough..Page11..CodeBlock5" = "Image(\"FriendAndGem\").resizable().scaledToFit()\n";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying SwiftUI Views..TaskmodifierWalkthrough..Page12..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying SwiftUI Views..TaskmodifierWalkthrough..Page12..Paragraph31" = "Trình sửa đổi đầu tiên, `.resizable()`, làm cho hình ảnh của bạn có thể thay đổi kích cỡ. Hãy thử xóa tạm thời trình sửa đổi này và lưu ý sự thay đổi của hình ảnh. Không có trình sửa đổi `.resizable()`, hình ảnh của bạn chỉ có thể kết xuất theo kích cỡ ban đầu và không thể tăng hoặc giảm tỷ lệ để phù hợp với không gian khả dụng.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying SwiftUI Views..TaskmodifierWalkthrough..Page13..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying SwiftUI Views..TaskmodifierWalkthrough..Page13..Paragraph32" = "Trình sửa đổi thứ hai, `.scaledToFit()`, cho phép hình ảnh của bạn định tỷ lệ để vừa với kích cỡ của bộ chứa mà hình ảnh sử dụng. Hãy thử thay đổi tạm thời trình sửa đổi thành `.scaledToFill()`. Bạn có thể chỉ ra sự khác biệt không? Hãy chuyển đổi trở lại `.scaledToFit()` trước khi tiếp tục.";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepModifying SwiftUI Views..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying SwiftUI Views..SuccessMessage..Paragraph33" = "Bây giờ bạn đã biết một chút về việc tạo ra và sửa đổi các chế độ xem SwiftUI, hãy thử đặt tất cả cùng nhau.";
+
+/* Title of step named SwiftUI Views */
+"GuideBook..Guide0..StepSwiftUI Views..title" = "Các chế độ xem SwiftUI";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Views..LearningCenterContent..Paragraph34" = "![](swift-ui-views@2x.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Views..LearningCenterContent..Paragraph35" = "Tất cả các phần tử hiển thị mà bạn nhìn thấy trong bản xem trước, ví dụ như văn bản, hình ảnh và nút đều là các [chế độ xem](glossary://view) SwiftUI.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Views..LearningCenterContent..Paragraph36" = "Các chế độ xem SwiftUI đặc biệt vì chúng tuân theo cùng một bộ hướng dẫn, được gọi là [giao thức](glossary://protocol).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Views..LearningCenterContent..Paragraph37" = "Bằng việc tuân theo các hướng dẫn của giao thức [Chế độ xem](doc://com.apple.documentation/documentation/swiftui/view), một chế độ xem có các khả năng đặc biệt. Một trong những khả năng đó là các chế độ xem đóng vai trò như các [bộ chứa](glossary://container), cho phép bạn đặt các chế độ xem khác bên trong chúng.";
+
+/* Title for task */
+"GuideBook..Guide0..StepSwiftUI Views..TaskplaceOneViewInsideAnother..title" = "Hãy thử đặt một chế độ xem bên trong một chế độ xem khác.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Views..TaskplaceOneViewInsideAnother..Page14..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Views..TaskplaceOneViewInsideAnother..Page14..Paragraph38" = "Trước tiên, hãy thêm một [HStack](doc://com.apple.documentation/documentation/swiftui/hstack), một chế độ xem sắp xếp các [chế độ xem phụ](glossary://subview) theo chiều ngang.";
+
+/*  */
+"GuideBook..Guide0..StepSwiftUI Views..TaskplaceOneViewInsideAnother..Page14..CodeBlock6" = "HStack { \n\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Views..TaskplaceOneViewInsideAnother..Page15..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Views..TaskplaceOneViewInsideAnother..Page15..Paragraph39" = "Tiếp theo, hãy đặt một chế độ xem `Text` hoặc `Image` đơn nhất bên trong `HStack`.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Views..TaskplaceOneViewInsideAnother..Page16..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepSwiftUI Views..TaskplaceOneViewInsideAnother..Page16..CodeBlock7" = "HStack { \n    Text(\"Tôi là một chế độ xem bên trong một chế độ xem.\")\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepSwiftUI Views..TaskaddImageInHStack..title" = "Bây giờ, hãy đặt chế độ xem `Image` của bạn bên trong `HStack`.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Views..TaskaddImageInHStack..Page17..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Views..TaskaddImageInHStack..Page17..Paragraph40" = "Hãy cắt và dán chế độ xem `Image` của bạn vào `HStack`. Khi nhìn vào bản xem trước, bạn sẽ nhìn thấy hai chế độ xem được xếp chồng theo chiều ngang theo thứ tự mà bạn đã chỉ định bên trong `HStack` và hai chế độ xem văn bản được xếp chồng theo chiều dọc bên dưới `HStack`.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Views..TaskaddImageInHStack..Page18..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepSwiftUI Views..TaskaddImageInHStack..Page18..CodeBlock8" = "HStack { \n    Text(\"Tôi là một chế độ xem bên trong một chế độ xem\")\n    Image(\"FriendAndGem\")\n        .resizable()\n        .scaledToFit()\n}\nText(\"Chào các bạn!\")\nText(\"Tôi là một phần tử văn bản mới.\")\n";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepSwiftUI Views..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Views..SuccessMessage..Paragraph41" = "Hãy lưu ý rằng bây giờ bạn nhìn thấy các chế độ xem văn bản và hình ảnh của mình được xếp chồng cạnh nhau. Đó là vì bạn đã đặt những chế độ xem đó trong một chế độ xem [bộ chứa](glossary://container) có tên là `HStack`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Views..SuccessMessage..Paragraph42" = "Tiếp theo, bạn sẽ học thêm nhiều cách để đặt các chế độ xem cùng nhau.";
+
+/* Title of step named Composability */
+"GuideBook..Guide0..StepComposability..title" = "Khả năng biên soạn";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepComposability..LearningCenterContent..Paragraph43" = "![](composability@2x.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepComposability..LearningCenterContent..Paragraph44" = "Vì bạn có thể đặt chế độ xem bên trong chế độ xem khác nên mỗi chế độ xem đóng vai trò như một khối xây dựng để tạo nên các mảng lớn hơn. Việc kết nối các chế độ xem cùng nhau theo cách này được gọi là [tổ hợp](glossary://composition).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepComposability..LearningCenterContent..Paragraph45" = "Tổ hợp cho phép bạn tạo dựng một [giao diện người dùng](glossary://user%20interface) chi tiết cho ứng dụng trong khi vẫn đảm bảo có thể đọc được và có thể hiểu được mã.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepComposability..LearningCenterContent..Paragraph46" = "Tiếp theo, bạn sẽ tạo một [chế độ xem tổ hợp](glossary://composed%20view) để biết cách hoạt động.";
+
+/* Title for task */
+"GuideBook..Guide0..StepComposability..TaskcomposeAView..title" = "Biên soạn một chế độ xem với các ngăn xếp.";
+
+/* title for page */
+"GuideBook..Guide0..StepComposability..TaskcomposeAView..Page19..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepComposability..TaskcomposeAView..Page19..Paragraph47" = "Để biên soạn chế độ xem của bạn, trước tiên hãy thêm một [HStack](doc://com.apple.documentation/documentation/swiftui/hstack) bên trong `VStack` để sắp xếp các [chế độ xem phụ](glossary://subview) của bạn theo chiều ngang.";
+
+/*  */
+"GuideBook..Guide0..StepComposability..TaskcomposeAView..Page19..CodeBlock9" = "HStack { \n\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepComposability..TaskcomposeAView..Page20..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepComposability..TaskcomposeAView..Page20..Paragraph48" = "Tiếp theo, hãy thêm một hình ảnh người bạn của chúng ta vào `HStack` của bạn.";
+
+/*  */
+"GuideBook..Guide0..StepComposability..TaskcomposeAView..Page20..CodeBlock10" = "Image(\"Friend\")\n    .resizable()\n    .scaledToFit()\n";
+
+/* title for page */
+"GuideBook..Guide0..StepComposability..TaskcomposeAView..Page21..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepComposability..TaskcomposeAView..Page21..Paragraph49" = "Nói chung, chế độ xem của bạn hiển thị một chế độ xem `Image` bên trong `HStack`, tất cả bên trong `VStack`.";
+
+/*  */
+"GuideBook..Guide0..StepComposability..TaskcomposeAView..Page21..CodeBlock11" = "VStack { \n    HStack { \n        Image(\"Friend\")\n            .resizable()\n            .scaledToFit()\n    }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepComposability..TaskaddVStackInHStack..title" = "Thêm một `VStack` bên trong một `HStack`.";
+
+/* title for page */
+"GuideBook..Guide0..StepComposability..TaskaddVStackInHStack..Page22..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepComposability..TaskaddVStackInHStack..Page22..Paragraph50" = "Bên trong `HStack` và bên dưới chế độ xem `Image`, hãy thêm một [VStack](doc://com.apple.documentation/documentation/swiftui/vstack) để sắp xếp một số chế độ xem văn bản theo chiều dọc.";
+
+/* title for page */
+"GuideBook..Guide0..StepComposability..TaskaddVStackInHStack..Page23..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepComposability..TaskaddVStackInHStack..Page23..Paragraph51" = "Đây là hình thức của `VStack` khi được đặt bên trong `HStack`:";
+
+/*  */
+"GuideBook..Guide0..StepComposability..TaskaddVStackInHStack..Page23..CodeBlock12" = "HStack { \n    Image(\"Friend\")\n        .resizable()\n        .scaledToFit()\n        \n    VStack { \n    \n    }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepComposability..TaskaddTextInVStack..title" = "Thêm chế độ xem `Text` bên trong `VStack`.";
+
+/* title for page */
+"GuideBook..Guide0..StepComposability..TaskaddTextInVStack..Page24..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepComposability..TaskaddTextInVStack..Page24..Paragraph52" = "Bên trong `VStack` của bạn, hãy tạo một chế độ xem [Văn bản](doc://com.apple.documentation/documentation/swiftui/text) có nội dung “Bạn bè”.";
+
+/* title for page */
+"GuideBook..Guide0..StepComposability..TaskaddTextInVStack..Page25..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepComposability..TaskaddTextInVStack..Page25..Paragraph53" = "Để làm cho phông chữ lớn hơn một chút, hãy thêm trình sửa đổi `.font` vào chế độ xem `Text` và chuyển `.largeTitle` vào dưới dạng đối số.";
+
+/* title for page */
+"GuideBook..Guide0..StepComposability..TaskaddTextInVStack..Page26..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepComposability..TaskaddTextInVStack..Page26..CodeBlock13" = "Text(\"Bạn bè\")\n    .font(.largeTitle)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepComposability..TaskdescribeFriend..title" = "Thêm một chế độ xem `Text` khác bên dưới chế độ xem thứ nhất để mô tả người bạn của chúng ta.";
+
+/* title for page */
+"GuideBook..Guide0..StepComposability..TaskdescribeFriend..Page27..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepComposability..TaskdescribeFriend..Page27..Paragraph54" = "Thêm một chế độ xem `Text` thứ hai bên dưới chế độ xem đầu tiên trong `VStack` để bạn có thể cung cấp mô tả cho người bạn của chúng ta.";
+
+/* title for page */
+"GuideBook..Guide0..StepComposability..TaskdescribeFriend..Page28..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepComposability..TaskdescribeFriend..Page28..Paragraph55" = "Để tùy chỉnh phông chữ của chế độ xem văn bản này, hãy thêm trình sửa đổi `.font` và chuyển `.caption` vào dưới dạng đối số.";
+
+/* title for page */
+"GuideBook..Guide0..StepComposability..TaskdescribeFriend..Page29..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepComposability..TaskdescribeFriend..Page29..Paragraph56" = "Chế độ xem `Text` thứ hai của bạn xuất hiện bên dưới chế độ xem thứ nhất và mã sẽ trông giống như sau.";
+
+/*  */
+"GuideBook..Guide0..StepComposability..TaskdescribeFriend..Page29..CodeBlock14" = "Text(\"Giáo viên tốt nhất của SwiftUI ở phía bên này của Dải Ngân Hà!\")\n    .font(.caption)\n\n";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepComposability..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepComposability..SuccessMessage..Paragraph57" = "Chúc mừng, bạn vừa tạo được một [chế độ xem tổ hợp](glossary://composed%20view).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepComposability..SuccessMessage..Paragraph58" = "Chế độ xem tổ hợp, ví dụ như `FriendDetailView`, có thể được sử dụng bên trong bất kỳ chế độ xem SwiftUI nào khác, cho phép bạn sử dụng lại các mảng chung của [UI](glossary://user%20interface) trong các ứng dụng mà bạn xây dựng.";
+
+/* Title of step named Experiment with SwiftUI */
+"GuideBook..Guide0..StepExperiment with SwiftUI..title" = "Thử nghiệm với SwiftUI";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepExperiment with SwiftUI..LearningCenterContent..Paragraph59" = "![](experiment-with-swiftui@2x.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepExperiment with SwiftUI..LearningCenterContent..Paragraph60" = "Bây giờ bạn đã biết các khái niệm cơ bản về SwiftUI, đã đến lúc thử nghiệm một chút.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepExperiment with SwiftUI..LearningCenterContent..Paragraph61" = "Hãy cố gắng sử dụng tất cả những gì bạn đã học được về SwiftUI để tạo ra một [UI](glossary://user%20interface) mô tả dàn nhân vật của Học cách viết mã.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepExperiment with SwiftUI..LearningCenterContent..Paragraph62" = "Để bắt đầu, hãy sử dụng `FriendDetailView` mà bạn đã biên soạn.";
+
+/* Title for task */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateDetailView..title" = "Tạo ra một thể hiện của `FriendDetailView`.";
+
+/* title for page */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateDetailView..Page30..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateDetailView..Page30..Paragraph63" = "Khởi chạy `FriendDetailView` để xem [chế độ xem tổ hợp](glossary://composed%20view) của bạn ở bên trong của `ExperimentView`.";
+
+/*  */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateDetailView..Page30..CodeBlock15" = "FriendDetailView()\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateBluView..title" = "Bây giờ, hãy tạo một chế độ xem tương tự bằng hình ảnh của Blu.";
+
+/* title for page */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateBluView..Page31..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateBluView..Page31..Paragraph64" = "Đã đến lúc kiểm tra các kỹ năng SwiftUI của bạn. Hãy tạo ra một chế độ xem tương tự như `FriendDetailView` bằng hình ảnh và mô tả của Blu. Bạn có thể xếp chồng chế độ xem này theo chiều dọc, bên dưới `FriendDetailView`.";
+
+/* title for page */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateBluView..Page32..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateBluView..Page32..Paragraph65" = "Bắt đầu bằng cách tạo ra một `HStack` và đặt hình ảnh của Blu ở bên trong đó:";
+
+/*  */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateBluView..Page32..CodeBlock16" = "HStack { \n    Image(\"Blu\")\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateBluView..Page33..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateBluView..Page33..Paragraph66" = "Tiếp theo, hãy thêm hai [trình sửa đổi](glossary://modifier) vào chế độ xem `Image`. Hãy sử dụng `.resizable()` để hình ảnh có thể thay đổi kích cỡ và `.scaledToFit` để hình ảnh định cỡ lại để vừa bên trong chế độ xem.";
+
+/* title for page */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateBluView..Page34..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateBluView..Page34..Paragraph67" = "Bây giờ, bạn sẽ cần thêm văn bản. Để sắp xếp hai chế độ xem văn bản theo chiều dọc, hãy thêm một `VStack` bên trong một `HStack`.";
+
+/* title for page */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateBluView..Page35..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateBluView..Page35..Paragraph68" = "Cuối cùng, hãy thêm hai chế độ xem `Text` bên trong `VStack`. Hãy thêm trình sửa đổi `.font` vào mỗi chế độ xem văn bản để chúng sử dụng đúng kiểu phông chữ.";
+
+/* title for page */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateBluView..Page36..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateBluView..Page36..Paragraph69" = "Mã của bạn cho chế độ xem của Blu có thể trông giống như sau:";
+
+/*  */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateBluView..Page36..CodeBlock17" = "HStack { \n    Image(\"Blu\")\n        .resizable()\n        .scaledToFit()\n\n    VStack { \n        Text(\"Blu\")\n            .font(.largeTitle)\n        \n        Text(\"Một giọt nước mạnh mẽ, yêu thích những đám mây và không có gì để mất.\")\n            .font(.caption)\n    }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateHopperView..title" = "Bây giờ, hãy tạo một chế độ xem tương tự bằng hình ảnh của Hopper.";
+
+/* title for page */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateHopperView..Page37..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateHopperView..Page37..Paragraph70" = "Thử biên soạn một chế độ xem nữa bằng hình ảnh và mô tả của Hopper. Chỉ trong lần này, hãy dành thời gian để thử nghiệm, tạo bố cục văn bản và hình ảnh theo nhiều cách khác nhau. Hãy thử hoán đổi `HStack` và `VStack` của bạn hoặc thêm một ngăn xếp bổ sung để xem bố cục của bạn thay đổi như thế nào.";
+
+/*  */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateHopperView..Page37..CodeBlock18" = "Image(\"Hopper\")\n";
+
+/* title for page */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateHopperView..Page38..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateHopperView..Page38..Paragraph71" = "Hãy thử tự mình tạo ra chế độ xem này, sử dụng các chế độ xem cho người bạn của chúng ta và Blu làm nguồn cảm hứng. Hãy thử các bố cục mới bằng cách kết hợp các chế độ xem `HStack`, `VStack`, `Text` và `Image` theo nhiều cách khác nhau.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateHopperView..Page38..Paragraph72" = "Ví dụ: bạn có thể thử tạo ngăn xếp hình ảnh của Hopper theo chiều dọc lên trên hai chế độ xem `Text` được sắp xếp theo chiều ngang.";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepExperiment with SwiftUI..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepExperiment with SwiftUI..SuccessMessage..Paragraph73" = "Bây giờ bạn đã biết một số khái niệm cơ bản, hãy thử tạo ra ứng dụng của riêng mình bằng cách xây dựng một [UI](glossary://user%20interface) bằng các chế độ xem SwiftUI.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepExperiment with SwiftUI..SuccessMessage..Paragraph74" = "Để thử nghiệm một số kỹ năng mới học được của bạn, hãy xem phần [Giới thiệu về tôi](x-com-apple-playgrounds://projects?contentId=com.apple.playgrounds.aboutme) và [Sắp xếp với các lưới](x-com-apple-playgrounds://projects?contentId=com.apple.playgrounds.organizingwithgrids) để điều chỉnh mã và biến chúng thành của riêng bạn.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepExperiment with SwiftUI..SuccessMessage..Paragraph75" = "Để tiếp tục học các khái niệm cơ bản của SwiftUI, hãy chuyển sang phần [Tiếp tục với các ứng dụng](x-com-apple-playgrounds://projects?contentId=com.apple.playgrounds.keepgoingwithapps) để tiếp tục hành trình xây dựng ứng dụng của bạn.";
+

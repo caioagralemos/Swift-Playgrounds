@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Guide.TaskState</key>
+	<dict>
+		<key>completedTaskIDs</key>
+		<array>
+			<string>addVStackInHStack</string>
+			<string>composeAView</string>
+			<string>textElement</string>
+			<string>changeText</string>
+			<string>createHopperView</string>
+			<string>addFriend</string>
+			<string>createBluView</string>
+			<string>modifierWalkthrough</string>
+			<string>addImageInHStack</string>
+			<string>addTextInVStack</string>
+			<string>describeFriend</string>
+			<string>createDetailView</string>
+			<string>getStartedWithApps</string>
+			<string>modifier</string>
+			<string>placeOneViewInsideAnother</string>
+		</array>
+		<key>hasSeenIntro</key>
+		<false/>
+		<key>pageIDsWithRevealedSolutions</key>
+		<dict>
+			<key>addImageInHStack</key>
+			<array>
+				<string>solution</string>
+			</array>
+			<key>createBluView</key>
+			<array>
+				<string>addAnHStackInside</string>
+			</array>
+			<key>describeFriend</key>
+			<array>
+				<string>addDescription</string>
+			</array>
+			<key>placeOneViewInsideAnother</key>
+			<array>
+				<string>solution</string>
+			</array>
+		</dict>
+		<key>stepIndex</key>
+		<integer>0</integer>
+		<key>successMessageShowing</key>
+		<false/>
+		<key>taskID</key>
+		<string>$null</string>
+	</dict>
+</dict>
+</plist>

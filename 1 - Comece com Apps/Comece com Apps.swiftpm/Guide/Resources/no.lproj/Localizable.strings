@@ -1,0 +1,489 @@
+/* Title of Guidebook */
+"GuideBook..title" = "Kom i gang med apper";
+
+/* Title of step named Get Started with Apps */
+"GuideBook..Guide0..StepGet Started with Apps..title" = "Kom i gang med apper";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepGet Started with Apps..LearningCenterContent..Paragraph0" = "![](get-started-with-apps@2x.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepGet Started with Apps..LearningCenterContent..Paragraph1" = "I denne opplæringen lærer du det grunnleggende for å bruke SwiftUI til å lage apper.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepGet Started with Apps..LearningCenterContent..Paragraph2" = "[SwiftUI](glossary://SwiftUI) er en ny måte å kode apper på – enklere og raskere enn noensinne. SwiftUI-kode skrives i programmeringsspråket [Swift](glossary://Swift).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepGet Started with Apps..LearningCenterContent..Paragraph3" = "Når du har fullført Kom i gang med apper, kan du gå videre til [Fortsett med apper](x-com-apple-playgrounds://projects?contentId=com.apple.playgrounds.keepgoingwithapps) for å lære enda mer om SwiftUI.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepGet Started with Apps..LearningCenterContent..Paragraph4" = "Det første skrittet for å lære SwiftUI er å forstå hvordan en SwiftUI-fil fungerer.";
+
+/* Title for task */
+"GuideBook..Guide0..StepGet Started with Apps..TaskgetStartedWithApps..title" = "Velkommen til SwiftUI";
+
+/* title for page */
+"GuideBook..Guide0..StepGet Started with Apps..TaskgetStartedWithApps..Page0..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepGet Started with Apps..TaskgetStartedWithApps..Page0..Paragraph5" = "I en SwiftUI-fil vises kodens utdata automatisk i forhåndsvisningen til høyre. Koden i denne filen lager teksten \"Hello, friend.\"";
+
+/* title for page */
+"GuideBook..Guide0..StepGet Started with Apps..TaskgetStartedWithApps..Page1..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepGet Started with Apps..TaskgetStartedWithApps..Page1..Paragraph6" = "I filen ser du navnet på [visningen](glossary://view) du ser på. Her ser du på visningen som heter `IntroView`.";
+
+/* title for page */
+"GuideBook..Guide0..StepGet Started with Apps..TaskgetStartedWithApps..Page2..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepGet Started with Apps..TaskgetStartedWithApps..Page2..Paragraph7" = "I `IntroView`, ser du en [egenskap](glossary://property) med navnet `body`. Det er i [visningsinnholdet](glossary://body) du begynner å skrive SwiftUI-kode.";
+
+/* title for page */
+"GuideBook..Guide0..StepGet Started with Apps..TaskgetStartedWithApps..Page3..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepGet Started with Apps..TaskgetStartedWithApps..Page3..Paragraph8" = "I `body` ser du en [Text](doc://com.apple.documentation/documentation/swiftui/text)-visning med teksten «Hello, friend.» i forhåndsvisningen.";
+
+/* title for page */
+"GuideBook..Guide0..StepGet Started with Apps..TaskgetStartedWithApps..Page4..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepGet Started with Apps..TaskgetStartedWithApps..Page4..Paragraph9" = "Apropos forhåndsvisningen er dette koden som genererer `IntroView`-forhåndsvisningen. Du kommer til å se liknende kode under mange forhåndsvisninger, slik at det blir enklere å visualisere koden du skriver.";
+
+/* Title for task */
+"GuideBook..Guide0..StepGet Started with Apps..TaskchangeText..title" = "Prøv å endre teksten til noe annet.";
+
+/* title for page */
+"GuideBook..Guide0..StepGet Started with Apps..TaskchangeText..PageNow, try changing the text to something new..title" = "Prøv å endre teksten til noe annet.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepGet Started with Apps..TaskchangeText..PageNow, try changing the text to something new...Paragraph10" = "Endre teksten `\"Hello, friend.\"` til noe annet.";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepGet Started with Apps..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepGet Started with Apps..SuccessMessage..Paragraph11" = "Når du endrer koden, oppdateres forhåndsvisningen automatisk, slik at du ser hva du har endret. Ganske praktisk, ikke sant?";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepGet Started with Apps..SuccessMessage..Paragraph12" = "Nå skal du prøve å lage en ny visning fra bunnen av.";
+
+/* Title of step named Creating New SwiftUI Views */
+"GuideBook..Guide0..StepCreating New SwiftUI Views..title" = "Opprett nye SwiftUI-visninger";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreating New SwiftUI Views..LearningCenterContent..Paragraph13" = "![](creating-new-swiftui-views@2x.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreating New SwiftUI Views..LearningCenterContent..Paragraph14" = "Når du oppretter en SwiftUI-[visning](glossary://view), for eksempel [Text](doc://com.apple.documentation/documentation/swiftui/text), oppretter du egentlig en ny [instans](glossary://instance) av den [typen](glossary://type).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreating New SwiftUI Views..LearningCenterContent..Paragraph15" = "Du bruker mange forskjellige SwiftUI-typer for å opprette de visuelle elementene i appen, som knapper, skyveknapper og tekst. Her er to eksempler:";
+
+/*  */
+"GuideBook..Guide0..StepCreating New SwiftUI Views..LearningCenterContent..CodeBlock0" = "Text(\"I’m a Text view!\")\n\nImage(\"imAnImageView\")\n";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreating New SwiftUI Views..LearningCenterContent..Paragraph16" = "Du må [initialisere](glossary://initialization) hver av disse typene uten å opprette en [variabel](glossary://variable), slik at du kan holde oversikten over dem.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreating New SwiftUI Views..LearningCenterContent..Paragraph17" = "Det er slik fordi SwiftUI-visninger er utformet slik at de ikke lagrer data om seg selv. I stedet for å lagre visningens [egenskaper](glossary://property) ved hjelp av en variabel, vil data om visningen holdes [adskilt fra selve visningen](glossary://data%20separation).";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreating New SwiftUI Views..TasktextElement..title" = "Legg til en ny `Text`-visning i `IntroView`.";
+
+/* title for page */
+"GuideBook..Guide0..StepCreating New SwiftUI Views..TasktextElement..Page5..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreating New SwiftUI Views..TasktextElement..Page5..Paragraph18" = "Plasser pekeren i [visningsinnholdet](glossary://body), og begynn å skrive «Text» i koderedigereren. Kodefullføringen viser en liste med forslag. Velg `Text` fra nedtrekksmenyen.";
+
+/* title for page */
+"GuideBook..Guide0..StepCreating New SwiftUI Views..TasktextElement..Page6..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreating New SwiftUI Views..TasktextElement..Page6..Paragraph19" = "Overfør en [String](glossary://String) som et [argument](glossary://argument) til `Text`. Det skal ligne på dette.";
+
+/*  */
+"GuideBook..Guide0..StepCreating New SwiftUI Views..TasktextElement..Page6..CodeBlock1" = "Text(\"This is a string!\")\n";
+
+/* title for page */
+"GuideBook..Guide0..StepCreating New SwiftUI Views..TasktextElement..Page7..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepCreating New SwiftUI Views..TasktextElement..Page7..CodeBlock2" = "Text(\"I’m a new Text element.\")\n";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepCreating New SwiftUI Views..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreating New SwiftUI Views..SuccessMessage..Paragraph20" = "Vanligvis bruker du en [variabel](glossary://variable) for å lagre en verdi som du kan bruke og endre senere: `var textView = Text(\"Hola\")`";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreating New SwiftUI Views..SuccessMessage..Paragraph21" = "I SwiftUI endrer du ikke visningsinstanser andre steder enn på linjen der de lages, så du kan initialisere visningen på stedet: `Text(\"Hola\")`";
+
+/* Title of step named Modifying SwiftUI Views */
+"GuideBook..Guide0..StepModifying SwiftUI Views..title" = "Endre SwiftUI-visninger";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying SwiftUI Views..LearningCenterContent..Paragraph22" = "![](modifying-swift-ui-views@2x.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying SwiftUI Views..LearningCenterContent..Paragraph23" = "Alle SwiftUI-[visningene](glossary://view) du oppretter, er veldig allsidige, og de kan endres.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying SwiftUI Views..LearningCenterContent..Paragraph24" = "Hvis du vil endre utseendet eller oppførselen til en visning, kan du endre disse [instansene](glossary://instance) direkte ved å kalle [metodene](glossary://method) deres.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying SwiftUI Views..LearningCenterContent..Paragraph25" = "Disse metodene har sitt eget navn i SwiftUI. De kalles [modifikatorer](glossary://modifier). I den neste oppgaven skal du prøve å legge til noen modifikatorer for å se hvordan de endrer utseendet til en bildevisning.";
+
+/* Title for task */
+"GuideBook..Guide0..StepModifying SwiftUI Views..TaskaddFriend..title" = "Legg til et bilde av vennen vår.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying SwiftUI Views..TaskaddFriend..Page8..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying SwiftUI Views..TaskaddFriend..Page8..Paragraph26" = "Først oppretter du en [Image](doc://com.apple.documentation/documentation/swiftui/image)-visning og overfører `\"FriendAndGem\"` som et [argument](glossary://argument).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying SwiftUI Views..TaskaddFriend..Page8..Paragraph27" = "Du kommer også til å legge til en [modifikator](glossary://modifier), `.resizable`, slik at bildet kan endre den opprinnelige størrelsen.";
+
+/*  */
+"GuideBook..Guide0..StepModifying SwiftUI Views..TaskaddFriend..Page8..CodeBlock3" = "Image(\"FriendAndGem\")\n    .resizable()\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepModifying SwiftUI Views..Taskmodifier..title" = "Legg til en annen modifikator for å skalere vennen vår, slik at han passer.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying SwiftUI Views..Taskmodifier..Page9..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying SwiftUI Views..Taskmodifier..Page9..Paragraph28" = "Oi! Nå har vennen vår blitt lang! Det kan du ordne ved å legge til en annen modifikator.";
+
+/*  */
+"GuideBook..Guide0..StepModifying SwiftUI Views..Taskmodifier..Page9..CodeBlock4" = "    .scaledToFit()\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepModifying SwiftUI Views..TaskmodifierWalkthrough..title" = "Bildemodifikatorer";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying SwiftUI Views..TaskmodifierWalkthrough..Page10..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying SwiftUI Views..TaskmodifierWalkthrough..Page10..Paragraph29" = "Legg merke til at [Image](doc://com.apple.documentation/documentation/swiftui/image)-visningen har to [modifikatorer](glossary://modifier), som begge kalles ved hjelp av [punktnotasjon](glossary://dot%20notation).";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying SwiftUI Views..TaskmodifierWalkthrough..Page11..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying SwiftUI Views..TaskmodifierWalkthrough..Page11..Paragraph30" = "SwiftUI gjør det enklere å lese modifikatorene ved å plassere hver modifikator på sin egen linje, selv om de alle modifiserer samme `Image`-instans. Dette kan også skrives som:";
+
+/*  */
+"GuideBook..Guide0..StepModifying SwiftUI Views..TaskmodifierWalkthrough..Page11..CodeBlock5" = "Image(\"FriendAndGem\").resizable().scaledToFit()\n";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying SwiftUI Views..TaskmodifierWalkthrough..Page12..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying SwiftUI Views..TaskmodifierWalkthrough..Page12..Paragraph31" = "Den første modifikatoren, `.resizable()`, gjør at bildet kan endre størrelse. Prøv å fjerne denne modifikatoren midlertidig, og legg merke til hvordan bildet endres. Uten `.resizable()`-modifikatoren kan bildet bare gjengis i opprinnelig størrelse, og det kan ikke skaleres opp eller ned etter plassen som er tilgjengelig.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying SwiftUI Views..TaskmodifierWalkthrough..Page13..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying SwiftUI Views..TaskmodifierWalkthrough..Page13..Paragraph32" = "Den andre modifikatoren, `.scaledToFit()`, gjør at bildet kan skaleres for å passe i beholderen det vises i. Prøv å endre den til `.scaledToFill()` midlertidig. Ser du forskjellen? Bytt tilbake til `.scaledToFit()` før du fortsetter.";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepModifying SwiftUI Views..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying SwiftUI Views..SuccessMessage..Paragraph33" = "Nå som du kan litt om å lage og endre SwiftUI-visninger, kan du prøve å kombinere kunnskapen din.";
+
+/* Title of step named SwiftUI Views */
+"GuideBook..Guide0..StepSwiftUI Views..title" = "SwiftUI-visninger";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Views..LearningCenterContent..Paragraph34" = "![](swift-ui-views@2x.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Views..LearningCenterContent..Paragraph35" = "Alle synlige elementer du ser i forhåndsvisningen, som tekst, bilder og knapper, er SwiftUI-[visninger](glossary://view).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Views..LearningCenterContent..Paragraph36" = "SwiftUI-visninger er spesielle fordi de følger det samme settet med retningslinjer, kalt en [protokoll](glossary://protocol).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Views..LearningCenterContent..Paragraph37" = "Ved å følge retningslinjene for [View](doc://com.apple.documentation/documentation/swiftui/view)-protokollen for en visning spesielle funksjoner. En av funksjonene er at visningene oppfører seg som [beholdere](glossary://container), slik at du kan plassere andre visninger i dem.";
+
+/* Title for task */
+"GuideBook..Guide0..StepSwiftUI Views..TaskplaceOneViewInsideAnother..title" = "Prøv å plassere en visning i en annen visning.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Views..TaskplaceOneViewInsideAnother..Page14..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Views..TaskplaceOneViewInsideAnother..Page14..Paragraph38" = "Legg først til en [HStack](doc://com.apple.documentation/documentation/swiftui/hstack), som er en visning som organiserer [delvisninger](glossary://subview) horisontalt.";
+
+/*  */
+"GuideBook..Guide0..StepSwiftUI Views..TaskplaceOneViewInsideAnother..Page14..CodeBlock6" = "HStack { \n\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Views..TaskplaceOneViewInsideAnother..Page15..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Views..TaskplaceOneViewInsideAnother..Page15..Paragraph39" = "Deretter plasserer du én `Text`- eller `Image`-visning i `HStack`.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Views..TaskplaceOneViewInsideAnother..Page16..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepSwiftUI Views..TaskplaceOneViewInsideAnother..Page16..CodeBlock7" = "HStack { \n    Text(\"I’m a view inside a view.\")\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepSwiftUI Views..TaskaddImageInHStack..title" = "Nå plasserer du `Image`-visningen i `HStack`.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Views..TaskaddImageInHStack..Page17..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Views..TaskaddImageInHStack..Page17..Paragraph40" = "Klipp ut og lim inn `Image`-visningen til `HStack`. Når du ser på forhåndsvisningen, ser du to visninger stablet horisontalt i den rekkefølgen du har angitt i `HStack`, og to tekstvisninger stablet vertikalt under `HStack`.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Views..TaskaddImageInHStack..Page18..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepSwiftUI Views..TaskaddImageInHStack..Page18..CodeBlock8" = "HStack { \n    Text(\"I\'m a view inside a view\")\n    Image(\"FriendAndGem\")\n        .resizable()\n        .scaledToFit()\n}\nText(\"Hello there!\")\nText(\"I’m a new Text element.\")\n";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepSwiftUI Views..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Views..SuccessMessage..Paragraph41" = "Nå ser du tekst- og bildevisningene stablet ved siden av hverandre. Dette er fordi du har plassert visningene i en [beholder](glossary://container)-visning som kalles `HStack`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Views..SuccessMessage..Paragraph42" = "Nå skal du lære flere måter å kombinere visninger på.";
+
+/* Title of step named Composability */
+"GuideBook..Guide0..StepComposability..title" = "Kombinerbarhet";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepComposability..LearningCenterContent..Paragraph43" = "![](composability@2x.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepComposability..LearningCenterContent..Paragraph44" = "Siden du kan plassere visninger i andre visninger, fungerer hver visning som en byggekloss for å lage større deler. Når du setter sammen visninger på denne måten, kalles det en [komposisjon](glossary://composition).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepComposability..LearningCenterContent..Paragraph45" = "Med komposisjoner kan du lage et detaljert [brukergrensesnitt](glossary://user%20interface) for appen din, samtidig som koden blir lett å både lese og forstå.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepComposability..LearningCenterContent..Paragraph46" = "Deretter lager du en [sammenstilt visning](glossary://composed%20view) for å se hvordan den fungerer.";
+
+/* Title for task */
+"GuideBook..Guide0..StepComposability..TaskcomposeAView..title" = "Sammenstille en visning med stabler.";
+
+/* title for page */
+"GuideBook..Guide0..StepComposability..TaskcomposeAView..Page19..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepComposability..TaskcomposeAView..Page19..Paragraph47" = "For å sammenstille visningen legger du først til en [HStack](doc://com.apple.documentation/documentation/swiftui/hstack) i `VStack` for å organisere [delvisninger](glossary://subview) horisontalt.";
+
+/*  */
+"GuideBook..Guide0..StepComposability..TaskcomposeAView..Page19..CodeBlock9" = "HStack { \n\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepComposability..TaskcomposeAView..Page20..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepComposability..TaskcomposeAView..Page20..Paragraph48" = "Deretter legger du til et bilde av vennen vår i `HStack`.";
+
+/*  */
+"GuideBook..Guide0..StepComposability..TaskcomposeAView..Page20..CodeBlock10" = "Image(\"Friend\")\n    .resizable()\n    .scaledToFit()\n";
+
+/* title for page */
+"GuideBook..Guide0..StepComposability..TaskcomposeAView..Page21..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepComposability..TaskcomposeAView..Page21..Paragraph49" = "Nå inneholder visningen en `Image`-visning i `HStack`, som ligger i `VStack`.";
+
+/*  */
+"GuideBook..Guide0..StepComposability..TaskcomposeAView..Page21..CodeBlock11" = "VStack { \n    HStack { \n        Image(\"Friend\")\n            .resizable()\n            .scaledToFit()\n    }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepComposability..TaskaddVStackInHStack..title" = "Legge til en `VStack` i en `HStack`.";
+
+/* title for page */
+"GuideBook..Guide0..StepComposability..TaskaddVStackInHStack..Page22..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepComposability..TaskaddVStackInHStack..Page22..Paragraph50" = "I `HStack`, og under `Image`-visningen, legger du til en [VStack](doc://com.apple.documentation/documentation/swiftui/vstack) for å organisere noen tekstvisninger vertikalt.";
+
+/* title for page */
+"GuideBook..Guide0..StepComposability..TaskaddVStackInHStack..Page23..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepComposability..TaskaddVStackInHStack..Page23..Paragraph51" = "Slik ser `VStack` ut når den er plassert i `HStack`:";
+
+/*  */
+"GuideBook..Guide0..StepComposability..TaskaddVStackInHStack..Page23..CodeBlock12" = "HStack { \n    Image(\"Friend\")\n        .resizable()\n        .scaledToFit()\n        \n    VStack { \n    \n    }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepComposability..TaskaddTextInVStack..title" = "Legge til en `Text`-visning i `VStack`.";
+
+/* title for page */
+"GuideBook..Guide0..StepComposability..TaskaddTextInVStack..Page24..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepComposability..TaskaddTextInVStack..Page24..Paragraph52" = "Lag en [Text](doc://com.apple.documentation/documentation/swiftui/text)-visning som sier «Friend» i `VStack`.";
+
+/* title for page */
+"GuideBook..Guide0..StepComposability..TaskaddTextInVStack..Page25..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepComposability..TaskaddTextInVStack..Page25..Paragraph53" = "Hvis du vil gjøre fonten litt større, legger du til `.font`-modifikatoren i `Text`-visningen og overfører `.largeTitle` som argument.";
+
+/* title for page */
+"GuideBook..Guide0..StepComposability..TaskaddTextInVStack..Page26..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepComposability..TaskaddTextInVStack..Page26..CodeBlock13" = "Text(\"Friend\")\n    .font(.largeTitle)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepComposability..TaskdescribeFriend..title" = "Legge til en ny `Text`-visning under den første for å beskrive vennen vår.";
+
+/* title for page */
+"GuideBook..Guide0..StepComposability..TaskdescribeFriend..Page27..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepComposability..TaskdescribeFriend..Page27..Paragraph54" = "Legg til en ny `Text`-visning under den første i `VStack`, slik at du kan gi vennen vår en beskrivelse.";
+
+/* title for page */
+"GuideBook..Guide0..StepComposability..TaskdescribeFriend..Page28..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepComposability..TaskdescribeFriend..Page28..Paragraph55" = "Legg til `.font`-modifikatoren og overfør `.caption` som argument for å endre fonten for denne tekstvisningen.";
+
+/* title for page */
+"GuideBook..Guide0..StepComposability..TaskdescribeFriend..Page29..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepComposability..TaskdescribeFriend..Page29..Paragraph56" = "Den andre `Text`-visningen vises under den første, og koden skal se omtrent slik ut:";
+
+/*  */
+"GuideBook..Guide0..StepComposability..TaskdescribeFriend..Page29..CodeBlock14" = "Text(\"The best teacher of SwiftUI this side of the Milky Way!\")\n    .font(.caption)\n\n";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepComposability..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepComposability..SuccessMessage..Paragraph57" = "Gratulerer! Du har opprettet en [sammenstilt visning](glossary://composed%20view).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepComposability..SuccessMessage..Paragraph58" = "En sammenstilt visning, for eksempel `FriendDetailView`, kan brukes i alle andre SwiftUI-visninger, slik at du kan gjenbruke deler av [brukergrensesnittet](glossary://user%20interface) i appene du lager.";
+
+/* Title of step named Experiment with SwiftUI */
+"GuideBook..Guide0..StepExperiment with SwiftUI..title" = "Eksperimenter med SwiftUI";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepExperiment with SwiftUI..LearningCenterContent..Paragraph59" = "![](experiment-with-swiftui@2x.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepExperiment with SwiftUI..LearningCenterContent..Paragraph60" = "Nå som du har lært det grunnleggende i SwiftUI, er det på tide å eksperimentere litt.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepExperiment with SwiftUI..LearningCenterContent..Paragraph61" = "Prøv å bruke alt du har lært om SwiftUI, til å lage et [brukergrensesnitt](glossary://user%20interface) som beskriver Learn to Code-karakterene.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepExperiment with SwiftUI..LearningCenterContent..Paragraph62" = "Start med å bruke `FriendDetailView` som du allerede har laget.";
+
+/* Title for task */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateDetailView..title" = "Opprett en instans av `FriendDetailView`.";
+
+/* title for page */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateDetailView..Page30..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateDetailView..Page30..Paragraph63" = "Initialiser `FriendDetailView` for å se den [sammenstilte visningen](glossary://composed%20view) i `ExperimentView`.";
+
+/*  */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateDetailView..Page30..CodeBlock15" = "FriendDetailView()\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateBluView..title" = "Opprett en lignende visning med Blus bilde.";
+
+/* title for page */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateBluView..Page31..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateBluView..Page31..Paragraph64" = "Nå er det på tide å teste SwiftUI-kunnskapen din. Lag en visning som ligner på `FriendDetailView`, ved å bruke Blus bilde og beskrivelse. Du kan stable denne visningen vertikalt under `FriendDetailView`.";
+
+/* title for page */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateBluView..Page32..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateBluView..Page32..Paragraph65" = "Start med å lage en `HStack` og plassere Blus bilde i den:";
+
+/*  */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateBluView..Page32..CodeBlock16" = "HStack { \n    Image(\"Blu\")\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateBluView..Page33..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateBluView..Page33..Paragraph66" = "Deretter legger du til to [modifikatorer](glossary://modifier) i `Image`-visningen. Bruk `.resizable()`, slik at bildet kan endre størrelse, og `.scaledToFit`, slik at det tilpasses størrelsen på visningen.";
+
+/* title for page */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateBluView..Page34..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateBluView..Page34..Paragraph67" = "Nå må du legge til teksten. Legg til en `VStack` i `HStack` for å organisere de to tekstvisningene vertikalt.";
+
+/* title for page */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateBluView..Page35..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateBluView..Page35..Paragraph68" = "Til slutt legger du til to `Text`-visninger i `VStack`. Legg til `.font`-modifikatoren for hver tekstvisning, slik at de bruker riktig fontstil.";
+
+/* title for page */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateBluView..Page36..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateBluView..Page36..Paragraph69" = "Koden for Blus visning kan for eksempel se slik ut:";
+
+/*  */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateBluView..Page36..CodeBlock17" = "HStack { \n    Image(\"Blu\")\n        .resizable()\n        .scaledToFit()\n\n    VStack { \n        Text(\"Blu\")\n            .font(.largeTitle)\n        \n        Text(\"A fierce, cloud-loving water droplet with nothing to lose.\")\n            .font(.caption)\n    }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateHopperView..title" = "Nå skal du lage en lignende visning ved hjelp av Hoppers bilde.";
+
+/* title for page */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateHopperView..Page37..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateHopperView..Page37..Paragraph70" = "Prøv å lage en ekstra visning ved hjelp av Hoppers bilde og beskrivelse, men denne gangen kan du bruke litt tid på å eksperimentere med å plassere teksten og bildene på forskjellige måter. Prøv å bytte `HStack` og `VStack` eller å legge til en ekstra stabel for å se hvordan det påvirker layouten.";
+
+/*  */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateHopperView..Page37..CodeBlock18" = "Image(\"Hopper\")\n";
+
+/* title for page */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateHopperView..Page38..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateHopperView..Page38..Paragraph71" = "Prøv å lage denne visningen selv ved å bruke visningene for vennen vår og Blu som inspirasjon. Prøv nye layouter ved å kombinere visningene `HStack`, `VStack`, `Text` og `Image` på forskjellige måter.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepExperiment with SwiftUI..TaskcreateHopperView..Page38..Paragraph72" = "Du kan for eksempel forsøke å stable Hoppers bilde vertikalt over to `Text`-visninger horisontalt.";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepExperiment with SwiftUI..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepExperiment with SwiftUI..SuccessMessage..Paragraph73" = "Nå som du kan en del av det grunnleggende, kan du prøve å lage din egen app ved å bygge et [brukergrensesnitt](glossary://user%20interface) ved hjelp av SwiftUI-visninger.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepExperiment with SwiftUI..SuccessMessage..Paragraph74" = "Du kan prøve kunnskapen din ved å åpne [Om meg](x-com-apple-playgrounds://projects?contentId=com.apple.playgrounds.aboutme) og [Organizing with Grids](x-com-apple-playgrounds://projects?contentId=com.apple.playgrounds.organizingwithgrids) for å tilpasse koden og gjøre den til din egen.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepExperiment with SwiftUI..SuccessMessage..Paragraph75" = "Lær mer om de grunnleggende funksjonene i SwiftUI i [Fortsett med apper](x-com-apple-playgrounds://projects?contentId=com.apple.playgrounds.keepgoingwithapps), der du jobber videre med å lage apper.";
+

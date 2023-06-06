@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Guide.TaskState</key>
+	<dict>
+		<key>completedTaskIDs</key>
+		<array>
+			<string>home</string>
+			<string>trustYourVoice</string>
+			<string>homeView</string>
+			<string>funFactsExperiment</string>
+			<string>addATab</string>
+			<string>contentView</string>
+			<string>favoritesView</string>
+			<string>funFactsView</string>
+			<string>yourTab</string>
+			<string>storyView</string>
+			<string>bestBetter</string>
+		</array>
+		<key>hasSeenIntro</key>
+		<false/>
+		<key>pageIDsWithRevealedSolutions</key>
+		<dict/>
+		<key>stepIndex</key>
+		<integer>0</integer>
+		<key>successMessageShowing</key>
+		<false/>
+		<key>taskID</key>
+		<string>$null</string>
+	</dict>
+</dict>
+</plist>

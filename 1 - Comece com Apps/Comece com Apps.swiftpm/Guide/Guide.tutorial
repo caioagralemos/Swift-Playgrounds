@@ -1,0 +1,370 @@
+@GuideBook(title: "Get Started with Apps", icon: title.png, background: titleBackground.png, firstFile: IntroView.swift) {
+    @Guide {
+        @Step(title: "Get Started with Apps") {
+            @ContentAndMedia {
+                ![](get-started-with-apps@2x.png)
+
+                In this Tutorial, you will learn the basics of using SwiftUI to build apps.
+                
+                [SwiftUI](glossary://SwiftUI) is a new way of coding apps, making it easier and faster than ever before. SwiftUI code is written with the [Swift](glossary://Swift) programming language.
+                
+                When you've completed Get Started with Apps, you can move on to [Keep Going with Apps](x-com-apple-playgrounds://projects?contentId=com.apple.playgrounds.keepgoingwithapps) to learn even more about SwiftUI. 
+                
+                The first step to learning SwiftUI is understanding how a SwiftUI file works.
+            }
+            @Task(type: walkthrough, title: "Welcome to SwiftUI", id: "getStartedWithApps", file: IntroView.swift) {
+                @Page(id: "1.first", title: "") {
+                    In a SwiftUI file, the code’s output is automatically shown in the preview on the right. The code in this file creates the text, “Hello, friend.”
+                }
+                @Page(id: "1.introView", title: "") {
+                    Inside the file, you’ll see the name of the [view](glossary://view) you’re looking at. Here, you’re looking at the view named `IntroView`.
+                }
+                @Page(id: "1.body", title: "") {
+                    Inside `IntroView`, you’ll see a [property](glossary://property) named `body`. Inside the [body](glossary://body) is where you’ll start writing SwiftUI code.
+                }
+                @Page(id: "1.text", title: "") {
+                    Inside the `body`, you’ll see a [Text](doc://com.apple.documentation/documentation/swiftui/text) view, which displays the text “Hello, friend.” in the preview. 
+                }
+                @Page(id: "1.preview", title: "") {
+                    Speaking of the preview, this is the code that generates the `IntroView` preview. You’ll see similar code under many views to help you visualize the code you write. 
+                }
+            }
+            @Task(type: addCode, title: "Now, try changing the text to something new.", id: "changeText", file: IntroView.swift) {
+                 @Page(id: "changeTextExpanded", title: "Now, try changing the text to something new.") {
+                     Change the text, `"Hello, friend."` to something you want it to say.
+                 }
+            }
+            @SuccessMessage(message: "") { 
+                Whenever you change your code, the preview automatically updates to reflect your changes. Pretty useful, huh? 
+                
+                Next, try creating a new view from scratch.
+            }
+        }
+        @Step(title: "Creating New SwiftUI Views") {
+            @ContentAndMedia {
+                ![](creating-new-swiftui-views@2x.png)  
+                
+                When you create a SwiftUI [view](glossary://view) like [Text](doc://com.apple.documentation/documentation/swiftui/text), what you’re really doing is creating a new [instance](glossary://instance) of that [type](glossary://type).
+                
+                To create the visual elements of your app, such as buttons, sliders, and text, you’ll use many different SwiftUI types. Here are two examples:
+                
+                ```
+                Text("I’m a Text view!")
+                
+                Image("imAnImageView")
+                ```
+                
+                Notice that for each of these types, you [initialize](glossary://initialization) them without ever creating a [variable](glossary://variable) to keep track of them.
+                                
+                This is because SwiftUI views are designed to not store any data about themselves. Instead of storing the [properties](glossary://property) of the view using a variable, you'll keep any data about the view [separate from the view itself](glossary://data%20separation).
+            }
+            @Task(type: addCode, title: "Add a new `Text` view to your `IntroView`.", id: "textElement", file: IntroView.swift) {
+                @Page(id: "codeCompletion", title: "") {
+                    Place your cursor in the [body](glossary://body) and start typing ”Text”  into the code editor. Code completion provides you with a list of suggestions; select `Text` from the dropdown menu.
+                }
+                @Page(id: "passString", title: "", isAddable: false) {
+                    Pass in a [String](glossary://String) as an [argument](glossary://argument) to `Text`. It should look something like this.
+                    
+                    ```
+                    Text("This is a string!")
+                    ```
+                }
+                @Page(id: "solution", title: "", isHidden: true) {
+                    ```
+                    Text("I’m a new Text element.")
+                    ```
+                }
+            }
+            @SuccessMessage(message: "") {
+                Usually, you use a [variable](glossary://variable) to store a value for later use and modification: `var textView = Text("Hola")`
+                
+                But in SwiftUI, you won't modify your view instances anywhere else but on the line they're created, so you can simply initialize the view in place: `Text("Hola")`
+            }
+        }
+        @Step(title: "Modifying SwiftUI Views") {
+            @ContentAndMedia {     
+                ![](modifying-swift-ui-views@2x.png)  
+
+                Each SwiftUI [view](glossary://view) you create is very versatile and modifiable. 
+                
+                If you want to change a view’s appearance or behavior, you can modify these [instances](glossary://instance) directly by calling their [methods](glossary://method).
+                
+                These methods have a special name in SwiftUI. They are called [modifiers](glossary://modifier). In the next task, you’ll try adding some modifiers to see how they modify the appearance of an image view.
+            }
+            @Task(type: addCode, title: "Add an Image of our friend.", id: "addFriend", file: IntroView.swift) {
+                @Page(id: "createImage", title: "") {
+                    First, create an [Image](doc://com.apple.documentation/documentation/swiftui/image) view and pass in `"FriendAndGem"` as an [argument](glossary://argument).
+                    
+                    You’ll also add a [modifier](glossary://modifier), `.resizable`, to allow the image to change its original size.
+                    
+                    ```
+                    Image("FriendAndGem")
+                        .resizable()
+                    ```
+                }
+            }
+            @Task(type: addCode, title: "Add another modifier to scale our friend to fit correctly.", id: "modifier", file: IntroView.swift) {
+                @Page(id: "scaleToFitModifier", title: "") {
+                    Woah, our friend is really stretched out! You can fix that by adding another modifier.
+                    ```
+                        .scaledToFit()
+                    ```
+                }
+            }
+            @Task(type: walkthrough, title: "Image modifiers", id: "modifierWalkthrough", file: IntroView.swift) {
+                @Page(id: "2.bothModifiers", title: "") {
+                    Notice that your [Image](doc://com.apple.documentation/documentation/swiftui/image) view has two [modifiers](glossary://modifier), each called using [dot notation](glossary://dot%20notation).
+                }
+                @Page(id: "2.bothModifiers", title: "", isAddable: false) {
+                    SwiftUI makes the modifiers easier to read by placing each one on a separate line, even though they all modify the same `Image` instance. This could also be written as:
+                    ```
+                    Image("FriendAndGem").resizable().scaledToFit()
+                    ```
+                }
+                @Page(id: "2.bothModifiers", title: "") {
+                    The first modifier, `.resizable()`, makes it so that your image can change size. Try temporarily removing this modifier and notice how the image changes. Without the `.resizable()` modifier, your image can only render at its original size and is unable to scale up or down to match the available space. 
+                }
+                @Page(id: "2.bothModifiers", title: "") {
+                    The second modifier, `.scaledToFit()`, allows your image to scale to fit the size of the container it occupies. Try temporarily changing it to `.scaledToFill()`. Can you tell the difference? Switch back to `.scaledToFit()` before moving on.
+                }
+            }
+            @SuccessMessage(message: "") { 
+                Now that you know a bit about creating and modifying SwiftUI views, try putting it all together.
+            }
+        }
+        @Step(title: "SwiftUI Views") {
+            @ContentAndMedia {
+                ![](swift-ui-views@2x.png)  
+
+                All visible elements you see in the preview, such as text, images, and buttons are SwiftUI [views](glossary://view).
+                
+                SwiftUI views are special because they follow the same set of guidelines, known as a [protocol](glossary://protocol).
+                
+                By following the guidelines of the [View](doc://com.apple.documentation/documentation/swiftui/view) protocol, a view gets special abilities. One of those abilities is that views act like [containers](glossary://container), allowing you to put other views inside them.
+            }
+            @Task(type: addCode, title: "Try placing one view inside another view.", id: "placeOneViewInsideAnother", file: IntroView.swift) {
+                @Page(id: "vStack", title: "") {
+                    First, add a [HStack](doc://com.apple.documentation/documentation/swiftui/hstack), a view that organizes [subviews](glossary://subview) horizontally.
+                    
+                    ```
+                    HStack { 
+                    
+                    }
+                    ```
+                }
+                @Page(id: "placeImageViewInVStack", title: "") {
+                    Next, place a single `Text` or `Image` view inside the `HStack`. 
+                }
+                @Page(id: "solution", title: "", isHidden: true) {
+                    ```
+                    HStack { 
+                        Text("I’m a view inside a view.")
+                    }
+                    ``` 
+                }
+            }
+            @Task(type: addCode, title: "Now place your `Image` view inside of the `HStack`.", id: "addImageInHStack", file: IntroView.swift) {
+                @Page(id: "addViewsExplanation", title: "") {
+                    Cut and paste your `Image` view into the `HStack`. When you look at the preview, you’ll see two views horizontally stacked in the order you’ve specified within the `HStack`, and two text views vertically stacked below the `HStack`.
+                }
+                @Page(id: "solution", title: "", isAddable: false, isHidden: true) {
+                    ```
+                    HStack { 
+                        Text("I'm a view inside a view")
+                        Image("FriendAndGem")
+                            .resizable()
+                            .scaledToFit()
+                    }
+                    Text("Hello there!")
+                    Text("I’m a new Text element.")
+                    ``` 
+                }
+            }
+            @SuccessMessage(message: "") { 
+                Notice that you now see your text and image views stacked beside each other. This is because you’ve put those views in a [container](glossary://container) view called a `HStack`. 
+                
+                Next, you’ll learn more ways to put views together.
+            }
+        }
+        @Step(title: "Composability") {
+            @ContentAndMedia {
+                ![](composability@2x.png)  
+
+                Because you can put views inside other views, each view acts as a building block for composing bigger pieces. Connecting views together in this way is called [composition](glossary://composition). 
+                
+                Composition allows you to build up a detailed [user interface](glossary://user%20interface) for your app while keeping the code readable and understandable.  
+                
+                Next, you’ll create a [composed view](glossary://composed%20view) to see how it works. 
+            }
+            @Task(type: addCode, title: "Compose a view with stacks.", id: "composeAView", file: FriendDetailView.swift) {
+                @Page(id: "hStack", title: "") {
+                    To compose your view, first add an [HStack](doc://com.apple.documentation/documentation/swiftui/hstack) inside the `VStack` to organize your [subviews](glossary://subview) horizontally.
+                    
+                    ```
+                    HStack { 
+                    
+                    }
+                    ```
+                }
+                @Page(id: "addImage", title: "", isAddable: false) {
+                    Next, add an image of our friend into your `HStack`.
+                    
+                    ```
+                    Image("Friend")
+                        .resizable()
+                        .scaledToFit()
+                    ```
+                }
+                @Page(id: "addImage", title: "", isAddable: false, isHidden: true) {
+                    Altogether, your view shows an `Image` view inside the `HStack`, all within the `VStack`.
+                    
+                    ```
+                    VStack { 
+                        HStack { 
+                            Image("Friend")
+                                .resizable()
+                                .scaledToFit()
+                        }
+                    }
+                    ```
+                }
+            }
+            @Task(type: addCode, title: "Adding a `VStack` inside an `HStack`.", id: "addVStackInHStack", file: FriendDetailView.swift) {
+                @Page(id: "addVStack", title: "") {
+                    Inside of your `HStack`, and underneath the `Image` view, add a [VStack](doc://com.apple.documentation/documentation/swiftui/vstack) to organize some text views vertically.
+                }
+                @Page(id: "addVStackSolution", title: "", isAddable: false, isHidden: true) {
+                    This is how the `VStack` looks when placed inside the `HStack`:
+                    ```
+                    HStack { 
+                        Image("Friend")
+                            .resizable()
+                            .scaledToFit()
+                            
+                        VStack { 
+                        
+                        }
+                    }
+                    ```
+                }
+            }
+            @Task(type: addCode, title: "Adding a `Text` view inside the `VStack`.", id: "addTextInVStack", file: FriendDetailView.swift) {
+                
+                @Page(id: "placeInVStack", title: "") {
+                    Inside of your `VStack`, create a [Text](doc://com.apple.documentation/documentation/swiftui/text) view that says ”Friend”.
+                }
+                @Page(id: "useFontModifier", title: "") {
+                    To make the font a little larger, add the `.font` modifier to the `Text` view, and pass in `.largeTitle` as the argument.
+                }
+                @Page(id: "textViewSolution", title: "", isAddable: false, isHidden: true) {
+                    ```
+                    Text("Friend")
+                        .font(.largeTitle)
+                    ```
+                }
+            }
+            @Task(type: addCode, title: "Adding another `Text` view below the first to describe our friend.", id: "describeFriend", file: FriendDetailView.swift) {
+                @Page(id: "addDescription", title: "") {
+                    Add a second `Text` view below the first one in the `VStack` so you can give our friend a description.
+                }
+                @Page(id: "addFontCaption", title: "") {
+                    To customize this text view’s font, add the `.font` modifier, and pass in `.caption` as the argument. 
+                }
+                @Page(id: "addDescription", title: "", isAddable: false, isHidden: true) {
+                    Your second `Text` view appears below the first, and the code should look something like this. 
+                    ```
+                    Text("The best teacher of SwiftUI this side of the Milky Way!")
+                        .font(.caption)
+                    
+                    ```
+                }
+            }
+            @SuccessMessage(message: "") { 
+                Congratulations, you’ve created a [composed view](glossary://composed%20view). 
+                
+                A composed view, such as `FriendDetailView`, can be used inside any other SwiftUI view, allowing you to reuse common pieces of [UI](glossary://user%20interface) in the apps you build.
+            }
+        }
+        @Step(title: "Experiment with SwiftUI") {
+            @ContentAndMedia {
+                ![](experiment-with-swiftui@2x.png)  
+
+                Now that you know the basics of SwiftUI, it’s time to tinker around a bit.
+                
+                Try using all of the things you’ve learned about SwiftUI to create a [UI](glossary://user%20interface) that describes the cast of Learn to Code characters.
+                
+                To start, use the `FriendDetailView` that you’ve already composed. 
+            }
+            @Task(type: addCode, title: "Create an instance of `FriendDetailView`.", id: "createDetailView", file: ExperimentView.swift) {
+                @Page(id: "friendDetailView", title: "") {
+                    Initialize your `FriendDetailView` to see your [composed view](glossary://composed%20view) inside of `ExperimentView`.
+                    
+                    ```
+                    FriendDetailView()
+                    ```
+                }
+            }
+            @Task(type: experiment, title: "Now, create a similar view using Blu’s image.", id: "createBluView", file: ExperimentView.swift) {
+                @Page(id: "createBluView", title: "") {
+                    It’s time to test out your SwiftUI skills. Create a view similar to `FriendDetailView` using Blu’s image and description. You can stack this view vertically, below `FriendDetailView`.
+                }
+                @Page(id: "startWithHStack", title: "") {
+                    Start by creating an `HStack`, and placing Blu’s image inside of it:
+                    ```
+                    HStack { 
+                        Image("Blu")
+                    }
+                    ```
+                }
+                @Page(id: "addImageModifiers", title: "") {
+                    Next, add two [modifiers](glossary://modifier) to the `Image` view. Use `.resizable()` so the image can change size, and `.scaledToFit` so it resizes to fit within the view.
+                }
+                @Page(id: "addAnHStackInside", title: "") {
+                    Now you’ll need to add the text. To organize the two text views vertically, add a `VStack` inside the `HStack`.
+                }
+                @Page(id: "addAnHStackInside", title: "") {
+                    Finally, add two `Text` views inside of the `VStack`. Add the `.font` modifier to each text view so they use the correct font style.
+                }
+                @Page(id: "addAnHStackInside", title: "", isAddable: false, isHidden: true) {
+                    Your code for Blu’s view might look something like this:
+                    ```
+                    HStack { 
+                        Image("Blu")
+                            .resizable()
+                            .scaledToFit()
+                    
+                        VStack { 
+                            Text("Blu")
+                                .font(.largeTitle)
+                            
+                            Text("A fierce, cloud-loving water droplet with nothing to lose.")
+                                .font(.caption)
+                        }
+                    }
+                    ```
+                }
+            }
+            @Task(type: experiment, title: "Now create a similar view using Hopper’s image.", id: "createHopperView", file: ExperimentView.swift) {
+                @Page(id: "createHopperView", title: "", isAddable: false) {
+                    Try composing one more view using Hopper’s image and description. Only this time, take some time to experiment, laying out your text and images in different ways. Try swapping your `HStack` and `VStack`, or adding an extra stack to see how your layout changes.
+                    
+                    ```
+                    Image("Hopper")
+                    ```
+                }
+                @Page(id: "createHopperView", title: "") {
+                    Try creating this view by yourself, using the views for our friend and Blu as inspiration. Try out new layouts by combining `HStack`, `VStack`, `Text`, and `Image` views in different ways.
+                    
+                    For instance, you could try vertically stacking Hopper’s image on top of two `Text` views, arranged horizontally. 
+                }
+            }
+            @SuccessMessage(message: "") { 
+                Now that you know some of the basics, try creating your own app by building up a [UI](glossary://user%20interface) using SwiftUI views. 
+                
+                To try out some of your newly learned skills, check out [About Me](x-com-apple-playgrounds://projects?contentId=com.apple.playgrounds.aboutme) and [Organizing with Grids](x-com-apple-playgrounds://projects?contentId=com.apple.playgrounds.organizingwithgrids) to adjust the code and make them your own. 
+                
+                To keep learning the basics of SwiftUI, move on to [Keep Going with Apps](x-com-apple-playgrounds://projects?contentId=com.apple.playgrounds.keepgoingwithapps) to continue your app-building journey.
+            }
+        }
+    }
+}
