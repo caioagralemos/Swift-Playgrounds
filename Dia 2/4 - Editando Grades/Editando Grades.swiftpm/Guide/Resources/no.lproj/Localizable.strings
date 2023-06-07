@@ -1,0 +1,453 @@
+/* Title of Guidebook */
+"GuideBook..title" = "Redigere rutenett";
+
+/* The title of the Welcome Message for the GuideBook */
+"GuideBook..WelcomeMessageEditing Grids..title" = "Redigere rutenett";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..WelcomeMessageEditing Grids..Paragraph0" = "I dette eksempelet oppretter du et rutenettgrensesnitt som er fylt med SF-symboler.";
+
+/* Title of step named Editing Grids */
+"GuideBook..Guide0..StepEditing Grids..title" = "Redigere rutenett";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..LearningCenterContent..Paragraph1" = "![](intro.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..LearningCenterContent..Paragraph2" = "I [Organizing with Grids](x-com-apple-playgrounds://projects?contentId=com.apple.playgrounds.organizingwithgrids) lærte du å opprette en layout i appens grensesnitt ved å bruke et rutenett med fargede rektangler. I dette eksempelet skal du opprette et lignende rutenettgrensesnitt som er fylt med [SF-symboler](https://developer.apple.com/sf-symbols/). Rediger rutenett bygger videre på det du har lært, og tar appen til et nytt nivå ved å lære deg om to viktige funksjoner for appdesign: navigering i appen, og redigering av data.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..LearningCenterContent..UnorderedList0..Paragraph3" = "For at det skal være enkelt for brukerne å navigere i appen, må du sørge for at de kan navigere mellom forskjellige [visninger](glossary://view).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..LearningCenterContent..UnorderedList0..Paragraph4" = "Hvis andre skal kunne redigere dataene i appen din, trenger du en redigeringsmodus. Du kommer til å lære hvordan du legger til redigeringsfunksjonalitet i et rutenett, inkludert å legge til og fjerne objekter i rutenettet.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..LearningCenterContent..Paragraph5" = "Det er på tide å sette i gang!";
+
+/* title of the guide button */
+"GuideBook..Guide0..StepEditing Grids..LearningCenterContent..GuideButtonStart Walkthrough..title" = "Start gjennomgangen";
+
+/* accessibility description for guide button */
+"GuideBook..Guide0..StepEditing Grids..LearningCenterContent..GuideButtonStart Walkthrough..description" = "Tilgjengelighetsbeskrivelse for knapp";
+
+/* Title for the section of tasks to complete */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..title" = "Bruke SF-symboldata";
+
+/* Title for task */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TasksymbolStruct..title" = "Definer en identifiserbar type";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TasksymbolStruct..Paragraph6" = "Lær hvordan du oppretter data som er unikt identifiserbare av SwiftUI.";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TasksymbolStruct..Page0..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TasksymbolStruct..Page0..Paragraph7" = "Når du oppretter et rutenett, bør du stille deg selv dette spørsmålet tidlig: «Hvilket innhold skal jeg plassere i rutenettet?» Her skal du bruke [SF-symboler](https://developer.apple.com/sf-symbols/), siden de er flotte symboler som det er enkelt å legge til i koden.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TasksymbolStruct..Page0..Paragraph8" = "Denne strukturen er [datamodellen](glossary://data%20model) som representerer ett SF-symbol.";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TasksymbolStruct..Page1..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TasksymbolStruct..Page1..Paragraph9" = "Hvert bilde i rutenettet bruker en `Symbol`-[instans](glossary://instance), for eksempel `Symbol(name: \"eyes\")`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TasksymbolStruct..Page1..Paragraph10" = "Siden `Symbol`-typen [stemmer overens](glossary://conform) med [Identifiable](doc://com.apple.documentation/documentation/swift/identifiable)-protokollen, identifiserer SwiftUI hver celle i rutenettet basert på symbolets `id`-verdi selv om flere symboler bruker samme `name`-streng.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TasksymbolStruct..Page1..Paragraph11" = "Å legge til overensstemmelse med `Identifiable` i [datamodellen](glossary://data%20model) er et godt mønster å følge når du bruker `ForEach` til å fylle ut et rutenett eller en liste med visninger, siden en `ForEach` trenger en unik ID for at objektene skal kunne utføre oppdateringer i en tilsvarende visning.";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TasksymbolStruct..Page2..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TasksymbolStruct..Page2..Paragraph12" = "`Symbol`-typen din inneholder en `id`-egenskap. Det er et krav for `Identifiable`-protokollen. Angi en `UUID`-verdi for denne egenskapen for å sikre at hvert objekt har sin egen identitet.";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TasksymbolStruct..Page3..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TasksymbolStruct..Page3..Paragraph13" = "`name`-egenskapen er en [String](doc://com.apple.documentation/documentation/swift/string)-verdi som tilsvarer et [SF-symbol](https://developer.apple.com/sf-symbols/). Du bruker denne egenskapen til å opprette `Image`-visningene i rutenettet.";
+
+/* Title for task */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..title" = "Opprett detaljvisningen for symboler";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Paragraph14" = "Finn ut hvordan du oppretter en bildevisning som bruker et [SF-symbol](https://developer.apple.com/sf-symbols/).";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page4..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page4..Paragraph15" = "Før du begynner med `SymbolGrid`, må du lære hvordan du oppretter et bilde ved hjelp av en `Symbol`-verdi.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page4..Paragraph16" = "`SymbolDetail` bruker [egenskapen](glossary://property) `symbol` til å opprette en detaljert visning av symbolet, komplett med en tekstbeskrivelse og et bilde.";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page5..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page5..Paragraph17" = "Det er flere måter å opprette en [Image](doc://com.apple.documentation/documentation/swiftui/image/) på i SwiftUI. Én måte er å bruke [parameteren](glossary://parameter) `systemName`, som oppretter et bilde ved hjelp av SF-symbolet som er assosiert med [strengen](glossary://String) som sendes.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page5..Paragraph18" = "Legg til følgende kode i `VStack` for å opprette et bilde ved hjelp av symbolets navn:";
+
+/*  */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page5..CodeBlock0" = "Image(systemName: symbol.name)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page6..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page6..Paragraph19" = "Gratulerer! Nå har du opprettet et bilde ved hjelp av et SF-symbol. Men det er veldig lite. 🔎";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page6..Paragraph20" = "Når du har opprettet bildevisningen, kan du bruke [modifikatorer](glossary://modifier) til å endre hvordan visningen ser ut og oppfører seg. Modifikatorer i SwiftUI er [metoder](glossary://method) som du bruker til å forandre utseendet i en visning. Du kan bruke flere modifikatorer i en visning ved å legge dem etter hverandre, men på hver sin linje for å gjøre det enklere å lese koden. Du kan endre visningens utseende ved hjelp av de samme modifikatorene, avhengig av hvilken rekkefølge du velger.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page6..Paragraph21" = "Legg til disse modifikatorene under `Image`-visningen for å gjøre den større, og for å kunne angi valg for farge og utseende:";
+
+/*  */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page6..CodeBlock1" = ".resizable()\n.scaledToFit()\n.symbolRenderingMode(.hierarchical)\n.foregroundColor(.accentColor)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page7..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page7..Paragraph22" = "Mye bedre!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page7..Paragraph23" = "Du kan eksperimentere med å endre modifikatorene `.foregroundColor` eller `.symbolRenderingMode` for å se hvordan forhåndsvisningen endres.";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page8..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page8..Paragraph24" = "Nå skal du få en utfordring. Prøv å legge til en `Text`-visning over `Image` som viser symbolets navn.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page8..Paragraph25" = "Prøv å finne ut av det selv. Du kan bruke denne koden hvis du står fast:";
+
+/*  */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page8..CodeBlock2" = "Text(symbol.name)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page9..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page9..Paragraph26" = "Legg til `font`-modifikatoren i `Text`-visningen, og gjør den større. Nå passer den bedre sammen med bildet!";
+
+/*  */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page9..CodeBlock3" = ".font(.largeTitle)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page10..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page10..Paragraph27" = "Hvis du vil prøve å forhåndsvise et annet symbol her, går du til `Details_Previews`-strukturen nederst i denne filen og endrer `Symbol` som sendes til `SymbolDetail`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page10..Paragraph28" = "Prøv å bytte den ut for å se et annet symbol i forhåndsvisningen:";
+
+/*  */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page10..CodeBlock4" = "Symbol(name: \"brain.head.profile\")\n";
+
+/* Title for the section of tasks to complete */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup1..title" = "Opprett rutenettet";
+
+/* Title for task */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup1..TasksymbolGrid..title" = "Bygg navigeringsrutenettet";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup1..TasksymbolGrid..Paragraph29" = "Opprett et rutenett med SF-symboler fra en [matrise](glossary://array) av `Symbol`-verdier.";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup1..TasksymbolGrid..Page11..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup1..TasksymbolGrid..Page11..Paragraph30" = "Når du oppretter rutenettet med SF-symboler, bruker du [egenskapen](glossary://property) `symbols`. Den sporer en samling med `Symbol`-instanser.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup1..TasksymbolGrid..Page11..Paragraph31" = "Når du merker denne egenskapen med `@State`, håndterer SwiftUI lagringen for verdien. Når denne [statusegenskapen](glossary://state%20property) endres, vil SwiftUI oppdatere visningene som bruker verdien (i dette tilfellet rutenettet). Hvis du for eksempel sletter et symbol, vil det tilsvarende symbolbildet forsvinne fra rutenettet.";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup1..TasksymbolGrid..Page12..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup1..TasksymbolGrid..Page12..Paragraph32" = "Du kan finne og legge til flere SF-symboler ved å [laste ned appen SF-symboler](https://developer.apple.com/sf-symbols/) og legge til nye `Symbol`-instanser med navnet på det ønskede symbolet.";
+
+/*  */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup1..TasksymbolGrid..Page12..CodeBlock5" = "Symbol(name: \"moon.stars\"),\n";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup1..TasksymbolGrid..Page13..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup1..TasksymbolGrid..Page13..Paragraph33" = "Du oppretter et rutenett ved å bruke en [LazyVGrid](doc://com.apple.documentation/documentation/swiftui/lazyvgrid), overføre `gridColumns`-verdien og angi et innledende antall fleksible `GridItem`-instanser i hver rad. Endre verdien for `initialColumns` for å begynne med et annet antall kolonner.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup1..TasksymbolGrid..Page13..Paragraph34" = "Nøst `LazyVGrid` i en [ScrollView](doc://com.apple.documentation/documentation/swiftui/scrollview), slik at andre kan rulle gjennom innholdet i rutenettet hvis det overskrider den vertikale plassen i rutenettvisningen.";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup1..TasksymbolGrid..Page14..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup1..TasksymbolGrid..Page14..Paragraph35" = "`ForEach` krever vanligvis at du oppgir en ID for hvert element i samlingen, slik at den kan spore når konkrete elementer i samlingen endres. `ForEach` fungerer best med en [samling](glossary://collection) av [Identifiable](doc://com.apple.documentation/documentation/swift/identifiable)-typer, for eksempel `Symbol`, slik at den kan spore hvert objekt i samlingen og oppdatere en konkret visning når objektets verdi endres.";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup1..TasksymbolGrid..Page15..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup1..TasksymbolGrid..Page15..Paragraph36" = "Etter `ForEach` oppretter du `Image`-visninger for hvert symbol i rutenettet. Opprett `Image`-visningen ved hjelp av symbolets navn, akkurat som i `SymbolDetail`.";
+
+/* Title for the section of tasks to complete */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..title" = "Legge til navigering";
+
+/* Title for task */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasksymbolGridApp..title" = "Opprett navigeringsstabelen for appen din";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasksymbolGridApp..Paragraph37" = "Pakk `SymbolGrid` i en `NavigationStack` for å gjøre det mulig å navigere til forskjellige visninger.";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasksymbolGridApp..Page16..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasksymbolGridApp..Page16..Paragraph38" = "Hadde det ikke vært praktisk hvis symbolets `SymbolDetail`-visning vises hver gang du trykker på et symbol? For at det skal fungere, trenger du navigering.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasksymbolGridApp..Page16..Paragraph39" = "Det er flere måter å håndtere navigasjon i appen på. Du kan bruke en [NavigationSplitView](doc://com.apple.documentation/documentation/swiftui/navigationsplitview) hvis du vil vise innhold i flere kolonner, eller en [NavigationStack](doc://com.apple.documentation/documentation/swiftui/navigationstack) for å vise innhold som én stabel, der du skyver en visning over stabelen når den skal vises.";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasksymbolGridApp..Page17..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasksymbolGridApp..Page17..Paragraph40" = "Du legger til navigeringsfunksjoner i appen ved å bruke opprette en [NavigationStack](doc://com.apple.documentation/documentation/swiftui/navigationstack) som [toppnivåvisning](glossary://top-level%20view). `NavigationStack` fungerer som en [beholder](glossary://container) som viser andre visninger.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasksymbolGridApp..Page17..Paragraph41" = "Legg til en `NavigationStack` i `WindowGroup`:";
+
+/*  */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasksymbolGridApp..Page17..CodeBlock6" = "NavigationStack { \n\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasksymbolGridApp..Page18..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasksymbolGridApp..Page18..Paragraph42" = "Deretter oppgir du visningen som navigeringsstabelen skal vise når appen åpnes. Det gjør du ved å klippe ut og lime inn `SymbolGrid()` som innhold i `NavigationStack`:";
+
+/*  */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasksymbolGridApp..Page18..CodeBlock7" = "NavigationStack { \n    SymbolGrid()\n}\n";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasksymbolGridApp..Page18..Paragraph43" = "Når en bruker navigerer til en annen visning, flyttes `SymbolGrid` ned i navigeringsstabelen og skyver opp en annen visning for å vise innholdet i den.";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasksymbolGridApp..Page19..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasksymbolGridApp..Page19..Paragraph44" = "En siste ting før vi går videre. Du kan bruke modifikatorene `.navigationTitle(_:)` og `navigationBarTitleDisplayMode(_:)` til å gi hver visning i `NavigationStack` sin egen tittel og tilpasse hvordan den vises.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasksymbolGridApp..Page19..Paragraph45" = "Prøv å legge til disse under `SymbolGrid`, og legg merke til at visningen nå viser en tittel. Det er veldig nyttig å gi visningene en tittel når du navigerer mellom mange forskjellige visninger i appen.";
+
+/*  */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasksymbolGridApp..Page19..CodeBlock8" = ".navigationTitle(\"My Symbols\")\n.navigationBarTitleDisplayMode(.inline)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasknavigationLinksGrid..title" = "Opprett navigeringslenker fra rutenettobjekter";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasknavigationLinksGrid..Paragraph46" = "Gjør hvert objekt i rutenettet til en [NavigationLink](doc://com.apple.documentation/documentation/swiftui/navigationlink).";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasknavigationLinksGrid..Page20..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasknavigationLinksGrid..Page20..Paragraph47" = "Hvis målet er å aktivere navigering til en ny visning når noen trykker på et symbol, må du plassere hvert symbol i rutenettet i en [NavigationLink](doc://com.apple.documentation/documentation/swiftui/navigationlink).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasknavigationLinksGrid..Page20..Paragraph48" = "En `NavigationLink` har både et [mål](glossary://destination%20view), som er visningen du navigerer til, og en [etikett](glossary://label), som bestemmer hvordan lenken vises. I dette tilfellet er etiketten symbolets `Image`-visning, og målet er `SymbolDetail`-visningen.";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasknavigationLinksGrid..Page21..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasknavigationLinksGrid..Page21..Paragraph49" = "Legg til en `NavigationLink` i `ForEach` i `LazyVGrid`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasknavigationLinksGrid..Page21..Paragraph50" = "Denne navigeringslenken har `SymbolDetail` som mål, som lenker til symbolet i den cellen i rutenettet.";
+
+/*  */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasknavigationLinksGrid..Page21..CodeBlock9" = "NavigationLink {\n    SymbolDetail(symbol: symbol)\n} label: {\n    //#-learning-code-snippet(addLabelNavLink)\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasknavigationLinksGrid..Page22..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasknavigationLinksGrid..Page22..Paragraph51" = "Klipp ut og lim inn `Image`-visningen som en [etikett](glossary://label) i klammeparentesene i `NavigationLink`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasknavigationLinksGrid..Page22..Paragraph52" = "Dette forandrer visningen til en knapp som skyver målvisningen `SymbolDetail` til toppen av navigeringsstabelen når noen trykker på den.";
+
+/*  */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasknavigationLinksGrid..Page22..CodeBlock10" = "Image(systemName: symbol.name)\n    .resizable()\n    .scaledToFit()\n    .symbolRenderingMode(.hierarchical)\n    .foregroundColor(.accentColor)\n    .padding()\n";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasknavigationLinksGrid..Page23..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasknavigationLinksGrid..Page23..Paragraph53" = "Prøv å trykke på ett av symbolene i forhåndsvisningen.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasknavigationLinksGrid..Page23..Paragraph54" = "Fungerer navigeringen som forventet? Kan du navigere tilbake til rutenettet etter at du har gått til en annen visning?";
+
+/* Title for the section of tasks to complete */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..title" = "Legge til redigeringsfunksjonalitet";
+
+/* Title for task */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TasksymbolGridEditing..title" = "Legg til objekter i rutenettet";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TasksymbolGridEditing..Paragraph55" = "Utforsk hvordan du legger til objekter i rutenettet ved hjelp av et [ark](doc://com.apple.documentation/documentation/SwiftUI/View/sheet(isPresented:onDismiss:content:)).";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TasksymbolGridEditing..Page24..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TasksymbolGridEditing..Page24..Paragraph56" = "Nå er det på tide å skru opp temperaturen i rutenettet (🌶 bang!) med redigeringsfunksjonalitet. Begynn med å legge til et objekt i rutenettet.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TasksymbolGridEditing..Page24..Paragraph57" = "Begynn med å legge til en [statusegenskap](glossary://state%20property), `isAddingSymbol`, som en boolsk verdi. Verdien av denne gjør det mulig å aktivere eller deaktivere muligheten til å legge til et nytt symbol:";
+
+/*  */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TasksymbolGridEditing..Page24..CodeBlock11" = "@State private var isAddingSymbol = false\n";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TasksymbolGridEditing..Page25..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TasksymbolGridEditing..Page25..Paragraph58" = "Hvordan slås `isAddingSymbol` på (tildeles verdien `true`)?";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TasksymbolGridEditing..Page25..Paragraph59" = "For å gjøre dette legger du til en knapp i [verktøylinjen](glossary://toolbar) som legger til et nytt symbol. Verktøylinjen er en del av `NavigationStack`, så du må kontrollere at du la til den i «Opprett navigeringsstabelen for appen din» tidligere.";
+
+/*  */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TasksymbolGridEditing..Page25..CodeBlock12" = ".toolbar {\n    ToolbarItem(placement: .navigationBarTrailing) {\n        Button {\n            isAddingSymbol = true\n        } label: {\n            Image(systemName: \"plus\")\n        }\n    }\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TasksymbolGridEditing..Page26..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TasksymbolGridEditing..Page26..Paragraph60" = "Prøv å trykke på Legg til-knappen (+). Men … den gjør jo ikke noe ennå?";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TasksymbolGridEditing..Page27..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TasksymbolGridEditing..Page27..Paragraph61" = "Når du vil legge til et nytt symbol, viser du et [ark](doc://com.apple.documentation/documentation/SwiftUI/View/sheet(isPresented:onDismiss:content:)) med en `SymbolPicker`-visning når `isAddingSymbol` er `true`. Når du lukker arket, vil `addSymbol`-funksjonen legge til det valgte symbolet i rutenettet.";
+
+/*  */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TasksymbolGridEditing..Page27..CodeBlock13" = "/*#-code-walkthrough(onDismiss)*/\n.sheet(isPresented: $isAddingSymbol, onDismiss: addSymbol) {\n/*#-code-walkthrough(onDismiss)*/\n    /*#-code-walkthrough(symbolPicker)*/\n    SymbolPicker(symbol: $selectedSymbol)\n    /*#-code-walkthrough(symbolPicker)*/\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TasksymbolGridEditing..Page28..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TasksymbolGridEditing..Page28..Paragraph62" = "[Argumentet](glossary://argument) for `SymbolPicker` (`$selectedSymbol`) er en spesiell type verdi som kalles en [binding](glossary://binding). Når du overfører en bindingsverdi til en [delvisning](glossary://subview), kan delvisningen endre verdien sin, men det er bare [beholdervisningen](glossary://container) som lagrer den [faktiske verdien](glossary://source%20of%20truth).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TasksymbolGridEditing..Page28..Paragraph63" = "Når `selectedSymbol` overføres som et argument, kan `SymbolPicker` endre den verdien fra delvisningen, samtidig som det beholdes én [sannhetskilde](glossary://source%20of%20truth) i `SymbolGrid`.";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TasksymbolGridEditing..Page29..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TasksymbolGridEditing..Page29..Paragraph64" = "Når arket lukkes, setter `addSymbol` inn verdien som er tildelt til `selectedSymbol`, i `symbols`-matrisen. Siden `symbols` er en [statusegenskap](glossary://state%20property), vil SwiftUI gjenkjenne endringen og oppdatere rutenettgrensesnittet med det nye symbolet.";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TasksymbolGridEditing..Page30..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TasksymbolGridEditing..Page30..Paragraph65" = "Prøv å legge til et nytt symbol i forhåndsvisningen. Kan du bruke [gummiandmetoden](glossary://rubber%20ducky%20method) til å forklare hvordan verdien blir lagt til og deretter oppdatert i rutenettet?";
+
+/* Title for task */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..title" = "Slett objekter fra rutenettet";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..Paragraph66" = "Legg til en redigeringsmodus, slik at du kan slette objekter fra rutenettet.";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..Page31..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..Page31..Paragraph67" = "Hvis du vil at det skal være mulig å slette objekter fra rutenettet, legger du til en redigeringsmodus. Legg til en ekstra [statusegenskap](glossary://state%20property), `isEditing`, for å spore om brukergrensesnittet viser brukergrensesnittet for sletting.";
+
+/*  */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..Page31..CodeBlock14" = "@State private var isEditing = false\n";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..Page32..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..Page32..Paragraph68" = "Endre til redigeringsstatus ved å legge til en `Button` i verktøylinjen, som bytter om på verdien for `isEditing` når noen trykker på den.";
+
+/*  */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..Page32..CodeBlock15" = "ToolbarItem(placement: .navigationBarLeading) {\n    Button(isEditing ? \"Ferdig\" : \"Rediger\") {\n        withAnimation {\n            isEditing.toggle()\n        }\n    }\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..Page33..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..Page33..Paragraph69" = "Nå ser du en «Rediger»-knapp i verktøylinjen, som endres til «Ferdig» når noen trykker på den. Men den er ikke knyttet til brukergrensesnittet i visningen ennå.";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..Page34..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..Page34..Paragraph70" = "Når du vil bruke `isEditing` til å fjerne symboler fra rutenettet, må du opprette et betinget brukergrensesnitt som vises når `isEditing` er `true`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..Page34..Paragraph71" = "Koden under legger en rød «x» over et symbol når denne verdien er `true`.";
+
+/*  */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..Page34..CodeBlock16" = ".overlay(alignment: .topTrailing) {\n    if isEditing {\n        Button {\n            //#-learning-code-snippet(removeSymbol)\n        } label: {\n            Image(systemName: \"xmark.square.fill\")\n                .font(.title)\n                .symbolRenderingMode(.palette)\n                .foregroundStyle(.white, Color.red)\n        }\n    }\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..Page35..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..Page35..Paragraph72" = "Hvis du prøver å bytte om på redigeringsmodus, ser du røde «x»-visninger over symbolbildene, men foreløpig skjer det ikke noe når du trykker på dem. 😕";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..Page35..Paragraph73" = "Hvis du vil fjerne et objekt fra rutenettet, må du finne og fjerne symbolet fra `symbols`-matrisen.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..Page35..Paragraph74" = "Legg til denne koden i knappens [closure-blokk](glossary://closure)-handling for å fjerne et objekt når du trykker på den røde «x»-en:";
+
+/*  */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..Page35..CodeBlock17" = "remove(symbol: symbol)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..Page36..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..Page36..Paragraph75" = "Det var det! Når du trykker på den røde «x»-knappen, fjernes symbolet fra rutenettet.";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..Page37..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..Page37..Paragraph76" = "Hvis du vil legge til en annen interessant redigeringsfunksjon, kan du legge til en trinnkontroll for å endre antall kolonner i rutenettet dynamisk.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..Page37..Paragraph77" = "Prøv å legge til denne koden øverst i `VStack` i `SymbolGrid`, og prøv den for å se hvordan den fungerer!";
+
+/*  */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..Page37..CodeBlock18" = "if isEditing {\n    Stepper(columnsText, value: $numColumns, in: 1...6, step: 1) { _ in\n        withAnimation { gridColumns = Array(repeating: GridItem(.flexible()), count: numColumns) }\n    }\n    .padding()\n}\n";
+

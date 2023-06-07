@@ -1,0 +1,453 @@
+/* Title of Guidebook */
+"GuideBook..title" = "Sửa lưới";
+
+/* The title of the Welcome Message for the GuideBook */
+"GuideBook..WelcomeMessageEditing Grids..title" = "Sửa lưới";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..WelcomeMessageEditing Grids..Paragraph0" = "Trong mẫu này, bạn sẽ tạo ra một giao diện lưới được điền các Ký hiệu SF.";
+
+/* Title of step named Editing Grids */
+"GuideBook..Guide0..StepEditing Grids..title" = "Sửa lưới";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..LearningCenterContent..Paragraph1" = "![](intro.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..LearningCenterContent..Paragraph2" = "Trong [Sắp xếp với các lưới](x-com-apple-playgrounds://projects?contentId=com.apple.playgrounds.organizingwithgrids), bạn đã tìm hiểu cách tạo bố cục giao diện của ứng dụng bằng một lưới các hình chữ nhật có màu. Trong mẫu này, bạn sẽ tạo ra một giao diện lưới tương tự được điền các [Ký hiệu SF](https://developer.apple.com/sf-symbols/). Để xây dựng dựa trên những gì mà bạn đã học, phần Sửa lưới đưa ứng dụng của bạn lên cấp độ tiếp theo bằng cách dạy bạn về hai đặc điểm quan trọng trong thiết kế ứng dụng: điều hướng bên trong ứng dụng và chỉnh sửa dữ liệu.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..LearningCenterContent..UnorderedList0..Paragraph3" = "Để mọi người di chuyển dễ dàng trong ứng dụng của bạn, bạn cần cung cấp một cách để họ điều hướng giữa các [chế độ xem](glossary://view) khác nhau.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..LearningCenterContent..UnorderedList0..Paragraph4" = "Để cho phép mọi người sửa dữ liệu trong ứng dụng của bạn, bạn cần một chế độ chỉnh sửa. Bạn sẽ tìm hiểu cách thêm chức năng chỉnh sửa vào lưới, bao gồm việc thêm hoặc xóa các mục lưới.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..LearningCenterContent..Paragraph5" = "Đã đến lúc bắt đầu!";
+
+/* title of the guide button */
+"GuideBook..Guide0..StepEditing Grids..LearningCenterContent..GuideButtonStart Walkthrough..title" = "Bắt đầu hướng dẫn";
+
+/* accessibility description for guide button */
+"GuideBook..Guide0..StepEditing Grids..LearningCenterContent..GuideButtonStart Walkthrough..description" = "Mô tả AX cho nút";
+
+/* Title for the section of tasks to complete */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..title" = "Sử dụng dữ liệu Ký hiệu SF";
+
+/* Title for task */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TasksymbolStruct..title" = "Định nghĩa một kiểu có thể nhận dạng";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TasksymbolStruct..Paragraph6" = "Tìm hiểu cách tạo ra dữ liệu có thể nhận dạng duy nhất bởi SwiftUI.";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TasksymbolStruct..Page0..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TasksymbolStruct..Page0..Paragraph7" = "Khi tạo ra một lưới, một trong những câu hỏi đầu tiên bạn nên đặt ra là “Tôi muốn đặt nội dung nào vào lưới?”. Tại đây, bạn sẽ sử dụng [Ký hiệu SF](https://developer.apple.com/sf-symbols/), vì chúng là những biểu tượng tuyệt vời, dễ thêm vào mã của bạn.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TasksymbolStruct..Page0..Paragraph8" = "Cấu trúc này là [mô hình dữ liệu](glossary://data%20model) biểu thị cho một Ký hiệu SF đơn nhất.";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TasksymbolStruct..Page1..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TasksymbolStruct..Page1..Paragraph9" = "Mỗi hình ảnh trong lưới của bạn sử dụng một [thể hiện](glossary://instance) `Symbol`, ví dụ như `Symbol(name: \"mắt\")`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TasksymbolStruct..Page1..Paragraph10" = "Vì kiểu `Symbol` [tuân thủ](glossary://conform) giao thức [Identifiable](doc://com.apple.documentation/documentation/swift/identifiable) nên SwiftUI nhận dạng từng ô trong lưới của bạn dựa trên giá trị `id` của ký hiệu, ngay cả khi một số ký hiệu sử dụng cùng một Chuỗi `name`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TasksymbolStruct..Page1..Paragraph11" = "Việc thêm giao thức tuân thủ `Identifiable` vào [mô hình dữ liệu](glossary://data%20model) của bạn là một khuôn mẫu tuyệt vời để tuân theo khi sử dụng `ForEach` để điền vào lưới hoặc danh sách bằng các chế độ xem, vì `ForEach` cần một ID duy nhất cho các mục để thực hiện cập nhật cho một chế độ xem tương ứng.";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TasksymbolStruct..Page2..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TasksymbolStruct..Page2..Paragraph12" = "Kiểu `Symbol` chứa một thuộc tính `id`, là một yêu cầu của giao thức `Identifiable`. Bạn đảm bảo từng mục có nhận dạng riêng bằng cách đặt thuộc tính này thành giá trị `UUID`.";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TasksymbolStruct..Page3..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TasksymbolStruct..Page3..Paragraph13" = "Thuộc tính `name` là một giá trị [Chuỗi](doc://com.apple.documentation/documentation/swift/string) tương ứng với một [Ký hiệu SF](https://developer.apple.com/sf-symbols/). Bạn sẽ sử dụng thuộc tính này để tạo ra các chế độ xem `Image` trong lưới.";
+
+/* Title for task */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..title" = "Tạo ra chế độ xem chi tiết cho các ký hiệu";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Paragraph14" = "Tìm hiểu cách tạo ra một chế độ xem hình ảnh sử dụng [Ký hiệu SF](https://developer.apple.com/sf-symbols/).";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page4..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page4..Paragraph15" = "Trước khi đi sâu vào `SymbolGrid`, trước tiên bạn sẽ tìm hiểu cách tạo ra một hình ảnh bằng một giá trị `Symbol`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page4..Paragraph16" = "`SymbolDetail` sử dụng [thuộc tính](glossary://property) `symbol` để tạo ra một chế độ xem chi tiết của biểu tượng, hoàn chỉnh với mô tả bằng văn bản và một hình ảnh.";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page5..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page5..Paragraph17" = "Có nhiều cách để tạo ra một [Hình ảnh](doc://com.apple.documentation/documentation/swiftui/image/) trong SwiftUI. Một trong những cách đó là sử dụng [tham số](glossary://parameter) `systemName`, tạo ra một hình ảnh bằng Ký hiệu SF được liên kết với [chuỗi](glossary://String) được chuyển vào.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page5..Paragraph18" = "Thêm mã sau đây bên trong `VStack` để tạo ra một hình ảnh bằng tên của ký hiệu:";
+
+/*  */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page5..CodeBlock0" = "Image(systemName: symbol.name)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page6..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page6..Paragraph19" = "Chúc mừng bạn đã tạo ra một hình ảnh bằng Ký hiệu SF! Nhưng hình ảnh đó quá nhỏ. 🔎";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page6..Paragraph20" = "Sau khi tạo ra chế độ xem hình ảnh, bạn có thể sử dụng các [trình sửa đổi](glossary://modifier) để thay đổi hình thức và hoạt động của chế độ xem. Trình sửa đổi trong SwiftUI là các [phương thức](glossary://method) mà bạn sử dụng để sửa đổi giao diện của một chế độ xem. Bạn có thể áp dụng nhiều trình sửa đổi cho một chế độ xem, móc nối chúng với nhau, nhưng được sắp xếp trên các dòng riêng biệt trong mã của bạn để làm cho mã dễ đọc hơn. Bạn có thể thay đổi giao diện của chế độ xem bằng cùng các trình sửa đổi, tùy theo cách bạn sắp xếp chúng.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page6..Paragraph21" = "Thêm những trình sửa đổi này bên dưới chế độ xem `Image` của bạn để tăng tỷ lệ của hình ảnh và cung cấp một số tùy chọn cho màu và giao diện:";
+
+/*  */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page6..CodeBlock1" = ".resizable()\n.scaledToFit()\n.symbolRenderingMode(.hierarchical)\n.foregroundColor(.accentColor)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page7..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page7..Paragraph22" = "Tốt hơn rồi!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page7..Paragraph23" = "Như một phần của thử nghiệm, hãy thử thay đổi các trình sửa đổi `.foregroundColor` hoặc `.symbolRenderingMode` để xem bản xem trước thay đổi như thế nào.";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page8..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page8..Paragraph24" = "Bây giờ là một thử thách: thử thêm một chế độ xem `Text` phía trên `Image` hiển thị tên của ký hiệu.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page8..Paragraph25" = "Hãy xem liệu bạn có thể tìm ra phần này không, sử dụng mã sau đây nếu bạn bị vướng mắc:";
+
+/*  */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page8..CodeBlock2" = "Text(symbol.name)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page9..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page9..Paragraph26" = "Thêm trình sửa đổi `font` vào chế độ xem `Text` của bạn và cung cấp một kích cỡ lớn hơn. Bây giờ, văn bản đã phù hợp hơn với hình ảnh!";
+
+/*  */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page9..CodeBlock3" = ".font(.largeTitle)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page10..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page10..Paragraph27" = "Nếu bạn muốn thử xem trước một ký hiệu khác tại đây, hãy đi tới cấu trúc `Details_Previews` ở cuối tệp này và thay đổi `Symbol` được chuyển vào `SymbolDetail`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page10..Paragraph28" = "Thử thay thế để xem một ký hiệu khác trong bản xem trước:";
+
+/*  */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup0..TaskitemDetails..Page10..CodeBlock4" = "Symbol(name: \"brain.head.profile\")\n";
+
+/* Title for the section of tasks to complete */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup1..title" = "Tạo ra lưới";
+
+/* Title for task */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup1..TasksymbolGrid..title" = "Xây dựng lưới điều hướng";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup1..TasksymbolGrid..Paragraph29" = "Tạo ra một lưới các Ký hiệu SF từ một [dãy](glossary://array) các giá trị `Symbol`.";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup1..TasksymbolGrid..Page11..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup1..TasksymbolGrid..Page11..Paragraph30" = "Để tạo ra lưới Ký hiệu SF, bạn sẽ sử dụng [thuộc tính](glossary://property) `symbols`, theo dõi một tập hợp các thể hiển `Symbol`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup1..TasksymbolGrid..Page11..Paragraph31" = "Khi bạn đánh dấu thuộc tính này với `@State`, SwiftUI quản lý việc lưu trữ cho giá trị. Bất kỳ lúc nào [thuộc tính trạng thái](glossary://state%20property) này thay đổi, SwiftUI cập nhật bất kỳ chế độ xem nào đang sử dụng giá trị đó (trong trường hợp này là lưới). Ví dụ: nếu bạn xóa một ký hiệu thì hình ảnh ký hiệu tương ứng biến mất khỏi lưới.";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup1..TasksymbolGrid..Page12..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup1..TasksymbolGrid..Page12..Paragraph32" = "Để tìm và thêm các Ký hiệu SF bổ sung, hãy [tải về ứng dụng Ký hiệu SF](https://developer.apple.com/sf-symbols/) và thêm các thể hiện `Symbol` mới với tên ký hiệu mong muốn.";
+
+/*  */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup1..TasksymbolGrid..Page12..CodeBlock5" = "Symbol(name: \"moon.stars\"),\n";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup1..TasksymbolGrid..Page13..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup1..TasksymbolGrid..Page13..Paragraph33" = "Để tạo ra một lưới, hãy sử dụng một [LazyVGrid](doc://com.apple.documentation/documentation/swiftui/lazyvgrid) và chuyển vào giá trị `gridColumns`, chỉ định số lượng thể hiện `GridItem` linh hoạt ban đầu trong mỗi hàng. Thay đổi giá trị cho `initialColumns` để bắt đầu với một số lượng cột khác.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup1..TasksymbolGrid..Page13..Paragraph34" = "Lồng `LazyVGrid` bên trong một [ScrollView](doc://com.apple.documentation/documentation/swiftui/scrollview), sao cho mọi người có thể cuộn qua nội dung của lưới nếu vượt quá không gian chiều dọc của chế độ xem lưới.";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup1..TasksymbolGrid..Page14..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup1..TasksymbolGrid..Page14..Paragraph35" = "`ForEach` thường yêu cầu bạn cung cấp một ID cho từng phần tử của tập hợp để có thể theo dõi thời điểm các phần tử cụ thể trong tập hợp thay đổi. `ForEach` hoạt động tốt nhất với một [tập hợp](glossary://collection) các kiểu [Identifiable](doc://com.apple.documentation/documentation/swift/identifiable), ví dụ như `Symbol`, để có thể theo dõi từng mục trong tập hợp và cập nhật một chế độ xem cụ thể khi giá trị của mục đó thay đổi.";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup1..TasksymbolGrid..Page15..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup1..TasksymbolGrid..Page15..Paragraph36" = "Sau `ForEach`, bạn sẽ tạo ra các chế độ xem `Image` cho từng ký hiệu trong lưới. Tạo ra chế độ xem `Image` bằng tên của ký hiệu, giống như trong `SymbolDetail`.";
+
+/* Title for the section of tasks to complete */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..title" = "Thêm chức năng điều hướng";
+
+/* Title for task */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasksymbolGridApp..title" = "Tạo ra ngăn xếp điều hướng cho ứng dụng của bạn";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasksymbolGridApp..Paragraph37" = "Đóng gói `SymbolGrid` của bạn trong một `NavigationStack` để cho phép điều hướng đến các chế độ xem khác.";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasksymbolGridApp..Page16..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasksymbolGridApp..Page16..Paragraph38" = "Sẽ thật tuyệt nếu việc chạm vào một ký hiệu đưa bạn đến chế độ xem `SymbolDetail` tương ứng phải không? Đối với việc này, bạn sẽ cần điều hướng.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasksymbolGridApp..Page16..Paragraph39" = "Có nhiều cách để quản lý điều hướng trong ứng dụng của bạn. Bạn có thể sử dụng [NavigationSplitView](doc://com.apple.documentation/documentation/swiftui/navigationsplitview) nếu muốn trình bày nội dung trong nhiều cột hoặc [NavigationStack](doc://com.apple.documentation/documentation/swiftui/navigationstack) để hiển thị nội dung dưới dạng một ngăn xếp đơn nhất, là nơi mà bạn đẩy một chế độ xem lên trên cùng của ngăn xếp đó khi cần hiển thị.";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasksymbolGridApp..Page17..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasksymbolGridApp..Page17..Paragraph40" = "Để cung cấp chức năng điều hướng trong ứng dụng của bạn, hãy tạo ra một [NavigationStack](doc://com.apple.documentation/documentation/swiftui/navigationstack) dưới dạng [chế độ xem cấp cao nhất](glossary://top-level%20view). `NavigationStack` đóng vai trò như một [bộ chứa](glossary://container) hiển thị các chế độ xem khác.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasksymbolGridApp..Page17..Paragraph41" = "Thêm một `NavigationStack` bên trong `WindowGroup`:";
+
+/*  */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasksymbolGridApp..Page17..CodeBlock6" = "NavigationStack { \n\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasksymbolGridApp..Page18..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasksymbolGridApp..Page18..Paragraph42" = "Tiếp theo, hãy cung cấp chế độ xem mà bạn muốn ngăn xếp điều hướng hiển thị khi ứng dụng khởi chạy lần đầu tiên. Để thực hiện việc này, hãy cắt và dán `SymbolGrid()` dưới dạng nội dung bên trong `NavigationStack`:";
+
+/*  */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasksymbolGridApp..Page18..CodeBlock7" = "NavigationStack { \n    SymbolGrid()\n}\n";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasksymbolGridApp..Page18..Paragraph43" = "Khi một người sử dụng ứng dụng của bạn điều hướng đến một chế độ xem khác, `SymbolGrid` di chuyển xuống dưới của ngăn xếp điều hướng, đẩy một chế độ xem khác lên để hiển thị nội dung.";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasksymbolGridApp..Page19..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasksymbolGridApp..Page19..Paragraph44" = "Một mục cuối cùng tại đây trước khi chuyển tiếp. Bạn có thể đặt cho từng chế độ xem bên trong `NavigationStack` một tiêu đề riêng và tùy chỉnh cách hiển thị bằng các trình sửa đổi `.navigationTitle(_:)` và `navigationBarTitleDisplayMode(_:)`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasksymbolGridApp..Page19..Paragraph45" = "Thử thêm những trình sửa đổi này bên dưới `SymbolGrid` và lưu ý cách chế độ xem của bạn hiển thị tiêu đề bây giờ. Việc đặt tiêu đề cho các chế độ xem khi điều hướng giữa nhiều chế độ xem trong ứng dụng của bạn rất hữu ích.";
+
+/*  */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasksymbolGridApp..Page19..CodeBlock8" = ".navigationTitle(\"Ký hiệu của tôi\")\n.navigationBarTitleDisplayMode(.inline)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasknavigationLinksGrid..title" = "Tạo liên kết điều hướng từ các mục lưới";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasknavigationLinksGrid..Paragraph46" = "Biến từng mục trong lưới của bạn thành một [NavigationLink](doc://com.apple.documentation/documentation/swiftui/navigationlink).";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasknavigationLinksGrid..Page20..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasknavigationLinksGrid..Page20..Paragraph47" = "Nếu mục tiêu của bạn là cho phép điều hướng đến một chế độ xem mới bất kỳ lúc nào một người chạm vào một ký hiệu thì bạn sẽ cần đặt từng ký hiệu trong lưới bên trong một [NavigationLink](doc://com.apple.documentation/documentation/swiftui/navigationlink).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasknavigationLinksGrid..Page20..Paragraph48" = "`NavigationLink` có cả [đích](glossary://destination%20view) – chế độ xem mà bạn điều hướng đến – và một [nhãn](glossary://label) – cách liên kết hiển thị. Trong trường hợp này, nhãn là chế độ xem `Image` của ký hiệu và đích là chế độ xem `SymbolDetail`.";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasknavigationLinksGrid..Page21..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasknavigationLinksGrid..Page21..Paragraph49" = "Thêm một `NavigationLink` bên trong `ForEach` của `LazyVGrid`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasknavigationLinksGrid..Page21..Paragraph50" = "Liên kết điều hướng này có một đích là `SymbolDetail`, liên kết đến ký hiệu trong ô đó của lưới.";
+
+/*  */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasknavigationLinksGrid..Page21..CodeBlock9" = "NavigationLink {\n    SymbolDetail(symbol: symbol)\n} label: {\n    //#-learning-code-snippet(addLabelNavLink)\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasknavigationLinksGrid..Page22..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasknavigationLinksGrid..Page22..Paragraph51" = "Cắt và dán chế độ xem `Image` của bạn dưới dạng một [nhãn](glossary://label) bên trong các dấu ngoặc nhọn của `NavigationLink`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasknavigationLinksGrid..Page22..Paragraph52" = "Việc này biến chế độ xem thành một nút sẽ đẩy chế độ xem đích — `SymbolDetail` — lên trên cùng của ngăn xếp điều hướng khi được chạm.";
+
+/*  */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasknavigationLinksGrid..Page22..CodeBlock10" = "Image(systemName: symbol.name)\n    .resizable()\n    .scaledToFit()\n    .symbolRenderingMode(.hierarchical)\n    .foregroundColor(.accentColor)\n    .padding()\n";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasknavigationLinksGrid..Page23..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasknavigationLinksGrid..Page23..Paragraph53" = "Bây giờ, hãy thử thêm một trong các ký hiệu trong bản xem trước.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup2..TasknavigationLinksGrid..Page23..Paragraph54" = "Việc điều hướng của bạn có hoạt động như dự kiến không? Bạn có thể điều hướng trở lại lưới sau khi đã di chuyển đến một chế độ xem khác không?";
+
+/* Title for the section of tasks to complete */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..title" = "Thêm chức năng sửa";
+
+/* Title for task */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TasksymbolGridEditing..title" = "Thêm các mục vào lưới của bạn";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TasksymbolGridEditing..Paragraph55" = "Khám phá cách thêm các mục vào lưới bằng một [bảng](doc://com.apple.documentation/documentation/SwiftUI/View/sheet(isPresented:onDismiss:content:)).";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TasksymbolGridEditing..Page24..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TasksymbolGridEditing..Page24..Paragraph56" = "Đã đến lúc làm cho lưới này hấp dẫn (🌶 bùm!) với một số chức năng sửa. Trước tiên, hãy thêm một mục vào lưới của bạn.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TasksymbolGridEditing..Page24..Paragraph57" = "Bắt đầu bằng cách thêm một [thuộc tính trạng thái](glossary://state%20property), `isAddingSymbol`, dưới dạng một giá trị Boolean, là giá trị làm cho việc bật hoặc tắt chức năng thêm một ký hiệu mới trở nên khả thi:";
+
+/*  */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TasksymbolGridEditing..Page24..CodeBlock11" = "@State private var isAddingSymbol = false\n";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TasksymbolGridEditing..Page25..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TasksymbolGridEditing..Page25..Paragraph58" = "Vậy làm cách nào để bật `isAddingSymbol` (được gán giá trị `true`)?";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TasksymbolGridEditing..Page25..Paragraph59" = "Đối với việc này, bạn sẽ thêm một nút trong [thanh công cụ](glossary://toolbar) để thêm một ký hiệu mới. Thanh công cụ là một phần của `NavigationStack`, vậy nên hãy đảm bảo rằng bạn đã thêm trong phần “Tạo ra ngăn xếp điều hướng cho ứng dụng của bạn” trước đó.";
+
+/*  */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TasksymbolGridEditing..Page25..CodeBlock12" = ".toolbar {\n    ToolbarItem(placement: .navigationBarTrailing) {\n        Button {\n            isAddingSymbol = true\n        } label: {\n            Image(systemName: \"plus\")\n        }\n    }\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TasksymbolGridEditing..Page26..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TasksymbolGridEditing..Page26..Paragraph60" = "Bây giờ, hãy thử đẩy nút Thêm (+). Đợi đã… nút đó chưa thực hiện bất kỳ chức năng nào!";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TasksymbolGridEditing..Page27..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TasksymbolGridEditing..Page27..Paragraph61" = "Để thêm một ký hiệu mới, bạn sẽ hiển thị một [bảng](doc://com.apple.documentation/documentation/SwiftUI/View/sheet(isPresented:onDismiss:content:)) với một chế độ xem `SymbolPicker` khi `isAddingSymbol` là `true`. Khi bạn ẩn bảng đó, hàm `addSymbol` thêm ký hiệu được chọn vào lưới.";
+
+/*  */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TasksymbolGridEditing..Page27..CodeBlock13" = "/*#-code-walkthrough(onDismiss)*/\n.sheet(isPresented: $isAddingSymbol, onDismiss: addSymbol) {\n/*#-code-walkthrough(onDismiss)*/\n    /*#-code-walkthrough(symbolPicker)*/\n    SymbolPicker(symbol: $selectedSymbol)\n    /*#-code-walkthrough(symbolPicker)*/\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TasksymbolGridEditing..Page28..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TasksymbolGridEditing..Page28..Paragraph62" = "[Đối số](glossary://argument) của `SymbolPicker` (`$selectedSymbol`) là một kiểu giá trị đặc biệt, được gọi là [ràng buộc](glossary://binding). Khi bạn chuyển một giá trị ràng buộc vào một [chế độ xem phụ](glossary://subview), chế độ xem phụ đó có thể sửa đổi giá trị, nhưng chỉ [chế độ xem bộ chứa](glossary://container) lưu trữ [giá trị thực tế](glossary://source%20of%20truth).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TasksymbolGridEditing..Page28..Paragraph63" = "Việc chuyển `selectedSymbol` dưới dạng đối số cho phép `SymbolPicker` sửa đổi giá trị đó từ chế độ xem phụ trong khi duy trì một [nguồn chân lý](glossary://source%20of%20truth) đơn nhất trong `SymbolGrid`.";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TasksymbolGridEditing..Page29..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TasksymbolGridEditing..Page29..Paragraph64" = "Khi bảng ẩn đi, `addSymbol` chèn giá trị được gán cho `selectedSymbol` vào dãy `symbols`. Vì `symbols` là một [thuộc tính trạng thái](glossary://state%20property) nên SwiftUI nhận biết sự thay đổi và cập nhật UI lưới bằng ký hiệu mới.";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TasksymbolGridEditing..Page30..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TasksymbolGridEditing..Page30..Paragraph65" = "Tiếp tục thực hiện và thử thêm một ký hiệu mới trong bản xem trước. Bạn có thể sử dụng [phương thức vịt cao su](glossary://rubber%20ducky%20method) để giải thích cách giá trị được thêm rồi cập nhật trong lưới không?";
+
+/* Title for task */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..title" = "Xóa các mục khỏi lưới";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..Paragraph66" = "Thêm một chế độ sửa để cho phép xóa các mục khỏi lưới.";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..Page31..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..Page31..Paragraph67" = "Để xóa các mục khỏi lưới, bạn sẽ thêm một chế độ sửa. Hãy thêm một [thuộc tính trạng thái](glossary://state%20property) khác, `isEditing`, để theo dõi xem UI của bạn có hiển thị UI xóa không.";
+
+/*  */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..Page31..CodeBlock14" = "@State private var isEditing = false\n";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..Page32..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..Page32..Paragraph68" = "Để chuyển đổi trạng thái sửa, hãy thêm một `Button` vào thanh công cụ của bạn, nút này có nhiệm vụ chuyển đổi giá trị của `isEditing` khi được chạm.";
+
+/*  */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..Page32..CodeBlock15" = "ToolbarItem(placement: .navigationBarLeading) {\n    Button(isEditing ? \"Xong\" : \"Sửa\") {\n        withAnimation {\n            isEditing.toggle()\n        }\n    }\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..Page33..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..Page33..Paragraph69" = "Bây giờ, bạn có thể nhìn thấy nút “Sửa” trong thanh công cụ, thay đổi thành “Xong” khi được chạm. Nhưng nút này chưa được liên kết với bất kỳ UI nào trong chế độ xem.";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..Page34..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..Page34..Paragraph70" = "Để sử dụng `isEditing` để xóa các ký hiệu khỏi lưới, bạn sẽ cần tạo ra một số UI điều kiện được hiển thị khi `isEditing` là `true`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..Page34..Paragraph71" = "Mã bên dưới phủ một dấu “x” màu đỏ lên trên một ký hiệu khi giá trị này là `true`.";
+
+/*  */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..Page34..CodeBlock16" = ".overlay(alignment: .topTrailing) {\n    if isEditing {\n        Button {\n            //#-learning-code-snippet(removeSymbol)\n        } label: {\n            Image(systemName: \"xmark.square.fill\")\n                .font(.title)\n                .symbolRenderingMode(.palette)\n                .foregroundStyle(.white, Color.red)\n        }\n    }\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..Page35..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..Page35..Paragraph72" = "Nếu bạn thử chuyển đổi chế độ Sửa thì bây giờ bạn sẽ nhìn thấy chế độ xem “x” màu đỏ bên trên các hình ảnh ký hiệu, nhưng việc chạm vào chúng chưa thực hiện bất kỳ chức năng nào. 😕";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..Page35..Paragraph73" = "Nếu bạn muốn xóa một mục khỏi lưới thì bạn cần tìm và xóa ký hiệu đó khỏi dãy `symbols`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..Page35..Paragraph74" = "Thêm mã này bên trong [bao đóng](glossary://closure) hành động của nút để xóa một mục khi chạm vào dấu “x” màu đỏ:";
+
+/*  */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..Page35..CodeBlock17" = "remove(symbol: symbol)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..Page36..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..Page36..Paragraph75" = "Vậy là xong! Chạm vào nút “x” màu đỏ sẽ xóa ký hiệu khỏi lưới.";
+
+/* title for page */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..Page37..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..Page37..Paragraph76" = "Nếu bạn muốn thêm một phần chức năng sửa thú vị khác thì bạn có thể thêm một trình tạo bước cho phép bạn chủ động thay đổi số lượng cột trong lưới của mình.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..Page37..Paragraph77" = "Thử thêm mã này vào trên cùng của `VStack` trong `SymbolGrid` và kiểm tra để xem cách hoạt động!";
+
+/*  */
+"GuideBook..Guide0..StepEditing Grids..TaskGroup3..TaskdeleteGridItems..Page37..CodeBlock18" = "if isEditing {\n    Stepper(columnsText, value: $numColumns, in: 1...6, step: 1) { _ in\n        withAnimation { gridColumns = Array(repeating: GridItem(.flexible()), count: numColumns) }\n    }\n    .padding()\n}\n";
+

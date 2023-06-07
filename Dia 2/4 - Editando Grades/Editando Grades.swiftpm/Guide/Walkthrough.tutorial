@@ -1,0 +1,356 @@
+@GuideBook(title: "Editing Grids", icon: title.png, background: titleBackground.png, firstFile: SymbolGridApp.swift) {
+    @WelcomeMessage(title: "Editing Grids") {
+        In this sample, you’ll create a grid interface populated with SF Symbols.
+    }
+    @Guide {
+        @Step(title: "Editing Grids") {
+            @ContentAndMedia {
+                ![](intro.png)  
+
+                In [Organizing with Grids](x-com-apple-playgrounds://projects?contentId=com.apple.playgrounds.organizingwithgrids), you learned how to lay out your app’s interface using a grid of colored rectangles. In this sample, you’ll create a similar grid interface populated with [SF Symbols](https://developer.apple.com/sf-symbols/). To build on what you’ve learned, Editing Grids takes your app to the next level by teaching you about two important features in app design: navigating within your app, and editing data.
+                
+                * To make it easy for people to move around in your app, you need to provide a way for them to navigate between different [views](glossary://view).
+                * To allow people to edit the data in your app, you need an editing mode. You’ll learn how to add editing functionality to a grid, including adding and removing grid items.
+                
+                Time to get started!
+                
+                @GuideButton(type: walkthrough, title: "Start Walkthrough", description: "AX description for button")
+            }
+            @TaskGroup(title: "Using SF Symbol data") { 
+                @Task(type: walkthrough, title: "Define an identifiable type", id: "symbolStruct", file: Symbol.swift) {
+                    Learn how to create data that is uniquely identifiable by SwiftUI.
+                    
+                    @Page(id: "symbol.struct", title: "") {
+                        When creating a grid, one of the first questions you should ask is, “What content do I want to put into the grid?“ Here, you’ll use [SF Symbols](https://developer.apple.com/sf-symbols/), because they’re excellent icons that are easy to add to in your code.
+                        
+                        This structure is the [data model](glossary://data%20model) that represents a single SF Symbol.
+                    }
+                    @Page(id: "symbol.struct", title: "") {
+                       Each of the images in your grid uses a `Symbol` [instance](glossary://instance), such as `Symbol(name: "eyes")`. 
+                       
+                       Because the `Symbol` type [conforms](glossary://conform) to the [Identifiable](doc://com.apple.documentation/documentation/swift/identifiable) protocol, SwiftUI identifies each cell of your grid based on the symbol’s `id` value, even if several symbols use the same `name` String.
+                        
+                        Adding `Identifiable` conformance to your [data model](glossary://data%20model) is a great pattern to follow when using `ForEach` to populate a grid or list with views, because a `ForEach` needs a unique ID for its items to make updates to a corresponding view.
+                    }
+                    @Page(id: "symbol.id", title: "") {
+                        Your `Symbol` type contains an `id` property, which is a requirement of the `Identifiable` protocol. You make sure each item has its own identity by setting this property to a `UUID` value.
+                    }
+                    @Page(id: "symbol.name", title: "") {
+                        The `name` property is a [String](doc://com.apple.documentation/documentation/swift/string) value that corresponds to an [SF Symbol](https://developer.apple.com/sf-symbols/). You will use this property to create the `Image` views in your grid. 
+                    }
+                }
+                @Task(type: experiment, title: "Create the detail view for symbols", id: "itemDetails", file: SymbolDetail.swift) {
+                    Learn how to create an image view that uses an [SF Symbol](https://developer.apple.com/sf-symbols/).  
+                    
+                    @Page(id: "itemDetail", title: "") {
+                        Before diving into `SymbolGrid`, you’ll first learn how to create an image using a `Symbol` value. 
+                        
+                        `SymbolDetail` uses the `symbol` [property](glossary://property) to create a detailed view of the symbol, complete with a text description and an image.
+                    }
+                    @Page(id: "imageInitializer", title: "") {
+                        There are multiple ways to create an [Image](doc://com.apple.documentation/documentation/swiftui/image/) in SwiftUI. One way is to use the [parameter](glossary://parameter) `systemName`, which creates an image using the SF Symbol associated with the [string](glossary://String) passed in.
+                        
+                        Add the following code inside the `VStack` to create an image using the symbol’s name:
+                        
+                        ```
+                        Image(systemName: symbol.name)
+                        ```
+                    }
+                    @Page(id: "imageModifiers", title: "") {
+                        Congrats on creating an image using an SF Symbol! But it’s so tiny. 🔎
+                        
+                        After creating the image view, you can use [modifiers](glossary://modifier) to change how the view looks and behaves. Modifiers in SwiftUI are [methods](glossary://method) that you use to modify the appearance of a view. You can apply more than one modifier to a view, chaining them one after another, but arranged on separate lines in your code to make the code more readable. You can change the view’s appearance using the same modifiers, depending on how you arrange them.  
+                        
+                        Add these modifiers below your `Image` view to scale it up and provide some preferences for color and appearance:
+                        
+                        ```
+                        .resizable()
+                        .scaledToFit()
+                        .symbolRenderingMode(.hierarchical)
+                        .foregroundColor(.accentColor)
+                        ```
+                    }
+                    @Page(id: "experimentWithModifiers", title: "") {
+                        Much better! 
+                        
+                        As a bit of an experiment, try changing the `.foregroundColor` or `.symbolRenderingMode` modifiers to see how the preview changes.
+                    }
+                    @Page(id: "addTextView", title: "", isHidden: true) {
+                        Now, a challenge: try adding a `Text` view above your `Image` that shows the symbol’s name.
+                        
+                        See if you can figure this out, using the following code if you get stuck: 
+                        
+                        ```
+                        Text(symbol.name)
+                        ```
+                    }
+                    @Page(id: "addTextModifier", title: "", isHidden: true) {
+                        Add the `font` modifier to your `Text` view, and give it a larger size. Now it fits better with the image!
+                        
+                        ```
+                        .font(.largeTitle)
+                        ```
+                    }
+                    @Page(id: "symbolPreview", title: "") {
+                        If you want to try previewing a different symbol here, go to the `Details_Previews` structure at the bottom of this file and change the `Symbol` that’s passed into `SymbolDetail`. 
+                        
+                        Try replacing it to see a different symbol in the preview: 
+                        
+                        ```
+                        Symbol(name: "brain.head.profile")
+                        ```
+                    }
+                }
+            }
+            @TaskGroup(title: "Creating the grid") { 
+                @Task(type: walkthrough, title: "Build the navigation grid", id: "symbolGrid", file: SymbolGrid.swift) {
+                    Create a grid of SF Symbols from an [array](glossary://array) of `Symbol` values.
+                    
+                    @Page(id: "3.symbolNames", title: "") {
+                        To create the grid of SF Symbols, you’ll use the `symbols` [property](glossary://property), which tracks a collection of `Symbol` instances. 
+                        
+                        When you mark this property with `@State`, SwiftUI manages the storage for the value. Whenever this [state property](glossary://state%20property) changes, SwiftUI updates any views using the value (the grid, in this case). For instance, if you delete a symbol, the corresponding symbol image disappears from the grid.
+                    }
+                    @Page(id: "3.addSymbol", title: "") {
+                        To find and add additional SF Symbols, [download the SF Symbols app](https://developer.apple.com/sf-symbols/) and add new `Symbol` instances with the desired symbol name.
+                        
+                        ```
+                        Symbol(name: "moon.stars"),
+                        ```
+                    }
+                    @Page(id: "3.lazyVGrid", title: "") {
+                        To create a grid, use a [LazyVGrid](doc://com.apple.documentation/documentation/swiftui/lazyvgrid) and pass in the `gridColumns` value, specifying an initial number of flexible `GridItem` instances in each row. Change the value for `initialColumns` to start with a different number of columns.
+                        
+                        Nest the `LazyVGrid` inside a [ScrollView](doc://com.apple.documentation/documentation/swiftui/scrollview), so people can scroll through the grid’s content if it exceeds the vertical space of the grid view.
+                    }
+                    @Page(id: "3.forEach", title: "") {
+                        `ForEach` usually requires you to provide an ID for each element of the collection so it can track when specific elements in the collection change. `ForEach` works best with a [collection](glossary://collection) of [Identifiable](doc://com.apple.documentation/documentation/swift/identifiable) types, such as `Symbol`, so that it can keep track of each item in the collection and update a specific view when that item’s value changes.
+                    }
+                    @Page(id: "3.imageView", title: "") {
+                        After `ForEach`, you’ll create `Image` views for each symbol in the grid. Create the `Image` view using the name of the symbol, just like in `SymbolDetail`.
+                    }
+                }
+            }
+            @TaskGroup(title: "Adding Navigation") { 
+                @Task(type: experiment, title: "Create the navigation stack for your app", id: "symbolGridApp", file: SymbolGridApp.swift) {
+                    Wrap your `SymbolGrid` in a `NavigationStack` to allow navigation to different views. 
+                    
+                    @Page(id: "symbolGridApp", title: "") {
+                        Wouldn’t it be great if tapping a symbol took you to its corresponding `SymbolDetail` view? For this, you’ll need navigation.
+                        
+                        There are multiple ways to manage navigation in your app. You can use a [NavigationSplitView](doc://com.apple.documentation/documentation/swiftui/navigationsplitview) if you want to present content in multiple columns, or a [NavigationStack](doc://com.apple.documentation/documentation/swiftui/navigationstack) to display content as a single stack, where you push a view to the top of that stack when it needs to display.
+                    }
+                    @Page(id: "addNavigationView", title: "") {
+                        To provide navigation functionality in your app, create a [NavigationStack](doc://com.apple.documentation/documentation/swiftui/navigationstack) as your [top-level view](glossary://top-level%20view). The `NavigationStack` acts as a [container](glossary://container) that shows other views.
+                        
+                        Add a `NavigationStack` inside `WindowGroup`:
+                        
+                        ```
+                        NavigationStack { 
+                        
+                        }
+                        ```
+                    }
+                    @Page(id: "addSymbolGrid", title: "", isAddable: false) {
+                        Next, provide the view that you’d like the navigation stack to display when the app first launches. To do this, cut and paste `SymbolGrid()` as the content inside `NavigationStack`:
+                        
+                        ```
+                        NavigationStack { 
+                            SymbolGrid()
+                        }
+                        ```
+                        
+                        When a person using your app navigates to another view, `SymbolGrid` moves down the navigation stack, pushing up a different view to show its content.
+                    }
+                    @Page(id: "navigationTitle", title: "") {
+                        One final item here before moving on. You can give each view inside the `NavigationStack` its own title, and customize how it displays using the `.navigationTitle(_:)` and `navigationBarTitleDisplayMode(_:)` modifiers. 
+                        
+                        Try adding these below `SymbolGrid` and notice how your view now displays a title. It's very useful to title your views when navigating between many different ones in your app. 
+                        
+                        ```
+                        .navigationTitle("My Symbols")
+                        .navigationBarTitleDisplayMode(.inline)
+                        ```
+                    }
+                    
+                }
+                @Task(type: experiment, title: "Create navigation links from grid items", id: "navigationLinksGrid", file: SymbolGrid.swift) {
+                    Make each item in your grid into a [NavigationLink](doc://com.apple.documentation/documentation/swiftui/navigationlink).
+                    
+                    @Page(id: "navigationLink", title: "") {
+                        If your goal is to enable navigation to a new view whenever a person taps a symbol, you’ll need to place each of the symbols in your grid inside a [NavigationLink](doc://com.apple.documentation/documentation/swiftui/navigationlink).
+                        
+                        A `NavigationLink` has both a [destination](glossary://destination%20view) — the view you navigate to — and a [label](glossary://label) — how the link displays. In this case, the label is the `Image` view of the symbol, and the destination is the `SymbolDetail` view.
+                    }
+                    @Page(id: "addNavigationLink", title: "") {
+                        Add a `NavigationLink` inside of the `ForEach` of the `LazyVGrid`.
+                        
+                        This navigation link has a destination of `SymbolDetail`, which links to the symbol in that cell of the grid.
+                        
+                        ```
+                        NavigationLink {
+                            SymbolDetail(symbol: symbol)
+                        } label: {
+                            //#-learning-code-snippet(addLabelNavLink)
+                        }
+                        ```
+                    }
+                    @Page(id: "addLabelNavLink", title: "", isAddable: false) {
+                        Cut and paste your `Image` view as a [label](glossary://label) inside the curly braces of the `NavigationLink`. 
+                        
+                        This turns the view into a button that, when tapped, pushes the destination view — `SymbolDetail` — to the top of the navigation stack.
+                        
+                        ```
+                        Image(systemName: symbol.name)
+                            .resizable()
+                            .scaledToFit()
+                            .symbolRenderingMode(.hierarchical)
+                            .foregroundColor(.accentColor)
+                            .padding()
+                        ```
+                    }
+                    @Page(id: "tryTappingSymbol", title: "") {
+                        Now, try tapping one of the symbols in the preview. 
+                        
+                        Does your navigation work as expected? Can you navigate back to the grid after you’ve moved to another view?
+                    }
+                }
+            }
+            @TaskGroup(title: "Adding editing functionality") {
+                @Task(type: experiment, title: "Add items to your grid", id: "symbolGridEditing", file: SymbolGrid.swift) {
+                    Explore how to add items to your grid using a [sheet](doc://com.apple.documentation/documentation/SwiftUI/View/sheet(isPresented:onDismiss:content:)).
+                    
+                    @Page(id: "addStatePropertyIsAddingSymbol", title: "") {
+                        It’s time to spice up this grid (🌶 bam!) with some editing functionality. First up, adding an item to your grid.
+                        
+                        Start by adding a [state property](glossary://state%20property), `isAddingSymbol`, as a Boolean value, the value of which makes it possible to enable or disable adding a new symbol:
+                        
+                        ```
+                        @State private var isAddingSymbol = false
+                        ```
+                    }
+                    @Page(id: "addToolBar", title: "") {
+                        So, how does `isAddingSymbol` get turned on (assigned a value of `true`)?
+                        
+                        For this, you’ll add a button in the [toolbar](glossary://toolbar) for adding a new symbol. The toolbar is a part of the `NavigationStack`, so make sure you’ve added one in “Create the navigation stack for your app,” earlier.
+                        
+                        ```
+                        .toolbar {
+                            ToolbarItem(placement: .navigationBarTrailing) {
+                                Button {
+                                    isAddingSymbol = true
+                                } label: {
+                                    Image(systemName: "plus")
+                                }
+                            }
+                        }
+                        ```
+                    }
+                    @Page(id: "tryButton", title: "") {
+                        Now, try pushing the Add button (+). Wait…it doesn’t do anything yet! 
+                    }
+                    @Page(id: "sheet", title: "") {
+                        To add a new symbol, you’ll display a [sheet](doc://com.apple.documentation/documentation/SwiftUI/View/sheet(isPresented:onDismiss:content:)) with a `SymbolPicker` view when `isAddingSymbol` is `true`. When you dismiss the sheet, the `addSymbol` function adds the selected symbol to the grid.
+                        
+                        ```
+                        /*#-code-walkthrough(onDismiss)*/
+                        .sheet(isPresented: $isAddingSymbol, onDismiss: addSymbol) {
+                        /*#-code-walkthrough(onDismiss)*/
+                            /*#-code-walkthrough(symbolPicker)*/
+                            SymbolPicker(symbol: $selectedSymbol)
+                            /*#-code-walkthrough(symbolPicker)*/
+                        }
+                        ```
+                    }
+                    @Page(id: "symbolPicker", title: "") {
+                        The [argument](glossary://argument) to `SymbolPicker` (`$selectedSymbol`) is a special type of value, known as a [binding](glossary://binding). When you pass a binding value into a [subview](glossary://subview), that subview can modify its value, but only the [container view](glossary://container) stores the [actual value](glossary://source%20of%20truth). 
+                        
+                        Passing `selectedSymbol` as an argument allows `SymbolPicker` to modify that value from the subview while keeping a single [source of truth](glossary://source%20of%20truth) in `SymbolGrid`.
+                    }
+                    @Page(id: "onDismiss", title: "") {
+                        When the sheet dismisses, `addSymbol` inserts the value assigned to `selectedSymbol` to the `symbols` array. Because `symbols` is a [state property](glossary://state%20property), SwiftUI recognizes the change and updates the grid UI with the new symbol.
+                    }
+                    @Page(id: "tryAdding", title: "") {
+                        Go ahead and try adding a new symbol in the preview. Can you use the [rubber ducky method](glossary://rubber%20ducky%20method) to explain how that value gets added then updated in the grid?
+                    }
+                }
+                @Task(type: experiment, title: "Delete items from the grid", id: "deleteGridItems", file: SymbolGrid.swift) {
+                    Add an editing mode to enable deleting items from the grid. 
+                    
+                    @Page(id: "statePropertyIsEditing", title: "") {
+                        To delete items from the grid, you’ll add an editing mode. Add another [state property](glossary://state%20property), `isEditing`, to track whether your UI shows the deletion UI.
+                        
+                        ```
+                        @State private var isEditing = false
+                        ```
+                    }
+                    @Page(id: "addToolbarItem", title: "") {
+                        To switch the editing state, add a `Button` to your toolbar that toggles the value of `isEditing` when tapped. 
+                        
+                        ```
+                        ToolbarItem(placement: .navigationBarLeading) {
+                            Button(isEditing ? "Done" : "Edit") {
+                                withAnimation {
+                                    isEditing.toggle()
+                                }
+                            }
+                        }
+                        ```
+                    }
+                    @Page(id: "editButtonVisible", title: "") {
+                        You now see an “Edit” button in the toolbar that changes do “Done” when tapped. But it isn’t tied to any UI in the view yet. 
+                    }
+                    @Page(id: "addOverlay", title: "") {
+                        To use `isEditing` to remove symbols from your grid, you’ll need to create some conditional UI that’s presented when `isEditing` is `true`.
+                        
+                        The code below overlays a red “x” over a symbol when this value is `true`.
+                        
+                        ```
+                        .overlay(alignment: .topTrailing) {
+                            if isEditing {
+                                Button {
+                                    //#-learning-code-snippet(removeSymbol)
+                                } label: {
+                                    Image(systemName: "xmark.square.fill")
+                                        .font(.title)
+                                        .symbolRenderingMode(.palette)
+                                        .foregroundStyle(.white, Color.red)
+                                }
+                            }
+                        }
+                        ```
+                    }
+                    @Page(id: "removeSymbol", title: "") {
+                        If you try toggling Edit mode, you’ll now see red “x” views over your symbol images, but tapping them doesn’t do anything yet. 😕
+                        
+                        If you want to remove an item from the grid, you need to find and remove that symbol from the `symbols` array. 
+                        
+                        Add this code inside your button’s action [closure](glossary://closure) to remove an item when tapping the red “x”:
+                        
+                        ```
+                        remove(symbol: symbol)
+                        ```
+                    }
+                    @Page(id: "removeButtonComplete", title: "") {
+                        And that’s it! Tapping the red “x” button removes the symbol from the grid. 
+                    }
+                    @Page(id: "addStepperEditor", title: "") {
+                        If you want to add one other interesting piece of editing functionality, you can add a stepper that allows you to dynamically change the number of columns in your grid. 
+                        
+                        Try adding this code to the top of the `VStack` in `SymbolGrid`, and test it to see how it works!
+                       
+                        ```
+                        if isEditing {
+                            Stepper(columnsText, value: $numColumns, in: 1...6, step: 1) { _ in
+                                withAnimation { gridColumns = Array(repeating: GridItem(.flexible()), count: numColumns) }
+                            }
+                            .padding()
+                        }
+                        ```
+                    }
+                }
+            }
+            
+        }
+    }
+}
