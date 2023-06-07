@@ -12,7 +12,7 @@ struct BasicGrid: View {
                 Color.red
                 Color.white
                 Color.blue
-                Text("Olá, mundo! lorem ipsun dolor sit amet").gridCellAnchor(.bottomTrailing) // alinhando celulas individuais
+                // Text("Olá, mundo! lorem ipsun dolor sit amet").gridCellAnchor(.bottomTrailing) // alinhando celulas individuais
                 Image("cactuswren").resizable()
             }
             /*#-code-walkthrough(basicGrid)*/

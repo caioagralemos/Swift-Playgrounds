@@ -5,7 +5,17 @@ import SwiftUI
 struct ColorGridApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView {
+                ContentView()
+                    .tabItem {
+                        Label("Sheldon", systemImage: "person")
+                    }
+                
+                BasicGrid()
+                    .tabItem {
+                        Label("Grid Básico", systemImage: "grid")
+                    }
+            }
         }
     }
 }
