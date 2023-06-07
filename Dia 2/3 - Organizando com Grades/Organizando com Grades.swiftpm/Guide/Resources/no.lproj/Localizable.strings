@@ -1,0 +1,366 @@
+/* Title of Guidebook */
+"GuideBook..title" = "Organisere med rutenett";
+
+/* The title of the Welcome Message for the GuideBook */
+"GuideBook..WelcomeMessageOrganizing with grids..title" = "Organisere med rutenett";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..WelcomeMessageOrganizing with grids..Paragraph0" = "Dette eksempelet viser hvordan du kan organisere innhold ved hjelp av to forskjellige typer rutenett. Er du klar til å hoppe inn i matrisen?";
+
+/* Title of step named Organizing with grids */
+"GuideBook..Guide0..StepOrganizing with grids..title" = "Organisere med rutenett";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..LearningCenterContent..Paragraph1" = "![](intro.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..LearningCenterContent..Paragraph2" = "I dette eksempelet lærer du hvordan du organiserer innhold ved hjelp av to vanlige former for rutenettvisning: [Grid](doc://com.apple.documentation/documentation/swiftui/grid) og [LazyVGrid](doc://com.apple.documentation/documentation/swiftui/lazyvgrid).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..LearningCenterContent..Paragraph3" = "Et rutenett er en av de vanligste måtene å organisere innhold på i apper. Disse eksperimentene hjelper deg med å mestre rutenett, slik at du kan skape dine egne grensesnitt med rutenettyper som kan tilpasses. Hurra!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..LearningCenterContent..Paragraph4" = "Når du er ferdig med dette eksempelet, kan du fortsette å lære hvordan du oppretter rutenettbaserte apper i [Editing Grids](x-com-apple-playgrounds://projects?contentId=com.apple.playgrounds.editinggrids).";
+
+/* title of the guide button */
+"GuideBook..Guide0..StepOrganizing with grids..LearningCenterContent..GuideButtonStart Walkthrough..title" = "Start gjennomgangen";
+
+/* accessibility description for guide button */
+"GuideBook..Guide0..StepOrganizing with grids..LearningCenterContent..GuideButtonStart Walkthrough..description" = "Tilgjengelighetsbeskrivelse for knapp";
+
+/* Title for task */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..title" = "Opprett og tilpass et enkelt rutenett";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Paragraph5" = "Opprett en enkel rutenettlayout ved hjelp av `Grid`.";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page0..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page0..Paragraph6" = "Rutenett er nyttige når du oppretter et [brukergrensesnitt](glossary://user%20interface) som viser innhold i flere rader og kolonner, for eksempel TV-serier i Apple TV+.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page0..Paragraph7" = "Denne koden viser en struktur for en grunnleggende `Grid`-visning. En `Grid` er en [visning](glossary://view), og derfor kan den inneholde et valgfritt antall visninger. For å fylle rutenettet med visninger legger du til en `GridRow` som inneholder flere `Color`-visninger som skal vises.";
+
+/*  */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page0..CodeBlock0" = "GridRow {\n    Color.mint\n    Color.orange\n    Color.pink\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page1..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page1..Paragraph8" = "Første `GridRow` viser tre visninger med forskjellig `Color`-verdi. Ser det ikke fint ut?";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page1..Paragraph9" = "Du kan legge til så mange rader du vil i rutenettet. Prøv å legge til en ekstra `GridRow` for å se hvordan rutenettet endres:";
+
+/*  */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page1..CodeBlock1" = "GridRow {\n    Color.blue\n    Color.teal\n    //#-learning-code-snippet(gridCellColumns)\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page2..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page2..Paragraph10" = "Legger du merke til noe interessant? Den `GridRow` som har flest visninger, bestemmer hvor mange kolonner det skal være i rutenettet. Selv om den andre raden bare har to visninger, er det fortsatt tre kolonner i rutenettet, slik at det ene området i rutenettet blir tomt.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page2..Paragraph11" = "Av og til kan det være helt greit, men hva hvis du vil gjøre noe med det? 🤔 Her er et forslag: Du kan la den ene visningen i denne raden fylle flere kolonner.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page2..Paragraph12" = "Legg til `.gridCellColumns(_:)`-modifikatoren i en av visningene i den andre raden for å få den til å bruke to områder. Endre deretter antall områder som brukes, for å se hvordan det påvirker rutenettet.";
+
+/*  */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page2..CodeBlock2" = ".gridCellColumns(2)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page3..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page3..Paragraph13" = "Legg til en ekstra `GridRow` selv, og fyll den med så mange av dine egne visninger som du vil.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page3..Paragraph14" = "Prøv å bruke `Text`-, `Image`- og `Color`-visningen i raden i rutenettet. Hva legger du merke til for området der de brukes? Din `GridRow` endrer automatisk størrelse for å få plass til den høyeste visningen i raden.";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page4..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page4..Paragraph15" = "Du kan bruke parametrene `alignment`, `horizontalSpacing` og `verticalSpacing` til å tilpasse avstanden og justeringen i rutenettet. Prøv å legge til disse parametrene nå:";
+
+/*  */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page4..CodeBlock3" = "Grid(alignment: .top, horizontalSpacing: 20, verticalSpacing: 40)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page5..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page5..Paragraph16" = "Du kan også bruke `alignment`-parameteren for `GridRow` for å tilpasse justeringen for individuelle rader. Innstillingen for raden overstyrer innstillingen for rutenettets justering.";
+
+/*  */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page5..CodeBlock4" = "GridRow(alignment: .bottom) { \n    Text(\"Jeg er nederst i visningen!\")\n    Color.red\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page6..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page6..Paragraph17" = "Du kan til og med tilpasse justeringen for enkelte celler i rutenettet ved hjelp av `.gridCellAnchor(_:)`-modifikatoren. Nå kan du bokstavelig talt tilpasse alt i rutenettet!";
+
+/*  */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page6..CodeBlock5" = "Text(\"Ingen farge her\")\n    .gridCellAnchor(.center)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page7..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page7..Paragraph18" = "Når du oppretter innhold med en `Grid`, får du full kontroll over layouten for rutenettets rader og kolonner.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page7..Paragraph19" = "Men SwiftUI har også en annen type rutenett, en [LazyVGrid](doc://com.apple.documentation/documentation/swiftui/lazyvgrid). Den passer bedre når du skal vise en [samling](glossary://collection) med data, fordi den kan beregne automatisk hvor mange rader du trenger, uten at du må angi det først.";
+
+/* Title for task */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcontentView..title" = "Opprett et rutenett fra en samling med data";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcontentView..Paragraph20" = "Opprett en `LazyVGrid` fylt med fargede rektangler.";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcontentView..Page8..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcontentView..Page8..Paragraph21" = "I `ContentView` bruker du en [LazyVGrid](doc://com.apple.documentation/documentation/swiftui/lazyvgrid) til å opprette et rutenett med avrundede rektangler i forskjellige farger.";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcontentView..Page9..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcontentView..Page9..Paragraph22" = "`LazyVGrid` skiller seg ut fra `Grid` på to viktige måter:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcontentView..Page9..UnorderedList0..Paragraph23" = "Den er «forsinket» 🦥 fordi rutenettet ikke oppretter de individuelle rutenettobjektene før det er bruk for dem. Dette kan skje når det finnes flere rutenettobjekter enn appen kan vise samtidig.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcontentView..Page9..UnorderedList0..Paragraph24" = "I stedet for å opprette hver rad individuelt, som i `Grid`, gir du bare `LazyVGrid` beskjed om hvor mange kolonner som skal brukes. Antall rader bestemmes basert på hvor mange visninger du overfører. Det betyr at `LazyVGrid` er perfekt når du vil fylle visninger fra en [samling](glossary://collection) med data, for eksempel en [matrise](glossary://array).";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcontentView..Page10..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcontentView..Page10..Paragraph25" = "For å fylle rutenettet med forskjellige farger bruker du [variabelen](glossary://variable) `allColors`. Rutenettet [itererer](glossary://iteration) over denne [matrisen](glossary://array) med fargeverdier og lager en rektangulær knapp for hver farge.";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcontentView..Page11..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcontentView..Page11..Paragraph26" = "Rutenettet kan inneholde flere objekter enn det kan vise samtidig. Derfor pakker koden det i en [ScrollView](doc://com.apple.documentation/documentation/swiftui/scrollview), slik at innholdet rulles vertikalt ved behov.";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcontentView..Page12..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcontentView..Page12..Paragraph27" = "Du oppretter [LazyVGrid](doc://com.apple.documentation/documentation/swiftui/lazyvgrid) i `ScrollView` og overfører et [argument](glossary://argument) for `columns` for å bestemme hvor mange kolonner som skal vises i rutenettet.";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcontentView..Page13..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcontentView..Page13..Paragraph28" = "Verdien som er tildelt til `columnLayout`, angir at rutenettet skal ha tre kolonner. `LazyGrid` bruker denne verdien til å bestemme kolonnelayouten.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcontentView..Page13..Paragraph29" = "Prøv å endre `count`-verdien til `2`, `4` eller et annet tall, og se hvordan det påvirker rutenettets utseende. Hva skjer med antallet rader når kolonnene endres?";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcontentView..Page14..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcontentView..Page14..Paragraph30" = "I `LazyVGrid` oppretter du hver visning som rutenettet skal vise, ved hjelp av en spesiell type løkke som kalles `ForEach`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcontentView..Page14..Paragraph31" = "En `ForEach`-løkke skaper [visninger](glossary://view) når den [itererer](glossary://iteration) over en del data. Her itererer du over [indeksene](glossary://index) i [matrisen](glossary://array) `allColors` for å opprette `RoundedRectangle`-visninger for hvert objekt i matrisen.";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcontentView..Page15..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcontentView..Page15..Paragraph32" = "Hver [RoundedRectangle](doc://com.apple.documentation/documentation/swiftui/roundedrectangle/)-visning setter forgrunnsfargen sin til en verdi fra `allColors`-matrisen ved hjelp av den aktuelle indeksen for `ForEach`-løkken.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcontentView..Page15..Paragraph33" = "Tada! Koden oppretter et fint rutenett med fargede rektangler med avrundede hjørner.";
+
+/* Title for task */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..title" = "Tilpass det forsinkede vertikale rutenettet";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Paragraph34" = "Finjuster layouten for kolonnene i `LazyVGrid`.";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page16..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page16..Paragraph35" = "For å tilpasse en `LazyVGrid` må du tilpasse matrisen med `GridItem`-[instanser](glossary://instance). Det er dette som bestemmer antall, størrelse og avstand mellom kolonner i rutenettet.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page16..Paragraph36" = "Hver `GridItem` inneholder [parametre](glossary://parameter) for `size`, `spacing` og `alignment`. Prøv å bytte ut `GridItem()` i `columnLayout` med den under:";
+
+/*  */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page16..CodeBlock6" = "GridItem(.fixed(75), spacing: 20, alignment: .center)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page17..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page17..Paragraph37" = "Hva legger du merke til med `GridItems` nå?";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page17..Paragraph38" = "For det første har de [fast](doc://com.apple.documentation/documentation/swiftui/griditem/size-swift.enum/fixed(_:)) størrelse. Hvis du utvider størrelsen på forhåndsvisningen, vil de ikke utvides eller krympe. Så utrolig lite fleksibelt av dem! Det skyldes at du brukte `.fixed(_:)` til å bestemme størrelsen på rutenettobjektet.";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page18..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page18..Paragraph39" = "I stedet for å gi alle rutenettobjektene fast størrelse, kan du gjøre dem [fleksible](doc://com.apple.documentation/documentation/swiftui/griditem/size-swift.enum/flexible(minimum:maximum:)), slik at størrelsen tilpasses etter hvor mye plass som er tilgjengelig.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page18..Paragraph40" = "Hvis du ikke angir argumenter for `.flexible()`, er det ingen begrensning for hvor store eller små objektene i rutenettet kan bli, men du kan begrense størrelsen til en minimums- og maksimumsverdi ved hjelp av parametrene `minimum` og `maximum`.";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page19..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page19..Paragraph41" = "Prøv disse `GridItem`-[initialisererne](glossary://initialization), en om gangen, for å se hvordan rutenettet tilpasser seg når du utvider og trekker sammen forhåndsvisningen:";
+
+/*  */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page19..CodeBlock7" = "GridItem(.flexible())\n";
+
+/*  */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page19..CodeBlock8" = "GridItem(.flexible(minimum: 20, maximum: 100))\n";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page20..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page20..Paragraph42" = "I `columnLayout` bruker du den samme `GridItem`, gjentatt flere ganger. Så kjedelig! Hvis du vil ha mer kontroll over layouten av kolonnene, kan du lage en tilpasset layout for hver kolonne ved å opprette hver `GridItem` individuelt.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page20..Paragraph43" = "Legg til en tilpasset layout under `columnLayout`:";
+
+/*  */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page20..CodeBlock9" = "let customColumns = [GridItem(.fixed(75)), GridItem(.fixed(100)), GridItem(.flexible(minimum: 125, maximum: 250))]\n";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page21..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page21..Paragraph44" = "Deretter bytter du ut `columns`-argumentet i `LazyVGrid` med `customColumns`:";
+
+/*  */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page21..CodeBlock10" = "LazyVGrid(columns: customColumns)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page22..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page22..Paragraph45" = "Nå har du tre kolonner. To av dem har fast størrelse, og den tredje tilpasser størrelsen sin mellom to verdier.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page22..Paragraph46" = "Prøv å endre de forskjellige parameterverdiene for `GridItem`. Hva skjer med rutenettet når du gjør det? Legg til et par ekstra `GridItem`-[instanser](glossary://instance) i `customColumns`. Kan du tenke deg hvordan rutenettet forandres?";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page23..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page23..Paragraph47" = "Det kan hende du har lagt merke til at det finnes et tredje størrelsesvalg for `GridItem` i tillegg til `.fixed(_:)` og `.flexible()`, som kalles `.adaptive(minimum:maximum:)`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page23..Paragraph48" = "Ved å bruke [adaptive](doc://com.apple.documentation/documentation/swiftui/griditem/size-swift.enum/adaptive(minimum:maximum:)) kan du få plass til så mange rutenettobjekter som det er plass til, basert på `minimum`- og `maximum`-verdiene du angir. Med den adaptive metoden kan antall kolonner i rutenettet tilpasses dynamisk basert på plassen som er tilgjengelig.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page23..Paragraph49" = "Prøv å bruke `adaptiveColumns` som argument for `columns` i `LazyVGrid`. Eksperimenter med hvordan denne layouten oppfører seg når du utvider og trekker sammen forhåndsvisningen.";
+
+/*  */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page23..CodeBlock11" = "let adaptiveColumns = [GridItem(.adaptive(minimum: 100, maximum: 250))]\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..title" = "Velg en farge i rutenettet";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Paragraph50" = "Bruk en [statusegenskap](glossary://state%20property) og en knapp for å spore hvilken farge en person velger i rutenettet.";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page24..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page24..Paragraph51" = "Hva hvis du vil kunne velge en farge i rutenettet ved å trykke på den? Og hva hvis fargen du velger, har en kul effekt, for eksempel at den legger til et fargefilter på et bilde?";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page24..Paragraph52" = "Hvis du synes det høres spennende ut, så har du flaks!";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page25..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page25..Paragraph53" = "For å velge en farge trenger du først et sted å lagre en `Color`-verdi, for eksempel en [egenskap](glossary://property) for `ContentView`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page25..Paragraph54" = "Siden du vil at denne fargen skal påvirke [brukergrensesnittet](glossary://user%20interface), må du definere den som en [statusegenskap](glossary://state%20property) som SwiftUI kan bruke til å oppdatere visningene når verdien endres:";
+
+/*  */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page25..CodeBlock12" = "@State private var selectedColor = Color.white\n";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page26..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page26..Paragraph55" = "For å endre den valgte fargen gjør du alle `Rectangle`-visningene om til en `Button`. En knapp har både en [etikett](glossary://label) (utseendet) og en handling (noe som skjer når du trykker på den).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page26..Paragraph56" = "Legg til denne `Button`-visningen i `ForEach`:";
+
+/*  */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page26..CodeBlock13" = "Button {\n    //#-learning-code-snippet(buttonAction)\n} label: {\n    //#-learning-code-snippet(buttonLabel)\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page27..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page27..Paragraph57" = "Når noen trykker på et rektangel, vil du at `selectedColor` skal endres til fargen på rektangelet. Det er det som er handlingen!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page27..Paragraph58" = "Det gjør du ved å legge til denne koden som handling for knappen:";
+
+/*  */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page27..CodeBlock14" = "selectedColor = allColors[index]\n";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page28..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page28..Paragraph59" = "`Button`-[etiketten](glossary://label) definerer hvordan den vises. Legg til en `RoundedRectangle`-visning for å vise knappen din som det samme avrundede rektangelet du hadde tidligere.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page28..Paragraph60" = "Fjern `RoundedRectangle`-visningen utenfor `Button`, slik at du ikke får ekstra visninger uten knapper i rutenettet.";
+
+/*  */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page28..CodeBlock15" = "RoundedRectangle(cornerRadius: 4.0)\n    .aspectRatio(1.0, contentMode: ContentMode.fit)\n    .foregroundColor(allColors[index])\n";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page29..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page29..Paragraph61" = "Nå kommer det morsomme. Legg til et bilde, og bruk forskjellige filtre for å få det til å reagere på endringer i `selectedColor`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page29..Paragraph62" = "Ved å bruke `.colorMultiply(_:)`-modifikatoren og overføre `selectedColor` bytter bildet farge hver gang du velger en ny farge:";
+
+/*  */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page29..CodeBlock16" = "Image(\"cactuswren\")\n    .resizable()\n    .scaledToFit()\n    .colorMultiply(selectedColor)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page30..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page30..Paragraph63" = "Prøv å velge forskjellige farger i rutenettet. Endrer bildet farge når du gjør det?";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page30..Paragraph64" = "Prøv å legge til din egen `Image`-visning med ditt eget bilde, og bruk et filter på det. Lykke til!";
+

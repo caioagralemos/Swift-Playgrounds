@@ -1,0 +1,269 @@
+@GuideBook(title: "Organizing with Grids", icon: title.png, background: titleBackground.png) {
+    @WelcomeMessage(title: "Organizing with grids") {
+        This sample shows how to arrange content using two different types of grid views. Ready to jump into the matrix? 
+    }
+    @Guide {
+        @Step(title: "Organizing with grids") {
+            @ContentAndMedia {
+                ![](intro.png)  
+
+                In this sample, you’ll learn how to arrange content using two common types of grid views:  [Grid](doc://com.apple.documentation/documentation/swiftui/grid) and [LazyVGrid](doc://com.apple.documentation/documentation/swiftui/lazyvgrid). 
+				
+				A grid is one of the most common ways to lay out content in your apps. These experiments will help you become a verifiable Grid Tamer, expressing your own powerful interfaces with fully customizable grid types. Yeehaw!
+                
+                After finishing this sample, you can continue learning how to make grid-based apps in [Editing Grids](x-com-apple-playgrounds://projects?contentId=com.apple.playgrounds.editinggrids).
+            
+                @GuideButton(type: walkthrough, title: "Start Walkthrough", description: "AX description for button")
+            }
+			@Task(type: experiment, title: "Create and customize a simple grid", id: "createAGrid", file: BasicGrid.swift) {  
+				Create a simple grid layout using `Grid`.
+			
+				@Page(id: "gridIntro", title: "") {
+					Grids are useful for creating a [user interface](glossary://user%20interface) that shows content in multiple rows and columns, like TV shows on Apple TV+, for example.
+					
+					The following code shows a the structure for a basic `Grid` view. A `Grid` is a [View](glossary://view), so it can contain any number of other views inside of it. To fill the grid with views, add a `GridRow` that contains several `Color` views to display. 
+					
+					```
+					GridRow {
+                        Color.mint
+                        Color.orange
+                        Color.pink
+					}
+					```
+				}
+				@Page(id: "secondRow", title: "") {
+					This first `GridRow` displays three views, each a different `Color` value. How pretty is that?
+					
+					You can add as many rows to your grid as you want. Try adding a second `GridRow` to see how the grid changes:
+					
+					```
+                    GridRow {
+                        Color.blue
+                        Color.teal
+                        //#-learning-code-snippet(gridCellColumns)
+                    }
+					```
+				}
+				@Page(id: "gridCellColumns", title: "") {
+					Notice anything interesting? The `GridRow` with the most views determines the number of columns in the grid. Even though your second row only has two views, the grid still has three columns, leaving one grid space empty.
+					 
+					Sometimes this might be okay, but what if you wanted to change it? 🤔 Here’s an idea: you could have one of the views in this row occupy more than one column.
+					
+					Add the `.gridCellColumns(_:)` modifier to one of the views in the second row to have it occupy two spaces. Then, change the number of spaces occupied to see how it impacts the grid.
+					
+					```
+					.gridCellColumns(2)
+					```
+				}
+				@Page(id: "thirdRow", title: "") {
+					Add another `GridRow` on your own, and fill it with as many of your own views as you like.
+					
+					Try using `Text`, `Image`, and `Color` views in the grid row. What do you notice about the space they occupy? Your `GridRow` automatically resizes to fit the tallest view in the row. 
+                }
+				@Page(id: "basicGrid", title: "") {
+					You can adjust the spacing and alignment of the grid using `alignment`, `horizontalSpacing`, and `verticalSpacing` parameters of the grid. Try adding those parameters now:
+					
+					```
+					Grid(alignment: .top, horizontalSpacing: 20, verticalSpacing: 40)
+					```
+				}
+				@Page(id: "alignment", title: "") {
+					You can also adjust the alignment for individual rows using the `alignment` parameter for `GridRow`. The setting for the row overrides the grid’s alignment setting.
+					
+					```
+					GridRow(alignment: .bottom) { 
+                        Text("I’m on the bottom of the view!")
+                        Color.red
+                    }
+					```
+				}
+				@Page(id: "cellAnchor", title: "") {
+					You can even adjust the alignment for individual grid cells using the `.gridCellAnchor(_:)` modifier. Wow, you can literally customize every aspect of this grid!
+					
+					```
+					Text("No color here")
+                        .gridCellAnchor(.center)
+					```
+				}
+				@Page(id: "cellAnchor", title: "") {
+					Creating content with a `Grid` gives you fine-grain control over your grid’s row and column layout.  
+					
+					But SwiftUI has another type of grid, a [LazyVGrid](doc://com.apple.documentation/documentation/swiftui/lazyvgrid), that's more suited to displaying a [collection](glossary://collection) of data. This is because it can automatically calculate how many rows you’ll need without requiring you to specify that ahead of time.
+				}
+			}
+            @Task(type: walkthrough, title: "Create a grid from a collection of data", id: "contentView", file: ContentView.swift) {
+                Create a `LazyVGrid` filled with colored rectangles.
+                
+                @Page(id: "2.contentView", title: "") {
+					In `ContentView`, you’ll use a [LazyVGrid](doc://com.apple.documentation/documentation/swiftui/lazyvgrid) to create a grid of rounded rectangles of different colors.
+                }
+				@Page(id: "2.contentView", title: "") {
+					A `LazyVGrid` differs from from a `Grid` in two important ways:
+					
+					* It’s ”lazy“ 🦥 because the grid doesn’t create the individual grid items until they are needed. This might occur when there are more grid items than the app can display at once.
+					* Instead of creating each row individually, like in `Grid`, you simply tell `LazyVGrid` how many columns to use, and it determines the number of rows based on the number of views you pass in. This makes a `LazyVGrid` excellent at populating views from a [collection](glossary://collection) of data, like an [array](glossary://array).
+				}
+                @Page(id: "2.allColors", title: "") {
+                    To fill the grid with different colors, you’ll use the `allColors` [variable](glossary://variable). The grid [iterates](glossary://iteration) over this [array](glossary://array) of color values, and creates a rectangular button for each color.
+                }
+                @Page(id: "2.scrollView", title: "") {
+                    The grid might contain more items than it can display at one time, so the code wraps it in a [ScrollView](doc://com.apple.documentation/documentation/swiftui/scrollview) to scroll the content vertically, if necessary.
+                }
+                @Page(id: "2.lazyVGrid", title: "") {
+                    Inside the `ScrollView`, you create your [LazyVGrid](doc://com.apple.documentation/documentation/swiftui/lazyvgrid) and pass in an [argument](glossary://argument) for `columns` to determine how many columns show up in the grid.
+                }
+                @Page(id: "2.columnLayout", title: "") {
+                    The value assigned to `columnLayout` specifies a three-column grid. `LazyGrid` uses this value to determine the column layout.
+					
+					Try changing the `count` value to `2`, `4`, or some other number and notice how it affects the grid arrangement. What happens to the number of rows when the columns change? 
+                }
+                @Page(id: "2.gridForEach", title: "") {
+                    Inside the `LazyVGrid`, you create each view for the grid to display using a special type of loop, called `ForEach`.
+                    
+                    A `ForEach` loop produces [views](glossary://view) as it [iterates](glossary://iteration) over some data. Here, you iterate over the [indices](glossary://index) of the `allColors` [array](glossary://array) to create `RoundedRectangle` views for each item in the array.
+                }
+                @Page(id: "2.gridLabel", title: "") {
+                    Each [RoundedRectangle](doc://com.apple.documentation/documentation/swiftui/roundedrectangle/) view sets its foreground color to a value from the `allColors` array using the current index of the `ForEach` loop.
+                    
+                    Ta-da! The code creates a lovely grid of colored rectangles with rounded corners.
+                }
+            }
+			@Task(type: experiment, title: "Adjust the lazy vertical grid", id: "adjustLazyVGrid", file: ContentView.swift) {
+				Fine-tune how the columns of your `LazyVGrid` are laid out. 
+				
+				@Page(id: "changeGridItem", title: "") {
+					To adjust a `LazyVGrid`, customize the array of `GridItem` [instances](glossary://instance). This is what determines the number, size, and spacing of the columns of the grid.
+					
+					Each `GridItem` contains [parameters](glossary://parameter) for `size`, `spacing`, and `alignment`. Try replacing the existing `GridItem()` in `columnLayout` with the one below:
+					
+					```
+					GridItem(.fixed(75), spacing: 20, alignment: .center)
+                    ```
+				}
+				@Page(id: "fixedSize", title: "") {
+					What do you notice about the `GridItems` now? 
+					
+					First, they’re [fixed](doc://com.apple.documentation/documentation/swiftui/griditem/size-swift.enum/fixed(_:)) in size. If you expand the preview, they don’t expand and contract to adjust for more or less space. How rigid and fixed of them! This is because you used `.fixed(_:)` to determine the grid item’s size.
+				}
+				@Page(id: "flexibleSize", title: "") {
+					Instead of making the grid items fixed in size, you could make them [flexible](doc://com.apple.documentation/documentation/swiftui/griditem/size-swift.enum/flexible(minimum:maximum:)) so they adjust in size to the amount of space available. 
+					
+					If you provide no arguments to `.flexible()`, the grid items aren’t limited to how big or small they can get. However, you can constrain the size to a smallest and largest value using the `minimum` and `maximum` parameters.
+				}
+                @Page(id: "changeGridItem", title: "") {
+                    Try each of following `GridItem` [initializers](glossary://initialization) one at a time to see how the grid adjusts when you expand and contract the preview:
+                    
+                    ```
+                    GridItem(.flexible())
+                    ```
+                    
+                    ```
+                    GridItem(.flexible(minimum: 20, maximum: 100))
+                    ```
+                }
+				@Page(id: "customGridItems", title: "") {
+					In `columnLayout`, you use the exact same `GridItem`, repeated a certain number of times. How boring! If you want more control over how the columns layout, you can create a custom layout for your columns by individually creating each `GridItem`. 
+					
+					Add a custom layout below `columnLayout`: 
+					
+					```
+					let customColumns = [GridItem(.fixed(75)), GridItem(.fixed(100)), GridItem(.flexible(minimum: 125, maximum: 250))]
+					```
+				}
+                @Page(id: "2.lazyVGrid", title: "", isAddable: false) {
+                    Next, swap out the `columns` argument in `LazyVGrid` with `customColumns`:
+                    
+                    ```
+                    LazyVGrid(columns: customColumns)
+                    ```
+                }
+				@Page(id: "experiment", title: "") {
+					You now have three columns: two of which are fixed to a specific size, and one that adjusts between two values. 
+					
+					Try changing the different `GridItem` parameter values. What happens to your grid now? 
+					Add a couple more `GridItem` [instances](glossary://instance) to `customColumns`. Can you can predict how the grid will change?
+				}
+				@Page(id: "adaptive", title: "") {
+					You may have noticed that, in addition to `.fixed(_:)` and `.flexible()`, there is a third size option for a `GridItem` called `.adaptive(minimum:maximum:)`.
+					
+					[Adaptive](doc://com.apple.documentation/documentation/swiftui/griditem/size-swift.enum/adaptive(minimum:maximum:)) sizing tries to fit as many grid items into the space as possible based on the `minimum` and `maximum` values you set. As a result, using adaptive sizing allows the number of columns in your grid to dynamically adjust based on the space available. 
+					
+					Try using `adaptiveColumns` as the argument for `columns` in your `LazyVGrid`. Experiment with how this layout behaves when you expand and contract the preview.
+					
+					```
+					let adaptiveColumns = [GridItem(.adaptive(minimum: 100, maximum: 250))]
+					```
+				}
+				
+			}
+            @Task(type: experiment, title: "Select a color from the grid", id: "selectColor", file: ContentView.swift) {
+                Use a [state property](glossary://state%20property) and a button to track which color a person chooses in the grid. 
+                
+                @Page(id: "intro", title: "") {
+                    What if you wanted to select a color in your grid by tapping it? And what if the color you selected had some cool effect, like applying a color filter to an image? 
+                    
+                    Well, if those things sound interesting to you, you’re in luck!
+                }
+                @Page(id: "addStateProperty", title: "") {
+                    To select a color, you’ll first need a place to store a `Color` value, such as a [property](glossary://property) of your `ContentView`. 
+                    
+                    Because you’ll want this color to have an effect on your [UI](glossary://user%20interface), you’ll define it as a [state property](glossary://state%20property) — one that SwiftUI can use to update your views when its value changes:
+                    
+                    ```
+                    @State private var selectedColor = Color.white
+                    ```
+                }
+                @Page(id: "addButton", title: "") {
+                    To change the selected color, turn each of the `Rectangle` views into a `Button`. A button has both a [label](glossary://label) (its appearance), and an action (something that happens when you tap it). 
+                    
+                    Add this `Button` view inside your `ForEach`:
+                    
+                    ```
+                    Button {
+                        //#-learning-code-snippet(buttonAction)
+                    } label: {
+                        //#-learning-code-snippet(buttonLabel)
+                    }
+                    ```
+                }
+                @Page(id: "buttonAction", title: "") {
+                    When someone taps a rectangle, you want to change `selectedColor` the color of that rectangle — that’s the action!
+                    
+                    To do this, add the following code as your button action:
+                    
+                    ```
+                    selectedColor = allColors[index]
+                    ```
+                }
+                @Page(id: "buttonLabel", title: "") {
+                    The `Button` [label](glossary://label) defines how it appears. Add a `RoundedRectangle` view to display your button as the same rounded rectangle you had before.
+                    
+                    Be sure to remove the `RoundedRectangle` view outside of your `Button` or you’ll have extra, nonbutton views in your grid. 
+                    
+                    ```
+                    RoundedRectangle(cornerRadius: 4.0)
+                        .aspectRatio(1.0, contentMode: ContentMode.fit)
+                        .foregroundColor(allColors[index])
+                    ```
+                }
+                @Page(id: "newImage", title: "") {
+                    Now for the fun part. Add an image, and have that image respond to changes in `selectedColor` by applying different filters over the photo.
+                    
+                    By using the `.colorMultiply(_:)` modifier, and passing in `selectedColor`, the image changes colors whenever you select a new color:
+                    
+                    ```
+                    Image("cactuswren")
+                        .resizable()
+                        .scaledToFit()
+                        .colorMultiply(selectedColor)
+                    ```
+                }
+                @Page(id: "trySelecting", title: "") {
+                    Try selecting different colors from the grid. Does your image change color with it? 
+                    
+                    Now, try adding your own `Image` view with a custom photo and apply a filter to that. Good luck!
+                }
+            }
+        }
+    }
+}

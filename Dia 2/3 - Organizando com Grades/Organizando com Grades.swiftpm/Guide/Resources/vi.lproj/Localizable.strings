@@ -1,0 +1,366 @@
+/* Title of Guidebook */
+"GuideBook..title" = "Sắp xếp với các lưới";
+
+/* The title of the Welcome Message for the GuideBook */
+"GuideBook..WelcomeMessageOrganizing with grids..title" = "Sắp xếp với các lưới";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..WelcomeMessageOrganizing with grids..Paragraph0" = "Mẫu này hướng dẫn bạn cách sắp xếp nội dung bằng hai kiểu chế độ xem lưới khác nhau. Bạn sẵn sàng bước vào ma trận chưa?";
+
+/* Title of step named Organizing with grids */
+"GuideBook..Guide0..StepOrganizing with grids..title" = "Sắp xếp với các lưới";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..LearningCenterContent..Paragraph1" = "![](intro.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..LearningCenterContent..Paragraph2" = "Trong mẫu này, bạn sẽ tìm hiểu cách sắp xếp nội dung bằng hai kiểu chế độ xem lưới phổ biến: [Lưới](doc://com.apple.documentation/documentation/swiftui/grid) và [LazyVGrid](doc://com.apple.documentation/documentation/swiftui/lazyvgrid).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..LearningCenterContent..Paragraph3" = "Lưới là một trong những cách phổ biến nhất để trình bày bố cục nội dung trong ứng dụng của bạn. Những thử nghiệm này sẽ giúp bạn trở thành một chuyên gia về lưới có thể xác minh, thể hiện các giao diện mạnh mẽ của riêng bạn với các kiểu lưới có thể tùy chỉnh đầy đủ. Yeehaw!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..LearningCenterContent..Paragraph4" = "Sau khi hoàn tất mẫu này, bạn có thể tiếp tục tìm hiểu cách tạo các ứng dụng dựa trên lưới trong [Sửa lưới](x-com-apple-playgrounds://projects?contentId=com.apple.playgrounds.editinggrids).";
+
+/* title of the guide button */
+"GuideBook..Guide0..StepOrganizing with grids..LearningCenterContent..GuideButtonStart Walkthrough..title" = "Bắt đầu hướng dẫn";
+
+/* accessibility description for guide button */
+"GuideBook..Guide0..StepOrganizing with grids..LearningCenterContent..GuideButtonStart Walkthrough..description" = "Mô tả AX cho nút";
+
+/* Title for task */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..title" = "Tạo ra và tùy chỉnh một lưới đơn giản";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Paragraph5" = "Tạo ra một bố cục lưới đơn giản bằng `Grid`.";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page0..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page0..Paragraph6" = "Lưới có vai trò hữu ích trong việc tạo ra một [giao diện người dùng](glossary://user%20interface) hiển thị nội dung trong nhiều hàng và cột, ví dụ như các chương trình TV trên Apple TV+.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page0..Paragraph7" = "Mã sau đây minh họa một cấu trúc cho một chế độ xem `Grid` cơ bản. `Grid` là một [chế độ xem](glossary://view) nên có thể chứa bất kỳ số lượng chế độ xem nào khác bên trong. Để điền kín các chế độ xem vào lưới, hãy thêm một `GridRow` chứa một số chế độ xem `Color` sẽ hiển thị.";
+
+/*  */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page0..CodeBlock0" = "GridRow {\n    Color.mint\n    Color.orange\n    Color.pink\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page1..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page1..Paragraph8" = "`GridRow` đầu tiên này hiển thị ba chế độ xem, mỗi chế độ xem có một giá trị `Color` khác nhau. Như vậy rất đẹp phải không?";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page1..Paragraph9" = "Bạn có thể thêm số lượng hàng tùy thích vào lưới của mình. Thử thêm một `GridRow` thứ hai để xem lưới thay đổi như thế nào:";
+
+/*  */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page1..CodeBlock1" = "GridRow {\n    Color.blue\n    Color.teal\n    //#-learning-code-snippet(gridCellColumns)\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page2..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page2..Paragraph10" = "Bạn có nhận thấy bất kỳ điều gì thú vị không? `GridRow` có nhiều chế độ xem nhất xác định số lượng cột trong lưới. Mặc dù hàng thứ hai của bạn chỉ có hai chế độ xem, nhưng lưới vẫn có ba cột, để trống một không gian lưới.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page2..Paragraph11" = "Đôi khi việc này có thể chấp nhận được, nhưng nếu bạn muốn thay đổi thì sao? 🤔 Đây là một ý tưởng: bạn có thể cho phép một trong các chế độ xem trong hàng này chiếm hữu nhiều cột.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page2..Paragraph12" = "Thêm trình sửa đổi `.gridCellColumns(_:)` vào một trong các chế độ xem trong hàng thứ hai để cho phép chiếm hữu hai không gian. Sau đó thay đổi số lượng không gian được chiếm hữu để xem sự tác động đối với lưới.";
+
+/*  */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page2..CodeBlock2" = ".gridCellColumns(2)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page3..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page3..Paragraph13" = "Tự thêm một `GridRow` khác và điền vào số lượng tùy thích các chế độ xem của riêng bạn.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page3..Paragraph14" = "Thử sử dụng các chế độ xem `Text`, `Image` và `Color` trong hàng lưới. Bạn nhận thấy điều gì về không gian mà chúng chiếm hữu? `GridRow` của bạn tự động định cỡ lại để vừa với chế độ xem cao nhất của hàng.";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page4..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page4..Paragraph15" = "Bạn có thể điều chỉnh khoảng cách và căn chỉnh của lưới bằng các tham số `alignment`, `horizontalSpacing` và `verticalSpacing` của lưới. Thử thêm các tham số đó bây giờ:";
+
+/*  */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page4..CodeBlock3" = "Grid(alignment: .top, horizontalSpacing: 20, verticalSpacing: 40)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page5..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page5..Paragraph16" = "Bạn cũng có thể điều chỉnh cách căn chỉnh cho các hàng riêng lẻ bằng tham số `alignment` cho `GridRow`. Cài đặt cho hàng đó thay thế cài đặt căn chỉnh của lưới.";
+
+/*  */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page5..CodeBlock4" = "GridRow(alignment: .bottom) { \n    Text(\"Tôi ở dưới cùng của chế độ xem!\")\n    Color.red\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page6..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page6..Paragraph17" = "Bạn thậm chí có thể điều chỉnh cách căn chỉnh cho các ô lưới riêng lẻ bằng trình sửa đổi `.gridCellAnchor(_:)`. Chà, đúng là bạn có thể tùy chỉnh mọi khía cạnh của lưới này!";
+
+/*  */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page6..CodeBlock5" = "Text(\"Ở đây không có màu\")\n    .gridCellAnchor(.center)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page7..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page7..Paragraph18" = "Việc tạo ra nội dung bằng một `Grid` cung cấp cho bạn quyền kiểm soát nâng cao đối với bố cục hàng và cột của lưới.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcreateAGrid..Page7..Paragraph19" = "Nhưng SwiftUI có một kiểu lưới khác, [LazyVGrid](doc://com.apple.documentation/documentation/swiftui/lazyvgrid), phù hợp hơn để hiển thị một [tập hợp](glossary://collection) dữ liệu. Đó là vì lưới này có thể tự động tính toán số lượng hàng mà bạn sẽ cần mà không yêu cầu bạn chỉ định trước.";
+
+/* Title for task */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcontentView..title" = "Tạo ra một lưới từ một tập hợp dữ liệu";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcontentView..Paragraph20" = "Tạo ra một `LazyVGrid` được điền kín các hình chữ nhật màu.";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcontentView..Page8..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcontentView..Page8..Paragraph21" = "Trong `ContentView`, bạn sẽ sử dụng một [LazyVGrid](doc://com.apple.documentation/documentation/swiftui/lazyvgrid) để tạo ra một lưới các hình chữ nhật góc bo tròn có màu khác nhau.";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcontentView..Page9..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcontentView..Page9..Paragraph22" = "`LazyVGrid` khác với `Grid` ở hai điểm quan trọng:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcontentView..Page9..UnorderedList0..Paragraph23" = "Chế độ này “lười biếng” 🦥 vì lưới không tạo ra các mục lưới riêng lẻ cho đến khi cần thiết. Việc này có thể xảy ra khi có nhiều mục lưới hơn mức mà ứng dụng có thể hiển thị cùng lúc.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcontentView..Page9..UnorderedList0..Paragraph24" = "Thay vì tạo ra từng hàng riêng lẻ, như trong `Grid`, bạn chỉ cần cho `LazyVGrid` biết số lượng cột sẽ sử dụng và chế độ này xác định số lượng hàng dựa trên số lượng chế độ xem mà bạn chuyển vào. Điều này làm cho `LazyVGrid` trở nên xuất sắc trong việc điền các chế độ xem từ một [tập hợp](glossary://collection) dữ liệu, ví dụ như một [dãy](glossary://array).";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcontentView..Page10..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcontentView..Page10..Paragraph25" = "Để tô màu vào lưới với các màu khác nhau, bạn sẽ sử dụng [biến](glossary://variable) `allColors`. Lưới [lặp lại](glossary://iteration) trên [dãy](glossary://array) giá trị màu này và tạo ra một nút hình chữ nhật cho từng màu.";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcontentView..Page11..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcontentView..Page11..Paragraph26" = "Lưới có thể chứa nhiều mục hơn mức có thể hiển thị một lần nên mã đóng gói lưới trong một [ScrollView](doc://com.apple.documentation/documentation/swiftui/scrollview) để cuộn nội dung theo chiều dọc, nếu cần.";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcontentView..Page12..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcontentView..Page12..Paragraph27" = "Bên trong `ScrollView`, bạn tạo ra [LazyVGrid](doc://com.apple.documentation/documentation/swiftui/lazyvgrid) và chuyển vào một [đối số](glossary://argument) cho `columns` để xác định số lượng cột sẽ hiển thị trong lưới.";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcontentView..Page13..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcontentView..Page13..Paragraph28" = "Giá trị được gán cho `columnLayout` chỉ định một lưới gồm ba cột. `LazyGrid` sử dụng giá trị này để xác định bố cục cột.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcontentView..Page13..Paragraph29" = "Thử thay đổi giá trị `count` thành `2`, `4` hoặc một số khác và lưu ý cách giá trị đó ảnh hưởng đến sự sắp xếp của lưới. Điều gì xảy ra đối với số lượng hàng khi các cột thay đổi?";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcontentView..Page14..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcontentView..Page14..Paragraph30" = "Bên trong `LazyVGrid`, bạn có thể tạo ra từng chế độ xem để lưới hiển thị bằng cách sử dụng một kiểu vòng lặp đặc biệt, có tên là `ForEach`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcontentView..Page14..Paragraph31" = "Vòng lặp `ForEach` tạo ra các [chế độ xem](glossary://view) khi [lặp lại](glossary://iteration) trên một số dữ liệu. Tại đây, bạn lặp lại trên các [chỉ mục](glossary://index) của [dãy](glossary://array) `allColors` để tạo ra các chế độ xem `RoundedRectangle` cho từng mục trong dãy.";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcontentView..Page15..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcontentView..Page15..Paragraph32" = "Mỗi chế độ xem [RoundedRectangle](doc://com.apple.documentation/documentation/swiftui/roundedrectangle/) đặt màu nền trước của mình thành một giá trị từ dãy `allColors` sử dụng chỉ mục hiện tại của vòng lặp `ForEach`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskcontentView..Page15..Paragraph33" = "Bất ngờ chưa! Mã tạo ra một lưới các hình chữ nhật màu với các góc bo tròn đẹp mắt.";
+
+/* Title for task */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..title" = "Điều chỉnh lưới dọc lazy";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Paragraph34" = "Tinh chỉnh cách trình bày bố cục các cột của `LazyVGrid`.";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page16..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page16..Paragraph35" = "Để điều chỉnh một `LazyVGrid`, hãy tùy chỉnh dãy gồm các [thể hiện](glossary://instance) `GridItem`. Phần này xác định số lượng, kích cỡ và khoảng cách của các cột trong lưới.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page16..Paragraph36" = "Mỗi `GridItem` chứa các [tham số](glossary://parameter) cho `size`, `spacing` và `alignment`. Hãy thử thay thế `GridItem()` hiện có trong `columnLayout` bằng thể hiện ở bên dưới:";
+
+/*  */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page16..CodeBlock6" = "GridItem(.fixed(75), spacing: 20, alignment: .center)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page17..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page17..Paragraph37" = "Bạn nhận thấy điều gì về `GridItems` bây giờ?";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page17..Paragraph38" = "Thứ nhất, chúng có kích cỡ [cố định](doc://com.apple.documentation/documentation/swiftui/griditem/size-swift.enum/fixed(_:)). Nếu bạn mở rộng bản xem trước thì chúng cũng không mở rộng và thu nhỏ để điều chỉnh theo không gian lớn hơn hoặc nhỏ hơn. Chúng thực sự là cứng nhắc và cố định! Đó là vì bạn đã sử dụng `.fixed(_:)` để xác định kích cỡ của mục lưới.";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page18..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page18..Paragraph39" = "Thay vì làm cho các mục lưới có kích cỡ cố định, bạn có thể làm cho chúng [linh hoạt](doc://com.apple.documentation/documentation/swiftui/griditem/size-swift.enum/flexible(minimum:maximum:)) để chúng điều chỉnh kích cỡ theo mức không gian khả dụng.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page18..Paragraph40" = "Nếu bạn không cung cấp đối số cho `.flexible()` thì các mục lưới không bị hạn chế về kích cỡ có thể đạt được. Tuy nhiên, bạn có thể giới hạn kích cỡ đến một giá trị nhỏ nhất và lớn nhất bằng các tham số `minimum` và `maximum`.";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page19..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page19..Paragraph41" = "Hãy thử lần lượt từng [trình khởi tạo](glossary://initialization) `GridItem` mỗi lần để xem lưới điều chỉnh như thế nào khi bạn mở rộng và thu nhỏ bản xem trước:";
+
+/*  */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page19..CodeBlock7" = "GridItem(.flexible())\n";
+
+/*  */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page19..CodeBlock8" = "GridItem(.flexible(minimum: 20, maximum: 100))\n";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page20..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page20..Paragraph42" = "Trong `columnLayout`, bạn sử dụng `GridItem` giống hệt nhau, được lặp lại một số lần nhất định. Thật là tẻ nhạt! Nếu bạn muốn kiểm soát nhiều hơn đối với cách trình bày các cột thì bạn có thể tạo ra một bố cục tùy chỉnh cho các cột bằng cách tạo ra từng `GridItem` riêng lẻ.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page20..Paragraph43" = "Thêm một bố cục tùy chỉnh bên dưới `columnLayout`:";
+
+/*  */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page20..CodeBlock9" = "let customColumns = [GridItem(.fixed(75)), GridItem(.fixed(100)), GridItem(.flexible(minimum: 125, maximum: 250))]\n";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page21..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page21..Paragraph44" = "Tiếp theo, hãy hoán đổi đối số `columns` trong `LazyVGrid` bằng `customColumns`:";
+
+/*  */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page21..CodeBlock10" = "LazyVGrid(columns: customColumns)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page22..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page22..Paragraph45" = "Bây giờ, bạn có ba cột: hai trong số đó được cố định theo một kích cỡ cụ thể và một cột điều chỉnh giữa hai giá trị.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page22..Paragraph46" = "Thử thay đổi các giá trị tham số `GridItem` khác. Điều gì xảy ra với lưới của bạn bây giờ? Thêm một vài [thể hiện](glossary://instance) `GridItem` nữa trong `customColumns`. Bạn có thể dự đoán được lưới sẽ thay đổi như thế nào không?";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page23..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page23..Paragraph47" = "Có thể bạn đã nhận thấy rằng bên cạnh `.fixed(_:)` và `.flexible()`, có một tùy chọn kích cỡ thứ ba cho `GridItem` được gọi là `.adaptive(minimum:maximum:)`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page23..Paragraph48" = "Định cỡ [thích ứng](doc://com.apple.documentation/documentation/swiftui/griditem/size-swift.enum/adaptive(minimum:maximum:)) có gắng khớp số lượng mục lưới nhiều nhất có thể vào không gian dựa trên các giá trị `minimum` và `maximum` mà bạn đặt. Kết quả là, việc sử dụng định cỡ thích ứng cho phép số lượng cột trong lưới của bạn tự động điều chỉnh dựa trên không gian khả dụng.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page23..Paragraph49" = "Thử sử dụng `adaptiveColumns` dưới dạng đối số cho `columns` trong `LazyVGrid` của bạn. Thử nghiệm xem bố cục này hoạt động như thế nào khi bạn mở rộng và thu nhỏ bản xem trước.";
+
+/*  */
+"GuideBook..Guide0..StepOrganizing with grids..TaskadjustLazyVGrid..Page23..CodeBlock11" = "let adaptiveColumns = [GridItem(.adaptive(minimum: 100, maximum: 250))]\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..title" = "Chọn một màu từ lưới";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Paragraph50" = "Sử dụng một [thuộc tính trạng thái](glossary://state%20property) và một nút để theo dõi màu mà một người chọn trong lưới.";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page24..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page24..Paragraph51" = "Nếu bạn muốn chọn một màu trong lưới bằng cách chạm vào lưới thì sao? Và nếu màu mà bạn đã chọn có một số hiệu ứng tuyệt vời, như áp dụng bộ lọc màu cho hình ảnh thì sao?";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page24..Paragraph52" = "Chà, nếu bạn thấy những thứ đó thú vị thì bạn may mắn đấy!";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page25..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page25..Paragraph53" = "Để chọn một màu, trước tiên bạn sẽ cần một nơi để lưu trữ giá trị `Color`, ví dụ như một [thuộc tính](glossary://property) của `ContentView`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page25..Paragraph54" = "Vì bạn sẽ muốn màu này có hiệu ứng trên [UI](glossary://user%20interface) nên bạn sẽ định nghĩa dưới dạng một [thuộc tính trạng thái](glossary://state%20property) — một thuộc tính mà SwiftUI có thể sử dụng để cập nhật các chế độ xem khi giá trị thay đổi:";
+
+/*  */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page25..CodeBlock12" = "@State private var selectedColor = Color.white\n";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page26..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page26..Paragraph55" = "Để thay đổi màu được chọn, hãy chuyển đổi từng chế độ xem `Rectangle` thành một `Button`. Nút có cả [nhãn](glossary://label) (hình thức) và hành động (điều gì đó sẽ xảy ra khi bạn chạm vào nút).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page26..Paragraph56" = "Thêm chế độ xem `Button` này bên trong `ForEach` của bạn:";
+
+/*  */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page26..CodeBlock13" = "Button {\n    //#-learning-code-snippet(buttonAction)\n} label: {\n    //#-learning-code-snippet(buttonLabel)\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page27..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page27..Paragraph57" = "Khi một người nào đó chạm vào một hình chữ nhật, bạn muốn thay đổi màu `selectedColor` của hình chữ nhật đó — đó chính là hành động!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page27..Paragraph58" = "Để thực hiện việc này, hãy thêm mã sau đây làm hành động nút của bạn:";
+
+/*  */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page27..CodeBlock14" = "selectedColor = allColors[index]\n";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page28..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page28..Paragraph59" = "[Nhãn](glossary://label) `Button` xác định cách nút xuất hiện. Thêm một chế độ xem `RoundedRectangle` để hiển thị nút của bạn giống hệt như hình chữ nhật góc bo tròn mà bạn đã có trước đây.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page28..Paragraph60" = "Đảm bảo xóa chế độ xem `RoundedRectangle` bên ngoài `Button` hoặc bạn sẽ có các chế độ xem dư thừa, không phải là nút trong lưới.";
+
+/*  */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page28..CodeBlock15" = "RoundedRectangle(cornerRadius: 4.0)\n    .aspectRatio(1.0, contentMode: ContentMode.fit)\n    .foregroundColor(allColors[index])\n";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page29..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page29..Paragraph61" = "Bây giờ là phần thú vị. Hãy thêm một hình ảnh và cho phép hình ảnh đó phản hồi các thay đổi trong `selectedColor` bằng cách áp dụng các bộ lọc khác nhau trên ảnh.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page29..Paragraph62" = "Bằng việc sử dụng trình sửa đổi `.colorMultiply(_:)` và chuyển vào `selectedColor`, hình ảnh thay đổi màu bất kỳ lúc nào bạn chọn một màu mới:";
+
+/*  */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page29..CodeBlock16" = "Image(\"cactuswren\")\n    .resizable()\n    .scaledToFit()\n    .colorMultiply(selectedColor)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page30..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page30..Paragraph63" = "Thử chọn các màu khác nhau từ lưới. Hình ảnh của bạn có thay đổi màu theo không?";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepOrganizing with grids..TaskselectColor..Page30..Paragraph64" = "Bây giờ, hãy thử thêm chế độ xem `Image` của riêng bạn với một ảnh tùy chỉnh và áp dụng một bộ lọc cho ảnh đó. Chúc bạn may mắn!";
+
