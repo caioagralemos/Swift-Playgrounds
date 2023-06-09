@@ -17,6 +17,7 @@ let package = Package(
         .iOSApplication(
             name: "Keep Going with Apps",
             targets: ["App"],
+            teamIdentifier: "792G3HW262",
             displayVersion: "1.0",
             bundleVersion: "1",
             appIcon: .asset("AppIcon"),
