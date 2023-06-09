@@ -6,48 +6,75 @@
 	<dict>
 		<key>completedTaskIDs</key>
 		<array>
-			<string>addElse</string>
-			<string>addMoreNavLinks</string>
-			<string>addAnimationModifier</string>
-			<string>addNewConditionalView</string>
-			<string>navigationExperiment</string>
-			<string>addNavView</string>
-			<string>toggleExperiment</string>
-			<string>addAColorPicker</string>
-			<string>experimentWithAnimations</string>
-			<string>deleteACreature</string>
-			<string>dancingCreaturesView</string>
-			<string>conditionalViews</string>
-			<string>buildASlider</string>
-			<string>dancingCreaturesData</string>
-			<string>useEnvironmentObject</string>
-			<string>addATextView</string>
-			<string>addNavLinkCreatureDance</string>
 			<string>storyEditor</string>
-			<string>replaceHStackWithCreatureRow</string>
-			<string>animateCreatures</string>
+			<string>addCreatures</string>
+			<string>navigationExperiment</string>
+			<string>animateChangesIsScaled</string>
 			<string>addShadowModifier</string>
-			<string>addScaleModifier</string>
 			<string>addAStateVar</string>
-			<string>customizeConditionalViews</string>
+			<string>addSliderShadowRadius</string>
 			<string>createAList</string>
-			<string>addModelData</string>
+			<string>dismissEditor</string>
+			<string>creatureDetailWalkthrough</string>
+			<string>conditionalCircle</string>
+			<string>addACreatureEditorTextField</string>
+			<string>animateCreatures</string>
+			<string>useIsScaledRotateView</string>
+			<string>toggleExperiment</string>
+			<string>dancingCreaturesData</string>
+			<string>animationWalkthrough</string>
+			<string>defineYourView</string>
+			<string>addElse</string>
+			<string>addNavLinkCreatureDance</string>
+			<string>createNewApp</string>
+			<string>addNavigationLinkCreatureDetail</string>
+			<string>addScaleButton</string>
+			<string>customizeCreature</string>
+			<string>replaceHStackWithCreatureRow</string>
+			<string>deleteACreature</string>
+			<string>addNavTitle</string>
+			<string>dancingCreaturesView</string>
+			<string>customizeConditionalViews</string>
+			<string>addButtonToToolbar</string>
 			<string>addNavLink</string>
 			<string>addAColorModifier</string>
-			<string>usingCreatureZoo</string>
-			<string>conditionalCircle</string>
-			<string>myApp</string>
+			<string>conditionalViews</string>
+			<string>createYourOwn</string>
+			<string>addNavView</string>
+			<string>addAColorPicker</string>
+			<string>addScaleModifier</string>
+			<string>addNewConditionalView</string>
+			<string>buildASlider</string>
 			<string>creatureZoo</string>
+			<string>addColorPicker</string>
+			<string>addToolBarContentView</string>
+			<string>addAnimationModifier</string>
 			<string>navigationSplitViewExperiment</string>
-			<string>addNavTitle</string>
-			<string>addCreatures</string>
-			<string>animationWalkthrough</string>
+			<string>useEnvironmentObject</string>
+			<string>defineVariablesCreatureEditor</string>
+			<string>addModelData</string>
+			<string>addMoreNavLinks</string>
+			<string>usingCreatureZoo</string>
+			<string>addNavigationTitleCreatureEditor</string>
+			<string>experimentWithAnimations</string>
+			<string>addATextView</string>
+			<string>myApp</string>
+			<string>addCreatureToCreatureZoo</string>
 		</array>
 		<key>hasSeenIntro</key>
 		<true/>
 		<key>pageIDsWithRevealedSolutions</key>
 		<dict>
 			<key>addAColorModifier</key>
+			<array>
+				<string>solution</string>
+			</array>
+			<key>addACreatureEditorTextField</key>
+			<array>
+				<string>addTextField</string>
+				<string>solution</string>
+			</array>
+			<key>addButtonToToolbar</key>
 			<array>
 				<string>solution</string>
 			</array>
@@ -67,9 +94,24 @@
 			<array>
 				<string>addContentViewInside</string>
 			</array>
+			<key>addNavigationLinkCreatureDetail</key>
+			<array>
+				<string>solution</string>
+				<string>navLinkToCreatureDetail</string>
+			</array>
+			<key>addScaleButton</key>
+			<array>
+				<string>addScaleEffectModifier</string>
+				<string>addStateVarIsScaled</string>
+				<string>addButton</string>
+			</array>
 			<key>addShadowModifier</key>
 			<array>
 				<string>elseCode</string>
+			</array>
+			<key>addToolBarContentView</key>
+			<array>
+				<string>solution</string>
 			</array>
 			<key>buildASlider</key>
 			<array>
@@ -79,13 +121,17 @@
 			<array>
 				<string>customizeExample</string>
 			</array>
+			<key>defineVariablesCreatureEditor</key>
+			<array>
+				<string>solution</string>
+			</array>
 		</dict>
 		<key>stepIndex</key>
-		<integer>7</integer>
+		<integer>9</integer>
 		<key>successMessageShowing</key>
 		<false/>
 		<key>taskID</key>
-		<string>addToolBarContentView</string>
+		<string>$null</string>
 	</dict>
 </dict>
 </plist>
