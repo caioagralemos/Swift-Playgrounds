@@ -1,0 +1,2013 @@
+/* Title of Guidebook */
+"GuideBook..title" = "Fortsett med apper";
+
+/* The title of the intro for this section of the guide */
+"GuideBook..IntroKeep Going with Apps..title" = "Fortsett med apper";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..IntroKeep Going with Apps..Paragraph0" = "I Kom i gang med apper lærte du å bruke SwiftUI-[visninger](glossary://view) til å lage et enkelt brukergrensesnitt. [Visninger](glossary://view) i SwiftUI er [UI](glossary://user%20interface)-byggesteiner som du kan plassere inni hverandre for å bygge mer komplekse [sammenstilte visninger](glossary://composed%view).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..IntroKeep Going with Apps..Paragraph1" = "Her lærer du om [statuser](glossary://state) og [dataflyter](glossary://data%20flow) i SwiftUI. En dataflyt er bevegelsen av verdier gjennom appen og hvordan SwiftUI oppdaterer brukergrensesnittet for å gjenspeile endringer av disse verdiene. En viktig ting du lærer deg er å [separere appdata](glossary://data%20separation) fra visningene som viser dem, og hvordan du drar nytte av denne separasjonen.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..IntroKeep Going with Apps..Paragraph2" = "Ved slutten av denne opplæringen kommer du til å lage en fullt fungerende SwiftUI-app der personer kan legge til, slette og endre emojiskapninger. Kom i gang nå, så har du snart laget en app på null komma niks.";
+
+/* Title of step named Modifying State */
+"GuideBook..Guide0..StepModifying State..title" = "Endre status";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..LearningCenterContent..Paragraph3" = "![](ModifyingState.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..LearningCenterContent..Paragraph4" = "Innen koding henviser termen [status](glossary://state) til den aktuelle verdien til en variabel. En [statusendring](glossary://state%20change) er når én eller flere variabler endres i appen.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..LearningCenterContent..Paragraph5" = "En stor fordel med SwiftUI er at det kan oppdatere visningenes utseende automatisk når appens [status endres](glossary://state%20change).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..LearningCenterContent..Paragraph6" = "Når du kobler brukergrensesnittet til noen appdata, for eksempel en [boolsk](glossary://Boolean) eller matrise med [String](glossary://String)-verdier, kan SwiftUI [observere](glossary://observe) disse dataene og oppdatere visningene som bruker dem, så snart de endres. Dette innebærer at du aldri trenger å skrive kode som forteller brukergrensesnittet nøyaktig når eller hvordan det skal oppdateres.";
+
+/* Title for task */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..title" = "Bruk en statusegenskap til å oppdatere en visning";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page0..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page0..Paragraph7" = "I dette eksempelet oppdaterer SwiftUI en visnings utseende når en [statusendring](glossary://state%20change) finner sted.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page0..Paragraph8" = "Trykk på knappen i forhåndsvisningen. Dette veksler verdien for `isOn`-[egenskapen](glossary://property) mellom [statusene](glossary://state) `true` og `false`, noe som fører til at `Circle`-visningen vises, forsvinner og vises igjen.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page1..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page1..Paragraph9" = "Når du ønsker å endre utseendet på en visning, må du først ha noen data som sporer [statusen](glossary://state). Du lagrer disse dataene som en [egenskap](glossary://property) i visningen.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page1..Paragraph10" = "Tenk på dataene i visningen som [sannhetskilden](glossary://source%20of%20truth) som bestemmer hvordan [brukergrensesnittet](glossary://user%20interface) skal vises. I stedet for å endre visningen direkte kan du endre disse dataene, slik at SwiftUI oppdaterer visningen for deg. Her er dataene en [boolsk](glossary://Boolean) verdi som bestemmer om visningen vises (`true`) eller skjules (`false`).";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page2..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page2..Paragraph11" = "Viktig: Opprett alltid dataene utenfor visningens [visningsinnhold](glossary://body). Tenk på `body` som et område der ingen data opprettes ❌, og som bare brukes til å deklarere hvordan visningene ser ut. Dette er et kjerneprinsipp for å lage apper, som kalles [dataseparering](glossary://data%20separation).";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page3..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page3..Paragraph12" = "Hvis du vil tillate at SwiftUI oppdaterer visningene automatisk, må du fortelle det hvilke av visningenes [egenskaper](glossary://property) det skal håndtere og spore for deg.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page3..Paragraph13" = "Du gjør dette ved å legge til en bestemt syntaks som kalles en [egenskapsinnpakning](glossary://property%20wrapper), foran egenskapsdefinisjonen. Når du legger til egenskapsinnpakningen `@State` før `isOn`, endres den til en [statusegenskap](glossary://state%20property). SwiftUI håndterer verdien og oppdaterer visningene som påvirkes når [statusen](glossary://state) endres.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page4..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page4..Paragraph14" = "Så hvordan endrer du [statusen](glossary://state) for `isOn`? En vanlig måte er gjennom [brukerinteraksjon](glossary://user%20interaction), for eksempel når en person trykker på en `Button`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page4..Paragraph15" = "For å lage en `Button` overfører du en tekst[etikett](glossary://label), for eksempel «Trykk på meg», og en handlings-[closure-blokk](glossary://closure), som er en kodeblokk som kjøres når du trykker på knappen.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page5..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page5..Paragraph16" = "Når en person trykker på knappen, endrer handlingen [closure-blokk](glossary://closure) verdien for `isOn` ved å bruke metoden `toggle()`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page5..Paragraph17" = "`toggle()` endrer verdien til `true` hvis den er `false` og til `false` hvis den er `true`, omtrent som når du slår av eller på en lysbryter.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page6..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page6..Paragraph18" = "Dette `if`-uttrykket bruker `isOn` som en betingelse for å vise den omsluttende visningen når det er `true` og for å skjule den når det er `false`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page6..Paragraph19" = "Det er sånn `isOn`-dataene kobles til visningen. Den aktuelle [statusen](glossary://state) avgjør hvordan brukergrensesnittet vises.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page7..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page7..Paragraph20" = "Når du trykker på knappen i forhåndsvisningen, vises eller skjules sirkelvisningen i `if`-uttrykket.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page7..Paragraph21" = "Prøv å endre fargen på sirkelen, og trykk på knappen igjen. Prøv å endre den innledende verdien for `isOn` til `true`.Hvilke endringer legger du merke til når du gjør dette?";
+
+/* Title for task */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..title" = "Legg til et `else`-uttrykk som viser en sirkel med en annen farge";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page8..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page8..Paragraph22" = "Ta deg tid til å reflektere over hvordan visningen oppdateres når du trykker på knappen. Når du trykker på `Button`, endrer du [statusen](glossary://state) til `isOn`. SwiftUI [observerer](glossary://observe) denne endringen og oppdaterer visningen med den nye verdien. I visningens [visningsinnhold](glossary://body) bruker du et `if`-uttrykk til å vise visningen hvis `isOn` er `true` og skjule den hvis det er `false`.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page9..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page9..Paragraph23" = "I stedet for å vise ingen visninger når `isOn` er `false`, kan du vise en tilpasset visning.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page9..Paragraph24" = "Legg til et `else`-uttrykk som viser en `Circle`-visning med en annen farge, etter `if`-uttrykket.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page10..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page10..Paragraph25" = "Legg til et `else`-uttrykk med følgende syntaks, og legg deretter til en `Circle`-visning og angi fargen dens.";
+
+/*  */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page10..CodeBlock0" = "else { \n\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page11..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page11..CodeBlock1" = "else { \n   Circle()\n       .frame(maxHeight: 200)\n       .foregroundColor(.black)\n   //#-learning-code-snippet(addOffText)\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..title" = "Legg til detaljer i av- og på-visninger";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page12..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page12..Paragraph26" = "Nå når du har to visninger, kan du tilpasse dem så det blir tydelig hvilken visning som er «på» og hvilken som er «av».";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page12..Paragraph27" = "Prøv å merke hver visning med en `Text`-visning. Merk den første med «På».";
+
+/*  */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page12..CodeBlock2" = "Text(\"På\")\n";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page13..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page13..Paragraph28" = "Merk den andre visningen som «Av».";
+
+/*  */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page13..CodeBlock3" = "Text(\"Av\")\n";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page14..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page14..Paragraph29" = "Til slutt bruker du forskjellige figurer for hver visning, for eksempel en `Rectangle` eller en `Capsule`.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page15..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page15..CodeBlock4" = "if isOn {\n      Circle()\n          .frame(maxHeight: 200)\n          .foregroundColor(.mint)\n\n      Text(\"On\")\n} else {\n      Rectangle()\n          .frame(maxHeight: 200)\n          .foregroundColor(.gray)\n\n      Text(\"Off\")\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..title" = "Legg til en ny betinget visning";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page16..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page16..Paragraph30" = "Prøv nå å legge til en helt ny betinget visning på egen hånd:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page16..OrderedList0..Paragraph31" = "Legg til en [statusegenskap](glossary://state%20value) utenfor [visningsinnholdet](glossary://body), og gi den en innledende boolsk verdi.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page16..OrderedList0..Paragraph32" = "Opprett et [if-uttrykk](glossary://if%20statement) som viser én visning hvis statusegenskapens verdi er `true` og en annen visning hvis den er `false`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page16..OrderedList0..Paragraph33" = "Opprett en ny `Button` som veksler statusegenskapen når du trykker på den.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page16..Paragraph34" = "Fungerer den betingede visningen som forventet?";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page17..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page17..Paragraph35" = "Før du går videre kan du prøve å bruke [gummiandmetoden](glossary://rubber%20ducky%20method) til å forklare hvordan betinget visningskode fungerer, så detaljert som mulig. Hva gjør en statusegenskap? Hvordan vet visningen når den skal oppdateres? Hvis du glemmer noe, kan du gå tilbake og prøve å finne ut hvor det er hull i kunnskapen din. Gummianden kommer til å takke deg!";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepModifying State..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..SuccessMessage..Paragraph36" = "Woohoo!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..SuccessMessage..Paragraph37" = "Nå forstår du hvordan du bruker en [statusegenskap](glossary://state%20value) til å oppdatere utseendet i en SwiftUI-visning. Denne statusegenskapen lagres utenfor visningens [visningsinnhold](glossary://body), der du deklarerer visningens brukergrensesnitt.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..SuccessMessage..Paragraph38" = "Dette er et grunnleggende prinsipp for å kode apper i SwiftUI – hold alltid appdataene adskilt fra brukergrensesnittet som viser dem. Når du gjør dette, kan du bevare én [sannhetskilde](glossary://source%20of%20truth) og holde brukergrensesnittkoden lett å forstå og vedlikeholde.";
+
+/* Title of step named Using a Conditional Modifier */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..title" = "Bruke en betinget modifikator";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..LearningCenterContent..Paragraph39" = "![](UsingAConditionalModifier.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..LearningCenterContent..Paragraph40" = "I det forrige eksempelet opprettet du [statusegenskapen](glossary://state%20property) `isOn`, der lagring håndteres av SwiftUI. Ved å endre [statusen](glossary://state) til `isOn` kunne du vise én av to visninger betinget.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..LearningCenterContent..Paragraph41" = "Men hva gjør du hvis du bare vil endre utseendet på en eksisterende visning, for eksempel fargen eller størrelsen på en `Circle`-visning? I så fall må du skrive litt betinget kode som angir hvordan visningen vises når [statusendringer](glossary://state%20change) oppstår.";
+
+/* Title for task */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..title" = "Endre visningsmodifikatorer betinget";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page18..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page18..Paragraph42" = "I likhet med den forrige visningen bruker denne visningen også en [statusegenskap](glossary://state%20property) og en `Button` til å endre utseendet på en `Circle`. Men noe er annerledes i denne koden. Bruk litt tid på å finne ut hva som har endret seg, og gå videre når du tror at du har funnet det.";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page19..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page19..Paragraph43" = "Fant du ut hvordan det fungerer?";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page19..Paragraph44" = "I stedet for å opprette forskjellige visninger når `isOn` er `true` eller `false`, kan du endre utseendet på én visning med [visningsmodifikatorer](glossary://modifier) som inneholder betinget kode.";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page20..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page20..Paragraph45" = "Legg merke til at modifikatoren `.foregroundColor(_:)` inneholder en spesiell syntaks. Dette kalles en [tredobbel betinget operator](glossary://ternary%20conditional%20operator) og er en kortfattet måte å lage et `if-else`-uttrykk på med én kodelinje.";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page21..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page21..Paragraph46" = "Du kan lese denne koden slik: hvis `isOn` er `true`, overføres verdien `.yellow`. Ellers overføres `.black`.";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page21..CodeBlock5" = "isOn ? .yellow : black\n";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page21..Paragraph47" = "Mer generelt ser dette slik ut:";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page21..CodeBlock6" = "condition ? trueValue : falseValue\n";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page22..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page22..Paragraph48" = "Prøv å endre sirkelens farge til `.purple` når `isOn` er `true` og til en lysere nyanse av grønn, for eksempel `.mint`, når den er `false`.";
+
+/* Title for task */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..title" = "Legg til en `shadow(color:radius:)`-modifikator som viser en annen fargeskygge for hver status";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page23..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page23..Paragraph49" = "Akkurat som i eksempelet med `ConditionalViews` [observerer](glossary://observe) SwiftUI [statusegenskapen](glossary://state%20property) `isOn`. Når verdien for `isOn` endres, oppdaterer SwiftUI `Circle`-visningen med den nye verdien for dens `.foregroundColor(_:)`-modifikator.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page23..Paragraph50" = "Prøv deretter å legge til en annen modifikator, `.shadow(color:radius:)`, som bruker `isOn`-verdien til å endre visningens skygge.";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page24..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page24..Paragraph51" = "Legg først til modifikatoren `.shadow(color:radius:)` i `Circle`.";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page24..CodeBlock7" = ".shadow(color: <#T##Color#>, radius: 20)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page25..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page25..Paragraph52" = "For modifikatorens `color`-parameter bruker du den [tredoble betingede operatoren](glossary://ternary%20conditional%20operator) til å endre skyggens farge basert på [statusen](glossary://state) til `isOn`.";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page26..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page26..Paragraph53" = "Syntaksen for en tredobbel operator ser slik ut:";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page26..CodeBlock8" = "isOn ? .indigo : .orange\n";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page26..Paragraph54" = "Denne kodesnutten kan leses slik: hvis `isOn` er `true`, brukes verdien `.indigo`. Ellers brukes verdien `.orange`.";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page27..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page27..CodeBlock9" = ".shadow(color: isOn ? .indigo : .orange, radius: 20)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..title" = "Endre skalaen på sirkelen når du trykker på knappen";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page28..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page28..Paragraph55" = "Nå er det på tide å prøve selv. Se om du kan finne ut hvordan du kan bruke modifikatoren `.scaleEffect(_:)` med en [tredobbel betinget operator](glossary://ternary%20conditional%20operator) til å endre skalaen på sirkelen basert på statusen til `isOn`.";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page29..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page29..Paragraph56" = "Legg først til modifikatoren `.scaleEffect(_:)` i sirkelen. Bruk deretter den tredoble operatoren til å angi en skala hvis `isOn` er `true` og en annen hvis den er `false`.";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page29..CodeBlock10" = ".scaleEffect(<#T##s: CGFloat##CGFloat#>)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page30..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page30..CodeBlock11" = ".scaleEffect(isOn ? 1 : 0.75)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..title" = "Animer statusendringer";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page31..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page31..Paragraph57" = "Akkurat som at SwiftUI vet hvordan det automatisk oppdaterer visningene dine, kan det også animere endringer av visningene basert på verdiene du endrer.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page31..Paragraph58" = "Du gjør dette ved å legge ved en `.animation(_:value:)`-modifikator i visningen du vil animere, og velge en `Animation` samt en verdi der endringene skal overvåkes.";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page32..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page32..Paragraph59" = "Du kan for eksempel bruke en standard animasjon til å animere alle endringer av `isOn`-verdien.";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page32..CodeBlock12" = ".animation(.default, value: isOn)\n";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page32..Paragraph60" = "Når `isOn` endres, animeres visningsendringene som styres av denne verdien. Siden du bruker `isOn` til å bestemme visningens skygge, farge og skala, kommer alle disse egenskapene til å animeres til sine nye statuser når verdien endres.";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page33..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page33..CodeBlock13" = ".animation(.default, value: isOn)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page34..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page34..Paragraph61" = "Prøv å endre standardanimasjonen til noe annet. `.default` gir deg animasjonen `.easeInOut`, men du kan endre den til `.spring(response:dampingFraction:blendDuration:)` eller `.linear(duration:)` for å se hvordan animasjonen endres.";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..SuccessMessage..Paragraph62" = "Bra jobbet!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..SuccessMessage..Paragraph63" = "Nå vet du hvordan du bruker en [statusegenskap](glossary://state%20property) til å endre utseendet på en visning, og hvordan du animerer disse endringene med modifikatoren `.animation(_:value:)`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..SuccessMessage..Paragraph64" = "Nå skal du lære hvordan du bruker SwiftUIs [innebygde visninger](glossary://built-in%20view) og [bindinger](glossary://binding) til å lage forskjellige typer statusendringer i brukergrensesnittet.";
+
+/* Title of step named SwiftUI Built-in Views */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..title" = "Innebygde SwiftUI-visninger";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..LearningCenterContent..Paragraph65" = "![](SwiftUIBuilt-inViews.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..LearningCenterContent..Paragraph66" = "SwiftUI inneholder mange [innebygde visninger](glossary://built-in%20view), for eksempel skyveknapper, veksleknapper og velgere, som gjør det mulig for noen å endre statusen på appdata ved å [interagere](glossary://user%20interaction) med dem.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..LearningCenterContent..Paragraph67" = "Disse innebygde visningene deler data med andre visninger på en spesiell måte som kalles for en [binding](glossary://binding).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..LearningCenterContent..Paragraph68" = "Du kan bruke disse innebygde visningene med bindingsverdier til å endre appdataene og dermed også appens brukergrensesnitt.";
+
+/* Title for task */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..title" = "Bruk en binding";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page35..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page35..Paragraph69" = "Så langt har du brukt en statusegenskap til å endre brukergrensesnittet [lokalt](glossary://local%20scope) eller innen samme visning. Et eksempel på dette er å definere en [statusegenskap](glossary://state%20property) i `ConditionalCircle` og bruke den til å endre utseendet på en visning i [visningsinnholdet](glossary://body) i `ConditionalCircle`.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page36..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page36..Paragraph70" = "Men hva gjør du hvis du vil la en [delvisning](glossary://subview) endre disse dataene? Hvis den [lokale](glossary://local%20scope) visningen for eksempel lagrer kontaktinformasjonen din, kan delvisningen lage en tilpasset [interaksjon](glossary://user%20interaction) der du kan endre telefonnummeret til en kontakt. Men hvordan kan du la delvisningen endre dataene uten å lage mer enn én [sannhetskilde](glossary://source%20of%20truth)?";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page37..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page37..Paragraph71" = "Nøkkelen til å formidle dataendringer mellom to visninger kalles en [binding](glossary://binding). Med en binding kan du beholde én sannhetskilde, men tillate at en [delvisning](glossary://subview) endrer den verdien eksternt. Det kalles en binding fordi sannhetskilden, for eksempel en [statusegenskap](glossary://state%20property), bindes (eller kobles) til en annen visning som oppdaterer sannhetskilden hver gang noe data endres i den andre visningen.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page38..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page38..Paragraph72" = "Prøv å trykke på `Toggle` i forhåndsvisningen.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page38..Paragraph73" = "Legg merke til at både `Image`- og `Toggle`-visningene endrer utseende når du trykker på veksleknappen. `Toggle` kan endre [sannhetskilden](glossary://source%20of%20truth) eksternt, slik at den selv og `Image`-visningen deler samme verdi selv om de er to separate visninger.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page39..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page39..Paragraph74" = "Dette er din sannhetskilde: en [statusegenskap](glossary://state%20property) som du lagrer [lokalt](glossary://local%20scope) i `Bindings`-visningen. En bindings sannhetskilde må være en der verdien håndteres av SwiftUI, for eksempel ved å legge til [egenskapsinnpakningen](glossary://property%20wrapper) `@State` i den.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page40..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page40..Paragraph75" = "Dette er den innebygde `Toggle`-visningen. En `Toggle` godtar en boolsk verdi for [bindingen](glossary://binding) for dens `isOn`-parameter. Dette innebærer at vekslingsvisningen vet hvordan den endrer `Boolean`-verdien basert på en [brukerinteraksjon](glossary://user%20interaction), som når en person slår veksleknappen av eller på, og formidler eventuelle statusendringer tilbake til den lokale [sannhetskilden](glossary://source%20of%20truth) `isOn`.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page41..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page41..Paragraph76" = "Du overfører en binding med en SwiftUI-håndtert [statusegenskap](glossary://state%20property) med `$` foran den. Overfør `$isOn` for å vise at [bindingen](glossary://binding) endrer sannhetskilden `isOn` når `Toggle` endrer verdien eksternt.";
+
+/* Title for task */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..title" = "Legg til en ny statusegenskap av typen `Color`";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page42..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page42..Paragraph77" = "Nå skal du prøve å bruke en innebygd `ColorPicker`-visning sammen med en [binding](glossary://binding) for å endre fargen på batteriets `Image`-visning.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page42..Paragraph78" = "Du gjør dette ved å først opprette en [statusegenskap](glossary://state%20property) som fungerer som en sannhetskilde for en `Color`-verdi. Gi den den innledende verdien `Color.primary`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page42..Paragraph79" = "Prøv å gjøre dette på egen hånd, og bruk følgende hint hvis du sitter fast.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page43..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page43..Paragraph80" = "Definer en [egenskap](glossary://property) med [egenskapsinnpakningen](glossary://property%20wrapper) `@State`, og [tildel](glossary://assignment) den den innledende verdien `Color.primary`.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page44..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page44..CodeBlock14" = "@State var color = Color.primary\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..title" = "Opprett en `ColorPicker` og overfør bindingsverdien";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page45..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page45..Paragraph81" = "Nedenfor `Toggle`-visningen oppretter du en `ColorPicker` med følgende initialiserer. Legg selv til argumentene med `Toggle` som et eksempel.";
+
+/*  */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page45..CodeBlock15" = "ColorPicker(<#T##title: StringProtocol##StringProtocol#>, selection: <#T##Binding<CGColor>#>)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page46..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page46..OrderedList1..Paragraph82" = "Overfør en `String` for tittelen, for eksempel «Velg en farge».";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page46..OrderedList1..Paragraph83" = "Overfør bindingsverdien til `selection`, og legg til en `$` før fargens [statusegenskap](glossary://state%20property).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page46..Paragraph84" = "Hvis du vil teste visningen `Bindings` i appen, kan du legge den til midlertidig i `ContentView`.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page47..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page47..CodeBlock16" = "ColorPicker(\"Select a Color\", selection: $color) \n";
+
+/* Title for task */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..title" = "Angi fargen på `Image` som fargestatusegenskapen";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page48..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page48..OrderedList2..Paragraph85" = "Prøv å velge en farge fra `ColorPicker` i forhåndsvisningen. Velgerfargen endres, men ingenting i brukergrensesnittet endres. Det er fordi statusegenskapen ikke er koblet til noen andre [lokale](glossary://local%20scope) visninger.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page48..OrderedList2..Paragraph86" = "Endre nå fargen i bildevisningen, slik at den oppdateres til fargen fra velgeren.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page49..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page49..Paragraph87" = "Du endrer fargen i `Image`-visningen ved å legge til en `.foregroundColor(_:)`-modifikator og overføre statusegenskapen for farge som et argument.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page50..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page50..CodeBlock17" = ".foregroundColor(color)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page51..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page51..Paragraph88" = "Velg nå en farge fra fargevelgeren. Endrer `Image` også farge?";
+
+/* Title for task */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..title" = "Opprett en `Text`-visning som endrer farge når du velger en ny farge";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..Page52..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..Page52..Paragraph89" = "Legg til en `Text`-visning som endrer farge når du velger en ny farge fra fargevelgeren. Du kan bruke modifikatoren `.foregroundColor(_:)` til å gjøre dette, akkurat som for bildet.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..Page52..Paragraph90" = "Velg en større font for `Text`-visningen med modifikatoren [.font](doc://com.apple.documentation/documentation/swiftui/font) og overfør `.largeTitle`.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..Page53..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..Page53..Paragraph91" = "Legg til `.padding()` i visninger hvis du vil lage et fast mellomrom mellom en visning og alle visningene rundt den. Du kan også legge til en `Spacer()`, som er en usynlig visning som krymper og vokser etter behov så den fyller det tilgjengelige rommet mellom visninger.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..Page53..Paragraph92" = "Med [Padding](doc://com.apple.documentation/documentation/swiftui/view/padding(_:_:)) og [spacers](doc://com.apple.documentation/documentation/swiftui/spacer) kan du lage tilpasningsdyktige visningslayouter som sørger for at visningene ser bra ut på skjermer i flere forskjellige størrelser. Ta en titt på [Laying Out a Simple View](doc://com.apple.documentation/documentation/swiftui/laying-out-a-simple-view) hvis du vil vite mer.";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..SuccessMessage..Paragraph93" = "Bravo!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..SuccessMessage..Paragraph94" = "Nå kan du bruke en innebygd SwiftUI-visning, for eksempel en `ColorPicker`, sammen med en [binding](glossary://binding) for å opprette tilpassede [interaksjoner](glossary://user%20interaction) som endrer appstatusen.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..SuccessMessage..Paragraph95" = "Sammen med kunnskapene dine om [statusegenskaper](glossary://state%20property) kan du opprette avanserte brukerinteraksjoner som endrer utseendet på appens brukergrensesnitt.";
+
+/* Title of step named Practice with SwiftUI Built-in Views */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..title" = "Øv med SwiftUIs innebygde visninger";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..LearningCenterContent..Paragraph96" = "![](PracticeWithSwiftUIBuilt-inViews.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..LearningCenterContent..Paragraph97" = "Nå når du kan det grunnleggende om statusegenskaper, bindinger og innebygde SwiftUI-visninger, er det på tide å bygge noen eksempler på egen hånd.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..LearningCenterContent..Paragraph98" = "Først bruker du en innebygd `Slider`-visning til å endre en [statusegenskap](glossary://state%20property) som styrer bredden på en `Rectangle`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..LearningCenterContent..Paragraph99" = "Deretter skal du prøve å lage en historieredigerer med innebygde `TextField`-visninger der du kan endre verdien for noen `String`-statusegenskaper og lage en interessant fortelling.";
+
+/* Title for task */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..title" = "Opprett en skyveknapp";
+
+/* title for page */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page54..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page54..Paragraph100" = "Opprett en visning som bruker en innebygd `Slider` til å endre bredden på en `Rectangle`-visning. For å kunne gjøre dette må du definere en ny [statusegenskap](glossary://state%20property) og overføre den til `Slider` som en [binding](glossary://binding).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page54..Paragraph101" = "Du kan endre en visnings bredde med modifikatoren `.frame(width:)`. Merk: Denne modifikatoren godtar en [Double](doc://com.apple.documentation/documentation/swift/double)-verdi (en bestemt [type](glossary://type) tallverdi), så definer statusegenskapen som en `Double`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page54..Paragraph102" = "Ta deg tid til å prøve dette på egen hånd, og bruk følgende hint hvis du sitter fast.";
+
+/* title for page */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page55..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page55..Paragraph103" = "Definer en statusegenskap av typen `Double` ovenfor `body` i visningen. Dette er den lokale [sannhetskilden](glossary://source%20of%20truth).";
+
+/*  */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page55..CodeBlock18" = "@State var width : Double = 0\n";
+
+/* title for page */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page56..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page56..Paragraph104" = "Opprett en `Slider` med initialisereren `Slider(value:)`. Overfør en [binding](glossary://binding) til [statusegenskapen](glossary://state%20property).";
+
+/*  */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page56..CodeBlock19" = "Slider(value: $width)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page57..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page57..Paragraph105" = "Opprett en `Rectangle`, og legg til modifikatoren `.frame(width:)` i den. Siden verdien for en standard skyveknapp varierer fra `0` til `1`, bør du multiplisere bredden med et større tall, slik at du legger merke til endringer av verdien.";
+
+/*  */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page57..CodeBlock20" = "Rectangle()\n    .frame(width: width * 300)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..title" = "Opprett en historie";
+
+/* title for page */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page58..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page58..Paragraph106" = "Her er et annet eksperiment du kan prøve:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page58..Paragraph107" = "Du kan bruke SwiftUIs [TextField](doc://com.apple.documentation/documentation/swiftui/textfield) til å endre `String`-verdier basert på tegnene som en person skriver i feltet.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page58..OrderedList3..Paragraph108" = "Opprett en tilpassbar historie ved å definere flere [statusegenskaper](glossary://state%20property) sammen med tilsvarende `TextField`-visninger, slik at noen kan legge inn data, for eksempel navnet sitt, en hobby og favorittmat.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page58..OrderedList3..Paragraph109" = "Nedenfor tekstfeltene oppretter du en `Text`-visning som slår sammen alle verdiene ved hjelp av [strenginterpolering](glossary://string%20interpolation) for å lage en historie. Det kan se ut omtrent som dette:";
+
+/*  */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page58..CodeBlock21" = "Text(\"Hei, jeg heter \\(name), favoritthobbyen min er \\(hobby), og jeg klarer ikke å la være å spise \\(favoriteFood)!\")\n";
+
+/* title for page */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page59..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page59..Paragraph110" = "Bonus: Legg til en `Button`- eller `Toggle`-visning som viser historien når du trykker på den.";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..SuccessMessage..Paragraph111" = "Du begynner å få taket på dette!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..SuccessMessage..Paragraph112" = "Nå kan du håndtere statusendringer lokalt med statusegenskaper og mellom to visninger med bindinger.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..SuccessMessage..Paragraph113" = "Nå skal du lære deg å opprette data som kan brukes i alle visninger i en app.";
+
+/* Title of step named Navigating in SwiftUI */
+"GuideBook..Guide0..StepNavigating in SwiftUI..title" = "Navigere i SwiftUI";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..LearningCenterContent..Paragraph114" = "![](NavigatingInSwiftUI.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..LearningCenterContent..Paragraph115" = "Nå når du begynner å få taket på hvordan du håndterer status inni én SwiftUI-visning, er det på tide å begynne å tenke større.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..LearningCenterContent..Paragraph116" = "I noen tilfeller når du bygger en app, har du data som du vil dele mellom to eller flere visninger, så en [binding](glossary://binding) er ikke tilstrekkelig for å håndtere dette. Du bør ikke prøve å replikere data i hver nye visning, siden det blir vanskelig å holde oversikt over dem og det kan forårsake bugger i appen. I stedet kommer du til å lære hvordan du lager og administrerer én [datamodell](glossary://data%20model) som flere visninger i appen kan bruke.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..LearningCenterContent..Paragraph117" = "Før du ser hvordan dette gjøres, må du vite hvordan du lager en app med flere visninger. Du gjør det ved å legge til navigering med en `NavigationSplitView` eller `NavigationStack`.";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..title" = "Opprett en `NavigationStack`";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page60..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page60..Paragraph118" = "Når du vil navigere til forskjellige visninger, må du bruke én av to ulike typer navigeringsvisninger:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page60..OrderedList4..Paragraph119" = "En [NavigationStack](doc://com.apple.documentation/documentation/swiftui/navigationstack) organiserer visningene dine oppå hverandre som en kortstokk.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page60..OrderedList4..Paragraph120" = "En [NavigationSplitView](doc://com.apple.documentation/documentation/swiftui/navigationsplitview) organiserer visningene dine i to eller tre kolonner, slik at du kan velge objekter fra den første kolonnen for å vise en visning i den etterfølgende kolonnen.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page61..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page61..Paragraph121" = "Hver av disse navigeringsvisningene fungerer som en [beholder](glossary://container) for å vise forskjellige visninger, basert på hvordan noen navigerer inni appen. Forskjellen er at de viser visningene på litt forskjellige måter.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page61..Paragraph122" = "Først lager du en `NavigationStack` for å se hvordan den fungerer.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page62..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page62..Paragraph123" = "Legg først til en `NavigationStack` med en `List`-visning inni. En [List](doc://com.apple.documentation/documentation/swiftui/list) viser et hvilket som helst antall visninger i en vertikal rullekolonne.";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page62..CodeBlock22" = "NavigationStack { \n   List { \n       Text(\"NavigationStack Content\")\n       //#-learning-code-snippet(addNavLink)\n       //#-learning-code-snippet(addSecondNavLink)\n\n   }\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page63..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page63..Paragraph124" = "Se på forhåndsvisningen. Du ser én `Text`-visning i `List` og ikke mye annet. Hvis du vil navigere til en annen visning, legger du til en [NavigationLink](glossary://navigation%20link) inni `NavigationStack`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page63..Paragraph125" = "Så hvorfor opprettet du en `NavigationStack` unødvendig hvis det er `NavigationLink` som tar deg til en annen visning? Vel, akkurat som at du ikke kan sykle på en sykkel uten hjul, så kan du ikke navigere til en annen visning med mindre lenkene finnes inni en `NavigationStack` eller `NavigationSplitView`.";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..title" = "Opprett en navigeringslenke";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page64..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page64..Paragraph126" = "`NavigationStack` og `NavigationSplitView` kan vise forskjellig innhold basert på hvordan en person samhandler med appen. Hvis du vil at navigeringsvisningen skal vise en annen visning, oppretter du en [NavigationLink](glossary://navigation%20link) i form av en knapp som en person kan trykke på for å navigere til en separat visning.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page65..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page65..Paragraph127" = "En `NavigationLink` må inneholde to ting:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page65..OrderedList5..Paragraph128" = "En lenke til [målvisningen](glossary://destination%20view).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page65..OrderedList5..Paragraph129" = "En [etikett](glossary://label) (hvordan knappen skal vises).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page65..Paragraph130" = "Målet kan være hvilken som helst visning: noe enkelt som en `Text`- eller `Image`-visning, eller til og med en [sammenstilt visning](glossary://composed%20view) som du selv har opprettet.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page66..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page66..Paragraph131" = "Koden nedenfor oppretter en `NavigationLink` med en `Text`-visning som [etikett](glossary://label) og en `Text`-visning som [mål](glossary://destination%20view).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page66..Paragraph132" = "Prøv å legge til `NavigationLink` nedenfor, og trykk på lenken i forhåndsvisningen.";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page66..CodeBlock23" = "NavigationLink(\"Push Me!\") { \n   Text(\"I\'m the destination View\")\n       .navigationTitle(\"Destination\")\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page67..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page67..Paragraph133" = "Legg til en navigeringslenke til, og prøv å navigere til de ulike visningene i `NavigationStack`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page67..Paragraph134" = "Siden en `NavigationStack` fungerer som en kortstokk, viser den alltid bare visningen som er øverst. Når du navigerer til en ny visning, flyttes den opp øverst i stabelen så den blir synlig.";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page67..CodeBlock24" = "NavigationLink(\"No, Push Me!\") { \n   Text(\"I\'m another destination view\")\n       .navigationTitle(\"Destination\")\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..title" = "Eksperimenter med en `NavigationSplitView`";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page68..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page68..Paragraph135" = "Nå skal du opprette en `NavigationSplitView` som viser innhold som kolonner.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page68..Paragraph136" = "Du bruker navigeringslenker som innledende kolonne. Når de blir trykket på, viser hver av disse litt tekst i den etterfølgende kolonnen.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page69..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page69..Paragraph137" = "Først legger du til en `NavigationSplitView`. Legg merke til at det finnes to deler: den første delen er den innledende kolonnen i den delte visningen, og den andre er en [plassholdervisning](glossary://placeholder%20view) som viser noe midlertidig innhold frem til du velger en av lenkene.";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page69..CodeBlock25" = "NavigationSplitView { \n    //#-learning-code-snippet(listOfLinks)\n\n} detail: { \n    //#-learning-code-snippet(detailView)\n    \n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page70..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page70..Paragraph138" = "Deretter legger du til noen lenker i `NavigationSplitView`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page70..Paragraph139" = "Du merker kanskje at visningen fortsatt ser lik ut som en `NavigationStack` hvis du har en liten forhåndsvisningsstørrelse. Prøv å utvide visningen slik at du ser flere kolonner.";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page70..CodeBlock26" = "List {\n    NavigationLink(\"First link\") {\n        Text(\"😵‍💫\")\n    }\n    NavigationLink(\"Second link\") {\n        Text(\"😵‍\")\n    }\n    //#-learning-code-snippet(addMoreNavLinks)\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page71..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page71..Paragraph140" = "Legg til slutt til en [plassholdervisning](glossary://placeholder%20view) for å vise noe innledende innhold for den andre kolonnen.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page71..Paragraph141" = "Du kan se dette plassholderinnholdet ved å utvide forhåndsvisningen og starte den på nytt før du velger en lenke.";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page71..CodeBlock27" = "Text(\"Select a link\")\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..title" = "Eksperimenter med NavigationLinks";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page72..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page72..Paragraph142" = "Hvis du vil tilpasse utseendet på en `NavigationLink`, kan du bruke en annen [initialiserer](glossary://initializer) som tar en tilpasset [etikett](glossary://label).";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page73..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page73..Paragraph143" = "Koden nedenfor oppretter en `NavigationLink` med en tilpasset [etikett](glossary://label) som består av en `HStack` med en `Text`- og `Image`-visning. I likhet med målinnholdet kan etiketten være hvilken som helst visning.";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page73..CodeBlock28" = "NavigationLink { \n    SlidingRectangle()\n       .navigationTitle(\"Sliding Rectangle\")\n} label: { \n    HStack { \n        Text(\"Trykk for å navigere\")\n        Spacer()\n        Image(systemName: \"arrow.forward.circle\")\n            .font(.largeTitle)\n    }\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page74..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page74..Paragraph144" = "Prøv å legge til en `NavigationLink` med et mål, en etikett og en navigeringstittel. Prøv å navigere til en av de andre visningene i appen, for eksempel visningen `ConditionalCircle`.";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..title" = "Forstå hvordan appen viser visninger";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page75..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page75..Paragraph145" = "Nå når du har eksperimentert med å legge til [navigeringslenker](glossary://navigation%20link) inni en `NavigationStack` og `NavigationSplitView`, er målet ditt at den første visningen som appen viser, skal være en `NavigationStack`. Når du har lagt til navigeringslenker, kan personer navigere til forskjellige visninger når de bruker appen.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page76..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page76..Paragraph146" = "Du forteller appen hvilken visning som skal vises først i appdefinisjonen. Her kan du se at appen som standard heter `MyApp`. Den følger retningslinjene i [protokollen](glossary://protocol) `App`, noe som tillater at den kjøres på enheten din akkurat som andre apper.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page76..Paragraph147" = "Prøv å kjøre det aktuelle prosjektet som en app ved å trykke på kjør-knappen (▶︎). Det skal ikke være mye å se ennå. 🙈";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page77..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page77..Paragraph148" = "Egenskapen `body` i appen definerer innholdet. For nå trenger du bare å vite at du må ha minst én visning inni en `WindowGroup`. Den fungerer som en beholder for appens [visningshierarki](glossary://view%20hierarchy), som består av en samling visninger som appen viser når den åpnes.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page78..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page78..Paragraph149" = "`ContentView` er [toppnivåvisningen](glossary://top-level%20view) og en den første visningen som appen viser når den åpnes. Den er øverst i [visningshierarkiet](glossary://view%20hierarchy), som er en strukturert samling av [delvisninger](glossary://subview) som forgrener seg fra toppnivåvisningen.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page79..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page79..Paragraph150" = "Prøv å endre `ContentView` midlertidig til en annen visning, for eksempel en `Text`- eller `Image`-visning, og kjør deretter appen. Legg merke til at appens toppnivåvisning er endret – det er sånn du endrer hvilket innhold appen skal vise.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page79..Paragraph151" = "Endre toppnivåvisningen tilbake til `ContentView` når du er klar.";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..title" = "Legg til en `NavigationStack` i appen";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page80..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page80..Paragraph152" = "Du kan vise flere visninger i appen ved å gjøre [toppnivåvisningen](glossary://top-level%20view) om til en [NavigationStack](doc://com.apple.documentation/documentation/swiftui/navigationstack).";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page81..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page81..Paragraph153" = "Legg til en `NavigationStack` inni `SPCAssessableWindowGroup` i appens `body`:";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page81..CodeBlock29" = "NavigationStack { \n\n}\n//#-learning-code-snippet(environmentObjectModifier)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page82..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page82..Paragraph154" = "Plasser `ContentView` inni `NavigationStack`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page82..Paragraph155" = "Den første visningen som plasseres inni `NavigationStack`, viser det innledende innholdet. Dette innholdet kan endres hver gang du bruker en [navigeringslenke](glossary://navigation%20link) til å vise en ny visning.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page83..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page83..Paragraph156" = "Appens `body` ser nå slik ut:";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page83..CodeBlock30" = "SPCAssessableWindowGroup(app: self, assessmentCandidates: [CreatureZoo()]) { \n   NavigationStack { \n       ContentView()\n   }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..title" = "Legg til en navigeringstittel";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page84..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page84..Paragraph157" = "Kjør appen nå. Den ser ikke så annerledes ut, gjør den vel? Det er fordi `NavigationStack` fungerer som en beholder for å vise innholdet som standard.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page84..Paragraph158" = "En `NavigationStack` gir deg derimot et dedikert rom, en såkalt [navigeringslinje](glossary://navigation%20bar), som kan vise tittelen på den aktuelle visningen i tillegg til diverse verktøylinjeobjekter.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page85..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page85..Paragraph159" = "Prøv å legge til `.navigationTitle(\"Mine skapninger\")` som en modifikator i `ContentView`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page85..Paragraph160" = "Dette gir visningen en ny tittel i navigeringslinjeområdet. Du legger til navigeringstittelen i hver visning inni navigeringsvisningen og ikke i selve navigeringsvisningen.";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page85..CodeBlock31" = ".navigationTitle(\"Mine skapninger\")\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page86..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page86..Paragraph161" = "Ser du hvordan navigeringstittelen vises i navigeringslinjen øverst i `ContentView`? Disse titlene hjelper personer som bruker appen, med å forstå innholdet de ser på.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page86..Paragraph162" = "Deretter legger du til en [NavigationLink](glossary://navigation%20link) i `ContentView` for å navigere til visningen `CreatureDance`.";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLinkCreatureDance..title" = "Legg til en `NavigationLink` i `CreatureList`";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLinkCreatureDance..Page87..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLinkCreatureDance..Page87..Paragraph163" = "Legg til en lenke med målet `CreatureDance` inni visningen `Section(\"Dance\")`. Bruk etiketten og navigeringstittelen til å beskrive hva visningen gjør (i dette tilfellet får den noen skapninger til å danse!).";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLinkCreatureDance..Page88..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLinkCreatureDance..Page88..CodeBlock32" = "NavigationLink(\"Make the Creatures Dance\") { \n    DancingCreatures()\n        .navigationTitle(\"Dancing Creatures\")\n}\n";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepNavigating in SwiftUI..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..SuccessMessage..Paragraph164" = "Gratulerer! Å legge til navigering er en absolutt forutsetning når du lager en app.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..SuccessMessage..Paragraph165" = "Husk at når du bruker en `NavigationLink`, fungerer den bare hvis visningen du navigerer fra, finnes inni en `NavigationStack` eller en `NavigationSplitView`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..SuccessMessage..Paragraph166" = "Nå skal du lære hvordan du deler data mellom alle visningene i appen.";
+
+/* Title of step named Sharing Data Between Views */
+"GuideBook..Guide0..StepSharing Data Between Views..title" = "Dele data mellom visninger";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..LearningCenterContent..Paragraph167" = "![](SharingDataBetweenViews.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..LearningCenterContent..Paragraph168" = "Tidligere lærte du å lagre data [lokalt](glossary://local%20scope) med en [statusegenskap](glossary://state%20value) og mellom to visninger med en [binding](glossary://binding). Men hva gjør du hvis du vil dele data i en app som har flere visninger, som du gjør nå?";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..LearningCenterContent..Paragraph169" = "Når du vil dele de samme dataene mellom flere visninger, må du ha én sannhetskilde som finnes [adskilt](glossary://data%20separation) fra visningene. Dette er [datamodellen](glossary://data%20model), og du kan dele den med alle visninger som trenger tilgang til dataene.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..LearningCenterContent..Paragraph170" = "En vanlig måte å konstruere en datamodell for en SwiftUI-app på, er å bruke et [observerbart objekt](glossary://observable%20object). Et observerbart objekt er en [type](glossary://type) med egenskaper som flere visninger kan [observere](glossary://observe). Disse visningene kan se etter statusendringer i egenskapene, slik at de kan oppdatere brukergrensesnittene og være synkroniserte.";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..title" = "Din datamodell";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page89..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page89..Paragraph171" = "Dette er datamodellen din – det [observerbare objektet](glossary://observable%20object) `CreatureZoo`. Det er en [klasse](glossary://class) som følger retningslinjene i [protokollen](glossary://protocol) `ObservableObject`. Dette innebærer at klassen kan [publisere](glossary://publish) bestemte egenskaper.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page89..Paragraph172" = "Når en klasse publiserer en egenskap, sender egenskapen ut (publiserer) statusendringene sine til alle [observatører](glossary://observer) som kanskje følger med. Dette innebærer at [observerende](glossary://observer) visninger kan oppdateres når statusen for en publisert egenskap endres.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page90..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page90..Paragraph173" = "[Publiserte data](glossary://published%20value) i `CreatureZoo` er egenskapen `creatures`, som er en matrise med instanser av `Creature`. Hver gang dataene i denne matrisen endres, for eksempel når en skapning legges til eller fjernes, varsler SwiftUI alle egenskapenes [observatører](glossary://observer), slik at de kan oppdatere og vise de nyeste dataene.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page91..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page91..Paragraph174" = "Du merker en egenskap som [publisert](glossary://published%20value) ved å legge til [egenskapsinnpakningen](glossary://property%20wrapper) `@Published` i et observerbart objekt.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page92..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page92..Paragraph175" = "Opprett en skapningsinstans ved å bruke initialisereren `Creature(name:emoji:)`, og overfør et navn og ett emojitegn.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page93..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page93..Paragraph176" = "Dette er typen `Creature`, som inneholder [egenskaper](glossary://property) for `name`, `emoji`, `offset`, `rotation` og `id`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page93..Paragraph177" = "`Creature` følger retningslinjene for [protokollen](glossary://protocol) `Identifiable` ved å legge til en `id`-egenskap. Med denne protokollen kan SwiftUI unikt identifisere hver eneste `Creature`, selv om to skapninger bruker nøyaktig samme emoji. Dette vil komme til nytte senere.";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..title" = "Legg til flere skapninger";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page94..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page94..Paragraph178" = "Legg til minst to nye `Creature`-instanser i matrisen `creatures.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page95..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page95..Paragraph179" = "Når du vil lage en ny skapning, [initialiserer](glossary://initialization) du den ved å navngi skapningen og overføre ett emojitegn. Når du legger til skapninger i matrisen, må du separere hver skapnings data med et komma, for eksempel:";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page95..CodeBlock33" = "Creature(name: \"T-Rex\", emoji: \"🦖\"),\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page96..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page96..Paragraph180" = "Legg til minst én ekstra skapning i matrisen.";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page96..CodeBlock34" = "Creature(name: \"Marihøne\", emoji: \"🐞\"),\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..title" = "Opprett et `StateObject`";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page97..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page97..Paragraph181" = "Før du deler det [observerbare objektet](glossary://observable%20object) mellom visninger, skal du først undersøke hvordan det er mulig å bruke datamodellen i én visning.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page97..Paragraph182" = "Du initialiserer det observerbare objektet i `ContentView` og oppretter en liste som inneholder skapningsvisninger sammen med dataene.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page97..Paragraph183" = "Du initialiserer et observerbart objekt som `CreatureZoo` med den bestemte egenskapsinnpakningen `@StateObject`, slik at SwiftUI kan håndtere dataene.";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page97..CodeBlock35" = "@StateObject var data = CreatureZoo()\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page98..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page98..Paragraph184" = "Du bruker egenskapsinnpakningen `@StateObject` til å be SwiftUI om å håndtere det observerbare objektet for deg, omtrent som når du bruker `@State` til å la SwiftUI håndtere en egenskap i en visning som en [statusegenskap](glossary://state%20property).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page98..Paragraph185" = "I dette tilfellet initialiserer du det observerbare objektet `CreatureZoo` og ber SwiftUI om å håndtere det som et [statusobjekt](glossary://state%20object).";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..title" = "Bruk modelldata i en visning";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page99..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page99..Paragraph186" = "Når du har initiert dataene, skal du bruke dem til å opprette en enkel visning. Du skal legge til en [ForEach](glossary://ForEach)-visning inni `List`, slik at alle skapningene vises vertikalt i en kolonnelayout.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page100..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page100..Paragraph187" = "En [ForEach](glossary://ForEach) er en struktur som [itererer](glossary://iteration) over en [samling](glossary://collection) med data (for eksempel en matrise) for å lage visninger for hvert element i samlingen.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page100..Paragraph188" = "Legg til `ForEach` nedenfor visningen `Section` for å iterere over matrisen `data.creatures` og dermed opprette en tilpasset visning som viser hver skapnings navn og emoji:";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page100..CodeBlock36" = "/*#-code-walkthrough(forEach.id)*/\nForEach(data.creatures) { creature in \n/*#-code-walkthrough(forEach.id)*/\n    HStack { \n        Text(creature.name)\n            .font(.title)\n        Spacer()\n        Text(creature.emoji)\n            /*#-code-walkthrough(resizableFont)*/\n            .resizableFont()\n            /*#-code-walkthrough(resizableFont)*/\n            .frame(minWidth: 125)\n    }\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page101..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page101..Paragraph189" = "Husker du hvordan `Creature` følger retningslinjene i protokollen `Identifiable`? Dette gjør det mulig for [ForEach](glossary://ForEach)-strukturen å identifisere hver skapning på en unik måte, selv om flere har nøyaktig samme emojitegn og navn. Siden den til og med kan skille tvillinger fra hverandre, kan SwiftUI oppdatere alle visninger hver for seg uten å blande dem sammen.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page102..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page102..Paragraph190" = "Du har kanskje sett at modifikatoren`.resizableFont()` brukes her. Dette er en tilpasset modifikator som defineres i `ResizableFont.swift`, slik at `Text`-visningens fontstørrelse kan skaleres opp til å passe størrelsen på visningen. Sjekk ut koden i den filen hvis du vil se hvordan du oppretter en tilpasset modifikator.";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..title" = "Gjør modelldata tilgjengelig i hele appen";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page103..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page103..Paragraph191" = "Nå når du har brukt de observerbare objektdataene i én visning, er det på tide å dele disse dataene med hele appen fra `MyApp.swift`.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page104..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page104..Paragraph192" = "Slik gjør du dataene tilgjengelig i hele appen:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page104..OrderedList6..Paragraph193" = "Opprett en instans av `CreatureZoo` som et [statusobjekt](glossary://state%20object) i `MyApp`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page104..OrderedList6..Paragraph194" = "Overfør den til [toppnivåvisningen](glossary://top-level%20view), `NavigationStack`, som et [miljøobjekt](glossary://environment%20object).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page104..Paragraph195" = "Når du overfører dataene til toppnivåvisningen, gjør miljøobjektet dataene tilgjengelig for hele [visningshierarkiet](glossary://view%20hierarchy), slik at alle andre visninger kan bruke dem.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page105..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page105..Paragraph196" = "Opprett en instans av `CreatureZoo` på samme måte som du gjorde i `CreatureList`:";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page105..CodeBlock37" = "@StateObject var data = CreatureZoo()\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page106..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page106..Paragraph197" = "Legg til følgende modifikator nedenfor `NavigationStack`:";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page106..CodeBlock38" = ".environmentObject(data)\n";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page106..Paragraph198" = "Dette overfører instansen av det [observerbare objektet](glossary://observable%20object) til appens [miljø](glossary://environment), der alle [delvisninger](glossary://subview) har tilgang.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page107..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page107..Paragraph199" = "Nå går du tilbake til `ContentView.swift` og prøver å bruke miljøobjektet.";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..title" = "Få tilgang til et miljøobjekt";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page108..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page108..Paragraph200" = "Nå når du har delt det observerbare objektet med alle [delvisningene](glossary://subview) i `NavigationStack`, inkludert `ContentView`, er det på tide å få tilgang til disse dataene.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page109..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page109..Paragraph201" = "I stedet for å bruke `@StateObject`, noe som oppretter en ny instans av et observerbart objekt, må du få tilgang til instansen som overføres til appens [miljø](glossary://environment):";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page109..OrderedList7..Paragraph202" = "Slett den aktuelle `@StateObject`-variabelen `data`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page109..OrderedList7..Paragraph203" = "For å få tilgang til [miljøobjektet](glossary://environment%20object) og opprette en ny egenskap av typen `CreatureZoo` med egenskapsinnpakningen `@EnvironmentObject`.";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page109..CodeBlock39" = "@EnvironmentObject var data : CreatureZoo\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page110..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page110..Paragraph204" = "Utforsk listen med skapninger i forhåndsvisningen av `ContentView`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page110..Paragraph205" = "Legg merke til at skapningene ser ut nøyaktig som før. Data i skapningslisten opprettes i `MyApp`, deles via appens [miljø](glossary://environment) og er tilgjengelig i `ContentView`.";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..title" = "Erstatt `HStack` med en sammenstilt `CreatureRow`-visning";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page111..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page111..Paragraph206" = "Dette er en god mulighet til å forbedre koden din. Du kan forenkle koden i denne visningen ved å erstatte hele `HStack` inni [ForEach](glossary://ForEach)-strukturen med den [sammenstilte visningen](glossary://composed%20view) `CreatureRow`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page111..Paragraph207" = "Slett innholdet i `HStack` inni `ForEach`, og erstatt det med `CreatureRow(creature: creature)`.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page112..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page112..Paragraph208" = "Ta en titt i `CreatureRow.swift` – den inneholder den samme koden som du hadde i `ForEach`, med unntak av en [egenskap](glossary://property) som lagrer en `Creature`-verdi.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page112..Paragraph209" = "Nå når du har `CreatureRow` som en egen visning, blir den enklere å endre og teste separat fra `ContentView`. Ved å sammenstille en visning på denne måten forbedrer du kodens [modularitet](glossary://modularity), noe som er et grunnleggende prinsipp ved appbygging.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page113..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page113..CodeBlock40" = "ForEach(data.creatures) { creature in \n   CreatureRow(creature: creature)\n}\n";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepSharing Data Between Views..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..SuccessMessage..Paragraph210" = "Kult!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..SuccessMessage..Paragraph211" = "Ved å overføre et observerbart objekt til appmiljøet gir du hele [visningshierarkiet](glossary://view%20hierarchy) tilgang til disse dataene. Dette gjør det mulig for alle visninger i appen til å bruke samme [sannhetskilde](glossary://source%20of%20truth), i stedet for å prøve å gjenskape data på flere steder.";
+
+/* Title of step named Create a New View To Share Data */
+"GuideBook..Guide0..StepCreate a New View To Share Data..title" = "Opprett en ny visning for å dele data";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..LearningCenterContent..Paragraph212" = "![](CreateANewViewToShareData.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..LearningCenterContent..Paragraph213" = "Nå når du har lykkes med å dele data med én visning, er det på tide å bruke de samme dataene i andre visninger.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..LearningCenterContent..Paragraph214" = "Du må gjøre to ting for å gjøre dette:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..LearningCenterContent..OrderedList8..Paragraph215" = "Sørg for at visningen som skal ha tilgang til dataene, finnes i samme [visningshierarki](glossary://view%20hierarchy) som toppnivåvisningen den overføres til. Du legger til en visning i visningshierarkiet ved å initiere den inni [toppnivåvisningen](glossary://top-level%20view) eller en av dens [delvisninger](glossary://subview).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..LearningCenterContent..OrderedList8..Paragraph216" = "Koble til [miljøobjektet](glossary://environment%20object).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..LearningCenterContent..Paragraph217" = "La oss si at du for eksempel oppretter en ny visning inni `ContentView`. Den nye visningen inngår da i visningshierarkiet siden `ContentView` er en delvisning av toppnivåvisningen `NavigationStack`. Du kan deretter få tilgang til miljøobjektet fra den nye visningen.";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..title" = "Deklarer miljøobjektet";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page114..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page114..Paragraph218" = "Målet ditt er å bygge den nye visningen `DancingCreatures`, som kobles til dataene i appens [miljø](glossary://environment).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page114..Paragraph219" = "`DancingCreatures` inngår allerede i [visningshierarkiet](glossary://view%20hierarchy) siden du la til en lenke til den i `ContentView`. Neste trinn er å få tilgang til dataene i appmiljøet.";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page115..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page115..Paragraph220" = "Du får tilgang til dataene i appmiljøet ved å deklarere miljøobjektet for `CreatureZoo`, akkurat som du gjorde i `CreatureList`. Ta en titt på den andre koden din hvis du trenger hjelp.";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page116..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page116..Paragraph221" = "[Deklarer](glossary://declaration) en variabel med egenskapsinnpakningen `@EnvironmentObject`, og gi den typen `CreatureZoo`. Du trenger ikke å [initialisere](glossary://initialization) verdien siden den allerede er initialisert i `MyApp`. Du trenger bare tilgang til dataene her.";
+
+/*  */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page116..CodeBlock41" = "@EnvironmentObject var data : CreatureZoo\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesView..title" = "Legg til en `DancingCreatures`-visning";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesView..Page117..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesView..Page117..Paragraph222" = "Nå når du har tilgang til appdataene, er det på tide å bygge noe gøy med dem. Først stabler du alle skapningene oppå hverandre, og deretter spres de i ulike retninger når du trykker på en av dem.";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesView..Page118..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesView..Page118..Paragraph223" = "Legg til denne koden inni `VStack`:";
+
+/*  */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesView..Page118..CodeBlock42" = "ZStack {\n    /*#-code-walkthrough(dance.forEach)*/\n    ForEach(data.creatures) { creature in\n    /*#-code-walkthrough(dance.forEach)*/\n        /*#-code-walkthrough(dance.textView)*/\n        Text(creature.emoji)\n            .resizableFont()\n            .offset(creature.offset)\n            .rotationEffect(creature.rotation)\n        /*#-code-walkthrough(dance.textView)*/\n        //#-learning-code-snippet(exp1)\n        //#-learning-code-snippet(animationSolution)\n        //#-learning-code-snippet(exp3)\n\n    }\n}\n/*#-code-walkthrough(dance.onTap)*/\n.onTapGesture {\n    data.randomizeOffsets()\n}\n/*#-code-walkthrough(dance.onTap)*/\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..title" = "Forstå animasjonskoden";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page119..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page119..Paragraph224" = "For å opprette denne animasjonen itererer [ForEach](glossary://ForEach) gjennom alle skapningene i `CreatureZoo.creatures` og lager en `Text`-visning for hver av dem.";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page120..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page120..Paragraph225" = "`Text`-visningen bruker skapningens [egenskaper](glossary://property) `offset` og `rotation` som argumenter for modifikatorene `.offset` og `.rotationEffect`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page120..Paragraph226" = "Siden `CreatureZoo.creatures` er en [publisert verdi](glossary://published%20value), oppdaterer SwiftUI visningen for `DancingCreatures` så snart en skapnings `offset` eller `rotation` endres.";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page121..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page121..Paragraph227" = "Modifikatoren `.onTapGesture` kjører en kode hver gang du trykker på visningen. Når den blir trykt på, endrer `data.randomizeOffsets()` verdiene `offset` og `rotation` for alle skapninger, slik at visningen kan oppdatere hver skapning til dets nye sted og rotasjon.";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..title" = "Animer skapningene";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page122..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page122..Paragraph228" = "Prøv å trykke på visningen.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page122..Paragraph229" = "Skapningene beveger faktisk på seg, men det ser ikke spesielt bra ut. Nå skal du animere dem til sine nye posisjoner for å få en mer dansende følelse.";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page123..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page123..Paragraph230" = "Når du vil animere skapningene til en ny posisjon, må du fortelle SwiftUI hvilken animasjon som skal brukes og hvilken verdi som skal animeres. I dette tilfellet vil du animere hver skapnings `offset`-egenskap.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page123..Paragraph231" = "Legg ved modifikatoren `.animation(_:value:)` i `Text`-visningen. Velg `.default` for animasjonsargumentet, og overfør `creature.offset` for verdien. Hver gang `offset` endres, animeres endringene i visningen.";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page124..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page124..CodeBlock43" = ".animation(.default, value: creature.offset)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..title" = "Eksperimenter med visningen";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page125..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page125..Paragraph232" = "Nå når du har lykkes med å animere skapningene, skal du prøve å justere animasjonene og andre deler av visningen så det blir mer interessant.";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page126..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page126..Paragraph233" = "Animer endringer av egenskapen `creature.rotation` ved å legge til en ny `.animation(_:value:)`-modifikator.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page126..Paragraph234" = "Legg til følgende modifikator før `.animation(_:value)`-modifikatoren. Hvordan endres animasjonen? Hvorfor tror du dette skjer? Hva skjer om du plasserer animasjonen `.spring()` etter modifikatoren ovenfor?";
+
+/*  */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page126..CodeBlock44" = ".animation(.spring(response: 0.5, dampingFraction: 0.5), value: creature.rotation)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page127..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page127..Paragraph235" = "Endre hendelseshåndtereren for `.onTapGestures` til `data.synchronizeOffsets()`. Dette fører til at alle skapninger flyttes til samme forskyvning.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page127..OrderedList9..Paragraph236" = "Fjern den aktuelle `.animation`.modifikatoren for `creature.offset`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page127..OrderedList9..Paragraph237" = "Legg til følgende animasjon som gjør at hver animasjon forsinkes litt.";
+
+/*  */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page127..CodeBlock45" = ".animation(.default.delay(data.indexFor(creature) / 10), value: creature.offset)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page128..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page128..Paragraph238" = "Fortsett med å justere animasjonsverdiene til du er fornøyd med resultatet!";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepCreate a New View To Share Data..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..SuccessMessage..Paragraph239" = "Bra jobbet!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..SuccessMessage..Paragraph240" = "Du har opprettet en annen visning som bruker den observerbare [datamodellen](glossary://data%20model) din som deles med [visningshierarkiet](glossary://view%20hierarchy).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..SuccessMessage..Paragraph241" = "Nå skal du lære hvordan du legger til og sletter data fra denne datamodellen, slik at personer kan tilpasse appen.";
+
+/* Title of step named Add and delete creatures */
+"GuideBook..Guide0..StepAdd and delete creatures..title" = "Legg til og slett skapninger";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..LearningCenterContent..Paragraph242" = "![](AddAndDeleteCreatures.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..LearningCenterContent..Paragraph243" = "Nå har du en app med flere visninger som deler på én [datamodell](glossary://data%20model) mellom flere visninger, men appen kjennes ikke helt fullstendig ut enda. Selv om du kan legge til eller slette en `Creature` i koden, kan ikke en [bruker](glossary://user) legge til eller slette skapninger via brukergrensesnittet.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..LearningCenterContent..Paragraph244" = "Dette er heldigvis veldig enkelt å fikse. Siden du har tilgang til datamodellen fra visningene dine, kan du gjøre endringer i datamodellen når en person samhandler med brukergrensesnittet. Først lærer du å slette en skapning, og deretter lager du en ny visning der personer kan legge til sine egne skapninger.";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..title" = "Slett en skapning";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page129..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page129..Paragraph245" = "SwiftUI gjør det veldig enkelt å slette data fra en `List`. Du kan slette en skapning ved å legge til en `.onDelete`-modifikator i `ForEach`-løkken i `ContentView`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page129..Paragraph246" = "Når du legger til modifikatoren `.onDelete`, kan du kjøre en tilpasset kode (en [closure-blokk](glossary://closure)-`action` når en person bestemmer seg for å slette et objekt). Closure-blokkens kode fjerner den aktuelle skapningen fra appens observerbare [datamodell](glossary://data%20model).";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page130..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page130..Paragraph247" = "Inni `.onDelete`-[closure-blokken](glossary://closure) fjerner du den aktuelle skapningen ved å kalle `remove(atOffsets:)` og overføre verdien `indexSet` fra closure-blokken. Dette finner tilsvarende skapning i matrisen `creatures` basert på raden i listen som du velger å slette.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page130..Paragraph248" = "Prøv å legge til denne modifikatoren nedenfor `ForEach`-løkken, og kjør appen. Kan du slette en skapning hvis du sveiper mot venstre på den?";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page130..CodeBlock46" = ".onDelete { indexSet in \n    data.creatures.remove(atOffsets: indexSet)\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..title" = "Legg til en `NavigationLink` i `CreatureEditor`";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page131..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page131..Paragraph249" = "Du må gjøre to ting når du vil legge til en ny skapning:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page131..OrderedList10..Paragraph250" = "Legg til `CreatureEditor` i [visningshierarkiet](glossary://view%20hierarchy) med en `NavigationLink`. Dette gir `CreatureEditor` tilgang til `CreatureZoo`-miljøobjektet og tillater at en person navigerer til visningen.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page131..OrderedList10..Paragraph251" = "[Sammenstill](glossary://composed%20view) visningen `CreatureEditor` så en person kan redigere og legge til en ny skapning i matrisen `creatures` i `CreatureZoo`.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page132..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page132..Paragraph252" = "Begynn med å bestemme hvor du skal legge til en `NavigationLink` i `CreatureEditor`. Siden du allerede har en `List`-visning med skapninger som du kan slette fra i `ContentView`, gir det mening å legge til en skapning fra samme visning.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page133..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page133..Paragraph253" = "Du kan gjøre det enkelt å få tilgang til redigering av skapninger ved å plassere en lenke i [navigeringslinjen](glossary://navigation%20bar) i `ContentView`-brukergrensesnittet. Dette er det perfekte stedet for denne typen lenke fordi den er på et sted der brukerne forventer å finne ytterligere funksjoner i appen.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page134..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page134..Paragraph254" = "Legg til en knapp i navigeringslinjen:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page134..OrderedList11..Paragraph255" = "Legg til tilpasninger av navigeringslinjen ved å legge ved modifikatoren `.toolbar` i `List`-visningen.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page134..OrderedList11..Paragraph256" = "Legg til `ToolbarItem` inni `.toolbar`-closure-blokken. Dette er et objekt som du kan plassere i verktøylinjen.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page134..OrderedList11..Paragraph257" = "Legg til `NavigationLink` i `CreatureEditor` inni `ToolbarItem`. Dette er visningen du ser i navigeringslinjen.";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page134..CodeBlock47" = ".toolbar { \n    ToolbarItem { \n        // Add NavigationLink to CreatureEditor\n\n    }\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page135..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page135..CodeBlock48" = ".toolbar { \n    ToolbarItem { \n        NavigationLink(\"Add\") { \n            CreatureEditor()\n        }\n    }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..title" = "Legg til en navigeringstittel i `CreatureEditor`";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..Page136..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..Page136..Paragraph258" = "Deretter gir du `CreatureEditor` en navigeringstittel som beskriver visningens formål.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..Page136..OrderedList12..Paragraph259" = "Legg til en navigeringstittel i visningen `CreatureEditor`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..Page136..OrderedList12..Paragraph260" = "Kjør appen, og test navigeringen til `CreatureEditor` fra `ContentView`.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..Page137..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..Page137..CodeBlock49" = ".toolbar { \n    ToolbarItem { \n        NavigationLink(\"Add\") { \n            CreatureEditor()\n                .navigationTitle(\"Add Creature\")\n        }\n    }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..title" = "Definer `CreatureEditor`-dataene";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page138..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page138..Paragraph261" = "Når du vil legge til en ny skapning, oppretter du en [sammenstilt visning](glossary://composed%20view), `CreatureEditor`, der du kan redigere en ny skapning og legge den til i [datamodellen](glossary://data%20model) din.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page139..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page139..Paragraph262" = "Ta deg tid til å tenke over hvilke [egenskaper](glossary://property) som er nødvendige i `CreatureEditor` for å kunne opprette en ny instans av `Creature` og legge den til i datamodellen.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page139..OrderedList13..Paragraph263" = "Du trenger en `Creature`-egenskap som du kan endre inni den [lokale](glossary://local%20scope) `CreatureEditor`-visningen.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page139..OrderedList13..Paragraph264" = "Du må ha tilgang til det [observerbare objektet](glossary://observable%20object) `CreatureZoo` fra [miljøet](glossary://environment), slik at du kan legge til din instans av `Creature` i den.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page139..Paragraph265" = "Prøv å opprette to egenskaper som oppfyller disse målene, og bruk følgende hint hvis du sitter fast.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page140..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page140..Paragraph266" = "Først oppretter du en [statusegenskap](glossary://state%20property) som lagrer en instans av `Creature`. Du kan la strengene for `name` og `emoji`-parametrene være tomme for øyeblikket.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page141..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page141..Paragraph267" = "Deretter deklarerer du et [miljøobjekt](glossary://environment%20object) av typen `CreatureZoo`, slik at du får tilgang til instansen din av det [observerbare objektet](glossary://observable%20object).";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page142..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page142..CodeBlock50" = "@State var newCreature : Creature = Creature(name: \"\", emoji: \"\")\n@EnvironmentObject var data : CreatureZoo \n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineYourView..title" = "Opprett et skjema i CreatureEditor";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineYourView..Page143..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineYourView..Page143..Paragraph268" = "Når du bygger `CreatureEditor`-visningen, kan du bruke en innebygd `Form`-visning som er praktisk for håndtering av dataregistrering.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineYourView..Page143..Paragraph269" = "Inni `Form` legger du til tre `Section`-visninger: en der du redigerer skapningens navn, en der du redigerer skapningens emoji, og en forhåndsvisning.";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineYourView..Page143..CodeBlock51" = "Form {\n    Section(\"Name\") {\n        //#-learning-code-snippet(addACreatureEditorTextField)\n\n    }   \n\n    Section(\"Emoji\") {\n        \n    }\n\n    Section(\"Creature Preview\") {\n        CreatureRow(creature: newCreature)\n    }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..title" = "Legg til `TextField`-visninger for brukerinndata";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page144..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page144..Paragraph270" = "Deretter må [personer](glossary://user) kunne redigere verdiene `name` og `emoji` for [statusegenskapen](glossary://state%20property) `Creature`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page144..Paragraph271" = "Du kan gjøre dette ved å legge til en [TextField](doc://com.apple.documentation/documentation/swiftui/textfield)-visning der personer kan legge inn tekst.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page144..Paragraph272" = "Legg til to `TextField`-visninger der du kan redigere skapningens verdier for `name` og `emoji`. Bruk initialisereren `TextField(_:text:)` som tar argumenter for en [etikett](glossary://label) og en [binding](glossary://binding) `String`-verdi.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page145..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page145..Paragraph273" = "Husk at en binding krever at sannhetskilden håndteres av SwiftUI, for eksempel gjennom en [statusegenskap](glossary://state%20property).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page145..Paragraph274" = "Overfør en binding til statusegenskapen `Creature`, og angi verdiene `name` og `emoji` som dette:";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page145..CodeBlock52" = "$newCreature.name\n$newCreature.emoji\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page146..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page146..Paragraph275" = "Her er et eksempel på hvordan du legger til et `TextField`. Legg til ett `TextField` for å redigere `newCreature.name` og et annet for å redigere `newCreature.emoji`.";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page146..CodeBlock53" = "TextField(\"Name\", text: $newCreature.name)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page147..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page147..CodeBlock54" = "Form {\n    Section(\"Name\") {\n        TextField(\"Name\", text: $newCreature.name)\n    }   \n\n    Section(\"Emoji\") {\n        TextField(\"Emoji\", text: $newCreature.emoji)\n    }\n\n    Section(\"Creature Preview\") {\n        CreatureRow(creature: newCreature)\n    }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..title" = "Plasser en Legg til-knapp i verktøylinjen";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page148..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page148..Paragraph276" = "Deretter må du legge til en `Button` som personer kan trykke på når de vil legge til den nye skapningen sin.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page148..Paragraph277" = "Akkurat som i `ContentView`, er det beste stedet å plassere en knapp som dette, i [navigeringslinjen](glossary://navigation%20bar) i `CreatureEditor`.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page149..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page149..Paragraph278" = "Prøv å bruke koden `.toolbar` fra `ContentView` som et eksempel på hvordan du legger til en verktøylinje i `CreatureEditor`:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page149..OrderedList14..Paragraph279" = "Legg til modifikatoren `.toolbar` nedenfor `VStack`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page149..OrderedList14..Paragraph280" = "Legg til `ToolbarItem` i verktøylinjen.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page149..OrderedList14..Paragraph281" = "Legg til en `Button` med en [etikett](glossary://label) der det står «Add» inni `ToolbarItem`. Du kan la handlingen [closure-blokk](glossary://closure) for `Button` være tom for nå.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page150..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page150..CodeBlock55" = ".toolbar { \n    ToolbarItem { \n        Button(\"Legg til\") { \n            //#-learning-code-snippet(addCreatureToCreatureZoo)\n            //#-learning-code-snippet(dismissCall)\n        }\n    }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..title" = "Legg til skapningen i `CreatureZoo`";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page151..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page151..Paragraph282" = "Når du trykker på knappen «Add», vil du legge til skapningsinstansen i det observerbare objektet `CreatureZoo`. Spesifikt vil du tilføye skapningen i matrisen `creatures`.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page152..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page152..Paragraph283" = "Følgende kode legger til skapningen som redigeres, i `data.creatures`. Husk at `creatures` er en [publisert verdi](glossary://published%20value), så eventuelle endringer av denne verdien fører til at alle visninger som bruker disse dataene, oppdateres automatisk.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page152..Paragraph284" = "Legg til denne koden inni handlingens [closure-blokk](glossary://closure) for `Button`.";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page152..CodeBlock56" = "data.creatures.append(newCreature)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page153..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page153..Paragraph285" = "Kjør appen, og prøv å legge til en ny skapning.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page153..Paragraph286" = "Naviger tilbake til `ContentView` for å se om den nye skapningen ble lagt til i visningen `List`. Ble den også lagt til i visningen `DancingCreatures`?";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..title" = "Lukk redigereren når du trykker på «Legg til»";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page154..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page154..Paragraph287" = "Når du har lagt til en skapning, lukkes visningen `CreatureEditor`, og du ser den forrige visningen som du navigerte fra. Dette er en bedre brukeropplevelse, og det forhindrer at du trykker mer enn én gang på knappen «Legg til» og dermed legger til samme skapning flere ganger.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page155..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page155..Paragraph288" = "Du trenger to ting for å kunne lukke visningen:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page155..OrderedList15..Paragraph289" = "Deklarer [miljøverdien](glossary://environment) `dismiss`, noe som gjør det mulig for appen å lukke den aktuelle visningen som vises i `NavigationStack`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page155..OrderedList15..Paragraph290" = "[Kall](glossary://call) `dismiss()` når du trykker på knappen «Legg til».";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page155..CodeBlock57" = "@Environment(\\.dismiss) var dismiss\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page156..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page156..Paragraph291" = "Når du har deklarert [miljøverdien](glossary://environment) `dismiss`, kalles `dismiss()` når du trykker på «Legg til» etter at du har lagt til den nye skapningen i `data.creatures`.";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page156..CodeBlock58" = "dismiss()\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page157..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page157..CodeBlock59" = ".toolbar { \n    ToolbarItem { \n        Button(\"Add\") { \n            data.creatures.append(newCreature)\n            dismiss()\n        }\n    }\n}\n";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepAdd and delete creatures..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..SuccessMessage..Paragraph292" = "Gratulerer, du har laget en fullt fungerende app!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..SuccessMessage..Paragraph293" = "Du kan legge til nye skapninger, vise og redigere dem i `CreatureList` og se dem danse i `DancingCreatures`.";
+
+/* Title of step named Add a `CreatureDetail` view */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..title" = "Legg til en `CreatureDetail`-visning";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..LearningCenterContent..Paragraph294" = "![](AddCreatureDetailView.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..LearningCenterContent..Paragraph295" = "Nå når du vet hvordan du navigerer mellom visninger, håndterer [lokale](glossary://local%20scope) statusendringer, deler data i hele appen og bruker ulike [innebygde SwiftUI-visninger](glossary://built-in%20view), er det på tide at du tester ferdighetene dine ved å opprette den nye visningen `CreatureDetail`, som viser detaljene for én skapning i listen.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..LearningCenterContent..Paragraph296" = "Listen din med skapninger ser bra ut, men den bør bli litt mer interaktiv. Hva er poenget med å ha alle disse skapningene hvis du ikke kan gjøre noe med dem?";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..title" = "Legg til en `NavigationLink` i `CreatureDetail`";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page158..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page158..Paragraph297" = "Målet ditt er å gjøre alle visninger i [ForEach](glossary://ForEach)-løkken til sin egen `NavigationLink`, som hver og en navigerer til en detaljvisning av en skapning i matrisen `data.creatures`.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page159..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page159..Paragraph298" = "Gjør dette ved å erstatte det aktuelle innholdet i `ForEach`-løkken med en `NavigationLink`:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page159..OrderedList16..Paragraph299" = "Angi [målet](glossary://destination%20view) som den [sammenstilte visningen](glossary://composed%20view) `CreatureDetail(creature: creature)`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page159..OrderedList16..Paragraph300" = "Opprett [etiketten](glossary://label) som en `CreatureRow` ved å bruke verdien `creature` fra [closure-blokken](glossary://closure) som [argument](glossary://argument).";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page160..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page160..Paragraph301" = "Opprett navigasjonslenken som dette, og legg den til inni `ForEach`:";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page160..CodeBlock60" = "NavigationLink {\n    CreatureDetail(creature: creature)\n        .navigationTitle(creature.name)\n} label: {\n    CreatureRow(creature: creature)\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page161..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page161..Paragraph302" = "`ForEach` skal se slik ut:";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page161..CodeBlock61" = "ForEach(data.creatures) { creature in \n    NavigationLink {\n        CreatureDetail(creature: creature)\n            .navigationTitle(creature.name)\n    } label: {\n        CreatureRow(creature: creature)\n    }  \n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page162..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page162..Paragraph303" = "Prøv å trykke på en rad i `List`. Det tar deg til visningen `CreatureDetail` for denne skapningen.";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..title" = "Bygg en `CreatureDetail`-visning";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page163..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page163..Paragraph304" = "Visningen `CreatureDetail` viser den valgte skapningen som en `Text`-visning. Jobben din er å forstå den eksisterende koden og bygge videre på den for å lage noen stilige effekter til skapningen.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page164..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page164..Paragraph305" = "I `ContentView` opprettet du en `NavigationLink` med [målvisningen](glossary://destination%20view) `CreatureDetail(creature: creature)`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page164..Paragraph306" = "Målvisningen bruker verdien `Creature` for hver rad i listen til å generere ulike visninger avhengig av hvilken skapning du trykker på. Her lagres denne verdien som en statusløs [konstant](glossary://constant) fordi verdien ikke endres i denne visningen.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page165..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page165..Paragraph307" = "Tre [statusegenskaper](glossary://state%20property) har blitt definert for deg:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page165..OrderedList17..Paragraph308" = "`color` sporer en `Color`-verdi og styrer fargeendringene i `Text`-visningen.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page165..OrderedList17..Paragraph309" = "`shadowRadius` er en `Double`-verdi som du bruker til å styre radiusen i en `.shadow`-modifikator.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page165..OrderedList17..Paragraph310" = "`angle` er en `Angle`-verdi som du bruker til å rotere `Text`-visningen.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page166..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page166..Paragraph311" = "`Text`-visningen bruker `creature.emoji` som String-verdi for visningen og legger til flere modifikatorer som avgjør visningens utseende og oppførsel:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page166..OrderedList18..Paragraph312" = "[.colorMultiply](doc://com.apple.documentation/documentation/swiftui/list/colormultiply(_:)) legger til en fargemultipliseringseffekt i visningen.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page166..OrderedList18..Paragraph313" = "[.shadow](doc://com.apple.documentation/documentation/swiftui/list/shadow(color:radius:x:y:)) legger til en skygge med en bestemt farge og radius.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page166..OrderedList18..Paragraph314" = "[.rotation3DEffect](doc://com.apple.documentation/documentation/swiftui/view/rotation3deffect(_:axis:anchor:anchorz:perspective:)) kan styre rotasjonen av visningen i tre dimensjoner.";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddColorPicker..title" = "Legg til en `ColorPicker` som endrer verdien `color`";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddColorPicker..Page167..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddColorPicker..Page167..Paragraph315" = "Du begynner å bygge interaksjoner i denne visningen ved å først legge til en `ColorPicker`-visning nedenfor `Text`-visningen. Dette endrer statusegenskapen `color` når en ny farge velges.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddColorPicker..Page167..Paragraph316" = "Prøv å gjøre dette selv, og bruk løsningen hvis du sitter fast.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddColorPicker..Page168..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddColorPicker..Page168..CodeBlock62" = "ColorPicker(\"Velg en farge\", selection: $color)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddSliderShadowRadius..title" = "Legg til en `Slider` som styrer skyggeradiusen";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddSliderShadowRadius..Page169..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddSliderShadowRadius..Page169..Paragraph317" = "Nedenfor `ColorPicker` legger du til en `Slider` som styrer verdien `shadowRadius`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddSliderShadowRadius..Page169..Paragraph318" = "Prøv å gjøre dette selv, og bruk løsningen hvis du sitter fast.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddSliderShadowRadius..Page170..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddSliderShadowRadius..Page170..CodeBlock63" = "HStack { \n    Text(\"Shadow\")\n    Slider(value: $shadowRadius)\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..title" = "Legg til en `Button` som endrer størrelsen på skapningen";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page171..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page171..Paragraph319" = "Legg til en `Button` nedenfor `Slider`, slik at personer kan bruke den til å skalere `Text`-visningen oppover og nedover:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page171..OrderedList19..Paragraph320" = "Opprett en ny [statusegenskap](glossary://state%20property) som sporer en `Boolean`-verdi, akkurat som du gjorde i `ConditionalCircle`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page171..OrderedList19..Paragraph321" = "Legg til den nye modifikatoren [.scaleEffect](doc://com.apple.documentation/documentation/swiftui/view/scaleeffect(_:anchor:)-pmi7) sammen med en [tredobbel betinget operator](glossary://ternary%20conditional%20operator) for å fastsette skalaen som brukes når en boolsk er `true` og når den er `false`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page171..OrderedList19..Paragraph322" = "Endre `Button`-handlingens [closure-blokk](glossary://closure) for å veksle den boolske verdien mellom statusene `true` og `false`.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page172..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page172..Paragraph323" = "Prøv å fullføre denne oppgaven ved å se på koden i `ConditionalCircle`. Se på følgende tips hvis du trenger hjelp:";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page173..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page173..Paragraph324" = "Opprett en [statusegenskap](glossary://state%20property) utenfor visningen [visningsinnhold](glossary://body) som sporer en boolsk verdi.";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page173..CodeBlock64" = "@State var isScaled = false\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page174..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page174..Paragraph325" = "Legg til modifikatoren `.scaleEffect` i `Text`-visningen som styrer skalaen ved hjelp av en [tredobbel betinget operator](glossary://ternary%20conditional%20operator).";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page174..CodeBlock65" = ".scaleEffect(isScaled ? 1.5 : 1)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page175..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page175..Paragraph326" = "Legg til `Button` og angi handlingen dens til å kalle `isScaled.toggle()`.";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page175..CodeBlock66" = "Button(\"Scale\") { \n    isScaled.toggle()\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskanimateChangesIsScaled..title" = "Animer endringer av `isScaled`";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskanimateChangesIsScaled..Page176..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskanimateChangesIsScaled..Page176..Paragraph327" = "Denne skaleringseffekten er litt flat – hadde det ikke vært bedre om den var animert?";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskanimateChangesIsScaled..Page176..Paragraph328" = "Bruk modifikatoren `.animation(_:value:)` til å animere endringer av variabelen `isScaled`. Prøv å bruke animasjonen `.spring(response:dampingFraction:blendDuration:)`, og overfør en verdi på `0.5` for hver parameter.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskanimateChangesIsScaled..Page177..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskanimateChangesIsScaled..Page177..CodeBlock67" = ".animation(.spring(response: 0.5, dampingFraction: 0.5, blendDuration: 0.5), value: isScaled)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskuseIsScaledRotateView..title" = "Bruk `isScaled` til å rotere visningen";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskuseIsScaledRotateView..Page178..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskuseIsScaledRotateView..Page178..Paragraph329" = "Legg til en siste, lille piff ved å opprette en betinget verdi i `.rotation3DEffect`-modifikatorens `angle`-parameter, og angi den deretter til `Angle(degrees: 0)` hvis `isScaled` er `true` eller `Angle(degrees: 360)` hvis den er `false`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskuseIsScaledRotateView..Page178..Paragraph330" = "Du bruker den [tredoble betingede operatoren](glossary://ternary%20conditional%20operator) for å gjøre dette.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskuseIsScaledRotateView..Page179..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskuseIsScaledRotateView..Page179..CodeBlock68" = ".rotation3DEffect(isScaled ? Angle(degrees: 0) : Angle(degrees: 360), axis: (x: 5, y: 2, z: 1))\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcustomizeCreature..title" = "Tilpass `CreatureDetail`-visningen";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcustomizeCreature..Page180..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcustomizeCreature..Page180..Paragraph331" = "Nå når du kan tilpasse visninger med [brukerinteraksjon](glossary://user%20interaction), skal du prøve å legge til én [innebygd visning](glossary://built-in%20view) til som gjør det mulig for personer å endre `Text`-visningen.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcustomizeCreature..Page180..Paragraph332" = "Du kan bruke `Slider` for å endre visningens bredde, høyde, uskarphet, kontrast eller metning, `Button` for å aktivere en `RotationEffect` eller en annen effekt du kommer på. Prøv forskjellige ting for å se hvilke effekter du kan lage.";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..SuccessMessage..Paragraph333" = "Bra jobbet!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..SuccessMessage..Paragraph334" = "Du har laget en fullverdig app som gjør det mulig å vise, legge til, slette, danse med og endre skapninger. Gi deg selv en klapp på skulderen, for dette var ikke lett.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..SuccessMessage..Paragraph335" = "Du har fullført denne opplæringen, men du har såvidt begynt på appbyggingsreisen din. Jo mer du bruker konseptene du har lært, desto bedre husker du dem, og desto flere apper kan du lage. I de neste eksperimentene skal du forsøke å bruke alt du har lært i denne opplæringen til å skrive noen egne eksempler. Lykke til!";
+
+/* Title of step named Create on Your Own */
+"GuideBook..Guide0..StepCreate on Your Own..title" = "Opprett på egen hånd";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..LearningCenterContent..Paragraph336" = "![](CreateYourOwnCopy.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..LearningCenterContent..Paragraph337" = "Nå når du har lært det du skal om status og dataflyt, er det på tide å slippe løs kreativiteten og lage en ny visning som bruker skapningsdataene.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..LearningCenterContent..Paragraph338" = "Når du er ferdig med eksperimentene her, kan du prøve å lage ditt eget prosjekt fra bunnen av ved å bruke de samme konseptene som du har lært i denne opplæringen.";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateYourOwn..title" = "Opprett din egen visning";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateYourOwn..Page181..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateYourOwn..Page181..Paragraph339" = "Ting du kan prøve:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateYourOwn..Page181..UnorderedList0..Paragraph340" = "Opprett en ny visning som bruker matrisen `creatures`, og opprett en lenke til den som et mål i `ContentView`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateYourOwn..Page181..UnorderedList0..Paragraph341" = "Opprett en ny [publisert verdi](glossary://published%20value) i `CreatureZoo`, og bruk den i én eller flere eksisterende visninger.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateYourOwn..Page181..UnorderedList0..Paragraph342" = "Gi hver skapning en `description`-egenskap, og opprett en ny visning som viser beskrivelsene, navnene og bildene deres i en morsom layout.";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateNewApp..title" = "Opprett din egen app";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateNewApp..Page182..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateNewApp..Page182..Paragraph343" = "Finn på og opprett et helt nytt prosjekt med SwiftUI. Implementer en egen `NavigationStack`som flytter mellom visninger, bruk [statusegenskaper](glossary://state%20property) til å endre utseendet på visninger lokalt, innebygde SwiftUI-visninger og [bindinger](glossary://binding) til å aktivere brukerinteraksjoner og et [observerbart objekt](glossary://observable%20object) som overføres til appmiljøet for å dele data mellom flere visninger. Hvis du sitter fast, kan du komme tilbake til dette prosjektet og se på kodeeksempler som hjelper deg med å løse eventuelle bugger du møter på. Lykke til, du klarer det!";
+

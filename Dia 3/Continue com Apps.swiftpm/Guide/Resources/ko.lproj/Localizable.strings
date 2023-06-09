@@ -1,0 +1,2013 @@
+/* Title of Guidebook */
+"GuideBook..title" = "앱으로 계속하기";
+
+/* The title of the intro for this section of the guide */
+"GuideBook..IntroKeep Going with Apps..title" = "앱으로 계속하기";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..IntroKeep Going with Apps..Paragraph0" = "앱 시작하기에서는 SwiftUI [보기](glossary://view)를 사용하여 간단한 사용자 인터페이스를 생성하는 방법을 배웠습니다. SwiftUI에서 [보기](glossary://view)는 서로의 내부에 배치하여 더 복잡한 [구성된 보기](glossary://composed%view)를 만들 수 있는 [UI](glossary://user%20interface) 기본 요소입니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..IntroKeep Going with Apps..Paragraph1" = "여기에서는 SwiftUI의 [상태](glossary://state) 및 [데이터 흐름](glossary://data%20flow)에 대해 배우게 될 거예요. 데이터 흐름은 앱에서 값이 이동하는 움직임이며, 해당 값에 대한 변경 사항을 반영하기 위해 SwiftUI가 UI를 업데이트하는 방법입니다. 중요한 점은 앱 데이터가 표시되는 보기에서 [앱 데이터 분리](glossary://data%20separation) 방법과, 분리하면 편리한 이유를 배우게 된다는 것입니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..IntroKeep Going with Apps..Paragraph2" = "이 튜토리얼을 완료하면, 사용자가 이모티콘 생명체를 추가하고 삭제하며 수정할 수 있는 모든 기능을 갖춘 SwiftUI 앱을 생성할 수 있습니다. 지금 앱 생성하기를 시작하세요.";
+
+/* Title of step named Modifying State */
+"GuideBook..Guide0..StepModifying State..title" = "상태 수정하기";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..LearningCenterContent..Paragraph3" = "![](ModifyingState.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..LearningCenterContent..Paragraph4" = "코딩에서 [상태](glossary://state)라는 용어는 변수의 현재 값을 나타냅니다. [상태 변경](glossary://state%20change)은 앱에서 하나 이상의 변수 값이 변경되는 경우입니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..LearningCenterContent..Paragraph5" = "SwiftUI의 한 가지 큰 장점은 앱의 [상태 변경](glossary://state%20change)을 수행할 때마다 보기의 모양을 자동으로 업데이트할 수 있다는 것입니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..LearningCenterContent..Paragraph6" = "[불리언](glossary://Boolean) 또는 [문자열](glossary://String) 값의 배열과 같은 일부 앱 데이터에 UI를 연결하면 SwiftUI는 [관찰](glossary://observe) 데이터가 변경될 때마다 데이터를 사용하는 보기를 업데이트합니다. 즉, 업데이트 방법이나 시기를 구체적으로 UI에 알려주는 코드를 작성할 필요가 없습니다.";
+
+/* Title for task */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..title" = "상태 속성을 사용하여 보기 업데이트하기";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page0..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page0..Paragraph7" = "이 예제에서 SwiftUI는 [상태 변경](glossary://state%20change)이 발생할 때 보기의 모양을 업데이트합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page0..Paragraph8" = "미리보기에서 버튼을 탭하여 보세요. 이렇게 하면 `isOn` [속성](glossary://property) 값이 `true`와 `false` [상태](glossary://state) 사이에서 전환되어 `Circle` 보기가 나타나고 사라지고, 다시 나타납니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page1..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page1..Paragraph9" = "보기의 모양을 수정하려면, 먼저 [상태](glossary://state)를 확인할 데이터가 필요합니다. 이 데이터를 보기의 [속성](glossary://property)으로 저장합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page1..Paragraph10" = "보기의 데이터를 [UI](glossary://user%20interface)가 표시되는 방식을 결정하는 [진실 공급원(SOT)](glossary://source%20of%20truth)으로 생각해 보세요. 보기를 직접 수정하지 않고 데이터를 수정하면 SwiftUI가 보기를 업데이트합니다. 여기서 데이터는 보기를 표시할지(`true`) 아니면 가릴지(`false`) 결정하는 [불리언](glossary://Boolean) 값입니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page2..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page2..Paragraph11" = "중요: 데이터는 항상 보기 [본문](glossary://body) 외부에서 생성해야 합니다. `body`는 보기의 모양을 선언하는 데만 사용되는 ❌ 데이터 생성 금지 영역으로 생각하세요. 이것은 [데이터 분리](glossary://data%20separation)라고 하는 앱 생성의 핵심 원칙입니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page3..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page3..Paragraph12" = "SwiftUI가 보기를 자동으로 업데이트할 수 있도록 하려면 보기 [속성](glossary://property) 중 어떤 것을 관리하고 확인해야 하는지 지시해야 합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page3..Paragraph13" = "이렇게 하려면 속성 정의 전에 [속성 래퍼](glossary://property%20wrapper)라는 특별한 구문을 추가합니다. `isOn` 앞에 `@State` 속성 래퍼를 추가하면 [상태 속성](glossary://state%20property)으로 바뀝니다. SwiftUI는 값을 관리하고 보기의 [상태](glossary://state)가 변경될 때마다 보기의 영향을 받는 부분을 업데이트합니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page4..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page4..Paragraph14" = "`isOn`의 [상태](glossary://state)는 어떻게 변경할 수 있을까요? 한 가지 일반적인 방법은 사용자가 `Button`을 탭할 때와 같이 [사용자 상호 작용](glossary://user%20interaction)을 이용하는 것입니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page4..Paragraph15" = "`Button`을 생성하려면 ‘Press Me’와 같은 텍스트 [레이블](glossary://label)과 버튼을 탭했을 때 실행할 코드 블록인 동작 [클로저](glossary://closure)를 전달합니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page5..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page5..Paragraph16" = "사용자가 버튼을 탭하면 동작 [클로저](glossary://closure)가 `toggle()` 메소드를 사용하여 `isOn`의 값을 변경합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page5..Paragraph17" = "`toggle()`은 불빛을 켜거나 끄듯이, 값이 `false`이면 `true`로 변경하고, `true`이면 `false`로 변경합니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page6..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page6..Paragraph18" = "이 `if` 구문은 `isOn`을 조건으로 사용하여 `true`일 때 포함된 보기를 표시하고, `false`일 때 가립니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page6..Paragraph19" = "이러한 방식으로 `isOn` 데이터를 보기에 연결합니다. 현재 [상태](glossary://state)는 UI가 어떻게 표시되는지 결정합니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page7..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page7..Paragraph20" = "미리보기에서 버튼을 탭하면 `if` 구문의 원형 보기가 표시되거나 가려집니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page7..Paragraph21" = "원의 색상을 변경하고 버튼을 다시 탭하여 보세요. `isOn`의 초기 값을 `true`로 변경해 보세요. 각각의 경우에 어떤 변화가 발생하나요?";
+
+/* Title for task */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..title" = "`else` 구문을 추가하여 다른 색상의 원 표시하기";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page8..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page8..Paragraph22" = "버튼을 탭하면 보기가 어떻게 업데이트되는지 생각해 보세요. `Button`을 탭하면 `isOn`의 [상태](glossary://state)가 변경됩니다. SwiftUI는 이 변경 사항을 [관찰](glossary://observe)하고 새로운 값을 사용하여 보기를 업데이트합니다. 보기 [본문](glossary://body)에서 `if` 구문을 사용하여 `isOn`의 값이 `true`이면 보기를 표시하고 `false`이면 가릴 수 있습니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page9..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page9..Paragraph23" = "`isOn`의 값이 `false`일 때 보기를 표시하지 않고 사용자 설정 보기를 표시할 수도 있습니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page9..Paragraph24" = "`if` 구문 뒤에 다른 색상의 `Circle`을 표시하는 `else` 구문을 추가합니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page10..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page10..Paragraph25" = "다음 구문을 사용하여 `else` 구문을 추가한 다음, `Circle` 보기를 추가하고 색상을 지정합니다.";
+
+/*  */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page10..CodeBlock0" = "else { \n\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page11..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page11..CodeBlock1" = "else { \n   Circle()\n       .frame(maxHeight: 200)\n       .foregroundColor(.black)\n   //#-learning-code-snippet(addOffText)\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..title" = "켬 및 끔 보기에 세부 사항 추가하기";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page12..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page12..Paragraph26" = "이제 두 개의 보기를 사용자화하여 어떤 보기가 “on”이고 어떤 보기가 “off”인지 쉽게 알 수 있도록 합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page12..Paragraph27" = "`Text` 보기를 사용하여 각 보기에 레이블을 지정해 보세요. 첫 번째 보기에 ‘켬’ 레이블을 지정합니다.";
+
+/*  */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page12..CodeBlock2" = "Text(\"On\")\n";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page13..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page13..Paragraph28" = "두 번째 보기에 ‘끔’ 레이블을 지정합니다.";
+
+/*  */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page13..CodeBlock3" = "Text(\"Off\")\n";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page14..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page14..Paragraph29" = "마지막으로 각 보기를 `Rectangle` 또는 `Capsule`과 같은 다른 모양으로 만듭니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page15..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page15..CodeBlock4" = "if isOn {\n      Circle()\n          .frame(maxHeight: 200)\n          .foregroundColor(.mint)\n\n      Text(\"On\")\n} else {\n      Rectangle()\n          .frame(maxHeight: 200)\n          .foregroundColor(.gray)\n\n      Text(\"Off\")\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..title" = "새로운 조건 보기 추가하기";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page16..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page16..Paragraph30" = "이제 완전히 새로운 조건 보기를 직접 추가해 보세요.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page16..OrderedList0..Paragraph31" = "[본문](glossary://body) 외부에 [상태 속성](glossary://state%20value)을 추가하고 초기 불리언 값을 할당합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page16..OrderedList0..Paragraph32" = "상태 속성의 값이 `true`이면 하나의 보기를 표시하고 `false`이면 다른 보기를 표시하는 [if 구문](glossary://if%20statement)을 생성합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page16..OrderedList0..Paragraph33" = "누를 때마다 상태 속성을 토글하는 새로운 `Button`을 생성합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page16..Paragraph34" = "조건 보기가 예상대로 작동하나요?";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page17..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page17..Paragraph35" = "계속 진행하기 전에 [고무 오리 메소드](glossary://rubber%20ducky%20method)를 사용하여 조건 보기 코드가 어떻게 작동하는지 최대한 자세히 설명해 보세요. 상태 속성의 용도는 무엇인가요? 보기는 업데이트 시점을 어떻게 알 수 있나요? 기억나지 않는 것이 있다면 돌아가서 부족한 부분을 찾아보세요. 고무 오리가 고마워 할 것입니다!";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepModifying State..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..SuccessMessage..Paragraph36" = "우와!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..SuccessMessage..Paragraph37" = "이제 [상태 속성](glossary://state%20value)을 사용하여 SwiftUI 보기의 모양을 업데이트하는 방법을 배웠습니다. 이 상태 속성은 보기의 UI를 선언한 보기 [본문](glossary://body) 외부에 저장됩니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..SuccessMessage..Paragraph38" = "SwiftUI의 앱 코딩 기본 원칙은 앱 데이터를 표시하는 UI와 앱 데이터를 항상 분리하는 것입니다. 이렇게 하면 단일 [진실 공급원(SOT)](glossary://source%20of%20truth)을 유지할 수 있으며 UI 코드를 더 쉽게 이해하고 관리할 수 있습니다.";
+
+/* Title of step named Using a Conditional Modifier */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..title" = "조건 제어자 사용하기";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..LearningCenterContent..Paragraph39" = "![](UsingAConditionalModifier.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..LearningCenterContent..Paragraph40" = "앞의 예에서는 저장된 값이 SwiftUI에 의해 관리되는 [상태 속성](glossary://state%20property) `isOn`을 생성했습니다. `isOn`의 [상태](glossary://state)를 변경하여 조건에 따라 두 개의 다른 보기 중 하나를 표시할 수 있었습니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..LearningCenterContent..Paragraph41" = "`Circle` 보기의 색상이나 크기와 같이 기존 보기의 모양을 단순히 변경하려는 경우에는 어떻게 해야 할까요? 이렇게 하려면 [상태 변경](glossary://state%20change)이 발생할 때 보기가 어떻게 표시되는지 지정하는 조건 코드를 작성해야 합니다.";
+
+/* Title for task */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..title" = "조건에 따라 보기 제어자 변경하기";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page18..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page18..Paragraph42" = "이전 보기와 같이, 이 보기도 [상태 속성](glossary://state%20property) 및 `Button`을 사용하여 `Circle`의 모양을 변경합니다. 하지만 이 코드에는 다른 부분이 있습니다. 무엇이 다른지 찾아보고, 다른 부분을 찾았다고 생각되면 계속 진행하세요.";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page19..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page19..Paragraph43" = "어떻게 작동하는지 이해하셨나요?";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page19..Paragraph44" = "`isOn`이 `true` 또는 `false`일 때 다른 보기를 생성하는 대신, 조건 코드가 포함된 [보기 제어자](glossary://modifier)를 사용하여 단일 보기의 모양을 수정할 수 있습니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page20..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page20..Paragraph45" = "`.foregroundColor(_:)` 제어자에는 특별한 구문이 포함되어 있습니다. 이것을 [세 부분으로 구성된 조건 연산자](glossary://ternary%20conditional%20operator)라고 하며, 한 줄의 코드로 `if-else` 구문을 생성하는 간결한 방법입니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page21..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page21..Paragraph46" = "이 코드는 다음과 같이 해석할 수 있습니다. `isOn`이` true`이면 `.yellow` 값을 전달하고, 그렇지 않으면 `.black` 값을 전달합니다.";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page21..CodeBlock5" = "isOn ? .yellow : black\n";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page21..Paragraph47" = "일반적으로 다음과 같습니다.";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page21..CodeBlock6" = "condition ? trueValue : falseValue\n";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page22..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page22..Paragraph48" = "`isOn`이 `true`이면 `.purple`, `false`이면 `.mint`와 같이 옅은 초록색으로 원의 색상을 변경해 보세요.";
+
+/* Title for task */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..title" = "`shadow(color:radius:)` 제어자를 추가하여 각 상태마다 다른 색상 그림자 표시하기";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page23..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page23..Paragraph49" = "`ConditionalViews` 예제와 같이, SwiftUI는 `isOn` [상태 속성](glossary://state%20property)을 [관찰](glossary://observe)합니다. `isOn`의 값이 변경되면 SwiftUI는 `.foregroundColor(_:)` 제어자의 새로운 값을 사용해 `Circle` 보기를 업데이트합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page23..Paragraph50" = "이제 `isOn` 값을 사용하여 보기의 그림자를 변경하는 또 다른 제어자인 `.shadow(color:radius:)`를 추가해 보세요.";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page24..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page24..Paragraph51" = "먼저, `.shadow(color:radius:)` 제어자를 `Circle`에 추가합니다.";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page24..CodeBlock7" = ".shadow(color: <#T##Color#>, radius: 20)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page25..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page25..Paragraph52" = "이 제어자의 `color` 매개변수는 [세 부분으로 구성된 조건 연산자](glossary://ternary%20conditional%20operator)를 사용하여 `isOn`의 [상태](glossary://state)에 따라 그림자의 색상을 변경합니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page26..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page26..Paragraph53" = "세 부분으로 구성된 조건 연산자는 다음과 같습니다.";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page26..CodeBlock8" = "isOn ? .indigo : .orange\n";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page26..Paragraph54" = "이 코드 스니펫은 다음과 같이 읽을 수 있습니다. `isOn`이 `true`이면 `.indigo` 값을 사용하고, 그렇지 않으면 `.orange` 값을 사용합니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page27..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page27..CodeBlock9" = ".shadow(color: isOn ? .indigo : .orange, radius: 20)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..title" = "버튼을 탭하면 원의 크기 변경하기";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page28..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page28..Paragraph55" = "이번에는 스스로 해보세요. `.scaleEffect(_:)` 제어자를 [세 부분으로 구성된 조건 연산자](glossary://ternary%20conditional%20operator)와 함께 사용해 `isOn`의 상태에 따라 원의 크기를 변경하는 방법을 알아낼 수 있는지 확인해 보세요.";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page29..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page29..Paragraph56" = "먼저 `.scaleEffect(_:)` 제어자를 원에 추가합니다. 그런 다음, 세 부분으로 구성된 조건 연산자를 사용하여 `isOn`이 `true`인 경우의 크기와, `false`인 경우의 크기로 지정합니다.";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page29..CodeBlock10" = ".scaleEffect(<#T##s: CGFloat##CGFloat#>)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page30..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page30..CodeBlock11" = ".scaleEffect(isOn ? 1 : 0.75)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..title" = "상태 변경을 애니메이션으로 생성하기";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page31..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page31..Paragraph57" = "SwiftUI를 사용하면 보기를 자동으로 업데이트할 수 있는 것처럼 변경된 값을 기반으로 보기의 변경 사항을 애니메이션으로 생성할 수 있습니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page31..Paragraph58" = "이렇게 하려면 애니메이션을 생성하려는 보기에 `.animation(_:value:)` 제어자를 추가하고 변경 사항을 모니터링할 값과 `Animation`을 선택합니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page32..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page32..Paragraph59" = "예를 들어, 기본 애니메이션을 사용하여 `isOn` 값에 대한 변경 사항을 애니메이션으로 생성할 수 있습니다.";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page32..CodeBlock12" = ".animation(.default, value: isOn)\n";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page32..Paragraph60" = "`isOn`이 변경되면, 이 값에 의해 제어되는 보기의 변경 사항이 애니메이션으로 생성됩니다. `isOn`을 사용하여 해당 보기의 그림자, 색상 및 크기를 결정하므로 값이 변경되면 이러한 모든 기능이 애니메이션으로 생성되어 새로운 상태가 됩니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page33..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page33..CodeBlock13" = ".animation(.default, value: isOn)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page34..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page34..Paragraph61" = "기본 애니메이션을 다른 것으로 변경해 보세요. `.default`에서는 애니메이션 `.easeInOut`이 제공되지만, 이것을`.spring(response:dampingFraction:blendDuration:)` 또는 `.linear(duration:)`로 변경하여 애니메이션이 어떻게 변경되는지 확인해 보세요.";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..SuccessMessage..Paragraph62" = "아주 잘했어요!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..SuccessMessage..Paragraph63" = "이제 [상태 속성](glossary://state%20property)을 사용하여 보기의 모양을 변경하는 방법과 `.animation(_:value:)` 제어자를 사용하여 변경 사항을 애니메이션으로 생성하는 방법을 배웠습니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..SuccessMessage..Paragraph64" = "다음은, SwiftUI [기본 제공 보기](glossary://built-in%20view) 및 [바인딩](glossary://binding)을 사용하여 UI에서 다양한 유형의 상태 변경을 생성하는 방법을 배울 거예요.";
+
+/* Title of step named SwiftUI Built-in Views */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..title" = "SwiftUI 기본 제공 보기";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..LearningCenterContent..Paragraph65" = "![](SwiftUIBuilt-inViews.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..LearningCenterContent..Paragraph66" = "SwiftUI는 다른 사람이 [상호 작용](glossary://user%20interaction)을 통해 앱 데이터의 상태를 변경할 수 있는 슬라이더, 토글, 선택기와 같은 많은 [기본 제공 보기](glossary://built-in%20view)를 제공합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..LearningCenterContent..Paragraph67" = "이러한 기본 제공 보기에는 다른 보기와 데이터를 공유하기 위한 [바인딩](glossary://binding)이라는 특별한 방법이 있습니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..LearningCenterContent..Paragraph68" = "이러한 기본 제공 보기를 바인딩 값과 함께 사용하여 앱의 데이터 및 앱의 UI를 변경할 수 있습니다.";
+
+/* Title for task */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..title" = "바인딩 사용하기";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page35..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page35..Paragraph69" = "지금까지는 상태 속성을 사용하여 [지역](glossary://local%20scope) 또는 동일한 보기 내부에서 UI를 변경했습니다. 예를 들어 `ConditionalCircle`에 [상태 속성](glossary://state%20property)을 정의하고, 이를 사용하여 `ConditionalCircle`의 [본문](glossary://body)에서 보기의 모양을 변경했습니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page36..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page36..Paragraph70" = "하지만 [하위 보기](glossary://subview)에서 해당 데이터를 변경할 수 있도록 하려면 어떻게 해야 할까요? 예를 들어, [지역](glossary://local%20scope) 보기에 연락처 정보가 저장되는 경우에는 하위 보기에 사용자 설정 [상호 작용](glossary://user%20interaction)을 제공하여 연락처의 전화번호를 변경할 수 있습니다. 하지만 [진실 공급원(SOT)](glossary://source%20of%20truth)을 두 개 이상 생성하지 않고 하위 보기에서 데이터를 변경할 수 있도록 하려면 어떻게 해야 할까요?";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page37..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page37..Paragraph71" = "두 보기 사이에서 데이터 변경 사항을 전달하는 키를 [바인딩](glossary://binding)이라고 합니다. 바인딩을 사용하면 단일 진실 공급원(SOT)을 유지하면서 [하위 보기](glossary://subview)를 사용하여 해당 값을 원격으로 수정할 수 있습니다. 바인딩이라고 부르는 이유는 [상태 속성](glossary://state%20property)과 같은 진실 공급원(SOT)이 두 번째 보기에 바인딩되거나 연결되고 두 번째 보기가 데이터를 변경할 때마다 진실 공급원(SOT)이 업데이트되기 때문입니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page38..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page38..Paragraph72" = "미리보기에서 `Toggle`을 탭하여 보세요.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page38..Paragraph73" = "`Image`와 `Toggle` 보기는 모두 토글을 탭하면 모양이 변경됩니다. `Toggle`은 [진실 공급원(SOT)](glossary://source%20of%20truth)을 원격으로 변경할 수 있어 `Toggle` 보기와 `Image` 보기가 서로 다른 보기임에도 불구하고 동일한 값을 공유할 수 있습니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page39..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page39..Paragraph74" = "이것은 진실 공급원(SOT), 즉 `Bindings` 보기에 [로컬](glossary://local%20scope)로 저장하는 [상태 속성](glossary://state%20property)입니다. 바인딩의 진실 공급원(SOT)은 [속성 래퍼](glossary://property%20wrapper) `@State`를 추가하는 것과 같이 SwiftUI에 의해 값이 관리되는 것이어야 합니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page40..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page40..Paragraph75" = "이것은 기본 제공되는 `Toggle` 보기입니다. `Toggle`은 `isOn` 매개변수에 대한 [바인딩](glossary://binding) 불리언 값을 설정할 수 있습니다. 즉, 토글 보기는 사용자가 탭할 때와 같이 일부 [사용자 상호 작용](glossary://user%20interaction)을 기반으로 `Boolean` 값을 변경할 수 있으며, 모든 상태의 변화를 지역의 [진실 공급원(SOT)](glossary://source%20of%20truth)인 `isOn`에 다시 전달할 수 있습니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page41..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page41..Paragraph76" = "바인딩을 전달하려면 SwiftUI에 의해 관리되며 시작 부분에 `$`가 있는 [상태 속성](glossary://state%20property)을 사용합니다. `$isOn`을 전달하여 `Toggle`이 원격으로 값을 변경할 때마다 [바인딩](glossary://binding)이 진실 공급원(SOT)인 `isOn`을 수정함을 나타냅니다.";
+
+/* Title for task */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..title" = "`Color` 유형의 새로운 상태 속성 추가하기";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page42..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page42..Paragraph77" = "이제 기본 제공되는 `ColorPicker` 보기를 [바인딩](glossary://binding)과 함께 사용하여 배터리 `Image` 보기의 색상을 변경해 보세요.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page42..Paragraph78" = "이렇게 하려면 먼저 `Color` 값에 대한 진실 공급원(SOT) 역할을 하는 [상태 속성](glossary://state%20property)을 생성합니다. 초기 값으로는 `Color.primary`를 할당합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page42..Paragraph79" = "스스로 해보고, 문제가 발생한 경우에는 다음 힌트를 사용하세요.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page43..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page43..Paragraph80" = "[속성 래퍼](glossary://property%20wrapper) `@State`로 [속성](glossary://property)을 정의하고 초기 값으로는 `Color.primary`를 [할당](glossary://assignment)합니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page44..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page44..CodeBlock14" = "@State var color = Color.primary\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..title" = "`ColorPicker`를 생성하고 바인딩 값 전달하기";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page45..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page45..Paragraph81" = "`Toggle` 보기 아래에서 다음 이니셜라이저를 사용하여 `ColorPicker`를 생성합니다. `Toggle`을 예제로 사용하여 인수를 직접 추가합니다.";
+
+/*  */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page45..CodeBlock15" = "ColorPicker(<#T##title: StringProtocol##StringProtocol#>, selection: <#T##Binding<CGColor>#>)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page46..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page46..OrderedList1..Paragraph82" = "제목에 “Select a Color”와 같은 `String`을 전달합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page46..OrderedList1..Paragraph83" = "색상 [상태 속성](glossary://state%20property) 앞에 `$`를 추가하여 바인딩 값을 `selection`에 전달합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page46..Paragraph84" = "앱의 `Bindings` 보기를 테스트해 보려면 해당 보기를 일시적으로 `ContentView`에 추가하세요.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page47..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page47..CodeBlock16" = "ColorPicker(\"Select a Color\", selection: $color) \n";
+
+/* Title for task */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..title" = "`Image`의 색상을 색상 상태 속성으로 설정하기";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page48..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page48..OrderedList2..Paragraph85" = "미리보기의 `ColorPicker`에서 색상을 선택해 보세요. 선택기 색상은 변경되지만 UI의 다른 항목은 변경되지 않습니다. 이는 상태 속성이 다른 [지역](glossary://local%20scope) 보기에 연결되어 있지 않기 때문입니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page48..OrderedList2..Paragraph86" = "이제 이미지 보기의 색상을 변경하여 선택기의 색상으로 업데이트합니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page49..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page49..Paragraph87" = "`Image` 보기의 색상을 변경하려면 `.foregroundColor(_:)` 제어자를 추가하고 색상에 대한 상태 속성을 인수로 전달합니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page50..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page50..CodeBlock17" = ".foregroundColor(color)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page51..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page51..Paragraph88" = "이제 색상 선택기에서 색상을 선택합니다. `Image`도 색상이 변경되나요?";
+
+/* Title for task */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..title" = "새로운 색상을 선택하면 색상이 변경되는 `Text` 보기 생성하기";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..Page52..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..Page52..Paragraph89" = "색상 선택기에서 새로운 색상을 선택하면 색상이 변경되는 `Text` 보기를 추가합니다. 이미지와 같이 `.foregroundColor(_:)` 제어자를 사용하여 이를 수행할 수 있습니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..Page52..Paragraph90" = "[.font](doc://com.apple.documentation/documentation/swiftui/font) 제어자를 사용하고 `.largeTitle`을 전달하여 `Text` 보기의 서체를 더 큰 서체로 선택합니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..Page53..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..Page53..Paragraph91" = "보기에 `.padding()`을 추가하여 보기와 그 주변의 모든 보기 사이에 고정 공간을 생성합니다. 보기 사이의 사용 가능한 공간을 확보하기 위해 가변적으로 축소 및 확장되는 보이지 않는 보기인 `Spacer()`를 추가할 수도 있습니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..Page53..Paragraph92" = "[padding](doc://com.apple.documentation/documentation/swiftui/view/padding(_:_:)) 및 [spacer](doc://com.apple.documentation/documentation/swiftui/spacer) 사용하면 보기가 다양한 화면 크기에 맞게 조정되어 항상 보기 좋게 표시되도록 하는 적응형 보기 레이아웃을 생성할 수 있습니다. 자세한 내용은 [Laying Out a Simple View](doc://com.apple.documentation/documentation/swiftui/laying-out-a-simple-view)를 확인해 보세요.";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..SuccessMessage..Paragraph93" = "브라보!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..SuccessMessage..Paragraph94" = "`ColorPicker`와 같이, 기본 제공되는 SwiftUI 보기를 [바인딩](glossary://binding)과 함께 사용하여 앱 상태 변경을 위한 사용자 설정 [상호 작용](glossary://user%20interaction)을 생성하는 방법을 배웠습니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..SuccessMessage..Paragraph95" = "[상태 속성](glossary://state%20property)에 대한 지식을 같이 활용하면 앱의 UI의 모양을 변경하는 다양한 사용자 상호 작용을 생성할 수 있습니다. 잘 하셨어요!";
+
+/* Title of step named Practice with SwiftUI Built-in Views */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..title" = "SwiftUI 기본 제공 보기로 연습하기";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..LearningCenterContent..Paragraph96" = "![](PracticeWithSwiftUIBuilt-inViews.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..LearningCenterContent..Paragraph97" = "이제 상태 속성, 바인딩 및 기본 제공되는 SwiftUI 보기의 기본 사항에 대해 배웠으니 몇 가지 예제를 직접 만들어 볼 시간입니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..LearningCenterContent..Paragraph98" = "먼저 기본 제공되는 `Slider` 보기를 사용하여 `Rectangle`의 너비를 제어하는 [상태 속성](glossary://state%20property)을 변경합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..LearningCenterContent..Paragraph99" = "그런 다음, 기본 제공되는 `TextField` 보기를 사용하여 스토리 편집기를 생성하고 일부 `String` 상태 속성의 값을 변경하여 흥미로운 이야기를 만들어 보겠습니다.";
+
+/* Title for task */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..title" = "슬라이더 생성하기";
+
+/* title for page */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page54..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page54..Paragraph100" = "기본 제공되는 `Slider`를 사용하여 `Rectangle` 보기의 너비를 변경하는 보기를 생성합니다. 이를 위해서는 새로운 [상태 속성](glossary://state%20property)을 정의하고 `Slider`에 [바인딩](glossary://binding)으로 전달해야 합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page54..Paragraph101" = "`.frame(width:)` 제어자를 사용하여 보기의 너비를 변경할 수 있습니다. 참고: 이 제어자는 [Double](doc://com.apple.documentation/documentation/swift/double) 값(숫자 값의 특별한 [유형](glossary://type))을 사용할 수 있으므로 상태 속성을 `Double`로 정의합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page54..Paragraph102" = "직접 시도해 보고 어려우면 다음 힌트를 사용해 보세요.";
+
+/* title for page */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page55..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page55..Paragraph103" = "보기의 `body` 위에 `Double` 유형의 상태 속성을 정의합니다. 이것은 로컬 [진실 공급원(SOT)](glossary://source%20of%20truth)입니다.";
+
+/*  */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page55..CodeBlock18" = "@State var width : Double = 0\n";
+
+/* title for page */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page56..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page56..Paragraph104" = "이니셜라이저 `Slider(value:)`를 사용하여 `Slider`를 생성합니다. [바인딩](glossary://binding)을 [상태 속성](glossary://state%20property)에 전달합니다.";
+
+/*  */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page56..CodeBlock19" = "Slider(value: $width)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page57..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page57..Paragraph105" = "`Rectangle`을 생성하고 `.frame(width:)` 제어자를 추가합니다. 슬라이더의 기본 값 범위는 `0`에서 `1`까지이므로, 값의 변경 사항을 확인할 수 있도록 너비에 더 큰 숫자를 곱합니다.";
+
+/*  */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page57..CodeBlock20" = "Rectangle()\n    .frame(width: width * 300)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..title" = "스토리 생성하기";
+
+/* title for page */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page58..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page58..Paragraph106" = "이번에는 다른 실험을 해보겠습니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page58..Paragraph107" = "SwiftUI [TextField](doc://com.apple.documentation/documentation/swiftui/textfield)를 사용하여 사용자가 필드에 입력하는 문자를 기반으로 `String` 값을 변경할 수 있습니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page58..OrderedList3..Paragraph108" = "이름, 취미 및 좋아하는 음식과 같은 데이터를 다른 사람이 입력할 수 있도록 해당하는 `TextField` 보기와 여러 [상태 속성](glossary://state%20property)을 정의하여 사용자화할 수 있는 스토리를 생성합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page58..OrderedList3..Paragraph109" = "텍스트 필드 아래에 [문자열 보간](glossary://string%20interpolation)을 사용하여 모든 값을 병합하고 스토리를 생성하는 `Text` 보기를 생성합니다. 코드는 다음과 같아야 합니다.";
+
+/*  */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page58..CodeBlock21" = "Text(\"Hello, my name is \\(name), my favorite hobby is \\(hobby) and I can\'t stop eating \\(favoriteFood)!\")\n";
+
+/* title for page */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page59..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page59..Paragraph110" = "보너스: 탭할 때 스토리를 표시할 수 있도록 `Button` 또는 `Toggle` 보기를 추가합니다.";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..SuccessMessage..Paragraph111" = "점점 요령을 터득해 나가는군요!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..SuccessMessage..Paragraph112" = "이제 상태 변경 처리를 상태 속성을 사용하여 로컬에서, 그리고 바인딩을 사용하여 두 보기 사이에서 수행할 수 있습니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..SuccessMessage..Paragraph113" = "다음으로, 앱의 모든 보기에서 사용할 수 있는 데이터를 생성하는 방법을 알아보세요.";
+
+/* Title of step named Navigating in SwiftUI */
+"GuideBook..Guide0..StepNavigating in SwiftUI..title" = "SwiftUI 탐색하기";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..LearningCenterContent..Paragraph114" = "![](NavigatingInSwiftUI.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..LearningCenterContent..Paragraph115" = "이제 단일 SwiftUI 보기 내부에서 상태를 관리하는 방법을 배웠으므로 다음 단계로 넘어갈 차례입니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..LearningCenterContent..Paragraph116" = "앱을 만들 때 두 개 이상의 보기에서 공유하려는 데이터가 있는 경우가 있으며, [바인딩](glossary://binding)은 이를 처리하기에 충분하지 않습니다. 확인하기가 매우 어렵고 앱에서 버그가 발생할 수 있기 때문에 데이터를 각각의 새로운 보기에서 복제하려고 하면 안 됩니다. 대신 앱의 여러 보기에서 사용할 수 있는 단일 [데이터 모델](glossary://data%20model)을 생성하고 관리하는 방법을 배우게 될 거예요.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..LearningCenterContent..Paragraph117" = "하지만 이러한 방법을 배우기 전에, 여러 보기가 있는 앱을 생성하는 방법을 알아야 합니다. 이를 위해서는 `NavigationSplitView` 또는 `NavigationStack`을 사용하여 탐색을 추가합니다.";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..title" = "`NavigationStack` 생성하기";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page60..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page60..Paragraph118" = "다른 보기로 이동하려면 두 가지 다른 유형의 탐색 보기 중 하나가 필요합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page60..OrderedList4..Paragraph119" = "[NavigationStack](doc://com.apple.documentation/documentation/swiftui/navigationstack)은 카드 덱처럼 보기를 다른 보기 위해 쌓아올려 구성합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page60..OrderedList4..Paragraph120" = "[NavigationSplitView](doc://com.apple.documentation/documentation/swiftui/navigationsplitview)는 보기를 2개 또는 3개의 열로 구성합니다. 앞의 열에서 항목을 선택하여 뒤의 열에 보기를 표시할 수 있습니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page61..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page61..Paragraph121" = "이러한 각각의 탐색 보기는 사용자가 앱에서 탐색하는 방식을 기반으로 서로 다른 보기를 표시하는 [컨테이너](glossary://container)로 작동하며, 이들은 조금 다른 방식으로 보기를 표시하기만 합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page61..Paragraph122" = "우선 `NavigationStack`을 생성하여 어떻게 작동하는지 확인합니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page62..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page62..Paragraph123" = "먼저, 내부에 `List` 보기가 있는 `NavigationStack`을 추가합니다. [List](doc://com.apple.documentation/documentation/swiftui/list)는 스크롤 가능한 세로 열에 여러 보기를 표시합니다.";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page62..CodeBlock22" = "NavigationStack { \n   List { \n       Text(\"NavigationStack Content\")\n       //#-learning-code-snippet(addNavLink)\n       //#-learning-code-snippet(addSecondNavLink)\n\n   }\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page63..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page63..Paragraph124" = "미리보기를 확인해 보세요. `List`에는 단일 `Text` 보기가 표시되며, 그 이외에 표시되는 것은 많지 않습니다. 다른 보기로 이동하려면 `NavigationStack` 내부에 [NavigationLink](glossary://navigation%20link)를 추가합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page63..Paragraph125" = "그렇다면 `NavigationLink`가 다른 보기로 이동하는 기능을 하는데 왜 `NavigationStack`을 생성했을까요? 바퀴가 없으면 자전거를 탈 수 없는 것처럼 링크가 `NavigationStack` 또는 `NavigationSplitView` 내부에 있지 않으면 다른 보기로 이동할 수 없습니다.";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..title" = "탐색 링크 생성하기";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page64..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page64..Paragraph126" = "`NavigationStack` 및 `NavigationSplitView`를 사용하면 앱에서 사용자의 상호 작용 방식에 따라 다양한 콘텐츠를 표시할 수 있습니다. 탐색 보기에서 다른 보기를 표시하려면 별도의 보기로 탭하여 이동하는 버튼인 [NavigationLink](glossary://navigation%20link)를 생성합니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page65..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page65..Paragraph127" = "`NavigationLink`에는 다음 두 가지가 포함되어야 합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page65..OrderedList5..Paragraph128" = "[대상 보기](glossary://destination%20view)에 대한 링크입니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page65..OrderedList5..Paragraph129" = "[레이블](glossary://label)(버튼이 표시되는 방식)입니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page65..Paragraph130" = "대상은 `Text` 또는 `Image` 보기, 또는 직접 생성한 [구성된 보기](glossary://composed%20view)와 같이 원하는 모든 보기가 될 수 있습니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page66..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page66..Paragraph131" = "아래 코드는 `Text` 보기를 [레이블](glossary://label) 및 [대상](glossary://destination%20view)으로 사용하여 `NavigationLink`를 생성합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page66..Paragraph132" = "아래에 `NavigationLink`를 추가하고 미리보기에서 링크를 탭하여 보세요.";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page66..CodeBlock23" = "NavigationLink(\"Push Me!\") { \n   Text(\"I\'m the destination View\")\n       .navigationTitle(\"Destination\")\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page67..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page67..Paragraph133" = "탐색 링크를 하나 더 추가하고 `NavigationStack`에서 다른 보기로 탐색해 보세요.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page67..Paragraph134" = "`NavigationStack`은 카드 덱처럼 동작하기 때문에 항상 맨 위의 보기만 표시합니다. 새로운 보기로 탐색을 하면 이 보기를 표시하기 위해 해당 보기가 스택의 맨 위로 이동됩니다.";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page67..CodeBlock24" = "NavigationLink(\"No, Push Me!\") { \n   Text(\"I\'m another destination view\")\n       .navigationTitle(\"Destination\")\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..title" = "`NavigationSplitView` 실험하기";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page68..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page68..Paragraph135" = "다음으로 `NavigationSplitView`를 생성하여 콘텐츠를 열로 표시합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page68..Paragraph136" = "탐색 링크를 앞에 오는 열로 사용하고 이를 탭하면 각각의 앞 열이 뒤에 오는 열에 텍스트를 표시하도록 하겠습니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page69..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page69..Paragraph137" = "먼저, `NavigationSplitView`를 추가하세요. 2개의 섹션이 표시됩니다. 첫 번째 섹션은 Split View의 앞에 오는 열이고, 두 번째 섹션은 링크를 선택하기 전까지 임시 콘텐츠를 표시하는 [위치 지정자 보기](glossary://placeholder%20view)입니다.";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page69..CodeBlock25" = "NavigationSplitView { \n    //#-learning-code-snippet(listOfLinks)\n\n} detail: { \n    //#-learning-code-snippet(detailView)\n    \n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page70..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page70..Paragraph138" = "다음으로 `NavigationSplitView`에 링크를 추가하세요.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page70..Paragraph139" = "미리보기 크기가 작으면 보기가 `NavigationStack`과 동일하게 보일 수 있습니다. 여러 개의 열을 볼 수 있도록 미리보기를 확장해 보세요.";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page70..CodeBlock26" = "List {\n    NavigationLink(\"First link\") {\n        Text(\"😵‍💫\")\n    }\n    NavigationLink(\"Second link\") {\n        Text(\"😵‍\")\n    }\n    //#-learning-code-snippet(addMoreNavLinks)\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page71..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page71..Paragraph140" = "마지막으로, [위치 지정자 보기](glossary://placeholder%20view)를 추가하여 두 번째 열에 초기 콘텐츠를 제공하세요.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page71..Paragraph141" = "미리보기를 확장하고 링크를 선택하기 전에 이를 재시작하여 위치 지정자 콘텐츠를 볼 수 있습니다.";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page71..CodeBlock27" = "Text(\"Select a link\")\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..title" = "NavigationLinks 실험하기";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page72..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page72..Paragraph142" = "`NavigationLink`의 모양을 사용자화하려는 경우에는 사용자 설정 [레이블](glossary://label)을 사용하는 다른 [이니셜라이저](glossary://initializer)를 사용할 수 있습니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page73..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page73..Paragraph143" = "아래 코드는 `Text` 및 `Image` 보기가 있는 `HStack`으로 구성된 사용자 설정 [레이블](glossary://label)이 있는 `NavigationLink`를 생성합니다. 대상 콘텐츠와 같이 레이블은 원하는 모든 보기가 될 수 있습니다!";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page73..CodeBlock28" = "NavigationLink { \n    SlidingRectangle()\n       .navigationTitle(\"Sliding Rectangle\")\n} label: { \n    HStack { \n        Text(\"Tap To Navigate\")\n        Spacer()\n        Image(systemName: \"arrow.forward.circle\")\n            .font(.largeTitle)\n    }\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page74..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page74..Paragraph144" = "새로운 `NavigationLink`를 추가하여 대상, 레이블 및 탐색 제목을 지정해 보세요. `ConditionalCircle` 보기와 같은 앱의 다른 보기 중 하나로 이동해 보세요.";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..title" = "앱에서 보기를 표시하는 방법 이해하기";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page75..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page75..Paragraph145" = "이것으로 `NavigationStack` 및 `NavigationSplitView` 내부에 [탐색 링크](glossary://navigation%20link)를 추가하는 실험이 끝났으므로, 앱의 첫 번째 보기가 `NavigationStack`을 표시하도록 하는 것이 목표입니다. 탐색 링크를 추가하면 사용자가 앱을 사용할 때 다른 보기로 이동할 수 있습니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page76..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page76..Paragraph146" = "앱 정의에서 가장 먼저 표시할 보기를 앱에 지시합니다. 여기에서는 앱 이름이 기본적으로 `MyApp`으로 되어 있으며 다른 앱과 같이 기기에서 실행할 수 있도록 하는 `App` [프로토콜](glossary://protocol)의 지침을 따르고 있습니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page76..Paragraph147" = "실행 버튼(▶︎)을 눌러 현재 프로젝트를 앱으로 실행해 보세요. 아직은 표시되는 것이 많지 않습니다. 🙈";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page77..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page77..Paragraph148" = "앱의 `body` 속성은 콘텐츠를 정의합니다. 현재로서 알아야 할 것은 `WindowGroup` 내부에 최소한 하나의 보기가 필요하다는 것입니다. `WindowGroup`은 앱의 [보기 계층](glossary://view%20hierarchy), 즉 앱이 시작될 때 표시되는 보기 모음에 대한 컨테이너 역할을 합니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page78..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page78..Paragraph149" = "`ContentView`는 [최상위 레벨 보기](glossary://top-level%20view)로, 앱이 실행될 때 표시되는 첫 번째 보기입니다. 이 보기는 [보기 계층](glossary://view%20hierarchy)의 맨 위에 있으며 최상위 레벨 보기에서 분기되는 [하위 보기](glossary://subview)의 구조화된 모음입니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page79..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page79..Paragraph150" = "일시적으로 `ContentView`를 `Text` 또는 `Image` 보기와 같은 다른 보기로 변경한 다음 앱을 실행해 보세요. 앱의 최상위 레벨 보기가 변경되었음을 알 수 있으며, 이러한 방법으로 앱에 표시되는 콘텐츠를 변경할 수 있습니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page79..Paragraph151" = "준비가 되면 최상위 레벨 보기를 다시 `ContentView`로 변경합니다.";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..title" = "앱에 `NavigationStack` 추가하기";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page80..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page80..Paragraph152" = "앱에 여러 보기를 표시하려면 [최상위 레벨 보기](glossary://top-level%20view)를 [NavigationStack](doc://com.apple.documentation/documentation/swiftui/navigationstack)으로 변경합니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page81..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page81..Paragraph153" = "앱 `body`의 `SPCAssessableWindowGroup` 내부에 `NavigationStack`을 추가합니다.";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page81..CodeBlock29" = "NavigationStack { \n\n}\n//#-learning-code-snippet(environmentObjectModifier)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page82..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page82..Paragraph154" = "`NavigationStack` 내부에 `ContentView`를 배치합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page82..Paragraph155" = "`NavigationStack` 내부에 배치된 첫 번째 보기가 초기 콘텐츠로 표시됩니다. 이 콘텐츠는 [탐색 링크](glossary://navigation%20link)를 사용하여 새로운 보기를 표시할 때마다 변경됩니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page83..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page83..Paragraph156" = "앱 `body`는 이제 다음과 같습니다.";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page83..CodeBlock30" = "SPCAssessableWindowGroup(app: self, assessmentCandidates: [CreatureZoo()]) { \n   NavigationStack { \n       ContentView()\n   }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..title" = "탐색 제목 추가하기";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page84..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page84..Paragraph157" = "앱을 실행합니다. 크게 달라진 게 없어 보이죠? 기본적으로 `NavigationStack`은 콘텐츠를 표시하는 컨테이너의 역할을 하기 때문입니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page84..Paragraph158" = "하지만 `NavigationStack`은 현재 보기의 제목과 다양한 도구 막대 항목을 표시할 수 있는 [탐색 막대](glossary://navigation%20bar)라고 하는 전용 공간을 제공합니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page85..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page85..Paragraph159" = "`ContentView`에 제어자로 `.navigationTitle(\"My Creatures\")`를 추가해 보세요.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page85..Paragraph160" = "이렇게 하면 탐색 막대 영역의 보기에 제목이 지정됩니다. 탐색 보기 자체가 아닌 탐색 보기 내부의 각 보기에 탐색 제목이 추가됩니다.";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page85..CodeBlock31" = ".navigationTitle(\"My Creatures\")\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page86..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page86..Paragraph161" = "`ContentView` 상단의 탐색 막대에 탐색 제목이 어떻게 표시되는지 확인하셨나요? 이러한 제목은 앱을 사용하는 사용자가 보고 있는 콘텐츠를 이해하는 데 도움이 됩니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page86..Paragraph162" = "이제 `ContentView`에 [NavigationLink](glossary://navigation%20link)를 추가하여 `CreatureDance` 보기로 이동합니다.";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLinkCreatureDance..title" = "`CreatureList`에 `NavigationLink` 추가하기";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLinkCreatureDance..Page87..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLinkCreatureDance..Page87..Paragraph163" = "`Section(\"Dance\")` 보기 내부에서 대상이 `CreatureDance`인 링크를 추가합니다. 레이블과 탐색 제목을 사용하여 보기의 기능을 설명합니다. (이 경우에는 일부 생명체가 춤을 추게 만듭니다!)";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLinkCreatureDance..Page88..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLinkCreatureDance..Page88..CodeBlock32" = "NavigationLink(\"Make the Creatures Dance\") { \n    DancingCreatures()\n        .navigationTitle(\"Dancing Creatures\")\n}\n";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepNavigating in SwiftUI..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..SuccessMessage..Paragraph164" = "축하해요, 탐색 추가는 앱을 생성하는 데 필수적인 부분입니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..SuccessMessage..Paragraph165" = "`NavigationLink`를 사용하는 경우, 탐색하는 보기가 `NavigationStack` 또는 `NavigationSplitView` 내부에 있는 경우에만 작동합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..SuccessMessage..Paragraph166" = "이제 앱의 모든 보기 사이에서 데이터를 공유하는 방법을 배울 거예요.";
+
+/* Title of step named Sharing Data Between Views */
+"GuideBook..Guide0..StepSharing Data Between Views..title" = "보기 간 데이터 공유하기";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..LearningCenterContent..Paragraph167" = "![](SharingDataBetweenViews.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..LearningCenterContent..Paragraph168" = "지금까지 [상태 속성](glossary://state%20value)을 사용하여 데이터를 [로컬](glossary://local%20scope)에 저장하는 방법과 [바인딩](glossary://binding)을 사용하여 두 보기 사이에 데이터를 저장하는 방법에 대해 배웠습니다. 하지만 지금처럼 여러 보기가 있는 앱에서 데이터를 공유하려면 어떻게 해야 할까요?";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..LearningCenterContent..Paragraph169" = "동일한 데이터를 여러 보기 사이에서 공유하려면 보기와 [분리](glossary://data%20separation)되어 있는 단일 진실 공급원(SOT)이 필요합니다. 이것은 [데이터 모델](glossary://data%20model)이며, 사용자는 데이터에 접근해야 하는 모든 보기를 공유할 수 있습니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..LearningCenterContent..Paragraph170" = "SwiftUI 앱의 데이터 모델을 구성하는 일반적인 방법은 [관찰 가능한 객체](glossary://observable%20object)를 사용하는 것입니다. 관찰 가능한 객체는 여러 보기에서 [관찰](glossary://observe)할 수 있는 속성이 있는 [유형](glossary://type)입니다. 이러한 보기는 속성의 상태 변경을 관찰할 수 있으므로 UI를 업데이트하여 동기화된 상태를 유지할 수 있습니다.";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..title" = "사용자의 데이터 모델";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page89..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page89..Paragraph171" = "이것은 데이터 모델인 [관찰 가능한 객체](glossary://observable%20object) `CreatureZoo`이며, `ObservableObject` [프로토콜](glossary://protocol)의 지침을 따르는 [클래스](glossary://class)입니다. 따라서 클래스에서 특정 속성을 [게시](glossary://publish)할 수 있습니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page89..Paragraph172" = "클래스가 속성을 게시하면, 해당 속성은 관찰하고 있는 모든 [관찰자](glossary://observer)에게 상태 변경 사항을 브로드캐스트(게시)합니다. 이렇게 하면 게시된 속성의 상태가 변경될 때 [관찰](glossary://observer)하고 있는 보기가 업데이트됩니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page90..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page90..Paragraph173" = "`CreatureZoo`의 [게시된 데이터](glossary://published%20value)는 `Creature` 인스턴스의 배열인 `creatures` 속성입니다. 생명체가 추가되거나 제거될 때와 같이, 이 배열의 데이터가 변경될 때마다 SwiftUI는 모든 속성 [관찰자](glossary://observer)에게 알림을 보내 최신 데이터를 표시하도록 업데이트할 수 있습니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page91..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page91..Paragraph174" = "관찰 가능한 객체에 [속성 래퍼](glossary://property%20wrapper) `@Published`를 추가하여 속성을 [게시됨](glossary://published%20value)으로 표시합니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page92..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page92..Paragraph175" = "생명체 인스턴스를 생성하려면 이니셜라이저 `Creature(name:emoji:)`를 사용하여 이름뿐만 아니라 단일 이모티콘 문자를 전달합니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page93..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page93..Paragraph176" = "이것은 `name`, `emoji`, `offset`, `rotation` 및 `id`에 대한 [속성](glossary://property)을 포함하는 `Creature` 유형입니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page93..Paragraph177" = "`Creature`는 `id` 속성을 추가하여 `Identifiable` [프로토콜](glossary://protocol)의 지침을 따릅니다. 이 프로토콜을 사용하면 두 생명체가 정확히 동일한 이모티콘을 사용하더라도 SwiftUI를 사용하여 `Creature`를 고유하게 식별할 수 있습니다. 이것은 나중에 유용하게 사용됩니다.";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..title" = "생명체 더 추가하기";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page94..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page94..Paragraph178" = "2개 이상의 새로운 `Creature` 인스턴스를 `creatures` 배열에 추가합니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page95..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page95..Paragraph179" = "새로운 생명체를 생성하려면 이름을 지정하고 단일 이모티콘 문자를 전달하여 [초기화](glossary://initialization)합니다. 생명체를 배열에 추가할 때는 각각의 생명체를 쉼표로 구분해야 합니다. 예를 들어, 다음과 같습니다.";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page95..CodeBlock33" = "Creature(name: \"T-Rex\", emoji: \"🦖\"),\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page96..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page96..Paragraph180" = "1개 이상의 생명체를 배열에 추가합니다.";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page96..CodeBlock34" = "Creature(name: \"Ladybug\", emoji: \"🐞\"),\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..title" = "`StateObject` 생성하기";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page97..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page97..Paragraph181" = "여러 보기에서 [관찰 가능한 객체](glossary://observable%20object)를 공유하기 전에, 먼저 단일 보기에서 데이터 모델을 사용하는 것이 어떤 것인지 알아보세요.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page97..Paragraph182" = "`ContentView`에서 관찰 가능한 객체를 초기화하고 해당 데이터로 생명체 보기 목록을 생성합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page97..Paragraph183" = "`CreatureZoo`와 같은 관찰 가능한 객체를 초기화하려면 SwiftUI가 데이터를 관리할 수 있도록 특별한 속성 래퍼인 `@StateObject`를 사용합니다.";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page97..CodeBlock35" = "@StateObject var data = CreatureZoo()\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page98..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page98..Paragraph184" = "`@StateObject` 속성 래퍼를 사용하여 SwiftUI가 관찰 가능한 객체를 관리하도록 지시합니다. 이는 `@State`를 사용하여 보기의 속성을 [상태 속성](glossary://state%20property)으로 관리하도록 SwiftUI에 지시하는 방법과 유사합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page98..Paragraph185" = "이 경우에는 관찰 가능한 객체 `CreatureZoo`를 초기화하고 [상태 객체](glossary://state%20object)로 관리하도록 SwiftUI에 요청합니다.";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..title" = "보기에서 모델 데이터 사용하기";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page99..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page99..Paragraph186" = "데이터를 초기화한 후 이를 사용하여 기본 보기를 생성합니다. 열 레이아웃에서 각 생명체를 세로로 표시할 수 있도록 `List` 내부에 [ForEach](glossary://ForEach) 보기를 추가합니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page100..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page100..Paragraph187" = "[ForEach](glossary://ForEach)는 배열과 같은 데이터의 [모음](glossary://collection)을 [반복](glossary://iteration)하여 모음의 각 요소에 대한 보기를 생성하는 구조입니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page100..Paragraph188" = "`Section` 보기 아래에 `ForEach`를 추가하여 `data.creatures` 배열을 반복하고, 각 생명체의 이름과 이모티콘을 표시하는 사용자 설정 보기를 생성합니다.";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page100..CodeBlock36" = "/*#-code-walkthrough(forEach.id)*/\nForEach(data.creatures) { creature in \n/*#-code-walkthrough(forEach.id)*/\n    HStack { \n        Text(creature.name)\n            .font(.title)\n        Spacer()\n        Text(creature.emoji)\n            /*#-code-walkthrough(resizableFont)*/\n            .resizableFont()\n            /*#-code-walkthrough(resizableFont)*/\n            .frame(minWidth: 125)\n    }\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page101..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page101..Paragraph189" = "`Creature`가 `Identifiable` 프로토콜의 지침을 어떻게 따르는지 기억하나요? 이 방법을 통해 이모티콘 문자와 이름이 정확히 같더라도 [ForEach](glossary://ForEach) 데이터 구조는 모든 생명체를 고유하게 식별할 수 있습니다. 완벽하게 같더라도 구분할 수 있기 때문에 SwiftUI에서 각 보기가 혼동하지 않고 개별적으로 업데이트됩니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page102..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page102..Paragraph190" = "여기에서 `.resizableFont()` 제어자가 사용되는 것을 확인하셨을 것입니다. 이것은 `ResizableFont.swift`에 정의되어 `Text` 보기의 서체 크기가 보기 크기에 맞게 조정되도록 하는 사용자 설정 제어자입니다. 해당 파일의 코드를 확인하여 사용자 설정 제어자 생성 방법을 알아보세요.";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..title" = "앱 전체에서 모델 데이터에 접근할 수 있도록 설정하기";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page103..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page103..Paragraph191" = "단일 보기에서 관찰 가능한 객체 데이터를 성공적으로 사용했으므로, 이제 `MyApp.swift`의 앱 전체에 해당 데이터를 공유해 보세요.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page104..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page104..Paragraph192" = "앱 전체에서 데이터에 접근할 수 있도록 하는 방법은 다음과 같습니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page104..OrderedList6..Paragraph193" = "`MyApp`에서 `CreatureZoo`의 인스턴스를 [상태 객체](glossary://state%20object)로 생성합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page104..OrderedList6..Paragraph194" = "[최상위 레벨 보기](glossary://top-level%20view)인 `NavigationStack`에 [환경 객체](glossary://environment%20object)로 전달합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page104..Paragraph195" = "데이터를 최상위 레벨 보기에 환경 객체로 전달하여 [보기 계층](glossary://view%20hierarchy) 전체에서 데이터를 사용할 수 있으므로 다른 모든 보기에서 데이터를 사용할 수 있습니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page105..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page105..Paragraph196" = "`CreatureList`에서와 같이 `CreatureZoo` 인스턴스를 생성합니다.";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page105..CodeBlock37" = "@StateObject var data = CreatureZoo()\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page106..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page106..Paragraph197" = "다음 제어자를 `NavigationStack` 아래에 추가합니다.";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page106..CodeBlock38" = ".environmentObject(data)\n";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page106..Paragraph198" = "이렇게 하면 [관찰 가능한 객체](glossary://observable%20object) 인스턴스가 앱의 [환경](glossary://environment)으로 전달되고 [하위 보기](glossary://subview)에서 접근할 수 있습니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page107..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page107..Paragraph199" = "이제 `ContentView.swift`로 돌아가 환경 객체를 사용해 보세요.";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..title" = "환경 객체에 접근하기";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page108..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page108..Paragraph200" = "이제 관찰 가능한 객체를 `ContentView`를 포함하여 `NavigationStack`의 모든 [하위 보기](glossary://subview)와 공유했습니다. 해당 데이터에 접근해 보세요.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page109..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page109..Paragraph201" = "관찰 가능한 객체의 새로운 인스턴스를 생성하는 `@StateObject`를 사용하는 대신, 앱 [환경](glossary://environment)에 전달된 인스턴스에 접근해야 합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page109..OrderedList7..Paragraph202" = "현재 `@StateObject` 변수인 `data`를 삭제합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page109..OrderedList7..Paragraph203" = "[환경 객체](glossary://environment%20object)에 접근하고 `CreatureZoo` 유형의 속성 래퍼 `@EnvironmentObject`를 사용하여 새로운 속성을 생성합니다.";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page109..CodeBlock39" = "@EnvironmentObject var data : CreatureZoo\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page110..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page110..Paragraph204" = "`ContentView` 미리보기에서 생명체 목록을 확인하세요.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page110..Paragraph205" = "생명체는 이전에 동작하던 대로 나타나는 것을 볼 수 있습니다. 생명체 목록의 데이터는 `MyApp`에서 생성되어 앱 [환경](glossary://environment)을 통해 공유되고 `ContentView`에서 접근됩니다.";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..title" = "`HStack`을 구성된 `CreatureRow` 보기로 대치하기";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page111..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page111..Paragraph206" = "코드를 개선해 볼 수 있는 좋은 기회입니다. [ForEach](glossary://ForEach) 데이터 구조 내부의 `HStack`전체를 [구성된 보기](glossary://composed%20view)인 `CreatureRow`로 대치하여 이 보기의 코드를 단순화할 수 있습니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page111..Paragraph207" = "`ForEach` 내부의 `HStack` 콘텐츠를 삭제하고 `CreatureRow(creature:creature)`로 대치합니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page112..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page112..Paragraph208" = "`CreatureRow.swift`를 살펴보세요. `Creature`값을 저장하는 [속성](glossary://property)이 있다는 점을 제외하고는 `ForEach`에서와 동일한 코드가 포함되어 있습니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page112..Paragraph209" = "이제 `CreatureRow`가 그 자체로 보기이므로 `ContentView`와 별도로 쉽게 수정하고 테스트할 수 있습니다. 이와 같이 보기를 구성하면 앱 생성의 기본 원칙인 코드의 [모듈화](glossary://modularity)가 향상됩니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page113..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page113..CodeBlock40" = "ForEach(data.creatures) { creature in \n   CreatureRow(creature: creature)\n}\n";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepSharing Data Between Views..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..SuccessMessage..Paragraph210" = "잘했어요!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..SuccessMessage..Paragraph211" = "관찰 가능한 객체를 앱 환경에 전달하여 [보기 계층](glossary://view%20hierarchy) 전체에서 해당 데이터에 접근할 수 있도록 합니다. 이렇게 하면 여러 위치에서 데이터를 다시 생성할 필요 없이, 앱의 다른 모든 보기에서 동일한 [진실 공급원(SOT)](glossary://source%20of%20truth)을 사용할 수 있습니다.";
+
+/* Title of step named Create a New View To Share Data */
+"GuideBook..Guide0..StepCreate a New View To Share Data..title" = "데이터를 공유할 새로운 보기 생성하기";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..LearningCenterContent..Paragraph212" = "![](CreateANewViewToShareData.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..LearningCenterContent..Paragraph213" = "하나의 보기에서 데이터를 성공적으로 공유했으므로, 이제 동일한 데이터를 다른 보기에서 사용해 보세요.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..LearningCenterContent..Paragraph214" = "이렇게 하려면 두 가지 작업을 수행해야 합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..LearningCenterContent..OrderedList8..Paragraph215" = "데이터에 접근하는 보기가 전달된 최상위 레벨 보기와 동일한 [보기 계층](glossary://view%20hierarchy)의 일부인지 확인하세요. [최상위 레벨 보기](glossary://top-level%20view) 또는 [하위 보기](glossary://subview) 중 하나에서 보기를 초기화하여 보기 계층에 추가합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..LearningCenterContent..OrderedList8..Paragraph216" = "[환경 객체](glossary://environment%20object)에 접근합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..LearningCenterContent..Paragraph217" = "예를 들어, `ContentView` 내부에 새로운 보기를 생성하는 경우 `ContentView`는 최상위 레벨 보기인 `NavigationStack`의 하위 보기이기 때문에 새로운 보기는 보기 계층의 일부가 됩니다. 해당 새로운 보기에서 환경 객체에 접근할 수 있게 되는 것입니다.";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..title" = "환경 객체 선언하기";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page114..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page114..Paragraph218" = "앱 [환경](glossary://environment)의 데이터에 접근하는 `DancingCreatures`라는 새로운 보기를 만드는 것이 목표입니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page114..Paragraph219" = "`DancingCreatures`는 이미 [보기 계층](glossary://view%20hierarchy)의 일부로, `ContentView`에서 이 계층에 링크를 추가했습니다. 다음 단계는 앱 환경의 데이터에 접근하는 것입니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page115..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page115..Paragraph220" = "앱 환경의 데이터에 접근하려면 `CreatureList`에서와 같이 `CreatureZoo`에 대한 환경 객체를 선언합니다. 도움이 필요하면 다른 코드를 다시 살펴봐도 좋습니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page116..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page116..Paragraph221" = "속성 래퍼 `@EnvironmentObject`를 사용하여 변수를 [선언](glossary://declaration)하고 `CreatureZoo` 유형을 지정합니다. 값은 이미 `MyApp`에서 초기화되어 있으므로 [초기화](glossary://initialization)할 필요가 없습니다. 여기에서는 데이터에만 접근할 수 있습니다.";
+
+/*  */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page116..CodeBlock41" = "@EnvironmentObject var data : CreatureZoo\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesView..title" = "`DancingCreatures` 보기 추가하기";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesView..Page117..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesView..Page117..Paragraph222" = "이제 앱 데이터에 접근할 수 있습니다. 이것으로 재미있는 것을 만들어 볼 차례입니다. 먼저, 모든 생명체를 서로의 위에 쌓은 다음, 하나를 탭할 때마다 모두 각각 다른 방향으로 흩어지게 할 수 있습니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesView..Page118..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesView..Page118..Paragraph223" = "`VStack` 내부에 이 코드를 추가합니다.";
+
+/*  */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesView..Page118..CodeBlock42" = "ZStack {\n    /*#-code-walkthrough(dance.forEach)*/\n    ForEach(data.creatures) { creature in\n    /*#-code-walkthrough(dance.forEach)*/\n        /*#-code-walkthrough(dance.textView)*/\n        Text(creature.emoji)\n            .resizableFont()\n            .offset(creature.offset)\n            .rotationEffect(creature.rotation)\n        /*#-code-walkthrough(dance.textView)*/\n        //#-learning-code-snippet(exp1)\n        //#-learning-code-snippet(animationSolution)\n        //#-learning-code-snippet(exp3)\n\n    }\n}\n/*#-code-walkthrough(dance.onTap)*/\n.onTapGesture {\n    data.randomizeOffsets()\n}\n/*#-code-walkthrough(dance.onTap)*/\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..title" = "애니메이션 코드 이해하기";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page119..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page119..Paragraph224" = "이 애니메이션을 생성하기 위해 [ForEach](glossary://ForEach)는 `CreatureZoo.creatures`의 각 생명체를 반복하여 각각에 대한 `Text` 보기를 생성합니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page120..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page120..Paragraph225" = "`Text` 보기는 생명체의 `offset` 및 `rotation` [속성](glossary://property)을 `.offset` 및 `.rotationEffect` 제어자에 대한 인수로 사용합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page120..Paragraph226" = "`CreatureZoo.creatures`는 [게시된 값](glossary://published%20value)이기 때문에 SwiftUI는 생명체의 `offset` 또는 `rotation`이 변경될 때마다 `DancingCreatures` 보기를 업데이트합니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page121..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page121..Paragraph227" = "`.onTapGesture` 제어자는 보기를 탭할 때마다 일부 코드를 실행할 수 있습니다. 탭하면 `data.randomizeOffsets()`가 각 생명체의 `offset` 및 `rotation` 값을 변경하여, 보기에서 각 생명체를 새로운 위치로 업데이트하고 회전할 수 있도록 합니다.";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..title" = "생명체 움직이기";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page122..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page122..Paragraph228" = "보기를 탭하여 보세요.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page122..Paragraph229" = "생명체가 움직이고 있지만 그다지 흥미롭지는 않습니다. 춤추는 움직임을 만들기 위해 새로운 위치로 애니메이션을 적용해 보세요.";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page123..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page123..Paragraph230" = "새로운 위치에서 생물체에 애니메이션을 적용하려면 사용하려는 애니메이션과 애니메이션 값을 SwiftUI에 지시해야 합니다. 이 경우에는 각 생명체의 `offset` 속성에 애니메이션을 적용해야 합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page123..Paragraph231" = "`.animation(_:value:)` 제어자를 `Text` 보기에 추가합니다. 애니메이션 인수로 `.default`를 선택하고, 값으로 `creature.offset`을 전달합니다. `offset`이 변경될 때마다 보기 변경 사항이 애니메이션으로 생성됩니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page124..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page124..CodeBlock43" = ".animation(.default, value: creature.offset)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..title" = "보기 실험하기";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page125..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page125..Paragraph232" = "이제 생명체에 애니메이션을 적용했으므로 애니메이션과 보기의 다른 부분을 수정하여 더 재미있게 만들어 보세요.";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page126..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page126..Paragraph233" = "새로운 `.animation(_:value:)` 제어자를 추가하여 `creature.rotation` 속성에 대한 변경 사항을 애니메이션으로 생성합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page126..Paragraph234" = "`.animation(_:value)` 제어자 앞에 다음 제어자를 추가해 보세요. 애니메이션이 어떻게 바뀌나요? 왜 그럴까요? 위의 제어자 뒤에 `.spring()` 애니메이션을 배치하면 어떻게 될까요?";
+
+/*  */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page126..CodeBlock44" = ".animation(.spring(response: 0.5, dampingFraction: 0.5), value: creature.rotation)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page127..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page127..Paragraph235" = "`.onTapGestures`의 이벤트 핸들러를 `data.synchronizeOffsets()`로 변경합니다. 이렇게 하면 모든 생명체가 동일한 오프셋으로 이동합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page127..OrderedList9..Paragraph236" = "`creature.offset`에 대한 현재 `.animation` 제어자를 제거합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page127..OrderedList9..Paragraph237" = "다음 애니메이션을 추가하여 각 애니메이션이 조금씩 지연되도록 합니다.";
+
+/*  */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page127..CodeBlock45" = ".animation(.default.delay(data.indexFor(creature) / 10), value: creature.offset)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page128..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page128..Paragraph238" = "만족하는 결과가 나올 때까지 애니메이션 값을 계속 수정해 보세요!";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepCreate a New View To Share Data..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..SuccessMessage..Paragraph239" = "잘했어요!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..SuccessMessage..Paragraph240" = "[보기 계층](glossary://view%20hierarchy)과 공유되는 관찰 가능한 [데이터 모델](glossary://data%20model)을 사용하는 또 다른 보기를 성공적으로 생성했습니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..SuccessMessage..Paragraph241" = "이제, 사용자가 앱을 사용자화할 수 있도록 해당 데이터 모델에서 데이터를 추가 및 삭제하는 방법을 배워보세요.";
+
+/* Title of step named Add and delete creatures */
+"GuideBook..Guide0..StepAdd and delete creatures..title" = "생명체 추가 및 삭제하기";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..LearningCenterContent..Paragraph242" = "![](AddAndDeleteCreatures.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..LearningCenterContent..Paragraph243" = "여러 보기에서 단일 [데이터 모델](glossary://data%20model)을 공유할 수 있는 다중 보기 앱이 생성되었습니다. 하지만 앱 생성이 끝난 것이 아닙니다. 코드에서 `Creature`를 추가하거나 삭제할 수 있지만 [사용자](glossary://user)는 UI를 통해 생명체를 추가하거나 삭제할 수 없습니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..LearningCenterContent..Paragraph244" = "다행히 해결 방법은 매우 간단합니다. 보기에서 데이터 모델에 액세스할 수 있으므로, 사용자가 UI와 상호 작용할 때 데이터 모델을 변경할 수 있습니다. 먼저 생명체를 삭제하는 방법을 배운 다음, 사용자가 자신만의 생명체를 추가할 수 있는 새로운 보기를 생성하세요.";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..title" = "생명체 삭제하기";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page129..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page129..Paragraph245" = "SwiftUI를 사용하면 `List`에서 데이터를 간단하게 삭제할 수 있습니다. `ContentView`의 `ForEach` 루프에 `.onDelete` 제어자를 추가하면 생명체를 삭제할 수 있는 것입니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page129..Paragraph246" = "`.onDelete` 제어자를 추가하면 사용자 설정 코드(사용자가 항목의 삭제 여부를 결정하는 `action` [클로저](glossary://closure))를 실행할 수 있습니다. 클로저 코드는 앱의 관찰 가능한 [데이터 모델](glossary://data%20model)에서 현재 생명체를 제거합니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page130..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page130..Paragraph247" = "`.onDelete` [클로저](glossary://closure) 내부에서 `remove(atOffsets:)`를 호출하고 클로저에서 값 `indexSet`을 전달하여 현재 생명체를 삭제합니다. 이렇게 하면 삭제하기로 선택한 목록의 행을 기반으로 `creatures` 배열에서 해당하는 생명체를 찾습니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page130..Paragraph248" = "`ForEach` 루프 아래에 이 제어자를 추가하고 앱을 실행해 보세요. 생명체를 왼쪽으로 쓸어넘겨 삭제할 수 있나요?";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page130..CodeBlock46" = ".onDelete { indexSet in \n    data.creatures.remove(atOffsets: indexSet)\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..title" = "`CreatureEditor`에 `NavigationLink` 추가하기";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page131..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page131..Paragraph249" = "새로운 생명체를 추가하려면 두 가지 작업을 수행해야 합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page131..OrderedList10..Paragraph250" = "`NavigationLink`를 사용하여 [보기 계층](glossary://view%20hierarchy)에 `CreatureEditor`를 추가합니다. 이렇게 하면 `CreatureEditor`가 `CreatureZoo` 환경 객체에 접근할 수 있고 사용자가 보기로 이동할 수 있습니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page131..OrderedList10..Paragraph251" = "사용자가 편집하고 `CreatureZoo`의 `creatures` 배열에 새로운 생명체를 추가할 수 있도록 `CreatureEditor` 보기를 [구성](glossary://composed%20view)합니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page132..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page132..Paragraph252" = "먼저 `CreatureEditor`에 `NavigationLink`를 추가할 위치를 파악합니다. `ContentView`에서 삭제할 수 있는 생명체의 `List` 보기가 이미 있으므로 동일한 보기에서 생명체를 추가하는 것이 좋습니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page133..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page133..Paragraph253" = "생물체 편집에 쉽게 접근할 수 있게 하려면 링크를 `ContentView` UI의 [탐색 막대](glossary://navigation%20bar)에 배치하세요. 여기는 사용자가 앱의 추가 기능을 찾는 데 익숙한 위치이기 때문에 이러한 유형의 링크에 가장 적합한 위치입니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page134..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page134..Paragraph254" = "탐색 막대에 버튼을 추가하는 방법은 다음과 같습니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page134..OrderedList11..Paragraph255" = "`List`보기에 `.toolbar` 제어자를 추가하여 탐색 막대에 대한 사용자화를 추가합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page134..OrderedList11..Paragraph256" = "`.toolbar` 클로저 내부에 `ToolbarItem`을 추가합니다. 이는 도구 막대에 배치할 수 있는 항목입니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page134..OrderedList11..Paragraph257" = "`ToolbarItem` 내부의 `CreatureEditor`에 `NavigationLink`를 추가합니다. 이것은 탐색 막대에 표시되는 보기입니다.";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page134..CodeBlock47" = ".toolbar { \n    ToolbarItem { \n        // CreatureEditor에 NavigationLink 추가하기\n\n    }\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page135..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page135..CodeBlock48" = ".toolbar { \n    ToolbarItem { \n        NavigationLink(\"Add\") { \n            CreatureEditor()\n        }\n    }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..title" = "`CreatureEditor`에 탐색 제목 추가하기";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..Page136..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..Page136..Paragraph258" = "다음으로, `CreatureEditor`에 보기의 목적을 설명하는 탐색 제목을 지정합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..Page136..OrderedList12..Paragraph259" = "탐색 제목을 `CreatureEditor` 보기에 추가합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..Page136..OrderedList12..Paragraph260" = "앱을 실행하고 `ContentView`에서 `CreatureEditor`로의 이동을 테스트해 보세요.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..Page137..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..Page137..CodeBlock49" = ".toolbar { \n    ToolbarItem { \n        NavigationLink(\"Add\") { \n            CreatureEditor()\n                .navigationTitle(\"Add Creature\")\n        }\n    }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..title" = "`CreatureEditor` 데이터 정의하기";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page138..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page138..Paragraph261" = "새로운 생명체를 추가하려면 새로운 생명체를 편집할 수 있고 [데이터 모델](glossary://data%20model)에 추가할 수 있는 [구성된 보기](glossary://composed%20view) `CreatureEditor`를 생성합니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page139..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page139..Paragraph262" = "`CreatureEditor`에서 새로운 `Creature` 인스턴스를 생성하고 데이터 모델에 추가하기 위해 어떤 [속성](glossary://property)을 사용해야 하는지 생각해 보세요.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page139..OrderedList13..Paragraph263" = "[지역](glossary://local%20scope) `CreatureEditor` 보기 내에서 수정할 수 있는 `Creature` 속성이 필요합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page139..OrderedList13..Paragraph264" = "`Creature` 인스턴스를 추가하려면 [환경](glossary://environment)에서 `CreatureZoo` [관찰 가능한 객체](glossary://observable%20object)에 접근해야 합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page139..Paragraph265" = "이러한 목표를 달성하는 두 가지 속성을 생성해 보고, 문제가 발생한 경우에는 다음 힌트를 사용하세요.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page140..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page140..Paragraph266" = "먼저, `Creature` 인스턴스를 저장하는 [상태 속성](glossary://state%20property)을 생성합니다. 지금은 `name` 및 `emoji` 매개변수를 빈 문자열로 남겨둘 수 있습니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page141..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page141..Paragraph267" = "그런 다음, `CreatureZoo` 유형의 [환경 객체](glossary://environment%20object)를 선언하여 [관찰 가능한 객체](glossary://observable%20object) 인스턴스에 접근합니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page142..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page142..CodeBlock50" = "@State var newCreature : Creature = Creature(name: \"\", emoji: \"\")\n@EnvironmentObject var data : CreatureZoo \n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineYourView..title" = "CreatureEditor에서 형태 생성하기";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineYourView..Page143..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineYourView..Page143..Paragraph268" = "`CreatureEditor` 보기를 만들기 위해 데이터 입력을 처리하는 데 이상적인 기본 제공 `Form` 보기를 사용할 수 있습니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineYourView..Page143..Paragraph269" = "`Form` 내부에 3개의 `Section` 보기를 추가합니다. 각 보기에서 생물체의 이름, 이모티콘 및 미리보기를 편집할 수 있습니다.";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineYourView..Page143..CodeBlock51" = "Form {\n    Section(\"Name\") {\n        //#-learning-code-snippet(addACreatureEditorTextField)\n\n    }   \n\n    Section(\"Emoji\") {\n        \n    }\n\n    Section(\"Creature Preview\") {\n        CreatureRow(creature: newCreature)\n    }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..title" = "사용자 입력을 위한 `TextField` 보기 추가하기";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page144..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page144..Paragraph270" = "이제, [사용자](glossary://user)가 `Creature` [상태 속성](glossary://state%20property)의 `name` 및 `emoji` 값을 편집할 수 있는 방법을 추가해야 합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page144..Paragraph271" = "사용자가 텍스트를 입력할 수 있는 [TextField](doc://com.apple.documentation/documentation/swiftui/textfield) 보기를 추가하여 이 작업을 수행할 수 있습니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page144..Paragraph272" = "두 개의 `TextField` 보기를 추가하여 생명체 `name` 및 `emoji`값을 편집합니다. [레이블](glossary://label) 및 [바인딩](glossary://binding) `String` 값의 인수를 사용하는 `TextField(_:text:)` 이니셜라이저를 사용합니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page145..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page145..Paragraph273" = "바인딩을 사용하려면 [상태 속성](glossary://state%20property)과 같이 SwiftUI에서 관리하는 진실 공급원(SOT)이 필요합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page145..Paragraph274" = "`Creature` 상태 속성에 바인딩을 전달하고 `name` 및 `emoji` 값을 다음과 같이 지정합니다.";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page145..CodeBlock52" = "$newCreature.name\n$newCreature.emoji\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page146..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page146..Paragraph275" = "다음은 `TextField`를 추가하는 방법의 예제입니다. 하나의 `TextField`를 추가하면 `newCreature.name`을 편집할 수 있으며 하나를 더 추가하면 `newCreature.emoji`를 편집할 수 있습니다.";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page146..CodeBlock53" = "TextField(\"Name\", text: $newCreature.name)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page147..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page147..CodeBlock54" = "Form {\n    Section(\"Name\") {\n        TextField(\"Name\", text: $newCreature.name)\n    }   \n\n    Section(\"Emoji\") {\n        TextField(\"Emoji\", text: $newCreature.emoji)\n    }\n\n    Section(\"Creature Preview\") {\n        CreatureRow(creature: newCreature)\n    }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..title" = "도구 막대에 추가 버튼 배치하기";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page148..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page148..Paragraph276" = "다음으로, 사용자가 새로운 생명체를 추가하기 위해 탭할 수 있는 `Button`을 추가해야 합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page148..Paragraph277" = "`ContentView`에서와 같이, `CreatureEditor`의 [탐색 막대](glossary://navigation%20bar)에 이런 버튼을 배치하는 것이 가장 좋습니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page149..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page149..Paragraph278" = "`CreatureEditor`에 도구 모음을 추가하려면 `ContentView`의 `.toolbar` 코드를 예로 사용하세요.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page149..OrderedList14..Paragraph279" = "`VStack` 아래에 `.toolbar` 제어자를 추가합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page149..OrderedList14..Paragraph280" = "도구 막대 내부에 `ToolbarItem`을 추가합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page149..OrderedList14..Paragraph281" = "`ToolbarItem` 내부에 ‘Add’라고 표시된 [레이블](glossary://label)이 있는 `Button`을 추가합니다. 지금은 `Button`에 대한 동작 [클로저](glossary://closure)를 비워 둘 수 있습니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page150..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page150..CodeBlock55" = ".toolbar { \n    ToolbarItem { \n        Button(\"Add\") { \n            //#-learning-code-snippet(addCreatureToCreatureZoo)\n            //#-learning-code-snippet(dismissCall)\n        }\n    }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..title" = "`CreatureZoo`에 생명체 추가하기";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page151..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page151..Paragraph282" = "‘Add’ 버튼을 탭하는 경우는 관찰 가능한 객체 `CreatureZoo`에 생명체 인스턴스를 추가하려는 경우입니다. 특히 `creatures` 배열에 생명체를 추가하려는 경우입니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page152..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page152..Paragraph283" = "다음 코드는 편집 중인 생명체를 `data.creatures`에 추가합니다. `creatures`는 [게시된 값](glossary://published%20value)이므로 해당 값을 변경하면 해당 데이터를 사용하는 모든 보기가 자동으로 업데이트됩니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page152..Paragraph284" = "이 코드를 `Button`에 대한 동작 [클로저](glossary://closure) 내부에 추가합니다.";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page152..CodeBlock56" = "data.creatures.append(newCreature)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page153..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page153..Paragraph285" = "앱을 실행하고 새로운 생명체를 추가해 보세요.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page153..Paragraph286" = "`ContentView`로 다시 이동하여 `List` 보기에 새로운 생명체가 추가되었는지 확인합니다. `DancingCreatures` 보기에도 추가되었나요?";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..title" = "추가를 탭하는 경우 편집기 닫기";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page154..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page154..Paragraph287" = "생명체를 추가한 후에는 `CreatureEditor` 보기가 사라지고 이전 보기가 표시됩니다. 이것은 사용자 경험을 향상시킬 뿐만 아니라 ‘Add’ 버튼을 두 번 이상 탭하여 동일한 생명체를 여러 번 추가하는 것을 방지합니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page155..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page155..Paragraph288" = "보기를 닫으려면 두 가지가 필요합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page155..OrderedList15..Paragraph289" = "`dismiss` [환경](glossary://environment) 값을 선언하면 앱이 `NavigationStack`에 표시되는 현재 보기를 닫을 수 있습니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page155..OrderedList15..Paragraph290" = "‘Add’ 버튼을 탭하면 `dismiss()`를 [호출](glossary://call)합니다.";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page155..CodeBlock57" = "@Environment(\\.dismiss) var dismiss\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page156..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page156..Paragraph291" = "`dismiss` [환경](glossary://environment) 값을 선언한 후, 새로운 생명체를 `data.creatures`에 추가하고 ‘Add’ 버튼을 탭하면 `dismiss()`를 호출합니다.";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page156..CodeBlock58" = "dismiss()\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page157..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page157..CodeBlock59" = ".toolbar { \n    ToolbarItem { \n        Button(\"Add\") { \n            data.creatures.append(newCreature)\n            dismiss()\n        }\n    }\n}\n";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepAdd and delete creatures..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..SuccessMessage..Paragraph292" = "축하해요, 모든 기능을 갖춘 앱을 생성했습니다!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..SuccessMessage..Paragraph293" = "새로운 생명체를 추가하고, `CreatureList`에서 보고 편집할 수 있으며, `DancingCreatures`에서 춤추는 것을 볼 수 있습니다.";
+
+/* Title of step named Add a `CreatureDetail` view */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..title" = "`CreatureDetail` 보기 추가하기";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..LearningCenterContent..Paragraph294" = "![](AddCreatureDetailView.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..LearningCenterContent..Paragraph295" = "이제 보기 사이를 탐색하고, [지역](glossary://local%20scope) 상태 변경을 관리하고, 앱 전체에서 데이터를 공유하고, 다양한 [기본 제공 SwiftUI 보기](glossary://built-in%20view)를 사용하는 방법을 배웠습니다. 이제 배운 것을 사용하여 새로운 보기인 `CreatureDetail`을 생성해 보세요. 이 보기는 목록의 단일 생명체에 대한 세부 사항을 보여줍니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..LearningCenterContent..Paragraph296" = "생명체 목록이 좋아 보이지만 더 많은 상호 작용이 필요합니다. 이 모든 생명체로 아무것도 할 수 없다면 좋은 목록이 무슨 소용이 있을까요?";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..title" = "`CreatureDetail`에 `NavigationLink` 추가하기";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page158..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page158..Paragraph297" = "[ForEach](glossary://ForEach) 루프의 각 보기를 별도의 `NavigationLink`로 전환하여 `data.creatures` 배열에 있는 생명체의 세부 사항 보기로 이동하는 것이 목표입니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page159..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page159..Paragraph298" = "이렇게 하려면 `ForEach` 루프의 현재 콘텐츠를 `NavigationLink`로 대치하세요.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page159..OrderedList16..Paragraph299" = "[대상]glossary://destination%20view)을 [구성된 보기](glossary://composed%20view) `CreatureDetail(creature:creature)`로 설정합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page159..OrderedList16..Paragraph300" = "[클로저](glossary://closure)의 `creature` 값을 [인수](glossary://argument)로 사용하여 [레이블](glossary://label)을 `CreatureRow`로 생성합니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page160..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page160..Paragraph301" = "다음과 같이 탐색 링크를 만들고 `ForEach` 내부에 해당 링크를 추가합니다.";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page160..CodeBlock60" = "NavigationLink {\n    CreatureDetail(creature: creature)\n        .navigationTitle(creature.name)\n} label: {\n    CreatureRow(creature: creature)\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page161..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page161..Paragraph302" = "`ForEach`는 다음과 같아야 합니다.";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page161..CodeBlock61" = "ForEach(data.creatures) { creature in \n    NavigationLink {\n        CreatureDetail(creature: creature)\n            .navigationTitle(creature.name)\n    } label: {\n        CreatureRow(creature: creature)\n    }  \n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page162..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page162..Paragraph303" = "`List` 행을 탭하여 보세요. 해당 생명체에 대한 `CreatureDetail` 보기로 이동합니다.";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..title" = "`CreatureDetail` 보기 만들기";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page163..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page163..Paragraph304" = "`CreatureDetail` 보기는 선택한 생명체를 `Text` 보기로 표시합니다. 여러분의 목표는 기존 코드를 이해하고 활용해 멋진 생명체 효과를 생성하는 것입니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page164..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page164..Paragraph305" = "`ContentView`에서 `CreatureDetail(creature: creature)`의 [대상 보기](glossary://destination%20view)를 사용해 `NavigationLink`를 생성했습니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page164..Paragraph306" = "대상 보기는 목록의 각 행에 있는 `Creature` 값을 사용하여 탭하는 생명체에 따라 다른 보기를 생성합니다. 이 보기에서는 해당 값이 변경되지 않으므로 상태가 아닌 [상수](glossary://constant)로 저장됩니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page165..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page165..Paragraph307" = "세 가지 [상태 속성](glossary://state%20property)이 정의되었습니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page165..OrderedList17..Paragraph308" = "`color`는 `Color` 값을 확인하고 `Text` 보기에 대한 색상 수정을 제어합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page165..OrderedList17..Paragraph309" = "`shadowRadius`는 `.shadow` 제어자의 반경을 제어하는 데 사용하는 `Double` 값입니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page165..OrderedList17..Paragraph310" = "`angle`은 `Text` 보기를 회전하는 데 사용하는 `Angle` 값입니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page166..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page166..Paragraph311" = "`Text` 보기는 `creature.emoji`를 보기의 문자열 값으로 사용하고 보기의 모양과 동작을 결정하는 여러 제어자를 추가합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page166..OrderedList18..Paragraph312" = "[.colorMultiply](doc://com.apple.documentation/documentation/swiftui/list/colormultiply(_:))는 보기에 색상 곱셈 효과를 추가합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page166..OrderedList18..Paragraph313" = "[.shadow](doc://com.apple.documentation/documentation/swiftui/list/shadow(color:radius:x:y:))는 특정 색상과 반경의 그림자를 추가합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page166..OrderedList18..Paragraph314" = "[.rotation3DEffect](doc://com.apple.documentation/documentation/swiftui/view/rotation3deffect(_:axis:anchor:anchorz:perspective:))는 보기의 회전을 3차원으로 제어할 수 있습니다.";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddColorPicker..title" = "`color` 값을 변경하는 `ColorPicker` 추가하기";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddColorPicker..Page167..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddColorPicker..Page167..Paragraph315" = "이 보기에 상호 작용을 추가하려면 먼저 `Text` 보기 아래에 `ColorPicker` 보기를 추가합니다. 이렇게 하면 새로운 색상이 선택할 때 상태 속성 `color`이 변경됩니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddColorPicker..Page167..Paragraph316" = "스스로 해보고, 문제가 발생한 경우에는 해결 방법을 사용하세요.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddColorPicker..Page168..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddColorPicker..Page168..CodeBlock62" = "ColorPicker(\"Choose a Color\", selection: $color)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddSliderShadowRadius..title" = "그림자 반경을 제어하는 `Slider` 추가하기";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddSliderShadowRadius..Page169..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddSliderShadowRadius..Page169..Paragraph317" = "`ColorPicker`아래에 `shadowRadius` 값을 제어하는 `Slider`를 추가합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddSliderShadowRadius..Page169..Paragraph318" = "스스로 해보고, 문제가 발생한 경우에는 해결 방법을 사용하세요.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddSliderShadowRadius..Page170..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddSliderShadowRadius..Page170..CodeBlock63" = "HStack { \n    Text(\"Shadow\")\n    Slider(value: $shadowRadius)\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..title" = "생명체의 크기를 변경하는 `Button` 추가하기";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page171..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page171..Paragraph319" = "`Slider` 아래에, 사용자가 `Text` 보기를 확대 및 축소하는 데 사용할 수 있는 `Button`을 추가합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page171..OrderedList19..Paragraph320" = "`ConditionalCircle`에서와 같이 `Boolean` 값을 확인하는 새로운 [상태 속성](glossary://state%20property)을 생성합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page171..OrderedList19..Paragraph321" = "불리언 값이 `true`일 때와 `false`일 때의 크기를 결정하기 위해 [세 부분으로 구성된 조건 연산자](glossary://ternary%20conditional%20operator)와 새로운 제어자인 [.scaleEffect](doc://com.apple.documentation/documentation/swiftui/view/scaleeffect(_:anchor:)-pmi7)를 추가합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page171..OrderedList19..Paragraph322" = "`Button` 동작 [클로저](glossary://closure)를 변경하여 불리언 값을 `true`와 `false` 상태 사이에서 토글하세요.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page172..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page172..Paragraph323" = "`ConditionalCircle`의 코드를 다시 살펴보고 이 작업을 완료해 보세요. 도움이 필요하면 다음 힌트를 확인하세요.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page173..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page173..Paragraph324" = "불리언 값을 확인할 수 있도록 [본문](glossary://body) 보기 외부에 [상태 속성](glossary://state%20property)을 생성합니다.";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page173..CodeBlock64" = "@State var isScaled = false\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page174..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page174..Paragraph325" = "[세 부분으로 구성된 조건 연산자](glossary://ternary%20conditional%20operator)를 사용하여 크기를 제어할 수 있도록 `Text` 보기에 `.scaleEffect` 제어자를 추가합니다.";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page174..CodeBlock65" = ".scaleEffect(isScaled ? 1.5 : 1)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page175..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page175..Paragraph326" = "`Button`을 추가하고 `isScaled.toggle()`을 호출하도록 동작을 설정합니다.";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page175..CodeBlock66" = "Button(\"Scale\") { \n    isScaled.toggle()\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskanimateChangesIsScaled..title" = "`isScaled` 변경 사항을 애니메이션으로 생성하기";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskanimateChangesIsScaled..Page176..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskanimateChangesIsScaled..Page176..Paragraph327" = "이 크기 효과는 약간 밋밋합니다. 애니메이션으로 생성하면 더 좋지 않을까요?";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskanimateChangesIsScaled..Page176..Paragraph328" = "`.animation(_:value:)` 제어자를 사용하면 `isScaled` 변수에 대한 변경 사항을 애니메이션으로 생성할 수 있습니다. `.spring(response:dampingFraction:blendDuration:)` 애니메이션을 사용하고 각 매개변수에 `0.5` 값을 전달해 보세요.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskanimateChangesIsScaled..Page177..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskanimateChangesIsScaled..Page177..CodeBlock67" = ".animation(.spring(response: 0.5, dampingFraction: 0.5, blendDuration: 0.5), value: isScaled)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskuseIsScaledRotateView..title" = "`isScaled`를 사용하여 보기 회전하기";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskuseIsScaledRotateView..Page178..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskuseIsScaledRotateView..Page178..Paragraph329" = "코드를 좀 더 흥미롭게 만들어 보려면 `.rotation3DEffect` 제어자의 `angle` 매개변수에 조건 값을 생성한 다음,`isScaled`가 `true`이면 `Angle(degrees: 0)`으로 설정하고, `false`이면 `Angle(degrees: 360)`으로 설정합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskuseIsScaledRotateView..Page178..Paragraph330" = "[세 부분으로 구성된 조건 연산자](glossary://ternary%20conditional%20operator)를 사용하여 이를 수행할 수 있습니다.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskuseIsScaledRotateView..Page179..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskuseIsScaledRotateView..Page179..CodeBlock68" = ".rotation3DEffect(isScaled ? Angle(degrees: 0) : Angle(degrees: 360), axis: (x: 5, y: 2, z: 1))\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcustomizeCreature..title" = "`CreatureDetail` 보기 사용자화하기";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcustomizeCreature..Page180..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcustomizeCreature..Page180..Paragraph331" = "이제 [사용자 상호 작용](glossary://user%20interaction)을 사용하여 보기를 사용자화는 방법을 배웠으므로, [기본 제공 보기](glossary://built-in%20view)를 하나 더 추가하여 사용자가 `Text` 보기를 수정할 수 있도록 해보세요.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcustomizeCreature..Page180..Paragraph332" = "`Slider`를 사용하여 보기의 너비, 높이, 흐림, 대비 또는 채도를 변경하거나 `Button`을 사용하여 `RotationEffect` 또는 원하는 기타 효과를 활성화할 수 있습니다. 여러 가지 실험을 통해 어떤 효과를 생성할 수 있는지 알아보세요.";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..SuccessMessage..Paragraph333" = "아주 잘했어요!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..SuccessMessage..Paragraph334" = "생명체를 보고, 추가하고, 삭제하고, 함께 춤추고, 수정할 있는 모든 기능을 갖춘 앱을 생성했습니다. 이것은 쉬운 작업이 아니기 때문에 스스로를 칭찬해 주세요.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..SuccessMessage..Paragraph335" = "튜토리얼을 성공적으로 완료했지만, 앱을 만드는 방법을 배우기 위한 여정의 시작 부분에 불과합니다. 배운 개념을 더 많이 사용할수록 더 쉽게 기억할 수 있고 더 많은 앱을 생성할 수 있습니다. 다음 몇 가지 실험에서 이 튜토리얼에서 배운 모든 것을 사용하여 자신만의 예제를 작성해 보세요. 행운을 빌게요!";
+
+/* Title of step named Create on Your Own */
+"GuideBook..Guide0..StepCreate on Your Own..title" = "직접 생성하기";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..LearningCenterContent..Paragraph336" = "![](CreateYourOwnCopy.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..LearningCenterContent..Paragraph337" = "상태 및 데이터 흐름에 대한 학습 과정을 완료했습니다. 이제 창의력을 발휘하여 생명체 데이터를 사용하는 새로운 보기를 생성해 보세요.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..LearningCenterContent..Paragraph338" = "여기에서 실험을 완료하면 이 튜토리얼에서 배운 것과 동일한 개념을 사용하여 자신만의 프로젝트를 처음부터 생성해 보세요.";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateYourOwn..title" = "나만의 보기 생성하기";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateYourOwn..Page181..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateYourOwn..Page181..Paragraph339" = "다음 항목을 연습해 보세요.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateYourOwn..Page181..UnorderedList0..Paragraph340" = "`creatures` 배열을 사용하는 새로운 보기를 생성하고 `ContentView`에서 대상으로 연결합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateYourOwn..Page181..UnorderedList0..Paragraph341" = "새로운 [게시된 값](glossary://published%20value)을 `CreatureZoo`에 추가하고 하나 이상의 기존 보기에서 사용합니다.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateYourOwn..Page181..UnorderedList0..Paragraph342" = "각 생명체에 `description` 속성을 할당하고 재미있는 레이아웃에서 설명, 이름 및 이미지를 표시하는 새로운 보기를 생성합니다.";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateNewApp..title" = "나만의 앱 생성하기";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateNewApp..Page182..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateNewApp..Page182..Paragraph343" = "SwiftUI를 사용하여 완전히 새로운 프로젝트를 생각하고 생성해 보세요. 나만의 `NavigationStack`을 구현하여 보기 사이를 이동하고, [상태 속성](glossary://state%20property)을 사용하여 지역에서 보기의 모양을 변경하고, 기본 제공되는 SwiftUI 보기 및 [바인딩](glossary://binding)을 사용하여 사용자 상호 작용을 활성화하고, [관찰 가능한 객체](glossary://observable%20object)를 앱 환경에 전달해 여러 보기에서 데이터를 공유해 보세요. 문제가 발생한 경우에는 이 프로젝트로 돌아와 코드 예제를 살펴보고 발생한 버그를 수정하세요. 여러분은 할 수 있어요!";
+

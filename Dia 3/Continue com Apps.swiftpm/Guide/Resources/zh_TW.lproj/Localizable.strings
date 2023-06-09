@@ -1,0 +1,2013 @@
+/* Title of Guidebook */
+"GuideBook..title" = "繼續製作 App";
+
+/* The title of the intro for this section of the guide */
+"GuideBook..IntroKeep Going with Apps..title" = "繼續製作 App";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..IntroKeep Going with Apps..Paragraph0" = "在「App 使用入門」中，你學習了如何使用 SwiftUI [顯示區](glossary://view)來建立簡單的使用者介面。在 SwiftUI 中，[顯示區](glossary://view)是 [UI](glossary://user%20interface) 的建構基礎，你可以將它們放在彼此內部來拼湊出更複雜的[組合式顯示區](glossary://composed%view)。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..IntroKeep Going with Apps..Paragraph1" = "在這裡，你將學習 SwiftUI 中的[狀態](glossary://state)和[資料流](glossary://data%20flow)。資料流是整個 App 中數值的移動，以及 SwiftUI 如何更新你的 UI 來反映對這些數值的任何更動。重要的是，你將學習如何從呈現它的顯示區中[分離你的 App 資料](glossary://data%20separation)，以及為什麼這樣分離是有用處的。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..IntroKeep Going with Apps..Paragraph2" = "在本教學結束時，你將製作一個功能齊全的 SwiftUI App，使用者可以在其中加入、刪除和修改表情符號生物。現在就開始製作一個 App 吧。";
+
+/* Title of step named Modifying State */
+"GuideBook..Guide0..StepModifying State..title" = "修改狀態";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..LearningCenterContent..Paragraph3" = "![](ModifyingState.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..LearningCenterContent..Paragraph4" = "在程式設計中，[狀態](glossary://state)這個詞彙意指變數目前的值。[狀態更動](glossary://state%20change)是指 App 中的一或多個變數的值發生變化。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..LearningCenterContent..Paragraph5" = "SwiftUI 的一大優勢是它可以在 App 的[狀態更動](glossary://state%20change)時自動更新顯示區的外觀。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..LearningCenterContent..Paragraph6" = "當你將 UI 連接到某些 App 資料時，例如[布林值](glossary://Boolean)或 [String](glossary://String) 值陣列，SwiftUI 可以[觀察](glossary://observe)該資料，隨時在其更動時更新使用該資料的顯示區。這表示你永遠不必編寫任何程式碼來具體告訴你的 UI 要如何或何時更新。";
+
+/* Title for task */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..title" = "使用狀態屬性來更新顯示區";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page0..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page0..Paragraph7" = "在此範例中，當[狀態更動](glossary://state%20change)發生時，SwiftUI 即會更新顯示區的外觀。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page0..Paragraph8" = "點一下預覽中的按鈕。這會在 `true` 和 `false` [狀態](glossary://state)之間切換 `isOn` [屬性](glossary://property)的值，從而導致 `Circle` 顯示區出現、消失和再次出現。";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page1..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page1..Paragraph9" = "當你想要修改一個顯示區的外觀時，首先需要一些資料來追蹤它的[狀態](glossary://state)。你會將這些資料儲存為顯示區的[屬性](glossary://property)。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page1..Paragraph10" = "將你顯示區中的資料視為[真實來源](glossary://source%20of%20truth)，它決定了你的 [UI](glossary://user%20interface) 應該如何顯示。你無需直接修改顯示區，而是修改資料，SwiftUI 將為你更新顯示區。在這裡，你的資料是一個[布林](glossary://Boolean)值，用來決定顯示區是顯示（`true`）還是隱藏（`false`）。";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page2..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page2..Paragraph11" = "重要事項：你只能在顯示區的[主體](glossary://body)之外建立資料。`body` 不是用來建立資料的區域 ❌，它應該只用來宣告你的顯示區外觀。這是製作 App 的核心原則，稱為[資料分離](glossary://data%20separation)。";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page3..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page3..Paragraph12" = "若要讓 SwiftUI 自動更新你的顯示區，你需要告訴它應該為你管理和追蹤哪些顯示區的[屬性](glossary://property)。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page3..Paragraph13" = "為此，請在屬性定義前加入一個稱為[屬性包覆](glossary://property%20wrapper)的特殊語法。在 `isOn` 前面加入 `@State` 屬性包覆會將其變成[狀態屬性](glossary://state%20property)。SwiftUI 會管理這個值並在其[狀態](glossary://state)更改時更新顯示區受影響的部分。";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page4..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page4..Paragraph14" = "那麼你要如何改變 `isOn` 的[狀態](glossary://state)呢？一種常見的方式是透過[使用者互動](glossary://user%20interaction)，例如使用者點按了 `Button`。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page4..Paragraph15" = "若要建立 `Button`，請傳入文字[標籤](glossary://label)（例如「按一下我」）、一個動作[閉包](glossary://closure)以及當你點按按鈕要執行的程式碼區塊。";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page5..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page5..Paragraph16" = "當使用者點一下按鈕時，[閉包](glossary://closure)這個動作會使用 `toggle()` 方法更改 `isOn` 的值。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page5..Paragraph17" = "`toggle()` 如果為 `false` 則會將值更改為 `true`，如果為 `true` 則會更改為 `false`，就像開燈或關燈一樣。";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page6..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page6..Paragraph18" = "這個 `if` 語句使用 `isOn` 作為條件，在 `true` 時會顯示包含的顯示區，在 `false` 時則會隱藏顯示區。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page6..Paragraph19" = "這就是 `isOn` 資料連接到顯示區的方式。它目前的[狀態](glossary://state)決定了 UI 的顯示方式。";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page7..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page7..Paragraph20" = "當你點一下預覽中的按鈕時，即會顯示或隱藏 `if` 語句中的圓形顯示區。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page7..Paragraph21" = "嘗試更改圓圈的顏色並且再點一下按鈕。試著將 `isOn` 的初始值更改為 `true`。你注意到每種情況下有什麼變化嗎？";
+
+/* Title for task */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..title" = "加入一個顯示不同顏色圓圈的 `else` 語句";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page8..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page8..Paragraph22" = "花點時間思考一下，點按按鈕時會如何更新顯示區。當你點按 `Button` 時，你改變了 `isOn` 的[狀態](glossary://state)。SwiftUI 會[觀察](glossary://observe)此一變化，並使用新的值更新顯示區。在你的顯示區[主體](glossary://body)中，你會使用 `if` 語句在 `isOn` 為 `true` 時顯示顯示區，並在 `false` 時隱藏顯示區。";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page9..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page9..Paragraph23" = "當 `isOn` 為 `false` 時，你可以顯示自訂的顯示區，而非不將其顯示。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page9..Paragraph24" = "在 `if` 語句後方加入一個 `else` 語句，讓 `Circle` 顯示不同的顏色。";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page10..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page10..Paragraph25" = "使用以下語法加入一個 `else` 語句，然後加入一個 `Circle` 顯示區並指定其顏色。";
+
+/*  */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page10..CodeBlock0" = "else { \n\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page11..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page11..CodeBlock1" = "else { \n   Circle()\n       .frame(maxHeight: 200)\n       .foregroundColor(.black)\n   //#-learning-code-snippet(addOffText)\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..title" = "在開啟和關閉的顯示區中加入詳細資訊";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page12..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page12..Paragraph26" = "現在你有兩個顯示區，請自定它們來確定哪一個顯示區是「開啟」，哪一個是「關閉」的。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page12..Paragraph27" = "嘗試使用 `Text` 顯示區來標示每一個顯示區。將第一個顯示區標示為「開啟」。";
+
+/*  */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page12..CodeBlock2" = "Text(\"開啟\")\n";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page13..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page13..Paragraph28" = "將第二個顯示區標示為「關閉」。";
+
+/*  */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page13..CodeBlock3" = "Text(\"關閉\")\n";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page14..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page14..Paragraph29" = "最後，讓每一個顯示區呈現不同的形狀，例如 `Rectangle` 或 `Capsule`。";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page15..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page15..CodeBlock4" = "if isOn {\n      Circle()\n          .frame(maxHeight: 200)\n          .foregroundColor(.mint)\n\n      Text(“開啟\")\n} else {\n      Rectangle()\n          .frame(maxHeight: 200)\n          .foregroundColor(.gray)\n\n      Text(“關閉\")\n}\n```";
+
+/* Title for task */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..title" = "加入新的條件顯示區";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page16..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page16..Paragraph30" = "現在，嘗試自己加入一個全新的條件顯示區：";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page16..OrderedList0..Paragraph31" = "在[主體](glossary://body)之外加入一個[狀態屬性](glossary://state%20value)，並且為它指定一個初始布林值。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page16..OrderedList0..Paragraph32" = "建立一個 [if語句](glossary://if%20statement)，若狀態屬性為 `true`，會顯示一個顯示區，若為 `false`，則顯示另一個顯示區。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page16..OrderedList0..Paragraph33" = "建立一個新的 `Button` 並且在每次按下它時，切換你的狀態屬性。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page16..Paragraph34" = "你的條件顯示區是否如預期運作？";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page17..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page17..Paragraph35" = "在繼續之前，請嘗試使用[橡皮鴨方法](glossary://rubber%20ducky%20method)儘可能詳細地解釋條件顯示區程式碼的工作原理。狀態屬性有什麼用途？你的顯示區如何知道何時更新？如果你不記得某事，請返回並試著找出你的知識的遺漏之處。你的橡皮鴨會感謝你的！";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepModifying State..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..SuccessMessage..Paragraph36" = "哇嗚！";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..SuccessMessage..Paragraph37" = "現在你瞭解了如何使用[狀態屬性](glossary://state%20value)來更新 SwiftUI 顯示區的外觀。此狀態屬性是儲存在顯示區的[主體](glossary://body)之外，你會在其中宣告顯示區的 UI。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..SuccessMessage..Paragraph38" = "這是在 SwiftUI 中設計 App 程式的基本原則，始終將 App 資料與顯示它的 UI 分開。這樣做可以讓你保留一個[真實來源](glossary://source%20of%20truth)，並且讓你的 UI 程式易於理解和維護。";
+
+/* Title of step named Using a Conditional Modifier */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..title" = "使用條件修飾符";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..LearningCenterContent..Paragraph39" = "![](UsingAConditionalModifier.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..LearningCenterContent..Paragraph40" = "在前面的範例中，你建立了一個[狀態屬性](glossary://state%20property) `isOn`，它的儲存是由 SwiftUI 管理。透過更改 `isOn` 的[狀態](glossary://state)，你可以有條件地顯示兩個不同顯示區的其中之一。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..LearningCenterContent..Paragraph41" = "但是，如果你只是想更改現有顯示區的外觀，例如 `Circle` 顯示區的顏色或大小，那該怎麼做？為此，你需要寫入一些條件碼，指定如果發生[狀態更動](glossary://state%20change)時，顯示區要如何顯示。";
+
+/* Title for task */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..title" = "有條件地更改顯示區修飾符";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page18..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page18..Paragraph42" = "和前面的顯示區一樣，這個顯示區也使用了[狀態屬性](glossary://state%20property)和 `Button` 來更改 `Circle` 的外觀。但是，這段程式碼有些不同。花點時間試著找出發生了什麼變化，當你認為已經找到時就繼續往前進行。";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page19..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page19..Paragraph43" = "你弄清楚了它是如何運作的嗎？";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page19..Paragraph44" = "當 `isOn` 為 `true` 或 `false` 時，無需製作不同的顯示區，你可以使用包含條件程式碼的[顯示區修飾符](glossary://modifier)來修改單一顯示區的外觀。";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page20..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page20..Paragraph45" = "請注意，`.foregroundColor(_:)` 修飾符包含特殊語法。這稱為[三元條件運算子](glossary://ternary%20conditional%20operator)，這是一種在單行程式碼中建立 `if-else` 語句的簡潔方法。";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page21..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page21..Paragraph46" = "此段程式碼可以這樣解讀：如果 `isOn` 為 `true`，則傳入值 `.yellow`，否則，即傳入 `.black`。";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page21..CodeBlock5" = "isOn ? .yellow : black\n";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page21..Paragraph47" = "一般來說，看起來像這樣：";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page21..CodeBlock6" = "condition ? trueValue : falseValue\n";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page22..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page22..Paragraph48" = "當 isOn 為 true 時，嘗試將圓圈的顏色更改為 .purple，並且在為 false 時更改為較淺色調的綠色像是 .mint。";
+
+/* Title for task */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..title" = "加入一個 `shadow(color:radius:)` 修飾符，在每一種狀態中顯示不同顏色";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page23..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page23..Paragraph49" = "就像 `ConditionalViews` 的範例一樣，SwiftUI 會[觀察](glossary://observe) `isOn` [狀態屬性](glossary://state%20property)。當 `isOn` 的值發生變化時，SwiftUI 會使用 `.foregroundColor(_:)` 修飾符的新值來更新 `Circle` 顯示區。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page23..Paragraph50" = "接下來，試著加入另一個修飾符 `.shadow(color:radius:)`，它會使用 `isOn` 值來更改顯示區的陰影。";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page24..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page24..Paragraph51" = "首先，將修飾符 `.shadow(color:radius:)` 加入 `Circle`。";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page24..CodeBlock7" = ".shadow(color: <#T##Color#>, radius: 20)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page25..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page25..Paragraph52" = "對於修飾符的`color`參數，使用[三元條件運算子](glossary://ternary%20conditional%20operator)來根據`isOn`的[狀態](glossary://state)改變陰影的顏色。";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page26..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page26..Paragraph53" = "三元運算子語法看起來像這樣：";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page26..CodeBlock8" = "isOn ? .indigo : .orange\n";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page26..Paragraph54" = "這個程式碼片段可以這樣解讀：如果 `isOn` 為 `true`，則使用值 `.indigo`，否則，使用值 `.orange`。";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page27..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page27..CodeBlock9" = ".shadow(color: isOn ? .indigo : .orange, radius: 20)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..title" = "當點按按鈕時改變圓圈的縮放";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page28..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page28..Paragraph55" = "是時候該自己嘗試一下了。看看你是否能弄清楚如何使用 `.scaleEffect(_:)` 修飾符和[三元條件運算子](glossary://ternary%20conditional%20operator)來根據 `isOn` 的狀態更改圓圈的比例。";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page29..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page29..Paragraph56" = "首先，將 `.scaleEffect(_:)` 修飾符加入圓圈中。然後，如果 `isOn` 為 `true`，則使用三元運算子指定一個比例，如果為 `false` 則指定另一個比例。";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page29..CodeBlock10" = ".scaleEffect(<#T##s: CGFloat##CGFloat#>)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page30..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page30..CodeBlock11" = ".scaleEffect(isOn ? 1 : 0.75)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..title" = "以動畫呈現狀態更動";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page31..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page31..Paragraph57" = "就像 SwiftUI 知道如何自動更新你的顯示區一樣，它也知道如何根據你更改的值來對顯示區的更動呈現動畫。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page31..Paragraph58" = "為此，請將一個 `.animation(_:value:)` 修飾符附加到你要呈現動畫的顯示區，並選擇一個 `Animation`和值來監控更動。";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page32..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page32..Paragraph59" = "例如，你可以使用預設的動畫來以動畫呈現任何 `isOn` 值的更動。";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page32..CodeBlock12" = ".animation(.default, value: isOn)\n";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page32..Paragraph60" = "當 `isOn` 改變時，由這個值控制的顯示區修改將會以動畫呈現。因為你使用 `isOn` 來決定顯示區的陰影、顏色和比例，所以當值發生變化時，所有這些功能都會以動畫呈現它們的新狀態。";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page33..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page33..CodeBlock13" = ".animation(.default, value: isOn)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page34..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page34..Paragraph61" = "嘗試將預設動畫更改為不同的動畫。`.default` 會為你提供動畫 `.easeInOut`，但你可以將它更改為 `.spring(response:dampingFraction:blendDuration:)` 或 `.linear(duration:)` 來看看動畫如何變化。";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..SuccessMessage..Paragraph62" = "做得好！";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..SuccessMessage..Paragraph63" = "現在你知道了如何使用[狀態屬性](glossary://state%20property)來更改顯示區的外觀，以及如何使用 `.animation(_:value:)` 修飾符來以動畫呈現這些更動。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..SuccessMessage..Paragraph64" = "接下來，你將學習如何使用 SwiftUI [內建顯示區](glossary://built-in%20view)和[綁定](glossary://binding)來在你的 UI 中建立不同類型的狀態更動。";
+
+/* Title of step named SwiftUI Built-in Views */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..title" = "SwiftUI 內建顯示區";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..LearningCenterContent..Paragraph65" = "![](SwiftUIBuilt-inViews.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..LearningCenterContent..Paragraph66" = "SwiftUI 提供了許多[內建顯示區](glossary://built-in%20view)，如滑桿、開關和選擇器；讓其他人可透過與其[互動](glossary://user%20interaction)來更改 App 資料的狀態。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..LearningCenterContent..Paragraph67" = "這些內建顯示區具有與另一個顯示區共享資料的特殊方式，稱為[綁定](glossary://binding)。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..LearningCenterContent..Paragraph68" = "你可以使用這些帶有綁定值的內建顯示區來更改 App 的資料，進而更改你的 App UI。";
+
+/* Title for task */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..title" = "使用綁定";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page35..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page35..Paragraph69" = "到目前為止，你已經使用狀態屬性在[區域](glossary://local%20scope)或在同一顯示區中更改了 UI。這方面的範例是在 `ConditionalCircle` 中定義一個[狀態屬性](glossary://state%20property)，並用它來更改 `ConditionalCircle` 的[主體](glossary://body)中的顯示區外觀。";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page36..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page36..Paragraph70" = "但是，如果你想允許[子顯示區](glossary://subview)更改該資料要怎麼做？例如，如果你的[區域](glossary://local%20scope)顯示區儲存了你的聯絡資訊，則子顯示區可以為你提供自定的[互動](glossary://user%20interaction)來更改聯絡人的電話號碼。但是，要如何允許子顯示區更改資料而不製作多個[真實來源](glossary://source%20of%20truth)呢？";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page37..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page37..Paragraph71" = "在兩個顯示區之間傳遞資料更動的關鍵稱為[綁定](glossary://binding)。綁定能讓你保留單一的真實來源，但允許[子顯示區](glossary://subview)遠端修改該數值。之所以稱為綁定，是因為如[狀態屬性](glossary://state%20property)之類的真實來源會綁定（或連接）到第二個顯示區，並且每當第二個顯示區更改資料時，也會更新真實來源。";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page38..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page38..Paragraph72" = "嘗試在預覽中點一下 `Toggle`。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page38..Paragraph73" = "請注意，當你點按切換時，`Image` 和 `Toggle` 顯示區都會改變它們的外觀。`Toggle` 可以遠端更改[真實來源](glossary://source%20of%20truth)，允許它本身和 `Image` 顯示區共享相同的值，即使它們是兩個獨立的顯示區。";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page39..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page39..Paragraph74" = "這是你的真實來源，一個[狀態屬性](glossary://state%20property)，儲存在[本機](glossary://local%20scope)的 `Bindings` 顯示區中。綁定的真實來源其值必須由 SwiftUI 管理，例如藉由對其加入 `@State` [屬性包覆](glossary://property%20wrapper)。";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page40..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page40..Paragraph75" = "這是內建的 `Toggle` 顯示區。`Toggle` 的 `isOn` 參數會接收一個[綁定](glossary://binding)布林值。這表示切換顯示區知道如何根據一些[使用者互動](glossary://user%20interaction)（例如使用者點按切換開啟或關閉）來更改 `Boolean` 值，並將任何狀態更動傳回給你的區域[真實來源](glossary://source%20of%20truth) `isOn`。";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page41..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page41..Paragraph76" = "若要傳入綁定，請使用 SwiftUI 管理的[狀態屬性](glossary://state%20property)，並在它的前面加上 `$`。傳入 `$isOn` 表示任何時候 `Toggle` 都能從遠端更改數值，[綁定](glossary://binding)會修改真實來源 `isOn`。";
+
+/* Title for task */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..title" = "加入一個 `Color` 類型的新狀態屬性";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page42..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page42..Paragraph77" = "接下來，嘗試使用內建的 `ColorPicker` 顯示區和[綁定](glossary://binding)來更改電池 `Image` 顯示區的顏色。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page42..Paragraph78" = "為此，首先建立一個[狀態屬性](glossary://state%20property) 作為你的 `Color` 值的真實來源。為它指定一個初始值 `Color.primary`。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page42..Paragraph79" = "嘗試自己執行此操作，如果遇到困難，請使用以下提示。";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page43..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page43..Paragraph80" = "使用 `@State` [屬性包覆](glossary://property%20wrapper)來定義一個[屬性](glossary://property)，並為它[指定](glossary://assignment)一個 `Color.primary` 初始值。";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page44..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page44..CodeBlock14" = "@State var color = Color.primary\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..title" = "建立一個 `ColorPicker` 並傳入你的綁定值";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page45..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page45..Paragraph81" = "在你的 `Toggle` 顯示區下方使用以下初始化程式建立一個 `ColorPicker`。使用 `Toggle` 作為範例，自己加入引數。";
+
+/*  */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page45..CodeBlock15" = "ColorPicker(<#T##title: StringProtocol##StringProtocol#>, selection: <#T##Binding<CGColor>#>)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page46..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page46..OrderedList1..Paragraph82" = "為標題傳入一個 `String`，例如「選擇一個顏色」。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page46..OrderedList1..Paragraph83" = "傳入你的綁定值到 `selection`，在顏色[狀態屬性](glossary://state%20property)前面加上一個 `$`。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page46..Paragraph84" = "如果你要在你的 App 中測試 `Bindings` 顯示區，請將它暫時加入 `ContentView`。";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page47..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page47..CodeBlock16" = "ColorPicker(\"Select a Color\", selection: $color) \n";
+
+/* Title for task */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..title" = "將 `Image` 的顏色設定為你的狀態屬性";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page48..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page48..OrderedList2..Paragraph85" = "試著從預覽中的 `ColorPicker` 選擇一種顏色。請注意，選擇器顏色會發生變化，但你的 UI 中沒有其他任何變化。這是因為你的狀態屬性未連接到任何其他[區域](glossary://local%20scope)顯示區。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page48..OrderedList2..Paragraph86" = "現在更改影像顯示區的顏色來更新為選擇器中的顏色。";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page49..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page49..Paragraph87" = "若要更改 `Image` 顯示區的顏色，請加入 `.foregroundColor(_:)` 修飾符並傳入顏色的狀態屬性作為引數。";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page50..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page50..CodeBlock17" = ".foregroundColor(color)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page51..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page51..Paragraph88" = "現在，從顏色選擇器中選擇一個顏色。你的 `Image` 有隨之改變顏色嗎？";
+
+/* Title for task */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..title" = "建立一個當你選取了新的顏色時，即會改變其顏色的 `Text` 顯示區";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..Page52..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..Page52..Paragraph89" = "加入一個 `Text` 顯示區，當你從顏色選擇器中選取一個新的顏色時，該顯示區就會改變顏色。你可以使用 `.foregroundColor(_:)` 修飾符來執行此操作，如同影像一樣。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..Page52..Paragraph90" = "使用 [.font](doc://com.apple.documentation/documentation/swiftui/font) 修飾符並傳入 `.largeTitle` 來為 `Text` 顯示區選擇更大的字體。";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..Page53..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..Page53..Paragraph91" = "將 `.padding()` 加入你的顯示區中，來在一個顯示區和它周圍的所有顯示區之間建立固定的空間。你還可以加入一個 `Spacer()`，這是一個隱形的顯示區，可以變化性地收縮和擴展來使用顯示區之間的可用空間。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..Page53..Paragraph92" = "[填充](doc://com.apple.documentation/documentation/swiftui/view/padding(_:_:))和[墊片](doc://com.apple.documentation/documentation/swiftui/spacer)能讓你製作適應性的顯示區佈局，讓你的顯示區在各種螢幕尺寸上看起來都不錯。請查看[佈局簡單顯示區](doc://com.apple.documentation/documentation/swiftui/laying-out-a-simple-view)以瞭解更多資訊。";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..SuccessMessage..Paragraph93" = "太棒了！";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..SuccessMessage..Paragraph94" = "你現在知道如何使用內建的 SwiftUI 顯示區（如 `ColorPicker`）和[綁定](glossary://binding)來建立自訂的[互動](glossary://user%20interaction)，以更改你的 App 狀態。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..SuccessMessage..Paragraph95" = "結合你對[狀態屬性](glossary://state%20property)的知識，可讓你建立豐富的使用者互動，進而更改 App UI 的外觀。";
+
+/* Title of step named Practice with SwiftUI Built-in Views */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..title" = "使用 SwiftUI 內建顯示區來練習";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..LearningCenterContent..Paragraph96" = "![](PracticeWithSwiftUIBuilt-inViews.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..LearningCenterContent..Paragraph97" = "現在你已經瞭解了狀態屬性、綁定和內建 SwiftUI 顯示區的基礎知識，是時候自己建構一些範例了。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..LearningCenterContent..Paragraph98" = "首先，你將使用一個內建的 `Slider` 顯示區來更改用來控制 `Rectangle` 寬度的[狀態屬性](glossary://state%20property)。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..LearningCenterContent..Paragraph99" = "接下來，你將嘗試使用內建的 `TextField` 顯示區建立故事編輯器，以更改部分 `String` 狀態屬性的值，從而產生有趣的敘述。";
+
+/* Title for task */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..title" = "製作滑桿";
+
+/* title for page */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page54..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page54..Paragraph100" = "製作一個使用內建 `Slider` 的顯示區來更改 `Rectangle` 顯示區的寬度。為此，你需要定義一個新的[狀態屬性](glossary://state%20property)，並將它傳入 `Slider` 作為[綁定](glossary://binding)。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page54..Paragraph101" = "你可以使用 `.frame(width:)` 修飾符來更改顯示區的寬度。請注意：此修飾符接受 [Double](doc://com.apple.documentation/documentation/swift/double) 值（特殊的[類型](glossary://type)數值）。因此，請將你的狀態屬性定義為 `Double`。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page54..Paragraph102" = "花一點時間自己嘗試一下，如果遇到困難，請使用以下提示。";
+
+/* title for page */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page55..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page55..Paragraph103" = "在顯示區的 `body` 上方定義一個 `Double` 類型的狀態屬性。這是你的區域[真實來源](glossary://source%20of%20truth)。";
+
+/*  */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page55..CodeBlock18" = "@State var width : Double = 0\n";
+
+/* title for page */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page56..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page56..Paragraph104" = "使用初始化程式 `Slider(value:)` 建立你的 `Slider`。將[綁定](glossary://binding)傳入你的[狀態屬性](glossary://state%20property)。";
+
+/*  */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page56..CodeBlock19" = "Slider(value: $width)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page57..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page57..Paragraph105" = "建立一個 `Rectangle` 並為它加入一個 `.frame(width:)` 修飾符。由於預設滑桿的值介於 `0` 到 `1` 之間，所以請將寬度乘以較大的數字，以便你能夠發現到值的變化。";
+
+/*  */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page57..CodeBlock20" = "Rectangle()\n    .frame(width: width * 300)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..title" = "創作故事";
+
+/* title for page */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page58..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page58..Paragraph106" = "這裡有另一個你可以嘗試的實驗：";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page58..Paragraph107" = "你可以使用 SwiftUI [TextField](doc://com.apple.documentation/documentation/swiftui/textfield) 依據使用者在欄位中輸入的字元來更改 `String` 值。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page58..OrderedList3..Paragraph108" = "定義多個[狀態屬性](glossary://state%20property)和相應的 `TextField` 顯示區來創作可自訂的故事，並允許使用者輸入他們的姓名、嗜好和最喜歡的食物等資料。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page58..OrderedList3..Paragraph109" = "在文字欄位下方製作一個 `Text` 顯示區，這個顯示區使用[字串插值](glossary://string%20interpolation)將所有的值合併在一起來創作故事。它看起來可能像這樣：";
+
+/*  */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page58..CodeBlock21" = "Text(\"哈囉，我的名字是 \\(name)，我最喜歡的嗜好是 \\(hobby)，我無法停止吃 \\(favoriteFood)！\")\n";
+
+/* title for page */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page59..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page59..Paragraph110" = "額外挑戰：加入一個 `Button` 或 `Toggle` 顯示區，在你點按它時顯示故事。";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..SuccessMessage..Paragraph111" = "你已經掌握到技巧了！";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..SuccessMessage..Paragraph112" = "你現在可以使用狀態屬性來局部處理狀態更動，也可以使用綁定在兩個顯示區之間處理狀態更動。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..SuccessMessage..Paragraph113" = "接下來，你將瞭解如何製作可在 App 的每個顯示區中使用的資料。";
+
+/* Title of step named Navigating in SwiftUI */
+"GuideBook..Guide0..StepNavigating in SwiftUI..title" = "在 SwiftUI 中導覽";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..LearningCenterContent..Paragraph114" = "![](NavigatingInSwiftUI.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..LearningCenterContent..Paragraph115" = "現在你已經掌握了如何在單一 SwiftUI 顯示區中管理狀態的訣竅，是時候開始思考更大的問題了。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..LearningCenterContent..Paragraph116" = "在某些情況下，當你建構 App 時，你會有想要在 2 個或更多顯示區之間共享的資料。因此，即使是[綁定](glossary://binding)也不足以處理這個問題。你不應該嘗試在每個新顯示區中複製資料，因為這樣會很難追蹤，並可能導致你的 App 出錯。相反地，你要學習如何建立和維護單一的[資料模型](glossary://data%20model)，供 App 的多個顯示區使用。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..LearningCenterContent..Paragraph117" = "但在瞭解如何做到這一點之前，你需要知道如何製作有多個顯示區的 App。為此，你將使用 `NavigationSplitView` 或 `NavigationStack`。";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..title" = "建立一個 `NavigationStack`";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page60..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page60..Paragraph118" = "要導覽到不同的顯示區，你需要兩種不同類型導覽顯示區的其中之一：";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page60..OrderedList4..Paragraph119" = "[NavigationStack](doc://com.apple.documentation/documentation/swiftui/navigationstack) 會整理你的顯示區讓它們相互層疊，就像一副紙牌一樣。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page60..OrderedList4..Paragraph120" = "[NavigationSplitView](doc://com.apple.documentation/documentation/swiftui/navigationsplitview) 會將你的顯示區整理在兩個或三個直欄中，讓你從前面的直欄中選擇項目來在後面的直欄中呈現顯示區。";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page61..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page61..Paragraph121" = "這些導覽顯示區中的每一個都是作為[容器](glossary://container)，用於根據使用者在你的 App 中導覽的方式而呈現不同的顯示區，它們只是以稍微不同的方式呈現顯示區。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page61..Paragraph122" = "首先，你會建立一個 `NavigationStack` 來查看它是如何運作的。";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page62..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page62..Paragraph123" = "首先，加入一個裡面包含 `List` 顯示區的 `NavigationStack`。[List](doc://com.apple.documentation/documentation/swiftui/list) 會以一個可捲動的直欄來顯示任何數量的顯示區。";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page62..CodeBlock22" = "NavigationStack { \n   List { \n       Text(\"NavigationStack Content\")\n       //#-learning-code-snippet(addNavLink)\n       //#-learning-code-snippet(addSecondNavLink)\n\n   }\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page63..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page63..Paragraph124" = "檢視你的預覽。你會在 `List` 中看到一個 `Text` 顯示區，而不是其他內容。若要導覽至另一個顯示區，你需要在 `NavigationStack` 中加入一個 [NavigationLink](glossary://navigation%20link)。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page63..Paragraph125" = "那麼，如果 `NavigationLink` 可以帶你到另一個顯示區，為什麼還要花工夫建立 `NavigationStack`？這就像你不能騎沒有輪子的自行車一樣，除非你的連結位於 `NavigationStack` 或 `NavigationSplitView` 內，否則你無法導覽至另一個顯示區。";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..title" = "製作一個導覽連結";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page64..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page64..Paragraph126" = "你的`NavigationStack` 和 `NavigationSplitView` 可以根據使用者與你的 App 互動的方式來顯示不同的內容。若要讓你的導覽顯示區呈現不同的顯示區，請建立一個 [NavigationLink](glossary://navigation%20link)，使用者可點按此按鈕來導覽至獨立的顯示區。";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page65..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page65..Paragraph127" = "`NavigationLink` 必須包含兩個東西：";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page65..OrderedList5..Paragraph128" = "導向[目標顯示區](glossary://destination%20view)的連結。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page65..OrderedList5..Paragraph129" = "[標籤](glossary://label)（按鈕的顯示方式）。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page65..Paragraph130" = "目標可以是任何你想要的顯示區：簡單的像 `Text` 或 `Image` 顯示區，甚至是你自己製作的[組合式顯示區](glossary://composed%20view)。";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page66..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page66..Paragraph131" = "下面的程式碼會建立一個 `NavigationLink`，其中一個 `Text` 顯示區作為[標籤](glossary://label)，一個 `Text` 顯示區作為[目標](glossary://destination%20view)。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page66..Paragraph132" = "嘗試加入下方的 `NavigationLink` 並且在預覽中點一下連結。";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page66..CodeBlock23" = "NavigationLink(\"Push Me!\") { \n   Text(“我是目標顯示區\")\n       .navigationTitle(\"Destination\")\n}\n```";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page67..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page67..Paragraph133" = "再加入一個導覽連結，並嘗試導覽至 `NavigationStack` 中的不同顯示區。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page67..Paragraph134" = "因為 `NavigationStack` 就像一副紙牌，它只會顯示最上面的顯示區。導覽到新的顯示區會將它推到堆疊的頂部，以便可以看到它。";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page67..CodeBlock24" = "NavigationLink(\"No, Push Me!\") { \n   Text(\"我是目標顯示區\")\n       .navigationTitle(\"Destination\")\n}\n```";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..title" = "體驗 `NavigationSplitView`";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page68..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page68..Paragraph135" = "下一步，你將建立一個 `NavigationSplitView` 來將內容顯示為直欄。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page68..Paragraph136" = "你會使用導覽連結作為前導直欄，當點按時，每個連結都會在其後的直欄中顯示一些文字。";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page69..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page69..Paragraph137" = "首先，加入你的 `NavigationSplitView`。你會注意到有兩個部分：第一個部分是分割顯示區的前導直欄，第二個是[暫存區顯示區](glossary://placeholder%20view)顯示了一些臨時內容，直到你選擇其中一個連結。";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page69..CodeBlock25" = "NavigationSplitView { \n    //#-learning-code-snippet(listOfLinks)\n\n} detail: { \n    //#-learning-code-snippet(detailView)\n    \n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page70..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page70..Paragraph138" = "下一步，加入一些連結到你的 `NavigationSplitView`。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page70..Paragraph139" = "如果你的預覽尺寸較小，你可能會注意到顯示區看起來仍然與 `NavigationStack` 相同。嘗試展開預覽來檢視多個直欄。";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page70..CodeBlock26" = "List {\n    NavigationLink(\"First link\") {\n        Text(\"😵‍💫\")\n    }\n    NavigationLink(\"Second link\") {\n        Text(\"😵‍\")\n    }\n    //#-learning-code-snippet(addMoreNavLinks)\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page71..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page71..Paragraph140" = "最後，加入一個[暫存區顯示區](glossary://placeholder%20view)來為你的第二個直欄提供一些初始內容。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page71..Paragraph141" = "你可以在選擇連結之前展開預覽並重新啟動它來檢視此暫存區的內容。";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page71..CodeBlock27" = "Text(\"選擇一個連結\")\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..title" = "體驗 NavigationLinks";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page72..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page72..Paragraph142" = "如果要自訂 `NavigationLink` 的外觀，你可以使用不同的[初始化程式](glossary://initializer)，它會採用自訂[標籤](glossary://label)。";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page73..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page73..Paragraph143" = "下面的程式碼會製作帶有自訂[標籤](glossary://label)的 `NavigationLink`，由一個帶有 `Text` 和 `Image` 顯示區的 `HStack` 組成。與目標內容一樣，標籤可以是你想要的任何顯示區！";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page73..CodeBlock28" = "NavigationLink { \n    SlidingRectangle()\n       .navigationTitle(\"Sliding Rectangle\")\n} label: { \n    HStack { \n        Text(\"點一下來導覽\")\n        Spacer()\n        Image(systemName: \"arrow.forward.circle\")\n            .font(.largeTitle)\n    }\n}\n```";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page74..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page74..Paragraph144" = "嘗試加入一個新的 `NavigationLink`，指定一個目標、標籤和導覽標題。試著導覽至 App 中的其他顯示區之一，如 `ConditionalCircle` 顯示區。";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..title" = "瞭解你的 App 如何呈現顯示區";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page75..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page75..Paragraph145" = "現在你已經體驗了在 `NavigationStack` 和 `NavigationSplitView` 內加入[導覽連結](glossary://navigation%20link)，你的目標是讓 App 的第一個顯示區顯示 `NavigationStack`。加入導覽連結後，就能讓使用者在執行你的 App 時導覽到不同的顯示區。";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page76..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page76..Paragraph146" = "你告訴 App 首先要顯示 App 定義中的哪一個顯示區。在這裡，你可以看到你的 App 預設命名為 `MyApp`，它依循 `App` [協議](glossary://protocol) 的準則，讓它像任何其他 App 一樣在你的裝置上執行。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page76..Paragraph147" = "按下執行按鈕（▶︎）來嘗試將目前的計畫案作為 App 來執行。你應該還看不到太多東西。🙈";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page77..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page77..Paragraph148" = "你的 App 的 `body` 屬性定義了它的內容。現在，你需要知道的是，在 `WindowGroup` 中至少要有一個顯示區，它作為 App [顯示區階層](glossary://view%20hierarchy)的容器，這是在 App 啟動時會顯示的一組顯示區。";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page78..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page78..Paragraph149" = "`ContentView` 是你的[最上層顯示區](glossary://top-level%20view)，也就是你的 App 啟動時所顯示的第一個顯示區。它位於[顯示區階層](glossary://view%20hierarchy)的最上方，是從最上層顯示區分支出來的[子顯示區](glossary://subview)的結構化集合。";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page79..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page79..Paragraph150" = "嘗試暫時將 `ContentView` 更改為其他顯示區，例如 `Text` 或 `Image` 顯示區，然後執行你的 App。請注意，你的 App 的最上層顯示區已更改，這就是你更改 App 顯示內容的方式。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page79..Paragraph151" = "當你準備好時，將你的最上層顯示區改回 `ContentView`。";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..title" = "在你的 App 中加入 `NavigationStack`";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page80..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page80..Paragraph152" = "若要在你的 App 中顯示多個顯示區，你需要將[最上層顯示區](glossary://top-level%20view)轉換成 [NavigationStack](doc://com.apple.documentation/documentation/swiftui/navigationstack)。";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page81..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page81..Paragraph153" = "將 `NavigationStack` 放入 App `body` 的 `SPCAssessableWindowGroup` 內：";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page81..CodeBlock29" = "NavigationStack { \n\n}\n//#-learning-code-snippet(environmentObjectModifier)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page82..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page82..Paragraph154" = "將你的 `ContentView` 放入 `NavigationStack` 內。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page82..Paragraph155" = "放在 `NavigationStack` 內的第一個顯示區會顯示初始內容。此內容可以在你使用[導覽連結](glossary://navigation%20link)顯示新的顯示區時隨時更改。";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page83..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page83..Paragraph156" = "你的 App `body` 現在看起來像這樣：";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page83..CodeBlock30" = "SPCAssessableWindowGroup(app: self, assessmentCandidates: [CreatureZoo()]) { \n   NavigationStack { \n       ContentView()\n   }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..title" = "加入導覽標題";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page84..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page84..Paragraph157" = "執行你的 App。它看起來並沒有太大的不同，不是嗎？這是因為 `NavigationStack` 預設作為一個容器來顯示其內容。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page84..Paragraph158" = "但是，`NavigationStack` 為你提供了一個稱為[導覽列](glossary://navigation%20bar)的專用空間，可以顯示目前顯示區的標題和各種工具列項目。";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page85..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page85..Paragraph159" = "嘗試在 `ContentView` 上加入 `.navigationTitle(\"My Creatures\")` 作為修飾符。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page85..Paragraph160" = "這會在導覽列區域中為顯示區提供一個標題。你是將導覽標題加入到導覽顯示區中的每個顯示區，而不是導覽顯示區本身。";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page85..CodeBlock31" = ".navigationTitle(\"My Creatures\")\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page86..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page86..Paragraph161" = "請注意導覽標題是如何顯示在 `ContentView` 上方的導覽列中。這些標題可幫助你的 App 使用者瞭解他們正在檢視的內容。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page86..Paragraph162" = "接下來，你將加入一個 [NavigationLink](glossary://navigation%20link) 到 `ContentView` 來導覽至 `CreatureDance` 顯示區。";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLinkCreatureDance..title" = "將一個 `NavigationLink` 加入 `CreatureList`";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLinkCreatureDance..Page87..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLinkCreatureDance..Page87..Paragraph163" = "在 `Section(\"Dance\")` 顯示區中加入目標為 `CreatureDance` 的連結。使用標籤和導覽標題來描述顯示區的作用（在這個例子中，它會讓一些生物在周圍跳舞！）。";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLinkCreatureDance..Page88..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLinkCreatureDance..Page88..CodeBlock32" = "NavigationLink(\"Make the Creatures Dance\") { \n    DancingCreatures()\n        .navigationTitle(\"Dancing Creatures\")\n}\n";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepNavigating in SwiftUI..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..SuccessMessage..Paragraph164" = "恭喜！加入導覽是製作 App 的重要部分。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..SuccessMessage..Paragraph165" = "請記住，當你使用 `NavigationLink` 時，它只有在你導覽的顯示區位於 `NavigationStack` 或 `NavigationSplitView` 內時才有效。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..SuccessMessage..Paragraph166" = "接下來，你將學習如何在 App 的所有顯示區之間共享資料。";
+
+/* Title of step named Sharing Data Between Views */
+"GuideBook..Guide0..StepSharing Data Between Views..title" = "在顯示區之間共享資料";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..LearningCenterContent..Paragraph167" = "![](SharingDataBetweenViews.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..LearningCenterContent..Paragraph168" = "你先前學習了如何使用[狀態屬性](glossary://state%20value)在[區域](glossary://local%20scope)以及使用[綁定](glossary://binding)在兩個顯示區之間儲存資料。但是，如果像你現在這樣要具有多個顯示區的 App 中共享資料，該怎麼做？";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..LearningCenterContent..Paragraph169" = "若要在多個顯示區之間共享相同的資料，你需要與顯示區[分離](glossary://data%20separation)的單一真實來源。這就是[資料模型](glossary://data%20model)，它可以與任何需要取用資料的顯示區共享。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..LearningCenterContent..Paragraph170" = "為 SwiftUI App 建構資料模型的常用方法是使用[可觀察的物件](glossary://observable%20object)。可觀察的物件是一個[類型](glossary://type)，其屬性可被多個顯示區[觀察](glossary://observe)。這些顯示區可監視屬性中的狀態更動，從而使它們能更新其 UI 以保持同步。";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..title" = "你的資料模型";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page89..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page89..Paragraph171" = "這是你的資料模型：[可觀察的物件](glossary://observable%20object) `CreatureZoo`。它是一個依循 `ObservableObject` [協定](glossary://protocol)準則的[類別](glossary://class)。這能讓類別[發佈](glossary://publish)部分屬性。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page89..Paragraph172" = "當類別發佈屬性時，屬性會將其狀態的更動廣播（發佈）至任何可能正在監視的[觀測器](glossary://observer)。這可讓[觀察](glossary://observer)顯示區在已發佈的屬性狀態更動時進行更新。";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page90..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page90..Paragraph173" = "`CreatureZoo` 中[發佈的資料](glossary://published%20value)是 `creatures` 屬性，一個 `Creature` 實例的陣列。每當此陣列中的資料改變時（例如加入或刪除生物），SwiftUI 會通知所有屬性[觀測器](glossary://observer)，以便它們可以更新來顯示最新的資料。";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page91..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page91..Paragraph174" = "在可觀察的物件中，你可以加入 `@Published` [屬性包覆](glossary://property%20wrapper)來將屬性標記為[已發佈](glossary://published%20value)。";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page92..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page92..Paragraph175" = "若要建立一個生物實例，請使用初始化程式 `Creature(name:emoji:)` 並傳入一個名稱以及單一的表情符號字元。";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page93..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page93..Paragraph176" = "這是 `Creature` 類型，其中包含 `name`、`emoji`、`offset`、`rotation` 和 `id` 的[屬性](glossary://property)。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page93..Paragraph177" = "`Creature` 依循 `Identifiable` [協定](glossary://protocol)的準則，加入了 `id` 屬性。此協定能讓 SwiftUI 唯一地識別任何 `Creature`，即使兩個生物使用完全相同的表情符號。這會在以後派上用場。";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..title" = "加入更多生物";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page94..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page94..Paragraph178" = "在 `creatures` 陣列中加入最少 2 個新的 `Creature` 實例。";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page95..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page95..Paragraph179" = "若要製作新的生物，請為它命名並傳入單一的表情符號字元來將它[初始化](glossary://initialization)。在陣列中加入生物時，要用逗號將每一個生物的資料分隔開來，例如：";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page95..CodeBlock33" = "Creature(name: \"T-Rex\", emoji: \"🦖\"),\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page96..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page96..Paragraph180" = "在你的陣列中再加入至少一個生物。";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page96..CodeBlock34" = "Creature(name: \"Ladybug\", emoji: \"🐞\"),\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..title" = "建立一個 `StateObject`";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page97..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page97..Paragraph181" = "在不同的顯示區共享你的[可觀察的物件](glossary://observable%20object)之前，你要先探索在單一顯示區中使用資料模型的狀況。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page97..Paragraph182" = "在 `ContentView` 中初始化你的可觀察物件，並使用資料製作一個生物顯示區列表。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page97..Paragraph183" = "若要初始化可觀察的物件（如 `CreatureZoo`）請使用特殊的屬性包覆 `@StateObject`，讓 SwiftUI 能管理資料。";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page97..CodeBlock35" = "@StateObject var data = CreatureZoo()\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page98..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page98..Paragraph184" = "你使用`@StateObject` 屬性包覆告訴 SwiftUI 為你管理可觀察的物件，類似於你如何使用`@State` 讓 SwiftUI 管理顯示區中的屬性作為[狀態屬性](glossary://state%20property)。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page98..Paragraph185" = "在這個例子中，你正在初始化可觀察的物件 `CreatureZoo`，並要求 SwiftUI 將其作為[狀態物件](glossary://state%20object)來進行管理。";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..title" = "在顯示區中使用模型資料";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page99..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page99..Paragraph186" = "將資料初始化之後，你會使用它來製作基本顯示區。你將在 `List` 內加入一個 [ForEach](glossary://ForEach) 顯示區，以便在直欄佈局中垂直顯示每一個生物。";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page100..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page100..Paragraph187" = "[ForEach](glossary://ForEach) 是一種結構，它在會在資料[集合](glossary://collection)（例如陣列）上[反覆運算](glossary://iteration)，為集合中的每一個元件製作顯示區。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page100..Paragraph188" = "在 `Section` 顯示區下方加入 `ForEach` 來反覆運算你的 `data.creatures` 陣列，製作自訂顯示區以顯示每個生物的名稱和表情符號：";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page100..CodeBlock36" = "/*#-code-walkthrough(forEach.id)*/\nForEach(data.creatures) { creature in \n/*#-code-walkthrough(forEach.id)*/\n    HStack { \n        Text(creature.name)\n            .font(.title)\n        Spacer()\n        Text(creature.emoji)\n            /*#-code-walkthrough(resizableFont)*/\n            .resizableFont()\n            /*#-code-walkthrough(resizableFont)*/\n            .frame(minWidth: 125)\n    }\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page101..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page101..Paragraph189" = "還記得 `Creature` 是如何依循 `Identifiable` 協定的準則嗎？這能讓 [ForEach](glossary://ForEach) 架構可以唯一地識別每個生物，即使它們具有完全相同的表情符號字元和名稱。因為它甚至可以精確的區分雙胞胎，這使得 SwiftUI 能夠獨立更新每個顯示區，而不會混淆在一起。";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page102..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page102..Paragraph190" = "你可能已經注意到這裡使用的 `.resizableFont()` 修飾符。這是在 `ResizableFont.swift` 中定義的自訂修飾符，能讓你的 `Text` 顯示區字體放大以符合顯示區的大小。請查看檔案中的程式碼以瞭解如何製作自訂修飾符。";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..title" = "讓你的模型資料能讓整個 App 取用";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page103..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page103..Paragraph191" = "現在你已經在單一顯示區中成功使用了可觀察的物件資料，是時候從 `MyApp.swift` 與整個 App共享這些資料了。";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page104..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page104..Paragraph192" = "若要讓你的資料可供整個 App 取用：";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page104..OrderedList6..Paragraph193" = "在 `MyApp` 中建立一個 `CreatureZoo` 實例作為[狀態物件](glossary://state%20object)。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page104..OrderedList6..Paragraph194" = "傳入你的[最上層顯示區](glossary://top-level%20view) `NavigationStack` 作為[環境物件](glossary://environment%20object)。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page104..Paragraph195" = "藉由將資料傳送到最上層顯示區，環境物件會讓資料可用於整個[顯示區階層](glossary://view%20hierarchy)，因此所有其他顯示區都可以使用這些資料。";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page105..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page105..Paragraph196" = "建立你的 `AppData` 實例，就像你在 `CreatureZoo` 中所做的一樣：";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page105..CodeBlock37" = "@StateObject var data = CreatureZoo()\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page106..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page106..Paragraph197" = "在 `NavigationStack` 下方加入以下修飾符`：";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page106..CodeBlock38" = ".environmentObject(data)\n";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page106..Paragraph198" = "這會將[可觀察的物件](glossary://observable%20object)實例傳送到 App的[環境](glossary://environment)，供任何[子顯示區](glossary://subview)取用。";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page107..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page107..Paragraph199" = "接下來，你將返回到 `ContentView.swift` 來嘗試使用環境物件。";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..title" = "取用環境物件";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page108..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page108..Paragraph200" = "現在，你已經和 `NavigationStack` 的所有[子顯示區](glossary://subview)共享可觀察物件，包含`ContentView`，是時候來取用資料了。";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page109..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page109..Paragraph201" = "你需要取用傳入 App [環境](glossary://environment)的實例，而不是使用能建立可觀察物件新實例的 `@StateObject`：";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page109..OrderedList7..Paragraph202" = "刪除你目前的 `@StateObject` 變數 `data`。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page109..OrderedList7..Paragraph203" = "若要取用你的[環境物件](glossary://environment%20object)，請使用 `CreatureZoo` 類型的 `@EnvironmentObject` 屬性包覆建立一個新的屬性。";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page109..CodeBlock39" = "@EnvironmentObject var data : CreatureZoo\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page110..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page110..Paragraph204" = "在 `ContentView` 預覽中檢查你的生物列表。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page110..Paragraph205" = "請注意，生物應該如同往常一樣出現。生物列表中的資料是在 `MyApp` 中建立的，透過 App [環境](glossary://environment)共享，並在 `ContentView` 中取用。";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..title" = "用組合式的 `CreatureRow` 顯示區來取代你的 `HStack`";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page111..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page111..Paragraph206" = "你有一個很好的機會來改進你的程式碼。你可以用[組合式顯示區](glossary://composed%20view)`CreatureRow` 來取代 [ForEach](glossary://ForEach) 架構內的整個 `HStack`，藉此簡化這個顯示區中的代碼。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page111..Paragraph207" = "刪除 `ForEach` 中 `HStack` 的內容，並且用 `CreatureRow(creature: creative)` 來取代它。";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page112..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page112..Paragraph208" = "看一下 `CreatureRow.swift`，它包含與你在 `ForEach` 中使用的相同程式碼，除了儲存 `Creature` 值的[屬性](glossary://property)。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page112..Paragraph209" = "現在你有 `CreatureRow` 作為它自己的顯示區，它就能更容易地與 `ContentView` 分開修改和測試。組合出這樣的顯示區可以改進你的程式碼[模組化](glossary://modularity)，這是製作 App 的基本原則。";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page113..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page113..CodeBlock40" = "ForEach(data.creatures) { creature in \n   CreatureRow(creature: creature)\n}\n";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepSharing Data Between Views..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..SuccessMessage..Paragraph210" = "太棒了！";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..SuccessMessage..Paragraph211" = "藉由將一個可觀察的物件傳入到 App 環境中，你可以將該項資料的取用權限授予整個[顯示區階層](glossary://view%20hierarchy)。這能讓你的 App 中的任何其他顯示區都可以使用相同的[真實來源](glossary://source%20of%20truth)，而不是嘗試在多個位置中重新建立資料。";
+
+/* Title of step named Create a New View To Share Data */
+"GuideBook..Guide0..StepCreate a New View To Share Data..title" = "製作一個新的顯示區來共享資料";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..LearningCenterContent..Paragraph212" = "![](CreateANewViewToShareData.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..LearningCenterContent..Paragraph213" = "現在你已經成功地與一個顯示區共享資料，是時候在其他顯示區中使用相同的資料了。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..LearningCenterContent..Paragraph214" = "為此，你需要做兩件事：";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..LearningCenterContent..OrderedList8..Paragraph215" = "確定取用資料顯示區與傳入的最上層顯示區屬於同一個[顯示區階層](glossary://view%20hierarchy)。你可以透過在[最上層顯示區](glossary://top-level%20view)或其任何[子顯示區](glossary://subview)中初始化顯示區來將顯示區加入顯示區階層中。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..LearningCenterContent..OrderedList8..Paragraph216" = "取用[環境物件](glossary://environment%20object)。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..LearningCenterContent..Paragraph217" = "例如，若你在 `ContentView` 內製作了一個新的顯示區，這個新顯示區將成為顯示區階層的一部分，因為 `ContentView` 是你的最上層顯示區 `NavigationStack` 的子顯示區。之後，你可以從新的顯示區取用環境物件。";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..title" = "宣告環境物件";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page114..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page114..Paragraph218" = "你的目標是建構出一個新的顯示區 `DancingCreatures`，它會取用 App [環境](glossary://environment)中的資料。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page114..Paragraph219" = "`DancingCreatures` 已經是[顯示區階層](glossary://view%20hierarchy)的一部分，你在 `ContentView` 中加入了指向它的連結。你的下一步就是取用 App 環境中的資料。";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page115..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page115..Paragraph220" = "若要取用 App 環境中的資料，請宣告 `CreatureZoo` 的環境物件，就像你在 `CreatureList` 中所做的一樣。如果需要協助，請回去看一下之前的其他程式碼。";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page116..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page116..Paragraph221" = "使用 `@EnvironmentObject` 屬性包覆來[宣告](glossary://declaration)變數，並為其指定 `CreatureZoo` 的類型。你不需要[初始化](glossary://initialization)這個值，因為它已經在 `MyApp` 中初始化。你只需要在此處取用資料。";
+
+/*  */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page116..CodeBlock41" = "@EnvironmentObject var data : CreatureZoo\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesView..title" = "加入一個 `DancingCreatures` 顯示區";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesView..Page117..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesView..Page117..Paragraph222" = "現在你可以取用你的 App 資料了。是時候用來建構一些有趣的東西了。首先，你將所有的生物堆疊在一起；然後，每當你點按它們時，它們就會朝不同的方向散開來。";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesView..Page118..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesView..Page118..Paragraph223" = "在你的 `VStack` 內加入這段程式碼`：";
+
+/*  */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesView..Page118..CodeBlock42" = "ZStack {\n    /*#-code-walkthrough(dance.forEach)*/\n    ForEach(data.creatures) { creature in\n    /*#-code-walkthrough(dance.forEach)*/\n        /*#-code-walkthrough(dance.textView)*/\n        Text(creature.emoji)\n            .resizableFont()\n            .offset(creature.offset)\n            .rotationEffect(creature.rotation)\n        /*#-code-walkthrough(dance.textView)*/\n        //#-learning-code-snippet(exp1)\n        //#-learning-code-snippet(animationSolution)\n        //#-learning-code-snippet(exp3)\n\n    }\n}\n/*#-code-walkthrough(dance.onTap)*/\n.onTapGesture {\n    data.randomizeOffsets()\n}\n/*#-code-walkthrough(dance.onTap)*/\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..title" = "瞭解動畫程式碼";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page119..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page119..Paragraph224" = "為了製作這個動畫，[ForEach](glossary://ForEach)會反覆運算 `CreatureZoo.creatures` 中的每個生物，為每個生物製作一個 `Text` 顯示區。";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page120..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page120..Paragraph225" = "`Text` 顯示區使用生物的 `offset` 和 `rotation` [屬性](glossary://property)作為 `.offset` 和 `.rotationEffect` 修飾符的引數。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page120..Paragraph226" = "因為 `CreatureZoo.creatures` 是一個[發佈的數值](glossary://published%20value)，每當生物的 `offset` 或 `rotation` 改變時，SwiftUI 即會更新 `DancingCreatures` 顯示區。";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page121..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page121..Paragraph227" = "`.onTapGesture` 修飾符會在你每次點按顯示區時執行一些程式碼。點按時，`data.randomizeOffsets()` 會改變每個生物的 `offset` 和 `rotation` 值，允許顯示區將每個生物更新到其新的位置和旋轉。";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..title" = "以動畫呈現生物";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page122..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page122..Paragraph228" = "試著點一下顯示區。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page122..Paragraph229" = "這些生物正在移動，但是看起來不是很有趣。接下來，你將用動畫讓它們移動到新的位置，以呈現更動感的氛圍。";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page123..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page123..Paragraph230" = "若要用動畫讓它們移動到新的位置，你需要告訴 SwiftUI 該使用哪一個動畫以及要用動畫呈現哪個數值。在這個例子中，你要用動畫呈現生物的 `offset` 屬性。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page123..Paragraph231" = "將 `.animation(_:value:)` 修飾符附加到 `Text` 顯示區。選擇 `.default` 作為動畫參數，並為數值傳入 `creature.offset`。每當 `offset` 改變時，即會以動畫呈現顯示區的變化。";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page124..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page124..CodeBlock43" = ".animation(.default, value: creature.offset)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..title" = "體驗你的顯示區";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page125..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page125..Paragraph232" = "現在你已經為你的生物製作動畫了，試著調整動畫和顯示區的其他部分，讓它變得更有趣。";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page126..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page126..Paragraph233" = "透過加入一個新的 `.animation(_:value:)` 修飾符來以動畫呈現 `creature.rotation` 屬性的更動。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page126..Paragraph234" = "在 `.animation(_:value)` 修飾符的前面加入以下修飾符。動畫有什麼改變？你為什麼認為這有所改變？如果在上面的修飾符後方放置 `.spring()` 動畫，這樣會發生什麼事？";
+
+/*  */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page126..CodeBlock44" = ".animation(.spring(response: 0.5, dampingFraction: 0.5), value: creature.rotation)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page127..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page127..Paragraph235" = "將 `.onTapGestures` 的事件處理器更改為 `data.synchronizeOffsets()`。這會導致所有生物將移動到相同的位移。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page127..OrderedList9..Paragraph236" = "移除 `creature.offset` 目前的 `.animation` 修飾符。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page127..OrderedList9..Paragraph237" = "加入以下動畫來讓每個動畫少量延遲。";
+
+/*  */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page127..CodeBlock45" = ".animation(.default.delay(data.indexFor(creature) / 10), value: creature.offset)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page128..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page128..Paragraph238" = "持續調整你的動畫值，直到你對結果滿意為止！";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepCreate a New View To Share Data..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..SuccessMessage..Paragraph239" = "做得好！";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..SuccessMessage..Paragraph240" = "你已經成功製作了另一個顯示區，這個顯示區使用與[顯示區階層](glossary://view%20hierarchy)共享的可觀察[資料模型](glossary://data%20model)。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..SuccessMessage..Paragraph241" = "接下來，你將學習如何從資料模型加入和刪除資料，讓使用者可自訂 App。";
+
+/* Title of step named Add and delete creatures */
+"GuideBook..Guide0..StepAdd and delete creatures..title" = "加入和刪除生物";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..LearningCenterContent..Paragraph242" = "![](AddAndDeleteCreatures.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..LearningCenterContent..Paragraph243" = "你現在擁有一個跨越多個顯示區共享單一[資料模型](glossary://data%20model)的多顯示區 App。但是 App 還沒有完成。即使你可以在程式碼中加入或刪除 `Creature`，[使用者](glossary://user)還是無法透過 UI 來加入或刪除生物。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..LearningCenterContent..Paragraph244" = "幸運的是，這很容易解決。由於你可以從顯示區取用資料模型，因此你能夠在使用者與 UI 互動時更改資料模型。首先，你將學習刪除一個生物，然後製作一個新的顯示區來讓使用者加入自己的新生物。";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..title" = "刪除生物";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page129..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page129..Paragraph245" = "SwiftUI 能讓你直接從 `List` 中刪除資料。你可以透過在 `ContentView` 的 `ForEach` 迴圈中加入 `.onDelete` 修飾符來刪除生物。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page129..Paragraph246" = "當使用者決定刪除項目時，加入 `.onDelete` 修飾符能讓你執行一些自訂程式碼（一個 `action` [閉包](glossary://closure)）。你的閉包程式碼會從 App 的可觀察[資料模型](glossary://data%20model)中刪除目前的生物。";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page130..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page130..Paragraph247" = "在 `.onDelete` [閉包](glossary://closure)中，你將藉由呼叫 `remove(atOffsets:)` 並從閉包中傳入值 `indexSet` 來刪除目前的生物。這會根據你選擇刪除的列表橫列在 `creatures` 陣列中找到對應的生物。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page130..Paragraph248" = "嘗試在 `ForEach` 迴圈下方加入此修飾符並執行你的 App。在生物上向左滑動是否能刪除它？";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page130..CodeBlock46" = ".onDelete { indexSet in \n    data.creatures.remove(atOffsets: indexSet)\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..title" = "將一個 `NavigationLink` 加入 `CreatureEditor`";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page131..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page131..Paragraph249" = "若要加入新的生物，你需做兩件事：";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page131..OrderedList10..Paragraph250" = "使用 `NavigationLink` 將 `CreatureEditor` 加入你的[顯示區階層](glossary://view%20hierarchy)。這能讓 `CreatureEditor` 取用你的 `CreatureZoo` 環境物件，並允許使用者導覽至顯示區。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page131..OrderedList10..Paragraph251" = "[組合](glossary://composed%20view) `CreatureEditor` 顯示區來允許使用者編輯和加入新的生物到 `CreatureZoo` 中的 `creatures` 陣列。";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page132..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page132..Paragraph252" = "首先決定要將 `NavigationLink` 加入到 `CreatureEditor` 的哪個位置。因為你已經有一個可以在 `ContentView` 中刪除的生物的 `List` 顯示區，因此從同一顯示區加入生物是合理的。";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page133..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page133..Paragraph253" = "為了能容易地取用生物的編輯，請在 `ContentView` UI 的[導覽列](glossary://navigation%20bar)中放置一個連接。這是此類連結的理想位置，因為它位於使用者熟悉的位置，可在此尋找 App 的附加功能。";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page134..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page134..Paragraph254" = "若要將按鈕加入導覽列：";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page134..OrderedList11..Paragraph255" = "藉由將 `.toolbar` 修飾符附加到 `List` 顯示區來加入自定的導覽列。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page134..OrderedList11..Paragraph256" = "在 `.toolbar` 閉包內加入一個 `ToolbarItem`。這是你可以放入工具列的項目。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page134..OrderedList11..Paragraph257" = "將 `NavigationLink` 加入 `ToolbarItem` 內的 `CreatureEditor`。這是你會在導覽列中看到的顯示區。";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page134..CodeBlock47" = ".toolbar { \n    ToolbarItem { \n        // Add NavigationLink to CreatureEditor\n\n    }\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page135..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page135..CodeBlock48" = ".toolbar { \n    ToolbarItem { \n        NavigationLink(\"Add\") { \n            CreatureEditor()\n        }\n    }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..title" = "將導覽標題加入 `CreatureEditor`";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..Page136..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..Page136..Paragraph258" = "接下來，為 `CreatureEditor` 指定一個導覽標題，說明顯示區的用途。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..Page136..OrderedList12..Paragraph259" = "將導覽標題加入 `CreatureEditor` 顯示區。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..Page136..OrderedList12..Paragraph260" = "執行你的 App 並測試從 `ContentView` 導覽至 `CreatureEditor`。";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..Page137..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..Page137..CodeBlock49" = ".toolbar { \n    ToolbarItem { \n        NavigationLink(\"Add\") { \n            CreatureEditor()\n                .navigationTitle(\"Add Creature\")\n        }\n    }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..title" = "定義 `CreatureEditor` 資料";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page138..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page138..Paragraph261" = "為了加入新的生物，你將會製作一個[組合式顯示區](glossary://composed%20view) `CreatureEditor`，它可讓你編輯新的生物並將其加入你的[資料模型](glossary://data%20model)。";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page139..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page139..Paragraph262" = "花點時間思考一下你需要在 `CreatureEditor` 中使用哪些[屬性](glossary://property)來建立一個新的 `Creature` 實例，並將其加入你的資料模型中。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page139..OrderedList13..Paragraph263" = "你將需要一個可以在[區域](glossary://local%20scope) `CreatureEditor` 顯示區中修改的 `Creature` 屬性。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page139..OrderedList13..Paragraph264" = "你需要從[環境](glossary://environment)中取用你的 `CreatureZoo` [可觀察的物件](glossary://observable%20object)，以便將 `Creature` 實例加入其中。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page139..Paragraph265" = "嘗試建立兩個可以實現這些目標的屬性，如果遇到困難，請使用以下提示。";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page140..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page140..Paragraph266" = "首先，建立一個儲存 `Creature` 實例的[狀態屬性](glossary://state%20property)。你可以先讓它的 `name` 和 `emoji` 參數留空。";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page141..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page141..Paragraph267" = "接下來宣告一個類型 `CreatureZoo` 的[環境物件](glossary://environment%20object)來取用你的[可觀察的物件](glossary://observable%20object)實例。";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page142..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page142..CodeBlock50" = "@State var newCreature : Creature = Creature(name: \"\", emoji: \"\")\n@EnvironmentObject var data : CreatureZoo \n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineYourView..title" = "在 CreatureEditor 中製作表單";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineYourView..Page143..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineYourView..Page143..Paragraph268" = "若要建構 `CreatureEditor` 顯示區，你可以使用內建的 `Form` 顯示區，它十分適合用來處理資料項目。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineYourView..Page143..Paragraph269" = "你會在 `Form` 的內部加入三個 `Section` 顯示區：分別用來編輯生物的名稱、表情符號和預覽。";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineYourView..Page143..CodeBlock51" = "Form {\n    Section(\"Name\") {\n        //#-learning-code-snippet(addACreatureEditorTextField)\n\n    }   \n\n    Section(\"Emoji\") {\n        \n    }\n\n    Section(\"Creature Preview\") {\n        CreatureRow(creature: newCreature)\n    }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..title" = "加入 `TextField` 顯示區供使用者輸入";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page144..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page144..Paragraph270" = "接下來，你需要加入一個方法讓[使用者](glossary://user)編輯 `Creature` [狀態屬性](glossary://state%20property) 的 `name` 和 `emoji` 值。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page144..Paragraph271" = "你可以透過加入 [TextField](doc://com.apple.documentation/documentation/swiftui/textfield) 顯示區來完成此操作，此顯示區能讓使用者輸入一些文字。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page144..Paragraph272" = "加入兩個 `TextField` 顯示區來編輯生物的 `name` 和 `emoji` 值。使用 `TextField(_:text:)` 初始化程式，它接受[標籤](glossary://label)和[綁定](glossary://binding) `String` 值的引數。";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page145..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page145..Paragraph273" = "記住，綁定需要由 SwiftUI 管理的真實來源，例如[狀態屬性](glossary://state%20property)。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page145..Paragraph274" = "將綁定傳入你的 `Creature` 狀態屬性，並且指定 `name` 和 `emoji` 值，像這樣：";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page145..CodeBlock52" = "$newCreature.name\n$newCreature.emoji\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page146..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page146..Paragraph275" = "這個範例說明如何加入 `TextField`。加入一個 `TextField` 來編輯 `newCreature.name` 並且加入另一個來編輯 `newCreature.emoji`。";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page146..CodeBlock53" = "TextField(\"Name\", text: $newCreature.name)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page147..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page147..CodeBlock54" = "Form {\n    Section(\"Name\") {\n        TextField(\"Name\", text: $newCreature.name)\n    }   \n\n    Section(\"Emoji\") {\n        TextField(\"Emoji\", text: $newCreature.emoji)\n    }\n\n    Section(\"Creature Preview\") {\n        CreatureRow(creature: newCreature)\n    }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..title" = "在工具列中放置一個加入按鈕";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page148..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page148..Paragraph276" = "接下來，你需要加入一個 `Button` 讓使用者點按來加入他們自己的新生物。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page148..Paragraph277" = "就像在 `ContentView` 中一樣，放置像這樣按鈕的最佳位置就是在 `CreatureEditor` 的[導覽列](glossary://navigation%20bar)中。";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page149..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page149..Paragraph278" = "嘗試使用來自 `ContentView` 的 `.toolbar` 程式碼作為範例來加入工具列到 `CreatureEditor`：";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page149..OrderedList14..Paragraph279" = "在 `VStack` 下方加入 `.toolbar` 修飾符。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page149..OrderedList14..Paragraph280" = "在工具列內加入一個 `ToolbarItem`。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page149..OrderedList14..Paragraph281" = "在 `ToolbarItem` 內加入一個帶有[標籤](glossary://label)讀作「加入」的 `Button`。你目前可以讓 `Button` 的動作[閉包](glossary://closure)留空。";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page150..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page150..CodeBlock55" = ".toolbar { \n    ToolbarItem { \n        Button(\"Add\") { \n            //#-learning-code-snippet(addCreatureToCreatureZoo)\n            //#-learning-code-snippet(dismissCall)\n        }\n    }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..title" = "將你的生物加入 `CreatureZoo`";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page151..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page151..Paragraph282" = "當你點一下「加入」按鈕時，你希望將你的生物實例加入可觀察的物件 `CreatureZoo` 中。具體來說，你希望將生物附加到 `creatures` 陣列中。";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page152..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page152..Paragraph283" = "以下程式碼會將正在編輯的生物加入 `data.creatures`。請記住，`creatures` 是一個[發佈的數值](glossary://published%20value)，因此對該數值的任何更動都會導致使用該項資料的所有顯示區自動更新。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page152..Paragraph284" = "將這段程式碼加入你的 `Button` 動作[閉包](glossary://closure)。";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page152..CodeBlock56" = "data.creatures.append(newCreature)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page153..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page153..Paragraph285" = "執行你的程式碼並嘗試加入新的生物。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page153..Paragraph286" = "導覽回到 `ContentView` 來看看是否已將新的生物加入了 `List` 顯示區。而且是否也加入了 `DancingCreatures` 顯示區？";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..title" = "當你點按「加入」時關閉編輯器";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page154..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page154..Paragraph287" = "加入生物後，你的 `CreatureEditor` 顯示區會關閉，顯示你導覽的上一個顯示區。這是一種更好的使用者體驗，它可以避免你多次點按「加入」按鈕，重複加入相同的生物。";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page155..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page155..Paragraph288" = "若要關閉顯示區，你需要兩樣東西：";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page155..OrderedList15..Paragraph289" = "宣告[環境](glossary://environment)值 `dismiss` 它可讓 App 關閉目前顯示在 `NavigationStack` 中的顯示區。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page155..OrderedList15..Paragraph290" = "點一下「加入」按鈕時[呼叫](glossary://call) `dismiss()`。";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page155..CodeBlock57" = "@Environment(\\.dismiss) var dismiss\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page156..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page156..Paragraph291" = "在你宣告[環境](glossary://environment)值 `dismiss` 後，當你將新生物加入 `data.creatures` 時，點按「加入」來呼叫 `dismiss()`。";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page156..CodeBlock58" = "dismiss()\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page157..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page157..CodeBlock59" = ".toolbar { \n    ToolbarItem { \n        Button(\"Add\") { \n            data.creatures.append(newCreature)\n            dismiss()\n        }\n    }\n}\n";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepAdd and delete creatures..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..SuccessMessage..Paragraph292" = "恭喜！你已經製作了一個功能完整的 App！";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..SuccessMessage..Paragraph293" = "你可以加入新生物，在 `CreatureList` 中檢視和編輯它們，並在 `DancingCreatures` 中觀看它們跳舞。";
+
+/* Title of step named Add a `CreatureDetail` view */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..title" = "加入一個 `CreatureDetail` 顯示區";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..LearningCenterContent..Paragraph294" = "![](AddCreatureDetailView.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..LearningCenterContent..Paragraph295" = "現在你已經知道如何在顯示區之間導覽、管理[區域](glossary://local%20scope)狀態更動、在整個 App 之間共享資料以及使用各種[內建 SwiftUI 顯示區](glossary://built-in%20view)，是時候測試你的技巧來建立新的顯示區了：`CreatureDetail` 這個顯示區會顯示你列表中單一生物的詳細資訊。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..LearningCenterContent..Paragraph296" = "你的生物列表看起來很不錯，但需要更多的互動性。如果你不能修改它們，擁有這些全部生物有什麼好處？";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..title" = "將一個 `NavigationLink` 加入 `CreatureDetail`";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page158..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page158..Paragraph297" = "你的目標是讓你的 [ForEach](glossary://ForEach) 迴圈的每個顯示區變成它自己的 `NavigationLink`，每個顯示區都會導覽至你的 `data.creatures` 陣列中一個生物的詳細顯示區。";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page159..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page159..Paragraph298" = "為此，請用 `NavigationLink` 取代 `ForEach` 迴圈目前的內容：";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page159..OrderedList16..Paragraph299" = "將[目標](glossary://destination%20view)設為[組合式顯示區](glossary://composed%20view) `CreatureDetail(creature: creature)`。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page159..OrderedList16..Paragraph300" = "製作 `CreatureRow` 的[標籤](glossary://label)，使用來自[閉包](glossary://closure)的 `creature` 值作為[引數](glossary://argument)。";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page160..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page160..Paragraph301" = "製作像這樣的導覽連結並將它加入 `ForEach` 內：";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page160..CodeBlock60" = "NavigationLink {\n    CreatureDetail(creature: creature)\n        .navigationTitle(creature.name)\n} label: {\n    CreatureRow(creature: creature)\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page161..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page161..Paragraph302" = "你的 `ForEach` 看起來應該像這樣：";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page161..CodeBlock61" = "ForEach(data.creatures) { creature in \n    NavigationLink {\n        CreatureDetail(creature: creature)\n            .navigationTitle(creature.name)\n    } label: {\n        CreatureRow(creature: creature)\n    }  \n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page162..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page162..Paragraph303" = "試著點一下 `List` 中的一列。它現在會帶你前往該生物的 `CreatureDetail` 顯示區。";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..title" = "建構你的 `CreatureDetail` 顯示區";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page163..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page163..Paragraph304" = "`CreatureDetail` 顯示區將選取的生物顯示為 `Text` 顯示區。你的工作是瞭解現有的程式碼並在其之上建構和創造一些很酷的生物效果。";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page164..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page164..Paragraph305" = "在 `ContentView` 中，你建立了一個[目標](glossary://destination%20view)為 `CreatureDetail(creature: creature)` 的 `NavigationLink`。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page164..Paragraph306" = "目標顯示區使用列表中每一列的 `Creature` 值來產生不同的顯示區，主要取決於你點按的生物。在這裡，該值儲存為非狀態[常數](glossary://constant)，因為該值在此顯示區中不會改變。";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page165..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page165..Paragraph307" = "已經為你定義了三個[狀態屬性](glossary://state%20property)：";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page165..OrderedList17..Paragraph308" = "`color` 會使用 `Color` 值，並且會控制 `Text` 顯示區的顏色修改。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page165..OrderedList17..Paragraph309" = "`shadowRadius` 是一個 `Double` 值，你可以用它來控制 `.shadow` 修飾符的半徑。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page165..OrderedList17..Paragraph310" = "`angle` 是一個 `Angle` 值，你可以用它來旋轉 `Text` 顯示區。";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page166..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page166..Paragraph311" = "你的 `Text` 顯示區使用 `creature.emoji` 作為顯示區的 String 值，並且加入了幾個決定顯示區外觀和動作的修飾符：";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page166..OrderedList18..Paragraph312" = "[.colorMultiply](doc://com.apple.documentation/documentation/swiftui/list/colormultiply(_:)) 會為顯示區加入顏色加乘的效果。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page166..OrderedList18..Paragraph313" = "[.shadow](doc://com.apple.documentation/documentation/swiftui/list/shadow(color:radius:x:y:)) 會加入特定顏色和半徑的陰影。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page166..OrderedList18..Paragraph314" = "[.rotation3DEffect](doc://com.apple.documentation/documentation/swiftui/view/rotation3deffect(_:axis:anchor:anchorz:perspective:)) 可控制顯示區三個維度的旋轉。";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddColorPicker..title" = "加入一個會更改 `color` 值的 `ColorPicker`";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddColorPicker..Page167..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddColorPicker..Page167..Paragraph315" = "若要開始在此顯示區中建立一些互動，首先在 `Text` 顯示區下方加入一個 `ColorPicker` 顯示區。這會在選取新的顏色時更改狀態屬性 `color`。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddColorPicker..Page167..Paragraph316" = "嘗試自己執行此操作，如果遇到困難，請使用解決方案。";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddColorPicker..Page168..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddColorPicker..Page168..CodeBlock62" = "ColorPicker(\"Choose a Color\", selection: $color)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddSliderShadowRadius..title" = "加入一個控制陰影半徑的 `Slider`";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddSliderShadowRadius..Page169..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddSliderShadowRadius..Page169..Paragraph317" = "在 `ColorPicker` 下方加入一個控制 `shadowRadius` 值的 `Slider`。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddSliderShadowRadius..Page169..Paragraph318" = "嘗試自己執行此操作，如果遇到困難，請使用解決方案。";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddSliderShadowRadius..Page170..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddSliderShadowRadius..Page170..CodeBlock63" = "HStack { \n    Text(\"陰影\")\n    Slider(value: $shadowRadius)\n}\n```";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..title" = "加入一個能更改生物大小的 `Button`";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page171..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page171..Paragraph319" = "在 `Slider` 下方加入一個使用者可用來放大和縮小 `Text` 顯示區的 `Button`：";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page171..OrderedList19..Paragraph320" = "建立一個新的[狀態屬性](glossary://state%20property)來追蹤 `Boolean` 值，就像你在 `ConditionalCircle` 中所做的一樣。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page171..OrderedList19..Paragraph321" = "加入一個新的修飾符 [.scaleEffect](doc://com.apple.documentation/documentation/swiftui/view/scaleeffect(_:anchor:)-pmi7) 以及[三元條件運算子](glossary://ternary%20conditional%20operator)以決定當布林值為 `true` 和 `false` 時的縮放。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page171..OrderedList19..Paragraph322" = "更改你的 `Button` 動作[閉包](glossary://callback)來在 `true` 和 `false` 狀態之間切換布林值。";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page172..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page172..Paragraph323" = "回想一下 `ConditionalCircle` 中的程式碼來嘗試完成此任務。如果需要協助，請查看以下提示：";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page173..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page173..Paragraph324" = "在顯示區[主體](glossary://body)之外建立一個追蹤布林值的[狀態屬性](glossary://state%20property)。";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page173..CodeBlock64" = "@State var isScaled = false\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page174..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page174..Paragraph325" = "將 `.scaleEffect` 修飾符加入到使用[三元條件運算子](glossary://ternary%20conditional%20operator)來控制縮放的 `Text` 顯示區。";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page174..CodeBlock65" = ".scaleEffect(isScaled ? 1.5 : 1)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page175..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page175..Paragraph326" = "加入 `Button` 並設定其動作來呼叫 `isScaled.toggle()`。";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page175..CodeBlock66" = "Button(\"Scale\") { \n    isScaled.toggle()\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskanimateChangesIsScaled..title" = "以動畫呈現 `isScaled` 的更動";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskanimateChangesIsScaled..Page176..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskanimateChangesIsScaled..Page176..Paragraph327" = "這個縮放效果有點平淡，如果是動畫不是更好嗎？";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskanimateChangesIsScaled..Page176..Paragraph328" = "使用 `.animation(_:value:)` 修飾符對 `isScaled` 變數的任何更動進行動畫處理。嘗試使用 `.spring(response:dampingFraction:blendDuration:)` 動畫，並為每個參數傳入 `0.5` 的值。";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskanimateChangesIsScaled..Page177..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskanimateChangesIsScaled..Page177..CodeBlock67" = ".animation(.spring(response: 0.5, dampingFraction: 0.5, blendDuration: 0.5), value: isScaled)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskuseIsScaledRotateView..title" = "使用 `isScaled` 來旋轉你的顯示區";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskuseIsScaledRotateView..Page178..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskuseIsScaledRotateView..Page178..Paragraph329" = "加入一項最後的小天賦，在 `.rotation3DEffect` 修飾符的 `angle` 參數中建立一個條件值，如果 `isScaled` 為 `true`，則將其設定為 `Angle(degrees: 0)`，如果為 `false` 則設定為 `Angle(degrees: 360)`。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskuseIsScaledRotateView..Page178..Paragraph330" = "你將使用 [三元條件運算子](glossary://ternary%20conditional%20operator)來執行此操作。";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskuseIsScaledRotateView..Page179..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskuseIsScaledRotateView..Page179..CodeBlock68" = ".rotation3DEffect(isScaled ? Angle(degrees: 0) : Angle(degrees: 360), axis: (x: 5, y: 2, z: 1))\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcustomizeCreature..title" = "自定你的 `CreatureDetail` 顯示區";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcustomizeCreature..Page180..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcustomizeCreature..Page180..Paragraph331" = "現在你已經掌握了透過[使用者互動](glossary://user%20interaction)自訂顯示區的訣竅，請試著再加入一個[內建顯示區](glossary://built-in%20view)來讓使用者修改 `Text` 顯示區。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcustomizeCreature..Page180..Paragraph332" = "你可以使用 `Slider` 來更改顯示區的寬度、高度、模糊、對比或飽和度，使用 `Button` 來啟用 `RotationEffect` 或是你想到的其他效果。試著摸索一下，看看有什麼你可以製作的效果。";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..SuccessMessage..Paragraph333" = "做得好！";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..SuccessMessage..Paragraph334" = "你已經製作了一個成熟的 App，能讓你檢視、加入、刪除、與生物共舞和修改生物。鼓勵一下自己吧，因為這可不是一件小事呢。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..SuccessMessage..Paragraph335" = "你已經成功完成本教學，但你才剛剛開始建構 App。你應用愈多所學的概念，就愈能記住它們，並且能夠製作更多的 App。在接下來的實驗中，請嘗試使用在本教學中學到的所有內容來編寫自己的範例。祝你好運！";
+
+/* Title of step named Create on Your Own */
+"GuideBook..Guide0..StepCreate on Your Own..title" = "自己創作";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..LearningCenterContent..Paragraph336" = "![](CreateYourOwnCopy.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..LearningCenterContent..Paragraph337" = "現在你已經完成了關於狀態和資料流的學習之旅，是時候釋放你的創造力來建立一個使用你的生物資料的新顯示區了。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..LearningCenterContent..Paragraph338" = "當你完成此處的實驗後，請試著使用你在本教學中學習到的相同概念，從頭開始建立自己的計畫案。";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateYourOwn..title" = "製作你自己的顯示區";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateYourOwn..Page181..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateYourOwn..Page181..Paragraph339" = "要嘗試的事項：";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateYourOwn..Page181..UnorderedList0..Paragraph340" = "製作一個使用你的 `creatures` 陣列的新顯示區，並將其作為 `ContentView` 中的目標連結。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateYourOwn..Page181..UnorderedList0..Paragraph341" = "將一個新的[發佈的數值](glossary://published%20value)加入 `CreatureZoo`，並且在你現有的一或多個顯示區中使用它。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateYourOwn..Page181..UnorderedList0..Paragraph342" = "為每個生物指定一個 `description` 屬性並且製作一個新的顯示區，以有趣的佈局顯示它們的描述、名稱和影像。";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateNewApp..title" = "製作你自己的 App";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateNewApp..Page182..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateNewApp..Page182..Paragraph343" = "使用 SwiftUI 思考並創作一個全新的計畫案。實現自己的 `NavigationStack` 在顯示區之間移動，使用[狀態屬性](glossary://state%20property)更改局部顯示區的外觀，內建 SwiftUI 顯示區和[綁定](glossary://binding)，以啟用使用者互動，並將[可觀察的物件](glossary://observable%20object)傳入 App 環境來在多個顯示區之間共享資料。如果你遇到困難，請返回此計畫案並查看程式碼的範例來修正你遇到的任何錯誤。祝你好運，你一定可以做到的！";
+

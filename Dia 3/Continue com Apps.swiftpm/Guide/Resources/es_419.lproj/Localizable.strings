@@ -1,0 +1,2013 @@
+/* Title of Guidebook */
+"GuideBook..title" = "Apps avanzadas";
+
+/* The title of the intro for this section of the guide */
+"GuideBook..IntroKeep Going with Apps..title" = "Apps avanzadas";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..IntroKeep Going with Apps..Paragraph0" = "En Introducción a las apps, aprendiste a usar [visualizaciones](glossary://view) de SwiftUI para crear una interfaz de usuario sencilla. En SwiftUI, las [visualizaciones](glossary://view) son bloques de construcción de la [interfaz de usuario](glossary://user%20interface) que puedes colocar unos dentro de otros para crear [visualizaciones compuestas](glossary://composed%view) más complejas.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..IntroKeep Going with Apps..Paragraph1" = "Aquí, aprenderás sobre el [estado](glossary://state) y el [flujo de datos](glossary://data%20flow) en SwiftUI. El flujo de datos se refiere al movimiento de valores por toda tu app y a la forma en la que SwiftUI actualiza tu interfaz de usuario para reflejar cualquier cambio en dichos valores. Específicamente, aprenderás a [separar los datos de tu app](glossary://data%20separation) de las visualizaciones que los muestran, y entenderás por qué esto es tan útil.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..IntroKeep Going with Apps..Paragraph2" = "Al final de este tutorial, serás capaz de crear una app de SwiftUI completamente funcional donde las personas podrán agregar, eliminar y modificar criaturas de emoji. ¡Empieza ahora y verás que pronto tendrás tu primera app!";
+
+/* Title of step named Modifying State */
+"GuideBook..Guide0..StepModifying State..title" = "Modificar estados";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..LearningCenterContent..Paragraph3" = "![](ModifyingState.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..LearningCenterContent..Paragraph4" = "En programación, el término [estado](glossary://state) se refiere al valor actual de una variable. Un [cambio de estado](glossary://state%20change) se produce cuando hay un cambio en el valor de una o más variables en tu app.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..LearningCenterContent..Paragraph5" = "Una de las grandes ventanjas de SwiftUI es que puede actualizar el aspecto de tus visualizaciones automáticamente cada vez que hay un [cambio de estado](glossary://state%20change) en tu app.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..LearningCenterContent..Paragraph6" = "Cuando conectas tu IU con datos de la app, como un [booleano](glossary://Boolean) o un arreglo con valores del tipo [string](glossary://String), SwiftUI puede [observar](glossary://observe) esos datos y actualizar las visualizaciones que usan los datos cada vez que haya un cambio. Esto significa que nunca tendrás que escribir código para indicarle a tu IU específicamente cómo o cuándo debe actualizarse.";
+
+/* Title for task */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..title" = "Usar una propiedad de estado para actualizar una visualización";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page0..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page0..Paragraph7" = "En este ejemplo, SwiftUI actualiza el aspecto de una visualización cuando ocurre un [cambio de estado](glossary://state%20change).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page0..Paragraph8" = "Toca el botón en la vista previa. Este botón alterna el valor de la [propiedad](glossary://property) `isOn` (está activado) entre los [estados](glossary://state) `true` y `false` (verdadero y falso), ocasionando que la visualización `Circle` aparezca, desaparezca o vuelva a aparecer.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page1..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page1..Paragraph9" = "Para modificar el aspecto de una visualización, primero necesitas datos para hacer un seguimiento de su [estado](glossary://state), y debes almacenar estos datos como una [propiedad](glossary://property) de la visualización.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page1..Paragraph10" = "Piensa en los datos de tu visualización como la [fuente única de información](glossary://source%20of%20truth) que determina el aspecto de tu [interfaz de usuario](glossary://user%20interface). En lugar de modificar la visualización directamente, debes modificar los datos, y SwiftUI actualizará la visualización por ti. Aquí, tus datos son un valor [booleano](glossary://Boolean) que determina si la visualización se muestra (`true`) o se oculta (`false`).";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page2..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page2..Paragraph11" = "Nota importante: crea siempre tus datos fuera del [cuerpo](glossary://body) de la visualización. Recuerda que `body` NO es para crear datos ❌, y que se usa solamente para declarar el aspecto de tus visualizaciones. Este es un principio fundamental de la creación de apps conocido como [separación de datos](glossary://data%20separation).";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page3..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page3..Paragraph12" = "Para permitir que SwiftUI actualice tus visualizaciones de forma automática, tienes que indicarle cuáles son las [propiedades](glossary://property) de tus visualizaciones que debe administrar y supervisar por ti.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page3..Paragraph13" = "Para ello, agrega una sintaxis especial llamada [contenedor de propiedades](glossary://property%20wrapper) antes de la definición de tu propiedad. Al agregar el contenedor de propiedades `@State` antes de `isOn`, se convierte en una [propiedad de estado](glossary://state%20property). SwiftUI administra el valor y actualiza los elementos afectados de la visualización cada vez que su [estado](glossary://state) cambia.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page4..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page4..Paragraph14" = "Entonces, ¿cómo puedes cambiar el [estado](glossary://state) de `isOn`? Una forma habitual de hacerlo es mediante la [interacción del usuario](glossary://user%20interaction), por ejemplo, cuando se toca un botón.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page4..Paragraph15" = "Para crear un botón `Button`, pasa una [etiqueta](glossary://label) de texto, como “Presióname”, y una acción del tipo [clausura](glossary://closure), que es un bloque de código que se ejecuta cuando tocas el botón.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page5..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page5..Paragraph16" = "Cuando alguien toca el botón, la acción [clausura](glossary://closure) cambia el valor de `isOn` mediante el método `toggle()`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page5..Paragraph17" = "El método `toggle()` cambia el valor a `true` si el valor actual era `false`, o lo cambia a `false` si el valor actual era `true`; un poco como prender o apagar un foco.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page6..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page6..Paragraph18" = "Este enunciado `if` usa `isOn` como condición para mostrar la visualización adjunta cuando es `true`, y para ocultarla cuando es `false`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page6..Paragraph19" = "Así es como los datos de `isOn` están conectados con la visualización: su [estado](glossary://state) actual determina cómo aparece la interfaz de usuario.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page7..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page7..Paragraph20" = "Cuando presionas el botón en la previsualización, se muestra u oculta la visualización del círculo del enunciado `if`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page7..Paragraph21" = "Intenta cambiar el color del círculo y tocar el botón de nuevo. Intenta también cambiar el valor inicial de `isOn` a `true`. ¿Qué cambios notas en cada caso?";
+
+/* Title for task */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..title" = "Agregar un enunciado `else` que muestre un círculo de color diferente";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page8..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page8..Paragraph22" = "Tómate un momento para reflexionar sobre cómo al tocar el botón, se actualiza la visualización. Cuando presionas el botón `Button`, se cambia el [estado](glossary://state) de `isOn` (está activado). SwiftUI [observa](glossary://observa) este cambio y actualiza la visualización con el nuevo valor. En tu visualización [cuerpo](glossary://body), se usa un enunciado `if` para mostrar la visualización si `isOn` es `true`, o para ocultarla si es `false`.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page9..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page9..Paragraph23" = "En lugar de no mostrar ninguna visualización cuando `isOn` es `false`, puedes mostrar una visualización personalizada.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page9..Paragraph24" = "Después de la declaración `if`, agrega una declaración `else` (si no) que muestre una visualización `Circle` de un color diferente.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page10..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page10..Paragraph25" = "Agrega una declaración `else` (si no) utilizando la siguiente sintaxis, y luego agrega una visualización `Circle` (círculo) y especifica su color.";
+
+/*  */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page10..CodeBlock0" = "else { \n\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page11..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page11..CodeBlock1" = "else { \n   Circle()\n       .frame(maxHeight: 200)\n       .foregroundColor(.black)\n   //#-learning-code-snippet(addOffText)\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..title" = "Agregar detalles a las visualizaciones para encender y apagar";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page12..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page12..Paragraph26" = "Ahora que tienes dos visualizaciones, personalízalas para que quede claro cuál es para “encender” y cuál es para “apagar”.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page12..Paragraph27" = "Intenta usar una visualización `Text` para agregar una etiqueta a cada visualización. Etiqueta la primera como “Activado”.";
+
+/*  */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page12..CodeBlock2" = "Text(\"Activar\")\n";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page13..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page13..Paragraph28" = "Etiqueta la segunda como “Desactivado”.";
+
+/*  */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page13..CodeBlock3" = "Text(\"Desactivar\")\n";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page14..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page14..Paragraph29" = "Finalmente, asegúrate de que cada visualización tenga una figura distinta, como un rectángulo, `Rectangle` o una cápsula `Capsule`.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page15..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page15..CodeBlock4" = "if isOn {\n      Circle()\n          .frame(maxHeight: 200)\n          .foregroundColor(.mint)\n\n      Text(\"Activar\")\n} else {\n      Rectangle()\n          .frame(maxHeight: 200)\n          .foregroundColor(.gray)\n\n      Text(\"Desactivar\")\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..title" = "Agregar una visualización condicional nueva";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page16..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page16..Paragraph30" = "Ahora, intenta agregar una visualización condicional totalmente nueva por tu cuenta:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page16..OrderedList0..Paragraph31" = "Agrega una [propiedad de estado](glossary://state%20value) afuera del [cuerpo](glossary://body) y dale un valor booleano inicial.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page16..OrderedList0..Paragraph32" = "Crea un [enunciado `if`](glossary://if%20statement) que muestre una visualización si el valor de tu propiedad de estado es `true`, y otra visualización si es `false`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page16..OrderedList0..Paragraph33" = "Crea un nuevo elemento `Button` y haz que su propiedad de estado alterne cada vez que lo presiones.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page16..Paragraph34" = "¿Funciona tu visualización condicional como esperabas?";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page17..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page17..Paragraph35" = "Antes de continuar, intenta usar el [método del patito de hule](glossary://rubber%20ducky%20method) para explicar con el mayor detalle posible cómo funciona el código de la visualización condicional. ¿Qué hace una propiedad de estado? ¿Cómo sabe tu visualización cuándo debe actualizarse? Si no recuerdas algo, regresa a la lección correspondiente y repasa lo que no te haya quedado claro. ¡Tu patito de hule te lo agradecerá!";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepModifying State..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..SuccessMessage..Paragraph36" = "¡Yuju!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..SuccessMessage..Paragraph37" = "Ahora entiendes cómo usar una [propiedad de estado](glossary://state%20value) para actualizar el aspecto de una visualización de SwiftUI. Esta propiedad de estado se almacena fuera del [cuerpo](glossary://body) de la visualización, donde se declara la interfaz de usuario de la visualización.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..SuccessMessage..Paragraph38" = "Un principio fundamental de la creación de apps en SwiftUI es mantener siempre los datos de tu app separados de la interfaz que los muestra. Esto permite mantener una sola [fuente única de información](glossary://source%20of%20truth), y también hace que el código de tu interfaz sea fácil de entender y controlar.";
+
+/* Title of step named Using a Conditional Modifier */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..title" = "Usar un modificador con condiciones";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..LearningCenterContent..Paragraph39" = "![](UsingAConditionalModifier.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..LearningCenterContent..Paragraph40" = "En el ejemplo anterior, creaste una [propiedad de estado](glossary://state%20property) `isOn` cuyo almacenamiento es administrado por SwiftUI. Al cambiar el [estado](glossary://state) de `isOn`, puedes mostrar una de las dos visualizaciones diferentes cuando se cumple una condición determinada.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..LearningCenterContent..Paragraph41" = "¿Y si simplemente quieres cambiar el aspecto de una visualización existente, como el color o el tamaño de una visualización `Circle`? Para esto, necesitarás escribir código condicional que especifique cómo se debe mostrar la visualización cuando ocurra un [cambio de estado](glossary://state%20change).";
+
+/* Title for task */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..title" = "Cambiar los modificadores de visualizaciones de forma condicional";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page18..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page18..Paragraph42" = "Al igual que en la visualización anterior, esta visualización también usa una [propiedad de estado](glossary://state%20property) y un elemento `Button` para cambiar el aspecto de un elemento `Circle`. Sin embargo, hay algo diferente en este código. Tómate un momento para intentar averiguar lo que cambió, y continúa una vez que creas saber la respuesta.";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page19..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page19..Paragraph43" = "¿Averiguaste cómo funciona?";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page19..Paragraph44" = "En lugar de crear una visualización diferente cuando `isOn` tenga un valor `true` o `false`, puedes modificar el aspecto de una sola visualización utilizando [modificadores de visualización](glossary://modifier) con código condicional.";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page20..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page20..Paragraph45" = "Ten en cuenta que el modificador `.foregroundColor(_:)` contiene sintaxis especial, conocida como [operador condicional ternario](glossary://ternary%20conditional%20operator), la cual ofrece una manera concisa de crear una declaración if-else` (si no) en una sola línea de código.";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page21..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page21..Paragraph46" = "Puedes leer este código así: si `isOn` es `true`, pasa el valor `.yellow`; si no, pasa el valor `.black`.";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page21..CodeBlock5" = "isOn ? .yellow : black\n";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page21..Paragraph47" = "En términos generales, se ve así:";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page21..CodeBlock6" = "condition ? trueValue : falseValue\n";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page22..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page22..Paragraph48" = "Intenta cambiar el color del círculo a `.purple` cuando `isOn` sea `true`, y a un tono de verde más claro, como `.mint` (menta) cuando sea `false`.";
+
+/* Title for task */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..title" = "Agregar un modificador `shadow(color:radius:)` para mostrar una sombra de otro color en cada estado";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page23..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page23..Paragraph49" = "Al igual que el ejemplo de `ConditionalViews`, SwiftUI [observa](glossary://observe) la [propiedad de estado](glossary://state%20property) `isOn`. Cuando el valor de `isOn` cambia, SwiftUI actualiza la visualización `Circle` con el valor nuevo de su modificador `.foregroundColor(_:)`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page23..Paragraph50" = "A continuación, intenta agregar otro modificador, `.shadow(color:radius:)` que use el valor de `isOn` para cambiar la sombra de la visualización.";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page24..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page24..Paragraph51" = "Primero, agrega el modificador `.shadow(color:radius:)` a `Circle`.";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page24..CodeBlock7" = ".shadow(color: <#T##Color#>, radius: 20)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page25..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page25..Paragraph52" = "En el parámetro `color` del modificador, usa el [operador condicional ternario](glossary://ternary%20conditional%20operator) para cambiar el color de la sombra utilizando el [estado](glossary://state) de `isOn`.";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page26..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page26..Paragraph53" = "Aquí tienes un ejemplo de la sintaxis del operador ternario:";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page26..CodeBlock8" = "isOn ? .indigo : .orange\n";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page26..Paragraph54" = "Este fragmento de código puede leerse así: si `isOn` es `true`, usa el valor `.indigo`; si no, usa el valor `.orange`.";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page27..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page27..CodeBlock9" = ".shadow(color: isOn ? .indigo : .orange, radius: 20)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..title" = "Cambiar la escala del círculo al tocar el botón";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page28..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page28..Paragraph55" = "Es hora de un reto. Intenta entender por tu cuenta cómo usar el modificador `.scaleEffect(_:)` con un [operador condicional ternario](glossary://ternary%20conditional%20operator) para cambiar la escala del círculo utilizando el estado de `isOn`.";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page29..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page29..Paragraph56" = "Primero, agrega el modificador `.scaleEffect(_:)` al círculo. Luego, usa el operador ternario para especificar una escala si `isOn` es `true`, y otra si es `false`.";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page29..CodeBlock10" = ".scaleEffect(<#T##s: CGFloat##CGFloat#>)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page30..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page30..CodeBlock11" = ".scaleEffect(isOn ? 1 : 0.75)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..title" = "Usar animaciones para identificar cambios";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page31..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page31..Paragraph57" = "Del mismo modo que SwiftUI sabe cómo actualizar tus visualizaciones de forma automática, también sabe cómo animar los cambios en tus visualizaciones con base en los valores que tú cambias.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page31..Paragraph58" = "Para hacer esto, adjunta un modificador `.animation(_:value:)` a la visualización que quieres animar, y selecciona una propiedad `Animation` así como un valor para monitorear los cambios.";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page32..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page32..Paragraph59" = "Por ejemplo, puedes usar una animación predetarminada para animar cualquier cambio en el valor `isOn`.";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page32..CodeBlock12" = ".animation(.default, value: isOn)\n";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page32..Paragraph60" = "Cuando `isOn` cambie, se animarán las modificaciones de la visualización controladas por este valor. Dado que se usa `isOn` para determinar la sombra, el color y la escala de la visualización, todas esas características se animarán para indicar su nuevo estado cuando el valor cambie.";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page33..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page33..CodeBlock13" = ".animation(.default, value: isOn)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page34..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page34..Paragraph61" = "Intenta cambiar la animación predeterminada a otra. El valor `.default` usa la animación `.easeInOut`, pero puedes cambiarlo a `.spring(response:dampingFraction:blendDuration:)` o a `.linear(duration:)` para averiguar cómo la animación cambia.";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..SuccessMessage..Paragraph62" = "¡Excelente trabajo!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..SuccessMessage..Paragraph63" = "Ahora sabes cómo usar una [propiedad de estado](glossary://state%20property) para cambiar el aspecto de una visualización, y cómo animar estos cambios utilizando el modificador `.animation(_:value:)`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..SuccessMessage..Paragraph64" = "A continuación, aprenderás a usar las [visualizaciones integradas](glossary://built-in%20view) y [ligaduras](glossary://binding) de SwiftUI para crear diferentes tipos de cambios de estado en tu interfaz.";
+
+/* Title of step named SwiftUI Built-in Views */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..title" = "Visualizaciones integradas de SwiftUI";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..LearningCenterContent..Paragraph65" = "![](SwiftUIBuilt-inViews.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..LearningCenterContent..Paragraph66" = "SwiftUI ofrece muchas [visualizaciones integradas](glossary://built-in%20view), como reguladores, botones y selectores, que permiten que alguien cambie el estado de los datos de la app al [interactuar](glossary://user%20interaction) con estos.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..LearningCenterContent..Paragraph67" = "Estas visualizaciones integradas tienen una manera especial de compartir datos con otras visualizaciones, este proceso genera una [ligadura](glossary://binding).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..LearningCenterContent..Paragraph68" = "Puedes usar estas visualizaciones integradas con valores de ligadura para cambiar los datos de tu app y, consecuentemente, la interfaz de tu app.";
+
+/* Title for task */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..title" = "Usar una ligadura";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page35..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page35..Paragraph69" = "Hasta ahora, has usado una propiedad de estado para cambiar tu IU [localmente](glossary://local%20scope), o dentro de la misma visualización. Un ejemplo de ello es definir una [propiedad de estado](glossary://state%20property) en `ConditionalCircle`, y usarla para cambiar el aspecto de una visualización en el [cuerpo](glossary://body) de `ConditionalCircle`.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page36..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page36..Paragraph70" = "¿Y si quieres permitir que una [subvisualización](glossary://subview) modifique esos datos? Por ejemplo, si tu visualización [local](glossary://local%20scope) almacena tu información de contacto, la subvisualización podría proporcionar una [interacción](glossary://user%20interaction) personalizada para que cambies el número telefónico del contacto. Pero, ¿cómo puedes permitir que la subvisualización modifique los datos sin crear más de una [fuente de la verdad](glossary://source%20of%20truth)?";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page37..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page37..Paragraph71" = "La clave para comunicar datos entre dos visualizaciones se llama [ligadura](glossary://binding). Una ligadura te permite mantener una fuente única de información, pero permite que una [subvisualización](glossary://subview) modifique ese valor de forma remota. Se le llama ligadura porque la fuente única de información, como una [propiedad de estado](glossary://state%20property), se liga (se conecta) a una segunda visualización, y cada vez que la segunda visualización cambia los datos, la fuente única de información se actualiza.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page38..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page38..Paragraph72" = "Intenta tocar el botón `Toggle` en la vista previa.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page38..Paragraph73" = "Fíjate que las visualizaciones `Image` y `Toggle` cambian su aspecto cuando se toca esta última. La visualización `Toggle` puede cambiar la [fuente única de información](glossary://source%20of%20truth) de forma remota, para permitirse a sí misma y a la visualización `Image` compartir el mismo valor aunque sean visualizaciones independientes.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page39..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page39..Paragraph74" = "Esta es tu fuente única de información; es decir, una [propiedad de estado](glossary://state%20property) que almacenas [localmente](glossary://local%20scope) en la visualización `Bindings`. La fuente única de información de una ligadura debe ser una cuyo valor esté administrado por SwiftUI; y para hacer esto puedes agregarle el [contenedor de propiedades](glossary://property%20wrapper) `@State`.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page40..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page40..Paragraph75" = "Esta es la visualización integrada `Toggle`, la cual acepta un valor booleano de [ligadura](glossary://binding) para su parámetro `isOn`. Esto significa que esta visualización sabe cómo cambiar el valor `Boolean` con base en la [interacción del usuario](glossary://user%20interaction), como cuando una persona toca el botón para activar o desactivar, y comunica cualquier cambio de estado a tu [fuente única de información](glossary://source%20of%20truth) local, `isOn`.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page41..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page41..Paragraph76" = "Para pasar una ligadura, usa tu [propiedad de estado](glossary://state%20property) administrada por SwiftUI con un símbolo `$` al inicio. Pasa `$isOn` para indicar que cada vez que `Toggle` cambie el valor de forma remota, la [ligadura](glossary://binding) modificará la fuente única de información `isOn`.";
+
+/* Title for task */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..title" = "Agregar una propiedad de estado nueva del tipo `Color`";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page42..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page42..Paragraph77" = "A continuación, intenta usar una visualización integrada `ColorPicker` junto con una [ligadura](glossary://binding) para cambiar el color de la visualización `Image` de la batería.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page42..Paragraph78" = "Para hacer esto, primero crea una [propiedad de estado](glossary://state%20property), para que funcione como tu fuente de la verdad de un valor `Color`. Dale un valor inicial de `Color.primary`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page42..Paragraph79" = "Intenta hacerlo por tu cuenta, y usa las siguientes pistas si tienes problemas.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page43..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page43..Paragraph80" = "Define una [propiedad](glossary://property) con el [contenedor de propiedades](glossary://property%20wrapper) `@State` y [asígnale](glossary://assignment) un valor inicial de `Color.primary`.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page44..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page44..CodeBlock14" = "@State var color = Color.primary\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..title" = "Crear una visualización `ColorPicker` y pasar un valor de ligadura";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page45..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page45..Paragraph81" = "Debajo de tu visualización `Toggle`, crea una visualización `ColorPicker` utilizando el siguiente inicializador. Agrega los argumentos usando `Toggle` como ejemplo.";
+
+/*  */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page45..CodeBlock15" = "ColorPicker(<#T##title: StringProtocol##StringProtocol#>, selection: <#T##Binding<CGColor>#>)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page46..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page46..OrderedList1..Paragraph82" = "Pasa una propiedad del tipo `String` para el título, como, por ejemplo, “Selecciona un color”.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page46..OrderedList1..Paragraph83" = "Pasa tu valor de ligadura a `selection`, agregando el símbolo `$` antes de la [propiedad de estado](glossary://state%20property) de color.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page46..Paragraph84" = "Si quieres probar la visualización `\"Bindings\"` en tu app, agrégala temporalmente a tu visualización `\"ContentView\"`.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page47..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page47..CodeBlock16" = "ColorPicker(\"Selecciona un color\", selection: $color) \n";
+
+/* Title for task */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..title" = "Establecer el color de `Image` según el valor de tu propiedad de estado de color";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page48..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page48..OrderedList2..Paragraph85" = "Intenta seleccionar un color del selector `ColorPicker` en la vista previa. Observa que sólo el color del selector cambia, pero nada más cambia en tu UI. Esto se debe a que tu propiedad de estado no está conectada a ninguna otra visualización [local](glossary://local%20scope).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page48..OrderedList2..Paragraph86" = "Ahora cambia el color de la visualización `Image` para que se actualice según el color del selector.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page49..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page49..Paragraph87" = "Para cambiar el color de la visualización `Image`, agrega un modificador `.foregroundColor(_:)` y pasa tu propiedad de estado para el color como un argumento.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page50..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page50..CodeBlock17" = ".foregroundColor(color)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page51..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page51..Paragraph88" = "Ahora selecciona un color con el selector de color. ¿Necesitarás cambiar el color de tu visualización `Image` también?";
+
+/* Title for task */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..title" = "Crear una visualización `Text` que cambie de color cuando se seleccione otro";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..Page52..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..Page52..Paragraph89" = "Agrega una visualización `Text` que cambie de color cuando se selecciona uno diferente en el selector de color. Puedes usar el modificador `.foregroundColor(_:)` para hacer esto, igual que con la imagen.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..Page52..Paragraph90" = "Elige un tipo de letra grande para la visualización `Text` utilizando el modificador [.font](doc://com.apple.documentation/documentation/swiftui/font) y pasando `.largeTitle`.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..Page53..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..Page53..Paragraph91" = "Agrega `.padding()` a tus visualizaciones para crear espacio fijo entre una visualización y todas las que la rodean. También puedes agregar `Spacer()`, que es una visualización invisible que se encoge y expande de forma variable para ocupar el espacio disponible entre las visualizaciones.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..Page53..Paragraph92" = "Los modificadores [relleno](doc://com.apple.documentation/documentation/swiftui/view/padding(_:_:)) y [espaciadores](doc://com.apple.documentation/documentation/swiftui/spacer) te permiten crear disposiciones de visualización adaptables que se ven bien en una variedad de tamaños de pantalla. Consulta [Organizar una visualización simple](doc://com.apple.documentation/documentation/swiftui/laying-out-a-simple-view) para obtener más información.";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..SuccessMessage..Paragraph93" = "¡Bravo!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..SuccessMessage..Paragraph94" = "Ahora sabes cómo usar una visualización integrada de SwiftUI, como `ColorPicker`, junto con una [ligadura](glossary://binding) para crear [interacciones](glossary://user%20interaction) personalizadas que permiten cambiar el estado de tu app.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..SuccessMessage..Paragraph95" = "Junto con lo que sabes sobre las [propiedades de estado](glossary://state%20property), esto te permite crear interacciones de usuario más completas para cambiar el aspecto de la interfaz de tu app.";
+
+/* Title of step named Practice with SwiftUI Built-in Views */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..title" = "Practicar con las visualizaciones integradas de SwiftUI";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..LearningCenterContent..Paragraph96" = "![](PracticeWithSwiftUIBuilt-inViews.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..LearningCenterContent..Paragraph97" = "Ahora que conoces los principios básicos de las propiedades de estado, las ligaduras y las visualizaciones integradas de SwiftUI, te toca construir algunos ejemplos por tu cuenta.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..LearningCenterContent..Paragraph98" = "Primero, usarás una visualización integrada `\"Slider\"` para cambiar una [propiedad de estado](glossary://state%20property) que controla el ancho de una figura `\"Rectangle\"`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..LearningCenterContent..Paragraph99" = "A continuación, intenta crear un editor de historias con las visualizaciones integradas `TextField` para cambiar el valor de algunas propiedades de estado del tipo `String`, lo que dará lugar a una interesante narración.";
+
+/* Title for task */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..title" = "Crear un regulador";
+
+/* title for page */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page54..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page54..Paragraph100" = "Crea una visualización que use un `Slider` (regulador) integrado para cambiar el ancho de una visualización `Rectangle`. Para lograr esto, necesitarás definir una nueva [propiedad de estado](glossary://state%20property), y pasarla al `Slider` como una [ligadura](glossary://binding).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page54..Paragraph101" = "Puedes cambiar el ancho de una visualización con el modificador `.frame(width:)`. Nota: este modificador acepta un valor [Double](doc://com.apple.documentation/documentation/swift/double) (un [tipo](glossary://type) especial de valor numérico), así que debes definir la propiedad de estado como `Double`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page54..Paragraph102" = "Tómate un momento para intentar hacerlo por tu cuenta, y usa las siguientes pistas si tienes problemas.";
+
+/* title for page */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page55..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page55..Paragraph103" = "Define una propiedad de estado del tipo `Double` encima del `body` de la visualización. Esta es tu [fuente de la verdad](glossary://source%20of%20truth) local.";
+
+/*  */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page55..CodeBlock18" = "@State var width : Double = 0\n";
+
+/* title for page */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page56..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page56..Paragraph104" = "Crea tu `\"Slider\"`, utilizando el inicializador `\"Slider(value:)\"`, y pasa una [ligadura](glossary://binding) a tu [propiedad de estado](glossary://state%20property).";
+
+/*  */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page56..CodeBlock19" = "Slider(value: $width)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page57..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page57..Paragraph105" = "Crea una visualización `Rectangle` y agrégale el modificador `.frame(width:)`. Dado que el valor de un regulador predeterminado varía entre `0` y `1`, multiplica el ancho por un número mayor para que puedas ver los cambios en el valor.";
+
+/*  */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page57..CodeBlock20" = "Rectangle()\n    .frame(width: width * 300)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..title" = "Crear una historia";
+
+/* title for page */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page58..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page58..Paragraph106" = "Puedes intentar el siguiente experimento:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page58..Paragraph107" = "Puedes usar la visualización [TextField](doc://com.apple.documentation/documentation/swiftui/textfield) de SwiftUI para cambiar valores del tipo `String` según los caracteres que una persona ingrese en los campos.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page58..OrderedList3..Paragraph108" = "Crea una historia personalizable definiendo varias [propiedades de estado](glossary://state%20property) junto con las visualizaciones `TextField` correspondientes que permitan a una persona ingresar datos, como su nombre, pasatiempos y comida favorita.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page58..OrderedList3..Paragraph109" = "Debajo de los campos de texto, crea una visualización `Text` que fusione todos los valores utilizando la [interpolación de strings](glossary://string%20interpolation) para crear una historia. Podría verse más o menos así:";
+
+/*  */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page58..CodeBlock21" = "Text(\"Hola, mi nombre es \\(name), mi pasatiempo favorito es \\(hobby) y no puedo parar de comer \\(favoriteFood)!\")\n";
+
+/* title for page */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page59..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page59..Paragraph110" = "Bonus: agrega una visualización `\"Button\"` o `\"Toggle\"` que muestre la historia cuando la toques.";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..SuccessMessage..Paragraph111" = "¡Ya le estás entendiendo!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..SuccessMessage..Paragraph112" = "Ahora puedes usar las manijas para cambiar el estado localmente usando propiedades de estado, y entre dos visualizaciones usando ligaduras.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..SuccessMessage..Paragraph113" = "A continuación, descubrirás cómo crear datos que puedes usar en todas las visualizaciones de tu app.";
+
+/* Title of step named Navigating in SwiftUI */
+"GuideBook..Guide0..StepNavigating in SwiftUI..title" = "Navegar en SwiftUI";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..LearningCenterContent..Paragraph114" = "![](NavigatingInSwiftUI.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..LearningCenterContent..Paragraph115" = "Ahora que ya sabes cómo administrar el estado dentro de una sola visualización de SwiftUI, es hora de empezar a pensar en algo más grande.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..LearningCenterContent..Paragraph116" = "En algunos casos, cuando creas una app, tendrás datos que querrás compartir en dos o más visualizaciones, por lo que incluso una [ligadura](glossary://binding) no será suficiente. No se recomienda intentar repetir los datos en cada nueva visualización, ya que esto sería muy difícil de controlar y podría ocasionar errores en tu app. En lugar de esto, aprenderás a crear y mantener un único [modelo de datos](glossary://data%20model) disponible para varias visualizaciones en tu app.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..LearningCenterContent..Paragraph117" = "Pero antes de ver esto, debes aprender a crear una app con varias visualizaciones. Para este fin, agregarás la funcionalidad de navegación con una visualización `NavigationSplitView` o una pila `NavigationStack`.";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..title" = "Crear una pila `NavigationStack`";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page60..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page60..Paragraph118" = "Para navegar a otras visualizaciones, necesitas una de dos tipos distintos de visualizaciones de navegación:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page60..OrderedList4..Paragraph119" = "Una pila [NavigationStack](doc://com.apple.documentation/documentation/swiftui/navigationstack) organiza tus visualizaciones una sobre la otra, como si fuera una baraja.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page60..OrderedList4..Paragraph120" = "Una visualización [NavigationSplitView](doc://com.apple.documentation/documentation/swiftui/navigationsplitview) organiza tus visualizaciones en dos o tres columnas, permitiéndote seleccionar elementos de la columna inicial para presentar una visualización en la columna final.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page61..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page61..Paragraph121" = "Cada una de estas visualizaciones de navegación actúa como un [contenedor](glossary://container) para presentar distintas visualizaciones en función de cómo se navega dentro de la app, es sólo que lo hacen en maneras ligeramente distintas.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page61..Paragraph122" = "Primero, debes crear una pila `NavigationStack` para poder explorar su funcionamiento.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page62..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page62..Paragraph123" = "Primero, agrega una pila `NavigationStack` que contenga una visualización [`List`](doc://com.apple.documentation/documentation/swiftui/list), la cual muestra cualquier cantidad de visualizaciones en una columna vertical desplazable.";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page62..CodeBlock22" = "NavigationStack { \n   List { \n       Text(\"NavigationStack Content\")\n       //#-learning-code-snippet(addNavLink)\n       //#-learning-code-snippet(addSecondNavLink)\n\n   }\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page63..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page63..Paragraph124" = "Revisa tu vista previa. Ahora deberías ver una sola visualización `Text` en tu visualización `List`, y nada más. Para navegar a otra visualización, debes agregar un [enlace de navegación](glossary://navigation%20link) (`NavigationLink`) dentro de tu `NavigationStack`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page63..Paragraph125" = "Entonces, ¿por qué tomarse el tiempo para crear una `NavigationStack` si el enlace `NavigationLink` te lleva a otra visualización? Bueno, al igual que no puedes pasear en una bicicleta sin llantas, tampoco puedes navegar a otra visualización a menos que tus enlaces se encuentren adentro de una `NavigationStack` o `NavigationSplitView`.";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..title" = "Crear un enlace de navegación";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page64..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page64..Paragraph126" = "Tu visualización `NavigationStack` o `NavigationSplitView` puede mostrar diferentes contenidos en función de la forma en la que una persona interactúa con la app. Para que tu visualización de navegación muestre una visualización diferente, crea un [enlace de navegación](glossary://navigation%20link), es decir, un botón que se pueda tocar para ir a una visualización separada.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page65..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page65..Paragraph127" = "Un enlace de navegación, `\"NavigationLink\"`, debe contener dos cosas:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page65..OrderedList5..Paragraph128" = "Un enlace a la [visualización de destino](glossary://destination%20view).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page65..OrderedList5..Paragraph129" = "Una [etiqueta](glossary://label) (cómo el botón debería mostrarse).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page65..Paragraph130" = "El destino puede ser cualquier visualización que quieras; algo sencillo como una visualización `\"Text\"` o `\"Image\"`, o incluso tu propia [visualización compuesta](glossary://composed%20view).";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page66..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page66..Paragraph131" = "El siguiente código crea un enlace `\"NavigationLink\"` con una visualización `\"Text\"` como [etiqueta](glossary://label) y otra visualización `\"Text\"` como [destino](glossary://destination%20view).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page66..Paragraph132" = "Intenta agregar el `NavigationLink` debajo, y luego toca el enlace en la vista previa.";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page66..CodeBlock23" = "NavigationLink(\"¡Presióname!\") { \n   Text(\"Soy la visualización de destino\")\n       .navigationTitle(\"Destino\")\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page67..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page67..Paragraph133" = "Agrega un enlace de navegación más e intenta navegar a distintas visualizaciones de tu `NavigationStack`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page67..Paragraph134" = "Debido a que `NavigationStack` funciona como una baraja, solamente se mostrará la visualización que esté arriba. Al navegar a otra visualización, esta se pasa a la parte superior de la pila para poder mostrarse.";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page67..CodeBlock24" = "NavigationLink(\"¡No, presióname a mí!\") { \n   Text(\"Soy otra visualización de destino\")\n       .navigationTitle(\"Destino\")\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..title" = "Experimentar con `NavigationSplitView`";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page68..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page68..Paragraph135" = "Después, debes crear una `NavigationSplitView` para mostrar contenido como columnas.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page68..Paragraph136" = "Usa enlaces de navegación como columna inicial que, al tocarlos, cada uno muestre texto en la columna final.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page69..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page69..Paragraph137" = "Primero, agrega tu visualización `NavigationSplitView`. Verás que hay dos secciones: la primera es la columna inicial de la visualización dividida, y la segunda es una [visualización de marcador de posición](glossary://placeholder%20view) que muestra contenido temporal hasta que se seleccione uno de los enlaces.";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page69..CodeBlock25" = "NavigationSplitView { \n    //#-learning-code-snippet(listOfLinks)\n\n} detail: { \n    //#-learning-code-snippet(detailView)\n    \n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page70..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page70..Paragraph138" = "A continuación, agrega algunos enlaces a `NavigationSplitView`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page70..Paragraph139" = "Es posible que notes que las visualizaciones se ven igual que con `NavigationStack` si utilizas un tamaño de vista previa pequeño. Intenta expandir la vista previa para ver varias columnas.";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page70..CodeBlock26" = "List {\n    NavigationLink(\"Primer enlace\") {\n        Text(\"😵‍💫\")\n    }\n    NavigationLink(\"Segundo enlace\") {\n        Text(\"😵‍\")\n    }\n    //#-learning-code-snippet(addMoreNavLinks)\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page71..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page71..Paragraph140" = "Por último, agrega una [visualización de marcador de posición](glossary://placeholder%20view) para ofrecer contenido inicial en tu segunda columna.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page71..Paragraph141" = "Puedes ver este contenido de marcador de posición si expandes tu vista previa y la reinicias antes de seleccionar un enlace.";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page71..CodeBlock27" = "Text(\"Selecciona un enlace\")\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..title" = "Experimentar con enlaces de navegación";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page72..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page72..Paragraph142" = "Si quieres personalizar el aspecto de tu enlace `NavigationLink`, puedes usar un [inicializador](glossary://initializer) diferente que tome una [etiqueta](glossary://label) personalizada.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page73..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page73..Paragraph143" = "El siguiente código crea un enlace `NavigationLink` con una [etiqueta](glossary://label) personalizada, compuesta por una `HStack` con una visualización `Text` e `Image`. Al igual que con el contenido de destino, la etiqueta puede ser cualquier visualización que quieras.";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page73..CodeBlock28" = "NavigationLink { \n    SlidingRectangle()\n       .navigationTitle(\"Rectángulo deslizable\")\n} label: { \n    HStack { \n        Text(\"Toca para navegar\")\n        Spacer()\n        Image(systemName: \"arrow.forward.circle\")\n            .font(.largeTitle)\n    }\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page74..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page74..Paragraph144" = "Intenta agregar un enlace `\"NavigationLink\"` nuevo y asígnale un destino, una etiqueta y un título. Intenta navegar a una de las otras visualizaciones de tu app, por ejemplo a `\"ConditionalCircle\"`.";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..title" = "Cómo se muestran visualizaciones en una app";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page75..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page75..Paragraph145" = "Ahora que has experimentado con agregar [enlaces de navegación](glossary://navigation%20link) dentro de `NavigationStack` y `NavigationSplitView`, tu objetivo es hacer que la primera visualización que tu app muestre sea una pila `NavigationStack`. Si se agregan enlaces de navegación, esto permite que las personas naveguen a otras visualizaciones cuando usen tu app.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page76..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page76..Paragraph146" = "En la definición de tu app debes indicar qué visualización debe mostrarse primero. Aquí puedes ver que tu app se llama `\"MyApp\"` de forma predeterminada, y que cumple con el [protocolo](glossary://protocol) `\"App\"`, el cual permite ejecutar tu app en tu dispositivo como cualquier otra app.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page76..Paragraph147" = "Presiona el botón de ejcución (▶︎) para intentar ejecutar el proyecto actual como una app. Aún no deberían ocurrir muchas cosas. 🙈";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page77..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page77..Paragraph148" = "La propiedad `body` (cuerpo) de tu app define su contenido. Por ahora, todo lo que necesitas saber es que requerirás al menos una visualización dentro de `WindowGroup`, que actúa como el contenedor de la [jerarquía de visualizaciones](glossary://view%20hierarchy) de tu app (una colección de las visualizaciones que tu app muestra cuando se abre).";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page78..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page78..Paragraph149" = "`ContentView` es tu [visualización principal](glossary://top-level%20view), es decir, la primera visualización que tu app muestra cuando se inicia. Además, se encuentra en la parte superior de tu [jerarquía de visualizaciones](glossary://view%20hierarchy), que es una colección estructurada de [subvisualizaciones](glossary://subview) que se ramifican a partir de tu visualización principal.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page79..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page79..Paragraph150" = "Para que veas lo que sucede, cambia temporalmente `ContentView` a otra visualización, como una `Text` o `Image`, y luego ejecuta tu app. Observa que la visualización principal de tu app ha cambiado; así es como se cambia el contenido que tu app muestra.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page79..Paragraph151" = "Cuando quieras continuar, regresa `\"ContentView\"` a la visualización principal.";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..title" = "Agregar una pila `NavigationStack` a tu app";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page80..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page80..Paragraph152" = "Para mostrar varias visualizaciones en tu app, debes convertir tu [visualización principal](glossary://top-level%20view) en una pila de navegación ([NavigationStack](doc://com.apple.documentation/documentation/swiftui/navigationstack)).";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page81..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page81..Paragraph153" = "Agrega una visualización `NavigationView` dentro de `SPCAssessableWindowGroup` en el `body` (cuerpo) de la app:";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page81..CodeBlock29" = "NavigationStack { \n\n}\n//#-learning-code-snippet(environmentObjectModifier)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page82..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page82..Paragraph154" = "Coloca tu visualización `ContentView` dentro de `NavigationStack`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page82..Paragraph155" = "La primera visualización que coloques dentro de `NavigationStack` muestra el contenido inicial, el cual puede cambiar cada vez que se use un [enlace de navegación](glossary://navigation%20link) para mostrar una visualización distinta.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page83..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page83..Paragraph156" = "El cuerpo `body` de tu app debería verse así:";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page83..CodeBlock30" = "SPCAssessableWindowGroup(app: self, assessmentCandidates: [CreatureZoo()]) { \n   NavigationStack { \n       ContentView()\n   }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..title" = "Agregar un título de navegación";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page84..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page84..Paragraph157" = "Ejecuta tu app. No se ve muy diferente, ¿verdad? Esto se debe a que, de forma predeterminada, `NavigationStack` actúa como un contenedor para mostrar su contenido.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page84..Paragraph158" = "Sin embargo, una pila `NavigationStack` te proporciona un espacio dedicado, conocido como [barra de navegación](glossary://navigation%20bar), que puede mostrar el título de la visualización actual, así como varios elementos de la barra de herramientas.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page85..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page85..Paragraph159" = "Intenta agregar `\".navigationTitle(\"Mis criaturas\")\"` como un modificador en `\"ContentView\"`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page85..Paragraph160" = "Esto le asigna un título a la visualización en la zona de la barra de navegación. Debes agregar el título de navegación a cada visualización dentro de `NavigationView`, y no en la visualización de navegación en sí.";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page85..CodeBlock31" = ".navigationTitle(\"Mis criaturas\")\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page86..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page86..Paragraph161" = "Observa cómo el título de navegación se muestra en la barra de navegación de la parte superior de tu visualización `ContentView`. Estos títulos ayudan a que los usuarios de tu app entiendan el contenido que están visualizando.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page86..Paragraph162" = "A continuación, agregarás un [enlace de navegación](glossary://navigation%20link) en la visualización `\"ContentView\"` para navegar a la visualización `\"CreatureDance\"`.";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLinkCreatureDance..title" = "Agregar un `NavigationLink` a `CreatureList`";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLinkCreatureDance..Page87..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLinkCreatureDance..Page87..Paragraph163" = "Dentro de la visualización `Section(\"Dance\")`, agrega un enlace con `CreatureDance` como destino. Usa la etiqueta y el título para describir lo que hace la visualización (en este caso, hará que algunas criaturas bailen).";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLinkCreatureDance..Page88..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLinkCreatureDance..Page88..CodeBlock32" = "NavigationLink(\"Haz que las criaturas bailen\") { \n    DancingCreatures()\n        .navigationTitle(\"Criaturas bailarinas\")\n}\n";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepNavigating in SwiftUI..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..SuccessMessage..Paragraph164" = "¡Felicidades! Agregar la función de navegación es una parte esencial de la creación de una app.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..SuccessMessage..Paragraph165" = "Recuerda que cuando uses un enlace `NavigationLink`, este sólo funcionará si la visualización desde la que navegas está dentro de una visualización `NavigationStack` o `NavigationSplitView`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..SuccessMessage..Paragraph166" = "A continuación, aprenderás a compartir datos entre todas las visualizaciones de tu app.";
+
+/* Title of step named Sharing Data Between Views */
+"GuideBook..Guide0..StepSharing Data Between Views..title" = "Compartir datos con varias visualizaciones";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..LearningCenterContent..Paragraph167" = "![](SharingDataBetweenViews.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..LearningCenterContent..Paragraph168" = "Ya aprendiste a almacenar datos [localmente](glossary://local%20scope) utilizando una [propiedad de estado](glossary://state%20value), así como entre dos visualizaciones usando una [ligadura](glossary://binding). Pero, ¿y si quieres compartir datos en una app que tiene varias visualizaciones, como en este caso?";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..LearningCenterContent..Paragraph169" = "Para compartir los mismos datos entre varias visualizaciones, necesitas una fuente única de información que esté [separada](glossary://data%20separation) de las visualizaciones. Este es el [modelo de datos](glossary://data%20model), y puede compartirse con cualquier visualización que necesite acceder a los datos.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..LearningCenterContent..Paragraph170" = "Una manera común de construir un modelo de datos para una app de SwiftUI es mediante un [objeto observable](glossary://observable%20object), el cual es un [tipo](glossary://type) con propiedades que pueden ser [observadas](glossary://observe) por varias visualizaciones. Esas visualizaciones pueden observar los cambios de estado en las propiedades, y esto les permite actualizar su interfaz para mantenerse sincronizadas.";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..title" = "Tu modelo de datos";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page89..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page89..Paragraph171" = "Este es tu modelo de datos, conocido como el [objeto observable](glossary://observable%20object) `CreatureZoo`. Es una [clase](glossary://class) que sigue los lineamientos del [protocolo](glossary://protocol) `ObservableObject`. Esto permite a la clase [publicar](glossary://publish) propiedades específicas.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page89..Paragraph172" = "Cuando una clase publica una propiedad, esta transmite o “publica” sus cambios de estado a cualquier [observador](glossary://observer) que exista. Esto permite que las visualizaciones que están [observando](glossary://observer) se actualicen cuando haya un cambio en el estado de una propiedad publicada.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page90..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page90..Paragraph173" = "Los [datos publicados](glossary://published%20value) en `CreatureZoo` son la propiedad `creatures` (un arreglo de instancias de `Creature`). Cada vez que cambien los datos de este arreglo, como cuando se agrega o elimina una criatura, SwiftUI notifica a todos los [observadores](glossary://observer) de la propiedad para que se actualicen y muestren los datos más recientes.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page91..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page91..Paragraph174" = "En un objeto observable, agrega el [contenedor de propiedades](glossary://property%20wrapper)  `@Published` para marcar una propiedad como [publicada](glossary://published%20value).";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page92..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page92..Paragraph175" = "Para crear una instancia de una criatura, usa el inicializador `Creature(name:emoji:)` y enseguida pasa un nombre y un solo personaje de emoji.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page93..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page93..Paragraph176" = "Este es el tipo `Creature`, que contiene [propiedades](glossary://property) para `name`, `emoji`, `offset`, `id` y `rotation`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page93..Paragraph177" = "Al agregar una propiedad `id`, el tipo `Creature` sigue los lineamientos del [protocolo](glossary://protocol) `Identifiable`, el cual permite a SwiftUI identificar cualquier `Creature`, incluso si dos criaturas usan el mismo emoji. Esto te será útil posteriormente.";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..title" = "Agregar más criaturas";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page94..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page94..Paragraph178" = "Agrega al menos dos instancias de `\"Creature\"` nuevas al arreglo `\"creatures\"`.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page95..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page95..Paragraph179" = "Para crear una criatura nueva, [inicialízala](glossary://initialization) dándole un nombre y pasando un solo emoji. Cuando agregues criaturas al arreglo, tienes que separar cada una con una coma; por ejemplo:";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page95..CodeBlock33" = "Creature(name: \"T-Rex\", emoji: \"🦖\"),\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page96..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page96..Paragraph180" = "Agrega al menos una criatura más a tu arreglo.";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page96..CodeBlock34" = "Creature(name: \"Ladybug\", emoji: \"🐞\"),\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..title" = "Crear un objeto de estado";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page97..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page97..Paragraph181" = "Antes de compartir tu [objeto observable](glossary://observable%20object) con varias visualizaciones, primero explorarás cómo se usa el modelo de datos en una sola visualización.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page97..Paragraph182" = "En la visualización `ContentView`, inicializa tu objeto observable y crea una lista de visualizaciones de criaturas con los datos.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page97..Paragraph183" = "Para inicializar un objeto observable, como `CreatureZoo`, debes usar un contenedor de propiedades especial, `@StateObject`, para que SwiftUI pueda administrar los datos.";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page97..CodeBlock35" = "@StateObject var data = CreatureZoo()\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page98..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page98..Paragraph184" = "Usa el contenedor de propiedades `@StateObject` para decirle a SwiftUI que administre el objeto observable por ti, parecido a cuando usas `@State` para hacer que SwiftUI administre una propiedad en una visualización como una [propiedad de estado](glossary://state%20property).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page98..Paragraph185" = "En este caso, debes inicializar el objeto observable `CreatureZoo`, y pedirle a SwiftUI que lo administre como un [objeto de estado](glossary://state%20object).";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..title" = "Usar un modelo de datos en una visualización";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page99..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page99..Paragraph186" = "Ahora que inicializaste tus datos, los usarás para crear una visualización básica. Debes agregar una visualización para el [ciclo ForEach](glossary://ForEach) dentro de tu visualización `List` con el objetivo de mostrar cada una de tus criaturas verticalmente en una disposición por columnas.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page100..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page100..Paragraph187" = "Un ciclo [ForEach](glossary://ForEach) es una estructura que [itera](glossary://iteration) para recorrer una [colección](glossary://collection) de datos (como un arreglo) con el objetivo de crear una visualización para cada elemento en la colección.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page100..Paragraph188" = "Agrega el ciclo `ForEach` debajo de tu visualización `Section` para iterar sobre tu arreglo `data.creatures`, creando una visualización personalizada que muestra el nombre y el emoji de cada criatura:";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page100..CodeBlock36" = "/*#-code-walkthrough(forEach.id)*/\nForEach(data.creatures) { creature in \n/*#-code-walkthrough(forEach.id)*/\n    HStack { \n        Text(creature.name)\n            .font(.title)\n        Spacer()\n        Text(creature.emoji)\n            /*#-code-walkthrough(resizableFont)*/\n            .resizableFont()\n            /*#-code-walkthrough(resizableFont)*/\n            .frame(minWidth: 125)\n    }\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page101..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page101..Paragraph189" = "¿Recuerdas cómo `Creature` sigue los lineamientos del protocolo `Identifiable`? Esto permite que la estructura [ForEach](glossary://ForEach) identifique cada criatura específicamente, incluso si tienen el mismo emoji o nombre. Dado que puede diferenciar entre gemelos, esto permite a SwiftUI actualizar cada visualización por separado, sin confundirlas.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page102..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page102..Paragraph190" = "Puede que hayas notado que aquí se usa el modificador `.resizableFont()`. Se trata de un modificador personalizado definido en `ResizableFont.swift` para permitir que el tamaño de letra de tu visualización `Text` se ajuste al tamaño de la visualización. Consulta el código en ese archivo para averiguar cómo crear un modificador personalizado.";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..title" = "Hacer que el modelo de datos sea accesible para toda la app";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page103..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page103..Paragraph191" = "Ahora que has usado con éxito los datos de tu objeto observable en una sola visualización, es hora de compartir esos datos con toda la app desde `\"MyApp.swift\"`.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page104..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page104..Paragraph192" = "Para hacer que tus datos sean accesibles para toda la app:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page104..OrderedList6..Paragraph193" = "Crea una instancia de `CreatureZoo` como un [objeto de estado](glossary://state%20object) en `MyApp`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page104..OrderedList6..Paragraph194" = "Pásala a tu [visualización principal](glossary://top-level%20view), `NavigationStack`, como un [objeto de entorno](glossary://environment%20object).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page104..Paragraph195" = "Al pasar los datos a tu visualización principal, el objeto de entorno hace que esos datos estén disponibles para toda la [jerarquía de visualizaciones](glossary://view%20hierarchy), de modo que todas las demás visualizaciones pueden usarlos.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page105..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page105..Paragraph196" = "Crea tu instancia de `CreatureZoo`, igual que hiciste en `CreatureList`:";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page105..CodeBlock37" = "@StateObject var data = CreatureZoo()\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page106..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page106..Paragraph197" = "Agrega el siguiente modificador debajo de `NavigationStack`:";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page106..CodeBlock38" = ".environmentObject(data)\n";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page106..Paragraph198" = "Esto pasa tu instancia de [objeto observable](glossary://observable%20object) al [entorno](glossary://environment) de la app, para que cualquier [subvisualización](glossary://subview) pueda acceder a la instancia del objeto observable.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page107..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page107..Paragraph199" = "A continuación, regresa al archivo `ContentView.swift` para intentar usar el objeto de entorno.";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..title" = "Acceder a un objeto de entorno";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page108..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page108..Paragraph200" = "Ahora que compartiste el objeto observable con todas las [subvisualizaciones](glossary://subview) de `NavigationStack`, incluyendo `ContentView`, es hora de acceder a esos datos.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page109..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page109..Paragraph201" = "En lugar de usar `@StateObject`, que crea una nueva instancia de un objeto observable, necesitas acceder a la instancia que se pasó al [entorno](glossary://environment) de la app:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page109..OrderedList7..Paragraph202" = "Elimina tu variable `@StateObject` actual, `data`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page109..OrderedList7..Paragraph203" = "Para acceder a tu [objeto de entorno](glossary://environment%20object), y crea una nueva propiedad con un contenedor de propiedades `@EnvironmentObject` del tipo `CreatureZoo`.";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page109..CodeBlock39" = "@EnvironmentObject var data : CreatureZoo\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page110..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page110..Paragraph204" = "Examina tu lista de criaturas en la vista previa `ContentView`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page110..Paragraph205" = "Observa que las criaturas aparecen de la misma forma que antes. Los datos de la lista de criaturas se crean en `MyApp`, se comparten mediante el [entorno](glossary://environment) de la app, y se acceden en la visualización `ContentView`.";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..title" = "Reemplazar `HStack` con una visualización `CreatureRow` compuesta";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page111..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page111..Paragraph206" = "Aquí tienes una excelente oportunidad para mejorar tu código. Puedes simplificar el código en esta visualización al reemplazar toda la pila `HStack` dentro de la estructura [`ForEach`](glossary://ForEach) con una [visualización compuesta](glossary://composed%20view), `CreatureRow`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page111..Paragraph207" = "Reemplaza el contenido de `HStack` dentro de `ForEach` con `CreatureRow(creature: creature)`.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page112..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page112..Paragraph208" = "Échale un vistazo a `CreatureRow.swift`, pues ahí encontrarás el mismo código que tenías en `ForEach`, excepto con una [propiedad](glossary://property) que contiene un valor de `Creature`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page112..Paragraph209" = "Ahora que tienes el valor `CreatureRow` en una visualización propia, es más fácil modificarlo y probarlo por separado de `ContentView`. Componer una visualización como esta mejora la [modularidad](glossary://modularity) de tu código, el cual representa un principio fundamental del desarrollo de apps.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page113..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page113..CodeBlock40" = "ForEach(data.creatures) { criatura en \n   CreatureRow(creature: creature)\n}\n";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepSharing Data Between Views..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..SuccessMessage..Paragraph210" = "¡Bien!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..SuccessMessage..Paragraph211" = "Al pasar un objeto observable al entorno de la app, permites que toda la [jerarquía de visualizaciones](glossary://view%20hierarchy) acceda a sus datos. Esto permite que otras visualizaciones de tu app usen la misma [fuente única de información](glossary://source%20of%20truth), en lugar de intentar recrear los datos en varios lugares.";
+
+/* Title of step named Create a New View To Share Data */
+"GuideBook..Guide0..StepCreate a New View To Share Data..title" = "Crear una nueva visualización para compartir datos";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..LearningCenterContent..Paragraph212" = "![](CreateANewViewToShareData.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..LearningCenterContent..Paragraph213" = "Ahora que lograste compartir datos con una visualización, es hora de usar esos datos en otras visualizaciones.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..LearningCenterContent..Paragraph214" = "Para lograrlo, necesitas hacer dos cosas:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..LearningCenterContent..OrderedList8..Paragraph215" = "Asegúrate de que la visualización que accede a los datos forma parte de la misma [jerarquía de visualizaciones](glossary://view%20hierarchy) que la visualización principal a la que se pasa. Para agregar una visualización a la jerarquía de visualizaciones, inicialízala dentro de la [visualización principal](glossary://top-level%20view) o de cualquiera de sus [subvisualizaciones](glossary://subview).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..LearningCenterContent..OrderedList8..Paragraph216" = "Accede al [objeto de entorno](glossary://environment%20object).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..LearningCenterContent..Paragraph217" = "Por ejemplo, si creas una nueva visualización dentro de `ContentView`, esta formará parte de la jerarquía de visualizaciones, ya que `ContentView` es una subvisualización de tu visualización principal, `NavigationStack`. Así podrás acceder al objeto de entorno desde la visualización nueva.";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..title" = "Declarar el objeto de entorno";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page114..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page114..Paragraph218" = "Tu objetivo es crear un nueva visualización, llamada `DancingCreatures`, que acceda a los datos disponibles en el [entorno](glossary://environment) de la app.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page114..Paragraph219" = "La visualización `DancingCreatures` ya forma parte de tu [jerarquía de visualizaciones](glossary://view%20hierarchy), dado que en `ContentView` agregaste un enlace que la conecta. Tu siguiente paso es acceder a los datos en el entorno de la app.";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page115..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page115..Paragraph220" = "Para acceder a los datos del entorno de la app, declara tu objeto de entorno para `CreatureZoo` de la misma manera que en `CreatureList`. Si necesitas ayuda, revisa tu código anterior.";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page116..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page116..Paragraph221" = "[Declara](glossary://declaration) una variable utilizando el contenedor de propiedades `@EnvironmentObject` y asígnale un tipo de `CreatureZoo`. No necesitas [inicializar](glossary://initialization) el valor, porque esto ya se hizo en `MyApp`. En esta ocasión, sólo necesitas acceder a los datos.";
+
+/*  */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page116..CodeBlock41" = "@EnvironmentObject var data : CreatureZoo\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesView..title" = "Agregar una visualización `DancingCreatures`";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesView..Page117..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesView..Page117..Paragraph222" = "Ahora que tienes acceso a los datos de tu app, es hora de crear algo divertido con ellos. Primero, debes apilar todas tus criaturas una encima de otra, y luego, cuando toques una, se deben dispersar en diferentes direcciones.";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesView..Page118..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesView..Page118..Paragraph223" = "Agrega este código dentro de `VStack`:";
+
+/*  */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesView..Page118..CodeBlock42" = "ZStack {\n    /*#-code-walkthrough(dance.forEach)*/\n    ForEach(data.creatures) { creature in\n    /*#-code-walkthrough(dance.forEach)*/\n        /*#-code-walkthrough(dance.textView)*/\n        Text(creature.emoji)\n            .resizableFont()\n            .offset(creature.offset)\n            .rotationEffect(creature.rotation)\n        /*#-code-walkthrough(dance.textView)*/\n        //#-learning-code-snippet(exp1)\n        //#-learning-code-snippet(animationSolution)\n        //#-learning-code-snippet(exp3)\n\n    }\n}\n/*#-code-walkthrough(dance.onTap)*/\n.onTapGesture {\n    data.randomizeOffsets()\n}\n/*#-code-walkthrough(dance.onTap)*/\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..title" = "Cómo funciona el código de animación";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page119..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page119..Paragraph224" = "Para crear esta animación, un ciclo [ForEach](glossary://ForEach) itera cada una de tus criaturas en `CreatureZoo.creatures`, y crea una visualización `Text` para cada una.";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page120..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page120..Paragraph225" = "La visualización `Text` usa las [propiedades](glossary://property) `offset` y `rotation` como argumentos de los modificadores `.offset` y `.rotationEffect`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page120..Paragraph226" = "Dado que `CreatureZoo.creatures` es un [valor publicado](glossary://published%20value), SwiftUI actualiza la visualización `DancingCreatures` cada vez que se modifican los valores de `offset` o `rotation` de una criatura.";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page121..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page121..Paragraph227" = "El modificador `.onTapGesture` ejecuta código cada vez que se toca la visualización. Cuando se toca, `data.randomizeOffsets()` cambia los valores de `offset` y `rotation` de cada criatura, lo cual permite que la visualización actualice cada criatura a su nueva ubicación y rotación.";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..title" = "Animar las criaturas";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page122..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page122..Paragraph228" = "Intenta tocar la visualización.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page122..Paragraph229" = "Las criaturas se están moviendo, pero no lo hacen con gracia. Ahora, anímalas para que cuando cambien a su nueva posición lo hagan con estilo.";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page123..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page123..Paragraph230" = "Para animar las criaturas conforme se mueven a una nueva posición, necesitas indicarle a SwiftUI qué animación usar y qué valor animar. En este caso, debes animar la propiedad `offset` de cada criatura.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page123..Paragraph231" = "Agrega el modificador `.animation(_:value:)` a la visualización `Text`. Elige el argumento `.default` para la animación, y pasa `creature.offset` como el valor. Cada vez que `offset` cambie, se animarán los cambios en la visualización.";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page124..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page124..CodeBlock43" = ".animation(.default, value: creature.offset)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..title" = "Experimentar con la visualización";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page125..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page125..Paragraph232" = "Ahora que conseguiste agregar animaciones a tus criaturas, intenta ajustar las animaciones y otras partes de la visualización para hacerla más interesante.";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page126..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page126..Paragraph233" = "Agrega un nuevo modificador `.animation(_:value:)` para animar los cambios en la propiedad `creature.rotation`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page126..Paragraph234" = "Agrega el siguiente modificador antes del modificador `.animation(_:value)`. ¿Cómo cambia esto la animación? ¿Por qué crees que sucede esto? ¿Qué pasaría si colocas la animación `.spring()` después del modificador?";
+
+/*  */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page126..CodeBlock44" = ".animation(.spring(response: 0.5, dampingFraction: 0.5), value: creature.rotation)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page127..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page127..Paragraph235" = "Cambia el controlador de eventos de `.onTapGestures` a `data.synchronizeOffsets()`. Esto ocasiona que todas tus criaturas se muevan con la misma desviación.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page127..OrderedList9..Paragraph236" = "Quita tu modificador `.animation` actual de la propiedad `creature.offset`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page127..OrderedList9..Paragraph237" = "Agrega la siguiente animación para disminuir el retraso de cada animación.";
+
+/*  */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page127..CodeBlock45" = ".animation(.default.delay(data.indexFor(creature) / 10), value: creature.offset)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page128..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page128..Paragraph238" = "¡Sigue personalizando tus valores de animación hasta que consigas el resultado deseado!";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepCreate a New View To Share Data..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..SuccessMessage..Paragraph239" = "¡Muy buen trabajo!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..SuccessMessage..Paragraph240" = "Lograste crear otra visualización que usa tu [modelo de datos](glossary://data%20model) observable compartido con la [jerarquía de visualizaciones](glossary://view%20hierarchy).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..SuccessMessage..Paragraph241" = "A continuación, aprenderás a agregar y eliminar datos de ese modelo de datos para que las personas puedan personalizar la app.";
+
+/* Title of step named Add and delete creatures */
+"GuideBook..Guide0..StepAdd and delete creatures..title" = "Agregar y eliminar criaturas";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..LearningCenterContent..Paragraph242" = "![](AddAndDeleteCreatures.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..LearningCenterContent..Paragraph243" = "Ahora tienes una app de varias visualizaciones que comparte un único [modelo de datos](glossary://data%20model) entre varias visualizaciones. Pero la app aún no está completa. Aunque tú puedes agregar y eliminar parámetros `Creature` en el código, el [usuario](glossary://user) no puede hacerlo mediante la interfaz.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..LearningCenterContent..Paragraph244" = "Por suerte, esto es muy sencillo de solucionar. Debido a que tienes acceso al modelo de datos desde tus visualizaciones, puedes hacer cambios en el modelo de datos cuando una persona interactúa con tu interfaz. Primero, aprenderás a eliminar una criatura y luego crearás una visualización nueva que le permita a las personas agregar sus propias criaturas.";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..title" = "Eliminar una criatura";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page129..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page129..Paragraph245" = "SwiftUI permite eliminar datos de una lista (`List`) de forma fácil y rápida. Puedes eliminar una criatura con sólo agregar un modificador `.onDelete` al ciclo `ForEach` en la visualización `ContentView`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page129..Paragraph246" = "Agregar el modificador `.onDelete` te permite ejecutar código personalizado (una [clausura](glossary://closure) de `action` cuando una persona decide eliminar un elemento). Tu código de clausura elimina la criatura actual del [modelo de datos](glossary://data%20model) observable de tu app.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page130..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page130..Paragraph247" = "Dentro de la [clausura](glossary://closure) `.onDelete`, debes eliminar a la criatura actual llamando a `remove(atOffsets:)` y pasando el valor `indexSet` de la clausura. Esto buscará a la criatura correspondiente en el arreglo `creatures` según la fila de la lista que elijas eliminar.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page130..Paragraph248" = "Intenta agregar este modificador debajo de cada ciclo `ForEach` y ejecuta tu app. ¿Puedes eliminar una criatura tras deslizarla a la izquierda?";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page130..CodeBlock46" = ".onDelete { indexSet in \n    data.creatures.remove(atOffsets: indexSet)\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..title" = "Agregar un enlace `NavigationLink` a `CreatureEditor`";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page131..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page131..Paragraph249" = "Para agregar una criatura, necesitarás hacer dos cosas:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page131..OrderedList10..Paragraph250" = "Agrega una visualización `CreatureEditor` a tu [jerarquía de visualizaciones](glossary://view%20hierarchy) mediante un enlace `NavigationLink`. Esto permitirá que `CreatureEditor` tenga acceso al objeto de entorno `CreatureZoo` y que un usuario pueda navegar hasta la visualización.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page131..OrderedList10..Paragraph251" = "[Compón](glossary://composed%20view) la visualización `CreatureEditor` para permitir que una persona edite y agregue una criatura nueva al arreglo `creatures` en `CreatureZoo`.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page132..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page132..Paragraph252" = "Primero, decide dónde quieres agregar un enlace `NavigationLink` en `CreatureEditor`. Dado que ya tienes en `ContentView` una visualización `List` de criaturas que puedes eliminar, tiene sentido poder agregar una criatura desde la misma visualización.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page133..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page133..Paragraph253" = "Para facilitar la edición de criaturas, coloca un enlace en la [barra de navegación](glossary://navigation%20bar) de la interfaz de `ContentView`. Este es el lugar perfecto para este tipo de enlace, ya que es un sitio común en donde los usuarios suelen buscar las funciones adicionales de las apps.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page134..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page134..Paragraph254" = "Para agregar un botón a la barra de navegación:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page134..OrderedList11..Paragraph255" = "Agrega una barra de navegación personalizada agregando el modificador `.toolbar` a tu visualización `List`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page134..OrderedList11..Paragraph256" = "Dentro de la clausura `.toolbar`, agrega un `ToolbarItem`, el cual es un elemento que se puede colocar en la barra de herramientas.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page134..OrderedList11..Paragraph257" = "En `CreatureEditor`, agrega un enlace `NavigationLink` dentro de `ToolbarItem`. Esta es la visualización que verás en la barra de navegación.";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page134..CodeBlock47" = ".toolbar { \n    ToolbarItem { \n        // Agrega NavigationLink a CreatureEditor\n\n    }\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page135..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page135..CodeBlock48" = ".toolbar { \n    ToolbarItem { \n        NavigationLink(\"Agregar\") { \n            CreatureEditor()\n        }\n    }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..title" = "Agregar un título de navegación a `CreatureEditor`";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..Page136..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..Page136..Paragraph258" = "Después, asígnale un título de navegación a `CreatureEditor` que describa el propósito de la visualización.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..Page136..OrderedList12..Paragraph259" = "Agrega un título de navegación a la visualización `CreatureEditor`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..Page136..OrderedList12..Paragraph260" = "Ejecuta tu app e intenta ir a `CreatureEditor` desde `ContentView`.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..Page137..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..Page137..CodeBlock49" = ".toolbar { \n    ToolbarItem { \n        NavigationLink(\"Agregar\") { \n            CreatureEditor()\n                .navigationTitle(\"Agregar criatura\")\n        }\n    }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..title" = "Definir los datos de `CreatureEditor`";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page138..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page138..Paragraph261" = "Para agregar una criatura nueva, crearás una [visualización compuesta](glossary://composed%20view) `CreatureEditor` que te permita editar una criatura nueva y agregarla a tu [modelo de datos](glossary://data%20model).";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page139..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page139..Paragraph262" = "Tómate un momento para pensar qué [propiedades](glossary://property) necesitarás en `CreatureEditor` para crear una nueva instancia de `Creature` y agregarla a tu modelo de datos.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page139..OrderedList13..Paragraph263" = "Necesitarás una propiedad `Creature` que puedas modificar desde la visualización `CreatureEditor` [local](glossary://local%20scope).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page139..OrderedList13..Paragraph264" = "Necesitarás acceso a tu [objeto observable](glossary://observable%20object) `CreatureZoo` desde el [entorno](glossary://environment) para que puedas agregarle tu instancia de `Creature`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page139..Paragraph265" = "Intenta crear dos propiedades que se encarguen de eso, y usa las siguientes pistas si tienes problemas.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page140..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page140..Paragraph266" = "Primero, crea una [propiedad de estado](glossary://state%20property) que almacene una instancia de `Creature`. Y, por ahora, deja sus parámetros `name` y `emoji` como strings vacíos.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page141..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page141..Paragraph267" = "Luego, declara un [objeto de entorno](glossary://environment%20object) del tipo `CreatureZoo` para acceder a tu instancia de [objeto observable](glossary://observable%20object).";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page142..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page142..CodeBlock50" = "@State var newCreature : Creature = Creature(name: \"\", emoji: \"\")\n@EnvironmentObject var data : CreatureZoo \n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineYourView..title" = "Crear un formulario en la visualización `CreatureEditor`";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineYourView..Page143..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineYourView..Page143..Paragraph268" = "Para crear la visualización `CreatureEditor`, puedes usar una visualización integrada `Form` (formulario), la cual es ideal para administrar la entrada de datos.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineYourView..Page143..Paragraph269" = "Agrega tres visualizaciones `Section` dentro de `Form`; cada una para editar un aspecto de la criatura: su nombre, emoji y vista previa.";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineYourView..Page143..CodeBlock51" = "Form {\n    Section(\"Nombre\") {\n        //#-learning-code-snippet(addACreatureEditorTextField)\n\n    }   \n\n    Section(\"Emoji\") {\n        \n    }\n\n    Section(\"Vista previa de criatura\") {\n        CreatureRow(creature: newCreature)\n    }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..title" = "Agregar visualizaciones TextField para la entrada del usuario";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page144..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page144..Paragraph270" = "A continuación, necesitas agregar una manera que permita a las [personas](glossary://user) editar los valores de `name` y `emoji` de la [propiedad de estado](glossary://state%20property) `Creature`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page144..Paragraph271" = "Esto lo puedes hacer al agregar una visualización [TextField](doc://com.apple.documentation/documentation/swiftui/textfield), la cual permite a las personas ingresar texto.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page144..Paragraph272" = "Agrega dos visualizaciones `TextField` para editar los valores de `name` y `emoji` de la criatura. Usa el inicializador `TextField(_:text:)`, el cual toma argumentos para una [etiqueta](glossary://label) y un valor del tipo `String` de una [ligadura](glossary://binding).";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page145..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page145..Paragraph273" = "Recuerda, una ligadura requiere que la fuente de la verdad sea administrada por SwiftUI, por ejemplo, mediante una [propiedad de estado](glossary://state%20property).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page145..Paragraph274" = "Pasa una ligadura a tu propiedad de estado `Creature`, y especifica los valores de `name` y `emoji` de la siguiente manera:";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page145..CodeBlock52" = "$newCreature.name\n$newCreature.emoji\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page146..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page146..Paragraph275" = "Aquí tienes un ejemplo de cómo agregar una visualización `TextField`. Agrega una para editar `newCreature.name`, y luego agrega otra para editar `newCreature.emoji`.";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page146..CodeBlock53" = "TextField(\"Nombre\", text: $newCreature.name)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page147..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page147..CodeBlock54" = "Form {\n    Section(\"Nombre\") {\n        TextField(\"Nombre\", text: $newCreature.name)\n    }   \n\n    Section(\"Emoji\") {\n        TextField(\"Emoji\", text: $newCreature.emoji)\n    }\n\n    Section(\"Vista previa de criatura\") {\n        CreatureRow(creature: newCreature)\n    }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..title" = "Colocar un botón de adición en la barra de herramientas";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page148..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page148..Paragraph276" = "Después, necesitas agregar un botón (`Button`) que las personas puedan tocar para agregar sus propias criaturas.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page148..Paragraph277" = "Igual que en la visualización `ContentView`, la [barra de navegación](glossary://navigation%20bar) de `CreatureEditor` es el mejor lugar para colocar un botón como este.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page149..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page149..Paragraph278" = "Intenta usar como ejemplo el código de `.toolbar` de la visualización `ContentView` para agregar una barra de herramientas a `CreatureEditor`:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page149..OrderedList14..Paragraph279" = "Agrega el modificador `.toolbar` debajo de `VStack`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page149..OrderedList14..Paragraph280" = "Dentro de la barra de herramientas, agrega `ToolbarItem`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page149..OrderedList14..Paragraph281" = "Dentro de `ToolbarItem`, agrega un `Button` con una [etiqueta](glossary://label) que diga “Agregar”. Por ahora, puedes dejar vacía la [clausura](glossary://closure) de la acción de `Button`.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page150..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page150..CodeBlock55" = ".toolbar { \n    ToolbarItem { \n        Button(\"Agregar\") { \n            //#-learning-code-snippet(addCreatureToCreatureZoo)\n            //#-learning-code-snippet(dismissCall)\n        }\n    }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..title" = "Agregar la criatura a `CreatureZoo`";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page151..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page151..Paragraph282" = "Cuando toques el botón Agregar, debería agregarse la instancia de la criatura a tu objeto observable, `CreatureZoo`; es decir, la criatura debería agregarse al final del arreglo `creatures`.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page152..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page152..Paragraph283" = "El siguiente código agrega la criatura que se está editando a `data.creatures`. Recuerda, `creatures` es un [valor publicado](glossary://published%20value), de modo que cualquier cambio en él ocasionará que se actualicen automáticamente todas las visualizaciones que lo usen.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page152..Paragraph284" = "Agrega este código dentro de la [clausura](glossary://closure) de tu elemento `Button`.";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page152..CodeBlock56" = "data.creatures.append(newCreature)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page153..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page153..Paragraph285" = "Ejecuta tu app e intenta crear una criatura nueva.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page153..Paragraph286" = "Regresa a `ContentView` para revisar si la criatura nueva se agregó a la visualización `List`. ¿También se agregó en la visualización `DancingCreatures`?";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..title" = "Cerrar el editor al tocar Agregar";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page154..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page154..Paragraph287" = "Después de agregar una criatura, se cierra la visualización `CreatureEditor` y se muestra la visualización anterior. Esto crea una mejor experiencia para el usuario, y evita que se toque el botón Agregar más de una vez, lo cual agregaría la misma criatura una y otra vez.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page155..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page155..Paragraph288" = "Para cerrar la visualización, necesitas dos cosas:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page155..OrderedList15..Paragraph289" = "Declara el valor del [entorno](glossary://environment) `dismiss`, el cual permite a la app cerrar la visualización actual que se muestra en `NavigationStack`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page155..OrderedList15..Paragraph290" = "[Llama](glossary://call) a `dismiss()` cuando se toque el botón Agregar.";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page155..CodeBlock57" = "@Environment(\\.dismiss) var dismiss\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page156..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page156..Paragraph291" = "Después de haber declarado el cierre del valor del [entorno](glossary://environment), llama a `dismiss()` cuando se toque el botón Agregar, después de haber agregado tu criatura nueva a `data.creatures`.";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page156..CodeBlock58" = "dismiss()\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page157..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page157..CodeBlock59" = ".toolbar { \n    ToolbarItem { \n        Button(\"Agregar\") { \n            data.creatures.append(newCreature)\n            dismiss()\n        }\n    }\n}\n";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepAdd and delete creatures..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..SuccessMessage..Paragraph292" = "¡Felicidades, creaste una app completamente funcional!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..SuccessMessage..Paragraph293" = "Ahora puedes agregar nuevas criaturas y editarlas en `CreatureList` y luego verlas bailar en `DancingCreatures`.";
+
+/* Title of step named Add a `CreatureDetail` view */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..title" = "Agregar una visualización `CreatureDetail`";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..LearningCenterContent..Paragraph294" = "![](AddCreatureDetailView.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..LearningCenterContent..Paragraph295" = "Ahora que sabes cómo navegar entre las visualizaciones, administrar los cambios de estado [locales](glossary://local%20scope), compartir datos entre toda tu app, y usar una variedad de [visualizaciones integradas de SwiftUI](glossary://built-in%20view), es hora de poner tus habilidades a prueba y crear una nueva visualización que muestre los detalles de una sola criatura de tu lista: `CreatureDetail`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..LearningCenterContent..Paragraph296" = "Tu lista de criaturas se ve bien, pero necesita un poco más de interactividad. ¿De qué sirve tener todas esas criaturas si no puedes jugar con ellas?";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..title" = "Agregar un enlace `NavigationLink` a la visualización `CreatureDetail`";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page158..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page158..Paragraph297" = "Tu objetivo es hacer que cada visualización de tu ciclo [ForEach](glossary://ForEach) recorra su propio `NavigationLink`, y que cada uno muestre una visualización detallada de una criatura en tu arreglo `data.creatures`.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page159..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page159..Paragraph298" = "Para lograrlo, reemplaza el contenido del ciclo `ForEach` con un `NavigationLink`:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page159..OrderedList16..Paragraph299" = "Establece el [destino](glossary://destination%20view) que servirá como la [visualización compuesta](glossary://composed%20view) `CreatureDetail(creature: creature)`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page159..OrderedList16..Paragraph300" = "Crea la [etiqueta](glossary://label) como `CreatureRow`, y usa el valor `creature` de la [clausura](glossary://closure) como el [argumento](glossary://argument).";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page160..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page160..Paragraph301" = "Crea tu enlace de navegación como este y agrégalo dentro de `ForEach`:";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page160..CodeBlock60" = "NavigationLink {\n    CreatureDetail(creature: creature)\n        .navigationTitle(creature.name)\n} label: {\n    CreatureRow(creature: creature)\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page161..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page161..Paragraph302" = "`ForEach` debe ser como lo siguiente:";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page161..CodeBlock61" = "ForEach(data.creatures) { creature in \n    NavigationLink {\n        CreatureDetail(creature: creature)\n            .navigationTitle(creature.name)\n    } label: {\n        CreatureRow(creature: creature)\n    }  \n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page162..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page162..Paragraph303" = "Intenta tocar una fila de tu `List`; ahora te lleva a la visualización `CreatureDetail` de esa criatura.";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..title" = "Construir la visualización `CreatureDetail`";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page163..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page163..Paragraph304" = "La visualización `CreatureDetail` muestra la criatura seleccionada como una visualización `Text`. Tu tarea es entender el código existente y ampliarlo para crear más efectos de criaturas geniales.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page164..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page164..Paragraph305" = "En la visualización `ContentView`, creaste un enlace `NavigationLink` con una [visualización de destino](glossary://destination%20view) de `CreatureDetail(creature: creature)`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page164..Paragraph306" = "La visualización de destino usa el valor `Creature` de cada fila de la lista para generar una visualización diferente según la criatura que se haya tocado. Aquí, ese valor se almacena como una [constante](glossary://constant) sin estado, porque su valor no cambiará.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page165..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page165..Paragraph307" = "Ya definimos tres [propiedades de estado](glossary://state%20property) por ti:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page165..OrderedList17..Paragraph308" = "`color` hace un seguimiento del valor de `Color` y controla las modificaciones de color en tu visualización `Text`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page165..OrderedList17..Paragraph309" = "`shadowRadius` es un valor `Double` que se usa para controlar el radio de un modificador `.shadow`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page165..OrderedList17..Paragraph310" = "`angle` es un valor `Angle` que se puede usar para girar tu visualización `Text`.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page166..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page166..Paragraph311" = "Tu visualización `Text` usa `creature.emoji` como el valor de `String` para la visualización, y agrega varios modificadores que determinan el aspecto y comportamiento de la visualización:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page166..OrderedList18..Paragraph312" = "[.colorMultiply](doc://com.apple.documentation/documentation/swiftui/list/colormultiply(_:)) agrega un efecto de multiplicación de color a la visualización.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page166..OrderedList18..Paragraph313" = "[.shadow](doc://com.apple.documentation/documentation/swiftui/list/shadow(color:radius:x:y:)) agrega una sombra de un color y radio específicos.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page166..OrderedList18..Paragraph314" = "[.rotation3DEffect](doc://com.apple.documentation/documentation/swiftui/view/rotation3deffect(_:axis:anchor:anchorz:perspective:)) puede controlar la rotación de la visualización en tres dimensiones.";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddColorPicker..title" = "Agregar una visualización `ColorPicker` para cambiar el valor de `color`";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddColorPicker..Page167..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddColorPicker..Page167..Paragraph315" = "Para empezar a agregar algo de interacción a esta visualización, primero agrega una visualización `ColorPicker` debajo de la visualización `Text`. Esto cambia el estado de la propiedad `color` cuando se elija un color nuevo.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddColorPicker..Page167..Paragraph316" = "Intenta hacerlo por tu cuenta, y consulta la solución si tienes problemas.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddColorPicker..Page168..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddColorPicker..Page168..CodeBlock62" = "ColorPicker(\"Elige un color\", selection: $color)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddSliderShadowRadius..title" = "Agregar un control `Slider` para ajustar el radio del sombreado";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddSliderShadowRadius..Page169..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddSliderShadowRadius..Page169..Paragraph317" = "Debajo de `ColorPicker`, agrega un `Slider` que controle el valor de `shadowRadius`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddSliderShadowRadius..Page169..Paragraph318" = "Intenta hacerlo por tu cuenta, y consulta la solución si tienes problemas.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddSliderShadowRadius..Page170..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddSliderShadowRadius..Page170..CodeBlock63" = "HStack { \n    Text(\"Shadow\")\n    Slider(value: $shadowRadius)\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..title" = "Agregar un botón (`Button`) que cambie el tamaño de la criatura";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page171..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page171..Paragraph319" = "Debajo de `Slider`, agrega un botón (`Button`) que se pueda usar para aumentar o reducir la escala de la visualización `Text`:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page171..OrderedList19..Paragraph320" = "Crea una nueva [propiedad de estado](glossary://state%20property) que supervise los cambios en el valor `Boolean`, de manera similar a lo que hiciste en `ConditionalCircle`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page171..OrderedList19..Paragraph321" = "Agrega un modificador nuevo [.scaleEffect](doc://com.apple.documentation/documentation/swiftui/view/scaleeffect(_:anchor:)-pmi7) junto con un [operador condicional ternario](glossary://ternary%20conditional%20operator) para determinar la escala cuando el valor de `Boolean` es `true` y cuando es `false`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page171..OrderedList19..Paragraph322" = "Cambia la [clausura](glossary://closure) de `Button` para alternar entre los valores booleanos `true` y `false`.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page172..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page172..Paragraph323" = "Intenta completar esta tarea consultado el código en `ConditionalCircle`. Si necesitas ayuda, échale un ojo a las siguientes pistas:";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page173..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page173..Paragraph324" = "Crea una [propiedad de estado](glossary://state%20property) afuera de la visualización [cuerpo](glossary://body) que supervise un valor booleano.";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page173..CodeBlock64" = "@State var isScaled = false\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page174..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page174..Paragraph325" = "Agrega el modificador `.scaleEffect` a la visualización `Text` que controle la escala mediante un [operador condicional ternario](glossary://ternary%20conditional%20operator).";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page174..CodeBlock65" = ".scaleEffect(isScaled ? 1.5 : 1)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page175..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page175..Paragraph326" = "Agrega una acción `Button` que llame a `isScaled.toggle()`.";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page175..CodeBlock66" = "Button(\"Scale\") { \n    isScaled.toggle()\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskanimateChangesIsScaled..title" = "Animar los cambios de `isScaled`";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskanimateChangesIsScaled..Page176..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskanimateChangesIsScaled..Page176..Paragraph327" = "Este efecto de escala se queda algo corto; ¿no sería mejor si fuese animado?";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskanimateChangesIsScaled..Page176..Paragraph328" = "Usa el modificador `.animation(_:value:)` para animar cualquier cambio en la variable `isScaled`. Intenta usar la animación `.spring(response:dampingFraction:blendDuration:)`, y pasa un valor de `0.5` para cada parámetro.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskanimateChangesIsScaled..Page177..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskanimateChangesIsScaled..Page177..CodeBlock67" = ".animation(.spring(response: 0.5, dampingFraction: 0.5, blendDuration: 0.5), value: isScaled)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskuseIsScaledRotateView..title" = "Usar `isScaled` para girar tu visualización";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskuseIsScaledRotateView..Page178..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskuseIsScaledRotateView..Page178..Paragraph329" = "Para agregar el toque final, crea un valor condicional en el parámetro `angle` del modificador `.rotation3DEffect`, y luego establécelo a `Angle(degrees: 0)` si `isScaled` es `true`, o a `Angle(degrees: 360)` si es `false`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskuseIsScaledRotateView..Page178..Paragraph330" = "Usarás el [operador condicional ternario](glossary://ternary%20conditional%20operator) para hacer esto.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskuseIsScaledRotateView..Page179..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskuseIsScaledRotateView..Page179..CodeBlock68" = ".rotation3DEffect(isScaled ? Angle(degrees: 0) : Angle(degrees: 360), axis: (x: 5, y: 2, z: 1))\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcustomizeCreature..title" = "Personalizar la visualización `CreatureDetail`";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcustomizeCreature..Page180..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcustomizeCreature..Page180..Paragraph331" = "Ahora que ya sabes cómo personalizar las visualizaciones con la [interacción del usuario](glossary://user%20interaction), intenta agregar otra [visualización integrada](glossary://built-in%20view) que permita a las personas modificar la visualización `Text`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcustomizeCreature..Page180..Paragraph332" = "Podrías usar el parámetro `Slider` para modificar el ancho, la altura, el difuminado, el contraste o la saturación de la visualización; o un parámetro `Button` para activar un efecto `RotationEffect`, o cualquier otro efecto que se te ocurra. Tómate un momento para explorar y descubrir qué efectos puedes crear.";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..SuccessMessage..Paragraph333" = "¡Excelente trabajo!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..SuccessMessage..Paragraph334" = "Creaste una app completa que te permite visualizar, agregar, eliminar, hacer bailar, y modificar criaturas. Date una palmadita en la espalda, porque esto es una gran hazaña.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..SuccessMessage..Paragraph335" = "Completaste con éxito este tutorial, pero esto es solo el comienzo de tu viaje en la construcción de apps. Entre más apliques los conceptos que aprendiste, mejor los recordarás y podrás crear más apps. En los próximos experimentos, intenta usar todo lo que aprendiste en este tutorial para escribir algunos de tus propios ejemplos. ¡Buena suerte!";
+
+/* Title of step named Create on Your Own */
+"GuideBook..Guide0..StepCreate on Your Own..title" = "Crear por tu cuenta";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..LearningCenterContent..Paragraph336" = "![](CreateYourOwnCopy.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..LearningCenterContent..Paragraph337" = "Ahora que aprendiste sobre los estados y los flujos de los datos, es hora de liberar tu creatividad y de crear una nueva visualización que use los datos de tus criaturas.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..LearningCenterContent..Paragraph338" = "Una vez que hayas completado estos experimentos, intenta crear tu propio proyecto desde cero, usando los mismos conceptos que has aprendido en este tutorial.";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateYourOwn..title" = "Crear tu propia vista";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateYourOwn..Page181..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateYourOwn..Page181..Paragraph339" = "Intenta lo siguiente:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateYourOwn..Page181..UnorderedList0..Paragraph340" = "Crea una nueva visualización que use tu arreglo de `creatures`, y enlázala como un destino en la visualización `ContentView`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateYourOwn..Page181..UnorderedList0..Paragraph341" = "Agrega un nuevo [valor publicado](glossary://published%20value) a `CreatureZoo` y úsalo en una o varias visualizaciones existentes.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateYourOwn..Page181..UnorderedList0..Paragraph342" = "Asigna a cada criatura una propiedad `description`, y crea una nueva visualización que muestre sus descripciones, nombres e imágenes en un diseño divertido.";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateNewApp..title" = "Crear tu propia app";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateNewApp..Page182..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateNewApp..Page182..Paragraph343" = "Piensa y crea un proyecto completamente nuevo usando SwiftUI. Implementa tu propia visualización `NavigationStack` para moverte entre las visualizaciones, usa [propiedades de estado](glossary://state%20property) para cambiar el aspecto de las visualizaciones localmente, usa visualizaciones integradas y [ligaduras](glossary://binding) de SwiftUI para permitir la interacción del usuario, y pasa un [objeto observable](glossary://observable%20object) al entorno de la app para compartir datos entre varias visualizaciones. Si tienes problemas, regresa a este proyecto y consulta los ejemplos de código para solucionar cualquier error que encuentres. ¡Buena suerte! ¡Tú puedes!";
+

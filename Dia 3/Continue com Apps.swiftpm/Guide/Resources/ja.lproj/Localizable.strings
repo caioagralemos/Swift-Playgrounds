@@ -1,0 +1,2013 @@
+/* Title of Guidebook */
+"GuideBook..title" = "Appで続ける";
+
+/* The title of the intro for this section of the guide */
+"GuideBook..IntroKeep Going with Apps..title" = "Appで続ける";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..IntroKeep Going with Apps..Paragraph0" = "“Appの作成を始めよう”では、SwiftUI[ビュー](glossary://view)を使って簡単なユーザインターフェイスを作成する方法を学びました。SwiftUIでは、[ビュー](glossary://view)は、お互いの中に配置し合って、より複雑な[作成済みビュー](glossary://composed%view)を作成できる[UI](glossary://user%20interface)構築要素でした。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..IntroKeep Going with Apps..Paragraph1" = "ここでは、SwiftUIの[状態](glossary://state)と[データフロー](glossary://data%20flow)について学びます。データフローは、App内での値の動き、およびこれらの値の変化を反映するためにSwiftUIによってUIが変更される方法を示すものです。重要なこととして、Appのデータが表示されるビューから[Appのデータを分離](glossary://data%20separation)することと、このように分離すると都合がよい理由を学びます。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..IntroKeep Going with Apps..Paragraph2" = "このチュートリアルが終了するまでに、ユーザが絵文字の生き物を追加、削除、または変更できる、完全に機能するSwiftUI Appを作成します。さあ始めましょう。最初のAppがあっという間にできます。";
+
+/* Title of step named Modifying State */
+"GuideBook..Guide0..StepModifying State..title" = "状態を変更する";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..LearningCenterContent..Paragraph3" = "![](ModifyingState.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..LearningCenterContent..Paragraph4" = "コーディングでは、[状態](glossary://state)という用語は変数の現在の値のことをいいます。[状態の変化](glossary://state%20change)は、App内の1つ以上の変数の値が変わったときのことです。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..LearningCenterContent..Paragraph5" = "SwiftUIの大きな利点の1つは、Appの[状態が変化](glossary://state%20change)するたびにビューの外観を自動的にアップデートできることです。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..LearningCenterContent..Paragraph6" = "UIをAppのデータ（[ブール値](glossary://Boolean)や[文字列](glossary://String)値の配列など）に接続すると、SwiftUIによってそのデータが[監視](glossary://observe)され、データが変わるたびにそのデータを使用しているビューをアップデートされるようにできます。つまり、アップデートの方法とタイミングをUIに具体的に指示するコードを書く必要はありません。";
+
+/* Title for task */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..title" = "状態プロパティを使ってビューをアップデートする";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page0..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page0..Paragraph7" = "この例では、[状態の変化](glossary://state%20change)が起きたときに、SwiftUIによってビューの外観がアップデートされます。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page0..Paragraph8" = "プレビューのボタンをタップしてみましょう。これにより、`isOn`（オン）[プロパティ](glossary://property)の値が`true`（真）と`false`（偽）の[状態](glossary://state)の間で切り替わり、`Circle`（円）ビューが表示されたり、非表示になったり、再表示されたりします。";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page1..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page1..Paragraph9" = "ビューの外観を変更したい場合は、最初に[状態](glossary://state)の追跡対象となるデータが必要です。このデータをビューの[プロパティ](glossary://property)として格納します。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page1..Paragraph10" = "ビュー内のデータは、[UI](glossary://user%20interface)の表示方法を決定するための[信頼できる情報源](glossary://source%20of%20truth)と言えます。ビューを直接変更するのではなく、データを変更します。すると、SwiftUIによってビューがアップデートされます。ここでは、データは、ビューを表示するか（`true`（真））、非表示にするか（`false`（偽））を決定する[ブール値](glossary://Boolean)です。";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page2..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page2..Paragraph11" = "重要: データは必ずビューの[body](glossary://body)の外で作成してください。`body`はビューの外観を宣言するためにのみ使用される❌データ作成禁止ゾーンと考えてください。これは、[データの分離](glossary://data%20separation)と呼ばれる、App作成の基本原則です。";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page3..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page3..Paragraph12" = "SwiftUIによって自動的にビューがアップデートされるようにするには、ビューのどの[プロパティ](glossary://property)を管理および追跡する必要があるかを指定する必要があります。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page3..Paragraph13" = "そのためには、プロパティの宣言の前に[プロパティラッパー](glossary://property%20wrapper)と呼ばれる特殊構文を追加します。`isOn`（オン）の前に`@State`プロパティラッパーを追加すると、このプロパティは[状態プロパティ](glossary://state%20property)になります。SwiftUIによって値が管理され、[状態](glossary://state)変わるたびに、ビューのうち影響を受ける部分がアップデートされます。";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page4..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page4..Paragraph14" = "では、`isOn`（オン）の[状態](glossary://state)はどのようにすれば変更できるのでしょうか? 一般的な方法の1つは、ユーザが[ユーザの操作](glossary://user%20interaction)（`Button`（ボタン）をタップした場合など）を通じて行うことです。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page4..Paragraph15" = "`Button`（ボタン）を作成するには、“ここを押す”などのテキスト[ラベル](glossary://label)と、アクション[クロージャ](glossary://closure)（ボタンをタップしたときに実行するコードブロック）を渡します。";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page5..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page5..Paragraph16" = "ユーザがボタンをタップすると、アクション[クロージャ](glossary://closure)が`toggle()`（切り替える）メソッドを使って`isOn`（オン）の値を変更します。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page5..Paragraph17" = "`toggle()`（切り替える）は、ライトのスイッチのオン/オフを切り替えるように、値が`false`（偽）の場合は`true`（真）に、`true`（真）の場合は`false`（偽）に変更します。";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page6..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page6..Paragraph18" = "この`if`文では、`isOn`（オン）を条件として使用して、`true`（真）の場合は内包されているビューを表示し、`false`（偽）の場合は非表示にします。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page6..Paragraph19" = "このようにして、`isOn`（オン）データがビューに接続されます。現在の[状態](glossary://state)によって、UIがどのように表示されるかがが決まります。";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page7..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page7..Paragraph20" = "プレビューでボタンをタップすると、`if`文の円ビューが表示されたり、非表示になったりします。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page7..Paragraph21" = "円の色を変えて、もう一度ボタンをタップしてみましょう。`isOn`（オン）の初期値を`true`（真）に変えてみましょう。それぞれ、どのような変化に気付きましたか?";
+
+/* Title for task */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..title" = "別の色の円を表示する`else`文を追加します";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page8..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page8..Paragraph22" = "ここで、ボタンをタップするとビューがどのようにアップデートされるかを振り返ってみましょう。`Button`（ボタン）をタップしたときに、`isOn`（オン）の[状態](glossary://state)を変更します。SwiftUIによってこの変更が[監視](glossary://observe)され、新しい値を使って値が更新されます。ビューの[body](glossary://body)で、`if`文を使って、`isOn`（オン）が`true`（真）の場合はビューを表示し、`false`（偽）の場合は非表示にします。";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page9..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page9..Paragraph23" = "`isOn`（オン）が`false`（偽）の場合はビューを表示しないようにする代わりに、カスタムビューを表示するようにできます。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page9..Paragraph24" = "`if`文のあとに、別の色の`Circle`（円）を表示する`else`文を追加します。";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page10..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page10..Paragraph25" = "以下の構文を使って`else`文を追加してから、`Circle`（円）を追加して色を指定します。";
+
+/*  */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page10..CodeBlock0" = "else { \n\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page11..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page11..CodeBlock1" = "else { \n   Circle()\n       .frame(maxHeight: 200)\n       .foregroundColor(.black)\n   //#-learning-code-snippet(addOffText)\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..title" = "オンとオフのビューに詳細を追加する";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page12..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page12..Paragraph26" = "これで2つのビューができたので、それらをカスタマイズして、どちらのビューが“オン”で、どちらのビューが“オフ”か分かるようにしましょう。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page12..Paragraph27" = "`Text`（テキスト）ビューを使って、それぞれのビューにラベルを付けてみましょう。1番目のビューには“オン”というラベルを付けます。";
+
+/*  */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page12..CodeBlock2" = "Text(\"On\")\n";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page13..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page13..Paragraph28" = "2番目のビューには“オフ”というラベルを付けます。";
+
+/*  */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page13..CodeBlock3" = "Text(\"Off\")\n";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page14..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page14..Paragraph29" = "最後に、ビューごとに図形を変えましょう、例えば、`Rectangle`（四角形）や`Capsule`（カプセル）などに変えてみましょう。";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page15..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page15..CodeBlock4" = "if isOn {\n      Circle()\n          .frame(maxHeight: 200)\n          .foregroundColor(.mint)\n\n      Text(\"On\")\n} else {\n      Rectangle()\n          .frame(maxHeight: 200)\n          .foregroundColor(.gray)\n\n      Text(\"Off\")\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..title" = "新しい条件付きビューを作成する";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page16..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page16..Paragraph30" = "次に、まったく新しい条件付きビューを自分で考えて追加してみましょう:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page16..OrderedList0..Paragraph31" = "[body](glossary://body)の外に[状態プロパティ](glossary://state%20value)を追加して、初期のブール値を指定します。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page16..OrderedList0..Paragraph32" = "状態プロパティの値が`true`（真）場合は片方のビュー、`false`（偽）の場合はもう一方のビューを表示する[if文](glossary://if%20statement)を作成します。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page16..OrderedList0..Paragraph33" = "新しい`Button`（ボタン）を作成し、そのボタンが押されるたびに状態プロパティを切り替えます。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page16..Paragraph34" = "作成した条件付きビューは期待通りに動作しましたか?";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page17..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page17..Paragraph35" = "先に進む前に、[ラバーダック法](glossary://rubber%20ducky%20method)を使って、条件付きビューのコードがどのように動作するかをできるだけ詳しく説明してみてください。状態プロパティによって何が行われますか? ビューはアップデートのタイミングをどのようにして知りますか? 思い出せないことがあったら、前に戻って、足りない知識を明確にしましょう。ラバーダック（ゴム製のアヒル）に感謝されますよ!";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepModifying State..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..SuccessMessage..Paragraph36" = "すごい!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..SuccessMessage..Paragraph37" = "これで、[状態プロパティ](glossary://state%20value)を使ってSwiftUIビューの外観をアップデートする方法が分かりました。この状態プロパティは、ビューのUIを宣言するビューの[body](glossary://body)の外に含められます。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..SuccessMessage..Paragraph38" = "これは、SwiftUIでAppをコーディングする際の基本原則で、Appのデータは、常にそれが表示されるUIとは別の場所に保存します。そうすることで、1つの[信頼できる情報源](glossary://source%20of%20truth)を維持すること、およびUIのコードを分かりやすく維持しやすくしておくことができます。";
+
+/* Title of step named Using a Conditional Modifier */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..title" = "条件修飾子の使用";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..LearningCenterContent..Paragraph39" = "![](UsingAConditionalModifier.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..LearningCenterContent..Paragraph40" = "前の例で、格納されている値がSwiftUIによって管理される[状態プロパティ](glossary://state%20property)`isOn`（オン）を作成しました。`isOn`の[状態](glossary://state)を変更することで、条件に応じて2つの異なるビューのいずれかを表示できました。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..LearningCenterContent..Paragraph41" = "でも、単に既存のビューの外観、例えば`Circle`（円）ビューの色やサイズなどを変更したい場合は、どうすればよいでしょうか? そのためには、[状態の変化](glossary://state%20change)が起きたときにビューがどのように表示されるかを指定する条件分岐コードを書く必要があります。";
+
+/* Title for task */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..title" = "条件に応じてビュー修飾子を変更する";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page18..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page18..Paragraph42" = "前の例のように、このビューでも[状態プロパティ](glossary://state%20property)と`Button`（ボタン）を使って`Circle`（円）の外観を変更しています。ただし、このコードでは、何かが違います。何が変わっているかちょっと考えてみて、分かったと思ったら先に進みましょう。";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page19..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page19..Paragraph43" = "このコードの仕組みが分かりましたか?";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page19..Paragraph44" = "`isOn`（オン）が`true`（真）の場合と`false`（偽）場合のために別々のビューを作成する代わりに、条件分岐コードが含まれる[ビュー修飾子](glossary://modifier)を使って、1つのビューの外観を変更することができます。";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page20..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page20..Paragraph45" = "`.foregroundColor(_:)`修飾子には特殊な構文が含まれていることに気付きましたか? これは、[3項条件演算子](glossary://ternary%20conditional%20operator)と呼ばれ、1行のコードで`if-else`文を作成するための簡潔な方法です。";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page21..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page21..Paragraph46" = "このコードは、“`isOn`（オン）が`true`（真）の場合は値`.yellow`を渡し、それ以外の場合は`.black`を渡す”と読むことができます。";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page21..CodeBlock5" = "isOn ? .yellow : black\n";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page21..Paragraph47" = "より一般的には、次のようになります:";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page21..CodeBlock6" = "condition ? trueValue : falseValue\n";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page22..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page22..Paragraph48" = "円の色を、`isOn`（オン）が`true`（真）の場合は`.purple`（パープル）、`false`（偽）の場合は`.mint`（ミント）のような明るい色調の緑に変えてみましょう。";
+
+/* Title for task */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..title" = "状態ごとに別の色のシャドウを表示する`shadow(color:radius:)`修飾子を追加します";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page23..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page23..Paragraph49" = "`ConditionalViews`（条件付きビュー）の例と同じように、SwiftUIによって`isOn`（オン）[状態プロパティ](glossary://state%20property)が[監視](glossary://observe)されます。`isOn`の値が変わると、`.foregroundColor(_:)`修飾子の新しい値を使って`Circle`（円）ビューがアップデートされます。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page23..Paragraph50" = "次に、別の修飾子、`.shadow(color:radius:)` を追加してみましょう。この修飾子は、`isOn`（オン）の値を使って、ビューのシャドウを変更します。";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page24..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page24..Paragraph51" = "まずは、修飾子`.shadow(color:radius:)`を`Circle`（円）に追加します。";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page24..CodeBlock7" = ".shadow(color: <#T##Color#>, radius: 20)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page25..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page25..Paragraph52" = "この修飾子の`color`（色）パラメータでは、[3項条件演算子](glossary://ternary%20conditional%20operator)を使って、`isOn`（オン）の[状態](glossary://state)に基づいてシャドウの色を変更します。";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page26..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page26..Paragraph53" = "3項条件演算子は、次のようになります:";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page26..CodeBlock8" = "isOn ? .indigo : .orange\n";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page26..Paragraph54" = "このコードスニペットは、“`isOn`（オン）が`true`（真）の場合は値`.indigo`（藍色）を使用します。それ以外の場合は値`.orange`（オレンジ）を使用する”と読むことができます。";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page27..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page27..CodeBlock9" = ".shadow(color: isOn ? .indigo : .orange, radius: 20)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..title" = "ボタンをタップしたときに円の大きさを変更する";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page28..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page28..Paragraph55" = "今度は自分でやってみましょう。`.scaleEffect(_:)`修飾子を[3項条件演算子](glossary://ternary%20conditional%20operator)と一緒に使って`isOn`（オン）の状態に基づいて円の大きさを変える方法が分かるか、確かめてみましょう。";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page29..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page29..Paragraph56" = "まずは、`.scaleEffect(_:)`修飾子`を円に追加します。次に、3項演算子を使って、`isOn`（オン）が`true`（真）の場合の大きさと、`false`（偽）の場合の大きさを指定します。";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page29..CodeBlock10" = ".scaleEffect(<#T##s: CGFloat##CGFloat#>)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page30..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page30..CodeBlock11" = ".scaleEffect(isOn ? 1 : 0.75)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..title" = "状態の変化をアニメートする";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page31..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page31..Paragraph57" = "SwiftUIでは、ビューを自動的にアップデートできるのと同様に、変更された値に基づいてビューの変更をアニメートすることもできます。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page31..Paragraph58" = "そのためには、アニメートしたいビューに`.animation(_:value:)`修飾子を付加して、`Animation`（アニメーション）、および変更を監視する値を選択します。";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page32..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page32..Paragraph59" = "例えば、デフォルトのアニメーションを使って、`isOn`（オン）の値が変わったらアニメーションを実行することなどができます。";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page32..CodeBlock12" = ".animation(.default, value: isOn)\n";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page32..Paragraph60" = "`isOn`（オン）が変わると、この値によって制御されるビューの変更がアニメートされます。`isOn`を使用してビューのシャドウ、色、大きさが決定されるため、値が変わると、これらのすべての特徴がアニメートされて新しい状態になります。";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page33..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page33..CodeBlock13" = ".animation(.default, value: isOn)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page34..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page34..Paragraph61" = "デフォルトのアニメーションを別のものに変更してみましょう。`.default`（デフォルト）ではアニメーション`.easeInOut`が実行されますが、これを`.spring(response:dampingFraction:blendDuration:)`や`.linear(duration:)`に変更して、どのようにアニメーションが変わるか見てみてください。";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..SuccessMessage..Paragraph62" = "よくできました!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..SuccessMessage..Paragraph63" = "[状態プロパティ](glossary://state%20property)を使ってビューの外観を変更する方法、および`.animation(_:value:)`修飾子を使ってこれらの変更をアニメートする方法が分かりましたね。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..SuccessMessage..Paragraph64" = "次は、SwiftUIの[内蔵ビュー](glossary://built-in%20view)と[バインディング](glossary://binding)を使って、UIのさまざまな型の状態の変化を作成する方法を学びます。";
+
+/* Title of step named SwiftUI Built-in Views */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..title" = "SwiftUIの内蔵ビュー";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..LearningCenterContent..Paragraph65" = "![](SwiftUIBuilt-inViews.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..LearningCenterContent..Paragraph66" = "SwiftUIには、ユーザが[操作](glossary://user%20interaction)することによってAppデータの状態を変更できる、スライダ、トグル、ピッカーなどのたくさんの[内蔵ビュー](glossary://built-in%20view)が用意されています。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..LearningCenterContent..Paragraph67" = "これらの内蔵ビューには、別のビューとデータを共有するための、[バインディング](glossary://binding)と呼ばれる特殊な方法があります。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..LearningCenterContent..Paragraph68" = "これらの内蔵ビューをバインディング値と一緒に使って、Appのデータ、ひいてはAppのUIを変更できます。";
+
+/* Title for task */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..title" = "バインディングを使う";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page35..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page35..Paragraph69" = "これまでは、状態プロパティを使って、[ローカル](glossary://local%20scope)または同じビュー内でUIを変更しました。例えば、`ConditionalCircle`（条件付きの円）に[状態プロパティ](glossary://state%20property)を定義し、それを使って`ConditionalCircle`の[body](glossary://body)でビューの外観を変更したりしました。";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page36..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page36..Paragraph70" = "でも、[サブビュー](glossary://subview)でデータを変更できるようにしたい場合は、どうすればよいでしょうか? 例えば、[ローカル](glossary://local%20scope)ビューに連絡先情報が格納されている場合、サブビューに連絡先の電話番号を変更するためのカスタム[操作](glossary://user%20interaction)を用意することも考えられます。その場合、複数の[信頼できる情報源](glossary://source%20of%20truth)を作らずにサブビューでデータを変更できるようにするには、どうすればよいでしょうか?";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page37..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page37..Paragraph71" = "2つのビュー間でデータ変更のやりとりをするための鍵は、[バインディング](glossary://binding)と呼ばれます。バインディングにより、1つの信頼できる情報源を維持しつつ、[サブビュー](glossary://subview)を使用してその値をリモートで変更することができます。バインディングと呼ばれるのは、信頼できる情報源（[状態プロパティ](glossary://state%20property)など）が2番目のビューにバインド（または接続）されるためで、2番目のビューでデータが変更されるたびに、信頼できる情報源がアップデートされます。";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page38..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page38..Paragraph72" = "プレビューで`Toggle`（切り替え）をタップしてみましょう。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page38..Paragraph73" = "`Image`（イメージ）ビューと`Toggle`（切り替え）ビューでは、どちらもトグルをタップしたときに外観が変わることに気付きましたか? `Toggle`では[信頼できる情報源](glossary://source%20of%20truth)をリモートで変更でき、`Toggle`自体と`Image`ビューは、別々の2つのビューであるにも関わらず、同じ値を共有することができます。";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page39..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page39..Paragraph74" = "これは、信頼できる情報源、つまり`Bindings`（バインディング）ビューに[ローカル](glossary://local%20scope)で格納する[状態プロパティ](glossary://state%20property)です。バインディングの信頼できる情報源は、`@State`[プロパティラッパー](glossary://property%20wrapper)を追加することなどによって、値がSwiftUIによって管理されるものでなければなりません。";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page40..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page40..Paragraph75" = "これは、内蔵の`Toggle`（切り替え）ビューです。`Toggle`の`isOn`（オン）パラメータには、ブールの[バインディング](glossary://binding)値を設定できます。つまり、`Toggle`ビューは、何らかの[ユーザの操作](glossary://user%20interaction)（タップしてトグルのオン/オフを切り替える場合など）に基づいて`Boolean`（ブール）値を変更でき、すべての状態の変化をローカルの[信頼できる情報源](glossary://source%20of%20truth)（`isOn`）に返します。";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page41..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page41..Paragraph76" = "バインディングを渡すには、SwiftUIによって管理される[状態プロパティ](glossary://state%20property)の先頭に`$`を付けて使用します。`Toggle`（切り替え）によってリモートで値が変更されるたびに`$isOn`を渡してそのことを示すと、[バインディング](glossary://binding)によって信頼できる情報源（`isOn`）が変更されます。";
+
+/* Title for task */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..title" = "`Color`（色）型の新しい状態プロパティを追加する";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page42..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page42..Paragraph77" = "次は、内蔵の`ColorPicker`（カラーピッカー）ビューと[バインディング](glossary://binding)を使って、バッテリーの`Image`（イメージ）ビューの色を変更してみましょう。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page42..Paragraph78" = "そのためには、まず、`Color`（色）の値の信頼できる情報源の役割を果たす[状態プロパティ](glossary://state%20property)を作成し、そこに`Color.primary`の初期値を指定します。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page42..Paragraph79" = "これを自分でやってみましょう。分からなくなったら、以下のヒントを参考にしてください。";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page43..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page43..Paragraph80" = "`@State`[プロパティラッパー](glossary://property%20wrapper)を付けて[プロパティ](glossary://property)を定義し、`Color.primary`の初期値を[代入](glossary://assignment)します。";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page44..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page44..CodeBlock14" = "@State var color = Color.primary\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..title" = "`ColorPicker`（カラーピッカー）を作成して、バインディング値を渡します";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page45..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page45..Paragraph81" = "`Toggle`（切り替え）ビューの下に、以下の初期化子を使って`ColorPicker`（カラーピッカー）を作成します。`Toggle`を参考にして、自分で引数を追加してください。";
+
+/*  */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page45..CodeBlock15" = "ColorPicker(<#T##title: StringProtocol##StringProtocol#>, selection: <#T##Binding<CGColor>#>)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page46..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page46..OrderedList1..Paragraph82" = "タイトルの`String`（文字列）を渡します。例えば、“色を選択”などとします。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page46..OrderedList1..Paragraph83" = "色の[状態プロパティ](glossary://state%20property)の前に`$`を追加して、バインディング値を`selection`（選択肢）に渡します。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page46..Paragraph84" = "Appで`Bindings`（バインディング）ビューをテストしたい場合は、一時的に`ContentView`（コンテンツビュー）に追加します。";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page47..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page47..CodeBlock16" = "ColorPicker(\"Select a Color\", selection: $color) \n";
+
+/* Title for task */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..title" = "`Image`（イメージ）の色をcolor（色）状態プロパティに設定します";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page48..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page48..OrderedList2..Paragraph85" = "プレビューで、`ColorPicker`（カラーピッカー）から色を選択してみてください。ピッカーの色が変わるだけで、それ以外はUIに変化がないことに気付きましたか? これは、状態プロパティがほかのどの[ローカル](glossary://local%20scope) ビューにも接続されていないためです。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page48..OrderedList2..Paragraph86" = "次に、イメージビューの色を変更して、ピッカーから選択した色にアップデートします。";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page49..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page49..Paragraph87" = "`Image`（イメージ）ビューの色を変更するには、`.foregroundColor(_:)`修飾子を追加して、色の状態プロパティを引数として渡します。";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page50..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page50..CodeBlock17" = ".foregroundColor(color)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page51..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page51..Paragraph88" = "次に、カラーピッカーから色を選択します。`Image`（イメージ）の色も変わりますか?";
+
+/* Title for task */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..title" = "新しい色を選択すると色が変わる`Text`（テキスト）ビューを作成する";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..Page52..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..Page52..Paragraph89" = "カラーピッカーから新しい色を選択すると色が変わる`Text`（テキスト）ビューを追加します。そのためには、イメージの場合と同じように、`.foregroundColor(_:)`修飾子を使いましょう。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..Page52..Paragraph90" = "[.font](doc://com.apple.documentation/documentation/swiftui/font)修飾子を使い、`.largeTitle`を渡して、`Text`（テキスト）に大きなフォントを選択します。";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..Page53..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..Page53..Paragraph91" = "`.padding()`をビューに追加して、1つのビューとその周囲のすべてのビューとの間に固定された余白を作成します。`Spacer()`を追加することもできます。`Spacer()`は、可変的に伸縮してビュー間の使用可能な余白を確保する透明なビューです。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..Page53..Paragraph92" = "[padding](doc://com.apple.documentation/documentation/swiftui/view/padding(_:_:))や[spacer](doc://com.apple.documentation/documentation/swiftui/spacer)を使うと、さまざまな画面サイズでビューがきれいに見えるようにする、適応性のあるビューレイアウトを作成できます。詳しくは、[Laying Out a Simple View](doc://com.apple.documentation/documentation/swiftui/laying-out-a-simple-view)を参照してください。";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..SuccessMessage..Paragraph93" = "ブラボー!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..SuccessMessage..Paragraph94" = "SwiftUIの内蔵ビュー（`ColorPicker`（カラーピッカー）など）と[バインディング](glossary://binding)を使って、Appの状態を変更するためのカスタム[操作](glossary://user%20interaction)を作成する方法が分かりましたね。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..SuccessMessage..Paragraph95" = "[状態プロパティ](glossary://state%20property)に関して学んだことと、ここで学んだことを合わせて使えば、AppのUIの外観を変更するためのリッチなユーザ操作を作成できます。";
+
+/* Title of step named Practice with SwiftUI Built-in Views */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..title" = "SwiftUIの内蔵ビューで練習する";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..LearningCenterContent..Paragraph96" = "![](PracticeWithSwiftUIBuilt-inViews.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..LearningCenterContent..Paragraph97" = "これで状態プロパティ、バインディング、内蔵SwiftUIビューの基本が分かったので、今度はいくつかの例を自分で作成しましょう。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..LearningCenterContent..Paragraph98" = "まず、内蔵の`Slider`（スライダ）ビューを使って、`Rectangle`（四角形）の幅を制御する[状態プロパティ](glossary://state%20property)を変更しましょう。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..LearningCenterContent..Paragraph99" = "次に、内蔵の`TextField`（テキストフィールド）ビューを使って、`String`（文字列）状態プロパティの値を変更すると面白い物語が作成される物語エディタを作成してみましょう。";
+
+/* Title for task */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..title" = "スライダを作成する";
+
+/* title for page */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page54..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page54..Paragraph100" = "内蔵の`Slider`（スライダ）を使って、`Rectangle`（四角形）ビューの幅を変更するビューを作成します。そのためには、新しい[状態プロパティ](glossary://state%20property)を定義し、それを[バインディング](glossary://binding)として`Slider`（スライダ）に渡します。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page54..Paragraph101" = "ビューの幅は、`.frame(width:)`修飾子を使って変更できます。注意: この修飾子は[Double](doc://com.apple.documentation/documentation/swift/double)（倍精度浮動小数点）型の値（数値型の特殊な[型](glossary://type)）を受け取るので、状態プロパティは`Double`として定義します。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page54..Paragraph102" = "ちょっと自分でやってみましょう。分からなくなったら、以下のヒントを参考にしてください。";
+
+/* title for page */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page55..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page55..Paragraph103" = "ビューの`body`の上に`Double`（倍精度浮動小数点）型の状態プロパティを定義します。これは、ローカルの[信頼できる情報源](glossary://source%20of%20truth)です。";
+
+/*  */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page55..CodeBlock18" = "@State var width : Double = 0\n";
+
+/* title for page */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page56..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page56..Paragraph104" = "初期化子`Slider(value:)`を使って、`Slider`（スライダ）を作成します。[バインディング](glossary://binding)を[状態プロパティ](glossary://state%20property)に渡します。";
+
+/*  */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page56..CodeBlock19" = "Slider(value: $width)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page57..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page57..Paragraph105" = "`Rectangle`（四角形）を作成して、そこに`.frame(width:)`修飾子を追加します。デフォルトのスライダ範囲は`0`〜`1`なので、値の変化に気付けるように、幅に大きな数値を掛けましょう。";
+
+/*  */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page57..CodeBlock20" = "Rectangle()\n    .frame(width: width * 300)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..title" = "物語を作成する";
+
+/* title for page */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page58..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page58..Paragraph106" = "今度は別の実験をしてみましょう:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page58..Paragraph107" = "SwiftUIの[TextField](doc://com.apple.documentation/documentation/swiftui/textfield)（テキストフィールド）を使うと、ユーザがフィールドに入力した文字に基づいて`String`（文字列）値を変更できます。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page58..OrderedList3..Paragraph108" = "ユーザが自分の名前、趣味、好きな食べ物などのデータを入力できるようにするために、複数の[状態プロパティ](glossary://state%20property)および対応する`TextField`（テキストフィールド）ビューを定義して、カスタマイズ可能な物語を作成します。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page58..OrderedList3..Paragraph109" = "テキストフィールドの下に、[文字列補間](glossary://string%20interpolation)を使ってすべての値を結合して物語を作成するための`Text`（テキスト）ビューを作成します。次のようになります:";
+
+/*  */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page58..CodeBlock21" = "Text(\"Hello, my name is \\(name), my favorite hobby is \\(hobby) and I can\'t stop eating \\(favoriteFood)!\")\n";
+
+/* title for page */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page59..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page59..Paragraph110" = "おまけ: タップすると物語が表示される`Button`（ボタン）または`Toggle`（切り替え）ビューを追加しましょう。";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..SuccessMessage..Paragraph111" = "分かってきましたね!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..SuccessMessage..Paragraph112" = "状態の変化を状態プロパティを使ってローカルで処理すること、またバインディングを使って2つのビュー間で処理することができるようになりましたね。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..SuccessMessage..Paragraph113" = "次は、Appの個々のビューを超えて使用できるデータを作成する方法を学びます。";
+
+/* Title of step named Navigating in SwiftUI */
+"GuideBook..Guide0..StepNavigating in SwiftUI..title" = "SwiftUIのナビゲーション";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..LearningCenterContent..Paragraph114" = "![](NavigatingInSwiftUI.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..LearningCenterContent..Paragraph115" = "1つのSwiftUIビュー内で状態を管理する方法のコツが分かってきたので、今度はもっと大きなことを考えましょう。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..LearningCenterContent..Paragraph116" = "Appを作成するときに、2つ以上のビューで共有したいデータがあるために、[バインディング](glossary://binding)でも処理できない場合があります。そんなとき、新しいビューごとにデータを複製しようとしないでください。そうするとAppのバグを追跡するのが非常に難しくなり、またバグが発生しやすくなってしまいます。代わりに、Appの複数ビューで使用できる1つの[データモデル](glossary://data%20model)を作成して維持する方法を学びましょう。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..LearningCenterContent..Paragraph117" = "でも、その方法を確認する前に、複数のビューがあるAppを作成する方法を知っておく必要があります。そのためには、`NavigationSplitView`または`NavigationStack`を使ってナビゲーションを追加します。";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..title" = "`NavigationStack`を作成する";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page60..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page60..Paragraph118" = "別のビューに移動するには、以下の2種類のナビゲーションビューのいずれかが必要です:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page60..OrderedList4..Paragraph119" = "[NavigationStack](doc://com.apple.documentation/documentation/swiftui/navigationstack)（ナビゲーションスタック）では、ビューが一組のトランプのように積み重ねられて整理されます。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page60..OrderedList4..Paragraph120" = "[NavigationSplitView](doc://com.apple.documentation/documentation/swiftui/navigationsplitview)（ナビゲーションスプリットビュー）では、ビューが2〜3列で整理され、先頭の列から項目を選択して後続の列にビューを表示することができます。";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page61..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page61..Paragraph121" = "これらの各ナビゲーションビューは、ユーザのApp内での移動状況に基づいてさまざまなビューを表示するための[コンテナ](glossary://container)の役割を果たし、少しずつ異なる方法でビューを表示します。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page61..Paragraph122" = "最初に、`NavigationStack`を作成して動作を試してみましょう。";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page62..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page62..Paragraph123" = "最初に、中に`List`（リスト）ビューが含まれた`NavigationStack`を追加します。[List](doc://com.apple.documentation/documentation/swiftui/list)（リスト）により、スクロール可能な縦方向の列にいくつでもビューが表示されます。";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page62..CodeBlock22" = "NavigationStack { \n   List { \n       Text(\"NavigationStack Content\")\n       //#-learning-code-snippet(addNavLink)\n       //#-learning-code-snippet(addSecondNavLink)\n\n   }\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page63..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page63..Paragraph124" = "プレビューを見てください。`List`（リスト）内に1つの`Text`（テキスト）ビューがあり、それ以外はほとんど何もないでしょう。別のビューに移動するために、`NavigationStack`の中に[NavigationLink](glossary://navigation%20link)（ナビゲーションリンク）を追加しましょう。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page63..Paragraph125" = "では、`NavigationLink`（ナビゲーションリンク）が別のビューに移動するためのものだとすると、なぜ`NavigationStack`（ナビゲーションスタック）をわざわざ作成したのでしょうか? そうですね、車輪がない自転車には乗れないように、リンクが`NavigationStack`（ナビゲーションスタック）または`NavigationSplitView`（ナビゲーションスプリットビュー）の中にないと、別のビューには移動できないのです。";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..title" = "ナビゲーションリンクを作成する";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page64..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page64..Paragraph126" = "`NavigationStack`（ナビゲーションスタック）と`NavigationSplitView`（ナビゲーションスプリットビュー）では、Appでのユーザの操作に応じてさまざまなコンテンツを表示できます。ナビゲーションビューで別のビューを表示する場合は、[NavigationLink](glossary://navigation%20link)（ナビゲーションリンク）（ユーザが別のビューに移動するためにタップできるボタン）を作成します。";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page65..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page65..Paragraph127" = "`NavigationLink`（ナビゲーションリンク）には2つのものを含める必要があります。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page65..OrderedList5..Paragraph128" = "[移動先ビュー](glossary://destination%20view)へのリンクと、";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page65..OrderedList5..Paragraph129" = "[ラベル](glossary://label)（ボタンの表示）です。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page65..Paragraph130" = "移動先は、どのビューでも好きなものにできます。`Text`（テキスト）や`Image`（イメージ）ビューなどのシンプルなものでも、自分で作成した[作成済みビュー](glossary://composed%20view)でも構いません。";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page66..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page66..Paragraph131" = "下のコードでは、[ラベル](glossary://label)としての`Text`（テキスト）ビューと[移動先](glossary://destination%20view)としての`Text`ビューを使って`NavigationLink`（ナビゲーションリンク）を作成します。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page66..Paragraph132" = "下に`NavigationLink`（ナビゲーションリンク）を追加して、プレビューでリンクをタップしてみてください。";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page66..CodeBlock23" = "NavigationLink(\"Push Me!\") { \n   Text(\"I\'m the destination View\")\n       .navigationTitle(\"Destination\")\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page67..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page67..Paragraph133" = "1つ以上のナビゲーションリンクを追加して、`NavigationStack`の別のビューに移動してみましょう。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page67..Paragraph134" = "`NavigationStack`は一組のトランプのように動作するので、一番上のビューだけが常に表示されます。新しいビューに移動すると、そのビューが見えるようにスタックの一番上に移動されます。";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page67..CodeBlock24" = "NavigationLink(\"No, Push Me!\") { \n   Text(\"I\'m another destination view\")\n       .navigationTitle(\"Destination\")\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..title" = "`NavigationSplitView`を試してみる";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page68..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page68..Paragraph135" = "次に、`NavigationSplitView`を作成して、コンテンツを列として表示しましょう。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page68..Paragraph136" = "先頭の列としてナビゲーションリンクを使用し、タップされたら、後続の列にそれぞれのテキストが表示されるようにします。";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page69..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page69..Paragraph137" = "最初に、`NavigationStack`を追加します。2つのセクションがありますね。最初のセクションはスプリットビューの先頭の列で、2番目のセクションはいずれかのリンクを選択するまで一時的なコンテンツが表示される[プレースホルダビュー](glossary://placeholder%20view)です。";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page69..CodeBlock25" = "NavigationSplitView { \n    //#-learning-code-snippet(listOfLinks)\n\n} detail: { \n    //#-learning-code-snippet(detailView)\n    \n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page70..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page70..Paragraph138" = "次に、`NavigationSplitView`にリンクをいくつか追加します。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page70..Paragraph139" = "小さいプレビューサイズの場合はまだビューが`NavigationStack`と同じように見えるかもしれません。複数の列が見えるようにプレビューを拡大してみましょう。";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page70..CodeBlock26" = "List {\n    NavigationLink(\"First link\") {\n        Text(\"😵‍💫\")\n    }\n    NavigationLink(\"Second link\") {\n        Text(\"😵‍\")\n    }\n    //#-learning-code-snippet(addMoreNavLinks)\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page71..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page71..Paragraph140" = "最後に、[プレースホルダビュー](glossary://placeholder%20view)を追加して、2番目の列の初期コンテンツを指定します。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page71..Paragraph141" = "プレビューを拡大して再起動すると、リンクを選択する前にこのプレースホルダコンテンツが表示されます。";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page71..CodeBlock27" = "Text(\"Select a link\")\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..title" = "NavigationLink（ナビゲーションリンク）を試してみる";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page72..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page72..Paragraph142" = "`NavigationLink`（ナビゲーションリンク）の外観をカスタマイズしたい場合は、カスタムの[ラベル](glossary://label)を取る別の[初期化子](glossary://initializer)を使用できます。";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page73..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page73..Paragraph143" = "下のコードでは、`Text`（テキスト）ビューと`Image`（イメージ）ビューが含まれた`HStack`で構成されるカスタムの[ラベル](glossary://label)を付けて`NavigationLink`（ナビゲーションリンク）を作成します。移動先のコンテンツと同じように、ラベルはどのビューでも好きなものにできますよ!";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page73..CodeBlock28" = "NavigationLink { \n    SlidingRectangle()\n       .navigationTitle(\"Sliding Rectangle\")\n} label: { \n    HStack { \n        Text(\"Tap To Navigate\")\n        Spacer()\n        Image(systemName: \"arrow.forward.circle\")\n            .font(.largeTitle)\n    }\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page74..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page74..Paragraph144" = "新しい`NavigationLink`（ナビゲーションリンク）を追加して、そこに移動先、ラベル、およびナビゲーションタイトルを指定してみてください。Appでほかのいずれかのビュー（`ConditionalCircle`（条件付きの円）など）に移動してみましょう。";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..title" = "Appでビューを表示する方法を理解する";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page75..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page75..Paragraph145" = "これで、`NavigationStack`および`NavigationSplitView`の中に[ナビゲーションリンク](glossary://navigation%20link)を追加するという実験が終わりました。目標は、Appによって`NavigationStack`が表示される最初のビューを作成することです。ナビゲーションリンクを追加すると、ユーザがAppの使用時に別のビューに移動できるようになります。";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page76..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page76..Paragraph146" = "最初に表示するビューは、Appの定義で指定します。この例では、Appにデフォルトの`MyApp`という名前が付いていますね。これは`App`[プロトコル](glossary://protocol)のガイドラインに従っているため、ほかのAppと同じようにデバイスで実行できます。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page76..Paragraph147" = "実行ボタン（▶︎）を押して、現在のプロジェクトをAppとして実行してみてください。まだほとんど何も見えませんね。🙈";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page77..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page77..Paragraph148" = "Appの`body`プロパティでAppのコンテンツを定義します。今のところ知っておく必要があるのは、`WindowGroup`（ウインドウグループ）の中には最低1つのビューが必要だということだけです。`WindowGroup`は、Appの[ビュー階層](glossary://view%20hierarchy)、つまりAppが起動したときに表示されるビューのコレクションのコンテナの役割を果たします。";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page78..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page78..Paragraph149" = "`ContentView`（コンテンツビュー）は[最上位ビュー](glossary://top-level%20view)、つまりAppが起動すると最初に表示されるビューです。このビューは[ビュー階層](glossary://view%20hierarchy)（最上位ビューから分岐する[サブビュー](glossary://subview)の構造化されたコレクション）の最上位にあります。";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page79..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page79..Paragraph150" = "一時的に`ContentView`（コンテンツビュー）を何か別のビュー（`Text`ビューや`Image`ビューなど）に変えて、Appを実行してみてください。Appの最上位ビューが変わったことに気付きましたか? このようにして、Appに表示されるコンテンツを変更します。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page79..Paragraph151" = "確認が終わったら、最上位ビューを`ContentView`（コンテンツビュー）に戻しましょう。";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..title" = "Appに`NavigationStack`を追加する";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page80..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page80..Paragraph152" = "Appで複数のビューを表示するために、[最上位ビュー](glossary://top-level%20view)を[NavigationStack](doc://com.apple.documentation/documentation/swiftui/navigationstack)に変えましょう。";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page81..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page81..Paragraph153" = "Appの`body`の`SPCAssessableWindowGroup`の中に`NavigationStack`を追加します:";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page81..CodeBlock29" = "NavigationStack { \n\n}\n//#-learning-code-snippet(environmentObjectModifier)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page82..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page82..Paragraph154" = "`NavigationStack`の中に`ContentView`（コンテンツビュー）を配置します。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page82..Paragraph155" = "`NavigationStack`の中に配置された最初のビューには、初期のコンテンツが表示されます。このコンテンツは、[ナビゲーションリンク](glossary://navigation%20link)を使って新しいビューを表示するたびに変わります。";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page83..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page83..Paragraph156" = "Appの`body`は次のようになります:";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page83..CodeBlock30" = "SPCAssessableWindowGroup(app: self, assessmentCandidates: [CreatureZoo()]) { \n   NavigationStack { \n       ContentView()\n   }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..title" = "ナビゲーションタイトルを追加する";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page84..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page84..Paragraph157" = "Appを実行しましょう。あまり代わり映えしませんか? そう、`NavigationStack`は、デフォルトではコンテンツを表示するコンテナとしての役割を果たすからです。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page84..Paragraph158" = "ただし、`NavigationStack`には、[ナビゲーションバー](glossary://navigation%20bar)と呼ばれる専用のスペースが用意されています。ナビゲーションバーには、現在のビューのタイトルや、さまざまなツールバー項目を表示できます。";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page85..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page85..Paragraph159" = "`ContentView`（コンテンツビュー）に`.navigationTitle(\"My Creatures”)`（生き物）を修飾子として追加してみましょう。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page85..Paragraph160" = "これにより、ナビゲーションバー領域にビューのタイトルが表示されます。ナビゲーションタイトルは、ナビゲーションビューそのものではなく、ナビゲーションビュー内のそれぞれのビューに追加します。";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page85..CodeBlock31" = ".navigationTitle(\"My Creatures\")\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page86..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page86..Paragraph161" = "ナビゲーションタイトルがどのように`ContentView`（コンテンツビュー）の最上位のナビゲーションバーに表示されるかに注目してください。タイトルがあると、Appを使っているユーザが見ているコンテンツを理解しやすくなります。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page86..Paragraph162" = "次に、`CreatureDance`（生き物のダンス）ビューに移動するための[NavigationLink](glossary://navigation%20link)（ナビゲーションリンク）を`ContentView`（コンテンツビュー）に追加しましょう。";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLinkCreatureDance..title" = "`CreatureList`（生き物リスト）に`NavigationLink`（ナビゲーションリンク）を追加する";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLinkCreatureDance..Page87..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLinkCreatureDance..Page87..Paragraph163" = "`Section(\"Dance\")`ビューの中に、移動先が`CreatureDance`（生き物のダンス）であるリンクを追加します。ラベルとナビゲーションタイトルを使って、ビューで行われることを記述します（ここでは、生き物が踊り回るようにします）。";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLinkCreatureDance..Page88..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLinkCreatureDance..Page88..CodeBlock32" = "NavigationLink(\"Make the Creatures Dance\") { \n    DancingCreatures()\n        .navigationTitle(\"Dancing Creatures\")\n}\n";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepNavigating in SwiftUI..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..SuccessMessage..Paragraph164" = "おめでとうございます! ナビゲーションの追加は、Appを作成する上で欠かせない要素です。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..SuccessMessage..Paragraph165" = "`NavigationLink`を使う場合は、移動元のビューが`NavigationStack`または`NavigationSplitView`の中にある場合のみ動作するんでしたよね?";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..SuccessMessage..Paragraph166" = "次は、Appのすべてのビューの間でデータを共有する方法を学びます。";
+
+/* Title of step named Sharing Data Between Views */
+"GuideBook..Guide0..StepSharing Data Between Views..title" = "ビュー間でのデータの共有";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..LearningCenterContent..Paragraph167" = "![](SharingDataBetweenViews.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..LearningCenterContent..Paragraph168" = "前回は、[状態プロパティ](glossary://state%20value)を使って[ローカル](glossary://local%20scope)で、またバインディングを使って2つのビュー間でデータを保存する方法を学びました。でも、今回のように複数のビューがあるApp内でデータを共有したい場合はどうすればよいでしょうか?";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..LearningCenterContent..Paragraph169" = "複数のビュー間で同じデータを共有するには、ビューから[分離](glossary://data%20separation)されている1つの信頼できる情報源が必要です。これは、[データモデル](glossary://data%20model)といい、データにアクセスする必要があるどのビューとでも共有できます。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..LearningCenterContent..Paragraph170" = "SwiftUI Appのデータモデルを作成する一般的な方法は、[オブザーバルオブジェクト](glossary://observable%20object)を使うことです。オブザーバルオブジェクトは、複数のビューで[監視](glossary://observe)できるプロパティを持つ[型](glossary://type)です。複数のビューでプロパティの状態の変化を監視できるため、それぞれのビューのUIをアップデートして、同期された状態を保つことができます。";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..title" = "データモデル";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page89..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page89..Paragraph171" = "これは、データモデル、つまり[オブザーバルオブジェクト](glossary://observable%20object)`CreatureZoo`であり、`ObservableObject`（オブザーバルオブジェクト）[プロトコル](glossary://protocol)のガイドラインに従っている[クラス](glossary://class)です。そのため、クラスで特定のプロパティを[公開](glossary://publish)することができます。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page89..Paragraph172" = "クラスによってプロパティが公開されると、そのプロパティによって監視している可能性のある[オブザーバ](glossary://observer)にそのプロパティの状態の変化がブロードキャスト（公開）されます。これにより、公開されているプロパティの状態が変わったときに、[オブザーブしている](glossary://observer)ビューをアップデートできます。";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page90..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page90..Paragraph173" = "`CreatureZoo`内の[公開データ](glossary://published%20value)は、`creatures`（生き物）プロパティで、これは`Creature`（生き物）インスタンスの配列です。生き物が追加または削除されたときなど、この配列内のデータが変わるたびに、SwiftUIによってそのプロパティのすべての[オブザーバ](glossary://observer)に通知が送られるので、それらのプロパティがアップデートされて最新のデータを表示することができます。";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page91..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page91..Paragraph174" = "オブサーバブルオブジェクト内に`@Published`[プロパティラッパー](glossary://property%20wrapper)を追加して、プロパティに[公開済み](glossary://published%20value)というマークを付けます。";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page92..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page92..Paragraph175" = "生き物のインスタンスを作成するには、初期化子`Creature(name:emoji:)`を使って、名前と1つの絵文字を渡します。";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page93..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page93..Paragraph176" = "これは、`name`（名前）、`emoji`（絵文字）、`offset`（オフセット）、`rotation`（回転）、および`id`（ID）の[プロパティ](glossary://property)が含まれる`Creature`（生き物）型です。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page93..Paragraph177" = "`id`（ID）プロパティを追加することによって、`Creature`（生き物）は`Identifiable`（識別可能）[プロトコル](glossary://protocol)のガイドラインに従います。このプロトコルにより、2つの生き物がまったく同じ絵文字を使っている場合でも、SwiftUIによって`Creature`（生き物）を一意に識別することができます。これがあとで役立ちます。";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..title" = "さらに生き物を追加する";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page94..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page94..Paragraph178" = "2つ以上の新しい`Creature`（生き物）インスタンスを`creatures`（生き物）配列に追加します。";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page95..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page95..Paragraph179" = "新しい生き物を作成するには、名前を付けて1つの絵文字を受け渡すことによって生き物を[初期化](glossary://initialization)します。生き物を配列に追加するときは、それぞれの生き物のデータをカンマで区切ります。次に例を示します:";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page95..CodeBlock33" = "Creature(name: \"T-Rex\", emoji: \"🦖\"),\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page96..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page96..Paragraph180" = "1つ以上の生き物を配列に追加します。";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page96..CodeBlock34" = "Creature(name: \"Ladybug\", emoji: \"🐞\"),\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..title" = "`StateObject`（状態オブジェクト）を作成する";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page97..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page97..Paragraph181" = "ビューを超えて[オブザーバブルオブジェクト](glossary://observable%20object)を共有する前に、まず、1つのビューでデータモデルを使うときにはどのようになるか見てみましょう。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page97..Paragraph182" = "`ContentView`（コンテンツビュー）で、オブザーバブルオブジェクトを初期化し、データを使って生き物ビューのリストを作成します。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page97..Paragraph183" = "`CreatureZoo`などのオブザーバブルオブジェクトを初期化するには、SwiftUIによってデータを管理できるように、特殊なプロパティラッパーである`@StateObject`（状態オブジェクト）を使います。";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page97..CodeBlock35" = "@StateObject var data = CreatureZoo()\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page98..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page98..Paragraph184" = "`@State`（状態）を使ってビュー内のプロパティを[状態プロパティ](glossary://state%20property)として管理するようSwiftUIに指示する方法と同じように、`@StateObject`（状態オブジェクト）プロパティラッパーを使って、オブザーバブルオブジェクトを管理するようSwiftUIに指示します。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page98..Paragraph185" = "ここでは、オブザーバブルオブジェクト`CreatureZoo`を初期化し、これを[状態オブジェクト](glossary://state%20object)として管理するようSwiftUIに指示しています。";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..title" = "ビューでモデルデータを使用する";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page99..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page99..Paragraph186" = "データを初期化したら、これを使って基本ビューを作成しましょう。`List`（リスト）の中に[ForEach](glossary://ForEach)ビューを追加して、カラムレイアウトで生き物を縦方向に表示します。";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page100..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page100..Paragraph187" = "[ForEach](glossary://ForEach)は、データ（配列など）の[コレクション](glossary://collection)を反復処理してコレクション内のそれぞれの要素のビューを作成する構造です。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page100..Paragraph188" = "`Section`（セクション）ビューの下に`ForEach`を追加して`data.creatures`配列を反復処理して、それぞれの生き物の名前と絵文字を表示するためのカスタムビューを作成します:";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page100..CodeBlock36" = "/*#-code-walkthrough(forEach.id)*/\nForEach(data.creatures) { creature in \n/*#-code-walkthrough(forEach.id)*/\n    HStack { \n        Text(creature.name)\n            .font(.title)\n        Spacer()\n        Text(creature.emoji)\n            /*#-code-walkthrough(resizableFont)*/\n            .resizableFont()\n            /*#-code-walkthrough(resizableFont)*/\n            .frame(minWidth: 125)\n    }\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page101..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page101..Paragraph189" = "`Creature`（生き物）がどのようにして`Identifiable`（識別可能）プロトコルのガイドラインに従っているか覚えていますか? これにより、まったく同じ絵文字と名前がある場合でも、[ForEach](glossary://ForEach)構造でそれぞれの生き物を一意に識別できるようになります。まったく同じものでも区別できるため、SwiftUIでそれぞれのビューが混同されずに個別にアップデートされます。";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page102..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page102..Paragraph190" = "ここでは`.resizableFont()`修飾子が使われていることに気付きましたか? これは、ビューのサイズに合わせて`Text`（テキスト）ビューのフォントサイズを拡大できるようにするために`ResizableFont.swift`で定義されているカスタム修飾子です。このファイル内のコードをチェックして、カスタム修飾子の作成方法を確認してください。";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..title" = "App全体でモデルデータにアクセスできるようにする";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page103..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page103..Paragraph191" = "1つのビューでオブザーバブルオブジェクトのデータを使用できるようになったので、今度は、そのデータを`MyApp.swift`からApp全体に共有します。";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page104..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page104..Paragraph192" = "App全体でデータにアクセスできるようにするには:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page104..OrderedList6..Paragraph193" = "`MyApp`内で、`CreatureZoo`のインスタンスを[状態オブジェクト](glossary://state%20object)として作成します。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page104..OrderedList6..Paragraph194" = "それを、[最上位ビュー](glossary://top-level%20view)（`NavigationStack`）に[環境オブジェクト](glossary://environment%20object)として渡します。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page104..Paragraph195" = "データを最上位ビューに渡すことで、環境オブジェクトによりそのデータが[ビュー階層](glossary://view%20hierarchy)全体で使用できるようになるので、ほかのすべてのビューでそのデータを使うことができます。";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page105..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page105..Paragraph196" = "`CreatureList`（生き物リスト）のときと同じように、`CreatureZoo`のインスタンスを作成します:";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page105..CodeBlock37" = "@StateObject var data = CreatureZoo()\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page106..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page106..Paragraph197" = "`NavigationStack`の下に、以下の修飾子を追加します`:";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page106..CodeBlock38" = ".environmentObject(data)\n";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page106..Paragraph198" = "これにより、[オブザーバブルオブジェクト](glossary://observable%20object)のインスタンスがAppの[エンバイロメント](glossary://environment)に渡され、すべての[サブビュー](glossary://subview)でアクセスできるようになります。";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page107..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page107..Paragraph199" = "次は、`ContentView.swift`に戻って、環境オブジェクトを使ってみましょう。";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..title" = "環境オブジェクトにアクセスする";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page108..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page108..Paragraph200" = "これでオブザーバブルオブジェクトを`NavigationStack`のすべての[サブビュー](glossary://subview)（`ContentView`（コンテンツビュー）など）に共有したので、今度はそのデータにアクセスしてみましょう。";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page109..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page109..Paragraph201" = "オブザーバブルオブジェクトの新しいインスタンスを作成する`@StateObject`（状態オブジェクト）を使う代わりに、Appの[エンバイロメント](glossary://environment)に渡されたインスタンスにアクセスする必要があります:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page109..OrderedList7..Paragraph202" = "現在の`@StateObject`（状態オブジェクト）変数である`data`を削除します。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page109..OrderedList7..Paragraph203" = "[環境オブジェクト](glossary://environment%20object)にアクセスするには、`CreatureZoo`型の`@EnvironmentObject`（環境オブジェクト）プロパティラッパーを使って新しいプロパティを作成します。";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page109..CodeBlock39" = "@EnvironmentObject var data : CreatureZoo\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page110..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page110..Paragraph204" = "`ContentView`（コンテンツビュー）のプレビューで、生き物のリストを確認してください。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page110..Paragraph205" = "生き物は、生き物リストのデータが`MyApp`で作成され、Appの[エンバイロメント](glossary://environment)を通じて共有されて、`ContentView`（コンテンツビュー）でアクセスされる前と、同じように表示されていますよね?";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..title" = "`HStack`を作成済みの`CreatureRow`ビューで置き換える";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page111..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page111..Paragraph206" = "ここは、コードを改善する絶好の機会です。[ForEach](glossary://ForEach)構造の中の`HStack`全体を[作成済みビュー](glossary://composed%20view)である`CreatureRow`（生き物の行）で置き換えると、このビューのコードを簡素化できます。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page111..Paragraph207" = "`ForEach`の中の`HStack`の中身を削除して、`CreatureRow(creature: creature)`で置き換えます。";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page112..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page112..Paragraph208" = "`CreatureRow.swift`を見てみましょう。このファイルには、`ForEach`内のコードと同じコードが含まれていますが、`Creature`（生き物）の値を格納する[プロパティ](glossary://property)を使っている点が異なります。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page112..Paragraph209" = "これで、独自のビューとして`CreatureRow`（生き物の行）ができ、`ContentView`（コンテンツビュー）から切り離して変更したりテストしたりしやすくなりました。このようなビューを作ると、App作成の基本原則であるコードの[モジュール性](glossary://modularity)が向上します。";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page113..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page113..CodeBlock40" = "ForEach(data.creatures) { creature in \n   CreatureRow(creature: creature)\n}\n";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepSharing Data Between Views..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..SuccessMessage..Paragraph210" = "ナイス!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..SuccessMessage..Paragraph211" = "オブザーバブルオブジェクトをAppのエンバイロメントに渡すことによって、[ビュー階層](glossary://view%20hierarchy)全体でそのデータにアクセスできるようになります。これにより、複数の場所でデータを作り直さなくても、App内のすべてのビューで同じ[信頼できる情報源](glossary://source%20of%20truth)にアクセスできるようになります。";
+
+/* Title of step named Create a New View To Share Data */
+"GuideBook..Guide0..StepCreate a New View To Share Data..title" = "新しいビューを作成してデータを共有する";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..LearningCenterContent..Paragraph212" = "![](CreateANewViewToShareData.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..LearningCenterContent..Paragraph213" = "これでデータを1つのビューと共有できるようになったので、今度は同じデータをほかのビューで使いましょう。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..LearningCenterContent..Paragraph214" = "そのためには、2つのことを行う必要があります:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..LearningCenterContent..OrderedList8..Paragraph215" = "データにアクセスするビューが、受け渡し先の最上位ビューと同じ[ビュー階層](glossary://view%20hierarchy)に含まれていることを確認します。ビューは、[最上位ビュー](glossary://top-level%20view)または[サブビュー](glossary://subview)内で初期化することによって、ビュー階層に追加します。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..LearningCenterContent..OrderedList8..Paragraph216" = "[環境オブジェクト](glossary://environment%20object)にアクセスします。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..LearningCenterContent..Paragraph217" = "例えば、`ContentView`（コンテンツビュー）の中に新しいビューを作成すると、`ContentView`は最上位ビューである`NavigationStack`のサブビューなので、この新しいビューはビュー階層に含まれます。そのため、この新しいビューから環境オブジェクトにアクセスできます。";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..title" = "環境オブジェクトを宣言する";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page114..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page114..Paragraph218" = "目標は、Appの[エンバイロメント](glossary://environment)でデータにアクセスする`DancingCreatures`（踊る生き物）という新しいビューを作成することです。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page114..Paragraph219" = "`DancingCreatures`（踊る生き物）は、すでに[ビュー階層](glossary://view%20hierarchy)に含まれています。`ContentView`（コンテンツビュー）にこのビューへのリンクを追加したためです。次のステップは、Appのエンバイロメントでデータにアクセスすることです。";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page115..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page115..Paragraph220" = "Appのエンバイロメントでデータにアクセスするには、`CreatureList`（生き物リスト）のときと同じように、`CreatureZoo`の環境オブジェクトを宣言します。やり方が分からない場合は、ほかのコードを振り返っても構いません。";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page116..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page116..Paragraph221" = "`@EnvironmentObject`プロパティラッパーを使って変数を[宣言](glossary://declaration)して、`CreatureZoo`の型に渡します。値を[初期化](glossary://initialization)する必要はありません。すでに`MyApp`で初期化されているためです。ここでは、データにアクセスするだけで済みます。";
+
+/*  */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page116..CodeBlock41" = "@EnvironmentObject var data : CreatureZoo\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesView..title" = "`DancingCreatures`（踊る生き物）ビューを追加する";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesView..Page117..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesView..Page117..Paragraph222" = "これでAppのデータにアクセスできるようになりましたので、今度はAppのデータを使って何か楽しいものを追加しましょう。最初にすべての生き物を積み上げて、タップするたびにそれぞれがバラバラの方向に散らばるようにしましょう。";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesView..Page118..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesView..Page118..Paragraph223" = "`VStack`の中にこのコードを追加します`:";
+
+/*  */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesView..Page118..CodeBlock42" = "ZStack {\n    /*#-code-walkthrough(dance.forEach)*/\n    ForEach(data.creatures) { creature in\n    /*#-code-walkthrough(dance.forEach)*/\n        /*#-code-walkthrough(dance.textView)*/\n        Text(creature.emoji)\n            .resizableFont()\n            .offset(creature.offset)\n            .rotationEffect(creature.rotation)\n        /*#-code-walkthrough(dance.textView)*/\n        //#-learning-code-snippet(exp1)\n        //#-learning-code-snippet(animationSolution)\n        //#-learning-code-snippet(exp3)\n\n    }\n}\n/*#-code-walkthrough(dance.onTap)*/\n.onTapGesture {\n    data.randomizeOffsets()\n}\n/*#-code-walkthrough(dance.onTap)*/\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..title" = "アニメーションコードを理解する";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page119..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page119..Paragraph224" = "このアニメーションを作成するには、[ForEach](glossary://ForEach)で`CreatureZoo.creatures`内の生き物を1つずつ反復処理して、それぞれの生き物別に`Text`（テキスト）ビューを作成します。";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page120..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page120..Paragraph225" = "`Text`（テキスト）ビューでは、生き物の`offset`（オフセット）[プロパティ](glossary://property)と`rotation`（回転）プロパティを、`.offset`修飾子と `.rotationEffect`修飾子の引数として使用します。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page120..Paragraph226" = "`CreatureZoo.creatures`は[公開値](glossary://published%20value)なので、生き物の`offset`（オフセット）または`rotation`（回転）が変わるたびに、SwiftUIによって`DancingCreatures`（踊る生き物）ビューがアップデートされます。";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page121..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page121..Paragraph227" = "`.onTapGesture`修飾子により、ビューをタップするたびにコードが実行されます。タップされると、`data.randomizeOffsets()`によってそれぞれの生き物の`offset`（オフセット）と`rotation`（回転）の値が変更され、ビューでそれぞれの生き物をアップデートして新しい位置と回転を適用できます。";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..title" = "生き物をアニメートする";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page122..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page122..Paragraph228" = "ビューをタップしてみましょう。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page122..Paragraph229" = "生き物は動いていますが、あまり面白く見えません。次に、生き物をアニメートして、踊るように揺れながら新しい位置に移動するようにしましょう。";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page123..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page123..Paragraph230" = "生き物をアニメートして新しい位置まで移動させるには、使用するアニメーションとアニメートする値を指定する必要があります。ここでは、それぞれの生き物の`offset`（オフセット）プロパティをアニメートしたいとします。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page123..Paragraph231" = "`.animation(_:value:)`修飾子を`Text`（テキスト）ビューに付加します。アニメーションの引数には`.default`を選択し、値には`creature.offset`を渡します。`offset`（オフセット）が変わるたびに、ビューの変更がアニメートされます。";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page124..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page124..CodeBlock43" = ".animation(.default, value: creature.offset)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..title" = "ビューを試してみる";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page125..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page125..Paragraph232" = "生き物がアニメートされるようになったので、アニメーションとビューのほかの部分を微調整して、もっと面白くしましょう。";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page126..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page126..Paragraph233" = "新しい`.animation(_:value:)`修飾子を追加して、`creature.rotation`（生き物の回転）プロパティの変更をアニメートします。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page126..Paragraph234" = "`.animation (_:value)`修飾子の前に次の修飾子を追加しましょう。アニメーションはどのように変わりますか? なぜだと思いますか? 上の修飾子のあとに`.spring()`アニメーションを配置するとどうなるでしょうか?";
+
+/*  */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page126..CodeBlock44" = ".animation(.spring(response: 0.5, dampingFraction: 0.5), value: creature.rotation)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page127..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page127..Paragraph235" = "`.onTapGestures`（タップジェスチャが行われたとき）のイベントハンドラを`data.synchronizeOffsets()`に変更しましょう。これにより、すべての生き物が同じオフセットに移動します。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page127..OrderedList9..Paragraph236" = "`creature.offset`の現在の`.animation`修飾子を削除します。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page127..OrderedList9..Paragraph237" = "以下のアニメーションを追加して、それぞれのアニメーションを少しずつ遅らせるようにします。";
+
+/*  */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page127..CodeBlock45" = ".animation(.default.delay(data.indexFor(creature) / 10), value: creature.offset)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page128..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page128..Paragraph238" = "満足できる結果になるまで、アニメーションの値を微調整しましょう!";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepCreate a New View To Share Data..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..SuccessMessage..Paragraph239" = "よくできました!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..SuccessMessage..Paragraph240" = "これで、[ビュー階層](glossary://view%20hierarchy)に共有されたオブザーバブル[データモデル](glossary://data%20model)を使用する別のビューができました。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..SuccessMessage..Paragraph241" = "次は、そのデータモデルのデータを追加したり削除したりして、ユーザがAppをカスタマイズできるようにする方法を学びます。";
+
+/* Title of step named Add and delete creatures */
+"GuideBook..Guide0..StepAdd and delete creatures..title" = "生き物を追加する/削除する";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..LearningCenterContent..Paragraph242" = "![](AddAndDeleteCreatures.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..LearningCenterContent..Paragraph243" = "ここまでで、1つの[データモデル](glossary://data%20model)を複数のビューで共有する複数ビューのAppができました。でも、まだAppは完全とは思えません。コード内で`Creature`（生き物）を追加したり削除したりすることはできても、[ユーザ](glossary://user)がUIを通じて追加したり削除したりすることはできません。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..LearningCenterContent..Paragraph244" = "幸いなことに、これを修正するのはとても簡単です。ビューからデータモデルにアクセスできるようになっているので、ユーザがUIを操作したときにデータモデルを変更できます。最初に、生き物を削除する方法を学んでから、ユーザが自分の生き物を追加できる新しいビューを作成しましょう。";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..title" = "生き物を削除する";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page129..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page129..Paragraph245" = "SwiftUIでは、とても簡単に`List`（リスト）からデータを削除できます。`ContentView`（コンテンツビュー）の`ForEach`ループに`.onDelete`修飾子を追加することで、生き物を削除できます。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page129..Paragraph246" = "`.onDelete`修飾子を追加することで、カスタムコード（ユーザが項目の削除を確定したときの`action`[クロージャ](glossary://closure)）を実行できます。クロージャのコードによって、現在の生き物がAppのオブザーバブル[データモデル](glossary://data%20model)から削除されます。";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page130..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page130..Paragraph247" = "`.onDelete`[クロージャ](glossary://closure)の中で、`remove(atOffsets:)`を呼び出し、クロージャから値`indexSet`を渡すことによって、現在の生き物が削除されます。これにより、削除することにしたリストの行に基づいて`creatures`（生き物）配列内の対応する生き物が検索されます。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page130..Paragraph248" = "この修飾子を`ForEach`ループの下に追加して、Appを実行してみましょう。生き物を左にスワイプすると、削除できますか?";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page130..CodeBlock46" = ".onDelete { indexSet in \n    data.creatures.remove(atOffsets: indexSet)\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..title" = "`CreatureEditor`（生き物エディタ）に`NavigationLink`（ナビゲーションリンク）を追加する";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page131..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page131..Paragraph249" = "新しい生き物を追加するには、2つのことを行う必要があります:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page131..OrderedList10..Paragraph250" = "`NavigationLink`（ナビゲーションリンク）を使って、`CreatureEditor`（生き物エディタ）を[ビュー階層](glossary://view%20hierarchy)に追加します。これにより、`CreatureEditor`が`CreatureZoo`の環境オブジェクトにアクセスできるようになり、ユーザがビューに移動できるようになります。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page131..OrderedList10..Paragraph251" = "`CreatureEditor`（生き物エディタ）ビューを[作成](glossary://composed%20view)して、ユーザが新しい生き物を編集して`CreatureZoo`の`creatures`（生き物）配列に追加できるようにします。";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page132..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page132..Paragraph252" = "最初に、`CreatureEditor`（生き物エディタ）に`NavigationLink`（ナビゲーションリンク）を追加する場所を決めます。すでに`ContentView`（コンテンツビュー）から生き物を削除できる生き物の`List`（リスト）ビューがあるので、同じビューから生き物を追加できた方がよいですよね。";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page133..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page133..Paragraph253" = "生き物の編集に簡単にアクセスできるようにするには、`ContentView`（コンテンツビュー）のUIの[ナビゲーションバー](glossary://navigation％20bar)にリンクを配置します。これはユーザがよくAppの追加機能を探す場所なので、このタイプのリンクには最適な場所です。";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page134..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page134..Paragraph254" = "ナビゲーションバーにボタンを追加するには:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page134..OrderedList11..Paragraph255" = "`List`（リスト）ビューに`.toolbar`修飾子を付加して、ナビゲーションバーにカスタマイズを加えます。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page134..OrderedList11..Paragraph256" = "`.toolbar`（ツールバー）クロージャの中に、`ToolbarItem`（ツールバー項目）を追加します。これは、ツールバーに配置できる項目です。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page134..OrderedList11..Paragraph257" = "`ToolbarItem`（ツールバー項目）内の`CreatureEditor`（生き物エディタ）に`NavigationLink`（ナビゲーションリンク）を追加します。これが、ナビゲーションバーに表示されるビューです。";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page134..CodeBlock47" = ".toolbar { \n    ToolbarItem { \n        // CreatureEditor（生き物エディタ）にNavigationLink（ナビゲーションリンク）を追加\n\n    }\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page135..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page135..CodeBlock48" = ".toolbar { \n    ToolbarItem { \n        NavigationLink(\"Add\") { \n            CreatureEditor()\n        }\n    }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..title" = "`CreatureEditor`（生き物エディタ）にナビゲーションタイトルを追加する";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..Page136..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..Page136..Paragraph258" = "次に、`CreatureEditor`（生き物エディタ）に、ビューの目的を表すナビゲーションタイトルを付けます。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..Page136..OrderedList12..Paragraph259" = "`CreatureEditor`（生き物エディタ）ビューにナビゲーションタイトルを追加します。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..Page136..OrderedList12..Paragraph260" = "Appを実行して、`ContentView`（コンテンツビュー）から`CreatureEditor`（生き物エディタ）への移動を試してみましょう。";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..Page137..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..Page137..CodeBlock49" = ".toolbar { \n    ToolbarItem { \n        NavigationLink(\"Add\") { \n            CreatureEditor()\n                .navigationTitle(\"Add Creature\")\n        }\n    }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..title" = "`CreatureEditor`（生き物エディタ）のデータを定義する";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page138..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page138..Paragraph261" = "新しい生き物を追加するために、新しい生き物を編集して[データモデル](glossary://data%20model)に追加できる[作成済みビュー](glossary://composed%20view)、`CreatureEditor`（生き物エディタ）を作成しましょう。";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page139..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page139..Paragraph262" = "ここで、新しい`Creature`（生き物）インスタンスを作成してデータモデルに追加するために`CreatureEditor`（生き物エディタ）に必要な[プロパティ](glossary://property)は何か、ちょっと考えてみましょう。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page139..OrderedList13..Paragraph263" = "必要なのは、[ローカル](glossary://local%20scope)の`CreatureEditor`（生き物エディタ）ビュー内で変更できる`Creature`（生き物）プロパティです。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page139..OrderedList13..Paragraph264" = "`Creature`（生き物）インスタンスを追加できるように、[エンバイロメント](glossary://environment)から`CreatureZoo`の[オブザーバブルオブジェクト](glossary://observable%20object)にアクセスできる必要があります。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page139..Paragraph265" = "これらの目標を達成する2つのプロパティを作成してみましょう。分からなくなったら、以下のヒントを参考にしてください。";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page140..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page140..Paragraph266" = "最初に、`Creature`（生き物）インスタンスを格納する[状態プロパティ](glossary://state%20property)を作成します。`name`（名前）と`emoji`（絵文字）パラメータは、とりあえず空の文字列のままで構いません。";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page141..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page141..Paragraph267" = "次に、[オブザーバブルオブジェクト](glossary://observable%20object)にアクセスするために、`CreatureZoo`型の[環境オブジェクト](glossary://environment%20object)を宣言します。";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page142..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page142..CodeBlock50" = "@State var newCreature : Creature = Creature(name: \"\", emoji: \"\")\n@EnvironmentObject var data : CreatureZoo \n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineYourView..title" = "CreatureEditor（生き物エディタ）にフォームを作成する";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineYourView..Page143..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineYourView..Page143..Paragraph268" = "`CreatureEditor`（生き物エディタ）ビューの作成には、内蔵の`Form`（フォーム）ビューを使用できます。このビューは、データ入力を処理する場合に適しています。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineYourView..Page143..Paragraph269" = "`Form`（フォーム）の中に3つの`Section`（セクション）ビュー（それぞれが生き物の名前、絵文字、およびプレビューの編集用）を追加します。";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineYourView..Page143..CodeBlock51" = "Form {\n    Section(\"Name\") {\n        //#-learning-code-snippet(addACreatureEditorTextField)\n\n    }   \n\n    Section(\"Emoji\") {\n        \n    }\n\n    Section(\"Creature Preview\") {\n        CreatureRow(creature: newCreature)\n    }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..title" = "ユーザ入力用の`TextField`（テキストフィールド）ビューを追加する";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page144..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page144..Paragraph270" = "次に、[ユーザ](glossary://user)が`Creature`（生き物）[状態プロパティ](glossary://state%20property)の`name`（名前）と`emoji`（絵文字）の値を編集するための手段を追加する必要があります。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page144..Paragraph271" = "これを行うには、ユーザが何かテキストを入力できる[TextField](doc://com.apple.documentation/documentation/swiftui/textfield)（テキストフィールド）ビューを追加します。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page144..Paragraph272" = "生き物の`name`（名前）と`emoji`（絵文字）の値を編集するために、2つの`TextField`（テキストフィールド）ビューを追加します。`TextField(_:text:)`初期化子を使いましょう。この初期化子は、[ラベル](glossary://label)と[バインディング](glossary://binding)の`String`（文字列）値の引数を取ります。";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page145..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page145..Paragraph273" = "バインディングには、SwiftUIによって管理される信頼できる情報源（[状態プロパティ](glossary://state%20property)など）が必要でしたよね? ";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page145..Paragraph274" = "`Creature`（生き物）状態プロパティにバインディングを渡して、次のように`name`（名前）と`emoji`（絵文字）の値を指定します:";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page145..CodeBlock52" = "$newCreature.name\n$newCreature.emoji\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page146..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page146..Paragraph275" = "例えば、こんな感じで`TextField`（テキストフィールド）を追加します。1つは`newCreature.name`（新しい生き物の名前）の編集用、もう1つは`newCreature.emoji`（新しい生き物の絵文字）の編集用です。";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page146..CodeBlock53" = "TextField(\"Name\", text: $newCreature.name)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page147..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page147..CodeBlock54" = "Form {\n    Section(\"Name\") {\n        TextField(\"Name\", text: $newCreature.name)\n    }   \n\n    Section(\"Emoji\") {\n        TextField(\"Emoji\", text: $newCreature.emoji)\n    }\n\n    Section(\"Creature Preview\") {\n        CreatureRow(creature: newCreature)\n    }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..title" = "ツールバーに“追加”ボタンを配置する";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page148..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page148..Paragraph276" = "次に、ユーザが新しい生き物を追加するためにタップできる`Button`（ボタン）を追加する必要があります。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page148..Paragraph277" = "`ContentView`（コンテンツビュー）のときと同じように、このようなボタンを配置するのに最適な場所は`CreatureEditor`（生き物エディタ）の[ナビゲーションバー](glossary://navigation%20bar)です。";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page149..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page149..Paragraph278" = "`ContentView`（コンテンツビュー）の`.toolbar`（ツールバー）のコードを参考にして、`CreatureEditor`（生き物エディタ）にツールバーを追加してみてください`:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page149..OrderedList14..Paragraph279" = "VStack`の下に`.toolbar`修飾子を追加します。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page149..OrderedList14..Paragraph280" = "ツールバーの中に、`ToolbarItem`（ツールバー項目）を追加します。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page149..OrderedList14..Paragraph281" = "`ToolbarItem`（ツールバー項目）の中に、“追加”という[ラベル](glossary://label)を付けて`Button`（ボタン）を追加します。`Button`のアクション[クロージャ](glossary://closure)は、とりあえず空のままで構いません。";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page150..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page150..CodeBlock55" = ".toolbar { \n    ToolbarItem { \n        Button(\"Add\") { \n            //#-learning-code-snippet(addCreatureToCreatureZoo)\n            //#-learning-code-snippet(dismissCall)\n        }\n    }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..title" = "`CreatureZoo`に生き物を追加する";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page151..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page151..Paragraph282" = "“追加”ボタンをタップしたときに生き物のインスタンスがオブザーバルオブジェクト`CreatureZoo`に追加されるようにしましょう。具体的には、`creatures`（生き物）配列に生き物を追加しましょう。";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page152..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page152..Paragraph283" = "以下のコードで、編集された生き物を`data.creatures`に追加します。`creatures`（生き物）は[公開値](glossary://published%20value)なので、値が変わるたびにそのデータを使ってすべてのビューが自動的に更新されるんでしたよね? ";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page152..Paragraph284" = "このコードを、`Button`（ボタン）のアクション[クロージャ](glossary://closure)の中に追加します。";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page152..CodeBlock56" = "data.creatures.append(newCreature)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page153..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page153..Paragraph285" = "Appを実行して、新しい生き物を追加してみましょう。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page153..Paragraph286" = "`ContentView`（コンテンツビュー）に戻って、新しい生き物が`List`（リスト）ビューに追加されているかどうか確認してください。`DancingCreatures`（踊る生き物）ビューにも追加されていますか?";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..title" = "“追加”をタップしたときにエディタを閉じる";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page154..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page154..Paragraph287" = "生き物を追加したあとで、`CreatureEditor`（生き物エディタ）ビューが閉じて、移動前のビューが表示されます。これによりユーザの使い勝手が向上し、何回も“追加”ボタンをタップしてしまった結果、同じ生き物が何度も追加されないようにできます。";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page155..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page155..Paragraph288" = "ビューを閉じるには、2つのことが必要です:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page155..OrderedList15..Paragraph289" = "[環境](glossary://environment)変数`dismiss`（閉じる）を宣言します。これにより、`NavigationStack`に表示されている現在のビューをAppによって閉じることができます。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page155..OrderedList15..Paragraph290" = "“追加”ボタンをタップしたときに`dismiss()`（閉じる）を[呼び出し](glossary://call)ます。";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page155..CodeBlock57" = "@Environment(\\.dismiss) var dismiss\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page156..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page156..Paragraph291" = "[環境](glossary://environment)変数`dismiss`（閉じる）を宣言してから、新しい生き物を`data.creatures`に追加したあとで“追加”をタップしたときに`dismiss()`を呼び出します。";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page156..CodeBlock58" = "dismiss()\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page157..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page157..CodeBlock59" = ".toolbar { \n    ToolbarItem { \n        Button(\"Add\") { \n            data.creatures.append(newCreature)\n            dismiss()\n        }\n    }\n}\n";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepAdd and delete creatures..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..SuccessMessage..Paragraph292" = "おめでとうございます! これで、完全に機能するAppが完成しました!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..SuccessMessage..Paragraph293" = "新しい生き物を追加して`CreatureList`（生き物リスト）で表示および編集し、`DancingCreatures`（踊る生き物）で生き物が踊るのを見ることができるようになりました。";
+
+/* Title of step named Add a `CreatureDetail` view */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..title" = "`CreatureDetail`（生き物の詳細）ビューを追加する";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..LearningCenterContent..Paragraph294" = "![](AddCreatureDetailView.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..LearningCenterContent..Paragraph295" = "これで、ビュー間を移動する方法、[ローカル](glossary://local%20scope)の状態変化を管理する方法、App全体でデータを共有する方法、さまざまな[内蔵SwiftUIビュー](glossary://built-in%20view)を使用する方法が分かったので、今度は、新しいビュー`CreatureDetail`（生き物の詳細）を作成するテストで今までに学んだスキルを試してみましょう。このビューには、リスト内の1つの生き物の詳細が表示されます。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..LearningCenterContent..Paragraph296" = "生き物のリストは、見た目はよいのですが、もう少し操作できるようにする必要がありそうです。これらの生き物があっても、いじれないのであれば意味ないですよね?";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..title" = "`CreatureDetail`（生き物の詳細）に`NavigationLink`（ナビゲーションリンク）を追加する";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page158..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page158..Paragraph297" = "目標は、[ForEach](glossary://ForEach)ループの各ビューをそれぞれ専用の`NavigationLink`（ナビゲーションリンク）に入れて、そこから`data.creatures`配列内の生き物の詳細ビューに移動できるようにすることです。";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page159..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page159..Paragraph298" = "そのためには、`ForEach`ループの現在のコンテンツを`NavigationLink`（ナビゲーションリンク）で置き換えます:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page159..OrderedList16..Paragraph299" = "[移動先](glossary://destination%20view)が[作成済みビュー](glossary://composed%20view)re: creature)`になるように設定します。になるように設定しまになるように設定します。になるように設定します。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page159..OrderedList16..Paragraph300" = "`CreatureRow`（生き物の行）として[ラベル](glossary://label)を作成します。その際に、[クロージャ](glossary://closure)の`creature`（生き物）値を[引数](glossary://argument)として使います。";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page160..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page160..Paragraph301" = "以下のようにナビゲーションリンクを作成して`ForEach`の中に追加しましょう:";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page160..CodeBlock60" = "NavigationLink {\n    CreatureDetail(creature: creature)\n        .navigationTitle(creature.name)\n} label: {\n    CreatureRow(creature: creature)\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page161..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page161..Paragraph302" = "`ForEach`は次のようになります:";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page161..CodeBlock61" = "ForEach(data.creatures) { creature in \n    NavigationLink {\n        CreatureDetail(creature: creature)\n            .navigationTitle(creature.name)\n    } label: {\n        CreatureRow(creature: creature)\n    }  \n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page162..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page162..Paragraph303" = "`List`（リスト）の行をタップしてみてください。その生き物の`CreatureDetail`（生き物の詳細）ビューに移動するようになりましたね? ";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..title" = "`CreatureDetail`（生き物の詳細）ビューを作成する";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page163..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page163..Paragraph304" = "`CreatureDetail`（生き物の詳細）ビューには、選択した生き物が`Text`（テキスト）ビューとして表示されています。既存のコードを理解して、かっこいい生き物の効果を足してください。";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page164..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page164..Paragraph305" = "`ContentView`（コンテンツビュー）には、`CreatureDetail(creature: creature)`の[移動先ビュー](glossary://destination%20view)を指定して`NavigationLink`（ナビゲーションリンク）を作成しましたよね。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page164..Paragraph306" = "移動先ビューでは、リストのそれぞれの行の`Creature`（生き物）の値を使って、タップされた生き物に応じて異なるビューが生成されます。ここでは、その値は状態を持たない[定数](glossary://constant)として保存されます。このビューでは値が変わらないためです。";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page165..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page165..Paragraph307" = "すでに3つの[状態プロパティ](glossary://state%20property)が定義されています:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page165..OrderedList17..Paragraph308" = "`color`（色）は、`Color`（色）の値を追跡し、`Text`（テキスト）ビューの色の変更を制御します。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page165..OrderedList17..Paragraph309" = "`shadowRadius`（シャドウの半径）は、`.shadow`修飾子の半径を制御するために使用する`Double`（倍精度浮動小数点）型の値です。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page165..OrderedList17..Paragraph310" = "`angle`（角度）は、`Text`（テキスト）ビューを回転するために使用する`Angle`（角度）の値です。";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page166..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page166..Paragraph311" = "`Text`（テキスト）ビューでは、`creature.emoji`（生き物の絵文字）をビューのString（文字列）値として使用し、ビューの外観と動作を指定する複数の修飾子を追加します:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page166..OrderedList18..Paragraph312" = "[.colorMultiply](doc://com.apple.documentation/documentation/swiftui/list/colormultiply(_:))（色の乗算）は、ビューに色の乗算効果を追加します。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page166..OrderedList18..Paragraph313" = "[.shadow](doc://com.apple.documentation/documentation/swiftui/list/shadow(color:radius:x:y:))（シャドウ）は、指定した色と半径のシャドウを追加します。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page166..OrderedList18..Paragraph314" = "[.rotation3DEffect](doc://com.apple.documentation/documentation/swiftui/view/rotation3deffect(_:axis:anchor:anchorz:perspective:))（回転の3D効果）は、ビューの回転を3次元で制御します。";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddColorPicker..title" = "`color`（色）の値を変更するための`ColorPicker`（カラーピッカー）を追加する";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddColorPicker..Page167..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddColorPicker..Page167..Paragraph315" = "このビューに操作を組み込むには、まず`Text`（テキスト）ビューの下に`ColorPicker`（カラーピッカー）ビューを追加することから始めます。これにより、新しい色が選択されると状態プロパティ`color`（色）が変わります。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddColorPicker..Page167..Paragraph316" = "これを自分でやってみましょう。分からなくなったら、解決方法を参考にしてください。";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddColorPicker..Page168..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddColorPicker..Page168..CodeBlock62" = "ColorPicker(\"Choose a Color\", selection: $color)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddSliderShadowRadius..title" = "シャドウの半径を制御する`Slider`（スライダ）を追加する";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddSliderShadowRadius..Page169..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddSliderShadowRadius..Page169..Paragraph317" = "`ColorPicker`（カラーピッカー）の下に、`shadowRadius`（シャドウの半径）の値を制御する`Slider`（スライダ）を追加します。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddSliderShadowRadius..Page169..Paragraph318" = "これを自分でやってみましょう。分からなくなったら、解決方法を参考にしてください。";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddSliderShadowRadius..Page170..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddSliderShadowRadius..Page170..CodeBlock63" = "HStack { \n    Text(\"Shadow\")\n    Slider(value: $shadowRadius)\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..title" = "生き物のサイズを変更するための`Button`（ボタン）を追加する";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page171..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page171..Paragraph319" = "`Slider`（スライダ）の下に、ユーザが`Text`（テキスト）ビューを拡大/縮小するために使用できる`Button`（ボタン）を追加します:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page171..OrderedList19..Paragraph320" = "`ConditionalCircle`（条件付きの円）のときと同じように、`Boolean`（ブール）値を追跡する新しい[状態プロパティ](glossary://state%20property)を作成します。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page171..OrderedList19..Paragraph321" = "新しい修飾子[.scaleEffect](doc://com.apple.documentation/documentation/swiftui/view/scaleeffect(_:anchor:)-pmi7)を[3項条件演算子](glossary://ternary%20conditional%20operator)と一緒に追加して、ブール値が`true`（真）のときと`false`（偽）のときの大きさを指定します。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page171..OrderedList19..Paragraph322" = "ブール値の`true`（真）/`false`（偽）の状態を切り替えるように、`Button`（ボタン）のアクション[クロージャ](glossary://closure)を変更します。";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page172..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page172..Paragraph323" = "`ConditionalCircle`（条件付きの円）のコードを振り返って、このタスクを完成させてみましょう。やり方が分からない場合は、以下のヒントを参照してください:";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page173..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page173..Paragraph324" = "ビューの[body](glossary://body)の外に、ブール値を追跡する[状態プロパティ](glossary://state%20property)を作成します。";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page173..CodeBlock64" = "@State var isScaled = false\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page174..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page174..Paragraph325" = "`Text`（テキスト）ビューに`.scaleEffect`修飾子を追加して、[3項条件演算子](glossary://ternary%20conditional%20operator)を使って大きさを制御します。";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page174..CodeBlock65" = ".scaleEffect(isScaled ? 1.5 : 1)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page175..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page175..Paragraph326" = "`Button`（ボタン）を追加し、`isScaled.toggle()`を呼び出すアクションを設定します。";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page175..CodeBlock66" = "Button(\"Scale\") { \n    isScaled.toggle()\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskanimateChangesIsScaled..title" = "`isScaled`の変更をアニメートする";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskanimateChangesIsScaled..Page176..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskanimateChangesIsScaled..Page176..Paragraph327" = "この拡大/縮小効果は、今一つですね。アニメートした方がよくありませんか?";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskanimateChangesIsScaled..Page176..Paragraph328" = "`.animation(_:value:)`修飾子を使って、`isScaled`（拡大/縮小された）変数の変更をアニメートします。`.spring(response:dampingFraction:blendDuration:)`アニメーションを使って、それぞれのパラメータに`0.5`の値を渡してみましょう。";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskanimateChangesIsScaled..Page177..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskanimateChangesIsScaled..Page177..CodeBlock67" = ".animation(.spring(response: 0.5, dampingFraction: 0.5, blendDuration: 0.5), value: isScaled)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskuseIsScaledRotateView..title" = "`isScaled`を使ってビューを回転する";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskuseIsScaledRotateView..Page178..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskuseIsScaledRotateView..Page178..Paragraph329" = "最後にちょっとした機能を追加するには、`.rotation3DEffect`（回転の3D効果）修飾子の`angle`（角度）パラメータで条件付きの値を作成します。そのあとその値を、`isScaled`（拡大/縮小された）が`true`（真）の場合は`Angle(degrees: 0)`、`false`（偽）の場合は`Angle(degrees: 360)`に設定します。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskuseIsScaledRotateView..Page178..Paragraph330" = "これを行うには、[3項条件演算子](glossary://ternary%20conditional%20operator)を使いましょう。";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskuseIsScaledRotateView..Page179..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskuseIsScaledRotateView..Page179..CodeBlock68" = ".rotation3DEffect(isScaled ? Angle(degrees: 0) : Angle(degrees: 360), axis: (x: 5, y: 2, z: 1))\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcustomizeCreature..title" = "`CreatureDetail`（生き物の詳細）ビューをカスタマイズする";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcustomizeCreature..Page180..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcustomizeCreature..Page180..Paragraph331" = "これで、[ユーザの操作](glossary://user%20interaction)に伴うビューのカスタマイズのコツが分かったので、もう1つ[内蔵ビュー](glossary://built-in%20view)を追加して、ユーザが`Text`（テキスト）ビューを変更できるようにしてみましょう。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcustomizeCreature..Page180..Paragraph332" = "`Slider`（スライダ）を使ってビューの幅、高さ、ブラー（ぼかし）、コントラスト、または彩度を変更したり、`Button`（ボタン）を使って`RotationEffect`（回転効果）を有効にしたり、それ以外にも何か思い付いた効果があれば使ってみてください。いろいろいじってみて、どんな効果を作成できるか確認しましょう。";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..SuccessMessage..Paragraph333" = "よくできました!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..SuccessMessage..Paragraph334" = "生き物を表示したり、追加したり、削除したり、踊らせたり、変更したりできる本格的なAppが完成しました。これは決して簡単なことではないので、自分を褒めてあげましょう。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..SuccessMessage..Paragraph335" = "このチュートリアルは終わりましたが、App作成の旅はまだ始まったばかりです。学んだ概念を使えば使うほど、それらを覚えることができ、より多くのAppを作成できるようになります。次の実験では、このチュートリアルで学んだすべてのことを使って、自分だけのサンプルを作成してみましょう。頑張ってください!";
+
+/* Title of step named Create on Your Own */
+"GuideBook..Guide0..StepCreate on Your Own..title" = "自分で作成してみる";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..LearningCenterContent..Paragraph336" = "![](CreateYourOwnCopy.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..LearningCenterContent..Paragraph337" = "これで状態とデータフローを学ぶ旅が終わったので、今度はあなたの創造力を解き放って、生き物のデータを使う新しいビューを作成しましょう。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..LearningCenterContent..Paragraph338" = "この実験が終わったら、このチュートリアルで学んだ概念を使って、自分だけのプロジェクトをゼロから作ってみてください。";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateYourOwn..title" = "自分だけのビューを作成する";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateYourOwn..Page181..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateYourOwn..Page181..Paragraph339" = "試してみること:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateYourOwn..Page181..UnorderedList0..Paragraph340" = "`creatures`（生き物）の配列を使用する新しいビューを作成して、`ContentView`（コンテンツビュー）の移動先としてリンクしましょう。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateYourOwn..Page181..UnorderedList0..Paragraph341" = "`CreatureZoo`に新しい[公開値](glossary://published%20value)を追加して、既存の1つ以上のビューで使ってみましょう。";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateYourOwn..Page181..UnorderedList0..Paragraph342" = "それぞれの生き物に`description`（説明）プロパティを指定して、生き物の説明、名前、およびイメージが楽しいレイアウトに表示される新しいビューを作成しましょう。";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateNewApp..title" = "自分だけのAppを作成する";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateNewApp..Page182..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateNewApp..Page182..Paragraph343" = "SwiftUIを使った、まったく新しいプロジェクトを考案して作成しましょう。ビュー間を移動し、[状態プロパティ](glossary://state%20property)を使ってビューの外観をローカルで変更し、内蔵SwiftUIビューと[バインディング](glossary://binding)を使ってユーザの操作を可能にし、Appのエンバイロメントに渡された[オブザーバブルオブジェクト](glossary://observable%20object)を使って複数のビューでデータを共有する、自分だけの`NavigationStack`を実装します。分からなくなったら、このプロジェクトに戻り、コード例を参照して、発生したバグを修正してください。あなたならできます! 頑張ってください!";
+

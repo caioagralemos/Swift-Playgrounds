@@ -1,0 +1,2013 @@
+/* Title of Guidebook */
+"GuideBook..title" = "สร้างแอปต่อไป อย่ายอมแพ้!";
+
+/* The title of the intro for this section of the guide */
+"GuideBook..IntroKeep Going with Apps..title" = "สร้างแอปต่อไป อย่ายอมแพ้!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..IntroKeep Going with Apps..Paragraph0" = "ใน[เริ่มต้นใช้ด้วยแอป](link://getstartedwithApps) คุณได้เรียนรู้วิธีใช้[มุมมอง](glossary://view) SwiftUI เพื่อสร้างอินเทอร์เฟซผู้ใช้อย่างง่าย ใน SwiftUI [มุมมอง](glossary://view)เป็นองค์ประกอบหลักของ [UI](glossary://user%20interface) ที่คุณสามารถวางไว้ภายในกันและกันเพื่อรวมเป็น[มุมมองที่ถูกประกอบ](glossary://composed%view)ที่ซับซ้อนมากยิ่งขึ้นได้";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..IntroKeep Going with Apps..Paragraph1" = "ในส่วนนี้ คุณจะได้เรียนรู้เกี่ยวกับ[สถานะ](glossary://state)และ[ลำดับข้อมูล](glossary://data%20flow)ใน SwiftUI ลำดับข้อมูลคือการเคลื่อนไหวของค่าต่างๆ ภายในแอปของคุณ และวิธีที่ SwiftUI อัปเดต UI ของคุณเพื่อสะท้อนการเปลี่ยนแปลงของค่าเหล่านั้น ที่สำคัญ คุณจะได้เรียนรู้วิธี[แยกข้อมูลแอปของคุณ](glossary://data%20separation)ออกจากมุมมองที่แสดงข้อมูลนั้น และเหตุผลที่การแยกนี้เป็นประโยชน์";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..IntroKeep Going with Apps..Paragraph2" = "ในตอนท้ายของคู่มือสอนใช้งานนี้ คุณจะได้สร้างแอป SwiftUI ที่ทำงานได้อย่างสมบูรณ์ ซึ่งผู้คนสามารถเพิ่ม ลบ และแก้ไขสิ่งมีชีวิตอิโมจิได้ เริ่มต้นตอนนี้ แล้วคุณจะมีแอปที่สร้างขึ้นเองในเวลาไม่นาน";
+
+/* Title of step named Modifying State */
+"GuideBook..Guide0..StepModifying State..title" = "การแก้ไขสถานะ";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..LearningCenterContent..Paragraph3" = "![](ModifyingState.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..LearningCenterContent..Paragraph4" = "ในการเขียนโค้ด คำว่า[สถานะ](glossary://state)หมายถึงค่าปัจจุบันของตัวแปร [การเปลี่ยนแปลงสถานะ](glossary://state%20change)คือการที่ค่าของตัวแปรอย่างน้อยหนึ่งตัวเปลี่ยนแปลงไปในแอปของคุณ";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..LearningCenterContent..Paragraph5" = "ข้อดีอย่างหนึ่งของ SwiftUI คือความสามารถในการอัปเดตรูปแบบมุมมองของคุณโดยอัตโนมัติทุกครั้งที่แอปของคุณ[เปลี่ยนแปลงสถานะ](glossary://state%20change)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..LearningCenterContent..Paragraph6" = "เมื่อคุณเชื่อมต่อ UI ของคุณกับข้อมูลแอปบางอย่าง เช่น [บูลีน](glossary://Boolean)หรืออาร์เรย์ของค่า[สตริง](glossary://String) SwiftUI สามารถ[สังเกต](glossary://observe)ข้อมูลนั้นและอัปเดตมุมมองที่ใช้ข้อมูลนั้นทุกครั้งที่ข้อมูลเปลี่ยนแปลงได้ ซึ่งหมายความว่าคุณไม่จำเป็นต้องเขียนโค้ดใดๆ ที่บอกกับ UI ของคุณอย่างเจาะจงว่าควรอัปเดตอย่างไรหรือเมื่อใด";
+
+/* Title for task */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..title" = "ใช้คุณสมบัติสถานะเพื่ออัปเดตมุมมอง";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page0..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page0..Paragraph7" = "ในตัวอย่างนี้ SwiftUI จะอัปเดตรูปแบบของมุมมองเมื่อมี[การเปลี่ยนแปลงสถานะ](glossary://state%20change)เกิดขึ้น";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page0..Paragraph8" = "แตะปุ่มในการแสดงตัวอย่าง การทำเช่นนี้จะสลับค่าของ[คุณสมบัติ](glossary://property) `isOn` ระหว่าง[สถานะ](glossary://state) `true` และ `false` ส่งผลให้มุมมอง `Circle` แสดงขึ้น หายไป และแสดงขึ้นอีกครั้ง";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page1..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page1..Paragraph9" = "เมื่อคุณต้องการปรับเปลี่ยนรูปแบบของมุมมอง ก่อนอื่นคุณจะต้องมีข้อมูลบางอย่างเพื่อติดตาม[สถานะ](glossary://state)ของมุมมอง คุณจะจัดเก็บข้อมูลนี้เป็น[คุณสมบัติ](glossary://property)ของมุมมอง";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page1..Paragraph10" = "ให้คิดว่าข้อมูลในมุมมองของคุณเป็น[แหล่งข้อมูลจริง](glossary://source%20of%20truth)ที่กำหนดว่า [UI](glossary://user%20interface) ของคุณควรแสดงอย่างไร โดยแทนที่จะแก้ไขมุมมองโดยตรง คุณจะแก้ไขข้อมูลและ SwiftUI จะอัปเดตมุมมองให้กับคุณ ในส่วนนี้ ข้อมูลของคุณเป็นเพียงค่า[บูลีน](glossary://Boolean)อย่างง่ายที่กำหนดว่ามุมมองกำลังแสดง (`true`) หรือซ่อน (`false`) อยู่";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page2..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page2..Paragraph11" = "หมายเหตุสำคัญ: สร้างข้อมูลของคุณภายนอก[เนื้อหา](glossary://body)ของมุมมองเสมอ ให้คิดว่า `body` เป็นโซนที่ ❌ ห้ามสร้างข้อมูล และใช้เพื่อประกาศว่ามุมมองของคุณมีลักษณะอย่างไรเท่านั้น นี่เป็นหลักการสำคัญของการสร้างแอปที่เรียกว่า[การแยกข้อมูล](glossary://data%20separation)";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page3..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page3..Paragraph12" = "ในการอนุญาตให้ SwiftUI อัปเดตมุมมองของคุณโดยอัตโนมัติ คุณต้องบอก SwiftUI ว่า[คุณสมบัติ](glossary://property)มุมมองคุณสมบัติใดที่ SwiftUI ควรจัดการและติดตามให้กับคุณ";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page3..Paragraph13" = "ในการทำเช่นนี้ ให้เพิ่มไวยากรณ์พิเศษที่เรียกว่า[ตัวหุ้มคุณสมบัติ](glossary://property%20wrapper)ด้านหน้าคำจำกัดความคุณสมบัติของคุณ การเพิ่มตัวหุ้มคุณสมบัติ `@State` ก่อน `isOn` จะทำให้กลายเป็น[คุณสมบัติสถานะ](glossary://state%20property) SwiftUI จะจัดการค่าและอัปเดตส่วนที่ได้รับผลกระทบของมุมมองทุกครั้งที่[สถานะ](glossary://state)ของมุมมองเปลี่ยนแปลงไป";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page4..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page4..Paragraph14" = "แล้วคุณจะเปลี่ยน[สถานะ](glossary://state)ของ `isOn` ได้อย่างไรกันล่ะ วิธีหนึ่งที่ใช้บ่อยคือผ่าน[การโต้ตอบของผู้ใช้](glossary://user%20interaction) เช่น เมื่อมีคนแตะ `Button`";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page4..Paragraph15" = "ในการสร้าง `Button` ให้ส่งผ่าน[ป้าย](glossary://label)ข้อความ เช่น “กดที่ฉันสิ” และ[การปิด](glossary://closure)การทำงาน ซึ่งเป็นบล็อกของโค้ดที่จะรันเมื่อคุณแตะปุ่ม";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page5..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page5..Paragraph16" = "เมื่อมีคนแตะปุ่ม [การปิด](glossary://closure)การทำงานจะเปลี่ยนค่าของ `isOn` โดยใช้วิธีการ `toggle()`";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page5..Paragraph17" = "`toggle()` จะเปลี่ยนค่าเป็น `true` หากค่าเป็น `false` และเปลี่ยนเป็น `false` หากค่าเป็น `true` คล้ายกับการเปิดหรือปิดสวิตช์ไฟ";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page6..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page6..Paragraph18" = "ชุดคำสั่ง `if` นี้จะใช้ `isOn` เป็นเงื่อนไขเพื่อแสดงมุมมองแบบปิดเมื่อเป็น `true` และซ่อนเมื่อเป็น `false`";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page6..Paragraph19" = "นี่เป็นวิธีที่ข้อมูล `isOn` เชื่อมต่อกับมุมมอง [สถานะ](glossary://state)ปัจจุบันของข้อมูลจะกำหนดลักษณะที่ UI จะแสดง";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page7..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page7..Paragraph20" = "เมื่อคุณแตะปุ่มในการแสดงตัวอย่าง มุมมองวงกลมในชุดคำสั่ง `if` จะแสดงหรือซ่อน";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page7..Paragraph21" = "ลองเปลี่ยนสีของวงกลมแล้วแตะปุ่มอีกครั้ง ลองเปลี่ยนค่าเริ่มต้นของ `isOn` เป็น `true` คุณสังเกตเห็นการเปลี่ยนแปลงใดบ้างในแต่ละกรณี";
+
+/* Title for task */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..title" = "เพิ่มชุดคำสั่ง `else` ที่แสดงวงกลมสีอื่น";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page8..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page8..Paragraph22" = "ใช้เวลาสักครู่เพื่อพิจารณาว่าการแตะปุ่มจะอัปเดตมุมมองได้อย่างไร เมื่อคุณแตะ `Button` คุณจะเปลี่ยน[สถานะ](glossary://state)ของ `isOn` SwiftUI จะ[สังเกต](glossary://observe)การเปลี่ยนแปลงนี้และอัปเดตมุมมองโดยใช้ค่าใหม่ ใน[เนื้อหา](glossary://body)ของมุมมอง คุณจะใช้ชุดคำสั่ง `if` เพื่อแสดงมุมมองหาก `isOn` เป็น `true` และซ่อนมุมมองหากเป็น `false`";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page9..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page9..Paragraph23" = "แทนที่จะไม่แสดงมุมมองเมื่อ `isOn` เป็น `false` คุณสามารถแสดงมุมมองแบบกำหนดเองได้";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page9..Paragraph24" = "หลังชุดคำสั่ง `if` ให้เพิ่มชุดคำสั่ง `else` ที่แสดง `Circle` สีอื่น";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page10..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page10..Paragraph25" = "เพิ่มชุดคำสั่ง `else` โดยใช้ไวยากรณ์ต่อไปนี้ จากนั้นเพิ่มมุมมอง `Circle` แล้วระบุสี";
+
+/*  */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page10..CodeBlock0" = "else { \n\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page11..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page11..CodeBlock1" = "else { \n   Circle()\n       .frame(maxHeight: 200)\n       .foregroundColor(.black)\n   //#-learning-code-snippet(addOffText)\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..title" = "เพิ่มรายละเอียดไปยังมุมมอง “on” และ “off”";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page12..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page12..Paragraph26" = "ตอนนี้เมื่อคุณมีสองมุมมองแล้ว กำหนดให้ชัดเจนว่ามุมมองใดคือ “on” และมุมมองใดคือ “off”";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page12..Paragraph27" = "ลองใช้มุมมอง `Text` เพื่อติดป้ายแต่ละมุมมอง โดยติดป้ายมุมมองแรกเป็น “On”";
+
+/*  */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page12..CodeBlock2" = "Text(\"On\")\n";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page13..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page13..Paragraph28" = "ติดป้ายมุมมองที่สองเป็น “Off”";
+
+/*  */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page13..CodeBlock3" = "Text(\"Off\")\n";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page14..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page14..Paragraph29" = "และสุดท้าย ทำให้แต่ละมุมมองมีรูปร่างแตกต่างกัน เช่น `Rectangle` หรือ `Capsule`";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page15..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page15..CodeBlock4" = "if isOn {\n      Circle()\n          .frame(maxHeight: 200)\n          .foregroundColor(.mint)\n\n      Text(\"On\")\n} else {\n      Rectangle()\n          .frame(maxHeight: 200)\n          .foregroundColor(.gray)\n\n      Text(\"Off\")\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..title" = "เพิ่มมุมมองแบบมีเงื่อนไขใหม่";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page16..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page16..Paragraph30" = "ตอนนี้ให้ลองเพิ่มมุมมองแบบมีเงื่อนไขใหม่ทั้งหมดด้วยตัวคุณเอง:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page16..OrderedList0..Paragraph31" = "เพิ่ม[คุณสมบัติสถานะ](glossary://state%20value)ภายนอก[เนื้อหา](glossary://body)และใส่ค่าบูลีนเริ่มต้น";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page16..OrderedList0..Paragraph32" = "สร้าง[ชุดคำสั่ง if](glossary://if%20statement) ที่แสดงมุมมองหนึ่งหากค่าของคุณสมบัติสถานะเป็น `true` และอีกมุมมองหนึ่งหากค่าเป็น `false`";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page16..OrderedList0..Paragraph33" = "สร้าง `Button` ใหม่และสลับระหว่างเปิดหรือปิดคุณสมบัติสถานะของคุณทุกครั้งที่คุณกด";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page16..Paragraph34" = "มุมมองแบบมีเงื่อนไขของคุณทำงานตามที่คุณคาดหวังหรือไม่";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page17..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page17..Paragraph35" = "ก่อนจะไปต่อ ให้ลองใช้[วิธีการตุ๊กตาเป็ดยาง](glossary://rubber%20ducky%20method)เพื่ออธิบายวิธีการทำงานของโค้ดมุมมองแบบมีเงื่อนไขให้ละเอียดมากที่สุดเท่าที่คุณจะทำได้ คุณสมบัติสถานะใช้ทำอะไร มุมมองของคุณรู้เวลาที่จะอัปเดตได้อย่างไร ถ้าคุณจำบางอย่างไม่ได้ ให้ย้อนกลับไปและพยายามค้นหาว่าคุณยังขาดความรู้ในส่วนใด ตุ๊กตาเป็ดยางจะขอบคุณมาก!";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepModifying State..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..SuccessMessage..Paragraph36" = "วู้ฮู้!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..SuccessMessage..Paragraph37" = "ตอนนี้คุณเข้าใจวิธีใช้[คุณสมบัติสถานะ](glossary://state%20value)เพื่ออัปเดตรูปแบบของมุมมอง SwiftUI แล้ว คุณสมบัติสถานะนี้จัดเก็บอยู่ภายนอก[เนื้อหา](glossary://body)ของมุมมอง ซึ่งเป็นที่ที่คุณประกาศ UI ของมุมมอง";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..SuccessMessage..Paragraph38" = "หลักการพื้นฐานของการเขียนโค้ดแอปใน SwiftUI คือการเก็บข้อมูลแอปของคุณแยกจาก UI ที่แสดงข้อมูลแอปนั้นเสมอ การทำเช่นนี้จะช่วยให้คุณรักษา[แหล่งข้อมูลจริง](glossary://source%20of%20truth)แหล่งเดียวได้ และทำให้โค้ด UI ของคุณสามารถเข้าใจและรักษาได้ง่าย";
+
+/* Title of step named Using a Conditional Modifier */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..title" = "การใช้ปุ่มปรับค่าตามเงื่อนไข";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..LearningCenterContent..Paragraph39" = "![](UsingAConditionalModifier.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..LearningCenterContent..Paragraph40" = "ในตัวอย่างก่อนหน้านี้ คุณได้สร้าง `isOn` ของ[คุณสมบัติสถานะ](glossary://state%20property)ซึ่งมีการจัดเก็บข้อมูลที่จัดการโดย SwiftUI โดยเมื่อเปลี่ยน[สถานะ](glossary://state)ของ `isOn` คุณสามารถแสดงหนึ่งในสองมุมมองที่แตกต่างกันได้ตามเงื่อนไข";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..LearningCenterContent..Paragraph41" = "แต่ถ้าคุณเพียงต้องการเปลี่ยนรูปแบบของมุมมองที่มีอยู่แล้วล่ะ เช่น สีหรือขนาดของมุมมอง `Circle` ในกรณีนี้ คุณจะต้องเขียนโค้ดที่ทำงานผ่านเงื่อนไขที่จะกำหนดว่ามุมมองจะแสดงอย่างไรเมื่อเกิด[การเปลี่ยนแปลงสถานะ](glossary://state%20change)";
+
+/* Title for task */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..title" = "เปลี่ยนปุ่มปรับค่ามุมมองตามเงื่อนไข";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page18..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page18..Paragraph42" = "เช่นเดียวกับมุมมองก่อนหน้านี้ มุมมองนี้ยังใช้[คุณสมบัติสถานะ](glossary://state%20property)และ `Button` เพื่อเปลี่ยนรูปแบบของ `Circle` อีกด้วย อย่างไรก็ตาม มีบางอย่างที่แตกต่างออกไปในโค้ดนี้ ให้ใช้เวลาสักครู่เพื่อค้นหาว่ามีอะไรเปลี่ยนแปลงไป และไปต่อเมื่อคุณพบแล้ว";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page19..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page19..Paragraph43" = "คุณนึกออกหรือไม่ว่าสิ่งนี้ทำงานอย่างไร";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page19..Paragraph44" = "แทนที่จะสร้างมุมมองที่แตกต่างกันเมื่อ `isOn` เป็น `true` หรือ `false` คุณสามารถแก้ไขรูปแบบของมุมมองเดียวโดยใช้[ปุ่มปรับค่ามุมมอง](glossary://modifier)ที่มีโค้ดที่ทำงานผ่านเงื่อนไขได้";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page20..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page20..Paragraph45" = "สังเกตว่าปุ่มปรับค่า `.foregroundColor(_:)` มีไวยากรณ์พิเศษ สิ่งนี้เรียกว่า[ตัวดำเนินการเงื่อนไขแบบสามส่วน](glossary://ternary%20conditional%20operator) ซึ่งเป็นวิธีที่กระชับในการสร้างชุดคำสั่ง `if-else` ในโค้ดบรรทัดเทียว";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page21..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page21..Paragraph46" = "คุณสามารถอ่านโค้ดนี้ได้ว่า: ถ้า `isOn` เป็น `true` ให้ส่งผ่านค่า `.yellow` ถ้าไม่ใช่ ให้ส่งผ่านค่า `.black`";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page21..CodeBlock5" = "isOn ? .yellow : black\n";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page21..Paragraph47" = "ถ้าเขียนให้กว้างขึ้น โค้ดนี้จะมีลักษณะดังนี้:";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page21..CodeBlock6" = "condition ? trueValue : falseValue\n";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page22..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page22..Paragraph48" = "ลองเปลี่ยนสีของวงกลมเป็น `.purple` เมื่อ `isOn` เป็น `true` และเปลี่ยนเป็นสีเขียวที่สว่างขึ้น เช่น `.mint` เมื่อเป็น `false`";
+
+/* Title for task */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..title" = "เพิ่มปุ่มปรับค่า `shadow(color:radius:)` ที่แสดงเงาสีต่างๆ ในแต่ละสถานะ";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page23..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page23..Paragraph49" = "เช่นเดียวกับตัวอย่าง `ConditionalViews` SwiftUI จะ[สังเกต](glossary://observe)[คุณสมบัติสถานะ](glossary://state%20property) `isOn` เมื่อค่าของ `isOn` เปลี่ยนแปลงไป SwiftUI จะอัปเดตมุมมอง `Circle` ที่มีค่าใหม่สำหรับปุ่มปรับค่า `.foregroundColor(_:)`";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page23..Paragraph50" = "ถัดไป ให้ลองเพิ่มปุ่มปรับค่าอื่น นั่นคือ `.shadow(color:radius:)` ที่ใช้ค่า `isOn` เพื่อเปลี่ยนเงาของมุมมอง";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page24..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page24..Paragraph51" = "ก่อนอื่นให้เพิ่มปุ่มปรับค่า `.shadow(color:radius:)` ไปยัง `Circle`";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page24..CodeBlock7" = ".shadow(color: <#T##Color#>, radius: 20)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page25..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page25..Paragraph52" = "สำหรับพารามิเตอร์ `color` ของปุ่มปรับค่า ให้ใช้[ตัวดำเนินการเงื่อนไขแบบสามส่วน](glossary://ternary%20conditional%20operator)เพื่อเปลี่ยนสีของเงาตาม[สถานะ](glossary://state)ของ `isOn`";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page26..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page26..Paragraph53" = "ไวยากรณ์ตัวดำเนินการแบบสามส่วนมีลักษณะดังนี้:";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page26..CodeBlock8" = "isOn ? .indigo : .orange\n";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page26..Paragraph54" = "ส่วนย่อยของโค้ดนี้สามารถอ่านได้ว่า: ถ้า `isOn` เป็น `true` ให้ใช้ค่า `.indigo` ถ้าไม่ใช่ ให้ใช้ค่า `.orange`";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page27..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page27..CodeBlock9" = ".shadow(color: isOn ? .indigo : .orange, radius: 20)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..title" = "เปลี่ยนขนาดของวงกลมเมื่อกดปุ่ม";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page28..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page28..Paragraph55" = "ถึงเวลาลองทำด้วยตัวคุณเองแล้ว ลองดูว่าคุณจะใช้ปุ่มปรับค่า `.scaleEffect(_:)` ร่วมกับ[ตัวดำเนินการเงื่อนไขแบบสามส่วน](glossary://ternary%20conditional%20operator)อย่างไรเพื่อเปลี่ยนขนาดของวงกลมตามสถานะ `isOn`";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page29..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page29..Paragraph56" = "ก่อนอื่นให้เพิ่มปุ่มปรับค่า `.scaleEffect(_:)` ไปที่วงกลม จากนั้นใช้ตัวดำเนินการแบบสามส่วนเพื่อระบุขนาดใดขนาดหนึ่งหาก `isOn` เป็น `true` และขนาดอื่นหากเป็น `false`";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page29..CodeBlock10" = ".scaleEffect(<#T##s: CGFloat##CGFloat#>)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page30..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page30..CodeBlock11" = ".scaleEffect(isOn ? 1 : 0.75)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..title" = "ทำให้การเปลี่ยนแปลงสถานะของคุณเคลื่อนไหว";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page31..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page31..Paragraph57" = "เช่นเดียวกับที่ SwiftUI รู้วิธีอัปเดตมุมมองของคุณโดยอัตโนมัติ SwiftUI ยังรู้วิธีทำให้การเปลี่ยนแปลงไปยังมุมมองของคุณเคลื่อนไหวได้ตามค่าที่คุณเปลี่ยนแปลงอีกด้วย";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page31..Paragraph58" = "ในการทำเช่นนี้ ให้ติดปุ่มปรับค่า `.animation(_:value:)` ไปยังมุมมองที่คุณต้องการทำให้เคลื่อนไหว แล้วเลือก `Animation` รวมถึงค่าที่จะตรวจสอบการเปลี่ยนแปลง";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page32..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page32..Paragraph59" = "ตัวอย่างเช่น คุณสามารถใช้ภาพเคลื่อนไหวเริ่มต้นเพื่อทำให้การเปลี่ยนแปลงไปยังค่า `isOn` เคลื่อนไหวได้";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page32..CodeBlock12" = ".animation(.default, value: isOn)\n";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page32..Paragraph60" = "เมื่อ `isOn` เปลี่ยนแปลงไป การแก้ไขมุมมองที่ควบคุมโดยค่านี้จะเคลื่อนไหว เนื่องจากคุณใช้ `isOn` เพื่อกำหนดเงา สี และขนาดของมุมมอง คุณสมบัติทั้งหมดเหล่านั้นจะเคลื่อนไหวไปเป็นสถานะใหม่เมื่อค่าเปลี่ยนแปลง";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page33..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page33..CodeBlock13" = ".animation(.default, value: isOn)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page34..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page34..Paragraph61" = "ลองเปลี่ยนภาพเคลื่อนไหวเริ่มต้นเป็นอย่างอื่น `.default` จะให้ภาพเคลื่อนไหว `.easeInOut` แต่คุณสามารถเปลี่ยนเป็น `.spring(response:dampingFraction:blendDuration:)` หรือ `.linear(duration:)` เพื่อดูว่าภาพเคลื่อนไหวเปลี่ยนไปอย่างไรได้";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..SuccessMessage..Paragraph62" = "เจ๋งมาก!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..SuccessMessage..Paragraph63" = "ตอนนี้คุณรู้วิธีใช้[คุณสมบัติสถานะ](glossary://state%20property)เพื่อเปลี่ยนรูปแบบของมุมมองและวิธีทำให้การเปลี่ยนแปลงเหล่านั้นเคลื่อนไหวได้โดยใช้ปุ่มปรับค่า `.animation(_:value:)` แล้ว";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..SuccessMessage..Paragraph64" = "ถัดไป คุณจะได้เรียนรู้วิธีใช้[มุมมองในตัว](glossary://built-in%20view)และ[การรวม](glossary://binding)ของ SwiftUI เพื่อสร้างการเปลี่ยนแปลงสถานะประเภทต่างๆ ใน UI ของคุณ";
+
+/* Title of step named SwiftUI Built-in Views */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..title" = "มุมมอง SwiftUI ในตัว";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..LearningCenterContent..Paragraph65" = "![](SwiftUIBuilt-inViews.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..LearningCenterContent..Paragraph66" = "SwiftUI มี[มุมมองในตัว](glossary://built-in%20view)หลายมุมมอง เช่น แถบเลื่อน ตัวสลับระหว่างเปิดหรือปิด และตัวเลือก ซึ่งทำให้คนสามารถเปลี่ยนสถานะของข้อมูลแอปได้โดย[การโต้ตอบ](glossary://user%20interaction)กับมุมมองเหล่านั้น";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..LearningCenterContent..Paragraph67" = "มุมมองในตัวเหล่านี้มีวิธีพิเศษในการแชร์ข้อมูลกับมุมมองอื่น ซึ่งเรียกว่า[การรวม](glossary://binding)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..LearningCenterContent..Paragraph68" = "คุณสามารถใช้มุมมองในตัวเหล่านี้ที่มีค่าการรวมเพื่อเปลี่ยนแปลงข้อมูลของแอป และในขณะเดียวกันก็เปลี่ยนแปลง UI ของแอปด้วย";
+
+/* Title for task */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..title" = "ใช้การรวม";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page35..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page35..Paragraph69" = "ที่ผ่านมา คุณได้ใช้คุณสมบัติสถานะเพื่อเปลี่ยนแปลง UI [ภายใน](glossary://local%20scope) หรือภายในมุมมองเดียวกัน หนึ่งตัวอย่างในเรื่องนี้คือการกำหนด[คุณสมบัติสถานะ](glossary://state%20property)ใน `ConditionalCircle` และใช้คุณสมบัตินั้นเพื่อเปลี่ยนรูปแบบของมุมมองใน[เนื้อหา](glossary://body)ของ `ConditionalCircle`";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page36..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page36..Paragraph70" = "แต่ถ้าคุณต้องการอนุญาตให้[มุมมองย่อย](glossary://subview)เปลี่ยนแปลงข้อมูลนั้นล่ะ ตัวอย่างเช่น ถ้ามุมมอง[ภายใน](glossary://local%20scope)จัดเก็บข้อมูลติดต่อของคุณ มุมมองย่อยอาจให้[การโต้ตอบ](glossary://user%20interaction)แบบกำหนดเองกับคุณเพื่อเปลี่ยนแปลงเบอร์โทรศัพท์ของผู้ติดต่อ แต่คุณจะอนุญาตให้มุมมองย่อยเปลี่ยนแปลงข้อมูลโดยไม่สร้าง[แหล่งข้อมูลจริง](glossary://source%20of%20truth)มากกว่าหนึ่งแหล่งได้อย่างไร";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page37..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page37..Paragraph71" = "กุญแจสำคัญในการสื่อสารการเปลี่ยนแปลงข้อมูลระหว่างสองมุมมองนั้นเรียกว่า[การรวม](glossary://binding) การรวมช่วยให้คุณเก็บแหล่งข้อมูลจริงเพียงแหล่งเดียว แต่อนุญาตให้[มุมมองย่อย](glossary://subview)แก้ไขค่านั้นจากระยะไกลได้ สิ่งนี้เรียกว่าการรวมเนื่องจากแหล่งข้อมูลจริง เช่น [คุณสมบัติวัตถุ](glossary://state%20property) จะรวม (หรือเชื่อมต่อ) กับมุมมองที่สอง และทุกครั้งที่มุมมองที่สองเปลี่ยนแปลงข้อมูล แหล่งข้อมูลจริงจะมีการอัปเดต";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page38..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page38..Paragraph72" = "ลองแตะบน `Toggle` ในการแสดงตัวอย่าง";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page38..Paragraph73" = "สังเกตว่าทั้งมุมมอง `Image` และ `Toggle` จะเปลี่ยนรูปแบบเมื่อคุณแตะตัวสลับ โดย `Toggle` สามารถเปลี่ยนแปลง[แหล่งข้อมูลจริง](glossary://source%20of%20truth)จากระยะไกลได้ ซึ่งทำให้ตัวมุมมองเองและมุมมอง `Image` สามารถแชร์ค่าเดียวกันได้แม้ว่าจะเป็นสองมุมมองที่แยกจากกัน";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page39..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page39..Paragraph74" = "นี่คือแหล่งข้อมูลจริงของคุณ ซึ่งเป็น[คุณสมบัติสถานะ](glossary://state%20property)ที่คุณจัดเก็บ[ภายใน](glossary://local%20scope)มุมมอง `Bindings` แหล่งข้อมูลจริงของการรวมจะต้องเป็นแหล่งที่มีค่าที่ SwiftUI จัดการ เช่น การเพิ่ม[ตัวหุ้มคุณสมบัติ](glossary://property%20wrapper) `@State` ไปยังแหล่งข้อมูลจริงนั้น";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page40..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page40..Paragraph75" = "นี่คือมุมมอง `Toggle` ในตัว โดย `Toggle` จะยอมรับค่าบูลีน[การรวม](glossary://binding)สำหรับพารามิเตอร์ `isOn` ของตัวเอง ซึ่งหมายความว่ามุมมองสลับระหว่างเปิดหรือปิดจะรู้วิธีเปลี่ยนค่า `Boolean` ตาม[การโต้ตอบของผู้ใช้](glossary://user%20interaction)บางอย่าง เช่น เมื่อคนแตะที่ตัวสลับให้เปิดหรือปิด และจะสื่อสารการเปลี่ยนแปลงสถานะใดๆ กลับไปยัง[แหล่งข้อมูลจริง](glossary://source%20of%20truth)ภายในของคุณ นั่นคือ `isOn`";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page41..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page41..Paragraph76" = "ในการส่งผ่านการรวม ให้ใช้[คุณสมบัติสถานะ](glossary://state%20property)ที่จัดการด้วย SwiftUI ของคุณโดยให้มี `$` อยู่ด้านหน้า ส่งผ่าน `$isOn` เพื่อระบุว่าทุกครั้งที่ `Toggle` เปลี่ยนแปลงค่าจากระยะไกล [การรวม](glossary://binding)จะแก้ไขแหล่งข้อมูลจริง `isOn`";
+
+/* Title for task */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..title" = "เพิ่มคุณสมบัติสถานะใหม่ของปะเภท `Color`";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page42..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page42..Paragraph77" = "ถัดไป ให้ลองใช้มุมมอง `ColorPicker` ในตัวพร้อมกับ[การรวม](glossary://binding)เพื่อเปลี่ยนสีของมุมมอง `Image` แบตเตอรี่";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page42..Paragraph78" = "ในการทำเช่นนี้ ก่อนอื่นให้สร้าง[คุณสมบัติสถานะ](glossary://state%20property)เพื่อทำหน้าที่เป็นแหล่งข้อมูลจริงสำหรับค่า `Color` โดยให้ค่าเริ่มต้นเป็น `Color.primary`";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page42..Paragraph79" = "ลองทำสิ่งนี้ด้วยตัวคุณเองโดยใช้คำใบ้ต่อไปนี้หากคุณไปต่อไม่ได้";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page43..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page43..Paragraph80" = "กำหนด[คุณสมบัติ](glossary://property)ด้วย[ตัวหุ้มคุณสมบัติ](glossary://property%20wrapper) `@State` และ[กำหนดค่า](glossary://assignment)เริ่มต้นของตัวหุ้มเป็น `Color.primary`";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page44..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page44..CodeBlock14" = "@State var color = Color.primary\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..title" = "สร้าง `ColorPicker` แล้วส่งผ่านค่าการรวมของคุณ";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page45..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page45..Paragraph81" = "ด้านล่างมุมมอง `Toggle` ของคุณ ให้สร้าง `ColorPicker` โดยใช้ตัวเริ่มต้นต่อไปนี้ เพิ่มอาร์กิวเมนต์ด้วยตัวคุณเองโดยใช้ `Toggle` เป็นตัวอย่าง";
+
+/*  */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page45..CodeBlock15" = "ColorPicker(<#T##title: StringProtocol##StringProtocol#>, selection: <#T##Binding<CGColor>#>)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page46..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page46..OrderedList1..Paragraph82" = "ส่งผ่าน `String` สำหรับชื่อ เช่น “Select a Color”";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page46..OrderedList1..Paragraph83" = "ส่งผ่านค่าการรวมของคุณไปยัง `selection` แล้วเพิ่ม `$` ก่อน[คุณสมบัติสถานะ](glossary://state%20property)สี";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page46..Paragraph84" = "ถ้าคุณต้องการทดสอบมุมมอง `Bindings` ในแอปของคุณ ให้เพิ่มมุมมองไปยัง `ContentView` ของคุณชั่วคราว";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page47..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page47..CodeBlock16" = "ColorPicker(\"Select a Color\", selection: $color) \n";
+
+/* Title for task */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..title" = "ตั้งค่าสีของ `Image` เป็นคุณสมบัติสถานะสีของคุณ";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page48..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page48..OrderedList2..Paragraph85" = "ลองเลือกสีจาก `ColorPicker` ในการแสดงตัวอย่าง สังเกตว่าสีตัวเลือกเปลี่ยนไป แต่สิ่งอื่นใน UI ของคุณไม่เปลี่ยนแปลง นี่เป็นเพราะคุณสมบัติสถานะของคุณไม่ได้เชื่อมต่อกับมุมมอง[ภายใน](glossary://local%20scope)อื่นๆ";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page48..OrderedList2..Paragraph86" = "ตอนนี้ให้เปลี่ยนสีของมุมมองภาพเพื่ออัปเดตสีจากตัวเลือก";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page49..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page49..Paragraph87" = "ในการเปลี่ยนสีของมุมมอง `Image` ให้เพิ่มปุ่มปรับค่า `.foregroundColor(_:)` แล้วส่งผ่านคุณสมบัติสถานะสำหรับสีของคุณเป็นอาร์กิวเมนต์";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page50..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page50..CodeBlock17" = ".foregroundColor(color)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page51..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page51..Paragraph88" = "ตอนนี้ให้เลือกสีจากตัวเลือกสี แล้วดูว่า `Image` ของคุณเปลี่ยนสีด้วยหรือไม่";
+
+/* Title for task */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..title" = "สร้างมุมมอง `Text` ที่จะเปลี่ยนสีเมื่อคุณเลือกสีใหม่";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..Page52..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..Page52..Paragraph89" = "เพิ่มมุมมอง `Text` ที่เปลี่ยนสีเมื่อคุณเลือกสีใหม่จากตัวเลือกสี คุณสามารถใช้ปุ่มปรับค่า `.foregroundColor(_:)` เพื่อทำสิ่งนี้ได้เช่นเดียวกับภาพ";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..Page52..Paragraph90" = "เลือกแบบอักษรขนาดใหญ่ขึ้นสำหรับมุมมอง `Text` โดยใช้ปุ่มปรับค่า [.font](doc://com.apple.documentation/documentation/swiftui/font) และส่งผ่าน `.largeTitle`";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..Page53..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..Page53..Paragraph91" = "เพิ่ม `.padding()` ไปยังมุมมองของคุณเพื่อสร้างพื้นที่ว่างแบบคงที่ระหว่างมุมมองหนึ่งและมุมมองทั้งหมดรอบๆ มุมมองนั้น คุณยังสามารถเพิ่ม `Spacer()` ซึ่งเป็นมุมมองที่มองไม่เห็นที่หดและขยายตามตัวแปรเพื่อใช้พื้นที่ว่างระหว่างมุมมองได้อีกด้วย";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..Page53..Paragraph92" = "[การขยายขอบ](doc://com.apple.documentation/documentation/swiftui/view/padding(_:_:))และ[ที่ว่าง](doc://com.apple.documentation/documentation/swiftui/spacer)ช่วยให้คุณสร้างเค้าโครงมุมมองแบบปรับได้ที่ทำให้มุมมองของคุณดูดีบนหน้าจอขนาดต่างๆ ลองดู[การวางเค้าโครงมุมมองอย่างง่าย](doc://com.apple.documentation/documentation/swiftui/laying-out-a-simple-view)เพื่อเรียนรู้เพิ่มเติม";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..SuccessMessage..Paragraph93" = "ไชโย!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..SuccessMessage..Paragraph94" = "ตอนนี้คุณก็รู้วิธีใช้มุมมอง SwiftUI ในตัว เช่น `ColorPicker` และ[การรวม](glossary://binding)เพื่อสร้าง[การโต้ตอบ](glossary://user%20interaction)แบบกำหนดเองเพื่อเปลี่ยนสถานะของแอปของคุณแล้ว";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..SuccessMessage..Paragraph95" = "เมื่อรวมกับความรู้ของคุณในเรื่อง[คุณสมบัติสถานะ](glossary://state%20property) คุณก็สามารถสร้างการโต้ตอบของผู้ใช้ที่หลากหลายที่เปลี่ยนแปลงรูปแบบของ UI ของแอปได้";
+
+/* Title of step named Practice with SwiftUI Built-in Views */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..title" = "ฝึกฝนกับมุมมองในตัว SwiftUI";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..LearningCenterContent..Paragraph96" = "![](PracticeWithSwiftUIBuilt-inViews.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..LearningCenterContent..Paragraph97" = "ตอนนี้เมื่อคุณรู้ข้อมูลพื้นฐานของคุณสมบัติสถานะ การรวม และมุมมอง SwiftUI ในตัวแล้ว ก็ถึงเวลาที่จะสร้างตัวอย่างด้วยตัวคุณเอง";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..LearningCenterContent..Paragraph98" = "ก่อนอื่น คุณจะได้ใช้มุมมอง `Slider` ในตัวเพื่อเปลี่ยนแปลง[คุณสมบัติสถานะ](glossary://state%20property)ที่ควบคุมความกว้างของ `Rectangle`";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..LearningCenterContent..Paragraph99" = "จากนั้นคุณจะได้ลองสร้างตัวแก้ไขเรื่องราวโดยใช้มุมมอง `TextField` ในตัวเพื่อเปลี่ยนค่าของคุณสมบัติสถานะ `String` บางอย่าง ส่งผลให้ได้เรื่องเล่าที่น่าสนใจ";
+
+/* Title for task */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..title" = "สร้างแถบเลื่อน";
+
+/* title for page */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page54..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page54..Paragraph100" = "สร้างมุมมองที่ใช้ `Slider` ในตัวเพื่อเปลี่ยนความกว้างของมุมมอง `Rectangle` ในการทำสิ่งนี้ให้สำเร็จ คุณจะต้องกำหนด[คุณสมบัติสถานะ](glossary://state%20property)ใหม่ แล้วส่งผ่านไปยัง `Slider` เป็น[การรวม](glossary://binding)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page54..Paragraph101" = "คุณสามารถเปลี่ยนความกว้างของมุมมองได้ด้วยปุ่มปรับค่า `.frame(width:)` หมายเหตุ: ปุ่มปรับค่านี้ยอมรับค่า [Double](doc://com.apple.documentation/documentation/swift/double) (ค่าตัวเลข[ประเภท](glossary://type)พิเศษ) ดังนั้นให้กำหนดคุณสมบัติสถานะของคุณเป็น `Double`";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page54..Paragraph102" = "ใช้เวลาสักครู่เพื่อลองทำสิ่งนี้ด้วยตัวคุณเองโดยใช้คำใบ้ต่อไปนี้หากคุณไปต่อไม่ได้";
+
+/* title for page */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page55..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page55..Paragraph103" = "กำหนดคุณสมบัติสถานะของประเภท `Double` เหนือ `body` ของมุมมอง นี่จะเป็น[แหล่งข้อมูลจริง](glossary://source%20of%20truth)ภายในของคุณ";
+
+/*  */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page55..CodeBlock18" = "@State var width : Double = 0\n";
+
+/* title for page */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page56..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page56..Paragraph104" = "สร้าง `Slider` ของคุณโดยใช้ตัวเริ่มต้น `Slider(value:)` ส่งผ่าน[การรวม](glossary://binding)ไปยัง[คุณสมบัติสถานะ](glossary://state%20property)ของคุณ";
+
+/*  */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page56..CodeBlock19" = "Slider(value: $width)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page57..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page57..Paragraph105" = "สร้าง `Rectangle` แล้วเพิ่มปุ่มปรับค่า `.frame(width:)` เนื่องจากค่าของแถบเลื่อนเริ่มต้นอยู่ระหว่าง `0` ถึง `1` ให้คูณความกว้างด้วยตัวเลขที่มากกว่าเพื่อให้คุณสังเกตการเปลี่ยนแปลงของค่าได้";
+
+/*  */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page57..CodeBlock20" = "Rectangle()\n    .frame(width: width * 300)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..title" = "สร้างเรื่องราว";
+
+/* title for page */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page58..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page58..Paragraph106" = "นี่เป็นอีกการทดลองหนึ่งให้คุณได้ลอง:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page58..Paragraph107" = "คุณสามารถใช้ [TextField](doc://com.apple.documentation/documentation/swiftui/textfield)ของ SwiftUI เพื่อเปลี่ยนค่า `String` ตามอักขระที่คนป้อนลงในช่องได้";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page58..OrderedList3..Paragraph108" = "สร้างเรื่องราวที่กำหนดเองได้โดยกำหนด[คุณสมบัติสถานะ](glossary://state%20property)หลายรายการพร้อมกับมุมมอง `TextField` ที่เกี่ยวข้องเพื่อให้คนสามารถป้อนข้อมูลต่างๆ เช่น ชื่อ งานอดิเรก และอาหารโปรดของตัวเองได้";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page58..OrderedList3..Paragraph109" = "ใต้ช่องข้อความ ให้สร้างมุมมอง `Text` ที่ผสานค่าทั้งหมดเข้าด้วยกันโดยใช้[การสอดแทรกสตริง](glossary://string%20interpolation)เพื่อสร้างเรื่องราว ซึ่งอาจมีลักษณะดังนี้:";
+
+/*  */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page58..CodeBlock21" = "Text(\"สวัสดี ฉันชื่อ \\(name) งานอดิเรกของฉันคือ \\(hobby) และฉันหยุดกิน \\(favoriteFood) ไม่ได้เลย!\")\n";
+
+/* title for page */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page59..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page59..Paragraph110" = "โบนัส: เพิ่มมุมมอง `Button` หรือ `Toggle` ที่แสดงเรื่องราวเมื่อคุณแตะ";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..SuccessMessage..Paragraph111" = "คุณเข้าใจเรื่องนี้มากขึ้นแล้ว!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..SuccessMessage..Paragraph112" = "ตอนนี้คุณสามารถจัดการกับการเปลี่ยนสถานะภายในโดยใช้คุณสมบัติสถานะ และระหว่างสองมุมมองโดยใช้การรวมได้แล้ว";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..SuccessMessage..Paragraph113" = "ถัดไป คุณจะได้เรียนรู้วิธีสร้างข้อมูลที่คุณสามารถใช้ได้กับทุกมุมมองของแอป";
+
+/* Title of step named Navigating in SwiftUI */
+"GuideBook..Guide0..StepNavigating in SwiftUI..title" = "การนำทางใน SwiftUI";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..LearningCenterContent..Paragraph114" = "![](NavigatingInSwiftUI.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..LearningCenterContent..Paragraph115" = "ตอนนี้เมื่อคุณเข้าใจวิธีจัดการสถานะภายในมุมมอง SwiftUI เดียวแล้ว ก็ถึงเวลาที่จะเริ่มคิดการใหญ่มากขึ้น";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..LearningCenterContent..Paragraph116" = "ในบางกรณีเมื่อคุณสร้างแอป คุณจะมีข้อมูลที่คุณต้องการแชร์กับสองมุมมองขึ้นไป ซึ่งแม้แต่[การรวม](glossary://binding)ก็ไม่เพียงพอที่จัดการได้ คุณไม่ควรพยายามทำซ้ำข้อมูลในมุมมองใหม่แต่ละมุมมองเนื่องจากจะทำให้ติดตามได้ยากมาก และอาจนำไปสู่บั๊กต่างๆ ในแอปของคุณ แทนที่จะทำเช่นนั้น คุณจะได้เรียนรู้วิธีสร้างและรักษา[โมเดลข้อมูล](glossary://data%20model)เดียวที่หลายมุมมองในแอปของคุณสามารถใช้ได้";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..LearningCenterContent..Paragraph117" = "แต่ก่อนที่คุณจะได้เห็นวิธีทำเช่นนั้น คุณจะต้องรู้วิธีสร้างแอปที่มีหลายมุมมอง ในส่วนนี้ คุณจะต้องเพิ่มการนำทางโดยใช้ `NavigationSplitView` หรือ `NavigationStack`";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..title" = "สร้าง `NavigationStack`";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page60..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page60..Paragraph118" = "ในการนำทางไปยังมุมมองที่แตกต่างกัน คุณจะต้องใช้หนึ่งในมุมมองการนำทางสองประเภทที่แตกต่างกัน:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page60..OrderedList4..Paragraph119" = "[NavigationStack](doc://com.apple.documentation/documentation/swiftui/navigationstack) จะจัดระเบียบมุมมองของคุณแบบซ้อนทับกัน เหมือนกับสำรับไพ่";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page60..OrderedList4..Paragraph120" = "[NavigationSplitView](doc://com.apple.documentation/documentation/swiftui/navigationsplitview) จะจัดระเบียบมุมมองของคุณออกเป็นสองหรือสามคอลัมน์ ซึ่งทำให้คุณสามารถเลือกรายการจากคอลัมน์เริ่มต้นเพื่อแสดงมุมมองในคอลัมน์ต่อท้ายได้";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page61..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page61..Paragraph121" = "มุมมองการนำทางแต่ละมุมมองเหล่านี้ทำหน้าที่เป็น[คอนเทนเนอร์](glossary://container)ที่แสดงมุมมองต่างๆ โดยอิงจากวิธีที่ผู้อื่นนำทางภายในแอปของคุณ เพียงแต่ว่าจะแสดงมุมมองในรูปแบบที่แตกต่างกันเล็กน้อย";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page61..Paragraph122" = "ก่อนอื่น คุณจะต้องสร้าง `NavigationStack` เพื่อดูว่าสิ่งนี้ทำงานอย่างไร";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page62..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page62..Paragraph123" = "ก่อนอื่นให้เพิ่ม `NavigationStack` ที่มีมุมมอง `List` อยู่ภายใน โดย [List](doc://com.apple.documentation/documentation/swiftui/list) จะแสดงมุมมองจำนวนใดๆ ในคอลัมน์แนวตั้งแบบเลื่อนได้";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page62..CodeBlock22" = "NavigationStack { \n   List { \n       Text(\"เนื้อหาของ NavigationStack\")\n       //#-learning-code-snippet(addNavLink)\n       //#-learning-code-snippet(addSecondNavLink)\n\n   }\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page63..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page63..Paragraph124" = "ดูที่การแสดงตัวอย่างของคุณ คุณจะเห็นมุมมอง `Text` เป็นมุมมองเดียวใน `List` ของคุณและไม่เห็นอย่างอื่นมากนัก ในการนำทางไปยังมุมมองอื่น คุณจะต้องเพิ่ม [NavigationLink](glossary://navigation%20link) ภายใน `NavigationStack` ของคุณ";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page63..Paragraph125" = "แล้วทำไมคุณจึงต้องกังวลกับสร้าง `NavigationStack` หาก `NavigationLink` คือสิ่งที่พาคุณไปยังมุมมองอื่น ที่จริงแล้ว สิ่งนี้ก็เหมือนกับการที่คุณไม่สามารถปั่นจักรยานได้โดยไม่มีล้อนั่นล่ะ คุณไม่สามารถนำทางไปยังมุมมองอื่นได้ เว้นแต่ลิงก์ของคุณจะอยู่ภายใน `NavigationStack` หรือ`NavigationSplitView`";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..title" = "สร้างลิงก์การนำทาง";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page64..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page64..Paragraph126" = "`NavigationStack` และ `NavigationSplitView` สามารถแสดงเนื้อหาที่แตกต่างกันได้ตามวิธีที่คนอื่นโต้ตอบกับแอปของคุณ ถ้าต้องการให้มุมมองการนำทางของคุณแสดงมุมมองอื่น ให้สร้าง [NavigationLink](glossary://navigation%20link) ซึ่งเป็นปุ่มที่คนอื่นสามารถแตะเพื่อนำทางไปยังมุมมองแยกต่างหากได้";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page65..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page65..Paragraph127" = "`NavigationLink` ต้องมีสองสิ่ง:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page65..OrderedList5..Paragraph128" = "ลิงก์ที่ไปยัง[มุมมองปลายทาง](glossary://destination%20view)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page65..OrderedList5..Paragraph129" = "[ป้าย](glossary://label) (ลักษณะที่ปุ่มควรแสดง)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page65..Paragraph130" = "ปลายทางสามารถเป็นมุมมองใดก็ได้ที่คุณต้องการ ไม่ว่าจะเป็นมุมมองอย่างง่าย เช่น มุมมอง `Text` หรือ `Image` หรือแม้กระทั่ง[มุมมองที่ถูกประกอบ](glossary://composed%20view)ที่คุณได้สร้างด้วยตัวเอง";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page66..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page66..Paragraph131" = "โค้ดด้านล่างจะสร้าง `NavigationLink` ที่มีมุมมอง `Text` เป็น[ป้าย](glossary://label)และมุมมอง `Text` เป็น[ปลายทาง](glossary://destination%20view)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page66..Paragraph132" = "ลองเพิ่ม `NavigationLink` ด้านล่างแล้วแตะที่ลิงก์ในการแสดงตัวอย่าง";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page66..CodeBlock23" = "NavigationLink(\"กดฉันสิ!\") { \n   Text(\"ฉันคือมุมมองปลายทาง\")\n       .navigationTitle(\"ปลายทาง\")\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page67..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page67..Paragraph133" = "เพิ่มลิงก์การนำทางอีกหนึ่งลิงก์ แล้วลองนำทางไปยังมุมมองต่างๆ ใน `NavigationStack` ของคุณ";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page67..Paragraph134" = "เนื่องจาก `NavigationStack` ทำหน้าที่เหมือนกับสำรับไพ่ โค้ดจะแสดงเฉพาะมุมมองที่อยู่ด้านบนสุดเท่านั้น การนำทางไปยังมุมมองใหม่จะผลักมุมมองไปที่ด้านบนสุดของสแต็คเพื่อให้สามารถมองเห็นได้";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page67..CodeBlock24" = "NavigationLink(\"ไม่ กดที่ฉันสิ!\") { \n   Text(\"ฉันคือมุมมองปลายทางอีกมุมมอง\")\n       .navigationTitle(\"ปลายทาง\")\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..title" = "ทดลองใช้ `NavigationSplitView`";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page68..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page68..Paragraph135" = "ถัดไป คุณจะต้องสร้าง `NavigationSplitView` เพื่อแสดงเนื้อหาเป็นคอลัมน์";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page68..Paragraph136" = "คุณจะใช้ลิงก์การนำทางเป็นคอลัมน์เริ่มต้นของคุณ และเมื่อถูกแตะ ลิงก์การนำทางแต่ละลิงก์เหล่านี้จะแสดงข้อความบางส่วนในคอลัมน์ต่อท้าย";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page69..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page69..Paragraph137" = "ก่อนอื่นให้เพิ่ม `NavigationSplitView` ของคุณ คุณจะสังเกตเห็นสองส่วน: ส่วนแรกคือคอลัมน์เริ่มต้นของมุมมองแบบแยกส่วนและส่วนที่สองคือ[มุมมองที่พัก](glossary://placeholder%20view) ซึ่งจะแสดงเนื้อหาชั่วคราวจนกว่าคุณจะเลือกลิงก์ใดลิงก์หนึ่ง";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page69..CodeBlock25" = "NavigationSplitView { \n    //#-learning-code-snippet(listOfLinks)\n\n} detail: { \n    //#-learning-code-snippet(detailView)\n    \n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page70..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page70..Paragraph138" = "ถัดไป ให้เพิ่มบางลิงก์ไปยัง `NavigationSplitView` ของคุณ";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page70..Paragraph139" = "คุณอาจสังเกตเห็นว่ามุมมองยังคงดูเหมือน `NavigationStack` หากคุณมีการแสดงตัวอย่างขนาดเล็ก ลองขยายการแสดงตัวอย่างเพื่อดูหลายคอลัมน์";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page70..CodeBlock26" = "List {\n    NavigationLink(\"ลิงก์แรก\") {\n        Text(\"😵‍💫\")\n    }\n    NavigationLink(\"ลิงก์ที่สอง\") {\n        Text(\"😵‍\")\n    }\n    //#-learning-code-snippet(addMoreNavLinks)\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page71..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page71..Paragraph140" = "ขั้นสุดท้าย ให้เพิ่ม[มุมมองที่พัก](glossary://placeholder%20view)เพื่อให้เนื้อหาเริ่มต้นบางส่วนกับคอลัมน์ที่สองของคุณ";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page71..Paragraph141" = "คุณสามารถดูเนื้อหาของที่พักนี้ได้โดยขยายการแสดงตัวอย่างของคุณและเริ่มการทำงานใหม่ก่อนจะเลือกลิงก์";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page71..CodeBlock27" = "Text(\"เลือกลิงก์\")\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..title" = "ทดลองใช้ NavigationLinks";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page72..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page72..Paragraph142" = "ถ้าคุณต้องการกำหนดรูปแบบของ `NavigationLink` คุณสามารถใช้[ตัวเริ่มต้น](glossary://initializer)อื่นที่ใช้[ป้าย](glossary://label)แบบกำหนดเองได้";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page73..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page73..Paragraph143" = "โค้ดด้านล่างจะสร้าง `NavigationLink` ที่มี[ป้าย](glossary://label)แบบกำหนดเอง ซึ่งประกอบด้วย `HStack` พร้อมกับมุมมอง `Text` และ `Image` และเช่นเดียวกับเนื้อหาปลายทาง ป้ายสามารถเป็นมุมมองใดก็ได้ที่คุณต้องการ!";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page73..CodeBlock28" = "NavigationLink { \n    SlidingRectangle()\n       .navigationTitle(\"สี่เหลี่ยมเลื่อนได้\")\n} label: { \n    HStack { \n        Text(\"แตะเพื่อนำทาง\")\n        Spacer()\n        Image(systemName: \"arrow.forward.circle\")\n            .font(.largeTitle)\n    }\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page74..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page74..Paragraph144" = "ลองเพิ่ม `NavigationLink` ใหม่โดยใส่ปลายทาง ป้าย และชื่อการนำทาง ลองนำทางไปยังหนึ่งในมุมมองอื่นๆ ในแอป เช่น มุมมอง `ConditionalCircle`";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..title" = "ทำความเข้าใจวิธีที่แอปของคุณแสดงมุมมอง";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page75..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page75..Paragraph145" = "ตอนนี้เมื่อคุณได้ทดลองเพิ่ม[ลิงก์การนำทาง](glossary://navigation%20link)ภายใน `NavigationStack` และ `NavigationSplitView` แล้ว เป้าหมายของคุณคือการทำให้มุมมองแรกที่แอปของคุณแสดงเป็น `NavigationStack` หลังจากเพิ่มลิงก์การนำทางแล้ว การทำเช่นนี้จะทำให้ผู้คนสามารถนำทางไปยังมุมมองต่างๆ เมื่อใช้แอปของคุณได้";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page76..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page76..Paragraph146" = "คุณบอกแอปของคุณว่าจะแสดงมุมมองใดเป็นมุมมองแรกในคำจำกัดความแอปของคุณ ในส่วนนี้ คุณจะเห็นว่าแอปของคุณถูกตั้งชื่อเป็น `MyApp` ตามค่าเริ่มต้น และแอปจะเป็นไปตามแนวทางของ[โปรโตคอล](glossary://protocol) `App` ซึ่งทำให้แอปสามารถทำงานบนอุปกรณ์ของคุณได้เหมือนกับแอปอื่นๆ";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page76..Paragraph147" = "ลองรันโปรเจ็กต์ปัจจุบันเป็นแอปโดยกดปุ่มรัน (▶︎) คุณจะยังไม่เห็นอะไรมากนัก 🙈";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page77..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page77..Paragraph148" = "คุณสมบัติ `body` ของแอปของคุณจะกำหนดเนื้อหาของแอป สำหรับตอนนี้ ทั้งหมดที่คุณต้องรู้คือคุณจำเป็นต้องมีอย่างน้อยหนึ่งมุมมองภายใน `WindowGroup` ซึ่งทำหน้าที่เป็นคอนเทนเนอร์สำหรับ[ลำดับชั้นมุมมอง](glossary://view%20hierarchy)ของแอปของคุณ ซึ่งเป็นคอลเลกชั่นของมุมมองที่แอปของคุณแสดงเมื่อมีการเปิดใช้แอป";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page78..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page78..Paragraph149" = "`ContentView` เป็น[มุมมองระดับบนสุด](glossary://top-level%20view) ซึ่งเป็นมุมมองแรกที่แอปของคุณแสดงเมื่อมีการเปิดใช้แอป มุมมองนี้จะอยู่บนสุดของ[ลำดับชั้นมุมมอง](glossary://view%20hierarchy) ซึ่งเป็นคอลเลกชั่นแบบมีโครงสร้างของ[มุมมองย่อย](glossary://subview)ที่แตกแขนงออกไปจากมุมมองระดับบนสุดของคุณ";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page79..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page79..Paragraph150" = "ลองเปลี่ยน `ContentView` เป็นมุมมองอื่นแบบชั่วคราว เช่น มุมมอง `Text` หรือ `Image` จากนั้นรันแอปของคุณ สังเกตว่ามุมมองระดับบนสุดของแอปได้เปลี่ยนไปแล้ว ซึ่งนี่เป็นวิธีที่คุณเปลี่ยนเนื้อหาที่แอปแสดง";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page79..Paragraph151" = "เมื่อคุณพร้อม ให้เปลี่ยนมุมมองระดับบนสุดของคุณกลับไปเป็น `ContentView`";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..title" = "เพิ่ม `NavigationStack` ไปที่แอปของคุณ";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page80..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page80..Paragraph152" = "ในการแสดงหลายมุมมองในแอปของคุณ คุณจะต้องเปลี่ยน[มุมมองระดับบนสุด](glossary://top-level%20view)ของคุณให้เป็น [NavigationStack](doc://com.apple.documentation/documentation/swiftui/navigationstack)";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page81..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page81..Paragraph153" = "เพิ่ม `NavigationStack` ภายใน `SPCAssessableWindowGroup` ของ `body` ของแอป:";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page81..CodeBlock29" = "NavigationStack { \n\n}\n//#-learning-code-snippet(environmentObjectModifier)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page82..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page82..Paragraph154" = "วาง `ContentView` ภายใน `NavigationStack`";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page82..Paragraph155" = "มุมมองแรกที่วางภายใน `NavigationStack` จะแสดงเป็นเนื้อหาเริ่มต้น เนื้อหานี้สามารถเปลี่ยนแปลงได้ทุกครั้งที่คุณใช้[ลิงก์การนำทาง](glossary://navigation%20link)เพื่อแสดงมุมมอง";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page83..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page83..Paragraph156" = "ตอนนี้ `body` ของแอปของคุณมีลักษณะดังนี้:";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page83..CodeBlock30" = "SPCAssessableWindowGroup(app: self, assessmentCandidates: [CreatureZoo()]) { \n   NavigationStack { \n       ContentView()\n   }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..title" = "เพิ่มชื่อการนำทาง";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page84..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page84..Paragraph157" = "ให้รันแอปของคุณ ซึ่งดูจะไม่แตกต่างมากนักใช่ไหม นี่เป็นเพราะ `NavigationStack` จะทำหน้าที่เหมือนกับคอนเทนเนอร์เพื่อแสดงเนื้อหาของตัวเองตามค่าเริ่มต้น";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page84..Paragraph158" = "อย่างไรก็ตาม `NavigationStack` จะให้พื้นที่เฉพาะกับคุณที่เรียกว่า[แถบการนำทาง](glossary://navigation%20bar) ซึ่งสามารถแสดงชื่อของมุมมองปัจจุบันและแสดงรายการแถบเครื่องมือต่างๆ ได้";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page85..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page85..Paragraph159" = "ลองเพิ่ม `.navigationTitle(\"สิ่งมีชีวิตของฉัน\")` เป็นปุ่มปรับค่าบน `ContentView`";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page85..Paragraph160" = "การทำเช่นนี้จะทำให้มุมมองมีชื่อในพื้นที่แถบการนำทาง ให้คุณเพิ่มชื่อการนำทางไปยังแต่ละมุมมองภายในมุมมองการนำทางของคุณ ไม่ใช่ในตัวมุมมองการนำทางเอง";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page85..CodeBlock31" = ".navigationTitle(\"สิ่งมีชีวิตของฉัน\")\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page86..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page86..Paragraph161" = "สังเกตว่าชื่อการนำทางจะแสดงในแถบการนำทางที่ด้านบนสุดของ `ContentView` ของคุณอย่างไร ชื่อเหล่านี้จะช่วยให้คนที่ใช้แอปของคุณเข้าใจเนื้อหาที่พวกเขากำลังดู";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page86..Paragraph162" = "ถัดไป คุณจะเพิ่ม [NavigationLink](glossary://navigation%20link) ไปยัง `ContentView` เพื่อนำทางไปยังมุมมอง `CreatureDance`";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLinkCreatureDance..title" = "เพิ่ม `NavigationLink` ไปยัง `CreatureList`";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLinkCreatureDance..Page87..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLinkCreatureDance..Page87..Paragraph163" = "เพิ่มลิงก์ที่มีปลายทางของ `CreatureDance` ภายในมุมมอง `Section(\"Dance\")` ใช้ป้ายและชื่อการนำทางเพื่ออธิบายว่ามุมมองใช้ทำอะไร (ในกรณีนี้ มุมมองจะทำให้สิ่งมีชีวิตบางตัวเต้นไปมา!)";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLinkCreatureDance..Page88..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLinkCreatureDance..Page88..CodeBlock32" = "NavigationLink(\"ทำให้สิ่งมีชีวิตเต้น\") { \n    DancingCreatures()\n        .navigationTitle(\"สิ่งมีชีวิตเต้นได้\")\n}\n";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepNavigating in SwiftUI..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..SuccessMessage..Paragraph164" = "ยินดีด้วย การเพิ่มการนำทางเป็นส่วนสำคัญของการสร้างแอป";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..SuccessMessage..Paragraph165" = "อย่าลืมว่าเมื่อคุณใช้ `NavigationLink` สิ่งนี้จะใช้งานได้ก็ต่อเมื่อมุมมองที่คุณนำทางมานั้นอยู่ภายใน `NavigationStack` หรือ `NavigationSplitView`";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..SuccessMessage..Paragraph166" = "ถัดไป คุณจะได้เรียนรู้วิธีแชร์ข้อมูลระหว่างมุมมองทั้งหมดของแอปของคุณ";
+
+/* Title of step named Sharing Data Between Views */
+"GuideBook..Guide0..StepSharing Data Between Views..title" = "การแชร์ข้อมูลระหว่างมุมมอง";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..LearningCenterContent..Paragraph167" = "![](SharingDataBetweenViews.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..LearningCenterContent..Paragraph168" = "ก่อนหน้านี้คุณได้เรียนรู้เกี่ยวกับวิธีจัดเก็บข้อมูล[ภายใน](glossary://local%20scope)โดยใช้[คุณสมบัติสถานะ](glossary://state%20value) และระหว่างสองมุมมองโดยใช้[การรวม](glossary://binding)ไปแล้ว แต่จะทำอย่างไรหากคุณต้องการแชร์ข้อมูลในแอปที่มีหลายมุมมอง เหมือนกับที่คุณทำอยู่ตอนนี้ล่ะ";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..LearningCenterContent..Paragraph169" = "ในการแชร์ข้อมูลเดียวกันระหว่างหลายมุมมอง คุณต้องใช้แหล่งข้อมูลจริงเดียวที่[แยก](glossary://data%20separation)จากมุมมอง สิ่งนี้คือ[โมเดลข้อมูล](glossary://data%20model) และคุณสามารถแชร์โมเดลข้อมูลกับมุมมองใดก็ได้ที่ต้องการเข้าถึงข้อมูล";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..LearningCenterContent..Paragraph170" = "วิธีทั่วไปในการสร้างโมเดลข้อมูลสำหรับแอป SwiftUI คือการใช้[วัตถุที่สังเกตเห็นได้](glossary://observable%20object) วัตถุที่สังเกตเห็นได้คือ[ประเภท](glossary://type)ที่มีคุณสมบัติที่หลายมุมมองสามารถ[สังเกตเห็นได้](glossary://observe) มุมมองเหล่านั้นสามารถเฝ้าดูการเปลี่ยนแปลงสถานะในคุณสมบัติได้ ซึ่งทำให้สามารถอัปเดต UI ของตัวเองให้ตรงกันได้เสมอ";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..title" = "โมเดลข้อมูลของคุณ";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page89..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page89..Paragraph171" = "นี่คือโมเดลข้อมูลของคุณ นั่นคือ[วัตถุที่สังเกตเห็นได้](glossary://observable%20object) `CreatureZoo` ซึ่งเป็น[คลาส](glossary://class)ที่เป็นไปตามแนวทางของ[โปรโตคอล](glossary://protocol) `ObservableObject` สิ่งนี้จะช่วยให้คลาส[เผยแพร่](glossary://publish)คุณสมบัติบางอย่างได้";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page89..Paragraph172" = "เมื่อคลาสเผยแพร่คุณสมบัติ คุณสมบัติจะถ่ายทอด (เผยแพร่) การเปลี่ยนแปลงสถานะของตัวเองให้[ตัวสังเกตการณ์](glossary://observer)ใดๆ ที่อาจกำลังดูอยู่ได้ทราบ การทำเช่นนี้ช่วยให้มุมมอง[ที่สังเกตอยู่](glossary://observer)อัปเดตได้เมื่อสถานะของคุณสมบัติที่เผยแพร่เปลี่ยนแปลงไป";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page90..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page90..Paragraph173" = "[ข้อมูลที่เผยแพร่](glossary://published%20value)ใน `CreatureZoo` คือคุณสมบัติ `creatures` ซึ่งเป็นอาร์เรย์ของชื่อแทนประเภท `Creature` เมื่อใดก็ตามที่ข้อมูลในอาร์เรย์นี้เปลี่ยนแปลงไป เช่น เมื่อมีการเพิ่มหรือเอาสิ่งมีชีวิตออก SwiftUI จะแจ้งเตือน[ตัวสังเกตการณ์](glossary://observer)คุณสมบัติทั้งหมดเพื่อให้ตัวสังเกตการณ์เหล่านั้นอัปเดตเพื่อแสดงข้อมูลล่าสุด";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page91..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page91..Paragraph174" = "ในวัตถุที่สังเกตเห็นได้ คุณจะเพิ่ม[ตัวหุ้มคุณสมบัติ](glossary://property%20wrapper) `@Published` เพื่อทำเครื่องหมายคุณสมบัติว่า[เผยแพร่แล้ว](glossary://published%20value)";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page92..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page92..Paragraph175" = "ในการสร้างชื่อแทนประเภทสิ่งมีชีวิต ให้ใช้ตัวเริ่มต้น `Creature(name:emoji:)` แล้วส่งผ่านชื่อและอักขระอิโมจิตัวเดียว";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page93..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page93..Paragraph176" = "นี่คือประเภท `Creature` ที่มี[คุณสมบัติ](glossary://property)สำหรับ `name`, `emoji`, `offset`, `rotation` และ `id`";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page93..Paragraph177" = "`Creature` ทำตามแนวทางสำหรับ[โปรโตคอล](glossary://protocol) `Identifiable` โดยเพิ่มคุณสมบัติ `id` โปรโตคอลนี้ทำให้ SwiftUI สามารถระบุ `Creature` ใดๆ ได้อย่างไม่ซ้ำกัน แม้ว่าสิ่งมีชีวิตสองตัวจะใช้อิโมจิตัวเดียวกันทุกประการ สิ่งนี้จะมีประโยชน์ในภายหลัง";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..title" = "เพิ่มสิ่งมีชีวิตเพิ่มเติม";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page94..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page94..Paragraph178" = "เพิ่มชื่อแทนประเภท `Creature` อย่างน้อยสองรายการใหม่ไปยังอาร์เรย์ `creatures`";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page95..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page95..Paragraph179" = "ในการสร้างสิ่งมีชีวิตใหม่ ให้[สร้างค่าเริ่มต้น](glossary://initialization)สำหรับสิ่งมีชีวิตโดยตั้งชื่อสิ่งมีชีวิตและส่งผ่านอักขระอิโมจิตัวเดียว เมื่อเพิ่มสิ่งมีชีวิตไปยังอาร์เรย์ ให้แยกข้อมูลของสิ่งมีชีวิตแต่ละตัวด้วยจุลภาค ตัวอย่างเช่น:";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page95..CodeBlock33" = "Creature(name: \"T-Rex\", emoji: \"🦖\"),\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page96..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page96..Paragraph180" = "เพิ่มสิ่งมีชีวิตอย่างน้อยอีกหนึ่งชนิดไปยังอาร์เรย์ของคุณ";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page96..CodeBlock34" = "Creature(name: \"Ladybug\", emoji: \"🐞\"),\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..title" = "สร้าง `StateObject`";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page97..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page97..Paragraph181" = "ก่อนจะแชร์[วัตถุที่สังเกตเห็นได้](glossary://observable%20object)ของคุณกับมุมมองต่างๆ คุณจะได้สำรวจก่อนว่าการใช้โมเดลข้อมูลในมุมมองเดียวมีลักษณะอย่างไร";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page97..Paragraph182" = "ใน `ContentView` ให้สร้างค่าเริ่มต้นสำหรับวัตถุที่สังเกตเห็นได้ของคุณและสร้างรายการสิ่งมีชีวิตที่มีข้อมูล";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page97..Paragraph183" = "ในการสร้างค่าเริ่มต้นให้กับวัตถุที่สังเกตเห็นได้อย่าง `CreatureZoo` ให้ใช้ตัวหุ้มคุณสมบัติพิเศษ `@StateObject` เพื่อให้ SwiftUI สามารถจัดการข้อมูลได้";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page97..CodeBlock35" = "@StateObject var data = CreatureZoo()\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page98..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page98..Paragraph184" = "คุณใช้ตัวหุ้มคุณสมบัติ `@StateObject` เพื่อบอกให้ SwiftUI จัดการวัตถุที่สังเกตเห็นได้ให้กับคุณ ซึ่งคล้ายกับวิธีที่คุณใช้ `@State` เพื่อให้ SwiftUI จัดการคุณสมบัติในมุมมองเป็น[คุณสมบัติสถานะ](glossary://state%20property)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page98..Paragraph185" = "ในกรณีนี้ คุณจะสร้างค่าเริ่มต้นให้กับวัตถุที่สังเกตเห็นได้ `CreatureZoo` และขอให้ SwiftUI จัดการวัตถุนี้เป็น[วัตถุสถานะ](glossary://state%20object)";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..title" = "ใช้ข้อมูลโมเดลในมุมมอง";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page99..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page99..Paragraph186" = "หลังจากสร้างค่าเริ่มต้นให้กับข้อมูลของคุณแล้ว คุณจะได้ใช้ข้อมูลนี้เพื่อสร้างมุมมองพื้นฐาน คุณจะได้เพิ่มมุมมอง [ForEach](glossary://ForEach) ภายใน `List` ของคุณเพื่อแสดงสิ่งมีชีวิตแต่ละตัวของคุณในแนวตั้งในเค้าโครงคอลัมน์";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page100..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page100..Paragraph187" = "[ForEach](glossary://ForEach) เป็นโครงสร้างที่[ทำซ้ำ](glossary://iteration)กับ[คอลเลกชั่น](glossary://collection)ของข้อมูล (เช่น อาร์เรย์) เพื่อสร้างมุมมองสำหรับแต่ละองค์ประกอบในคอลเลกชั่นนั้น";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page100..Paragraph188" = "เพิ่ม `ForEach` ใต้มุมมอง `Section` เพื่อทำซ้ำอาร์เรย์ `data.creatures` ของคุณ ซึ่งจะสร้างมุมมองแบบกำหนดเองเพื่อแสดงชื่อและอิโมจิของสิ่งมีชีวิตแต่ละตัว:";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page100..CodeBlock36" = "/*#-code-walkthrough(forEach.id)*/\nForEach(data.creatures) { creature in \n/*#-code-walkthrough(forEach.id)*/\n    HStack { \n        Text(creature.name)\n            .font(.title)\n        Spacer()\n        Text(creature.emoji)\n            /*#-code-walkthrough(resizableFont)*/\n            .resizableFont()\n            /*#-code-walkthrough(resizableFont)*/\n            .frame(minWidth: 125)\n    }\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page101..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page101..Paragraph189" = "จำได้ไหมว่า `Creature` ทำตามแนวทางของโปรโตคอล `Identifiable` สิ่งนี้ทำให้โครงสร้าง [ForEach](glossary://ForEach) สามารถระบุสิ่งมีชีวิตทุกตัวได้อย่างไม่ซ้ำกัน แม้ว่าสิ่งมีชีวิตเหล่านั้นจะมีอักขระอิโมจิและชื่อที่เหมือนกันทุกประการ ความสามารถในการแยกแยะความแตกต่างระหว่างฝาแฝดที่เหมือนกันทุกประการนี้ทำให้ SwiftUI อัปเดตแต่ละมุมมองแยกจากกันได้โดยไม่ผสมปนเปกัน";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page102..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page102..Paragraph190" = "คุณอาจสังเกตเห็นว่ามีการใช้ปุ่มปรับค่า `.resizableFont()` ในส่วนนี้ นี่เป็นปุ่มปรับค่าแบบกำหนดเองที่กำหนดไว้ใน `ResizableFont.swift` ที่ทำให้ขนาดแบบอักษรของมุมมอง `Text` ขยายใหญ่ขึ้นเพื่อให้พอดีกับขนาดของมุมมอง ลองดูโค้ดในไฟล์นั้นเพื่อดูวิธีสร้างปุ่มปรับค่าแบบกำหนดเอง";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..title" = "ทำให้ข้อมูลโมเดลของคุณเข้าถึงได้ทั้งแอป";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page103..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page103..Paragraph191" = "ตอนนี้เมื่อคุณได้ใช้ข้อมูลวัตถุที่สังเกตเห็นได้ในมุมมองเดียวสำเร็จแล้ว ก็ถึงเวลาแชร์ข้อมูลนั้นกับทั้งแอปจาก `MyApp.swift`";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page104..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page104..Paragraph192" = "ในการทำให้ข้อมูลของคุณเข้าถึงได้ทั้งแอป:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page104..OrderedList6..Paragraph193" = "สร้างชื่อแทนประเภทของ `CreatureZoo` เป็น[วัตถุสถานะ](glossary://state%20object)ใน `MyApp`";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page104..OrderedList6..Paragraph194" = "ส่งผ่านไปยัง[มุมมองระดับบนสุด](glossary://top-level%20view)ของคุณ หรือก็คือ `NavigationStack` เป็น[วัตถุสภาพแวดล้อม](glossary://environment%20object)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page104..Paragraph195" = "เมื่อส่งผ่านข้อมูลไปยังมุมมองระดับบนสุดของคุณ วัตถุสภาพแวดล้อมจะทำให้ข้อมูลใช้งานได้กับ[ลำดับชั้นมุมมอง](glossary://view%20hierarchy)ทั้งหมด มุมมองอื่นๆ ทั้งหมดจึงสามารถใช้ข้อมูลนั้นได้";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page105..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page105..Paragraph196" = "สร้างชื่อแทนประเภทของ `CreatureZoo` เช่นเดียวกับที่คุณทำใน `CreatureList`:";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page105..CodeBlock37" = "@StateObject var data = CreatureZoo()\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page106..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page106..Paragraph197" = "เพิ่มปุ่มปรับค่าต่อไปนี้ใต้ `NavigationStack`:";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page106..CodeBlock38" = ".environmentObject(data)\n";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page106..Paragraph198" = "การทำเช่นนี้จะส่งผ่านชื่อแทนประเภท[วัตถุที่สังเกตเห็นได้](glossary://observable%20object)ของคุณไปยัง[สภาพแวดล้อม](glossary://environment)ของแอปเพื่อให้[มุมมองย่อย](glossary://subview)ใดๆ เข้าถึงได้";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page107..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page107..Paragraph199" = "ถัดไป คุณจะได้กลับไปยัง `ContentView.swift` เพื่อลองใช้วัตถุสภาพแวดล้อม";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..title" = "เข้าถึงวัตถุสภาพแวดล้อม";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page108..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page108..Paragraph200" = "ตอนนี้เมื่อคุณได้แชร์วัตถุที่สังเกตเห็นได้กับ[มุมมองย่อย](glossary://subview)ทั้งหมดของ `NavigationStack` ซึ่งรวมถึง `ContentView` แล้ว ก็ถึงเวลาที่จะลองเข้าถึงข้อมูลนั้น";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page109..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page109..Paragraph201" = "แทนที่จะใช้ `@StateObject` ที่สร้างชื่อแทนประเภทใหม่ของวัตถุที่สังเกตเห็นได้ คุณจะต้องเข้าถึงชื่อแทนประเภทที่ส่งผ่านไปยัง[สภาพแวดล้อม](glossary://environment)ของแอป:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page109..OrderedList7..Paragraph202" = "ลบตัวแปร `@StateObject` ปัจจุบันของคุณ นั่นคือ `data`";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page109..OrderedList7..Paragraph203" = "เข้าถึง[วัตถุสภาพแวดล้อม](glossary://environment%20object)ของคุณ และสร้างคุณสมบัติใหม่ที่มีตัวหุ้มคุณสมบัติ `@EnvironmentObject` ของประเภท `CreatureZoo`";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page109..CodeBlock39" = "@EnvironmentObject var data : CreatureZoo\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page110..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page110..Paragraph204" = "ตรวจสอบรายการสิ่งมีชีวิตของคุณในการแสดงตัวอย่าง `ContentView`";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page110..Paragraph205" = "สังเกตว่าสิ่งมีชีวิตจะแสดงเหมือนกับก่อนหน้านี้ ข้อมูลในรายการสิ่งมีชีวิตจะถูกสร้างใน `MyApp`, แชร์ผ่าน[สภาพแวดล้อม](glossary://environment)ของแอป และเข้าถึงใน `ContentView`";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..title" = "แทนที่ `HStack` ของคุณด้วยมุมมอง `CreatureRow` ที่ถูกประกอบ";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page111..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page111..Paragraph206" = "มีโอกาสที่ดีในการปรับปรุงโค้ดในส่วนนี้ คุณสามารถลดความซับซ้อนของโค้ดในมุมมองนี้ได้โดยแทนที่ `HStack` ทั้งหมดภายในโครงสร้าง [ForEach](glossary://ForEach) ด้วย[มุมมองที่ถูกประกอบ](glossary://composed%20view) `CreatureRow`";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page111..Paragraph207" = "ลบเนื้อหาของ `HStack` ภายใน `ForEach` แล้วแทนที่ด้วย `CreatureRow(creature: creature)`";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page112..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page112..Paragraph208" = "ลองดูใน `CreatureRow.swift` ซึ่งมีโค้ดเดียวกันกับที่คุณมีใน `ForEach` ยกเว้น[คุณสมบัติ](glossary://property)ที่จัดเก็บค่า `Creature`";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page112..Paragraph209" = "ตอนนี้เมื่อคุณมี `CreatureRow` เป็นมุมมองในตัวเองแล้ว การแก้ไขและทดสอบแยกจาก `ContentView` ก็ทำได้ง่ายขึ้น การเขียนมุมมองแบบนี้ช่วยปรับปรุง[สภาพโมดูลาร์](glossary://modularity)ของโค้ด ซึ่งเป็นหลักการพื้นฐานของการสร้างแอป";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page113..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page113..CodeBlock40" = "ForEach(data.creatures) { creature in \n   CreatureRow(creature: creature)\n}\n";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepSharing Data Between Views..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..SuccessMessage..Paragraph210" = "สวย!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..SuccessMessage..Paragraph211" = "เมื่อส่งผ่านวัตถุที่สังเกตเห็นได้ไปยังสภาพแวดล้อมแอป คุณจะให้สิทธิ์เข้าถึงข้อมูลนั้นกับ[ลำดับชั้นมุมมอง](glossary://view%20hierarchy)ทั้งหมด การทำเช่นนี้จะทำให้มุมมองอื่นๆ ทั้งหมดในแอปของคุณสามารถใช้[แหล่งข้อมูลจริง](glossary://source%20of%20truth)เดียวกันได้ แทนที่จะพยายามสร้างข้อมูลใหม่ในหลายๆ ที่";
+
+/* Title of step named Create a New View To Share Data */
+"GuideBook..Guide0..StepCreate a New View To Share Data..title" = "สร้างมุมมองใหม่เพื่อแชร์ข้อมูล";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..LearningCenterContent..Paragraph212" = "![](CreateANewViewToShareData.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..LearningCenterContent..Paragraph213" = "ตอนนี้เมื่อคุณได้แชร์ข้อมูลกับมุมมองหนึ่งสำเร็จแล้ว ก็ถึงเวลาใช้ข้อมูลเดียวกันนั้นในมุมมองอื่นๆ";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..LearningCenterContent..Paragraph214" = "ในการทำเช่นนี้ คุณจะต้องทำสองสิ่ง:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..LearningCenterContent..OrderedList8..Paragraph215" = "ตรวจสอบให้แน่ใจว่ามุมมองที่เข้าถึงข้อมูลเป็นส่วนหนึ่งของ[ลำดับชั้นมุมมอง](glossary://view%20hierarchy)เดียวกันกับมุมมองระดับบนสุดที่ส่งผ่านเข้าไป คุณเพิ่มมุมมองไปยังลำดับชั้นมุมมองโดยสร้างค่าเริ่มต้นให้กับมุมมองนั้นภายใน[มุมมองระดับบนสุด](glossary://top-level%20view)หรือ[มุมมองย่อย](glossary://subview)ใดๆ ของมุมมองระดับบนสุดนั้น";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..LearningCenterContent..OrderedList8..Paragraph216" = "เข้าถึง[วัตถุสภาพแวดล้อม](glossary://environment%20object)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..LearningCenterContent..Paragraph217" = "ตัวอย่างเช่น ถ้าคุณสร้างมุมมองใหม่ภายใน `ContentView` มุมมองใหม่นั้นจะเป็นส่วนหนึ่งของลำดับชั้นมุมมองเนื่องจาก `ContentView` เป็นมุมมองย่อยของมุมมองระดับบนสุดของคุณ นั่นคือ `NavigationStack` จากนั้นคุณจึงสามารถเข้าถึงวัตถุสภาพแวดล้อมจากมุมมองใหม่นั้นได้";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..title" = "ประกาศวัตถุสภาพแวดล้อม";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page114..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page114..Paragraph218" = "เป้าหมายของคุณคือการสร้างมุมมองใหม่ `DancingCreatures` ที่เข้าถึงข้อมูลใน[สภาพแวดล้อม](glossary://environment)ของแอป";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page114..Paragraph219" = "`DancingCreatures` เป็นส่วนหนึ่งของ[ลำดับชั้นมุมมอง](glossary://view%20hierarchy)ของคุณแล้วเพราะคุณได้เพิ่มลิงก์ไปยังที่นั่นใน `ContentView` ขั้นตอนถัดไปของคุณคือการเข้าถึงข้อมูลในสภาพแวดล้อมแอป";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page115..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page115..Paragraph220" = "ในการเข้าถึงข้อมูลในสภาพแวดล้อมแอป ให้ประกาศวัตถุสภาพแวดล้อมของคุณสำหรับ `CreatureZoo` เช่นเดียวกับที่คุณทำใน `CreatureList` คุณสามารถย้อนกลับไปดูโค้ดอื่นๆ ของคุณหากคุณต้องการความช่วยเหลือ";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page116..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page116..Paragraph221" = "[ประกาศ](glossary://declaration)ตัวแปรโดยใช้ตัวหุ้มคุณสมบัติ `@EnvironmentObject` และให้ประเภทเป็น `CreatureZoo` คุณไม่จำเป็นต้อง[สร้างค่าเริ่มต้น](glossary://initialization) ให้กับค่า เนื่องจากมีการสร้างค่าเริ่มต้นให้กับค่าแล้วใน `MyApp` คุณเพียงต้องเข้าถึงข้อมูลที่นี่เท่านั้น";
+
+/*  */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page116..CodeBlock41" = "@EnvironmentObject var data : CreatureZoo\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesView..title" = "เพิ่มมุมมอง `DancingCreatures`";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesView..Page117..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesView..Page117..Paragraph222" = "ตอนนี้เมื่อคุณสามารถเข้าถึงข้อมูลแอปของคุณได้แล้ว ถึงเวลาที่จะสร้างอะไรสนุกๆ กับสิ่งนี้กันแล้ว ก่อนอื่น คุณจะนำสิ่งมีชีวิตทั้งหมดของคุณมาซ้อนทับกัน จากนั้น ทุกครั้งที่คุณแตะสิ่งมีชีวิตเหล่านั้น สิ่งมีชีวิตจะกระจายออกไปในทิศทางต่างๆ";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesView..Page118..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesView..Page118..Paragraph223" = "เพิ่มโค้ดนี้ภายใน `VStack` ของคุณ`:";
+
+/*  */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesView..Page118..CodeBlock42" = "ZStack {\n    /*#-code-walkthrough(dance.forEach)*/\n    ForEach(data.creatures) { creature in\n    /*#-code-walkthrough(dance.forEach)*/\n        /*#-code-walkthrough(dance.textView)*/\n        Text(creature.emoji)\n            .resizableFont()\n            .offset(creature.offset)\n            .rotationEffect(creature.rotation)\n        /*#-code-walkthrough(dance.textView)*/\n        //#-learning-code-snippet(exp1)\n        //#-learning-code-snippet(animationSolution)\n        //#-learning-code-snippet(exp3)\n\n    }\n}\n/*#-code-walkthrough(dance.onTap)*/\n.onTapGesture {\n    data.randomizeOffsets()\n}\n/*#-code-walkthrough(dance.onTap)*/\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..title" = "การทำความเข้าใจโค้ดภาพเคลื่อนไหว";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page119..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page119..Paragraph224" = "ในการสร้างภาพเคลื่อนไหวนี้ [ForEach](glossary://ForEach) จะทำซ้ำผ่านสิ่งมีชีวิตแต่ละตัวของคุณใน `CreatureZoo.creatures` ซึ่งจะสร้างมุมมอง `Text` สำหรับแต่ละตัว";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page120..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page120..Paragraph225" = "มุมมอง `Text` จะใช้[คุณสมบัติ](glossary://property) `offset` และ `rotation` เป็นอาร์กิวเมนต์ไปยังปุ่มปรับค่า `.offset` และ `.rotationEffect`";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page120..Paragraph226" = "เนื่องจาก `CreatureZoo.creatures` เป็น[ค่าที่เผยแพร่](glossary://published%20value) SwiftUI จะอัปเดตมุมมอง `DancingCreatures` ทุกครั้งที่ `offset` หรือ `rotation` ของสิ่งมีชีวิตเปลี่ยนแปลงไป";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page121..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page121..Paragraph227" = "ปุ่มปรับค่า `.onTapGesture` สามารถรันบางโค้ดได้ตลอดเวลาที่คุณแตะมุมมอง เมื่อแตะแล้ว `data.randomizeOffsets()` จะเปลี่ยนค่า `offset` และ `rotation` สำหรับสิ่งมีชีวิตแต่ละตัว ทำให้มุมมองสามารถอัปเดตสิ่งมีชีวิตแต่ละตัวไปยังตำแหน่งและการหมุนใหม่ได้";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..title" = "ทำให้สิ่งมีชีวิตเคลื่อนไหว";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page122..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page122..Paragraph228" = "ลองแตะมุมมอง";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page122..Paragraph229" = "สิ่งมีชีวิตกำลังเคลื่อนไหว แต่ดูไม่น่าสนใจนัก ถัดไป คุณจะได้ทำให้สิ่งมีชีวิตเคลื่อนไหวไปยังตำแหน่งใหม่ของตัวเองเพื่อให้ดูน่าตื่นเต้นยิ่งขึ้น";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page123..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page123..Paragraph230" = "ในการทำให้สิ่งมีชีวิตเคลื่อนไหวไปยังตำแหน่งใหม่ คุณจะต้องบอก SwiftUI ว่าจะใช้ภาพเคลื่อนไหวใดและจะทำให้ค่าใดเคลื่อนไหว ในกรณีนี้ คุณต้องการทำให้คุณสมบัติ `offset` ของสิ่งมีชีวิตแต่ละตัวเคลื่อนไหว";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page123..Paragraph231" = "ติดปุ่มปรับค่า `.animation(_:value:)` ไปยังมุมมอง `Text` เลือก `.default` สำหรับอาร์กิวเมนต์ภาพเคลื่อนไหว และสำหรับค่า ให้ส่งผ่าน `creature.offset` เมื่อใดก็ตามที่ `offset` เปลี่ยนแปลง การเปลี่ยนแปลงมุมมองนั้นก็จะถูกทำให้เคลื่อนไหว";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page124..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page124..CodeBlock43" = ".animation(.default, value: creature.offset)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..title" = "ทดลองใช้มุมมองของคุณ";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page125..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page125..Paragraph232" = "ตอนนี้เมื่อคุณทำให้สิ่งมีชีวิตของคุณเคลื่อนไหวได้แล้ว ให้ลองปรับเปลี่ยนภาพเคลื่อนไหวและส่วนอื่นๆ ของมุมมองเพื่อให้น่าสนใจยิ่งขึ้น";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page126..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page126..Paragraph233" = "ทำให้การเปลี่ยนแปลงที่ทำกับคุณสมบัติ `creature.rotation` เคลื่อนไหวได้โดยเพิ่มปุ่มปรับค่า `.animation(_:value:)` ใหม่";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page126..Paragraph234" = "เพิ่มปุ่มปรับค่าต่อไปนี้ก่อนปุ่มปรับค่า `.animation(_:value)` ภาพเคลื่อนไหวเปลี่ยนไปอย่างไรบ้าง ทำไมคุณถึงคิดว่าเป็นแบบนี้ จะเกิดอะไรขึ้นหากคุณวางภาพเคลื่อนไหว `.spring()` หลังปุ่มปรับค่าด้านบน";
+
+/*  */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page126..CodeBlock44" = ".animation(.spring(response: 0.5, dampingFraction: 0.5), value: creature.rotation)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page127..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page127..Paragraph235" = "เปลี่ยนตัวจัดการอีเวนต์สำหรับ `.onTapGestures` เป็น `data.synchronizeOffsets()` การทำงานนี้จะทำให้สิ่งมีชีวิตทั้งหมดของคุณเคลื่อนไหวที่ระยะห่างเดียวกัน";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page127..OrderedList9..Paragraph236" = "เอาปุ่มปรับค่า `.animation` ปัจจุบันของคุณสำหรับ `creature.offset` ออก";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page127..OrderedList9..Paragraph237" = "เพิ่มภาพเคลื่อนไหวต่อไปนี้เพื่อทำให้ภาพเคลื่อนไหวแต่ละรายการช้าลงเล็กน้อย";
+
+/*  */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page127..CodeBlock45" = ".animation(.default.delay(data.indexFor(creature) / 10), value: creature.offset)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page128..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page128..Paragraph238" = "ปรับเปลี่ยนค่าภาพเคลื่อนไหวของคุณต่อไปจนกว่าคุณจะพอใจกับผลลัพธ์!";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepCreate a New View To Share Data..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..SuccessMessage..Paragraph239" = "ดีมาก!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..SuccessMessage..Paragraph240" = "คุณทำสำเร็จแล้ว คุณได้สร้างอีกหนึ่งมุมมองที่ใช้[โมเดลข้อมูล](glossary://data%20model)ที่สังเกตเห็นได้ของคุณที่แชร์กับ[ลำดับชั้นมุมมอง](glossary://view%20hierarchy)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..SuccessMessage..Paragraph241" = "ถัดไป คุณจะได้เรียนรู้วิธีเพิ่มและลบข้อมูลจากโมเดลข้อมูลนั้นเพื่อให้ผู้คนสามารถกำหนดแอปเองได้";
+
+/* Title of step named Add and delete creatures */
+"GuideBook..Guide0..StepAdd and delete creatures..title" = "เพิ่มและลบสิ่งมีชีวิต";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..LearningCenterContent..Paragraph242" = "![](AddAndDeleteCreatures.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..LearningCenterContent..Paragraph243" = "ตอนนี้คุณมีแอปแบบหลายมุมมองที่แชร์[โมเดลข้อมูล](glossary://data%20model)เดียวกันกับหลายมุมมอง แต่แอปก็ยังดูไม่สมบูรณ์ แม้ว่าคุณจะสามารถเพิ่มหรือลบ `Creature` ในโค้ดได้ แต่[ผู้ใช้](glossary://user)ไม่สามารถเพิ่มหรือลบสิ่งมีชีวิตผ่าน UI ได้";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..LearningCenterContent..Paragraph244" = "โชคดีที่เรื่องนี้แก้ไขได้ง่ายมาก เนื่องจากคุณสามารถเข้าถึงโมเดลข้อมูลได้จากมุมมองของคุณ คุณสามารถแก้ไขโมเดลข้อมูลเมื่อมีคนโต้ตอบกับ UI ของคุณได้ ก่อนอื่นคุณจะได้เรียนรู้การลบสิ่งมีชีวิต จากนั้นคุณจะได้สร้างมุมมองใหม่ที่ช่วยให้ผู้คนสามารถเพิ่มสิ่งมีชีวิตของตัวเองได้";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..title" = "ลบสิ่งมีชีวิต";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page129..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page129..Paragraph245" = "SwiftUI ทำให้การลบข้อมูลจาก `List` เป็นเรื่องที่ง่ายมาก คุณสามารถลบสิ่งมีชีวิตได้ง่ายๆ โดยเพิ่มปุ่มปรับค่า `.onDelete` ไปยัง `ForEach` loop ใน `ContentView`";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page129..Paragraph246" = "การเพิ่มปุ่มปรับค่า `.onDelete` ทำให้คุณสามารถรันโค้ดแบบกำหนดเอง ([การปิด](glossary://closure) `action` เมื่อมีคนตัดสินใจลบรายการ) บางโค้ดได้ โค้ดการปิดของคุณจะเอาสิ่งมีชีวิตปัจจุบันออกจาก[โมเดลข้อมูล](glossary://data%20model)ที่สังเกตเห็นได้ของแอปของคุณ";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page130..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page130..Paragraph247" = "ภายใน[การปิด](glossary://closure) `.onDelete` คุณจะเอาสิ่งมีชีวิตปัจจุบันออกโดยเรียกใช้ `remove(atOffsets:)` และส่งผ่านค่า `indexSet` จากการปิด การทำเช่นนี้จะค้นหาสิ่งมีชีวิตที่สอดคล้องกันในอาร์เรย์ `creatures` โดยอิงจากแถวของรายการที่คุณเลือกที่จะลบ";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page130..Paragraph248" = "ลองเพิ่มปุ่มปรับค่านี้ใต้ `ForEach` loop แล้วรันแอปของคุณ การปัดไปทางซ้ายบนสิ่งมีชีวิตทำให้คุณลบสิ่งมีชีวิตนั้นได้หรือไม่";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page130..CodeBlock46" = ".onDelete { indexSet in \n    data.creatures.remove(atOffsets: indexSet)\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..title" = "เพิ่ม `NavigationLink` ไปยัง `CreatureEditor`";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page131..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page131..Paragraph249" = "ในการเพิ่มสิ่งมีชีวิตใหม่ คุณจะต้องทำสองสิ่ง:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page131..OrderedList10..Paragraph250" = "เพิ่ม `CreatureEditor` ไปยัง[ลำดับชั้นมุมมอง](glossary://view%20hierarchy)ของคุณโดยใช้ `NavigationLink` ซึ่งจะทำให้ `CreatureEditor` เข้าถึงวัตถุสภาพแวดล้อม `CreatureZoo` ของคุณได้ และช่วยให้คนอื่นนำทางไปยังมุมมองได้";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page131..OrderedList10..Paragraph251" = "[เขียน](glossary://composed%20view)มุมมอง `CreatureEditor` เพื่อให้คนอื่นสามารถแก้ไขและเพิ่มสิ่งมีชีวิตใหม่ไปยังอาร์เรย์ `creatures` ใน `CreatureZoo` ได้";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page132..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page132..Paragraph252" = "เริ่มโดยตัดสินใจว่าจะเพิ่ม `NavigationLink` ไปยัง `CreatureEditor` ที่ตำแหน่งไหน เนื่องจากคุณมีมุมมอง `List` ของสิ่งมีชีวิตที่คุณสามารถลบได้ใน `ContentView` แล้ว การเพิ่มสิ่งมีชีวิตจากมุมมองเดียวกันนั้นก็ดูจะสมเหตุสมผล";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page133..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page133..Paragraph253" = "ในการทำให้การแก้ไขสิ่งมีชีวิตสามารถเข้าถึงได้ง่ายๆ ให้วางลิงก์ใน[แถบการนำทาง](glossary://navigation%20bar) ใน UI ของ `ContentView` ตำแหน่งนี้คือตำแหน่งที่เหมาะสมสำหรับลิงก์ประเภทนี้เนื่องจากอยู่ในตำแหน่งที่คุ้นเคยที่ผู้คนมักค้นหาคุณลักษณะเพิ่มเติมของแอปของคุณ";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page134..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page134..Paragraph254" = "ในการเพิ่มปุ่มไปยังแถบการนำทาง:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page134..OrderedList11..Paragraph255" = "เพิ่มการกำหนดแถบการนำทางเองโดยติดปุ่มปรับค่า `.toolbar` ไปที่มุมมอง `List` ของคุณ";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page134..OrderedList11..Paragraph256" = "ภายในการปิด `.toolbar` ให้เพิ่ม `ToolbarItem` รายการนี้เป็นรายการที่คุณสามารถวางลงในแถบเครื่องมือได้";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page134..OrderedList11..Paragraph257" = "เพิ่ม `NavigationLink` ที่ไปยัง `CreatureEditor` ภายใน `ToolbarItem` นี่คือมุมมองที่คุณจะเห็นในแถบการนำทาง";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page134..CodeBlock47" = ".toolbar { \n    ToolbarItem { \n        // เพิ่ม NavigationLink ไปยัง CreatureEditor\n\n    }\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page135..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page135..CodeBlock48" = ".toolbar { \n    ToolbarItem { \n        NavigationLink(\"เพิ่ม\") { \n            CreatureEditor()\n        }\n    }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..title" = "เพิ่มชื่อการนำทางไปยัง `CreatureEditor`";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..Page136..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..Page136..Paragraph258" = "ถัดไป กำหนดชื่อการนำทางให้กับ `CreatureEditor` ที่อธิบายถึงจุดประสงค์ของมุมมอง";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..Page136..OrderedList12..Paragraph259" = "เพิ่มชื่อการนำทางไปยังมุมมอง `CreatureEditor`";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..Page136..OrderedList12..Paragraph260" = "รันแอปของคุณแล้วทดสอบการนำทางไปยัง `CreatureEditor` จาก `ContentView`";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..Page137..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..Page137..CodeBlock49" = ".toolbar { \n    ToolbarItem { \n        NavigationLink(\"เพิ่ม\") { \n            CreatureEditor()\n                .navigationTitle(\"เพิ่มสิ่งมีชีวิต\")\n        }\n    }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..title" = "กำหนดข้อมูล `CreatureEditor`";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page138..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page138..Paragraph261" = "ในการเพิ่มสิ่งมีชีวิตใหม่ คุณจะได้สร้าง `CreatureEditor` ของ[มุมมองที่ถูกประกอบ](glossary://composed%20view) ซึ่งจะทำให้คุณสามารถแก้ไขสิ่งมีชีวิตใหม่และเพิ่มไปยัง[โมเดลข้อมูล](glossary://data%20model)ของคุณได้";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page139..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page139..Paragraph262" = "ใช้เวลาสักครู่เพื่อคิดทบทวนว่าคุณจะต้องใช้[คุณสมบัติ](glossary://property)ใดใน `CreatureEditor` เพื่อสร้างชื่อแทนประเภท `Creature` ใหม่และเพิ่มไปยังโมเดลข้อมูลของคุณ";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page139..OrderedList13..Paragraph263" = "คุณจะต้องมีคุณสมบัติ `Creature` ที่คุณสามารถแก้ไขภายในมุมมอง `CreatureEditor` [แบบภายใน](glossary://local%20scope)ได้";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page139..OrderedList13..Paragraph264" = "คุณจะต้องเข้าถึง[วัตถุที่สังเกตเห็นได้](glossary://observable%20object)ของ `CreatureZoo` จาก[สภาพแวดล้อม](glossary://environment)เพื่อให้คุณสามารถเพิ่มชื่อแทนประเภท `Creature` ของคุณไปที่นั่นได้";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page139..Paragraph265" = "ลองสร้างคุณสมบัติสองรายการที่จะทำให้บรรลุเป้าหมายเหล่านี้โดยใช้คำใบ้ต่อไปนี้หากคุณไปต่อไม่ได้";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page140..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page140..Paragraph266" = "ก่อนอื่นให้สร้าง[คุณสมบัติสถานะ](glossary://state%20property)ที่จะจัดเก็บชื่อแทนประเภท `Creature` คุณสามารถปล่อยให้พารามิเตอร์ `name` และ `emoji` เป็นสตริงว่างไปก่อนได้ในตอนนี้";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page141..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page141..Paragraph267" = "ถัดไป ให้ประกาศ[วัตถุสภาพแวดล้อม](glossary://environment%20object)ของประเภท `CreatureZoo` เพื่อเข้าถึงชื่อแทนประเภทของ[วัตถุที่สังเกตเห็นได้](glossary://observable%20object)ของคุณ";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page142..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page142..CodeBlock50" = "@State var newCreature : Creature = Creature(name: \"\", emoji: \"\")\n@EnvironmentObject var data : CreatureZoo \n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineYourView..title" = "การสร้าง Form ใน CreatureEditor";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineYourView..Page143..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineYourView..Page143..Paragraph268" = "ในการสร้างมุมมอง`CreatureEditor` คุณสามารถใช้มุมมอง `Form` ในตัว ซึ่งเหมาะกับการจัดการการป้อนข้อมูล";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineYourView..Page143..Paragraph269" = "ภายใน `Form` คุณจะต้องเพิ่มมุมมอง `Section` สามมุมมอง โดยแต่ละมุมมองใช้สำหรับแก้ไขชื่อ อิโมจิ และการแสดงตัวอย่างของสิ่งมีชีวิต";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineYourView..Page143..CodeBlock51" = "Form {\n    Section(\"Name\") {\n        //#-learning-code-snippet(addACreatureEditorTextField)\n\n    }   \n\n    Section(\"Emoji\") {\n        \n    }\n\n    Section(\"Creature Preview\") {\n        CreatureRow(creature: newCreature)\n    }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..title" = "เพิ่มมุมมอง `TextField` สำหรับ Input ของผู้ใช้";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page144..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page144..Paragraph270" = "ถัดไป คุณต้องเพิ่มวิธีที่ให้[ผู้คน](glossary://user)แก้ไขค่า `name` และ `emoji` สำหรับ[คุณสมบัติสถานะ](glossary://state%20property)ของ `Creature`";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page144..Paragraph271" = "ให้คุณทำสิ่งนี้โดยเพิ่มมุมมอง [TextField](doc://com.apple.documentation/documentation/swiftui/textfield) ซึ่งจะช่วยให้ผู้คนสามารถป้อนข้อความได้";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page144..Paragraph272" = "เพิ่มมุมมอง `TextField` สองมุมมองเพื่อแก้ไขสิ่งมีชีวิต `name` และค่า `emoji` ใช้ตัวเริ่มต้น `TextField(_:text:)` ที่จะใช้อาร์กิวเมนต์สำหรับ[ป้าย](glossary://label)และค่า `String` [การรวม](glossary://binding)";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page145..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page145..Paragraph273" = "อย่าลืมว่า การรวมกำหนดให้ SwiftUI จัดการแหล่งข้อมูลจริง เช่น โดย[คุณสมบัติสถานะ](glossary://state%20property)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page145..Paragraph274" = "ส่งผ่านการรวมไปยังคุณสมบัติสถานะ `Creature` ของคุณและระบุค่า `name` และ `emoji` ดังนี้:";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page145..CodeBlock52" = "$newCreature.name\n$newCreature.emoji\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page146..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page146..Paragraph275" = "ต่อไปนี้เป็นตัวอย่างวิธีการเพิ่ม `TextField` โดยให้เพิ่ม`TextField` หนึ่งรายการสำหรับแก้ไข `newCreature.name` และอีกหนึ่งรายการสำหรับแก้ไข `newCreature.emoji`";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page146..CodeBlock53" = "TextField(\"Name\", text: $newCreature.name)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page147..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page147..CodeBlock54" = "Form {\n    Section(\"Name\") {\n        TextField(\"Name\", text: $newCreature.name)\n    }   \n\n    Section(\"Emoji\") {\n        TextField(\"Emoji\", text: $newCreature.emoji)\n    }\n\n    Section(\"Creature Preview\") {\n        CreatureRow(creature: newCreature)\n    }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..title" = "วางปุ่มเพิ่มลงในแถบเครื่องมือ";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page148..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page148..Paragraph276" = "ถัดไป คุณต้องเพิ่ม `Button` ที่ผู้คนสามารถแตะเพื่อเพิ่มสิ่งมีชีวิตใหม่ของเขาได้";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page148..Paragraph277" = "เช่นเดียวกับใน `ContentView` ตำแหน่งที่ดีที่สุดในการใส่ปุ่มแบบนี้จะอยู่ใน[แถบการนำทาง](glossary://navigation%20bar) ของ `CreatureEditor`";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page149..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page149..Paragraph278" = "ลองใช้โค้ด `.toolbar` จาก `ContentView` เป็นตัวอย่างเพื่อเพิ่มแถบเครื่องมือไปยัง`CreatureEditor`:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page149..OrderedList14..Paragraph279" = "เพิ่มปุ่มปรับค่า`.toolbar` ด้านล่าง`VStack` ของคุณ";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page149..OrderedList14..Paragraph280" = "ภายในแถบเครื่องมือ ให้เพิ่ม `ToolbarItem`";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page149..OrderedList14..Paragraph281" = "ภายใน `ToolbarItem` ให้เพิ่ม `Button` ที่มี[ป้าย](glossary://label)เขียนว่า “เพิ่ม” คุณสามารถปล่อยให้[การปิด](glossary://closure)การทำงานสำหรับ `Button` ว่างไว้ในตอนนี้ได้";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page150..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page150..CodeBlock55" = ".toolbar { \n    ToolbarItem { \n        Button(\"Add\") { \n            //#-learning-code-snippet(addCreatureToCreatureZoo)\n            //#-learning-code-snippet(dismissCall)\n        }\n    }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..title" = "เพิ่มสิ่งมีชีวิตของคุณไปยัง `CreatureZoo`";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page151..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page151..Paragraph282" = "เมื่อคุณแตะปุ่มเพิ่ม คุณต้องการเพิ่มชื่อแทนประเภทสิ่งมีชีวิตของคุณไปยังวัตถุที่สังเกตเห็นได้ นั่นคือ `CreatureZoo` กล่าวอย่างเจาะจงคือ คุณต้องการผนวกสิ่งมีชีวิตไปยังอาร์เรย์ `creatures`";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page152..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page152..Paragraph283" = "โค้ดต่อไปนี้จะเพิ่มสิ่งมีชีวิตที่กำลังแก้ไขไปยัง `data.creatures` อย่าลืมว่า `creatures` เป็น[ค่าที่เผยแพร่](glossary://published%20value) ดังนั้นการเปลี่ยนแปลงใดๆ ที่ทำกับค่านั้นจะทำให้มุมมองทั้งหมดที่ใช้ค่านั้นอัปเดตโดยอัตโนมัติ";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page152..Paragraph284" = "เพิ่มโค้ดนี้ภายใน[การปิด](glossary://closure)การทำงานสำหรับ `Button` ของคุณ";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page152..CodeBlock56" = "data.creatures.append(newCreature)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page153..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page153..Paragraph285" = "รันแอปของคุณแล้วลองเพิ่มสิ่งมีชีวิตใหม่";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page153..Paragraph286" = "นำทางกลับไปยัง `ContentView` เพื่อดูว่าสิ่งมีชีวิตใหม่ถูกเพิ่มไปยังมุมมอง `List` หรือไม่ และถูกเพิ่มลงในมุมมอง `DancingCreatures` ด้วยหรือไม่";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..title" = "ปิดทิ้งตัวแก้ไขเมื่อคุณแตะเพิ่ม";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page154..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page154..Paragraph287" = "หลังจากที่คุณเพิ่มสิ่งมีชีวิตแล้ว มุมมอง `CreatureEditor` ของคุณจะถูกปิดทิ้งและแสดงมุมมองก่อนหน้านี้ที่คุณนำทางมา นี่เป็นประสบการณ์ผู้ใช้ที่ดีขึ้น และป้องกันไม่ให้คุณแตะปุ่มเพิ่มมากกว่าหนึ่งครั้ง ซึ่งจะเพียงแค่สร้างสิ่งมีชีวิตซ้ำแล้วซ้ำอีก";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page155..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page155..Paragraph288" = "ในการปิดทิ้งมุมมอง คุณจะต้องใช้สองสิ่ง:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page155..OrderedList15..Paragraph289" = "ประกาศ[สภาพแวดล้อม](glossary://environment)เป็น `dismiss` ซึ่งจะช่วยให้แอปสามารถปิดทิ้งมุมมองปัจจุบันที่กำลังแสดงใน `NavigationStack` ได้";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page155..OrderedList15..Paragraph290" = "[เรียกใช้](glossary://call) `dismiss()` เมื่อแตะปุ่มเพิ่ม";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page155..CodeBlock57" = "@Environment(\\.dismiss) var dismiss\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page156..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page156..Paragraph291" = "หลังจากที่คุณได้ประกาศ[สภาพแวดล้อม](glossary://environment)เป็น `dismiss` แล้ว ให้เรียกใช้ `dismiss()` เมื่อคุณแตะ “เพิ่ม” หลังจากที่คุณได้เพิ่มสิ่งมีชีวิตใหม่ของคุณไปยัง `data.creatures`";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page156..CodeBlock58" = "dismiss()\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page157..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page157..CodeBlock59" = ".toolbar { \n    ToolbarItem { \n        Button(\"Add\") { \n            data.creatures.append(newCreature)\n            dismiss()\n        }\n    }\n}\n";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepAdd and delete creatures..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..SuccessMessage..Paragraph292" = "ยินดีด้วย คุณได้สร้างแอปที่ทำงานอย่างสมบูรณ์ขึ้นมาแล้ว!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..SuccessMessage..Paragraph293" = "คุณสามารถเพิ่มสิ่งมีชีวิตใหม่ ดูและแก้ไขสิ่งมีชีวิตใน `CreatureList` และดูสิ่งมีชีวิตเต้นรำใน `DancingCreatures` ได้";
+
+/* Title of step named Add a `CreatureDetail` view */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..title" = "เพิ่มมุมมอง `CreatureDetail`";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..LearningCenterContent..Paragraph294" = "![](AddCreatureDetailView.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..LearningCenterContent..Paragraph295" = "ตอนนี้เมื่อคุณรู้วิธีนำทางระหว่างมุมมอง จัดการกับการเปลี่ยนแปลงสถานะ[ภายใน](glossary://local%20scope) แชร์ข้อมูลทั่วทั้งแอปของคุณ และใช้[มุมมอง SwiftUI ในตัว](glossary://built-in%20view)ที่หลากหลายแล้ว ก็ถึงเวลาทดสอบทักษะของคุณในการสร้างมุมมองใหม่: `CreatureDetail` มุมมองจะแสดงรายละเอียดของสิ่งมีชีวิตตัวเดียวในรายการของคุณ";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..LearningCenterContent..Paragraph296" = "รายการสิ่งมีชีวิตของคุณดูดีนะ แต่ต้องโต้ตอบได้มากกว่านี้อีกหน่อย จะมีประโยชน์อะไรหากคุณไม่สามารถดัดแปลงสิ่งมีชีวิตเหล่านี้ได้";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..title" = "เพิ่ม `NavigationLink` ไปยัง `CreatureDetail`";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page158..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page158..Paragraph297" = "เป้าหมายของคุณคือทำให้ทุกมุมมองของ [ForEach](glossary://ForEach) loop กลายเป็น `NavigationLink` ในตัวเอง โดยที่แต่ละรายการจะนำทางไปยังมุมมองรายละเอียดของสิ่งมีชีวิตในอาร์เรย์ `data.creatures` ของคุณ";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page159..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page159..Paragraph298" = "ในการทำเช่นนี้ ให้แทนที่เนื้อหาปัจจุบันของ `ForEach` loop ด้วย `NavigationLink`:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page159..OrderedList16..Paragraph299" = "ตั้งค่า[ปลายทาง](glossary://destination%20view)ให้เป็น[มุมมองที่ถูกประกอบ](glossary://composed%20view) `CreatureDetail(creature: creature)`";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page159..OrderedList16..Paragraph300" = "สร้าง[ป้าย](glossary://label)เป็น `CreatureRow` โดยใช้ค่า `creature` จาก[การปิด](glossary://closure)เป็น[อาร์กิวเมนต์](glossary://argument)";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page160..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page160..Paragraph301" = "สร้างลิงก์การนำทางแบบนี้และเพิ่มลิงก์ภายใน `ForEach` ของคุณ:";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page160..CodeBlock60" = "NavigationLink {\n    CreatureDetail(creature: creature)\n        .navigationTitle(creature.name)\n} label: {\n    CreatureRow(creature: creature)\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page161..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page161..Paragraph302" = "`ForEach` ของคุณควรมีลักษณะดังนี้:";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page161..CodeBlock61" = "ForEach(data.creatures) { creature in \n    NavigationLink {\n        CreatureDetail(creature: creature)\n            .navigationTitle(creature.name)\n    } label: {\n        CreatureRow(creature: creature)\n    }  \n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page162..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page162..Paragraph303" = "ลองแตะแถวของ `List` ของคุณ ตอนนี้คุณจะถูกเคลื่อนย้ายไปยังมุมมอง `CreatureDetail` สำหรับสิ่งมีชีวิตนั้น";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..title" = "สร้างมุมมอง `CreatureDetail` ของคุณ";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page163..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page163..Paragraph304" = "มุมมอง `CreatureDetail` จะแสดงสิ่งมีชีวิตที่เลือกเป็นมุมมอง `Text` หน้าที่ของคุณคือทำความเข้าใจโค้ดที่มีอยู่แล้ว และต่อยอดจากโค้ดนั้นเพื่อสร้างเอฟเฟ็กต์สิ่งมีชีวิตเจ๋งๆ";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page164..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page164..Paragraph305" = "ใน `ContentView` คุณได้สร้าง `NavigationLink` ที่มี[มุมมองปลายทาง](glossary://destination%20view) เป็น `CreatureDetail(creature: creature)`";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page164..Paragraph306" = "มุมมองปลายทางใช้ค่า `Creature` สำหรับแต่ละแถวของรายการเพื่อสร้างมุมมองที่แตกต่างกันตามสิ่งมีชีวิตที่คุณแตะ ในส่วนนี้ ค่านั้นถูกจัดเก็บเป็น[ค่าคงที่](glossary://constant)ที่ไม่มีสถานะเนื่องจากค่าจะไม่เปลี่ยนแปลงในมุมมองนี้";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page165..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page165..Paragraph307" = "[คุณสมบัติสถานะ](glossary://state%20property)สามรายการได้ถูกกำหนดไว้ให้คุณแล้ว ดังนี้:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page165..OrderedList17..Paragraph308" = "`color` จะติดตามค่า `Color` และควบคุมการแก้ไขสีที่ทำกับมุมมอง `Text`";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page165..OrderedList17..Paragraph309" = "`shadowRadius` เป็นค่า `Double` ที่คุณใช้เพื่อควบคุมรัศมีของปุ่มปรับค่า `.shadow`";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page165..OrderedList17..Paragraph310" = "`angle` เป็นค่า `Angle` ที่คุณใช้เพื่อหมุนมุมมอง `Text` ของคุณ";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page166..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page166..Paragraph311" = "มุมมอง `Text` ของคุณจะใช้ `creature.emoji` เป็นค่าสตริงสำหรับมุมมอง และเพิ่มปุ่มปรับค่าหลายรายการที่กำหนดรูปแบบและลักษณะการทำงานของมุมมอง:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page166..OrderedList18..Paragraph312" = "[.colorMultiply](doc://com.apple.documentation/documentation/swiftui/list/colormultiply(_:)) จะเพิ่มเอฟเฟ็กต์การทวีคูณของสีไปยังมุมมอง";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page166..OrderedList18..Paragraph313" = "[.shadow](doc://com.apple.documentation/documentation/swiftui/list/shadow(color:radius:x:y:)) จะเพิ่มเงาที่มีสีและรัศมีที่เจาะจง";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page166..OrderedList18..Paragraph314" = "[.rotation3DEffect](doc://com.apple.documentation/documentation/swiftui/view/rotation3deffect(_:axis:anchor:anchorz:perspective:)) สามารถควบคุมการหมุนของมุมมองได้สามมิติ";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddColorPicker..title" = "เพิ่ม `ColorPicker` ที่เปลี่ยนแปลงค่า `color`";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddColorPicker..Page167..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddColorPicker..Page167..Paragraph315" = "ในการเริ่มสร้างการโต้ตอบไปยังมุมมองนี้ ก่อนอื่นให้เพิ่มมุมมอง `ColorPicker` ใต้มุมมอง `Text` การทำเช่นนี้จะเปลี่ยนคุณสมบัติสถานะ `color` เมื่อมีการเลือกสีใหม่";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddColorPicker..Page167..Paragraph316" = "ลองทำสิ่งนี้ด้วยตัวคุณเอง และใช้วิธีแก้ปัญหาหากคุณไปต่อไม่ได้";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddColorPicker..Page168..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddColorPicker..Page168..CodeBlock62" = "ColorPicker(\"Choose a Color\", selection: $color)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddSliderShadowRadius..title" = "เพิ่ม `Slider` ที่ควบคุมรัศมีของเงา";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddSliderShadowRadius..Page169..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddSliderShadowRadius..Page169..Paragraph317" = "ด้านล่าง `ColorPicker` ให้เพิ่ม `Slider` ที่ควบคุมค่า `shadowRadius`";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddSliderShadowRadius..Page169..Paragraph318" = "ลองทำสิ่งนี้ด้วยตัวคุณเอง และใช้วิธีแก้ปัญหาหากคุณไปต่อไม่ได้";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddSliderShadowRadius..Page170..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddSliderShadowRadius..Page170..CodeBlock63" = "HStack { \n    Text(\"Shadow\")\n    Slider(value: $shadowRadius)\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..title" = "เพิ่ม `Button` ที่เปลี่ยนขนาดของสิ่งมีชีวิต";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page171..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page171..Paragraph319" = "ด้านล่าง `Slider` ให้เพิ่ม `Button` ที่ผู้คนสามารถใช้เพื่อปรับขนาดมุมมอง `Text` ให้ใหญ่ขึ้นและเล็กลงได้:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page171..OrderedList19..Paragraph320" = "สร้าง[คุณสมบัติสถานะ](glossary://state%20property)ใหม่ที่ติดตามค่า `Boolean` เหมือนกับที่คุณทำใน `ConditionalCircle`";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page171..OrderedList19..Paragraph321" = "เพิ่มปุ่มปรับค่าใหม่ [.scaleEffect](doc://com.apple.documentation/documentation/swiftui/view/scaleeffect(_:anchor:)-pmi7) พร้อมกับ[ตัวดำเนินการเงื่อนไขแบบสามส่วน](glossary://ternary%20conditional%20operator) เพื่อกำหนดขนาดเมื่อบูลีนเป็น `true` และเมื่อเป็น `false`";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page171..OrderedList19..Paragraph322" = "เปลี่ยน[การปิด](glossary://closure)การทำงาน `Button` ของคุณให้สลับค่าบูลีนระหว่างสถานะ `true` และ `false`";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page172..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page172..Paragraph323" = "ลองทำงานนี้ให้เสร็จโดยย้อนกลับไปดูโค้ดใน `ConditionalCircle` ถ้าคุณต้องการความช่วยเหลือ ให้ดูคำใบ้ต่อไปนี้:";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page173..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page173..Paragraph324" = "สร้าง[คุณสมบัติสถานะ](glossary://state%20property)ภายนอก[เนื้อหา](glossary://body)ของมุมมองที่ติดตามค่าบูลีน";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page173..CodeBlock64" = "@State var isScaled = false\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page174..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page174..Paragraph325" = "เพิ่มปุ่มปรับค่า `.scaleEffect` ไปยังมุมมอง `Text` ที่ควบคุมขนาดโดยใช้[ตัวดำเนินการเงื่อนไขแบบสามส่วน](glossary://ternary%20conditional%20operator)";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page174..CodeBlock65" = ".scaleEffect(isScaled ? 1.5 : 1)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page175..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page175..Paragraph326" = "เพิ่ม `Button` และตั้งค่าการทำงานให้เรียกใช้ `isScaled.toggle()`";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page175..CodeBlock66" = "Button(\"Scale\") { \n    isScaled.toggle()\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskanimateChangesIsScaled..title" = "ทำให้การเปลี่ยนแปลงไปยัง `isScaled` เคลื่อนไหวได้";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskanimateChangesIsScaled..Page176..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskanimateChangesIsScaled..Page176..Paragraph327" = "เอฟเฟ็กต์รูปแบบขนาดนี้ไม่น่าสนใจสักเท่าไหร่ จะดีกว่าไหมหากเอฟเฟ็กต์เคลื่อนไหวได้";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskanimateChangesIsScaled..Page176..Paragraph328" = "ใช้ปุ่มปรับค่า `.animation(_:value:)` เพื่อทำให้การเปลี่ยนแปลงใดๆ ที่ทำกับตัวแปร `isScaled` เคลื่อนไหวได้ ลองใช้ภาพเคลื่อนไหว `.spring(response:dampingFraction:blendDuration:)` แล้วส่งผ่านค่า `0.5` สำหรับแต่ละพารามิเตอร์";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskanimateChangesIsScaled..Page177..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskanimateChangesIsScaled..Page177..CodeBlock67" = ".animation(.spring(response: 0.5, dampingFraction: 0.5, blendDuration: 0.5), value: isScaled)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskuseIsScaledRotateView..title" = "ใช้ `isScaled` เพื่อหมุนมุมมองของคุณ";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskuseIsScaledRotateView..Page178..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskuseIsScaledRotateView..Page178..Paragraph329" = "ในการเพิ่มลูกเล่นสุดท้ายเล็กน้อย ให้สร้างค่าเงื่อนไขในพารามิเตอร์ `angle` ของปุ่มปรับค่า `.rotation3DEffect` จากนั้นตั้งค่าให้เป็น`Angle(degrees: 0)` หาก `isScaled` เป็น `true` หรือ `Angle(degrees: 360)` หากเป็น `false`";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskuseIsScaledRotateView..Page178..Paragraph330" = "คุณจะใช้[ตัวดำเนินการเงื่อนไขแบบสามส่วน](glossary://ternary%20conditional%20operator)เพื่อทำสิ่งนี้";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskuseIsScaledRotateView..Page179..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskuseIsScaledRotateView..Page179..CodeBlock68" = ".rotation3DEffect(isScaled ? Angle(degrees: 0) : Angle(degrees: 360), axis: (x: 5, y: 2, z: 1))\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcustomizeCreature..title" = "กำหนดมุมมอง `CreatureDetail` ของคุณ";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcustomizeCreature..Page180..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcustomizeCreature..Page180..Paragraph331" = "ตอนนี้เมื่อคุณเข้าใจการกำหนดมุมมองเองด้วย[การโต้ตอบของผู้ใช้](glossary://user%20interaction)แล้ว ให้ลองเพิ่ม[มุมมองในตัว](glossary://built-in%20view)อีกหนึ่งมุมมองเพื่อให้ผู้คนสามารถแก้ไขมุมมอง `Text` ได้";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcustomizeCreature..Page180..Paragraph332" = "คุณอาจใช้ `Slider` เพื่อเปลี่ยนแปลงความกว้าง ความสูง ความเบลอ ความต่างระดับสี หรือความอิ่มตัวของมุมมอง, `Button` เพื่อเปิดใช้งาน `RotationEffect` หรือเอฟเฟ็กต์อื่นๆ ที่คุณคิดออก ลองดัดแปลงสิ่งต่างๆ เพื่อดูว่าคุณสามารถสร้างเอฟเฟ็กต์ใดได้บ้าง";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..SuccessMessage..Paragraph333" = "เจ๋งมาก!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..SuccessMessage..Paragraph334" = "คุณได้สร้างแอปที่สมบูรณ์ซึ่งคุณสามารถดู เพิ่ม ลบ เต้นรำ และแก้ไขสิ่งมีชีวิตได้ ดีใจกับตัวเองหน่อยเพราะนี่ไม่ใช่ความสำเร็จเล็กๆ เลย";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..SuccessMessage..Paragraph335" = "คุณได้ทำตามคู่มือสอนใช้งานนี้เสร็จแล้ว แต่คุณเพิ่งเริ่มต้นเส้นทางการสร้างแอปของคุณเท่านั้น ยิ่งคุณได้ลองปรับใช้แนวคิดที่คุณเรียนรู้มามากขึ้น คุณจะยิ่งจดจำแนวคิดเหล่านั้นได้มากขึ้น และคุณจะสามารถสร้างแอปได้มากขึ้น ในการทดลองต่อไป คุณสามารถลองใช้ทุกอย่างที่คุณได้เรียนรู้ในคู่มือสอนใช้งานนี้เพื่อเขียนตัวอย่างของคุณเองได้ โชคดีนะ!";
+
+/* Title of step named Create on Your Own */
+"GuideBook..Guide0..StepCreate on Your Own..title" = "สร้างด้วยตัวคุณเอง";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..LearningCenterContent..Paragraph336" = "![](CreateYourOwnCopy.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..LearningCenterContent..Paragraph337" = "ตอนนี้เมื่อคุณได้เรียนรู้เกี่ยวกับสถานะและลำดับข้อมูลแล้ว ก็ถึงเวลาที่คุณจะปลดปล่อยความคิดสร้างสรรค์ของคุณเพื่อสร้างมุมมองใหม่ที่ใช้ข้อมูลสิ่งมีชีวิตของคุณ";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..LearningCenterContent..Paragraph338" = "เมื่อคุณทำการทดลองในส่วนนี้เสร็จแล้ว ให้ลองสร้างโปรเจ็กต์ของคุณเองตั้งแต่ต้นโดยใช้แนวคิดเดียวกันกับที่คุณได้เรียนรู้ในคู่มือสอนใช้งานนี้";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateYourOwn..title" = "สร้างมุมมองของคุณเอง";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateYourOwn..Page181..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateYourOwn..Page181..Paragraph339" = "สิ่งที่ควรลอง:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateYourOwn..Page181..UnorderedList0..Paragraph340" = "สร้างมุมมองใหม่ที่ใช้อาร์เรย์ `creatures` ของคุณและลิงก์ไปที่มุมมองนั้นเป็นปลายทางใน `ContentView`";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateYourOwn..Page181..UnorderedList0..Paragraph341" = "เพิ่ม[ค่าที่เผยแพร่](glossary://published%20value)ค่าใหม่ไปยัง `CreatureZoo` และใช้ในมุมมองที่มีอยู่แล้วของคุณอย่างน้อยหนึ่งมุมมอง";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateYourOwn..Page181..UnorderedList0..Paragraph342" = "ใส่คุณสมบัติ `description` ให้กับสิ่งมีชีวิตแต่ละตัว แล้วสร้างมุมมองใหม่ที่แสดงคำอธิบาย ชื่อ และภาพของสิ่งมีชีวิตเหล่านั้นในเค้าโครงที่น่าสนใจ";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateNewApp..title" = "สร้างแอปของคุณเอง";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateNewApp..Page182..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateNewApp..Page182..Paragraph343" = "คิดและสร้างโปรเจ็กต์ใหม่ทั้งหมดโดยใช้ SwiftUI ใช้งาน `NavigationStack` ของคุณเองเพื่อย้ายไปมาระหว่างมุมมอง, ใช้[คุณสมบัติสถานะ](glossary://state%20property)เพื่อเปลี่ยนรูปแบบของมุมมองภายใน, ใช้มุมมอง SwiftUI ในตัวและ[การรวม](glossary://binding)เพื่ออนุญาตการโต้ตอบของผู้ใช้, และใช้[วัตถุที่สังเกตเห็นได้](glossary://observable%20object)ที่ส่งผ่านไปยังสภาพแวดล้อมแอปเพื่อแชร์ข้อมูลกับหลายมุมมอง ถ้าคุณไปต่อไม่ได้ ให้กลับมาที่โปรเจ็กต์นี้แล้วดูตัวอย่างโค้ดเพื่อแก้บั๊กใดๆ ที่คุณพบ โชคดีนะ คุณทำได้อยู่แล้ว!";
+

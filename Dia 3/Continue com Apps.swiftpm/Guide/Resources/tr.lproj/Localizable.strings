@@ -1,0 +1,2013 @@
+/* Title of Guidebook */
+"GuideBook..title" = "Uygulamalara Devam";
+
+/* The title of the intro for this section of the guide */
+"GuideBook..IntroKeep Going with Apps..title" = "Uygulamalara Devam";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..IntroKeep Going with Apps..Paragraph0" = "Uygulamaları Kullanmaya Başlama’da, basit bir kullanıcı arayüzü yaratmak için SwiftUI [görüntülerini](glossary://view) nasıl kullanacağını öğrendin. SwiftUI’da [görüntüler](glossary://view), daha karmaşık [oluşturulmuş görüntüleri](glossary://composed%view) bir araya getirmek için birbirinin içine yerleştirebileceğin [kullanıcı arayüzü](glossary://user%20interface) yapı taşlarıdır.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..IntroKeep Going with Apps..Paragraph1" = "Burada, SwiftUI\'daki [durum](glossary://state) ve [veri akışı](glossary://data%20flow) hakkında bilgi edineceksin. Veri akışı, uygulamandaki değerlerin hareketi ve SwiftUI’ın bu değerlerdeki değişiklikleri yansıtmak üzere kullanıcı arayüzünü güncelleme şeklidir. Daha da önemlisi, uygulama verilerini onu görüntüleyen görüntülerden nasıl [ayıracağını](glossary://data%20separation) ve bu ayırmanın neden yararlı olduğunu öğreneceksin.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..IntroKeep Going with Apps..Paragraph2" = "Bu öğreticinin sonunda kişilerin içinde emoji yaratıkları ekleyebileceği, silebileceği ve değiştirebileceği tam işlevli bir SwiftUI uygulaması yaratacaksın. Kullanmaya başla, kısa sürede bir uygulama yaratmış olacaksın.";
+
+/* Title of step named Modifying State */
+"GuideBook..Guide0..StepModifying State..title" = "Durumu Değiştirme";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..LearningCenterContent..Paragraph3" = "![](ModifyingState.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..LearningCenterContent..Paragraph4" = "Kodlamada, [durum](glossary://state) terimi bir değişkenin şu anki değerine referans verir. [Durum değişikliği](glossary://state%20change), uygulamanda bir veya daha fazla değişkenin değerinin değişmesidir.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..LearningCenterContent..Paragraph5" = "SwiftUI\'ın büyük bir avantajı da uygulamanın [durumu değiştiğinde](glossary://state%20change) görüntülerinin görünüşlerini güncelleyebilmesidir.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..LearningCenterContent..Paragraph6" = "Kullanıcı arayüzünü [Boole](glossary://Boolean) veya bir [Dizgi](glossary://String) değerleri dizisi gibi uygulama verilerine bağladığında, SwiftUI, her değiştiğinde veriyi kullanan görüntüleri güncelleyerek bu veriyi [gözlemleyebilir](glossary://observe). Bu, kullanıcı arayüzüne özellikle nasıl veya ne zaman güncelleyeceğini söyleyen kodu hiçbir zaman yazman gerekmeyeceği anlamına gelir.";
+
+/* Title for task */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..title" = "Görüntüyü güncellemek için durum özelliği kullanma";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page0..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page0..Paragraph7" = "Bu örnekte, [durum değişikliği](glossary://state%20change) olduğunda SwiftUI görüntünün görünüşünü günceller.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page0..Paragraph8" = "Önizlemede düğmeye dokun. Bu, `isOn` [özelliğinin](glossary://property) değerini `true` ve `false` [durumları](glossary://state) arasında değiştirir ve `Circle` görüntüsünün görünmesine, kaybolmasına ve yeniden görünmesine neden olur.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page1..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page1..Paragraph9" = "Bir görüntünün görünüşünü değiştirmek istediğinde öncelikle [durumunu](glossary://state) izlemek için bazı verilere ihtiyacın olacak. Bu verileri görüntünün bir [özelliği](glossary://property) olarak saklarsın.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page1..Paragraph10" = "Görüntündeki verileri [kullanıcı arayüzünün](glossary://user%20interface) nasıl görünmesi gerektiğini belirleyen [gerçeklik kaynağı](glossary://source%20of%20truth) olarak düşün. Görüntüyü doğrudan değiştirmek yerine veriyi değiştir, SwiftUI senin için görüntüyü günceller. Burada, verilerin görüntünün gösteriliyor (`true`) veya gizleniyor (`false`) olduğunu belirleyen bir [Boole](glossary://Boolean) değeridir.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page2..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page2..Paragraph11" = "Önemli: Verilerini her zaman görüntü [gövdesinin](glossary://body) dışında yarat. Gövdeyi (`body`), yalnızca görüntülerinin nasıl görüneceğini bildirmek için kullanılan bir ❌ veri yaratılamaz bölgesi olarak düşün. Bu, uygulama yaratmanın [veri ayırma](glossary://data%20separation) olarak bilinen temel prensibidir.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page3..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page3..Paragraph12" = "SwiftUI’ın görüntülerini otomatik olarak güncellemesine izin vermek için görüntü [özelliklerinden](glossary://property) hangilerini senin için yönetmesi ve izlemesi gerektiğini ona söylemen gerekir.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page3..Paragraph13" = "Bunu yapmak için özellik tanımından önce [özellik sarmalayıcı](glossary://property%20wrapper) adı verilen özel bir söz dizimi ekle. `isOn`\'dan önce `@State` özellik sarmalayıcısını eklemek, onu bir [durum özelliğine](glossary://state%20property) dönüştürür. SwiftUI bu değeri yönetir ve [durumu](glossary://state) her değiştiğinde görüntünün etkilenen bölümlerini günceller.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page4..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page4..Paragraph14" = "Peki, `isOn`\'un [durumunu](glossary://state) nasıl değiştirebilirsin? Yaygın bir yol, kişinin bir düğmeye (`Button`) dokunmasında olduğu gibi [kullanıcı etkileşimi](glossary://user%20interaction) aracılığıyladır.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page4..Paragraph15" = "Bir düğme (`Button`) yaratmak için “Bas” gibi bir metin [etiketi](glossary://label) ve düğmeye dokunduğunda çalışan bir kod öbeği olan bir eylem [kapaması](glossary://closure) geçir.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page5..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page5..Paragraph16" = "Bir kişi düğmeye dokunduğunda eylem [kapaması](glossary://closure), `toggle()` metodunu kullanarak `isOn` değerini değiştirir.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page5..Paragraph17" = "`toggle()`, değer `false` ise onu `true` olarak, `true` ise `false` olarak değiştirir (bir elektrik düğmesini açıp kapatmak gibi).";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page6..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page6..Paragraph18" = "Bu `if` ifadesi `isOn`’u `true` olduğunda kapalı görüntüyü göstermek, `false` olduğunda ise gizlemek için koşul olarak kullanır.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page6..Paragraph19" = "Bu, `isOn` verilerinin görüntüye bağlanma şeklidir. Güncel [durumu](glossary://state) kullanıcı arayüzünün nasıl görüneceğini belirler.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page7..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page7..Paragraph20" = "Önizlemede düğmeye dokunduğunda `if` ifadesindeki daire görüntüsü gösterilir veya gizlenir.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page7..Paragraph21" = "Dairenin rengini değiştirmeyi ve düğmeye yeniden dokunmayı dene. `isOn`’un ilk değerini `true` olarak değiştirmeyi dene. Her durumda ne değişiklikler fark ettin?";
+
+/* Title for task */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..title" = "Farklı bir renk dairesini gösteren bir `else` ifadesi ekleme";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page8..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page8..Paragraph22" = "Bir dakika dur ve düğmeye dokunmanın görüntüyü nasıl güncelleyeceğini düşün. Düğmeye (`Button`) dokunduğunda, `isOn`’un [durumunu](glossary://state) değiştirirsin. SwiftUI bu değişikliği [gözlemler](glossary://observe) ve yeni değeri kullanarak görüntüyü günceller. Görüntünün [gövdesinde](glossary://body) `isOn` `true` ise görüntüyü göstermek, `false` ise gizlemek için bir `if` ifadesi kullanırsın.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page9..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page9..Paragraph23" = "`isOn` `false` olduğunda hiçbir görüntü göstermemek yerine özel bir görüntü gösterebilirsin.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page9..Paragraph24" = "`if` ifadesinden sonra farklı bir renge ait bir `Circle` gösteren `else` ifadesi ekle.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page10..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page10..Paragraph25" = "Aşağıdaki söz dizimini kullanarak bir `else` ifadesi ekle, ardından bir `Circle` görüntüsü ekle ve rengini belirt.";
+
+/*  */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page10..CodeBlock0" = "else { \n\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page11..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page11..CodeBlock1" = "else { \n   Circle()\n       .frame(maxHeight: 200)\n       .foregroundColor(.black)\n   //#-learning-code-snippet(addOffText)\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..title" = "Açık ve kapalı görüntülere ayrıntı ekleme";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page12..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page12..Paragraph26" = "Artık iki görüntün olduğuna göre, bunları hangi görüntünün “açık”, hangisinin “kapalı” olduğunu netleştirmek üzere özelleştir.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page12..Paragraph27" = "Her bir görüntüyü etiketlemek için bir `Text` görüntüsünü kullanmayı dene. İlk görüntüyü “Açık” olarak etiketle.";
+
+/*  */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page12..CodeBlock2" = "Text(\"Açık\")\n";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page13..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page13..Paragraph28" = "İkinci görüntüyü “Kapalı” olarak etiketle.";
+
+/*  */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page13..CodeBlock3" = "Text(\"Kapalı\")\n";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page14..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page14..Paragraph29" = "Son olarak, her görüntüyü `Rectangle` veya `Capsule` gibi farklı bir şekilde yap.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page15..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page15..CodeBlock4" = "if isOn {\n      Circle()\n          .frame(maxHeight: 200)\n          .foregroundColor(.mint)\n\n      Text(\"Açık\")\n} else {\n      Rectangle()\n          .frame(maxHeight: 200)\n          .foregroundColor(.gray)\n\n      Text(\"Kapalı\")\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..title" = "Yeni bir koşullu görüntü ekleme";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page16..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page16..Paragraph30" = "Şimdi, kendi kendine tamamen yeni bir koşullu görüntü eklemeyi dene:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page16..OrderedList0..Paragraph31" = "[Gövdenin](glossary://body) dışına bir [durum özelliği](glossary://state%20value) ekle ve ona ilk Boole değerini ver.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page16..OrderedList0..Paragraph32" = "Durum özelliğinin değeri `true` ise bir görüntü, `false` ise başka bir görüntü gösteren bir [if ifadesi](glossary://if%20statement) yarat.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page16..OrderedList0..Paragraph33" = "Yeni bir `Button` yarat ve buna her bastığında durum özelliğini aç/kapat.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page16..Paragraph34" = "Koşullu görüntün beklediğin gibi çalışıyor mu?";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page17..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page17..Paragraph35" = "Devam etmeden önce koşullu görüntü kodunun nasıl çalıştığını olabildiğince ayrıntılı olarak açıklamak için [plastik ördek metodunu](glossary://rubber%20ducky%20method) kullan. Durum özelliği ne yapar? Görüntün ne zaman güncelleneceğini nasıl bilir? Bir şeyi anımsayamazsan geri dön ve bilginin nerede eksik olduğunu anlamaya çalış. Plastik ördeğin sana teşekkür edecek!";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepModifying State..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..SuccessMessage..Paragraph36" = "Yaşasın!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..SuccessMessage..Paragraph37" = "Bir SwiftUI görüntüsünün görünüşünü güncellemek için [durum özelliğini](glossary://state%20value) nasıl kullanacağını artık biliyorsun. Bu durum özelliği, görüntünün kullanıcı arayüzünü bildirdiğin görüntü [gövdesinin](glossary://body) dışında saklanır.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..SuccessMessage..Paragraph38" = "Bu, SwiftUI’da uygulama kodlamanın temel prensibidir; uygulama verilerini her zaman onları görüntüleyen kullanıcı arayüzünden ayrı tut. Bunu yapmak, tek bir [gerçeklik kaynağını](glossary://source%20of%20truth) korumana izin verir ve kullanıcı arayüzü kodunu anlaması ve yönetmesi kolay hâlde tutar.";
+
+/* Title of step named Using a Conditional Modifier */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..title" = "Koşullu Niteleyici Kullanma";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..LearningCenterContent..Paragraph39" = "![](UsingAConditionalModifier.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..LearningCenterContent..Paragraph40" = "Önceki örnekte, saklaması SwiftUI tarafından yönetilen bir [durum özelliği](glossary://state%20property) olan `isOn`’u yarattın. `isOn`\'un [durumunu](glossary://state) değiştirerek iki farklı görüntüden birini koşullu olarak gösterebildin.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..LearningCenterContent..Paragraph41" = "Peki ya sadece var olan bir görüntünün görünüşünü (örneğin `Circle` görüntüsünün rengini veya büyüklüğünü) değiştirmek istiyorsan ne olacak? Bunun için, [durum değişiklikleri](glossary://state%20change) olduğunda görüntünün nasıl görüneceğini belirten bazı koşullu kodlar yazman gerekecek.";
+
+/* Title for task */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..title" = "Görüntü niteleyicilerini koşullu olarak değiştirme";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page18..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page18..Paragraph42" = "Önceki görüntü gibi, bu görüntü de `Circle`’ın görünüşünü değiştirmek için bir [durum özelliği](glossary://state%20property) ve bir `Button` kullanır. Ancak, bu kodda bir şey farklı. Neyin değiştiğini anlamak için biraz bekle, bulduğunu düşündüğünde devam et.";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page19..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page19..Paragraph43" = "Nasıl çalıştığını anlayabildin mi?";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page19..Paragraph44" = "`isOn` `true` ya da `false` olduğunda farklı bir görüntü yaratmak yerine, koşullu kod içeren [görüntü niteleyicilerini](glossary://modifier) kullanarak tek bir görüntünün görünüşünü değiştirebilirsin.";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page20..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page20..Paragraph45" = "`.foregroundColor(_:)` niteleyicisinin özel söz dizimi içerdiğine dikkat et. Buna [üçlü koşullu işleç](glossary://ternary%20conditional%20operator) adı verilir, tek kod satırında bir `if-else` ifadesi yaratmanın kısa bir yoludur.";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page21..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page21..Paragraph46" = "Bu kodu şöyle okuyabilirsin: `isOn` `true` ise `.yellow` değerini geçir, değilse `.black` değerini geçir.";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page21..CodeBlock5" = "isOn ? .yellow : black\n";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page21..Paragraph47" = "Daha genel olarak bu şöyle görünür:";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page21..CodeBlock6" = "condition ? trueValue : falseValue\n";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page22..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page22..Paragraph48" = "Dairenin rengini `isOn` `true` olduğunda `.purple` olarak, `false` olduğunda ise `.mint` gibi daha açık bir yeşil tonu olarak değiştir.";
+
+/* Title for task */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..title" = "Her durumda farklı bir gölge rengi gösteren bir `shadow(color:radius:)` niteleyicisi ekleme";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page23..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page23..Paragraph49" = "Tıpkı `ConditionalViews` örneğinde olduğu gibi, SwiftUI `isOn` [durum özelliğini](glossary://state%20property) [gözlemler](glossary://observe). `isOn` değeri değiştiğinde, SwiftUI `Circle` görüntüsünü `.foregroundColor(_:)` niteleyicisinin yeni değeriyle günceller.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page23..Paragraph50" = "Sonra, görüntünün gölgesini değiştirmek için `isOn` değerini kullanan başka bir niteleyici (`.shadow(color:radius:)`) eklemeyi dene.";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page24..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page24..Paragraph51" = "Öncelikle, `.shadow(color:radius:)` niteleyicisini `Circle`’a ekle.";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page24..CodeBlock7" = ".shadow(color: <#T##Color#>, radius: 20)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page25..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page25..Paragraph52" = "Niteleyicinin `color` parametresi için `isOn`\'un [durumuna](glossary://state) bağlı olarak gölgenin rengini değiştirmek üzere [üçlü koşullu işleci](glossary://ternary%20conditional%20operator) kullanın.";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page26..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page26..Paragraph53" = "Üçlü işleç söz dizimi şöyle görünür:";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page26..CodeBlock8" = "isOn ? .indigo : .orange\n";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page26..Paragraph54" = "Bu kod parçacığı şöyle okunabilir: `isOn` `true` ise `.indigo` değerini kullan; aksi takdirde, `.orange` değerini kullan.";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page27..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page27..CodeBlock9" = ".shadow(color: isOn ? .indigo : .orange, radius: 20)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..title" = "Düğmeye dokunulduğunda dairenin ölçeğini değiştirme";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page28..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page28..Paragraph55" = "Şimdi kendi kendine deneme zamanı. `isOn`\'un durumuna göre dairenin ölçeğini değiştirmek için bir [üçlü koşullu işlece](glossary://ternary%20conditional%20operator) sahip `.scaleEffect(_:)` niteleyicisini kullanmayı öğrenip öğrenemeyeceğini gör.";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page29..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page29..Paragraph56" = "Öncelikle, daireye `.scaleEffect(_:)` niteleyicisini ekle. Sonra, `isOn` doğruysa (`true`) bir ölçek belirtmek, yanlışsa (`false`) başka bir tane belirtmek için üçlü işleci kullan.";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page29..CodeBlock10" = ".scaleEffect(<#T##s: CGFloat##CGFloat#>)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page30..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page30..CodeBlock11" = ".scaleEffect(isOn ? 1 : 0.75)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..title" = "Durum değişikliklerini canlandırma";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page31..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page31..Paragraph57" = "Tıpkı görüntülerini otomatik olarak güncellemeyi bildiği gibi, SwiftUI değiştirdiğin değerlere bağlı olarak görüntülerindeki değişikliklerini canlandırmayı da bilir.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page31..Paragraph58" = "Bunu yapmak için canlandırmak istediğin görüntüye bir `.animation(_:value:)` niteleyicisi iliştir ve değişiklikleri izlemek için bir değerin yanı sıra bir `Animation` seç.";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page32..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page32..Paragraph59" = "Örneğin, `isOn` değerindeki tüm değişiklikleri canlandırmak için saptanmış bir canlandırma kullanabilirsin.";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page32..CodeBlock12" = ".animation(.default, value: isOn)\n";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page32..Paragraph60" = "`isOn` değiştiğinde bu değer tarafından denetlenen görüntü değişiklikleri canlandırılacaktır. Görüntünün gölgesini, rengini ve ölçeğini belirlemek için `isOn` kullandığından değer değiştiğinde bu özelliklerin tamamı yeni durumlarına canlandırılır.";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page33..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page33..CodeBlock13" = ".animation(.default, value: isOn)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page34..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page34..Paragraph61" = "Saptanmış canlandırmayı farklı bir şeyle değiştirmeyi dene . `.default` sana `.easeInOut` canlandırmasını verir, ancak canlandırmanın nasıl değişeceğini görmek için bunu `.spring(response:dampingFraction:blendDuration:)` veya `.linear(duration:)` ile değiştirebilirsin.";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..SuccessMessage..Paragraph62" = "Harika iş!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..SuccessMessage..Paragraph63" = "Bir görüntünün görünüşünü değiştirmek için [durum özelliğini](glossary://state%20property) nasıl kullanacağını ve bu değişiklikleri `.animation(_:value:)` niteleyicisini kullanarak nasıl canlandıracağını artık biliyorsun.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..SuccessMessage..Paragraph64" = "Sonra, kullanıcı arayüzünde farklı türlerde durum değişiklikleri yaratmak için SwiftUI [yerleşik görüntülerini](glossary://built-in%20view) ve [bağlamalarını](glossary://binding) nasıl kullanacağını öğreneceksin.";
+
+/* Title of step named SwiftUI Built-in Views */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..title" = "SwiftUI Yerleşik Görüntüleri";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..LearningCenterContent..Paragraph65" = "![](SwiftUIBuilt-inViews.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..LearningCenterContent..Paragraph66" = "SwiftUI, bir kişinin uygulama verilerinin durumunu onlarla [etkileşim kurarak](glossary://user%20interaction) değiştirmesini sağlayan sürgüler, açma/kapatmalar ve seçiciler gibi pek çok [yerleşik görüntü](glossary://built-in%20view) sunar.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..LearningCenterContent..Paragraph67" = "Bu yerleşik görüntülerin, verileri başka bir görüntüyle paylaşmak için [bağlama](glossary://binding) adı verilen özel bir yolu vardır.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..LearningCenterContent..Paragraph68" = "Uygulamanın verilerini ve dolayısıyla uygulamanın kullanıcı arayüzünü değiştirmek için bağlama değerleri ile bu yerleşik görüntüleri kullanabilirsin.";
+
+/* Title for task */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..title" = "Bağlama kullanma";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page35..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page35..Paragraph69" = "Şimdiye kadar, kullanıcı arayüzünü [yerel olarak](glossary://local%20scope) ya da aynı görüntü içinde değiştirmek için bir durum özelliği kullandın. Bunun bir örneği, `ConditionalCircle`\'da bir [durum özelliği](glossary://state%20property) tanımlamak ve bunu `ConditionalCircle` [gövdesinde](glossary://body) bir görüntünün görünüşünü değiştirmek için kullanmaktır.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page36..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page36..Paragraph70" = "Peki ya bir [alt görüntünün](glossary://subview) bu veriyi değiştirmesine izin vermek istiyorsan ne olacak? Örneğin, [yerel](glossary://local%20scope) görüntün kişi bilgilerini saklıyorsa, alt görüntü kişinin telefon numarasını değiştirmen için özel bir [etkileşim](glossary://user%20interaction) sağlayabilir. Birden fazla [gerçeklik kaynağı](glossary://source%20of%20truth) yaratmadan alt görüntünün veriyi değiştirmesine nasıl izin verebilirsin?";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page37..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page37..Paragraph71" = "İki görüntü arasında veri değişikliklerini iletmenin anahtarına [bağlama](glossary://binding) adı verilir. Bağlama, tek bir gerçeklik kaynağı tutmanı sağlar ancak bir [alt görüntünün](glossary://subview) bu değeri uzaktan değiştirmesine izin verir. [Durum özelliği](glossary://state%20property) gibi bir gerçeklik kaynağı ikinci bir görüntüye bağlandığından ve ikinci görüntü verileri her değiştirdiğinde gerçeklik kaynağı güncellendiğinden buna bağlama adı verilir.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page38..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page38..Paragraph72" = "Önizlemede `Toggle`’a dokunmayı dene.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page38..Paragraph73" = "Açma/kapatmaya dokunduğunda hem `Image` hem de `Toggle` görüntüsünün görünüşünü değiştirdiğine dikkat et. `Toggle`, [gerçeklik kaynağını](glossary://source%20of%20truth) uzaktan değiştirebilir ve böylece kendisi ve `Image` görüntüsü iki ayrı görüntü olmalarına rağmen aynı değeri paylaşabilir.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page39..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page39..Paragraph74" = "Bu, `Bindings` görüntüsünde [yerel olarak](glossary://local%20scope) sakladığın bir [durum özelliği](glossary://state%20property) olan gerçeklik kaynağındır. Bir bağlamanın gerçeklik kaynağı, `@State` [özellik sarmalayıcısını](glossary://property%20wrapper) ona ekleyerek değeri SwiftUI tarafından yönetilen olmalıdır.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page40..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page40..Paragraph75" = "Bu, yerleşik `Toggle` görüntüsüdür. `Toggle`, `isOn` parametresi için bir [bağlama](glossary://binding) Boole değerini kabul eder. Bu, açma/kapatma görüntüsünün bazı [kullanıcı etkileşimlerine](glossary://user%20interaction) (bir kişinin bir düğmeye dokunarak açıp kapatması gibi) bağlı olarak `Boolean` değerini değiştirmeyi bildiği ve tüm durum değişikliklerini yerel [gerçeklik kaynağın](glossary://source%20of%20truth) olan `isOn`\'a ilettiği anlamına gelir.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page41..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page41..Paragraph76" = "Bir bağlamayı geçirmek için önünde bir `$` olan ve SwiftUI tarafından yönetilen [durum özelliğini](glossary://state%20property) kullan. `Toggle`, değeri uzaktan her değiştirdiğinde [bağlamanın](glossary://binding) `isOn` gerçeklik kaynağını değiştireceğini belirtmek için `$isOn`’u geçir.";
+
+/* Title for task */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..title" = "`Color` tipinde yeni bir durum özelliği ekleme";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page42..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page42..Paragraph77" = "Sonra, pil `Image` görüntüsünün rengini değiştirmek için bir [bağlama](glossary://binding) ile birlikte yerleşik bir `ColorPicker` görüntüsü kullanmayı dene.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page42..Paragraph78" = "Bunu yapmak için öncelikle bir `Color` değeri için gerçeklik kaynağın olarak görev yapacak bir [durum özelliği](glossary://state%20property) yarat. Ona `Color.primary` ilk değerini ver.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page42..Paragraph79" = "Bunu kendi başına dene, sıkışırsan aşağıdaki ipuçlarını kullan.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page43..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page43..Paragraph80" = "`@State` [özellik sarmalayıcı](glossary://property%20wrapper) ile bir [özellik](glossary://property) tanımla ve ona `Color.primary` ilk değerini [ata](glossary://assignment).";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page44..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page44..CodeBlock14" = "@State var color = Color.primary\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..title" = "`ColorPicker` yaratma ve bağlama değerini geçirme";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page45..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page45..Paragraph81" = "`Toggle` görüntünün altında, aşağıdaki ilk değer atayıcıyı kullanarak bir `ColorPicker` yarat. `Toggle`’ı örnek olarak kullanarak argümanları kendin ekle.";
+
+/*  */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page45..CodeBlock15" = "ColorPicker(<#T##title: StringProtocol##StringProtocol#>, selection: <#T##Binding<CGColor>#>)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page46..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page46..OrderedList1..Paragraph82" = "Başlık için “Bir Renk Seç” gibi bir `String` geçir.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page46..OrderedList1..Paragraph83" = "Renk [durum özelliğinden](glossary://state%20property) önce bir `$` ekleyerek bağlama değerini `selection`\'a geçir.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page46..Paragraph84" = "Uygulamandaki `Bindings` görüntüsünü test etmek istersen onu geçici olarak `ContentView`’a ekle.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page47..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page47..CodeBlock16" = "ColorPicker(\"Bir Renk Seç\", selection: $color) \n";
+
+/* Title for task */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..title" = "`Image` rengini renk durum özelliğin olarak ayarlama";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page48..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page48..OrderedList2..Paragraph85" = "Önizlemede `ColorPicker`\'dan bir renk seçmeyi dene. Seçici renginin değiştiğini, ancak kullanıcı arayüzünde başka hiçbir şeyin değişmediğini fark edeceksin. Bunun nedeni, durum özelliğinin başka herhangi bir [yerel](glossary://local%20scope) görüntüye bağlı olmamasıdır.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page48..OrderedList2..Paragraph86" = "Şimdi, seçicideki rengi güncellemek için resim görüntüsünün rengini değiştir.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page49..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page49..Paragraph87" = "`Image` görüntüsünün rengini değiştirmek için bir `.foregroundColor(_:)` niteleyicisi ekle ve renk için durum özelliğini bir argüman olarak geçir.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page50..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page50..CodeBlock17" = ".foregroundColor(color)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page51..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page51..Paragraph88" = "Şimdi, renk seçiciden bir renk seç. Resminizin (`Image`) de rengi değişti mi?";
+
+/* Title for task */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..title" = "Yeni bir renk seçtiğinde rengi değişen bir `Text` görüntüsü yaratma";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..Page52..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..Page52..Paragraph89" = "Renk seçiciden yeni bir renk seçtiğinde renk değiştiren bir `Text` görüntüsü ekle. Tıpkı görüntü için olduğu gibi bunu yapmak için de `.foregroundColor(_:)` niteleyicisini kullanabilirsin.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..Page52..Paragraph90" = "[.font](doc://com.apple.documentation/documentation/swiftui/font) niteleyicisini kullanarak ve `.largeTitle`’ı geçirerek `Text` görüntüsü için daha büyük bir font seç.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..Page53..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..Page53..Paragraph91" = "Bir görüntü ile onun etrafındaki tüm görüntülerin arasında sabit bir boşluk yaratmak için görüntülerine `.padding()` ekle. Görüntüler arasındaki kullanılabilir alanı doldurmak için değişken bir biçimde daralan ve genişleyen görünmez bir görüntü olan `Spacer()` da ekleyebilirsin.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..Page53..Paragraph92" = "[Boşluk](doc://com.apple.documentation/documentation/swiftui/view/padding(_:_:)) ve [aralayıcılar](doc://com.apple.documentation/documentation/swiftui/spacer) görüntünün çeşitli ekran boyutları genelinde iyi görünmesini sağlayan uyarlanabilir görüntü yerleşimleri yaratmana izin verir. Daha fazla bilgi edinmek için [Basit Görüntü Yerleştirme](doc://com.apple.documentation/documentation/swiftui/laying-out-a-simple-view) bölümüne bak.";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..SuccessMessage..Paragraph93" = "Bravo!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..SuccessMessage..Paragraph94" = "Artık, uygulama durumunu değiştirmek üzere özel [etkileşimler](glossary://user%20interaction) yaratmak için bir [bağlamanın](glossary://binding) yanı sıra `ColorPicker` gibi yerleşik bir SwiftUI görüntüsünü nasıl kullanacağını biliyorsun.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..SuccessMessage..Paragraph95" = "[Durum özellikleri](glossary://state%20property) bilginle birlikte, bu, uygulamanın kullanıcı arayüzü görünüşünü değiştiren zengin kullanıcı etkileşimleri yaratmana izin verir.";
+
+/* Title of step named Practice with SwiftUI Built-in Views */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..title" = "SwiftUI Yerleşik Görüntülerini İle Deneme Yapma";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..LearningCenterContent..Paragraph96" = "![](PracticeWithSwiftUIBuilt-inViews.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..LearningCenterContent..Paragraph97" = "Artık durum özelliklerinin, bağlamaların ve yerleşik SwiftUI görüntülerinin temel bilgilerini öğrendiğine göre kendi kendine bazı örnekler oluşturmanın zamanı geldi.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..LearningCenterContent..Paragraph98" = "Öncelikle, `Rectangle`’ın genişliğini denetleyen [durum özelliğini](glossary://state%20property) değiştirmek için bir `Slider` görüntüsü kullanacaksın.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..LearningCenterContent..Paragraph99" = "Sonra, ilginç bir anlatıyla sonuçlanan bazı `String` durum özelliklerinin değerini değiştirmek üzere yerleşik `TextField` görüntülerini kullanarak bir hikâye düzenleyici yaratmayı deneyeceksin.";
+
+/* Title for task */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..title" = "Sürgü yaratma";
+
+/* title for page */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page54..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page54..Paragraph100" = "`Rectangle` görüntüsünün genişliğini değiştirmek için yerleşik `Slider` kullanan bir görüntü yarat. Bunu başarmak için yeni bir [durum özelliği](glossary://state%20property) tanımlaman ve `Slider`’a [bağlama](glossary://binding) olarak geçirmen gerekecek.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page54..Paragraph101" = "Bir görüntünün genişliğini `.frame(width:)` niteleyicisi ile değiştirebilirsin. Not: Bu niteleyici, bir [Double](doc://com.apple.documentation/documentation/swift/double) değerini (sayı değerinin özel bir [tipi](glossary://type)) kabul ediyor; o nedenle durum özelliğini `Double` olarak tanımla.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page54..Paragraph102" = "Bir dakika dur ve bunu kendi başına dene, sıkışırsan aşağıdaki ipuçlarını kullan.";
+
+/* title for page */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page55..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page55..Paragraph103" = "Görüntünün gövdesinin (`body`) üstündeki `Double` tipinin durum özelliğini tanımla. Bu senin yerel [gerçeklik kaynağındır](glossary://source%20of%20truth).";
+
+/*  */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page55..CodeBlock18" = "@State var width : Double = 0\n";
+
+/* title for page */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page56..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page56..Paragraph104" = "`Slider(value:)` ilk değer atayıcısını kullanarak `Slider`\'ını yarat. [Durum özelliğine](glossary://state%20property) bir [bağlama](glossary://binding) geçir.";
+
+/*  */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page56..CodeBlock19" = "Slider(value: $width)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page57..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page57..Paragraph105" = "Bir `Rectangle` yarat ve ona `.frame(width:)` niteleyicisini ekle. Saptanmış sürgü değeri `0` ila `1` aralığında olduğundan değerdeki değişiklikleri fark edebilmen için genişliği daha büyük bir sayıyla çarp.";
+
+/*  */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page57..CodeBlock20" = "Rectangle()\n    .frame(width: width * 300)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..title" = "Hikâye yaratma";
+
+/* title for page */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page58..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page58..Paragraph106" = "İşte denemen için başka bir deney daha:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page58..Paragraph107" = "`String` değerlerini bir kişinin alana yazdığı karakterlere göre değiştirmek için SwiftUI [TextField](doc://com.apple.documentation/documentation/swiftui/textfield) öğesini kullanabilirsin.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page58..OrderedList3..Paragraph108" = "Bir kişinin adı, hobisi ve en sevdiği yiyecek gibi verileri girmesine izin vermek için karşılık gelen `TextField` görüntülerinin yanı sıra birden fazla [durum özelliği](glossary://state%20property) tanımlayarak özelleştirilebilir bir hikâye yarat.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page58..OrderedList3..Paragraph109" = "Metin alanlarının altında, hikâye yaratmak için [dizgiye ara değer eklemeyi](glossary://string%20interpolation) kullanarak tüm değerleri birleştiren bir `Text` görüntüsü yarat. Şunun gibi görünebilir:";
+
+/*  */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page58..CodeBlock21" = "Text(\"Merhaba, adım \\(name), en sevdiğim hobi \\(hobby) ve yemeden duramıyorum \\(favoriteFood)!\")\n";
+
+/* title for page */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page59..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page59..Paragraph110" = "Bonus: Dokunduğunda hikayeyi gösteren bir `Button` veya `Toggle` görüntüsü ekle.";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..SuccessMessage..Paragraph111" = "Başarıyorsun!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..SuccessMessage..Paragraph112" = "Artık durum özelliklerini kullanarak ve bağlamaları kullanarak iki görüntü arasında durum değişikliklerini yerel olarak işleyebilirsin.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..SuccessMessage..Paragraph113" = "Sonra, uygulamanın tüm görüntülerinde kullanabileceğin verileri nasıl yaratacağını öğreneceksin.";
+
+/* Title of step named Navigating in SwiftUI */
+"GuideBook..Guide0..StepNavigating in SwiftUI..title" = "SwiftUI’da Dolaşma";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..LearningCenterContent..Paragraph114" = "![](NavigatingInSwiftUI.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..LearningCenterContent..Paragraph115" = "Tek bir SwiftUI görüntüsü içinde durumu yönetmeyi kavradığına göre, daha büyük düşünmeye başlamanın zamanı geldi.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..LearningCenterContent..Paragraph116" = "Bir uygulama oluşturduğun bazı durumlarda, iki veya daha fazla görüntü genelinde paylaşmak istediğin verilere sahip olacaksın; o nedenle bir [bağlama](glossary://binding) bile bunları işlemeye yeterli olmayacak. Her yeni görüntüde verileri kopyalamayı denememelisin, bunu izlemek çok zor olacaktır ve uygulamanda hatalara neden olabilir. Bunun yerine, uygulamanda birden fazla görüntünün kullanabileceği tek bir [veri modelini](glossary://data%20model) yaratıp yönetmeyi öğreneceksin.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..LearningCenterContent..Paragraph117" = "Ancak bunu nasıl yapacağını görmeden önce birden fazla görüntüye sahip bir uygulama yaratmayı bilmen gerekir. Bunun için bir `NavigationSplitView` veya bir `NavigationStack` kullanarak dolaşma ekleyeceksin.";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..title" = "`NavigationStack` yaratma";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page60..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page60..Paragraph118" = "Farklı görüntülere gitmek için iki farklı türde dolaşma görüntüsünden birine ihtiyacın olacak:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page60..OrderedList4..Paragraph119" = "Bir [NavigationStack](doc://com.apple.documentation/documentation/swiftui/navigationstack), görüntülerini bir kart destesi gibi üst üste düzenler.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page60..OrderedList4..Paragraph120" = "Bir [NavigationSplitView](doc://com.apple.documentation/documentation/swiftui/navigationsplitview), görüntülerini iki veya üç sütun olarak düzenler ve öndeki sütunda öğeleri seçerek sondaki sütunda bir görüntü sunmanı sağlar.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page61..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page61..Paragraph121" = "Bu dolaşma görüntülerinin her biri, birisinin uygulamanda nasıl dolaştığına göre farklı görüntüler sunan bir [kapsayıcı](glossary://container) görevi görür; bunlar yalnızca görüntüleri biraz farklı şekillerde sunar.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page61..Paragraph122" = "Önce, nasıl çalıştığını görmek için bir `NavigationStack` yaratacaksın.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page62..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page62..Paragraph123" = "Öncelikle, içinde bir `List` görüntüsü bulunan bir `NavigationStack` ekle. Bir [Liste](doc://com.apple.documentation/documentation/swiftui/list), kaydırılan düşey sütunda herhangi bir sayıda görüntüyü görüntüler.";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page62..CodeBlock22" = "NavigationStack { \n   List { \n       Text(\"NavigationStack İçeriği”)\n       //#-learning-code-snippet(addNavLink)\n       //#-learning-code-snippet(addSecondNavLink)\n\n   }\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page63..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page63..Paragraph124" = "Önizlemene bak. Listende (`List`) tek bir `Text` görüntüsü dışında pek bir şey görmeyeceksin. Başka bir görüntüye gitmek için `NavigationStack`’inin içinde bir [NavigationLink](glossary://navigation%20link) ekleyeceksin.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page63..Paragraph125" = "Peki seni başka bir görüntüye götürmek için gereken şey bir `NavigationLink` ise neden bir `NavigationStack` yaratma zahmetine girdin? Tıpkı tekerleksiz bir bisikleti süremeyeceğin gibi, bağlantıların bir `NavigationStack`’in veya `NavigationSplitView`’un içinde değilse başka bir görüntüye gidemezsin.";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..title" = "Dolaşma bağlantısı yaratma";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page64..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page64..Paragraph126" = "`NavigationStack`’in ve `NavigationSplitView`’un bir kişinin uygulamanla nasıl etkileşimde bulunduğuna göre farklı içerikler gösterebilir. Dolaşma görüntünün farklı bir görüntü göstermesi için kişinin ayrı bir görüntüye gitmek üzere dokunabileceği bir düğme olan [NavigationLink](glossary://navigation%20link) yarat.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page65..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page65..Paragraph127" = "Bir `NavigationLink` iki şey içermelidir:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page65..OrderedList5..Paragraph128" = "[Hedef görüntüye](glossary://destination%20view) bağlantı.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page65..OrderedList5..Paragraph129" = "Bir [etiket](glossary://label) (düğmenin nasıl görünmesi gerektiği).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page65..Paragraph130" = "Hedef istediğin herhangi bir görüntü, `Text` veya `Image` görüntüsü gibi basit bir şey ya da kendi yarattığın [oluşturulmuş görüntü](glossary://composed%20view) bile olabilir.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page66..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page66..Paragraph131" = "Aşağıdaki kod, [etiket](glossary://label) olarak `Text` görüntüsü ve [hedef](glossary://destination%20view) olarak `Text` görüntüsü ile bir `NavigationLink` yaratır.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page66..Paragraph132" = "Aşağıda `NavigationLink`’i eklemeyi dene ve önizlemede bağlantıya dokun.";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page66..CodeBlock23" = "NavigationLink(“Bana Bas!”) { \n   Text(\"Ben hedef görüntüyüm\")\n       .navigationTitle(\"Hedef\")\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page67..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page67..Paragraph133" = "Bir tane daha dolaşma bağlantısı ekle ve `NavigationStack`’inde farklı görüntülere gitmeyi dene.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page67..Paragraph134" = "Bir `NavigationStack` bir kart destesi gibi davrandığı için yalnızca en üstteki görüntüyü gösterir. Yeni bir görüntüye gidildiğinde görülebilmesi için görüntü yığının en üstüne itilir.";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page67..CodeBlock24" = "NavigationLink(\"Hayır, Bana Bas!\") { \n   Text(\"Ben başka bir hedef görüntüyüm\")\n       .navigationTitle(\"Hedef\")\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..title" = "`NavigationSplitView` ile denemeler yapma";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page68..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page68..Paragraph135" = "Sonra, içerikleri sütun olarak görüntülemek için bir `NavigationSplitView` yaratacaksın.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page68..Paragraph136" = "Öndeki sütun olarak dolaşma bağlantıları görüntüsünü kullanacaksın; bu bağlantılara dokunulduğunda ise sondaki sütunda bazı metinler görüntülenecek.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page69..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page69..Paragraph137" = "Önce `NavigationSplitView`’unu ekle. İki bölüm olduğunu fark edeceksin: İlk bölüm, bölünmüş görüntünün öndeki sütunudur; ikincisi ise sen bağlantılardan birini seçene kadar bazı geçici içerikleri gösteren bir [yer tutucu görüntüdür](glossary://placeholder%20view).";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page69..CodeBlock25" = "NavigationSplitView { \n    //#-learning-code-snippet(listOfLinks)\n\n} detail: { \n    //#-learning-code-snippet(detailView)\n    \n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page70..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page70..Paragraph138" = "Sonra, `NavigationSplitView`’ına bazı bağlantılar ekle.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page70..Paragraph139" = "Önizleme boyutun küçükse görüntünün hâlâ `NavigationStack` gibi göründüğünü fark edebilirsin. Birden fazla sütun görmek için önizlemeyi genişletmeyi dene.";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page70..CodeBlock26" = "List {\n    NavigationLink(\"İlk bağlantı\") {\n        Text(\"😵‍💫\")\n    }\n    NavigationLink(\"İkinci bağlantı\") {\n        Text(\"😵‍\")\n    }\n    //#-learning-code-snippet(addMoreNavLinks)\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page71..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page71..Paragraph140" = "Son olarak, ikinci sütununda bazı başlangıç içerikleri olması için bir [yer tutucu görüntü](glossary://placeholder%20view) ekle.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page71..Paragraph141" = "Önizlemeni genişleterek ve bir bağlantı seçmeden önce yeniden başlatarak bu yer tutucu içerikleri görebilirsin.";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page71..CodeBlock27" = "Text(\"Bir bağlantı seç\")\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..title" = "NavigationLinks ile Denemeler Yapma";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page72..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page72..Paragraph142" = "`NavigationLink`’inin görünüşünü özelleştirmek istiyorsan özel bir [etiket](glossary://label) alan farklı bir [ilk değer atayıcı](glossary://initializer) kullanabilirsin.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page73..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page73..Paragraph143" = "Aşağıdaki kod, `Text` ve `Image` görüntüsüne sahip bir `HStack`’ten oluşan özel bir [etiketle](glossary://label) bir `NavigationLink` yaratır. Hedef içerikte olduğu gibi etiket de istediğin görüntü olabilir!";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page73..CodeBlock28" = "NavigationLink { \n    SlidingRectangle()\n       .navigationTitle(\"Kayan Dikdörtgen\")\n} label: { \n    HStack { \n        Text(\"Gitmek İçin Dokun\")\n        Spacer()\n        Image(systemName: \"arrow.forward.circle\")\n            .font(.largeTitle)\n    }\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page74..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page74..Paragraph144" = "Yeni bir `NavigationLink` eklemeyi, ona bir hedef, etiket ve dolaşma başlığı vermeyi dene. `ConditionalCircle` görüntüsü gibi uygulamadaki diğer görüntülerden birine gitmeyi dene.";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..title" = "Uygulamanın görüntüleri nasıl gösterdiğini anlama";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page75..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page75..Paragraph145" = "Bir `NavigationStack`’in ve `NavigationSplitView`’un içine [dolaşma bağlantıları](glossary://navigation%20link) eklemeyi deneyimlediğine göre hedefin uygulamanın görüntülediği ilk görüntünün bir `NavigationStack` olmasıdır. Dolaşma bağlantılarını ekledikten sonra bu, kişilerin uygulamanı kullanırken farklı görüntülere gitmesine olanak tanır.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page76..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page76..Paragraph146" = "Uygulamana uygulama tanımında ilk olarak hangi görüntünün gösterileceğini söylersin. Burada, uygulamanın saptanmış olarak `MyApp` şeklinde adlandırıldığını ve tıpkı diğer uygulamalar gibi aygıtında çalışmasına izin veren `App` [protokolünün](glossary://protocol) kılavuzlarını izlediğini görebilirsin.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page76..Paragraph147" = "Çalıştır düğmesine (▶︎) basarak şu anki projeyi bir uygulama olarak çalıştırmayı dene. Bu kadarını henüz görmemelisin. 🙈";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page77..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page77..Paragraph148" = "Uygulamanın `body` özelliği onun içeriğini tanımlar. Şimdilik bilmen gereken tek şey, uygulamanın başlatıldığında sunduğu görüntü koleksiyonu olan [görüntü hiyerarşisi](glossary://view%20hierarchy) için kapsayıcı görevini gören bir `WindowGroup`’un içinde en az bir görüntüye ihtiyacın olacağıdır.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page78..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page78..Paragraph149" = "`ContentView`, uygulamanın başlatıldığında görüntülediği ilk görüntü olan [üst düzey görüntündür](glossary://top-level%20view). Üst düzey görüntünden dallara ayrılan [alt görüntülerin](glossary://subview) yapısal bir koleksiyonu olan [görüntü hiyerarşinin](glossary://view%20hierarchy) en üstünde yer alır.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page79..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page79..Paragraph150" = "`ContentView`’u geçici olarak `Text` veya `Image` görüntüsü gibi başka bir görüntüye değiştirmeyi dene, ardından uygulamanı çalıştır. Uygulamanın üst düzey görüntüsünün nasıl değiştiğine dikkat et; uygulamanın hangi içeriği göstereceğini de böyle değiştirirsin.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page79..Paragraph151" = "Hazır olduğunda üst düzey görüntünü yeniden `ContentView` olarak değiştir.";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..title" = "Uygulamana `NavigationStack` ekleme";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page80..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page80..Paragraph152" = "Uygulamanda birden fazla görüntü göstermek için [üst düzey görüntünü](glossary://top-level%20view) bir [NavigationStack](doc://com.apple.documentation/documentation/swiftui/navigationstack) öğesine dönüştüreceksin.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page81..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page81..Paragraph153" = "Uygulama gövdesindeki (`body`) `SPCAssessableWindowGroup` içine bir `NavigationStack` ekle:";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page81..CodeBlock29" = "NavigationStack { \n\n}\n//#-learning-code-snippet(environmentObjectModifier)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page82..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page82..Paragraph154" = "`ContentView`’unu `NavigationStack`’in içine yerleştir.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page82..Paragraph155" = "`NavigationStack`’in içine yerleştirilen ilk görüntü ilk içeriği görüntüler. Bu içerik, yeni bir görüntüyü görüntülemek için bir [dolaşma bağlantısı](glossary://navigation%20link) kullandığın her an değişebilir.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page83..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page83..Paragraph156" = "Artık uygulama gövden (`body`) şöyle görünür:";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page83..CodeBlock30" = "SPCAssessableWindowGroup(app: self, assessmentCandidates: [CreatureZoo()]) { \n   NavigationStack { \n       ContentView()\n   }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..title" = "Dolaşma başlığı ekleme";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page84..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page84..Paragraph157" = "Uygulamanı çalıştır. Pek farklı görünmüyor, değil mi? Bunun nedeni, `NavigationStack`’in saptanmış olarak içeriğini göstermek üzere bir kapsayıcı gibi davranmasıdır.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page84..Paragraph158" = "Ancak `NavigationStack` sana [dolaşma çubuğu](glossary://navigation%20bar) olarak bilinen, şu anki görüntünün başlığını gösterebilen ve çeşitli araç çubuğu öğelerini görüntüleyebilen ayrılmış bir alan sağlar.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page85..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page85..Paragraph159" = "`.navigationTitle(\"My Creatures”)`’ı `ContentView`’da bir niteleyici olarak eklemeyi dene.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page85..Paragraph160" = "Bu, görüntüye dolaşma çubuğu alanında bir başlık verir. Dolaşma görüntüsünün kendisinin aksine dolaşma görüntüsünün içindeki her bir görüntüye dolaşma başlığı eklersin.";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page85..CodeBlock31" = ".navigationTitle(\"Yaratıklarım\")\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page86..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page86..Paragraph161" = "Dolaşma başlığının `ContentView`’unun en üstündeki dolaşma çubuğunda nasıl görüntülendiğine dikkat ettin mi? Bu başlıklar, uygulamanı kullanan bir kişinin gördüğü içeriği anlamasına yardımcı olur.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page86..Paragraph162" = "Sonra, `CreatureDance` görüntüsüne gitmek için `ContentView`’a bir [NavigationLink](glossary://navigation%20link) ekleyeceksin.";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLinkCreatureDance..title" = "`CreatureList`’e `NavigationLink` ekleme";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLinkCreatureDance..Page87..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLinkCreatureDance..Page87..Paragraph163" = "`Section(\"Dans\")` görüntüsünün içine `CreatureDance` hedefli bir bağlantı ekle. Görüntünün ne yaptığını açıklamak için etiket ve dolaşma başlığını kullan (bu durumda, bazı yaratıkları dans ettirir!).";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLinkCreatureDance..Page88..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLinkCreatureDance..Page88..CodeBlock32" = "NavigationLink(\"Yaratıkları Dans Ettir\") { \n    DancingCreatures()\n        .navigationTitle(\"Dans Eden Yaratıklar\")\n}\n";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepNavigating in SwiftUI..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..SuccessMessage..Paragraph164" = "Tebrikler, dolaşmayı eklemek uygulama yaratmanın önemli bir parçasıdır.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..SuccessMessage..Paragraph165" = "Bir `NavigationLink` kullandığında, yalnızca geldiğin görüntü bir `NavigationStack`’in veya `NavigationSplitView`’un içindeyse bu bağlantının çalışacağını unutma.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..SuccessMessage..Paragraph166" = "Sonra, uygulamanın tüm görüntüleri arasında nasıl veri paylaşacağını öğreneceksin.";
+
+/* Title of step named Sharing Data Between Views */
+"GuideBook..Guide0..StepSharing Data Between Views..title" = "Görüntüler Arasında Veri Paylaşma";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..LearningCenterContent..Paragraph167" = "![](SharingDataBetweenViews.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..LearningCenterContent..Paragraph168" = "Verileri bir [durum özelliği](glossary://state%20value) kullanarak [yerel olarak](glossary://local%20scope) ve bir [bağlama](glossary://binding) kullanarak iki görüntü arasında nasıl saklayacağını daha önce öğrendin. Peki ya şimdi olduğu gibi birden fazla görüntüsü olan bir uygulamadaki verileri paylaşmak istersen ne olacak?";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..LearningCenterContent..Paragraph169" = "Birden fazla görüntü arasında aynı verileri paylaşmak için görüntülerden [ayrı](glossary://data%20separation) tek bir gerçeklik kaynağına ihtiyacın var. Bu [veri modelidir](glossary://data%20model) ve onu verilere erişmesi gereken tüm görüntülerle paylaşabilirsin.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..LearningCenterContent..Paragraph170" = "Bir SwiftUI uygulaması için veri modeli oluşturmanın yaygın bir yolu [gözlemlenebilir nesne](glossary://observable%20object) kullanmaktır. Gözlemlenebilir nesne, birden fazla görüntünün [gözlemleyebileceği](glossary://observe) özelliklere sahip bir [tiptir](glossary://type). Bu görüntüler, özelliklerdeki durum değişikliklerini izleyebilir ve eşzamanlı kalmak için kendi kullanıcı arayüzlerinin güncellenmesine izin verebilir.";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..title" = "Veri modelin";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page89..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page89..Paragraph171" = "Bu, veri modelin olan `CreatureZoo` [gözlemlenebilir nesnesidir](glossary://observable%20object). `ObservableObject` [protokolünün](glossary://protocol) kurallarına uyan bir [sınıftır](glossary://class). Bu, sınıfın belirli özellikleri [yayımlamasına](glossary://publish) izin verir.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page89..Paragraph172" = "Sınıf bir özellik yayımladığında özellik, durum değişikliklerini izliyor olabilecek tüm [gözlemcilere](glossary://observer) yayın yapar (yayımlar). Bu, yayımlanan bir özelliğin durumu değiştiğinde [gözlemleyen](glossary://observer) görüntülerin güncellenmesini sağlar.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page90..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page90..Paragraph173" = "`CreatureZoo`’da [yayımlanan veri](glossary://published%20value) `Creature` örneklerinin bir dizisi olan `creatures` özelliğidir. Bu dizideki veriler her değiştiğinde (örneğin bir yaratık eklendiğinde veya silindiğinde) SwiftUI, özellik [gözlemcilerinin](glossary://observer) hepsini bilgilendirir, böylece gözlemciler en son verileri gösterecek şekilde güncelleyebilir.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page91..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page91..Paragraph174" = "Gözlemlenebilir bir nesnede, bir özelliği [yayımlanmış](glossary://published%20value) olarak işaretlemek için `@Published` [özellik sarmalayıcısını](glossary://property%20wrapper) ekle.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page92..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page92..Paragraph175" = "Bir yaratık örneği yaratmak için `Creature(name:emoji:)` ilk değer atayıcısını kullan ve bir ad ile tek bir emoji karakteri geçir.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page93..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page93..Paragraph176" = "Bu, `name`, `emoji`, `offset`, `rotation` ve `id` [özelliklerini](glossary://property) içeren `Creature` tipidir.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page93..Paragraph177" = "`Creature` bir `id` özelliği ekleyerek `Identifiable` [protokolüne](glossary://protocol) yönelik kurallara uyar. Bu protokol, SwiftUI’ın iki yaratık tamamen aynı emojiyi kullansa bile herhangi bir yaratığın (`Creature`) kimliğini benzersiz bir şekilde belirlemesine olanak tanır. Bu daha sonra işe yarar.";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..title" = "Daha fazla yaratık ekleme";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page94..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page94..Paragraph178" = "`creatures` dizinine en az iki yeni `Creature` örneği ekle.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page95..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page95..Paragraph179" = "Yeni bir yaratık yaratmak için ona bir ad verip tek bir emoji karakterini geçirerek yaratığa bir [ilk değer ata](glossary://initialization). Diziye yaratık eklerken her bir yaratık verisini virgülle ayır; örneğin:";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page95..CodeBlock33" = "Creature(name: \"T-Rex\", emoji: \"🦖\"),\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page96..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page96..Paragraph180" = "Dizine en az bir yaratık daha ekle.";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page96..CodeBlock34" = "Creature(name: \"Uğur Böceği\", emoji: \"🐞\"),\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..title" = "`StateObject` yaratma";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page97..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page97..Paragraph181" = "[Gözlemlenebilir nesneni](glossary://observable%20object) görüntüler genelinde paylaşmadan önce veri modelini tek bir görüntüde kullanmanın nasıl göründüğünü keşfedeceksin.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page97..Paragraph182" = "`ContentView`’da, gözlemlenebilir nesnene ilk değer ata ve verilerle yaratık görüntülerinin bir listesini yarat.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page97..Paragraph183" = "`CreatureZoo` gibi bir gözlemlenebilir nesneye ilk değer atamak için özel bir özellik sarmalayıcı (`@StateObject`) kullan, böylece SwiftUI bu verileri yönetebilir.";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page97..CodeBlock35" = "@StateObject var data = CreatureZoo()\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page98..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page98..Paragraph184" = "Tıpkı SwiftUI’ın bir görüntüdeki özelliği [durum özelliği](glossary://state%20property) olarak yönetmesini sağlamak için `@State`’i kullanman gibi, SwiftUI’a gözlemlenebilir nesneyi senin için yönetmesini söylemek üzere `@StateObject` özellik sarmalayıcısını kullanırsın.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page98..Paragraph185" = "Bu durumda, `CreatureZoo` gözlemlenebilir nesnesine ilk değer atıyorsun ve SwiftUI’dan bunu bir [durum nesnesi](glossary://state%20object) olarak yönetmesini istiyorsun.";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..title" = "Model verilerini bir görüntüde kullanma";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page99..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page99..Paragraph186" = "Verilerine ilk değer atadıktan sonra onları temel bir görüntü yaratmak için kullanacaksın. Yaratıklarının her birini sütun yerleşiminde düşey olarak göstermek için listenin (`List`) içine [ForEach](glossary://ForEach) görüntüsü ekleyeceksin.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page100..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page100..Paragraph187" = "[ForEach](glossary://ForEach), koleksiyondaki her öğe için görüntüler yaratmak üzere (dizi gibi) bir veri [koleksiyonu](glossary://collection) üzerinden [tekrarlayan](glossary://iteration) bir yapıdır.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page100..Paragraph188" = "Her bir yaratığın adını ve emojisini görüntülemek üzere özel bir görüntü yaratarak `data.creatures` dizininde tekrarlamak için `Section` görüntünün altına `ForEach`’i ekle:";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page100..CodeBlock36" = "/*#-code-walkthrough(forEach.id)*/\nForEach(data.creatures) { creature in \n/*#-code-walkthrough(forEach.id)*/\n    HStack { \n        Text(creature.name)\n            .font(.title)\n        Spacer()\n        Text(creature.emoji)\n            /*#-code-walkthrough(resizableFont)*/\n            .resizableFont()\n            /*#-code-walkthrough(resizableFont)*/\n            .frame(minWidth: 125)\n    }\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page101..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page101..Paragraph189" = "`Creature`’ın `Identifiable` protokolünün kurallarına nasıl uyduğunu hatırlıyor musun? Bu, [ForEach](glossary://ForEach) yapısının her bir yaratığı tamamen aynı emoji karakterine ve ada sahip olsa bile benzersiz şekilde tanımlamasını sağlar. İkizleri bile ayırabildiği için bu SwiftUI’ın her görüntüyü birbiriyle karıştırmadan ayrı ayrı güncellemesini sağlar.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page102..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page102..Paragraph190" = "Burada kullanılan `.resizableFont()` niteleyicisini fark etmiş olabilirsin. Bu, `Text` görüntünün font puntosunun görüntünün büyüklüğüne uyacak şekilde yukarıya doğru ölçeklenmesini sağlayan ve `ResizableFont.swift`’te tanımlanan özel bir niteleyicidir. Özel bir niteleyiciyi nasıl yaratabileceğini görmek için o dosyadaki koda bir bak.";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..title" = "Model verilerini tüm uygulama tarafından erişilebilir hâle getirme";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page103..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page103..Paragraph191" = "Gözlemlenebilir nesne verilerini tek bir görüntüde başarılı bir şekilde kullandığına göre, artık bu verileri `MyApp.swift`’teki tüm uygulama ile paylaşmanın zamanı geldi.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page104..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page104..Paragraph192" = "Verilerini tüm uygulama tarafından erişilebilir hâle getirmek için:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page104..OrderedList6..Paragraph193" = "`MyApp`’te [durum nesnesi](glossary://state%20object) olarak bir `CreatureZoo` örneği yarat.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page104..OrderedList6..Paragraph194" = "`NavigationStack` [üst düzey görüntünü](glossary://top-level%20view) bir [ortam nesnesi](glossary://environment%20object) olarak geçir.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page104..Paragraph195" = "Ortam nesnesi, üst düzey görüntüne veri geçirerek veriyi tüm [görüntü hiyerarşisi](glossary://view%20hierarchy) tarafından kullanılabilir hâle getirir ve diğer tüm görüntülerin onu kullanabilmesini sağlar.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page105..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page105..Paragraph196" = "`CreatureList`’te yaptığın gibi `CreatureZoo` örneğini yarat:";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page105..CodeBlock37" = "@StateObject var data = CreatureZoo()\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page106..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page106..Paragraph197" = "Aşağıdaki niteleyiciyi `NavigationStack`’in altına ekle:";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page106..CodeBlock38" = ".environmentObject(data)\n";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page106..Paragraph198" = "Bu, herhangi bir [alt görüntünün](glossary://subview) erişebilmesi için [gözlemlenebilir nesne](glossary://observable%20object) örneğini uygulamanın [ortamına](glossary://environment) geçirir.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page107..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page107..Paragraph199" = "Sonra, ortam nesnesini kullanmayı denemek için `ContentView.swift`’e geri döneceksin.";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..title" = "Ortam nesnesine erişme";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page108..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page108..Paragraph200" = "Gözlemlenebilir nesneyi, `ContentView` da dahil olmak üzere `NavigationStack`’inin tüm [alt görüntüleriyle](glossary://subview) paylaştığına göre bu verilere erişme zamanı geldi.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page109..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page109..Paragraph201" = "Gözlemlenebilir nesnenin yeni bir örneğini yaratan `@StateObject`’i kullanmak yerine uygulama [ortamına](glossary://environment) geçirilen örneğe erişmen gerekir:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page109..OrderedList7..Paragraph202" = "Şu anki `data` `@StateObject` değişkenini sil.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page109..OrderedList7..Paragraph203" = "[Ortam nesnene](glossary://environment%20object) erişmek ve `CreatureZoo` tipinde `@EnvironmentObject` özellik sarmalayıcısı ile yeni bir özellik yaratmak için.";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page109..CodeBlock39" = "@EnvironmentObject var data : CreatureZoo\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page110..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page110..Paragraph204" = "`ContentView` önizlemesinde yaratık listeni incele.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page110..Paragraph205" = "Yaratıkların eskisi gibi göründüklerine dikkat et. Yaratık listesindeki veriler `MyApp`’de yaratılır, uygulama [ortamı](glossary://environment) yoluyla paylaşılır ve bunlara `ContentView`’da erişilir.";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..title" = "`HStack`’ini oluşturulmuş bir `CreatureRow` görüntüsüyle değiştirme";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page111..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page111..Paragraph206" = "Burada kodunu iyileştirmen için harika bir fırsat var. [ForEach](glossary://ForEach) yapısının içindeki tüm `HStack`’i `CreatureRow` adlı [oluşturulmuş görüntü](glossary://composed%20view) ile değiştirerek bu görüntüdeki kodu sadeleştirebilirsin.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page111..Paragraph207" = "`ForEach`’in içindeki `HStack`’in içeriğini sil ve `CreatureRow(creature: creature)` ile değiştir.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page112..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page112..Paragraph208" = "`CreatureRow.swift`’e bir göz at; `Creature` değerini saklayan bir [özellik](glossary://property) dışında, `ForEach`’te sahip olduğun kodun aynısını içerir.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page112..Paragraph209" = "Artık `CreatureRow`’a kendi görüntüsü olarak sahip olduğundan, `ContentView`’dan değiştirmek ve ayrıca test etmek daha kolaydır. Bunun gibi bir görüntü oluşturmak, uygulama yaratmanın temel prensibi olan kod [modülerliğini](glossary://modularity) iyileştirir.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page113..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page113..CodeBlock40" = "ForEach(data.creatures) { creature in \n   CreatureRow(creature: creature)\n}\n";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepSharing Data Between Views..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..SuccessMessage..Paragraph210" = "Güzel!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..SuccessMessage..Paragraph211" = "Uygulama ortamına gözlemlenebilir bir nesne geçirerek bu verilerin tüm [görüntü hiyerarşisine](glossary://view%20hierarchy) erişimine izin verirsin. Bu, uygulamandaki diğer görüntülerin birden fazla yerde verileri yeniden yaratmayı denemek yerine aynı [gerçeklik kaynağını](glossary://source%20of%20truth) kullanmasını sağlar.";
+
+/* Title of step named Create a New View To Share Data */
+"GuideBook..Guide0..StepCreate a New View To Share Data..title" = "Veri Paylaşmak İçin Yeni Görüntü Yaratma";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..LearningCenterContent..Paragraph212" = "![](CreateANewViewToShareData.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..LearningCenterContent..Paragraph213" = "Verileri bir görüntü ile başarılı bir şekilde paylaştığına göre, artık aynı verileri diğer görüntülerde kullanmanın zamanı geldi.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..LearningCenterContent..Paragraph214" = "Bunu yapmak için iki şey yapman gerekir:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..LearningCenterContent..OrderedList8..Paragraph215" = "Verilere erişen görüntünün geçirildiği üst düzey görüntü ile aynı [görüntü hiyerarşisinin](glossary://view%20hierarchy) bir parçası olduğundan emin ol. [Üst düzey görüntünün](glossary://top-level%20view) veya [alt görüntülerinden](glossary://subview) herhangi birinin içinde ona ilk değer atayarak görüntü hiyerarşisine görüntü eklersin.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..LearningCenterContent..OrderedList8..Paragraph216" = "[Ortam nesnesine](glossary://environment%20object) erişim sağla.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..LearningCenterContent..Paragraph217" = "Örneğin `ContentView`’un içinde yeni bir görüntü yaratıyorsan `ContentView`, üst düzey görüntün olan `NavigationStack`’in alt görüntüsü olduğundan bu yeni görüntü, görüntü hiyerarşisinin bir parçası olur. Böylece bu yeni görüntüden ortam nesnesine erişebilirsin.";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..title" = "Ortam nesnesini bildirme";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page114..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page114..Paragraph218" = "Hedefin, uygulama [ortamındaki](glossary://environment) verilere erişen `DancingCreatures` adlı yeni bir görüntü oluşturmaktır.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page114..Paragraph219" = "`DancingCreatures` zaten [görüntü hiyerarşinin](glossary://view%20hierarchy) bir parçası; `ContentView`\'da buna bir bağlantı ekledin. Sonraki adımın, uygulama ortamında bu verilere erişmek.";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page115..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page115..Paragraph220" = "Uygulama ortamındaki verilere erişmek amacıyla tıpkı `CreatureList`’te yaptığın gibi `CreatureZoo` için ortam nesneni bildir. Yardıma ihtiyacın olursa diğer koduna dönüp bakabilirsin.";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page116..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page116..Paragraph221" = "`@EnvironmentObject` özellik sarmalayıcıyı kullanarak bir değişken [bildir](glossary://declaration) ve ona `CreatureZoo` tipini ver. `MyApp`’te daha önce ilk değer atandığı için değere [ilk değer ataman](glossary://initialization) gerekmez. Burada yalnızca veriye erişmen gerekir.";
+
+/*  */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page116..CodeBlock41" = "@EnvironmentObject var data : CreatureZoo\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesView..title" = "`DancingCreatures` görüntüsü ekleme";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesView..Page117..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesView..Page117..Paragraph222" = "Artık uygulama verilerine erişimin olduğuna göre bunlarla eğlenceli bir şeyler oluşturma zamanı. Öncelikle, yaratıklarının tümünü üst üste yığacaksın, sonra bunlardan birine her dokunduğunda yaratıklar farklı yönlere dağılacaklar.";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesView..Page118..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesView..Page118..Paragraph223" = "Bu kodu `VStack`’inin içine ekle:";
+
+/*  */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesView..Page118..CodeBlock42" = "ZStack {\n    /*#-code-walkthrough(dance.forEach)*/\n    ForEach(data.creatures) { creature in\n    /*#-code-walkthrough(dance.forEach)*/\n        /*#-code-walkthrough(dance.textView)*/\n        Text(creature.emoji)\n            .resizableFont()\n            .offset(creature.offset)\n            .rotationEffect(creature.rotation)\n        /*#-code-walkthrough(dance.textView)*/\n        //#-learning-code-snippet(exp1)\n        //#-learning-code-snippet(animationSolution)\n        //#-learning-code-snippet(exp3)\n\n    }\n}\n/*#-code-walkthrough(dance.onTap)*/\n.onTapGesture {\n    data.randomizeOffsets()\n}\n/*#-code-walkthrough(dance.onTap)*/\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..title" = "Canlandırma kodunu anlama";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page119..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page119..Paragraph224" = "[ForEach](glossary://ForEach), bu canlandırmayı yaratmak amacıyla `CreatureZoo.creatures`’daki yaratıklarının her biri için bir `Text` görüntüsü yaratarak bunların her birinde tekrarlanır.";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page120..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page120..Paragraph225" = "`Text` görüntüsü yaratığın `offset` ve `rotation` [özelliklerini](glossary://property) `.offset` ve `.rotationEffect` niteleyicilerine argüman olarak kullanır.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page120..Paragraph226" = "`CreatureZoo.creatures` [yayımlanan değer](glossary://published%20value) olduğundan bir yaratığın `offset` veya `rotation` değeri değiştiğinde SwiftUI, `DancingCreatures` görüntüsünü günceller.";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page121..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page121..Paragraph227" = "`.onTapGesture` niteleyicisi, görüntüye her dokunduğunda bazı kodlar çalıştırır. Dokunulduğunda, `data.randomizeOffsets()` her yaratığın `offset` ve `rotation` değerlerini değiştirerek görüntünün her yaratığı yeni konumu ve yönü ile güncellemesini sağlar.";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..title" = "Yaratıkları canlandırma";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page122..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page122..Paragraph228" = "Görüntüye dokunmayı dene.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page122..Paragraph229" = "Yaratıklar hareket ediyor ancak pek de ilginç değiller. Bundan sonra, dans havası katmak için onları yeni konumlarına canlandırarak götüreceksin.";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page123..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page123..Paragraph230" = "Yaratıkları yeni bir konuma götürmek üzere canlandırmak için SwiftUI’a hangi canlandırmanın kullanılacağını ve hangi değerin canlandırılacağını söylemen gerekir. Bu durumda, her bir yaratığın `offset` özelliğini canlandırmak istiyorsun.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page123..Paragraph231" = "`.animation(_:value:)` niteleyicisini `Text` görüntüsüne iliştir. Canlandırma argümanı için `.default`’u seç, değer için ise `creature.offset`’i geçir. Uzaklık (`offset`) her değiştiğinde görüntü değişiklikleri canlandırılır.";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page124..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page124..CodeBlock43" = ".animation(.default, value: creature.offset)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..title" = "Görüntünle denemeler yapma";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page125..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page125..Paragraph232" = "Yaratıklarını canlandırdığına göre, daha ilginç hâle getirmek için canlandırmalarda ve görüntünün diğer bölümlerinde ufak düzeltmeler yapmayı dene.";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page126..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page126..Paragraph233" = "Yeni bir `.animation(_:value:)` niteleyicisi ekleyerek `creature.rotation` özelliğindeki değişiklikleri canlandır.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page126..Paragraph234" = "`.animation(_:value)` niteleyicisinden önce aşağıdaki niteleyiciyi ekle. Canlandırma nasıl değişti? Sence neden böyle oldu? Yukarıdaki niteleyiciden sonra `.spring()` canlandırmasını koyarsan ne olur?";
+
+/*  */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page126..CodeBlock44" = ".animation(.spring(response: 0.5, dampingFraction: 0.5), value: creature.rotation)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page127..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page127..Paragraph235" = "`.onTapGestures` olay işleyiciyi `data.synchronizeOffsets()` olarak değiştir. Bu, tüm yaratıklarının aynı uzaklığa taşınmasına neden olur.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page127..OrderedList9..Paragraph236" = "`creature.offset` için şu anki `.animation` niteleyicini sil.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page127..OrderedList9..Paragraph237" = "Canlandırmaların her birinin küçük bir miktar geciktirmek için aşağıdaki canlandırmayı ekle.";
+
+/*  */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page127..CodeBlock45" = ".animation(.default.delay(data.indexFor(creature) / 10), value: creature.offset)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page128..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page128..Paragraph238" = "Sonuçtan memnun olana kadar canlandırma değerlerini değiştirmeye devam et!";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepCreate a New View To Share Data..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..SuccessMessage..Paragraph239" = "İyi iş!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..SuccessMessage..Paragraph240" = "[Görüntü hiyerarşisi](glossary://view%20hierarchy) ile paylaşılan gözlemlenebilir [veri modelini](glossary://data%20model) kullanan başka bir görüntüyü daha başarıyla yarattın.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..SuccessMessage..Paragraph241" = "Sonra, kişilerin uygulamayı özelleştirebilmesi için o veri modelinden veri eklemeyi ve silmeyi öğreneceksin.";
+
+/* Title of step named Add and delete creatures */
+"GuideBook..Guide0..StepAdd and delete creatures..title" = "Yaratık ekleme ve silme";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..LearningCenterContent..Paragraph242" = "![](AddAndDeleteCreatures.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..LearningCenterContent..Paragraph243" = "Artık birden fazla görüntüde tek bir [veri modelini](glossary://data%20model) paylaşan bir çoklu görüntü uygulaman var. Ancak uygulama henüz tamamlanmış değil. Kodda bir `Creature` ekleyip silebiliyor olsan da, bir [kullanıcı](glossary://user) kullanıcı arayüzü yoluyla yaratık ekleyip silemez.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..LearningCenterContent..Paragraph244" = "Neyse ki, bunu düzeltmek oldukça basittir. Görüntülerindeki veri modeline erişimin olduğu için bir kişi senin kullanıcı arayüzünle etkileşim kurduğunda veri modelinde değişiklikler yapabilirsin. Öncelikle bir yaratığı silmeyi öğreneceksin, ardından kişilerin kendi yaratıklarını eklemesine izin veren yeni bir görüntü yaratacaksın.";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..title" = "Yaratık Silme";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page129..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page129..Paragraph245" = "SwiftUI bir listeden (`List`) veri silmeyi oldukça basit hâle getirir. `ContentView`’daki `ForEach` döngüsüne bir `.onDelete` niteleyicisi ekleyerek bir yaratığı silebilirsiniz.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page129..Paragraph246" = "`.onDelete` niteleyicisini eklemek bazı özel kodları çalıştırmana izin verir (kişi bir öğeyi silmeye karar verdiğinde `action` [kapaması](glossary://closure)). Kapama kodun, şu anki yaratığı uygulamanın gözlemlenebilir [veri modelinden](glossary://data%20model) siler.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page130..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page130..Paragraph247" = "`.onDelete` [kapamasının](glossary://closure) içinde, `remove(atOffsets:)` fonksiyonunu çağırarak ve kapamadan `indexSet` değerini geçirerek şu anki yaratığı sileceksin. Bu, silmeyi seçtiğin liste satırına göre `creatures` dizisinde karşılık gelen yaratığı bulur.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page130..Paragraph248" = "Bu niteleyiciyi `ForEach` Döngüsünün altına eklemeyi dene ve uygulamanı çalıştır. Bir yaratıkta sola kaydırdığında onu silmene izin veriliyor mu?";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page130..CodeBlock46" = ".onDelete { indexSet in \n    data.creatures.remove(atOffsets: indexSet)\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..title" = "`CreatureEditor`’a `NavigationLink` ekleme";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page131..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page131..Paragraph249" = "Yeni bir yaratık eklemek için iki şey yapman gerekecek:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page131..OrderedList10..Paragraph250" = "Bir `NavigationLink` kullanarak [görüntü hiyerarşine](glossary://view%20hierarchy) `CreatureEditor` ekle. Bu `CreatureEditor`’ın `CreatureZoo` ortam nesnene erişmesini sağlar ve kişinin görüntüde dolaşmasına izin verir.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page131..OrderedList10..Paragraph251" = "Bir kişinin `CreatureZoo`’daki `creatures` dizisini düzenlemesine ve buraya yeni bir yaratık eklemesine izin vermek için `CreatureEditor` görüntüsünü [oluştur](glossary://composed%20view).";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page132..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page132..Paragraph252" = "`NavigationLink`’i `CreatureEditor`’a nerede ekleyeceğine karar vererek başla. `ContentView`’da silebileceğin yaratıkların bir `List` görüntüsüne zaten sahip olduğun için aynı görüntüden yaratık eklemek mantıklıdır.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page133..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page133..Paragraph253" = "Yaratık düzenlemeyi kolay erişilebilir hâle getirmek için `ContentView` kullanıcı arayüzündeki [dolaşma çubuğuna](glossary://navigation%20bar) bir bağlantı yerleştir. Burası, kişilerin uygulamanın ek özellikleri için baktığı alışılmış yerlerden olduğu için mükemmel bir konumdur.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page134..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page134..Paragraph254" = "Dolaşma çubuğuna bir düğme eklemek için:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page134..OrderedList11..Paragraph255" = "`List` görüntüne `.toolbar` niteleyicisini iliştirerek dolaşma çubuğu özelleştirmeyi ekle.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page134..OrderedList11..Paragraph256" = "`.toolbar` kapamasının içinde bir `ToolbarItem` ekle. Bu, araç çubuğuna yerleştirebileceğin bir öğedir.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page134..OrderedList11..Paragraph257" = "`ToolbarItem` içindeki `CreatureEditor`’a bir `NavigationLink` ekle. Bu, dolaşma çubuğunda göreceğin görüntüdür.";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page134..CodeBlock47" = ".toolbar { \n    ToolbarItem { \n        // CreatureEditor’a NavigationLink ekle\n\n    }\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page135..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page135..CodeBlock48" = ".toolbar { \n    ToolbarItem { \n        NavigationLink(\"Ekle\") { \n            CreatureEditor()\n        }\n    }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..title" = "`CreatureEditor`’a dolaşma başlığı ekleme";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..Page136..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..Page136..Paragraph258" = "Sonra, `CreatureEditor`’a görüntünün amacını açıklayan bir dolaşma başlığı ver.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..Page136..OrderedList12..Paragraph259" = "`CreatureEditor` görüntüsüne bir dolaşma başlığı ekle.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..Page136..OrderedList12..Paragraph260" = "Uygulamanı çalıştır ve `ContentView`’dan `CreatureEditor`’a gitmeyi test et.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..Page137..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..Page137..CodeBlock49" = ".toolbar { \n    ToolbarItem { \n        NavigationLink(\"Ekle\") { \n            CreatureEditor()\n                .navigationTitle(\"Yaratık Ekle\")\n        }\n    }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..title" = "`CreatureEditor` verilerini tanımlama";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page138..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page138..Paragraph261" = "Yeni bir yaratık eklemek amacıyla, yeni bir yaratığı düzenlemene ve [veri modeline](glossary://data%20model) eklemene izin veren [oluşturulmuş bir görüntü](glossary://composed%20view) (`CreatureEditor`) yaratacaksın.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page139..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page139..Paragraph262" = "Biraz dur ve yeni bir `Creature` örneği yaratıp bunu veri modeline eklemek için `CreatureEditor`’da hangi [özelliklere](glossary://property) ihtiyacın olacağını düşün.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page139..OrderedList13..Paragraph263" = "[Yerel](glossary://local%20scope) `CreatureEditor` görüntüsünün içinde değiştirebileceğin bir `Creature` özelliğine ihtiyacın olacak.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page139..OrderedList13..Paragraph264" = "`Creature` örneğini ekleyebilmek için [ortamdan](glossary://environment) `CreatureZoo` [gözlemlenebilir nesnene](glossary://observable%20object) erişmen gerekecek.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page139..Paragraph265" = "Bu hedefleri gerçekleştiren iki özellik yaratmayı dene; sıkışırsan aşağıdaki ipuçlarını kullan.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page140..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page140..Paragraph266" = "Öncelikle, bir `Creature` örneğini saklayan bir [durum özelliği](glossary://state%20property) yarat. `name` ve `emoji` parametrelerini şimdilik boş dizgiler olarak bırakabilirsin.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page141..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page141..Paragraph267" = "Sonra, [gözlemlenebilir nesne](glossary://observable%20object) örneğine erişmek için `CreatureZoo` tipinde bir [ortam nesnesi](glossary://environment%20object) bildir.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page142..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page142..CodeBlock50" = "@State var newCreature : Creature = Creature(name: \"\", emoji: \"\")\n@EnvironmentObject var data : CreatureZoo \n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineYourView..title" = "CreatureEditor’da Form Yaratma";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineYourView..Page143..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineYourView..Page143..Paragraph268" = "`CreatureEditor` görüntüsünü oluşturmak için veri girdisini işlemede harika olan yerleşik bir `Form` görüntüsünü kullanabilirsin.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineYourView..Page143..Paragraph269" = "`Form`’un içinde üç `Section` görüntüsü ekleyeceksin: Yaratık adını, emojisini ve önizlemesini düzenlemek için birer tane.";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineYourView..Page143..CodeBlock51" = "Form {\n    Section(\"Ad\") {\n        //#-learning-code-snippet(addACreatureEditorTextField)\n\n    }   \n\n    Section(\"Emoji\") {\n        \n    }\n\n    Section(\"Yaratık Önizleme\") {\n        CreatureRow(creature: newCreature)\n    }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..title" = "Kullanıcı girdisi için `TextField` görüntüleri ekleme";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page144..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page144..Paragraph270" = "Sonra, [kişilerin](glossary://user) `Creature` [durum özelliğinin](glossary://state%20property) `name` ve `emoji` değerlerini düzenleyebileceği bir yöntem eklemen gerekir.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page144..Paragraph271" = "Bunu, kişilerin metin girmesine izin veren bir [TextField](doc://com.apple.documentation/documentation/swiftui/textfield) görüntüsü ekleyerek yaparsın.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page144..Paragraph272" = "Yaratığın `name` ve `emoji` değerlerini düzenlemek için iki `TextField` görüntüsü ekle. Bir [etiket](glossary://label) ve bir [bağlama](glossary://binding) `String` değerinin argümanlarını alan `TextField(_:text:)` ilk değer atayıcısını kullan.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page145..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page145..Paragraph273" = "Bağlama için gerçeklik kaynağının SwiftUI tarafından (örneğin [durum özelliği](glossary://state%20property)) yönetiliyor olmasını gerektiğini unutma.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page145..Paragraph274" = "`Creature` durum özelliğine bir bağlama geçirip `name` ve `emoji` değerlerini şu şekilde belirt:";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page145..CodeBlock52" = "$newCreature.name\n$newCreature.emoji\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page146..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page146..Paragraph275" = "İşte bir `TextField` ekleme örneği. `newCreature.name`’i düzenlemek için bir `TextField`, `newCreature.emoji`’yi düzenlemek için ise başka bir tane ekle.";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page146..CodeBlock53" = "TextField(\"Ad\", text: $newCreature.name)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page147..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page147..CodeBlock54" = "Form {\n    Section(\"Ad\") {\n        TextField(\"Ad\", text: $newCreature.name)\n    }   \n\n    Section(\"Emoji\") {\n        TextField(\"Emoji\", text: $newCreature.emoji)\n    }\n\n    Section(\"Yaratık Önizleme\") {\n        CreatureRow(creature: newCreature)\n    }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..title" = "Araç çubuğuna ekle düğmesi yerleştirme";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page148..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page148..Paragraph276" = "Sonra, kişilerin kendi yeni yaratıklarını eklemek için dokunabileceğini bir düğme (`Button`) eklemen gerekir.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page148..Paragraph277" = "Tıpkı `ContentView`’da olduğu gibi, bunun gibi bir düğme koymak için en iyi yer `CreatureEditor` [dolaşma çubuğudur](glossary://navigation%20bar).";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page149..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page149..Paragraph278" = "`CreatureEditor`’a araç çubuğu eklemenin bir örneği olarak `ContentView`’daki `.toolbar` kodunu kullanmayı dene`:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page149..OrderedList14..Paragraph279" = "`VStack`’inin altına `.toolbar` niteleyicisini ekle.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page149..OrderedList14..Paragraph280" = "Araç çubuğunun içinde bir `ToolbarItem` ekle.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page149..OrderedList14..Paragraph281" = "`ToolbarItem`’ın içinde, [etiketinde](glossary://label) “Ekle” yazan bir `Button` ekle. `Button` için eylem [kapamasını](glossary://closure) şimdilik boş bırakabilirsin.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page150..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page150..CodeBlock55" = ".toolbar { \n    ToolbarItem { \n        Button(\"Ekle\") { \n            //#-learning-code-snippet(addCreatureToCreatureZoo)\n            //#-learning-code-snippet(dismissCall)\n        }\n    }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..title" = "Yaratığını `CreatureZoo`’ya ekleme";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page151..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page151..Paragraph282" = "Ekle düğmesine dokunduğunda, yaratık örneğinin `CreatureZoo` gözlemlenebilir nesnene eklenmesini istersin. Özellikle, yaratığı `creatures` dizisinin sonuna eklemek istersin.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page152..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page152..Paragraph283" = "Aşağıdaki kod, düzenlenen yaratığı `data.creatures`’a ekler. Unutma, `creatures` [yayımlanan bir değer](glossary://published%20value), o nedenle bu değerde yapılan tüm değişiklikler bu verileri kullanan tüm görüntülerin otomatik olarak güncellenmesine neden olur.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page152..Paragraph284" = "Bu kodu düğmenin (`Button`) eylem [kapamasının](glossary://closure) içine ekle.";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page152..CodeBlock56" = "data.creatures.append(newCreature)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page153..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page153..Paragraph285" = "Uygulamanı çalıştır ve yeni bir yaratık eklemeyi dene.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page153..Paragraph286" = "Yeni yaratığın `List` görüntüsüne eklenip eklenmediğini görmek için `ContentView`’a geri dön. `DancingCreatures` görüntüsüne de eklendi mi?";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..title" = "Ekle’ye dokunduğunda düzenleyiciyi kapatma";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page154..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page154..Paragraph287" = "Bir yaratık ekledikten sonra `CreatureEditor` görüntün kapanır ve geldiğin önceki görüntüyü gösterir. Bu daha iyi bir kullanıcı deneyimidir ve Ekle düğmesine birden fazla kez dokunup aynı yaratığı tekrar tekrar eklemeni engeller.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page155..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page155..Paragraph288" = "Görüntüyü kapatmak için iki şeye ihtiyacın var:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page155..OrderedList15..Paragraph289" = "Uygulamanın `NavigationStack`’te sunulan şu anki görüntüyü kapatmasını sağlayan `dismiss` [ortam](glossary://environment) değerini bildir.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page155..OrderedList15..Paragraph290" = "Ekle düğmesine dokunulduğunda `dismiss()` fonksiyonunu [çağır](glossary://call).";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page155..CodeBlock57" = "@Environment(\\.dismiss) var dismiss\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page156..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page156..Paragraph291" = "[Ortam](glossary://environment) değeri kapatmayı (`dismiss`) bildirmenin ardından yeni yaratığını `data.creatures`’a ekledikten sonra Ekle’ye dokunurken `dismiss()`’i çağır.";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page156..CodeBlock58" = "dismiss()\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page157..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page157..CodeBlock59" = ".toolbar { \n    ToolbarItem { \n        Button(\"Ekle\") { \n            data.creatures.append(newCreature)\n            dismiss()\n        }\n    }\n}\n";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepAdd and delete creatures..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..SuccessMessage..Paragraph292" = "Tebrikler, tamamen işlevsel bir uygulama yarattın!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..SuccessMessage..Paragraph293" = "Yeni yaratıklar ekleyebilir, bunları `CreatureList`’te görüntüleyebilir, düzenleyebilir ve `DancingCreatures`’ta dans etmelerini izleyebilirsin.";
+
+/* Title of step named Add a `CreatureDetail` view */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..title" = "`CreatureDetail` görüntüsü ekleme";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..LearningCenterContent..Paragraph294" = "![](AddCreatureDetailView.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..LearningCenterContent..Paragraph295" = "Artık görüntüler arasında dolaşmayı, [yerel](glossary://local%20scope) durum değişikliklerini yönetmeyi, uygulamanın tamamında veri paylaşmayı ve çeşitli [yerleşik SwiftUI görüntülerini](glossary://built-in%20view) kullanmayı bildiğine göre yeni bir görüntü yaratmak için becerilerini test etme zamanı geldi: listendeki tek bir yaratığın ayrıntılarını gösteren `CreatureDetail` görüntüsü.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..LearningCenterContent..Paragraph296" = "Yaratık listen güzel görünüyor, ancak biraz daha etkileşime ihtiyacı var. Onlarla oynayamayacaksan tüm bu yaratıklara sahip olmanın anlamı ne?";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..title" = "`CreatureDetail`’a `NavigationLink` ekleme";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page158..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page158..Paragraph297" = "Hedefin, [ForEach](glossary://ForEach) döngünün her görüntüsünü, her biri `data.creatures` dizinindeki bir yaratığın ayrıntılı görüntüsüne giden kendi `NavigationLink`’ine dönüştürmektir.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page159..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page159..Paragraph298" = "Bunu yapmak için `ForEach` döngüsünün şu anki içeriğini bir `NavigationLink` ile değiştir:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page159..OrderedList16..Paragraph299" = "[Hedefi](glossary://destination%20view) `CreatureDetail(creature: creature)` adlı [oluşturulmuş görüntü](glossary://composed%20view) olacak şekilde ayarla.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page159..OrderedList16..Paragraph300" = "[Kapamadaki](glossary://closure) `creature` değerini [argüman](glossary://argument) olarak kullanarak `CreatureRow` olarak [etiketini](glossary://label) yarat.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page160..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page160..Paragraph301" = "Dolaşma bağlantını bu şekilde yarat ve `ForEach`’inin içine ekle:";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page160..CodeBlock60" = "NavigationLink {\n    CreatureDetail(creature: creature)\n        .navigationTitle(creature.name)\n} label: {\n    CreatureRow(creature: creature)\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page161..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page161..Paragraph302" = "`ForEach`’in şöyle görünmelidir:";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page161..CodeBlock61" = "ForEach(data.creatures) { creature in \n    NavigationLink {\n        CreatureDetail(creature: creature)\n            .navigationTitle(creature.name)\n    } label: {\n        CreatureRow(creature: creature)\n    }  \n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page162..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page162..Paragraph303" = "Listenin (`List`) bir satırına dokunmayı dene. Artık bu seni o yaratığın `CreatureDetail` görüntüsüne götürür.";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..title" = "`CreatureDetail` görüntünü oluşturma";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page163..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page163..Paragraph304" = "`CreatureDetail` görüntüsü, seçilen yaratığı bir `Text` görüntüsü olarak gösterir. Senin işin, mevcut kodu anlamak ve bazı harika yaratık efektleri yaratmak için bunun üstüne inşa etmektir.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page164..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page164..Paragraph305" = "`ContentView`’da, `CreatureDetail(creature: creature)` [hedef görüntüsü](glossary://destination%20view) ile bir `NavigationLink` yarattın.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page164..Paragraph306" = "Hedef görüntü, hangi yaratığa dokunduğuna göre farklı bir görüntü oluşturmak için listenin her satırı için `Creature` değerini kullanır. Burada bu değer, bu görüntüde değişmeyeceğinden durumu olmayan [sabit](glossary://constant) olarak saklanır.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page165..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page165..Paragraph307" = "Senin için üç [durum özelliği](glossary://state%20property) tanımlanmıştır:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page165..OrderedList17..Paragraph308" = "`color` bir `Color` değerini izler ve `Text` görüntündeki renk değişikliklerini denetler.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page165..OrderedList17..Paragraph309" = "`shadowRadius`, `.shadow` niteleyicisinin yarıçapını denetlemek için kullandığın bir `Double` değeridir.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page165..OrderedList17..Paragraph310" = "`angle`, `Text` görüntünü döndürmek için kullandığın bir `Angle` değeridir.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page166..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page166..Paragraph311" = "`Text` görüntün `creature.emoji`’yi görüntünün Dizgi değeri olarak kullanır ve görüntünün görünüşünü ve davranışını belirleyen pek çok niteleyici ekler:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page166..OrderedList18..Paragraph312" = "[.colorMultiply](doc://com.apple.documentation/documentation/swiftui/list/colormultiply(_:)) görüntüye bir renk çoğaltma efekti ekler.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page166..OrderedList18..Paragraph313" = "[.shadow](doc://com.apple.documentation/documentation/swiftui/list/shadow(color:radius:x:y:)) belirli bir rengin ve yarıçapın gölgesini ekler.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page166..OrderedList18..Paragraph314" = "[.rotation3DEffect](doc://com.apple.documentation/documentation/swiftui/view/rotation3deffect(_:axis:anchor:anchorz:perspective:)) görüntünün dönüşünü üç boyutta denetleyebilir.";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddColorPicker..title" = "`color` değerini değiştiren bir `ColorPicker` ekleme";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddColorPicker..Page167..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddColorPicker..Page167..Paragraph315" = "Bu görüntüyle biraz etkileşim kurmaya başlamak için öncelikle `Text` görüntüsünün altına bir `ColorPicker` görüntüsü ekle. Bu, yeni bir renk seçildiğinde `color` durum özelliğini değiştirir.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddColorPicker..Page167..Paragraph316" = "Sıkışırsan çözümü kullanarak bunu kendin yapmayı dene.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddColorPicker..Page168..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddColorPicker..Page168..CodeBlock62" = "ColorPicker(\"Bir Renk Seç\", selection: $color)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddSliderShadowRadius..title" = "Gölge yarıçapını denetleyen bir `Slider` ekleme";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddSliderShadowRadius..Page169..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddSliderShadowRadius..Page169..Paragraph317" = "`ColorPicker`’ın altına `shadowRadius` değerini denetleyen bir `Slider` ekle.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddSliderShadowRadius..Page169..Paragraph318" = "Sıkışırsan çözümü kullanarak bunu kendin yapmayı dene.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddSliderShadowRadius..Page170..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddSliderShadowRadius..Page170..CodeBlock63" = "HStack { \n    Text(\"Gölge\")\n    Slider(value: $shadowRadius)\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..title" = "Yaratığın büyüklüğünü değiştiren bir `Button` ekleme";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page171..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page171..Paragraph319" = "`Slider`’ın altına, kişilerin `Text` görüntüsünü yukarı ve aşağı ölçeklemek için kullanabileceği bir `Button` ekle:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page171..OrderedList19..Paragraph320" = "Tıpkı `ConditionalCircle`’da yaptığın gibi Boole değerini izleyen yeni bir [durum özelliği](glossary://state%20property) yarat.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page171..OrderedList19..Paragraph321" = "Boole değeri `true` ya da `false` olduğunda ölçeği belirlemek için [üçlü koşullu işlecin](glossary://ternary%20conditional%20operator) yanı sıra yeni bir niteleyici ([.scaleEffect](doc://com.apple.documentation/documentation/swiftui/view/scaleeffect(_:anchor:)-pmi7)) ekle.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page171..OrderedList19..Paragraph322" = "Düğmenin (`Button`) eylem [kapamasını](glossary://closure) Boole değerini `true` ve `false` durumları arasında değiştirecek şekilde düzenle.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page172..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page172..Paragraph323" = "`ConditionalCircle`’daki koda bakarak bu görevi tamamlamayı dene. Yardıma ihtiyacın olursa aşağıdaki ipuçlarına bak:";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page173..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page173..Paragraph324" = "Görüntü [gövdesinin](glossary://body) dışında Boole değerini izleyen [durum özelliği](glossary://state%20property) yarat.";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page173..CodeBlock64" = "@State var isScaled = false\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page174..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page174..Paragraph325" = "[Üçlü koşullu işleç](glossary://ternary%20conditional%20operator) kullanarak ölçeği denetleyen `Text` görüntüsüne `.scaleEffect` niteleyicisini ekle.";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page174..CodeBlock65" = ".scaleEffect(isScaled ? 1.5 : 1)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page175..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page175..Paragraph326" = "`Button`’ı ekle ve eylemini `isScaled.toggle()`’ı çağıracak şekilde ayarla.";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page175..CodeBlock66" = "Button(\"Ölçekle\") { \n    isScaled.toggle()\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskanimateChangesIsScaled..title" = "`isScaled`’deki değişikliklerini canlandırma";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskanimateChangesIsScaled..Page176..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskanimateChangesIsScaled..Page176..Paragraph327" = "Bu ölçekleme efekti biraz sade kalıyor; canlandırılmış olsa daha iyi olmaz mıydı?";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskanimateChangesIsScaled..Page176..Paragraph328" = "`isScaled` değişkenindeki tüm değişiklikleri canlandırmak için `.animation(_:value:)` niteleyicisini kullan. `.spring(response:dampingFraction:blendDuration:)` canlandırmasını kullanmayı ve her parametre için `0.5` değerini geçirmeyi dene.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskanimateChangesIsScaled..Page177..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskanimateChangesIsScaled..Page177..CodeBlock67" = ".animation(.spring(response: 0.5, dampingFraction: 0.5, blendDuration: 0.5), value: isScaled)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskuseIsScaledRotateView..title" = "Görüntünü Döndürmek İçin `isScaled`’i Kullanma";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskuseIsScaledRotateView..Page178..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskuseIsScaledRotateView..Page178..Paragraph329" = "Son bir beceri eklemek için `.rotation3DEffect` niteleyicisinin `angle` parametresinde bir koşullu değer yarat, sonra `isScaled` değeri `true` ise onu `Angle(degrees: 0)` olarak veya `false` ise `Angle(degrees: 360)` olarak ayarla.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskuseIsScaledRotateView..Page178..Paragraph330" = "Bunu yapmak için [üçlü koşullu işleci](glossary://ternary%20conditional%20operator) kullanacaksın.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskuseIsScaledRotateView..Page179..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskuseIsScaledRotateView..Page179..CodeBlock68" = ".rotation3DEffect(isScaled ? Angle(degrees: 0) : Angle(degrees: 360), axis: (x: 5, y: 2, z: 1))\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcustomizeCreature..title" = "`CreatureDetail` görüntünü özelleştirme";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcustomizeCreature..Page180..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcustomizeCreature..Page180..Paragraph331" = "[Kullanıcı etkileşimi](glossary://user%20interaction) ile görüntüleri özelleştirmeyi kavradığına göre kişilerin `Text` görüntüsünü değiştirebilmeleri için bir tane daha [yerleşik görüntü](glossary://built-in%20view) eklemeyi dene.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcustomizeCreature..Page180..Paragraph332" = "Görüntünün genişliğini, yüksekliğini, bulanıklığını, kontrastını veya doygunluğunu değiştirmek için bir `Slider`, `RotationEffect`’i veya aklına gelen başka efektleri etkinleştirmek için bir `Button` kullanabilirsin. Hangi efektleri yaratabileceğini görmek için biraz kurcalamayı dene.";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..SuccessMessage..Paragraph333" = "Harika İş!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..SuccessMessage..Paragraph334" = "Yaratıkları görüntülemene, eklemene, silmene, değiştirmene ve onlarla dans etmene olanak sağlayan tam teşekküllü bir uygulama yarattın. Kendinle gurur duy, hiç de kolay değildi.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..SuccessMessage..Paragraph335" = "Bu öğreticiyi başarıyla tamamladın ancak uygulama geliştirme yolculuğuna henüz yeni başladın. Öğrendiğin kavramları uyguladıkça onları daha iyi anımsayacak ve daha fazla uygulama yaratabileceksin. Sıradaki denemelerde, kendi örneklerinden bazılarını yazmak için bu öğreticide öğrendiğin her şeyi kullanmayı dene. İyi şanslar!";
+
+/* Title of step named Create on Your Own */
+"GuideBook..Guide0..StepCreate on Your Own..title" = "Kendininkini Yarat";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..LearningCenterContent..Paragraph336" = "![](CreateYourOwnCopy.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..LearningCenterContent..Paragraph337" = "Durum ve veri akışı hakkında bilgi edinme maceranı tamamladığına göre yaratık verilerini kullanan yeni bir görüntü yaratmak için yaratıcılığını serbest bırakmanın zamanı geldi.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..LearningCenterContent..Paragraph338" = "Burada denemeleri tamamladığında, bu öğreticide öğrendiğin kavramların aynısını kullanarak sıfırdan kendi projeni yaratmayı dene.";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateYourOwn..title" = "Kendi Görüntünü Yarat";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateYourOwn..Page181..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateYourOwn..Page181..Paragraph339" = "Denenebilecekler:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateYourOwn..Page181..UnorderedList0..Paragraph340" = "`creatures` dizisini kullanan yeni bir görüntü yarat ve `ContentView`’da hedef olarak buna bağla.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateYourOwn..Page181..UnorderedList0..Paragraph341" = "`CreatureZoo`’ya yeni bir [yayımlanan değer](glossary://published%20value) ekle ve bunu var olan görüntülerinin birinde ya da birden fazlasında kullan.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateYourOwn..Page181..UnorderedList0..Paragraph342" = "Her yaratığa bir `description` özelliği ver ve açıklamalarını, adlarını ve görüntülerini eğlenceli bir yerleşimde görüntüleyen yeni bir görüntü yarat.";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateNewApp..title" = "Kendi uygulamanı yaratma";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateNewApp..Page182..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateNewApp..Page182..Paragraph343" = "Tamamen yeni bir proje düşün ve SwiftUI’ı kullanarak onu yarat. Görüntüler arasında dolaşmak için kendi `NavigationStack`’ini uygula, görüntülerin görünüşünü yerel olarak değiştirmek için [durum özelliklerini](glossary://state%20property), kullanıcı etkileşimlerini etkinleştirmek için yerleşik SwiftUI görüntülerini ve [bağlamalarını](glossary://binding), birden çok görüntü genelinde veri paylaşmak için uygulama ortamına geçirilen bir [gözlemlenebilir nesneyi](glossary://observable%20object) kullan. Sıkışırsan bu projeye geri dön ve karşılacağın hataları düzeltmek için kod örneklerine bak. İyi şanslar, başarabilirsin!";
+

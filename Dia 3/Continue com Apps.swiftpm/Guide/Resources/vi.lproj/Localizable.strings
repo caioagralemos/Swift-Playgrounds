@@ -1,0 +1,2013 @@
+/* Title of Guidebook */
+"GuideBook..title" = "Tiếp tục với các ứng dụng";
+
+/* The title of the intro for this section of the guide */
+"GuideBook..IntroKeep Going with Apps..title" = "Tiếp tục với các ứng dụng";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..IntroKeep Going with Apps..Paragraph0" = "Trong phần Bắt đầu với các ứng dụng, bạn đã học cách sử dụng các [chế độ xem](glossary://view) của SwiftUI để tạo ra một giao diện người dùng đơn giản. Trong SwiftUI, [chế độ xem](glossary://view) là các khối xây dựng [UI](glossary://user%20interface) mà bạn có thể đặt bên trong nhau để kết hợp cùng nhau thành các [chế độ xem tổ hợp](glossary://composed%view) phức tạp hơn.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..IntroKeep Going with Apps..Paragraph1" = "Tại đây, bạn sẽ tìm hiểu về [trạng thái](glossary://state) và [luồng dữ liệu](glossary://data%20flow) trong SwiftUI. Luồng dữ liệu là sự chuyển động của các giá trị trong suốt ứng dụng của bạn và cách SwiftUI cập nhật UI của bạn để phản ánh bất kỳ thay đổi nào đối với những giá trị đó. Quan trọng là bạn sẽ học cách [tách dữ liệu ứng dụng](glossary://data%20separation) khỏi các chế độ xem hiển thị dữ liệu đó và tại sao việc tách này có ích.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..IntroKeep Going with Apps..Paragraph2" = "Khi kết thúc phần hướng dẫn này, bạn sẽ có thể tạo ra một ứng dụng SwiftUI đầy đủ chức năng mà mọi người có thể thêm, xóa và sửa đổi các sinh vật biểu tượng. Hãy bắt đầu và bạn sẽ nhanh chóng tạo ra một ứng dụng.";
+
+/* Title of step named Modifying State */
+"GuideBook..Guide0..StepModifying State..title" = "Sửa đổi trạng thái";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..LearningCenterContent..Paragraph3" = "![](ModifyingState.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..LearningCenterContent..Paragraph4" = "Trong mã hóa, thuật ngữ [trạng thái](glossary://state) đề cập đến giá trị hiện tại của một biến. Một sự [thay đổi trạng thái](glossary://state%20change) là khi giá trị của một hoặc nhiều biến thay đổi trong ứng dụng của bạn.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..LearningCenterContent..Paragraph5" = "Một lợi thế lớn của SwiftUI là có thể tự động cập nhật giao diện của chế độ xem bất kỳ lúc nào ứng dụng của bạn [thay đổi trạng thái](glossary://state%20change).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..LearningCenterContent..Paragraph6" = "Khi bạn kết nối UI của mình với dữ liệu ứng dụng nào đó, ví dụ như một [Boolean](glossary://Boolean) hoặc một dãy các giá trị [Chuỗi](glossary://String), SwiftUI có thể [quan sát](glossary://observe) dữ liệu đó, cập nhật các chế độ xem sử dụng dữ liệu đó bất kỳ lúc nào thay đổi. Điều này nghĩa là bạn không bao giờ phải viết bất kỳ mã nào để thông báo cụ thể cho UI biết cách thức và thời điểm cập nhật.";
+
+/* Title for task */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..title" = "Sử dụng một thuộc tính trạng thái để cập nhật chế độ xem";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page0..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page0..Paragraph7" = "Trong ví dụ này, SwiftUI cập nhật giao diện của một chế độ xem khi xảy ra một [thay đổi trạng thái](glossary://state%20change).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page0..Paragraph8" = "Chạm vào nút trong bản xem trước. Việc này chuyển đổi giá trị của [thuộc tính](glossary://property) `isOn` giữa các [trạng thái](glossary://state) `true` và `false`, làm cho chế độ xem `Circle` xuất hiện, biến mất và xuất hiện trở lại.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page1..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page1..Paragraph9" = "Khi bạn muốn sửa đổi giao diện của một chế độ xem, trước tiên bạn sẽ cần dữ liệu nào đó để theo dõi [trạng thái](glossary://state). Bạn lưu trữ dữ liệu này dưới dạng một [thuộc tính](glossary://property) của chế độ xem.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page1..Paragraph10" = "Hãy coi dữ liệu trong chế độ xem của bạn là [nguồn chân lý](glossary://source%20of%20truth) xác định cách [UI](glossary://user%20interface) của bạn xuất hiện. Thay vì sửa đổi trực tiếp chế độ xem, bạn sửa đổi dữ liệu và SwiftUI cập nhật chế độ xem cho bạn. Tại đây, dữ liệu của bạn là một giá trị [Boolean](glossary://Boolean) xác định xem chế độ xem đang hiển thị (`true`) hay đang ẩn (`false`).";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page2..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page2..Paragraph11" = "Quan trọng: Luôn tạo ra dữ liệu của bạn ở bên ngoài [phần thân](glossary://body) của chế độ xem. Hãy coi `body` là một ❌ vùng không tạo ra dữ liệu chỉ được sử dụng để khai báo hình thức của các chế độ xem. Đây là một nguyên tắc cốt lõi trong việc tạo ra các ứng dụng, được gọi là [tách dữ liệu](glossary://data%20separation).";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page3..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page3..Paragraph12" = "Để cho phép SwiftUI tự động cập nhật các chế độ xem, bạn cần cho biết những [thuộc tính](glossary://property) nào của chế độ xem cần được quản lý và theo dõi cho bạn.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page3..Paragraph13" = "Để thực hiện việc này, hãy thêm một cú pháp đặc biệt, được gọi là một [trình đóng gói thuộc tính](glossary://property%20wrapper), vào phía trước định nghĩa thuộc tính của bạn. Việc thêm trình đóng gói thuộc tính `@State` vào phía trước `isOn` sẽ chuyển đổi thuộc tính thành [thuộc tính trạng thái](glossary://state%20property). SwiftUI quản lý giá trị và cập nhật các phần bị ảnh hưởng của chế độ xem bất kỳ lúc nào [trạng thái](glossary://state) thay đổi.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page4..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page4..Paragraph14" = "Vậy làm cách nào bạn có thể thay đổi [trạng thái](glossary://state) của `isOn`? Một cách phổ biến là thông qua [tương tác của người dùng](glossary://user%20interaction), ví dụ như khi một người chạm vào một `Button`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page4..Paragraph15" = "Để tạo ra một `Button`, hãy chuyển vào một [nhãn](glossary://label) văn bản, ví dụ như “Nhấn vào tôi” và một [bao đóng](glossary://closure) hành động, là một khối mã sẽ chạy khi bạn chạm vào nút.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page5..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page5..Paragraph16" = "Khi một người chạm vào nút, [bao đóng](glossary://closure) hành động thay đổi giá trị của `isOn` bằng phương thức `toggle()`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page5..Paragraph17" = "`toggle()` thay đổi giá trị thành `true` nếu là `false` và thành `false` nếu là `true`, giống như việc bật hoặc tắt công tắc đèn.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page6..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page6..Paragraph18" = "Câu lệnh `if` này sử dụng `isOn` như một điều kiện để hiển thị chế độ xem được bao quanh khi `true` và ẩn chế độ xem khi `false`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page6..Paragraph19" = "Đây là cách dữ liệu `isOn` kết nối với chế độ xem. [Trạng thái](glossary://state) hiện tại của thuộc tính xác định cách UI xuất hiện.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page7..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page7..Paragraph20" = "Khi bạn chạm vào nút trong bản xem trước, chế độ xem hình tròn trong câu lệnh `if` hiển thị hoặc ẩn.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskconditionalViews..Page7..Paragraph21" = "Thử thay đổi màu của hình tròn và chạm lại vào nút. Hãy thử thay đổi giá trị ban đầu của `isOn` thành `true`. Bạn lưu ý thấy những thay đổi nào trong mỗi trường hợp?";
+
+/* Title for task */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..title" = "Thêm một câu lệnh `else` hiển thị một hình tròn có màu khác";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page8..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page8..Paragraph22" = "Hãy dành giây lát để suy nghĩ xem bằng cách nào mà việc chạm vào nút sẽ cập nhật chế độ xem. Khi bạn chạm vào `Button`, bạn thay đổi [trạng thái](glossary://state) của `isOn`. SwiftUI [quan sát](glossary://observe) thay đổi này và cập nhật chế độ xem bằng giá trị mới. Trong [phần thân](glossary://body) của chế độ xem, bạn sử dụng một câu lệnh `if` để hiển thị chế độ xem nếu `isOn` là `true` và ẩn chế độ xem nếu là `false`.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page9..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page9..Paragraph23" = "Thay vì không hiển thị chế độ xem nào khi `isOn` là `false`, bạn có thể hiển thị một chế độ xem tùy chỉnh.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page9..Paragraph24" = "Sau câu lệnh `if`, hãy thêm một câu lệnh `else` hiển thị một `Circle` có màu khác.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page10..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page10..Paragraph25" = "Thêm một câu lệnh `else` bằng cú pháp sau đây, sau đó thêm một chế độ xem `Circle` và chỉ định màu.";
+
+/*  */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page10..CodeBlock0" = "else { \n\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page11..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepModifying State..TaskaddElse..Page11..CodeBlock1" = "else { \n   Circle()\n       .frame(maxHeight: 200)\n       .foregroundColor(.black)\n   //#-learning-code-snippet(addOffText)\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..title" = "Thêm chi tiết vào các chế độ xem bật và tắt";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page12..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page12..Paragraph26" = "Bây giờ bạn có hai chế độ xem, hãy tùy chỉnh chúng để làm rõ chế độ xem nào là “bật” và chế độ xem nào là “tắt”.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page12..Paragraph27" = "Thử sử dụng chế độ xem `Text` để gắn nhãn cho từng chế độ xem. Gắn nhãn chế độ xem thứ nhất là “Bật”.";
+
+/*  */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page12..CodeBlock2" = "Text(\"Bật\")\n";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page13..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page13..Paragraph28" = "Gắn nhãn chế độ xem thứ hai là “Tắt”.";
+
+/*  */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page13..CodeBlock3" = "Text(\"Tắt\")\n";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page14..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page14..Paragraph29" = "Và cuối cùng, đảm bảo mỗi chế độ xem có một hình dạng khác nhau, ví dụ như `Rectangle` hoặc `Capsule`.";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page15..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepModifying State..TaskcustomizeConditionalViews..Page15..CodeBlock4" = "if isOn {\n      Circle()\n          .frame(maxHeight: 200)\n          .foregroundColor(.mint)\n\n      Text(\"Bật\")\n} else {\n      Rectangle()\n          .frame(maxHeight: 200)\n          .foregroundColor(.gray)\n\n      Text(\"Tắt\")\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..title" = "Thêm một chế độ xem điều kiện mới";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page16..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page16..Paragraph30" = "Bây giờ, hãy thử tự mình thêm một chế độ xem điều kiện hoàn toàn mới:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page16..OrderedList0..Paragraph31" = "Thêm một [thuộc tính trạng thái](glossary://state%20value) bên ngoài [phần thân](glossary://body) và cung cấp một giá trị Boolean ban đầu.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page16..OrderedList0..Paragraph32" = "Tạo ra một [câu lệnh if](glossary://if%20statement) hiển thị một chế độ xem nếu giá trị của thuộc tính trạng thái là `true` và một chế độ xem khác nếu giá trị là `false`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page16..OrderedList0..Paragraph33" = "Tạo ra một `Button` mới và chuyển đổi thuộc tính trạng thái bất kỳ lúc nào bạn nhấn nút đó.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page16..Paragraph34" = "Chế độ xem điều kiện của bạn có hoạt động như dự kiến không?";
+
+/* title for page */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page17..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..TaskaddNewConditionalView..Page17..Paragraph35" = "Trước khi tiếp tục, hãy thử sử dụng [phương thức vịt cao su](glossary://rubber%20ducky%20method) để giải thích cách hoạt động của mã chế độ xem điều kiện ở mức độ chi tiết nhất có thể. Thuộc tính trạng thái có nhiệm vụ gì? Làm cách nào mà chế độ xem của bạn biết thời điểm cập nhật? Nếu bạn không thể nhớ thông tin nào đó, hãy quay lại và cố gắng tìm ra nơi kiến thức của bạn bị thiếu. Vịt cao su sẽ cảm ơn bạn!";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepModifying State..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..SuccessMessage..Paragraph36" = "Tuyệt vời!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..SuccessMessage..Paragraph37" = "Bây giờ bạn đã hiểu cách sử dụng [thuộc tính trạng thái](glossary://state%20value) để cập nhật giao diện của chế độ xem SwiftUI. Thuộc tính trạng thái này được lưu trữ bên ngoài [phần thân](glossary://body) của chế độ xem, là nơi mà bạn khai báo UI của chế độ xem.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepModifying State..SuccessMessage..Paragraph38" = "Đây là một nguyên tắc cơ bản của việc mã hóa các ứng dụng trong SwiftUI – luôn tách riêng dữ liệu ứng dụng của bạn khỏi UI hiển thị dữ liệu đó. Làm như vậy cho phép bạn bảo lưu một [nguồn chân lý](glossary://source%20of%20truth) đơn nhất và đảm bảo rằng mã UI của bạn dễ hiểu và dễ duy trì.";
+
+/* Title of step named Using a Conditional Modifier */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..title" = "Sử dụng một trình sửa đổi điều kiện";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..LearningCenterContent..Paragraph39" = "![](UsingAConditionalModifier.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..LearningCenterContent..Paragraph40" = "Trong ví dụ trước đó, bạn đã tạo ra một [thuộc tính trạng thái](glossary://state%20property) `isOn` mà việc lưu trữ được quản lý bởi SwiftUI. Bằng việc thay đổi [trạng thái](glossary://state) của `isOn`, bạn có thể hiển thị một hoặc hai chế độ xem khác nhau tùy theo điều kiện.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..LearningCenterContent..Paragraph41" = "Nhưng nếu bạn chỉ muốn thay đổi giao diện của một chế độ xem hiện có, ví dụ như màu hoặc kích cỡ của chế độ xem `Circle` thì sao? Đối với việc đó, bạn sẽ cần viết một mã điều kiện nào đó chỉ định cách chế độ xem xuất hiện khi xảy ra các [thay đổi trạng thái](glossary://state%20change).";
+
+/* Title for task */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..title" = "Thay đổi các trình sửa đổi chế độ xem tùy theo điều kiện";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page18..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page18..Paragraph42" = "Giống như chế độ xem trước đó, chế độ xem này cũng sử dụng một [thuộc tính trạng thái](glossary://state%20property) và một `Button` để thay đổi giao diện của một `Circle`. Tuy nhiên, có điều gì đó khác trong mã này. Hãy dành giây lát để cố gắng tìm ra điều gì đã thay đổi, tiếp tục khi bạn cho rằng mình đã phát hiện ra.";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page19..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page19..Paragraph43" = "Bạn đã tìm ra cách hoạt động chưa?";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page19..Paragraph44" = "Thay vì tạo ra một chế độ xem khác khi `isOn` là `true` hoặc `false`, bạn có thể sửa đổi giao diện của một chế độ xem đơn nhất bằng các [trình sửa đổi chế độ xem](glossary://modifier) chứa mã điều kiện.";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page20..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page20..Paragraph45" = "Hãy lưu ý rằng trình sửa đổi `.foregroundColor(_:)` chứa cú pháp đặc biệt. Đây được gọi là một [toán tử điều kiện tam phân](glossary://ternary%20conditional%20operator), một cách ngắn gọn để tạo ra một câu lệnh `if-else` trong một dòng mã đơn nhất.";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page21..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page21..Paragraph46" = "Bạn có thể đọc mã này là: nếu `isOn` là `true`, hãy chuyển vào giá trị `.yellow`; nếu không, hãy chuyển vào `.black`.";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page21..CodeBlock5" = "isOn ? .yellow : black\n";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page21..Paragraph47" = "Nói khái quát hơn, mã này trông giống như sau:";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page21..CodeBlock6" = "condition ? trueValue : falseValue\n";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page22..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskconditionalCircle..Page22..Paragraph48" = "Thử thay đổi màu của hình tròn thành `.purple` khi `isOn` là `true` và thành một màu lục sáng hơn, như `.mint` khi là `false`.";
+
+/* Title for task */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..title" = "Thêm một trình sửa đổi `shadow(color:radius:)` hiển thị một bóng đổ màu khác nhau trong mỗi trạng thái";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page23..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page23..Paragraph49" = "Cũng giống như ví dụ về `ConditionalViews`, SwiftUI [quan sát](glossary://observe) [thuộc tính trạng thái](glossary://state%20property) `isOn`. Khi giá trị của `isOn` thay đổi, SwiftUI cập nhật chế độ xem `Circle` với giá trị mới cho trình sửa đổi `.foregroundColor(_:)`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page23..Paragraph50" = "Tiếp theo, hãy thử thêm một trình sửa đổi khác, `.shadow(color:radius:)` sử dụng giá trị `isOn` để thay đổi bóng đổ của chế độ xem.";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page24..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page24..Paragraph51" = "Trước tiên, hãy thêm trình sửa đổi `.shadow(color:radius:)` vào `Circle`.";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page24..CodeBlock7" = ".shadow(color: <#T##Color#>, radius: 20)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page25..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page25..Paragraph52" = "Đối với tham số `color` của trình sửa đổi, hãy sử dụng [toán tử điều kiện tam phân](glossary://ternary%20conditional%20operator) để thay đổi màu của bóng đổ dựa trên [trạng thái](glossary://state) của `isOn`.";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page26..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page26..Paragraph53" = "Cú pháp toán tử tam phân trông giống như sau:";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page26..CodeBlock8" = "isOn ? .indigo : .orange\n";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page26..Paragraph54" = "Đoạn mã này có thể được đọc là: nếu `isOn` là `true`, hãy sử dụng giá trị `.indigo`; nếu không, hãy sử dụng giá trị `.orange`.";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page27..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddShadowModifier..Page27..CodeBlock9" = ".shadow(color: isOn ? .indigo : .orange, radius: 20)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..title" = "Thay đổi tỷ lệ của hình tròn khi chạm vào nút";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page28..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page28..Paragraph55" = "Đã đến lúc bạn tự mình làm thử. Hãy xem bạn có thể tìm ra cách sử dụng trình sửa đổi `.scaleEffect(_:)` với một [toán tử điều kiện tam phân](glossary://ternary%20conditional%20operator) để thay đổi tỷ lệ của hình tròn dựa trên trạng thái của `isOn` hay không.";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page29..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page29..Paragraph56" = "Trước tiên, hãy thêm trình sửa đổi `.scaleEffect(_:)` vào hình tròn. Sau đó, sử dụng toán tử tam phân để chỉ định một tỷ lệ nếu `isOn` là `true` và một tỷ lệ khác nếu là `false`.";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page29..CodeBlock10" = ".scaleEffect(<#T##s: CGFloat##CGFloat#>)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page30..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddScaleModifier..Page30..CodeBlock11" = ".scaleEffect(isOn ? 1 : 0.75)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..title" = "Tạo hiệu ứng các thay đổi trạng thái của bạn";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page31..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page31..Paragraph57" = "Giống như việc SwiftUI biết cách tự động cập nhật các chế độ xem của bạn, chương trình khung này cũng biết cách tạo hiệu ứng các thay đổi đối với chế độ xem của bạn dựa trên các giá trị mà bạn thay đổi.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page31..Paragraph58" = "Để thực hiện việc này, hãy đính kèm một trình sửa đổi `.animation(_:value:)` vào chế độ xem mà bạn muốn tạo hiệu ứng và chọn một `Animation` cũng như một giá trị để theo dõi các thay đổi.";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page32..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page32..Paragraph59" = "Ví dụ: bạn có thể sử dụng một hiệu ứng chuyển động mặc định để tạo hiệu ứng cho bất kỳ thay đổi nào đối với giá trị `isOn`.";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page32..CodeBlock12" = ".animation(.default, value: isOn)\n";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page32..Paragraph60" = "Khi `isOn` thay đổi, các sửa đổi chế độ xem được điều khiển bởi giá trị này sẽ tạo hiệu ứng. Vì bạn sử dụng `isOn` để xác định bóng đổ, màu và tỷ lệ của chế độ xem nên tất cả những đặc điểm này sẽ tạo hiệu ứng đến trạng thái mới khi giá trị thay đổi.";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page33..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page33..CodeBlock13" = ".animation(.default, value: isOn)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page34..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..TaskaddAnimationModifier..Page34..Paragraph61" = "Thử thay đổi hiệu ứng chuyển động mặc định thành hiệu ứng nào đó khác. `.default` cung cấp cho bạn hiệu ứng chuyển động `.easeInOut`, nhưng bạn có thể thay đổi thành `.spring(response:dampingFraction:blendDuration:)` hoặc `.linear(duration:)` để xem hiệu ứng chuyển động thay đổi như thế nào.";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..SuccessMessage..Paragraph62" = "Bạn thật xuất sắc!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..SuccessMessage..Paragraph63" = "Bây giờ bạn đã biết cách sử dụng [thuộc tính trạng thái](glossary://state%20property) để thay đổi giao diện của một chế độ xem và cách tạo hiệu ứng cho những thay đổi đó bằng trình sửa đổi `.animation(_:value:)`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepUsing a Conditional Modifier..SuccessMessage..Paragraph64" = "Tiếp theo, bạn sẽ học cách sử dụng các [chế độ xem tích hợp](glossary://built-in%20view) và [ràng buộc](glossary://binding) của SwiftUI để tạo ra các kiểu thay đổi trạng thái khác nhau trong UI của bạn.";
+
+/* Title of step named SwiftUI Built-in Views */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..title" = "Các chế độ xem tích hợp của SwiftUI";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..LearningCenterContent..Paragraph65" = "![](SwiftUIBuilt-inViews.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..LearningCenterContent..Paragraph66" = "SwiftUI cung cấp nhiều [chế độ xem tích hợp](glossary://built-in%20view), ví dụ như thanh trượt, nút chuyển đổi và bộ chọn cho phép một người thay đổi trạng thái của dữ liệu ứng dụng bằng cách [tương tác](glossary://user%20interaction) với chúng.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..LearningCenterContent..Paragraph67" = "Những chế độ xem tích hợp này có một cách đặc biệt để chia sẻ dữ liệu với một chế độ xem khác, được gọi là một [ràng buộc](glossary://binding).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..LearningCenterContent..Paragraph68" = "Bạn có thể sử dụng những chế độ xem tích hợp này với các giá trị ràng buộc để thay đổi dữ liệu của ứng dụng và sau đó UI của ứng dụng sẽ thay đổi.";
+
+/* Title for task */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..title" = "Sử dụng một ràng buộc";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page35..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page35..Paragraph69" = "Đến nay, bạn đã sử dụng một thuộc tính trạng thái để thay đổi UI [cục bộ](glossary://local%20scope) hoặc bên trong cùng một chế độ xem. Một ví dụ của việc này là định nghĩa một [thuộc tính trạng thái](glossary://state%20property) trong `ConditionalCircle` và sử dụng thuộc tính đó để thay đổi giao diện của một chế độ xem trong [phần thân](glossary://body) của `ConditionalCircle`.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page36..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page36..Paragraph70" = "Nhưng nếu bạn muốn cho phép một [chế độ xem phụ](glossary://subview) thay đổi dữ liệu đó thì sao? Ví dụ: nếu chế độ xem [cục bộ](glossary://local%20scope) lưu trữ thông tin liên hệ của bạn thì chế độ xem phụ có thể cung cấp một [tương tác](glossary://user%20interaction) tùy chỉnh để bạn thay đổi số điện thoại của liên hệ. Nhưng làm cách nào để bạn cho phép chế độ xem phụ thay đổi dữ liệu mà không tạo ra nhiều [nguồn chân lý](glossary://source%20of%20truth)?";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page37..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page37..Paragraph71" = "Chìa khóa để truyền đạt các thay đổi dữ liệu giữa hai chế độ xem được gọi là một [ràng buộc](glossary://binding). Ràng buộc cho phép bạn lưu giữ một nguồn chân lý đơn nhất, nhưng cho phép một [chế độ xem phụ](glossary://subview) sửa đổi giá trị đó từ xa. Nó được gọi là một ràng buộc vì nguồn chân lý, ví dụ như một [thuộc tính trạng thái](glossary://state%20property), ràng buộc (hoặc kết nối) với một chế độ xem thứ hai và bất kỳ lúc nào chế độ xem thứ hai đó thay đổi dữ liệu thì nguồn chân lý được cập nhật.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page38..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page38..Paragraph72" = "Thử chạm vào `Toggle` trong bản xem trước.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page38..Paragraph73" = "Hãy lưu ý rằng cả hai chế độ xem `Image` và `Toggle` đều thay đổi giao diện khi bạn chạm vào nút chuyển đổi. `Toggle` có thể thay đổi [nguồn chân lý](glossary://source%20of%20truth) từ xa, cho phép chính nó và chế độ xem `Image` chia sẻ cùng một giá trị mặc dù chúng là hai chế độ xem riêng biệt.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page39..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page39..Paragraph74" = "Đây là nguồn chân lý của bạn – một [thuộc tính trạng thái](glossary://state%20property) mà bạn lưu trữ [cục bộ](glossary://local%20scope) trong chế độ xem `Bindings`. Nguồn chân lý của một ràng buộc phải là nguồn chân lý có giá trị được quản lý bởi SwiftUI, ví dụ như bằng cách thêm [trình đóng gói thuộc tính](glossary://property%20wrapper) `@State` vào đó.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page40..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page40..Paragraph75" = "Đây là chế độ xem `Toggle` tích hợp. `Toggle` chấp nhận một giá trị Boolean [ràng buộc](glossary://binding) cho tham số `isOn` của mình. Điều này nghĩa là chế độ xem chuyển đổi biết cách thay đổi giá trị `Boolean` dựa trên [tương tác của người dùng](glossary://user%20interaction) nào đó, chẳng hạn như khi một người chạm vào nút chuyển đổi bật hoặc tắt, đồng thời truyền đạt bất kỳ thay đổi trạng thái nào trở lại [nguồn chân lý](glossary://source%20of%20truth) cục bộ của bạn, `isOn`.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page41..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TasktoggleExperiment..Page41..Paragraph76" = "Để chuyển vào một ràng buộc, hãy sử dụng [thuộc tính trạng thái](glossary://state%20property) được quản lý bởi SwiftUI của bạn với một ký hiệu `$` ở phía trước. Chuyển vào `$isOn` để biểu thị rằng bất kỳ lúc nào `Toggle` thay đổi giá trị từ xa, [ràng buộc](glossary://binding) sẽ sửa đổi nguồn chân lý, `isOn`.";
+
+/* Title for task */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..title" = "Thêm một thuộc tính trạng thái mới thuộc kiểu `Color`";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page42..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page42..Paragraph77" = "Tiếp theo, hãy thử sử dụng chế độ xem `ColorPicker` tích hợp cùng với một [ràng buộc](glossary://binding) để thay đổi màu của chế độ xem `Image` pin.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page42..Paragraph78" = "Để thực hiện việc này, trước tiên hãy tạo ra một [thuộc tính trạng thái](glossary://state%20property) để đóng vai trò là nguồn chân lý của bạn cho giá trị `Color`. Hãy cung cấp một giá trị ban đầu của `Color.primary`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page42..Paragraph79" = "Hãy cố gắng tự mình thực hiện việc này, sử dụng các gợi ý sau đây nếu bạn bị vướng mắc.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page43..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page43..Paragraph80" = "Định nghĩa một [thuộc tính](glossary://property) bằng [trình đóng gói thuộc tính](glossary://property%20wrapper) `@State` và [gán](glossary://assignment) thuộc tính đó làm giá trị ban đầu của `Color.primary`.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page44..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAStateVar..Page44..CodeBlock14" = "@State var color = Color.primary\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..title" = "Tạo ra một `ColorPicker` và chuyển vào giá trị ràng buộc của bạn";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page45..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page45..Paragraph81" = "Bên dưới chế độ xem `Toggle` của bạn, hãy tạo ra một `ColorPicker` bằng trình khởi tạo sau đây. Hãy tự mình thêm các đối số, sử dụng `Toggle` làm ví dụ.";
+
+/*  */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page45..CodeBlock15" = "ColorPicker(<#T##title: StringProtocol##StringProtocol#>, selection: <#T##Binding<CGColor>#>)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page46..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page46..OrderedList1..Paragraph82" = "Chuyển vào một `String` cho tiêu đề, ví dụ như “Chọn một màu”.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page46..OrderedList1..Paragraph83" = "Chuyển vào giá trị ràng buộc của bạn cho `selection`, thêm một `$` vào phía trước [thuộc tính trạng thái](glossary://state%20property) màu.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page46..Paragraph84" = "Nếu bạn muốn kiểm tra chế độ xem `Bindings` trong ứng dụng của mình, hãy thêm tạm thời vào `ContentView`.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page47..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorPicker..Page47..CodeBlock16" = "ColorPicker(\"Chọn một màu\", selection: $color) \n";
+
+/* Title for task */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..title" = "Đặt màu của `Image` thành thuộc tính trạng thái màu của bạn";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page48..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page48..OrderedList2..Paragraph85" = "Thử chọn một màu từ `ColorPicker` trong bản xem trước. Hãy lưu ý rằng màu của bộ chọn thay đổi, nhưng UI của bạn không có gì thay đổi. Điều này là vì thuộc tính trạng thái của bạn không được kết nối với bất kỳ chế độ xem [cục bộ](glossary://local%20scope) nào.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page48..OrderedList2..Paragraph86" = "Bây giờ, hãy thay đổi màu của chế độ xem hình ảnh để cập nhật thành màu từ bộ chọn.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page49..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page49..Paragraph87" = "Để thay đổi màu của chế độ xem `Image`, hãy thêm một trình sửa đổi `.foregroundColor(_:)` và chuyển vào thuộc tính trạng thái của bạn cho màu dưới dạng một đối số.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page50..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page50..CodeBlock17" = ".foregroundColor(color)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page51..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddAColorModifier..Page51..Paragraph88" = "Bây giờ, hãy chọn một màu từ bộ chọn màu. `Image` của bạn cũng thay đổi màu chứ?";
+
+/* Title for task */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..title" = "Tạo ra một chế độ xem `Text` thay đổi màu khi bạn chọn một màu mới";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..Page52..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..Page52..Paragraph89" = "Thêm một chế độ xem `Text` thay đổi màu khi bạn chọn một màu mới từ bộ chọn màu. Bạn có thể sử dụng trình sửa đổi `.foregroundColor(_:)` để thực hiện việc này, giống như với hình ảnh.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..Page52..Paragraph90" = "Chọn một phông chữ lớn hơn cho chế độ xem `Text` bằng trình sửa đổi [.font](doc://com.apple.documentation/documentation/swiftui/font) và chuyển vào `.largeTitle`.";
+
+/* title for page */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..Page53..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..Page53..Paragraph91" = "Thêm `.padding()` vào các chế độ xem của bạn để tạo ra khoảng trống cố định giữa một chế độ xem và tất cả các chế độ xem xung quanh. Bạn cũng có thể thêm một `Spacer()`, là một chế độ xem vô hình thu hẹp và mở rộng biến thiên để chiếm khoảng trống có sẵn giữa các chế độ xem.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..TaskaddATextView..Page53..Paragraph92" = "[Phần đệm](doc://com.apple.documentation/documentation/swiftui/view/padding(_:_:)) và [ký tự khoảng trống](doc://com.apple.documentation/documentation/swiftui/spacer) cho phép bạn tạo ra các bố cục chế độ xem thích ứng làm cho chế độ xem của bạn phù hợp với nhiều kích cỡ màn hình. Hãy xem [Tạo bố cục một chế độ xem đơn giản](doc://com.apple.documentation/documentation/swiftui/laying-out-a-simple-view) để tìm hiểu thêm.";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..SuccessMessage..Paragraph93" = "Hoan hô!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..SuccessMessage..Paragraph94" = "Bây giờ bạn đã biết cách sử dụng chế độ xem SwiftUI tích hợp, ví dụ như một `ColorPicker`, cùng với một [ràng buộc](glossary://binding) để tạo ra các [tương tác](glossary://user%20interaction) tùy chỉnh để thay đổi trạng thái ứng dụng của bạn.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSwiftUI Built-in Views..SuccessMessage..Paragraph95" = "Cùng với kiến thức của bạn về các [thuộc tính trạng thái](glossary://state%20property), phần này cho phép bạn tạo ra các tương tác của người dùng phong phú thay đổi hình thức UI trong ứng dụng của bạn.";
+
+/* Title of step named Practice with SwiftUI Built-in Views */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..title" = "Thực hành với các chế độ xem tích hợp của SwiftUI";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..LearningCenterContent..Paragraph96" = "![](PracticeWithSwiftUIBuilt-inViews.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..LearningCenterContent..Paragraph97" = "Bây giờ bạn đã biết các khái niệm cơ bản về các thuộc tính trạng thái, ràng buộc và chế độ xem SwiftUI tích hợp, đã đến lúc tự mình xây dựng một số ví dụ.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..LearningCenterContent..Paragraph98" = "Trước tiên, bạn sẽ sử dụng một chế độ xem `Slider` tích hợp để thay đổi một [thuộc tính trạng thái](glossary://state%20property) điều khiển chiều rộng của một `Rectangle`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..LearningCenterContent..Paragraph99" = "Sau đó, bạn sẽ thử tạo ra một trình sửa đổi câu chuyện bằng các chế độ xem `TextField` tích hợp để thay đổi giá trị của một thuộc tính trạng thái `String` nào đó, mang lại một câu chuyện kể thú vị.";
+
+/* Title for task */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..title" = "Tạo ra một thanh trượt";
+
+/* title for page */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page54..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page54..Paragraph100" = "Tạo ra một chế độ xem sử dụng một `Slider` tích hợp để thay đổi chiều rộng của chế độ xem `Rectangle`. Để hoàn thành việc này, bạn sẽ cần định nghĩa một [thuộc tính trạng thái](glossary://state%20property) mới và chuyển thuộc tính đó vào `Slider` dưới dạng một [ràng buộc](glossary://binding).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page54..Paragraph101" = "Bạn có thể thay đổi chiều rộng của một chế độ xem bằng trình sửa đổi `.frame(width:)`. Lưu ý: Trình sửa đổi này chấp nhận một giá trị [Double](doc://com.apple.documentation/documentation/swift/double) (một [kiểu](glossary://type) giá trị số đặc biệt), nên bạn hãy định nghĩa thuộc tính trạng thái dưới dạng một `Double`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page54..Paragraph102" = "Hãy dành giây lát để cố gắng tự mình thực hiện việc này, sử dụng các gợi ý sau đây nếu bạn bị vướng mắc.";
+
+/* title for page */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page55..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page55..Paragraph103" = "Định nghĩa một thuộc tính trạng thái thuộc kiểu `Double` phía trên `body` của chế độ xem. Đây là [nguồn chân lý](glossary://source%20of%20truth) cục bộ của bạn.";
+
+/*  */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page55..CodeBlock18" = "@State var width : Double = 0\n";
+
+/* title for page */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page56..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page56..Paragraph104" = "Tạo ra `Slider` của bạn, sử dụng trình khởi tạo `Slider(value:)`. Chuyển vào một [ràng buộc](glossary://binding) cho [thuộc tính trạng thái](glossary://state%20property) của bạn.";
+
+/*  */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page56..CodeBlock19" = "Slider(value: $width)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page57..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page57..Paragraph105" = "Tạo ra một `Rectangle` và thêm trình sửa đổi `.frame(width:)` vào đó. Vì giá trị của thanh trượt mặc định nằm trong phạm vi từ `0` đến `1` nên hãy nhân chiều rộng với một số lớn hơn để bạn có thể nhận thấy những sự thay đổi đối với giá trị.";
+
+/*  */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskbuildASlider..Page57..CodeBlock20" = "Rectangle()\n    .frame(width: width * 300)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..title" = "Tạo ra một câu chuyện";
+
+/* title for page */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page58..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page58..Paragraph106" = "Đây là một thử nghiệm khác để bạn thử:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page58..Paragraph107" = "Bạn có thể sử dụng [TextField](doc://com.apple.documentation/documentation/swiftui/textfield) của SwiftUI để thay đổi các giá trị `String` dựa trên các ký tự mà một người nhập vào trường.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page58..OrderedList3..Paragraph108" = "Tạo ra một câu chuyện có thể tùy chỉnh bằng cách định nghĩa nhiều [thuộc tính trạng thái](glossary://state%20property) cùng với các chế độ xem `TextField` tương ứng để cho phép một người nào đó nhập dữ liệu như tên, sở thích và món ăn ưa thích của họ.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page58..OrderedList3..Paragraph109" = "Bên dưới các trường văn bản, hãy tạo ra một chế độ xem `Text` hợp nhất tất cả các giá trị cùng nhau bằng [nội suy chuỗi](glossary://string%20interpolation) để tạo ra một câu chuyện. Chế độ xem đó có thể trông giống như sau:";
+
+/*  */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page58..CodeBlock21" = "Text(\"Xin chào, tên tôi là \\(name), sở thích của tôi là \\(hobby) và tôi rất thích ăn \\(favoriteFood)!\")\n";
+
+/* title for page */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page59..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..TaskstoryEditor..Page59..Paragraph110" = "Bổ sung: Thêm một chế độ xem `Button` hoặc `Toggle` hiển thị câu chuyện khi bạn chạm vào.";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..SuccessMessage..Paragraph111" = "Bạn đang làm rất tốt!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..SuccessMessage..Paragraph112" = "Bây giờ, bạn có thể xử lý các thay đổi trạng thái cục bộ bằng các thuộc tính trạng thái và giữa hai chế độ xem bằng các ràng buộc.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepPractice with SwiftUI Built-in Views..SuccessMessage..Paragraph113" = "Tiếp theo, bạn sẽ tìm hiểu cách tạo ra dữ liệu mà bạn có thể sử dụng trên mỗi chế độ xem của ứng dụng.";
+
+/* Title of step named Navigating in SwiftUI */
+"GuideBook..Guide0..StepNavigating in SwiftUI..title" = "Điều hướng trong SwiftUI";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..LearningCenterContent..Paragraph114" = "![](NavigatingInSwiftUI.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..LearningCenterContent..Paragraph115" = "Vì bạn đã nắm được cách quản lý trạng thái bên trong một chế độ xem SwiftUI đơn nhất nên đã đến lúc bắt đầu suy nghĩ rộng hơn.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..LearningCenterContent..Paragraph116" = "Trong một số trường hợp khi xây dựng ứng dụng, bạn sẽ có dữ liệu mà bạn muốn chia sẻ trong hai hoặc nhiều chế độ xem, do vậy một [ràng buộc](glossary://binding) sẽ không đủ để xử lý việc đó. Bạn không nên cố gắng sao chép dữ liệu trong từng chế độ xem mới, vì việc này sẽ rất khó theo dõi và có thể dẫn đến các lỗi trong ứng dụng của bạn. Thay vào đó, bạn sẽ học cách tạo ra và duy trì một [mô hình dữ liệu](glossary://data%20model) đơn nhất mà nhiều chế độ xem của ứng dụng có thể sử dụng.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..LearningCenterContent..Paragraph117" = "Nhưng trước khi xem cách thực hiện việc đó, bạn cần biết cách tạo ra một ứng dụng có nhiều chế độ xem. Đối với phần này, bạn sẽ thêm điều hướng sử dụng một `NavigationSplitView` hoặc một `NavigationStack`.";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..title" = "Tạo ra một `NavigationStack`";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page60..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page60..Paragraph118" = "Để điều hướng đến các chế độ xem khác nhau, bạn sẽ cần một trong hai kiểu chế độ xem điều hướng khác nhau:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page60..OrderedList4..Paragraph119" = "Một [NavigationStack](doc://com.apple.documentation/documentation/swiftui/navigationstack) sắp xếp các chế độ xem của bạn ở bên trên của nhau, giống như một cỗ bài.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page60..OrderedList4..Paragraph120" = "Một [NavigationSplitView](doc://com.apple.documentation/documentation/swiftui/navigationsplitview) sắp xếp các chế độ xem của bạn thành hai hoặc ba cột, cho phép bạn chọn các mục từ cột đầu để hiển thị một chế độ xem trong cột cuối.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page61..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page61..Paragraph121" = "Mỗi chế độ xem điều hướng này đóng vai trò như một [bộ chứa](glossary://container) để hiển thị các chế độ xem khác nhau dựa trên cách một người nào đó điều hướng bên trong ứng dụng của bạn, chúng chỉ hiển thị các chế độ xem theo những cách hơi khác nhau.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page61..Paragraph122" = "Trước tiên, bạn sẽ tạo ra một `NavigationStack` để xem cách hoạt động.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page62..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page62..Paragraph123" = "Trước tiên, hãy thêm một `NavigationStack` với một chế độ xem `List` ở bên trong. [Danh sách](doc://com.apple.documentation/documentation/swiftui/list) hiển thị bất kỳ số lượng chế độ xem nào trong một cột cuộn theo chiều dọc.";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page62..CodeBlock22" = "NavigationStack { \n   List { \n       Text(\"Nội dung NavigationStack\")\n       //#-learning-code-snippet(addNavLink)\n       //#-learning-code-snippet(addSecondNavLink)\n\n   }\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page63..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page63..Paragraph124" = "Hãy nhìn vào bản xem trước của bạn. Bạn sẽ thấy một chế độ xem `Text` đơn nhất trong `List` và không có nhiều nội dung khác. Để điều hướng đến một chế độ xem khác, bạn sẽ thêm một [NavigationLink](glossary://navigation%20link) bên trong `NavigationStack`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationExperiment..Page63..Paragraph125" = "Vậy tại sao bạn phải bận tâm đến việc tạo ra một `NavigationStack` nếu `NavigationLink` là thứ đưa bạn đến một chế độ xem khác? Chà, cũng giống như việc bạn không thể đi xe đạp mà không có các bánh xe, bạn không thể điều hướng đến một chế độ xem khác trừ khi các liên kết nằm bên trong một `NavigationStack` hoặc `NavigationSplitView`.";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..title" = "Tạo một liên kết điều hướng";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page64..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page64..Paragraph126" = "`NavigationStack` và `NavigationSplitView` của bạn có thể hiển thị nội dung khác nhau dựa trên cách một người tương tác với ứng dụng của bạn. Để chế độ xem điều hướng của bạn hiển thị một chế độ xem khác, hãy tạo ra một [NavigationLink](glossary://navigation%20link), một nút mà một người có thể chạm vào để điều hướng đến một chế độ xem riêng biệt.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page65..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page65..Paragraph127" = "Một `NavigationLink` phải chứa hai thứ:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page65..OrderedList5..Paragraph128" = "Một liên kết đến [chế độ xem đích](glossary://destination%20view).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page65..OrderedList5..Paragraph129" = "Một [nhãn](glossary://label) (cách mà nút xuất hiện).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page65..Paragraph130" = "Đích có thể là bất kỳ chế độ xem nào mà bạn muốn – một thứ gì đó đơn giản như một chế độ xem `Text` hoặc `Image` hay thậm chí là một [chế độ xem tổ hợp](glossary://composed%20view) mà bạn đã tạo ra cho chính mình.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page66..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page66..Paragraph131" = "Mã bên dưới tạo ra một `NavigationLink` với một chế độ xem `Text` dưới dạng [nhãn](glossary://label) và một chế độ xem `Text` dưới dạng [đích](glossary://destination%20view).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page66..Paragraph132" = "Thử thêm `NavigationLink` ở bên dưới và chạm vào liên kết trong bản xem trước.";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page66..CodeBlock23" = "NavigationLink(\"Hãy đẩy tôi!\") { \n   Text(\"Tôi là chế độ xem đích\")\n       .navigationTitle(\"Đích\")\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page67..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page67..Paragraph133" = "Thêm một liên kết điều hướng nữa và thử điều hướng đến các chế độ xem khác nhau trong `NavigationStack` của bạn.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page67..Paragraph134" = "Vì `NavigationStack` đóng vai trò như một cỗ bài nên nó sẽ chỉ luôn hiển thị chế độ xem ở trên cùng. Việc điều hướng đến một chế độ xem mới sẽ đẩy chế độ xem đó lên trên cùng của ngăn xếp sao cho bạn có thể nhìn thấy.";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLink..Page67..CodeBlock24" = "NavigationLink(\"Không, hãy đẩy tôi!\") { \n   Text(\"Tôi là một chế độ xem đích khác\")\n       .navigationTitle(\"Đích\")\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..title" = "Thử nghiệm với một `NavigationSplitView`";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page68..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page68..Paragraph135" = "Tiếp theo, bạn sẽ tạo ra một `NavigationSplitView` để hiển thị nội dung dưới dạng các cột.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page68..Paragraph136" = "Bạn sẽ sử dụng các liên kết điều hướng làm cột đầu và khi được chạm, mỗi liên kết này sẽ hiển thị văn bản nào đó trong cột cuối.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page69..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page69..Paragraph137" = "Trước tiên, hãy thêm `NavigationSplitView` của bạn. Bạn sẽ nhận thấy rằng có hai phần: phần thứ nhất là cột đầu của chế độ xem tách rời và phần thứ hai là một [chế độ xem trình giữ chỗ](glossary://placeholder%20view) hiển thị nội dung tạm thời nào đó đến khi bạn chọn một trong các liên kết.";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page69..CodeBlock25" = "NavigationSplitView { \n    //#-learning-code-snippet(listOfLinks)\n\n} detail: { \n    //#-learning-code-snippet(detailView)\n    \n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page70..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page70..Paragraph138" = "Tiếp theo, hãy thêm một số liên kết vào `NavigationSplitView` của bạn.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page70..Paragraph139" = "Bạn có thể nhận thấy rằng chế độ xem trông vẫn giống như một `NavigationStack` nếu bạn có kích cỡ bản xem trước nhỏ. Hãy thử mở rộng bản xem trước để nhìn thấy nhiều cột.";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page70..CodeBlock26" = "List {\n    NavigationLink(\"Liên kết thứ nhất\") {\n        Text(\"😵‍💫\")\n    }\n    NavigationLink(\"Liên kết thứ hai\") {\n        Text(\"😵‍\")\n    }\n    //#-learning-code-snippet(addMoreNavLinks)\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page71..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page71..Paragraph140" = "Cuối cùng, hãy thêm một [chế độ xem trình giữ chỗ](glossary://placeholder%20view) để cung cấp một số nội dung ban đầu cho cột thứ hai của bạn.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page71..Paragraph141" = "Bạn có thể nhìn thấy nội dung trình giữ chỗ này bằng cách mở rộng bản xem trước và bắt đầu lại trước khi chọn một liên kết.";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TasknavigationSplitViewExperiment..Page71..CodeBlock27" = "Text(\"Chọn một liên kết\")\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..title" = "Thử nghiệm với NavigationLinks";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page72..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page72..Paragraph142" = "Nếu muốn tùy chỉnh giao diện của `NavigationLink` thì bạn có thể sử dụng một [trình khởi tạo](glossary://initializer) khác sử dụng một [nhãn](glossary://label) tùy chỉnh.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page73..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page73..Paragraph143" = "Mã bên dưới tạo ra một `NavigationLink` với một [nhãn](glossary://label) tùy chỉnh, bao gồm một chế độ xem `HStack` với `Text` và `Image`. Cũng giống như nội dung đích, nhãn có thể là bất kỳ chế độ xem nào mà bạn muốn!";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page73..CodeBlock28" = "NavigationLink { \n    SlidingRectangle()\n       .navigationTitle(\"Hình chữ nhật trượt\")\n} label: { \n    HStack { \n        Text(\"Chạm để điều hướng\")\n        Spacer()\n        Image(systemName: \"arrow.forward.circle\")\n            .font(.largeTitle)\n    }\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page74..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddMoreNavLinks..Page74..Paragraph144" = "Thử thêm một `NavigationLink` mới, cung cấp một đích, nhãn và tiêu đề điều hướng. Hãy thử điều hướng đến một trong các chế độ xem khác trong ứng dụng, ví dụ như chế độ xem `ConditionalCircle`.";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..title" = "Tìm hiểu cách ứng dụng của bạn hiển thị các chế độ xem";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page75..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page75..Paragraph145" = "Bây giờ bạn đã thử nghiệm việc thêm các [liên kết điều hướng](glossary://navigation%20link) bên trong một `NavigationStack` và `NavigationSplitView`, mục tiêu của bạn là làm cho chế độ xem đầu tiên mà ứng dụng của bạn hiển thị là một `NavigationStack`. Sau khi thêm các liên kết điều hướng, việc này cho phép mọi người điều hướng đến các chế độ xem khác nhau khi họ sử dụng ứng dụng của bạn.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page76..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page76..Paragraph146" = "Bạn cho ứng dụng biết chế độ xem nào sẽ hiển thị đầu tiên trong định nghĩa ứng dụng. Tại đây, bạn có thể nhìn thấy rằng ứng dụng của mình được đặt tên là `MyApp` theo mặc định và tuân theo các hướng dẫn của [giao thức](glossary://protocol) `App`, cho phép ứng dụng đó chạy trên thiết bị của bạn giống như bất kỳ ứng dụng nào khác.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page76..Paragraph147" = "Thử chạy dự án hiện tại dưới dạng một ứng dụng bằng cách nhấn nút chạy (▶︎). Bạn sẽ không nhìn thấy nhiều thứ. 🙈";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page77..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page77..Paragraph148" = "Thuộc tính `body` trong ứng dụng của bạn định nghĩa nội dung của ứng dụng. Hiện tại, tất cả những gì bạn cần biết là bạn sẽ cần ít nhất một chế độ xem bên trong `WindowGroup`, đóng vai trò là một bộ chứa cho [phân cấp xem](glossary://view%20hierarchy) của ứng dụng, một tập hợp các chế độ xem mà ứng dụng của bạn hiển thị khi khởi chạy.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page78..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page78..Paragraph149" = "`ContentView` là [chế độ xem cấp cao nhất](glossary://top-level%20view) của bạn, là chế độ xem đầu tiên mà ứng dụng của bạn hiển thị khi khởi chạy. Chế độ xem này nằm ở trên cùng của [phân cấp xem](glossary://view%20hierarchy), là một tập hợp có cấu trúc gồm các [chế độ xem phụ](glossary://subview) phân nhánh từ chế độ xem cấp cao nhất của bạn.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page79..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page79..Paragraph150" = "Thử thay đổi tạm thời `ContentView` thành một chế độ xem nào đó khác, ví dụ như chế độ xem `Text` hoặc `Image`, sau đó chạy ứng dụng của bạn. Hãy lưu ý rằng chế độ xem cấp cao nhất của ứng dụng đã thay đổi – đây là cách bạn thay đổi nội dung mà ứng dụng hiển thị.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskmyApp..Page79..Paragraph151" = "Khi bạn đã sẵn sàng, hãy thay đổi chế độ xem cấp cao nhất trở lại thành `ContentView`.";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..title" = "Thêm một `NavigationStack` vào ứng dụng của bạn";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page80..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page80..Paragraph152" = "Để hiển thị nhiều chế độ xem trong ứng dụng của mình, bạn sẽ chuyển đổi [chế độ xem cấp cao nhất](glossary://top-level%20view) thành một [NavigationStack](doc://com.apple.documentation/documentation/swiftui/navigationstack).";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page81..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page81..Paragraph153" = "Thêm một `NavigationStack` bên trong `SPCAssessableWindowGroup` của `body` ứng dụng:";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page81..CodeBlock29" = "NavigationStack { \n\n}\n//#-learning-code-snippet(environmentObjectModifier)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page82..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page82..Paragraph154" = "Đặt `ContentView` của bạn bên trong `NavigationStack`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page82..Paragraph155" = "Chế độ xem đầu tiên được đặt bên trong `NavigationStack` hiển thị nội dung ban đầu. Nội dung này có thể thay đổi bất kỳ lúc nào bạn sử dụng một [liên kết điều hướng](glossary://navigation%20link) để hiển thị một chế độ xem mới.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page83..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page83..Paragraph156" = "Bây giờ, `body` ứng dụng của bạn trông giống như sau:";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavView..Page83..CodeBlock30" = "SPCAssessableWindowGroup(app: self, assessmentCandidates: [CreatureZoo()]) { \n   NavigationStack { \n       ContentView()\n   }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..title" = "Thêm một tiêu đề điều hướng";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page84..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page84..Paragraph157" = "Chạy ứng dụng của bạn. Trông ứng dụng không khác biệt nhiều phải không? Đó là vì `NavigationStack` đóng vai trò như một bộ chứa để hiển thị nội dung theo mặc định.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page84..Paragraph158" = "Tuy nhiên, `NavigationStack` cung cấp cho bạn một không gian chuyên biệt, được gọi là [thanh điều hướng](glossary://navigation%20bar), có thể hiển thị tiêu đề của chế độ xem hiện tại cũng như hiển thị nhiều mục thanh công cụ.";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page85..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page85..Paragraph159" = "Thử thêm `.navigationTitle(\"Các sinh vật của tôi\")` làm trình sửa đổi trên `ContentView`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page85..Paragraph160" = "Việc này cung cấp cho chế độ xem một tiêu đề trong khu vực thanh điều hướng. Bạn thêm tiêu đề điều hướng cho từng chế độ xem bên trong chế độ xem điều hướng, chứ không phải là chính chế độ xem điều hướng.";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page85..CodeBlock31" = ".navigationTitle(\"Các sinh vật của tôi\")\n";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page86..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page86..Paragraph161" = "Bạn có lưu ý đến cách tiêu đề điều hướng hiển thị trong thanh điều hướng ở trên cùng của `ContentView` không? Những tiêu đề này giúp một người sử dụng ứng dụng của bạn hiểu nội dung mà họ đang xem.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavTitle..Page86..Paragraph162" = "Tiếp theo, bạn sẽ thêm một [NavigationLink](glossary://navigation%20link) vào `ContentView` để điều hướng đến chế độ xem `CreatureDance`.";
+
+/* Title for task */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLinkCreatureDance..title" = "Thêm một `NavigationLink` vào `CreatureList`";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLinkCreatureDance..Page87..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLinkCreatureDance..Page87..Paragraph163" = "Thêm một liên kết có đích là `CreatureDance` bên trong chế độ xem `Section(\"Dance\")`. Hãy sử dụng nhãn và tiêu đề điều hướng để mô tả nhiệm vụ của chế độ xem (trong trường hợp này là làm cho một số sinh vật nhảy múa xung quanh!).";
+
+/* title for page */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLinkCreatureDance..Page88..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepNavigating in SwiftUI..TaskaddNavLinkCreatureDance..Page88..CodeBlock32" = "NavigationLink(\"Làm cho các sinh vật nhảy múa\") { \n    DancingCreatures()\n        .navigationTitle(\"Các sinh vật nhảy múa\")\n}\n";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepNavigating in SwiftUI..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..SuccessMessage..Paragraph164" = "Chúc mừng, thêm điều hướng là một phần thiết yếu của quá trình tạo ra một ứng dụng.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..SuccessMessage..Paragraph165" = "Khi bạn sử dụng, hãy nhớ rằng `NavigationLink` chỉ hoạt động nếu chế độ xem mà bạn đang điều hướng đi nằm bên trong một `NavigationStack` hoặc một `NavigationSplitView`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepNavigating in SwiftUI..SuccessMessage..Paragraph166" = "Tiếp theo, bạn sẽ học cách chia sẻ dữ liệu giữa tất cả các chế độ xem của ứng dụng.";
+
+/* Title of step named Sharing Data Between Views */
+"GuideBook..Guide0..StepSharing Data Between Views..title" = "Chia sẻ dữ liệu giữa các chế độ xem";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..LearningCenterContent..Paragraph167" = "![](SharingDataBetweenViews.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..LearningCenterContent..Paragraph168" = "Trước đó, bạn đã học cách lưu trữ dữ liệu [cục bộ](glossary://local%20scope) bằng [thuộc tính trạng thái](glossary://state%20value) và giữa hai chế độ xem bằng một [ràng buộc](glossary://binding). Nhưng nếu bạn muốn chia sẻ dữ liệu trong một ứng dụng có nhiều chế độ xem, giống như bạn thực hiện bây giờ thì sao?";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..LearningCenterContent..Paragraph169" = "Để chia sẻ cùng một dữ liệu giữa nhiều chế độ xem, bạn cần một nguồn chân lý đơn nhất [tách](glossary://data%20separation) riêng khỏi các chế độ xem. Đây là [mô hình dữ liệu](glossary://data%20model) và bạn có thể chia sẻ với bất kỳ chế độ xem nào cần truy cập vào dữ liệu.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..LearningCenterContent..Paragraph170" = "Một cách phổ biến để xây dựng mô hình dữ liệu cho ứng dụng SwiftUI là sử dụng một [đối tượng có thể quan sát](glossary://observable%20object). Đối tượng có thể quan sát là một [kiểu](glossary://type) có các thuộc tính mà nhiều chế độ xem có thể [quan sát](glossary://observe). Những chế độ xem đó có thể theo dõi các thay đổi trạng thái trong các thuộc tính, cho phép chúng cập nhật UI của mình để duy trì sự đồng bộ.";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..title" = "Mô hình dữ liệu của bạn";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page89..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page89..Paragraph171" = "Đây là mô hình dữ liệu của bạn – [đối tượng có thể quan sát](glossary://observable%20object), `CreatureZoo`. Đó là một [lớp](glossary://class) tuân theo các hướng dẫn của [giao thức](glossary://protocol) `ObservableObject`. Việc này cho phép lớp [đăng](glossary://publish) các thuộc tính nhất định.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page89..Paragraph172" = "Khi một lớp đăng một thuộc tính, thuộc tính đó phát (đăng) các thay đổi trạng thái của mình đến bất kỳ [trình quan sát](glossary://observer) nào có thể đang theo dõi. Việc này cho phép các chế độ xem [đang quan sát](glossary://observer) cập nhật khi trạng thái của một thuộc tính đã đăng thay đổi.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page90..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page90..Paragraph173" = "[Dữ liệu đã đăng](glossary://published%20value) trong `CreatureZoo` là thuộc tính `creatures` — một dãy các thể hiện `Creature`. Bất kỳ lúc nào dữ liệu trong dãy này thay đổi, ví dụ như khi một sinh vật được thêm hoặc xóa, SwiftUI thông báo cho tất cả các [trình quan sát](glossary://observer) thuộc tính để chúng có thể cập nhật để hiển thị dữ liệu mới nhất.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page91..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page91..Paragraph174" = "Trong một đối tượng có thể quan sát, bạn thêm [trình đóng gói thuộc tính](glossary://property%20wrapper) `@Published` để đánh dấu một thuộc tính là [đã đăng](glossary://published%20value).";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page92..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page92..Paragraph175" = "Để tạo ra một thể hiện sinh vật, hãy sử dụng trình khởi tạo `Creature(name:emoji:)` và chuyển vào một tên, cũng như một ký tự biểu tượng đơn nhất.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page93..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page93..Paragraph176" = "Đây là kiểu `Creature`, chứa các [thuộc tính](glossary://property) cho `name`, `emoji`, `offset`, `rotation` và `id`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreatureZoo..Page93..Paragraph177" = "`Creature` tuân theo các hướng dẫn cho [giao thức](glossary://protocol) `Identifiable` bằng cách thêm một thuộc tính `id`. Giao thức này cho phép SwiftUI xác định duy nhất bất kỳ `Creature` nào, ngay cả khi hai sinh vật sử dụng cùng một biểu tượng giống hệt nhau. Việc này sẽ có ích sau này.";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..title" = "Thêm các sinh vật khác";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page94..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page94..Paragraph178" = "Thêm ít nhất hai thể hiện `Creature` mới vào dãy `creatures`.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page95..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page95..Paragraph179" = "Để tạo ra một sinh vật mới, hãy [khởi tạo](glossary://initialization) sinh vật bằng cách cung cấp một tên và chuyển vào một ký tự biểu tượng đơn nhất. Khi thêm các sinh vật vào dãy, hãy tách dữ liệu của từng sinh vật bằng một dấu phẩy; ví dụ:";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page95..CodeBlock33" = "Creature(name: \"T-Rex\", emoji: \"🦖\"),\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page96..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page96..Paragraph180" = "Thêm ít nhất một sinh vật nữa vào dãy của bạn.";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddCreatures..Page96..CodeBlock34" = "Creature(name: \"Bọ rùa\", emoji: \"🐞\"),\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..title" = "Tạo ra một `StateObject`";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page97..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page97..Paragraph181" = "Trước khi chia sẻ [đối tượng có thể quan sát](glossary://observable%20object) của bạn trong các chế độ xem, trước tiên bạn sẽ khám phá xem việc sử dụng mô hình dữ liệu trong một chế độ xem đơn nhất trông như thế nào.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page97..Paragraph182" = "Trong `ContentView`, hãy khởi chạy đối tượng có thể quan sát của bạn và tạo ra một danh sách các chế độ xem sinh vật bằng dữ liệu đó.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page97..Paragraph183" = "Để khởi tạo một đối tượng có thể quan sát như `CreatureZoo`, hãy sử dụng một trình đóng gói thuộc tính đặc biệt, `@StateObject`, sao cho SwiftUI có thể quản lý dữ liệu.";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page97..CodeBlock35" = "@StateObject var data = CreatureZoo()\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page98..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page98..Paragraph184" = "Bạn sử dụng trình đóng gói thuộc tính `@StateObject` để yêu cầu SwiftUI quản lý đối tượng có thể quan sát cho mình, tương tự như cách bạn sử dụng `@State` để yêu cầu SwiftUI quản lý một thuộc tính trong một chế độ xem dưới dạng [thuộc tính trạng thái](glossary://state%20property).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskusingCreatureZoo..Page98..Paragraph185" = "Trong trường hợp này, bạn đang khởi tạo đối tượng có thể quan sát `CreatureZoo` và yêu cầu SwiftUI quản lý dưới dạng một [đối tượng trạng thái](glossary://state%20object).";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..title" = "Sử dụng dữ liệu mô hình trong một chế độ xem";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page99..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page99..Paragraph186" = "Sau khi khởi tạo dữ liệu, bạn sẽ sử dụng dữ liệu đó để tạo ra một chế độ xem cơ bản. Bạn sẽ thêm một chế độ xem [ForEach](glossary://ForEach) bên trong `List` để hiển thị từng sinh vật của mình theo chiều dọc trong một bố cục cột.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page100..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page100..Paragraph187" = "[ForEach](glossary://ForEach) là một cấu trúc [lặp lại](glossary://iteration) trên một [tập hợp](glossary://collection) dữ liệu (ví dụ như một dãy) để tạo ra các chế độ xem cho từng phần tử trong tập hợp.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page100..Paragraph188" = "Thêm `ForEach` bên dưới chế độ xem `Section` để lặp lại trên dãy `data.creatures` của bạn, tạo ra một chế độ xem tùy chỉnh để hiển thị tên và biểu tượng của từng sinh vật:";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page100..CodeBlock36" = "/*#-code-walkthrough(forEach.id)*/\nForEach(data.creatures) { creature in \n/*#-code-walkthrough(forEach.id)*/\n    HStack { \n        Text(creature.name)\n            .font(.title)\n        Spacer()\n        Text(creature.emoji)\n            /*#-code-walkthrough(resizableFont)*/\n            .resizableFont()\n            /*#-code-walkthrough(resizableFont)*/\n            .frame(minWidth: 125)\n    }\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page101..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page101..Paragraph189" = "Bạn có nhớ `Creature` tuân theo các hướng dẫn của giao thức `Identifiable` như thế nào không? Việc này cho phép cấu trúc [ForEach](glossary://ForEach) xác định duy nhất mỗi sinh vật, ngay cả khi chúng có cùng tên và ký tự biểu tượng giống hệt nhau. Vì giao thức này có thể phân biệt ngay cả những cặp đôi giống hệt nhau, nên việc này cho phép SwiftUI cập nhật từng chế độ xem độc lập mà không làm chúng xáo trộn.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page102..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskcreateAList..Page102..Paragraph190" = "Có thể bạn đã nhận thấy trình sửa đổi `.resizableFont()` đã được sử dụng tại đây. Đây là một trình sửa đổi tùy chỉnh được định nghĩa trong `ResizableFont.swift` để cho phép tăng cỡ chữ của chế độ xem `Text` để vừa với kích cỡ của chế độ xem. Hãy kiểm tra mã trong tệp đó để biết cách tạo ra một trình sửa đổi tùy chỉnh.";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..title" = "Làm cho dữ liệu mô hình của bạn có thể truy cập được trong toàn bộ ứng dụng";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page103..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page103..Paragraph191" = "Bây giờ bạn đã sử dụng thành công dữ liệu đối tượng có thể quan sát của mình trong một chế độ xem đơn nhất, đã đến lúc chia sẻ dữ liệu đó với toàn bộ ứng dụng từ `MyApp.swift`.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page104..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page104..Paragraph192" = "Để có thể truy cập dữ liệu của bạn trong toàn bộ ứng dụng:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page104..OrderedList6..Paragraph193" = "Tạo ra một thể hiện của `CreatureZoo` dưới dạng một [đối tượng trạng thái](glossary://state%20object) trong `MyApp`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page104..OrderedList6..Paragraph194" = "Hãy chuyển dữ liệu vào [chế độ xem cấp cao nhất](glossary://top-level%20view) của bạn, `NavigationStack`, dưới dạng một [đối tượng môi trường](glossary://environment%20object).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page104..Paragraph195" = "Bằng việc chuyển dữ liệu của bạn vào chế độ xem cấp cao nhất, đối tượng môi trường làm cho dữ liệu khả dụng trong toàn bộ [phân cấp xem](glossary://view%20hierarchy) sao cho tất cả các chế độ xem khác có thể sử dụng dữ liệu.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page105..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page105..Paragraph196" = "Tạo ra thể hiện của `CreatureZoo` của bạn, giống với cách bạn thực hiện trong `CreatureList`:";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page105..CodeBlock37" = "@StateObject var data = CreatureZoo()\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page106..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page106..Paragraph197" = "Thêm trình sửa đổi sau đây bên dưới `NavigationStack`:";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page106..CodeBlock38" = ".environmentObject(data)\n";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page106..Paragraph198" = "Việc này chuyển thể hiện [đối tượng có thể quan sát](glossary://observable%20object) của bạn vào [môi trường](glossary://environment) của ứng dụng để bất kỳ [chế độ xem phụ](glossary://subview) nào truy cập.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page107..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskaddModelData..Page107..Paragraph199" = "Tiếp theo, bạn sẽ quay lại `ContentView.swift` để thử sử dụng đối tượng môi trường.";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..title" = "Truy cập một đối tượng môi trường";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page108..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page108..Paragraph200" = "Bây giờ bạn đã chia sẻ đối tượng có thể quan sát với tất cả các [chế độ xem phụ](glossary://subview) của `NavigationStack`, bao gồm `ContentView`, đã đến lúc truy cập dữ liệu đó.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page109..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page109..Paragraph201" = "Thay vì sử dụng `@StateObject`, tạo ra một thể hiện mới của một đối tượng có thể quan sát, bạn cần truy cập vào thể hiện được chuyển vào [môi trường](glossary://environment) ứng dụng:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page109..OrderedList7..Paragraph202" = "Xóa biến `@StateObject` hiện tại của bạn, `data`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page109..OrderedList7..Paragraph203" = "Để truy cập [đối tượng môi trường](glossary://environment%20object) của bạn và tạo ra một thuộc tính mới với trình đóng gói thuộc tính `@EnvironmentObject` thuộc kiểu `CreatureZoo`.";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page109..CodeBlock39" = "@EnvironmentObject var data : CreatureZoo\n";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page110..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page110..Paragraph204" = "Kiểm tra danh sách các sinh vật của bạn trong bản xem trước `ContentView`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskuseEnvironmentObject..Page110..Paragraph205" = "Hãy lưu ý rằng các sinh vật xuất hiện đúng như trước đây. Dữ liệu trong danh sách sinh vật được tạo ra trong `MyApp`, được chia sẻ thông qua [môi trường](glossary://environment) ứng dụng và được truy cập trong `ContentView`.";
+
+/* Title for task */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..title" = "Thay thế `HStack` của bạn bằng một chế độ xem `CreatureRow` tổ hợp";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page111..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page111..Paragraph206" = "Có một cơ hội tuyệt vời để bạn cải thiện mã của mình tại đây. Bạn có thể đơn giản hóa mã trong chế độ xem này bằng cách thay thế toàn bộ `HStack` bên trong cấu trúc [ForEach](glossary://ForEach) bằng một [chế độ xem tổ hợp](glossary://composed%20view), `CreatureRow`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page111..Paragraph207" = "Xóa nội dung của `HStack` bên trong `ForEach` và thay thế bằng `CreatureRow(creature: creature)`.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page112..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page112..Paragraph208" = "Hãy nhìn vào `CreatureRow.swift` – phần này chứa mã giống như bạn có trong `ForEach`, trừ một [thuộc tính](glossary://property) đang lưu trữ giá trị `Creature`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page112..Paragraph209" = "Bây giờ bạn có `CreatureRow` dưới dạng chế độ xem riêng, việc sửa đổi và kiểm tra riêng biệt với `ContentView` trở nên dễ dàng hơn. Việc biên soạn một chế độ xem như thế này cải thiện [tính mô-đun](glossary://modularity) của mã, một nguyên tắc cơ bản trong việc tạo ra các ứng dụng.";
+
+/* title for page */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page113..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepSharing Data Between Views..TaskreplaceHStackWithCreatureRow..Page113..CodeBlock40" = "ForEach(data.creatures) { creature in \n   CreatureRow(creature: creature)\n}\n";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepSharing Data Between Views..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..SuccessMessage..Paragraph210" = "Tuyệt!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepSharing Data Between Views..SuccessMessage..Paragraph211" = "Bằng việc chuyển một đối tượng có thể quan sát vào môi trường ứng dụng, bạn cấp quyền truy cập vào dữ liệu đó cho toàn bộ [phân cấp xem](glossary://view%20hierarchy). Việc này cho phép bất kỳ chế độ xem nào khác trong ứng dụng của bạn sử dụng cùng một [nguồn chân lý](glossary://source%20of%20truth), thay vì cố gắng tái tạo dữ liệu tại nhiều nơi.";
+
+/* Title of step named Create a New View To Share Data */
+"GuideBook..Guide0..StepCreate a New View To Share Data..title" = "Tạo một chế độ xem mới để chia sẻ dữ liệu";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..LearningCenterContent..Paragraph212" = "![](CreateANewViewToShareData.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..LearningCenterContent..Paragraph213" = "Bây giờ bạn đã chia sẻ thành công dữ liệu với một chế độ xem, đã đến lúc sử dụng cùng dữ liệu đó trong các chế độ xem khác.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..LearningCenterContent..Paragraph214" = "Để thực hiện việc này, bạn cần làm hai việc:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..LearningCenterContent..OrderedList8..Paragraph215" = "Đảm bảo rằng chế độ xem đang truy cập dữ liệu là một phần của cùng một [phân cấp xem](glossary://view%20hierarchy) giống như chế độ xem cấp cao nhất mà dữ liệu được chuyển vào. Bạn thêm một chế độ xem vào phân cấp xem bằng cách khởi tạo bên trong [chế độ xem cấp cao nhất](glossary://top-level%20view) hoặc bất kỳ [chế độ xem phụ](glossary://subview) nào.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..LearningCenterContent..OrderedList8..Paragraph216" = "Truy cập [đối tượng môi trường](glossary://environment%20object).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..LearningCenterContent..Paragraph217" = "Ví dụ: nếu bạn tạo ra một chế độ xem mới bên trong `ContentView` thì chế độ xem mới đó là một phần của phân cấp xem, vì `ContentView` là một chế độ xem phụ của chế độ xem cấp cao nhất của bạn, `NavigationStack`. Sau đó, bạn có thể truy cập đối tượng môi trường từ chế độ xem mới đó.";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..title" = "Khai báo đối tượng môi trường";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page114..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page114..Paragraph218" = "Mục tiêu của bạn là xây dựng một chế độ xem mới, `DancingCreatures`, truy cập dữ liệu trong [môi trường](glossary://environment) ứng dụng.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page114..Paragraph219" = "`DancingCreatures` đã là một phần trong [phân cấp xem](glossary://view%20hierarchy) của bạn; bạn đã thêm một liên kết đến chế độ xem đó trong `ContentView`. Bước tiếp theo của bạn là truy cập dữ liệu trong môi trường ứng dụng.";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page115..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page115..Paragraph220" = "Để truy cập dữ liệu trong môi trường ứng dụng, hãy khai báo đối tượng môi trường của bạn cho `CreatureZoo`, giống như cách bạn thực hiện trong `CreatureList`. Bạn có thể xem lại mã khác của mình nếu cần trợ giúp.";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page116..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page116..Paragraph221" = "[Khai báo](glossary://declaration) một biến bằng trình đóng gói thuộc tính `@EnvironmentObject` và cung cấp cho biến đó kiểu `CreatureZoo`. Bạn không cần [khởi tạo](glossary://initialization) giá trị vì giá trị đó đã được khởi tạo trong `MyApp`. Bạn chỉ cần truy cập dữ liệu tại đây.";
+
+/*  */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesData..Page116..CodeBlock41" = "@EnvironmentObject var data : CreatureZoo\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesView..title" = "Thêm một chế độ xem `DancingCreatures`";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesView..Page117..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesView..Page117..Paragraph222" = "Bây giờ bạn đã có quyền truy cập vào dữ liệu ứng dụng, đã đến lúc xây dựng một thứ gì đó thú vị với dữ liệu đó. Trước tiên, bạn sẽ xếp chồng tất cả các sinh vật của mình lên nhau, sau đó, bất kỳ lúc nào bạn chạm vào một sinh vật, chúng sẽ phân tán theo các hướng khác nhau.";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesView..Page118..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesView..Page118..Paragraph223" = "Thêm mã này bên trong `VStack` của bạn:";
+
+/*  */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskdancingCreaturesView..Page118..CodeBlock42" = "ZStack {\n    /*#-code-walkthrough(dance.forEach)*/\n    ForEach(data.creatures) { creature in\n    /*#-code-walkthrough(dance.forEach)*/\n        /*#-code-walkthrough(dance.textView)*/\n        Text(creature.emoji)\n            .resizableFont()\n            .offset(creature.offset)\n            .rotationEffect(creature.rotation)\n        /*#-code-walkthrough(dance.textView)*/\n        //#-learning-code-snippet(exp1)\n        //#-learning-code-snippet(animationSolution)\n        //#-learning-code-snippet(exp3)\n\n    }\n}\n/*#-code-walkthrough(dance.onTap)*/\n.onTapGesture {\n    data.randomizeOffsets()\n}\n/*#-code-walkthrough(dance.onTap)*/\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..title" = "Tìm hiểu về mã hiệu ứng chuyển động";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page119..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page119..Paragraph224" = "Để tạo ra hiệu ứng chuyển động này, một [ForEach](glossary://ForEach) lặp lại thông qua từng sinh vật của bạn trong `CreatureZoo.creatures`, tạo ra một chế độ xem `Text` cho từng sinh vật.";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page120..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page120..Paragraph225" = "Chế độ xem `Text` sử dụng các [thuộc tính](glossary://property) `offset` và `rotation` của sinh vật dưới dạng các đối số cho các trình sửa đổi `.offset` và `.rotationEffect`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page120..Paragraph226" = "Vì `CreatureZoo.creatures` là một [giá trị đã đăng](glossary://published%20value) nên SwiftUI cập nhật chế độ xem `DancingCreatures` bất kỳ lúc nào `offset` hoặc `rotation` của một sinh vật thay đổi.";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page121..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimationWalkthrough..Page121..Paragraph227" = "Trình sửa đổi `.onTapGesture` chạy một số mã bất kỳ lúc nào bạn chạm vào chế độ xem. Khi được chạm, `data.randomizeOffsets()` thay đổi các giá trị `offset` và `rotation` cho từng sinh vật, cho phép chế độ xem cập nhật từng sinh vật đến vị trí và hướng xoay mới.";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..title" = "Tạo hiệu ứng cho các sinh vật";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page122..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page122..Paragraph228" = "Thử chạm vào chế độ xem.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page122..Paragraph229" = "Các sinh vật đang di chuyển, nhưng nhìn chúng không thú vị lắm. Tiếp theo, bạn sẽ tạo hiệu ứng cho chúng đến các vị trí mới để có động tác nhảy múa đẹp hơn.";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page123..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page123..Paragraph230" = "Để tạo hiệu ứng các sinh vật đến một vị trí mới, bạn cần cho SwiftUI biết hiệu ứng chuyển động nào sẽ sử dụng và giá trị nào sẽ tạo hiệu ứng. Trong trường hợp này, bạn muốn tạo hiệu ứng cho thuộc tính `offset` của từng sinh vật.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page123..Paragraph231" = "Đính kèm trình sửa đổi `.animation(_:value:)` vào chế độ xem `Text`. Chọn `.default` cho đối số hiệu ứng chuyển động và chuyển vào `creature.offset` đối với giá trị. Bất kỳ lúc nào `offset` thay đổi, các thay đổi của chế độ xem đều được tạo hiệu ứng.";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page124..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskanimateCreatures..Page124..CodeBlock43" = ".animation(.default, value: creature.offset)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..title" = "Thử nghiệm với chế độ xem của bạn";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page125..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page125..Paragraph232" = "Bây giờ bạn đã tạo hiệu ứng cho các sinh vật của mình, hãy thử tinh chỉnh hiệu ứng chuyển động và các phần khác của chế độ xem để trở nên thú vị hơn.";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page126..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page126..Paragraph233" = "Tạo hiệu ứng các thay đổi đối với thuộc tính `creature.rotation` bằng cách thêm một trình sửa đổi `.animation(_:value:)` mới.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page126..Paragraph234" = "Thêm trình sửa đổi sau đây vào phía trước trình sửa đổi `.animation(_:value)`. Hiệu ứng chuyển động thay đổi như thế nào? Tại sao bạn nghĩ đến việc này? Điều gì xảy ra nếu bạn đặt hiệu ứng chuyển động `.spring()` ở phía sau trình sửa đổi nêu trên?";
+
+/*  */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page126..CodeBlock44" = ".animation(.spring(response: 0.5, dampingFraction: 0.5), value: creature.rotation)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page127..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page127..Paragraph235" = "Thay đổi trình xử lý sự kiện cho `.onTapGestures` thành `data.synchronizeOffsets()`. Việc này khiến tất cả các sinh vật của bạn di chuyển đến cùng một khoảng cách.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page127..OrderedList9..Paragraph236" = "Xóa trình sửa đổi `.animation` hiện tại của bạn cho `creature.offset`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page127..OrderedList9..Paragraph237" = "Thêm hiệu ứng chuyển động sau đây để làm cho từng hiệu ứng chuyển động trì hoãn một chút.";
+
+/*  */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page127..CodeBlock45" = ".animation(.default.delay(data.indexFor(creature) / 10), value: creature.offset)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page128..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..TaskexperimentWithAnimations..Page128..Paragraph238" = "Tiếp tục tinh chỉnh các giá trị hiệu ứng chuyển động đến khi bạn hài lòng với kết quả!";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepCreate a New View To Share Data..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..SuccessMessage..Paragraph239" = "Bạn làm rất tốt!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..SuccessMessage..Paragraph240" = "Bạn đã tạo ra thành công một chế độ xem khác sử dụng [mô hình dữ liệu](glossary://data%20model) có thể quan sát được chia sẻ với [phân cấp xem](glossary://view%20hierarchy).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate a New View To Share Data..SuccessMessage..Paragraph241" = "Tiếp theo, bạn sẽ học cách thêm và xóa dữ liệu khỏi mô hình dữ liệu đó sao cho mọi người có thể tùy chỉnh ứng dụng.";
+
+/* Title of step named Add and delete creatures */
+"GuideBook..Guide0..StepAdd and delete creatures..title" = "Thêm và xóa các sinh vật";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..LearningCenterContent..Paragraph242" = "![](AddAndDeleteCreatures.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..LearningCenterContent..Paragraph243" = "Bây giờ, bạn có một ứng dụng nhiều chế độ xem chia sẻ một [mô hình dữ liệu](glossary://data%20model) đơn nhất trong nhiều chế độ xem. Tuy nhiên, ứng dụng dường như chưa hoàn chỉnh. Mặc dù bạn có thể thêm hoặc xóa một `Creature` trong mã, nhưng [người dùng](glossary://user) không thể thêm hoặc xóa các sinh vật thông qua UI.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..LearningCenterContent..Paragraph244" = "Thật may là vấn đề này rất dễ khắc phục. Vì bạn có quyền truy cập vào mô hình dữ liệu từ các chế độ xem nên bạn có thể thực hiện các thay đổi đối với mô hình dữ liệu khi một người tương tác với UI. Trước tiên, bạn sẽ học cách xóa một sinh vật, sau đó bạn sẽ tạo ra một chế độ xem mới cho phép mọi người thêm các sinh vật của riêng họ.";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..title" = "Xóa một sinh vật";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page129..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page129..Paragraph245" = "SwiftUI làm cho việc xóa dữ liệu khỏi một `List` trở nên rất đơn giản. Bạn có thể xóa một sinh vật bằng cách thêm một trình sửa đổi `.onDelete` vào vòng lặp `ForEach` trong `ContentView`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page129..Paragraph246" = "Thêm trình sửa đổi `.onDelete` cho phép bạn chạy một số mã tùy chỉnh (một [bao đóng](glossary://closure) `action` khi một người quyết định xóa một mục). Mã của bao đóng xóa sinh vật hiện tại khỏi [mô hình dữ liệu](glossary://data%20model) có thể quan sát của ứng dụng của bạn.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page130..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page130..Paragraph247" = "Bên trong [bao đóng](glossary://closure) `.onDelete`, bạn sẽ xóa sinh vật hiện tại bằng cách gọi `remove(atOffsets:)` và chuyển vào giá trị `indexSet` từ bao đóng. Việc này tìm thấy sinh vật tương ứng trong dãy `creatures` dựa trên hàng của danh sách mà bạn lựa chọn xóa.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page130..Paragraph248" = "Thử thêm trình sửa đổi này bên dưới vòng lặp `ForEach` và chạy ứng dụng của bạn. Thao tác vuốt sang trái trên một sinh vật có cho phép bạn xóa sinh vật đó không?";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdeleteACreature..Page130..CodeBlock46" = ".onDelete { indexSet in \n    data.creatures.remove(atOffsets: indexSet)\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..title" = "Thêm một `NavigationLink` vào `CreatureEditor`";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page131..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page131..Paragraph249" = "Để thêm một sinh vật mới, bạn sẽ cần thực hiện hai việc:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page131..OrderedList10..Paragraph250" = "Thêm `CreatureEditor` vào [phân cấp xem](glossary://view%20hierarchy) của bạn bằng một `NavigationLink`. Việc này cung cấp cho `CreatureEditor` quyền truy cập vào đối tượng môi trường `CreatureZoo` của bạn và cho phép một người điều hướng đến chế độ xem.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page131..OrderedList10..Paragraph251" = "[Biên soạn](glossary://composed%20view) chế độ xem `CreatureEditor` để cho phép một người sửa và thêm một sinh vật mới vào dãy `creatures` trong `CreatureZoo`.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page132..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page132..Paragraph252" = "Bắt đầu bằng việc quyết định nơi sẽ thêm `NavigationLink` vào `CreatureEditor`. Vì bạn đã có một chế độ xem `List` của các sinh vật mà bạn có thể xóa trong `ContentView` nên sẽ hợp lý khi thêm sinh vật từ cùng một chế độ xem.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page133..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page133..Paragraph253" = "Để đảm bảo tính năng sửa sinh vật có thể truy cập dễ dàng, hãy đặt một liên kết trong [thanh điều hướng](glossary://navigation%20bar) trong UI `ContentView`. Đây là nơi hoàn hảo cho loại liên kết này vì nằm trong một nơi tương tự mà mọi người tìm kiếm các tính năng bổ sung cho ứng dụng của bạn.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page134..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page134..Paragraph254" = "Để thêm một nút vào thanh điều hướng:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page134..OrderedList11..Paragraph255" = "Thêm tùy chỉnh thanh điều hướng bằng cách đính kèm trình sửa đổi `.toolbar` vào chế độ xem `List` của bạn.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page134..OrderedList11..Paragraph256" = "Bên trong bao đóng `.toolbar`, hãy thêm một `ToolbarItem`. Đây là một mục mà bạn có thể đặt trong thanh công cụ.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page134..OrderedList11..Paragraph257" = "Thêm một `NavigationLink` vào `CreatureEditor` bên trong `ToolbarItem`. Đây là chế độ xem mà bạn sẽ nhìn thấy trong thanh điều hướng.";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page134..CodeBlock47" = ".toolbar { \n    ToolbarItem { \n        // Add NavigationLink to CreatureEditor\n\n    }\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page135..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddToolBarContentView..Page135..CodeBlock48" = ".toolbar { \n    ToolbarItem { \n        NavigationLink(\"Thêm\") { \n            CreatureEditor()\n        }\n    }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..title" = "Thêm một tiêu đề điều hướng vào `CreatureEditor`";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..Page136..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..Page136..Paragraph258" = "Tiếp theo, hãy đặt cho `CreatureEditor` một tiêu đề điều hướng mô tả mục đích của chế độ xem.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..Page136..OrderedList12..Paragraph259" = "Thêm một tiêu đề điều hướng vào chế độ xem `CreatureEditor`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..Page136..OrderedList12..Paragraph260" = "Chạy ứng dụng của bạn và kiểm tra việc điều hướng đến `CreatureEditor` từ `ContentView`.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..Page137..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddNavigationTitleCreatureEditor..Page137..CodeBlock49" = ".toolbar { \n    ToolbarItem { \n        NavigationLink(\"Thêm\") { \n            CreatureEditor()\n                .navigationTitle(\"Thêm sinh vật\")\n        }\n    }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..title" = "Xác định dữ liệu `CreatureEditor`";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page138..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page138..Paragraph261" = "Để thêm một sinh vật mới, bạn sẽ tạo ra một [chế độ xem tổ hợp](glossary://composed%20view) `CreatureEditor` cho phép bạn sửa một sinh vật mới và thêm vào [mô hình dữ liệu](glossary://data%20model) của mình.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page139..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page139..Paragraph262" = "Hãy dành thời gian để suy nghĩ xem bạn sẽ cần những [thuộc tính](glossary://property) nào trong `CreatureEditor` để tạo ra một thể hiện `Creature` mới và thêm vào mô hình dữ liệu của mình.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page139..OrderedList13..Paragraph263" = "Bạn sẽ cần một thuộc tính `Creature` mà bạn có thể sửa đổi bên trong chế độ xem `CreatureEditor` [cục bộ](glossary://local%20scope).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page139..OrderedList13..Paragraph264" = "Bạn sẽ cần truy cập vào [đối tượng có thể quan sát](glossary://observable%20object) `CreatureZoo` từ [môi trường](glossary://environment) để bạn có thể thêm thể hiện `Creature` của mình vào đó.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page139..Paragraph265" = "Thử tạo ra hai thuộc tính đạt được những mục tiêu này, sử dụng các gợi ý sau đây nếu bạn vị vướng mắc.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page140..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page140..Paragraph266" = "Trước tiên, hãy tạo ra một [thuộc tính trạng thái](glossary://state%20property) lưu trữ một thể hiện `Creature`. Bây giờ, bạn có thể để các tham số `name` và `emoji` dưới dạng các chuỗi trống.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page141..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page141..Paragraph267" = "Tiếp theo, hãy khai báo một [đối tượng môi trường](glossary://environment%20object) thuộc kiểu `CreatureZoo` để truy cập thể hiện [đối tượng có thể quan sát](glossary://observable%20object) của bạn.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page142..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineVariablesCreatureEditor..Page142..CodeBlock50" = "@State var newCreature : Creature = Creature(name: \"\", emoji: \"\")\n@EnvironmentObject var data : CreatureZoo \n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineYourView..title" = "Tạo một Biểu mẫu trong CreatureEditor";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineYourView..Page143..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineYourView..Page143..Paragraph268" = "Để xây dựng chế độ xem `CreatureEditor`, bạn có thể sử dụng một chế độ xem `Form` tích hợp, rất phù hợp khi xử lý việc nhập dữ liệu.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineYourView..Page143..Paragraph269" = "Bên trong `Form`, bạn sẽ thêm ba chế độ xem `Section`: Mỗi chế độ xem để sửa tên, biểu tượng và bản xem trước của sinh vật.";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdefineYourView..Page143..CodeBlock51" = "Form {\n    Section(\"Tên\") {\n        //#-learning-code-snippet(addACreatureEditorTextField)\n\n    }   \n\n    Section(\"Biểu tượng\") {\n        \n    }\n\n    Section(\"Xem trước sinh vật\") {\n        CreatureRow(creature: newCreature)\n    }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..title" = "Thêm các chế độ xem `TextField` cho đầu vào của người dùng";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page144..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page144..Paragraph270" = "Tiếp theo, bạn cần thêm một cách thức để [mọi người](glossary://user) sửa các giá trị `name` và `emoji` cho [thuộc tính trạng thái](glossary://state%20property) `Creature`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page144..Paragraph271" = "Bạn thực hiện việc này bằng cách thêm một chế độ xem [TextField](doc://com.apple.documentation/documentation/swiftui/textfield), cho phép mọi người nhập văn bản.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page144..Paragraph272" = "Thêm hai chế độ xem `TextField` để sửa các giá trị `name` và `emoji` của sinh vật. Hãy sử dụng trình khởi tạo `TextField(_:text:)`, lấy các đối số cho [nhãn](glossary://label) và một giá trị `String` [ràng buộc](glossary://binding).";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page145..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page145..Paragraph273" = "Hãy nhớ rằng một ràng buộc yêu cầu rằng nguồn chân lý được quản lý bởi SwiftUI, chẳng hạn như bởi một [thuộc tính trạng thái](glossary://state%20property).";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page145..Paragraph274" = "Chuyển một ràng buộc vào thuộc tính trạng thái `Creature` của bạn và chỉ định các giá trị `name` và `emoji` như sau:";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page145..CodeBlock52" = "$newCreature.name\n$newCreature.emoji\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page146..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page146..Paragraph275" = "Đây là một ví dụ về cách thêm một `TextField`. Hãy thêm một `TextField` để sửa `newCreature.name` và một chế độ xem khác để sửa `newCreature.emoji`.";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page146..CodeBlock53" = "TextField(\"Tên\", text: $newCreature.name)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page147..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddACreatureEditorTextField..Page147..CodeBlock54" = "Form {\n    Section(\"Tên\") {\n        TextField(\"Tên\", text: $newCreature.name)\n    }   \n\n    Section(\"Biểu tượng\") {\n        TextField(\"Biểu tượng\", text: $newCreature.emoji)\n    }\n\n    Section(\"Xem trước sinh vật\") {\n        CreatureRow(creature: newCreature)\n    }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..title" = "Đặt một nút thêm trong thanh công cụ";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page148..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page148..Paragraph276" = "Tiếp theo, bạn cần thêm một `Button` mà mọi người có thể chạm vào để thêm sinh vật mới của họ.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page148..Paragraph277" = "Cũng giống như trong `ContentView`, nơi phù hợp nhất để đặt một nút giống như thế này là trong [thanh điều hướng](glossary://navigation%20bar) của `CreatureEditor`.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page149..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page149..Paragraph278" = "Thử sử dụng mã `.toolbar` từ `ContentView` như một ví dụ để thêm thanh công cụ vào `CreatureEditor`:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page149..OrderedList14..Paragraph279" = "Thêm trình sửa đổi `.toolbar` bên dưới `VStack` của bạn.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page149..OrderedList14..Paragraph280" = "Bên trong thanh công cụ, hãy thêm một `ToolbarItem`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page149..OrderedList14..Paragraph281" = "Bên trong `ToolbarItem`, hãy thêm một `Button` với [nhãn](glossary://label) có nội dung “Thêm”. Bây giờ, bạn có thể để trống [bao đóng](glossary://closure) hành động cho `Button`.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page150..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddButtonToToolbar..Page150..CodeBlock55" = ".toolbar { \n    ToolbarItem { \n        Button(\"Thêm\") { \n            //#-learning-code-snippet(addCreatureToCreatureZoo)\n            //#-learning-code-snippet(dismissCall)\n        }\n    }\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..title" = "Thêm sinh vật của bạn vào `CreatureZoo`";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page151..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page151..Paragraph282" = "Khi chạm vào nút Thêm, bạn muốn thêm thể hiện sinh vật của mình vào đối tượng có thể quan sát, `CreatureZoo`. Cụ thể, bạn muốn nối sinh vật đó vào dãy `creatures`.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page152..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page152..Paragraph283" = "Mã sau đây thêm sinh vật đang được sửa vào `data.creatures`. Hãy nhớ rằng `creatures` là một [giá trị đã đăng](glossary://published%20value), nên bất kỳ thay đổi nào đối với giá trị đó đều khiến tất cả các chế độ xem sử dụng dữ liệu đó tự động cập nhật.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page152..Paragraph284" = "Thêm mã này vào bên trong [bao đóng](glossary://closure) hành động cho `Button` của bạn.";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page152..CodeBlock56" = "data.creatures.append(newCreature)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page153..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page153..Paragraph285" = "Chạy ứng dụng của bạn và thử thêm một sinh vật mới.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskaddCreatureToCreatureZoo..Page153..Paragraph286" = "Điều hướng trở lại `ContentView` để xem sinh vật mới có được thêm vào chế độ xem `List` hay không. Sinh vật đó cũng được thêm vào chế độ xem `DancingCreatures` chứ?";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..title" = "Ẩn trình sửa khi bạn chạm vào Thêm";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page154..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page154..Paragraph287" = "Sau khi thêm một sinh vật, chế độ xem `CreatureEditor` của bạn ẩn đi, hiển thị chế độ xem trước đó mà bạn đã điều hướng đi. Đây là một trải nghiệm người dùng tốt hơn và ngăn không cho bạn chạm vào nút Thêm nhiều lần, vì việc đó chỉ thêm cùng một sinh vật nhiều lần.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page155..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page155..Paragraph288" = "Để ẩn chế độ xem, bạn cần hai thứ:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page155..OrderedList15..Paragraph289" = "Khai báo giá trị [môi trường](glossary://environment) `dismiss`, cho phép ứng dụng ẩn chế độ xem hiện tại đang được trình bày trong `NavigationStack`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page155..OrderedList15..Paragraph290" = "[Gọi](glossary://call) `dismiss()` khi chạm vào nút Thêm.";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page155..CodeBlock57" = "@Environment(\\.dismiss) var dismiss\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page156..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page156..Paragraph291" = "Sau khi bạn đã khai báo giá trị [môi trường](glossary://environment) `dismiss`, hãy gọi `dismiss()` khi bạn chạm vào Thêm, sau khi đã thêm sinh vật mới của mình vào `data.creatures`.";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page156..CodeBlock58" = "dismiss()\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page157..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd and delete creatures..TaskdismissEditor..Page157..CodeBlock59" = ".toolbar { \n    ToolbarItem { \n        Button(\"Thêm\") { \n            data.creatures.append(newCreature)\n            dismiss()\n        }\n    }\n}\n";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepAdd and delete creatures..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..SuccessMessage..Paragraph292" = "Chúc mừng, bạn đã tạo ra một ứng dụng đầy đủ chức năng!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd and delete creatures..SuccessMessage..Paragraph293" = "Bạn có khả năng thêm các sinh vật mới, xem và sửa chúng trong `CreatureList` và xem chúng nhảy múa trong `DancingCreatures`.";
+
+/* Title of step named Add a `CreatureDetail` view */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..title" = "Thêm một chế độ xem `CreatureDetail`";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..LearningCenterContent..Paragraph294" = "![](AddCreatureDetailView.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..LearningCenterContent..Paragraph295" = "Bây giờ bạn đã biết cách điều hướng giữa các chế độ xem, quản lý các thay đổi trạng thái [cục bộ](glossary://local%20scope), chia sẻ dữ liệu trong toàn bộ ứng dụng của bạn và sử dụng nhiều [chế độ xem SwiftUI tích hợp](glossary://built-in%20view), đã đến lúc kiểm tra các kỹ năng của bạn nhằm tạo ra một chế độ xem mới: `CreatureDetail`, một chế độ xem hiển thị chi tiết cho một sinh vật đơn nhất trong danh sách của bạn.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..LearningCenterContent..Paragraph296" = "Danh sách các sinh vật của bạn trông rất đẹp, nhưng cần thêm một chút tính tương tác. Việc có tất cả những sinh vật này có ích gì nếu bạn không thể chơi đùa với chúng?";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..title" = "Thêm một `NavigationLink` vào `CreatureDetail`";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page158..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page158..Paragraph297" = "Mục tiêu của bạn là làm cho mọi chế độ xem của [ForEach](glossary://ForEach) lặp lại vào `NavigationLink` của chính nó, mỗi chế độ xem điều hướng đến một chế độ xem chi tiết của sinh vật trong dãy `data.creatures` của bạn.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page159..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page159..Paragraph298" = "Để thực hiện việc này, hãy thay thế nội dung hiện tại của vòng lặp `ForEach` bằng một `NavigationLink`:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page159..OrderedList16..Paragraph299" = "Đặt [đích](glossary://destination%20view) thành [chế độ xem tổ hợp](glossary://composed%20view) `CreatureDetail(creature: creature)`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page159..OrderedList16..Paragraph300" = "Tạo [nhãn](glossary://label) dưới dạng một `CreatureRow`, sử dụng giá trị `creature` từ [bao đóng](glossary://closure) dưới dạng [đối số](glossary://argument).";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page160..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page160..Paragraph301" = "Tạo ra liên kết điều hướng giống như thế này và thêm vào bên trong `ForEach` của bạn:";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page160..CodeBlock60" = "NavigationLink {\n    CreatureDetail(creature: creature)\n        .navigationTitle(creature.name)\n} label: {\n    CreatureRow(creature: creature)\n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page161..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page161..Paragraph302" = "`ForEach` phải trông giống thế này:";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page161..CodeBlock61" = "ForEach(data.creatures) { creature in \n    NavigationLink {\n        CreatureDetail(creature: creature)\n            .navigationTitle(creature.name)\n    } label: {\n        CreatureRow(creature: creature)\n    }  \n}\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page162..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddNavigationLinkCreatureDetail..Page162..Paragraph303" = "Thử chạm vào một hàng trong `List` của bạn. Bây giờ, bạn được đưa đến chế độ xem `CreatureDetail` cho sinh vật đó.";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..title" = "Xây dựng chế độ xem `CreatureDetail` của bạn";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page163..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page163..Paragraph304" = "Chế độ xem `CreatureDetail` hiển thị sinh vật được chọn dưới dạng một chế độ xem `Text`. Công việc của bạn là hiểu được mã hiện có và xây dựng trên nền tảng đó nhằm tạo ra một số hiệu ứng sinh vật thú vị.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page164..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page164..Paragraph305" = "Trong `ContentView`, bạn đã tạo ra một `NavigationLink` với một [chế độ xem đích](glossary://destination%20view) của `CreatureDetail(creature: creature)`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page164..Paragraph306" = "Chế độ xem đích sử dụng giá trị `Creature` cho từng hàng của danh sách để tạo ra một chế độ xem khác nhau tùy theo sinh vật mà bạn chạm vào. Tại đây, giá trị đó được lưu trữ dưới dạng [hằng số](glossary://constant) không có trạng thái vì giá trị sẽ không thay đổi trong chế độ xem này.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page165..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page165..Paragraph307" = "Ba [thuộc tính trạng thái](glossary://state%20property) đã được định nghĩa cho bạn:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page165..OrderedList17..Paragraph308" = "`color` theo dõi một giá trị `Color` và điều khiển việc sửa đổi màu đối với chế độ xem `Text` của bạn.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page165..OrderedList17..Paragraph309" = "`shadowRadius` là một giá trị `Double` mà bạn sử dụng để điều khiển bán kính của trình sửa đổi `.shadow`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page165..OrderedList17..Paragraph310" = "`angle` là một giá trị `Angle` mà bạn sử dụng để xoay chế độ xem `Text`.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page166..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page166..Paragraph311" = "Chế độ xem `Text` của bạn sử dụng `creature.emoji` dưới dạng giá trị Chuỗi cho chế độ xem và thêm một số trình sửa đổi xác định giao diện và hoạt động của chế độ xem:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page166..OrderedList18..Paragraph312" = "[.colorMultiply](doc://com.apple.documentation/documentation/swiftui/list/colormultiply(_:)) thêm một hiệu ứng khuếch đại màu cho chế độ xem.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page166..OrderedList18..Paragraph313" = "[.shadow](doc://com.apple.documentation/documentation/swiftui/list/shadow(color:radius:x:y:)) thêm một bóng đổ có màu và bán kính cụ thể.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcreatureDetailWalkthrough..Page166..OrderedList18..Paragraph314" = "[.rotation3DEffect](doc://com.apple.documentation/documentation/swiftui/view/rotation3deffect(_:axis:anchor:anchorz:perspective:)) có thể điều khiển việc xoay chế độ xem theo ba chiều.";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddColorPicker..title" = "Thêm một `ColorPicker` thay đổi giá trị `color`";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddColorPicker..Page167..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddColorPicker..Page167..Paragraph315" = "Để bắt đầu xây dựng một tương tác nào đó vào chế độ xem này, trước tiên hãy thêm một chế độ xem `ColorPicker` bên dưới chế độ xem `Text`. Việc này làm thay đổi `color` của thuộc tính trạng thái khi một màu mới được chọn.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddColorPicker..Page167..Paragraph316" = "Hãy cố gắng tự mình thực hiện việc này, sử dụng giải pháp nếu bạn bị vướng mắc.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddColorPicker..Page168..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddColorPicker..Page168..CodeBlock62" = "ColorPicker(\"Chọn một màu\", selection: $color)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddSliderShadowRadius..title" = "Thêm một `Slider` điều khiển bán kính bóng đổ";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddSliderShadowRadius..Page169..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddSliderShadowRadius..Page169..Paragraph317" = "Bên dưới `ColorPicker`, hãy thêm một `Slider` điều khiển giá trị `shadowRadius`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddSliderShadowRadius..Page169..Paragraph318" = "Hãy cố gắng tự mình thực hiện việc này, sử dụng giải pháp nếu bạn bị vướng mắc.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddSliderShadowRadius..Page170..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddSliderShadowRadius..Page170..CodeBlock63" = "HStack { \n    Text(\"Bóng đổ\")\n    Slider(value: $shadowRadius)\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..title" = "Thêm một `Button` thay đổi kích cỡ của sinh vật";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page171..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page171..Paragraph319" = "Bên dưới `Slider`, hãy thêm một `Button` mà mọi người có thể sử dụng để tăng và giảm tỷ lệ của chế độ xem `Text`:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page171..OrderedList19..Paragraph320" = "Tạo một [thuộc tính trạng thái](glossary://state%20property) mới theo dõi giá trị `Boolean`, giống như bạn đã làm trong `ConditionalCircle`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page171..OrderedList19..Paragraph321" = "Thêm một trình sửa đổi mới, [.scaleEffect](doc://com.apple.documentation/documentation/swiftui/view/scaleeffect(_:anchor:)-pmi7) cùng với một [toán tử điều kiện tam phân](glossary://ternary%20conditional%20operator) để xác định tỷ lệ khi Boolean là `true` so với khi giá trị là `false`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page171..OrderedList19..Paragraph322" = "Thay đổi [bao đóng](glossary://closure) hành động của `Button` để chuyển đổi giá trị Boolean giữa các trạng thái `true` và `false`.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page172..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page172..Paragraph323" = "Cố gắng hoàn thành tác vụ này bằng cách xem lại mã trong `ConditionalCircle`. Nếu bạn cần trợ giúp, hãy xem những gợi ý này:";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page173..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page173..Paragraph324" = "Tạo một [thuộc tính trạng thái](glossary://state%20property) bên ngoài [phần thân](glossary://body) của chế độ xem theo dõi giá trị Boolean.";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page173..CodeBlock64" = "@State var isScaled = false\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page174..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page174..Paragraph325" = "Thêm trình sửa đổi `.scaleEffect` vào chế độ xem `Text` điều khiển tỷ lệ bằng một [toán tử điều kiện tam phân](glossary://ternary%20conditional%20operator).";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page174..CodeBlock65" = ".scaleEffect(isScaled ? 1.5 : 1)\n";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page175..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page175..Paragraph326" = "Thêm `Button` và đặt hành động của nút thành gọi `isScaled.toggle()`.";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskaddScaleButton..Page175..CodeBlock66" = "Button(\"Tỷ lệ\") { \n    isScaled.toggle()\n}\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskanimateChangesIsScaled..title" = "Tạo hiệu ứng các thay đổi của bạn đối với `isScaled`";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskanimateChangesIsScaled..Page176..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskanimateChangesIsScaled..Page176..Paragraph327" = "Hiệu ứng tỷ lệ này có một chút đơn điệu; nếu đó là hiệu ứng động thì có tốt hơn không?";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskanimateChangesIsScaled..Page176..Paragraph328" = "Sử dụng trình sửa đổi `.animation(_:value:)` để tạo hiệu ứng bất kỳ thay đổi nào với biến `isScaled`. Hãy thử sử dụng hiệu ứng chuyển động `.spring(response:dampingFraction:blendDuration:)` và chuyển vào một giá trị bằng `0.5` cho từng tham số.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskanimateChangesIsScaled..Page177..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskanimateChangesIsScaled..Page177..CodeBlock67" = ".animation(.spring(response: 0.5, dampingFraction: 0.5, blendDuration: 0.5), value: isScaled)\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskuseIsScaledRotateView..title" = "Sử dụng `isScaled` để xoay chế độ xem của bạn";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskuseIsScaledRotateView..Page178..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskuseIsScaledRotateView..Page178..Paragraph329" = "Để thêm một chi tiết nhỏ cuối cùng, hãy tạo ra một giá trị điều kiện trong tham số `angle` của trình sửa đổi `.rotation3DEffect`, sau đó đặt thành `Angle(degrees: 0)` nếu `isScaled` là `true` hoặc `Angle(degrees: 360)` nếu là `false`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskuseIsScaledRotateView..Page178..Paragraph330" = "Bạn sẽ sử dụng [toán tử điều kiện tam phân](glossary://ternary%20conditional%20operator) để thực hiện việc này.";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskuseIsScaledRotateView..Page179..title" = "";
+
+/*  */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskuseIsScaledRotateView..Page179..CodeBlock68" = ".rotation3DEffect(isScaled ? Angle(degrees: 0) : Angle(degrees: 360), axis: (x: 5, y: 2, z: 1))\n";
+
+/* Title for task */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcustomizeCreature..title" = "Tùy chỉnh chế độ xem `CreatureDetail` của bạn";
+
+/* title for page */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcustomizeCreature..Page180..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcustomizeCreature..Page180..Paragraph331" = "Bây giờ bạn đã hiểu cách tùy chỉnh các chế độ xem với [tương tác của người dùng](glossary://user%20interaction), hãy thử thêm một [chế độ xem tích hợp](glossary://built-in%20view) nữa để mọi người có thể sửa đổi chế độ xem `Text`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..TaskcustomizeCreature..Page180..Paragraph332" = "Bạn có thể sử dụng `Slider` để thay đổi chiều rộng, chiều cao, độ mờ, độ tương phản hay độ bão hòa của chế độ xem, một `Button` để bật một `RotationEffect` hoặc một hiệu ứng nào khác mà bạn nghĩ đến. Hãy thử thay đổi một chút để xem bạn có thể tạo ra những hiệu ứng nào.";
+
+/* Contents of success message */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..SuccessMessage..message" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..SuccessMessage..Paragraph333" = "Bạn thật xuất sắc!";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..SuccessMessage..Paragraph334" = "Bạn đã tạo ra một ứng dụng đầy đủ chức năng, cho phép bạn xem, thêm, xóa, khiêu vũ và sửa đổi các sinh vật. Hãy dành cho chính bạn một sự khen ngợi, vì đây là một thành tích không hề nhỏ.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepAdd a `CreatureDetail` view..SuccessMessage..Paragraph335" = "Bạn đã hoàn thành phần hướng dẫn này thành công, nhưng bạn chỉ mới bắt đầu hành trình xây dựng các ứng dụng của mình. Bạn càng áp dụng các khái niệm đã học thường xuyên thì bạn càng ghi nhớ chúng tốt hơn – và bạn sẽ càng tạo ra được nhiều ứng dụng hơn. Trong các thử nghiệm tiếp theo, hãy cố gắng sử dụng mọi thứ mà bạn đã học trong phần hướng dẫn này để viết ra một vài ví dụ của bạn. Chúc bạn may mắn!";
+
+/* Title of step named Create on Your Own */
+"GuideBook..Guide0..StepCreate on Your Own..title" = "Tự mình tạo ra";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..LearningCenterContent..Paragraph336" = "![](CreateYourOwnCopy.png)";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..LearningCenterContent..Paragraph337" = "Bây giờ bạn đã hoàn thành hành trình tìm hiểu về trạng thái và luồng dữ liệu, đã đến lúc bạn giải phóng khả năng sáng tạo của mình để tạo ra một chế độ xem mới sử dụng dữ liệu sinh vật của bạn.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..LearningCenterContent..Paragraph338" = "Khi bạn hoàn tất các thử nghiệm tại đây, hãy cố gắng tạo ra dự án của riêng mình từ đầu bằng cách sử dụng cùng các khái niệm mà bạn đã học được trong phần hướng dẫn này.";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateYourOwn..title" = "Tạo ra chế độ xem của riêng bạn";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateYourOwn..Page181..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateYourOwn..Page181..Paragraph339" = "Những việc nên thử:";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateYourOwn..Page181..UnorderedList0..Paragraph340" = "Tạo ra một chế độ xem mới sử dụng dãy `creatures` của bạn và liên kết đến chế độ đó dưới dạng đích trong `ContentView`.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateYourOwn..Page181..UnorderedList0..Paragraph341" = "Thêm một [giá trị đã đăng](glossary://published%20value) mới vào `CreatureZoo` và sử dụng giá trị đó trong một hoặc nhiều chế độ xem hiện có của bạn.";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateYourOwn..Page181..UnorderedList0..Paragraph342" = "Cung cấp cho mỗi sinh vật một thuộc tính `description` và tạo ra một chế độ xem mới hiển thị mô tả, tên và hình ảnh của chúng trong một bố cục thú vị.";
+
+/* Title for task */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateNewApp..title" = "Tạo ra ứng dụng của riêng bạn";
+
+/* title for page */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateNewApp..Page182..title" = "";
+
+/* Paragraph Content delivered to the user. The key should give context as to where this is being delivered to the user */
+"GuideBook..Guide0..StepCreate on Your Own..TaskcreateNewApp..Page182..Paragraph343" = "Hãy suy nghĩ và tạo ra một dự án hoàn toàn mới bằng SwiftUI. Triển khai `NavigationStack` của riêng bạn để di chuyển giữa các chế độ xem, sử dụng các [thuộc tính trạng thái](glossary://state%20property) để thay đổi giao diện của các chế độ xem cục bộ, các chế độ xem SwiftUI tích hợp và các [ràng buộc](glossary://binding) để cho phép người dùng tương tác, cũng như một [đối tượng có thể quan sát](glossary://observable%20object) được chuyển vào trong môi trường ứng dụng để chia sẻ dữ liệu trên nhiều chế độ xem. Nếu bạn bị vướng mắc, hãy quay lại dự án này và xem các ví dụ về mã để sửa bất kỳ lỗi nào mà bạn gặp phải. Chúc may mắn. Bạn có thể làm được!";
+
